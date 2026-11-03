@@ -1,0 +1,22 @@
+Use your built-in image generation tool to create ONE image, then copy it (Copy-Item from the file under C:\Users\anshc\.codex\generated_images, never base64 on the command line) to D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\work\mood\r3-ink.png and print the final path.
+
+TASK: a premium brand-identity MOODBOARD for "Isapur Industrial Park" (an industrial park in Ghaziabad, India), shown as ONE landscape 3:2 presentation board, like a professional agency brand-direction sheet. Route name: "Ink night".
+
+LOGO (critical): the first attached image is the real logo, the yellow scalloped badge with red diamonds and green "IiP". Reproduce it EXACTLY, never redraw, recolour or restyle it. Place it ONLY as in the layout below. The wordmark beside it is set as: ISAPUR in bold, INDUSTRIAL PARK in wide-tracked capitals.
+
+DIRECTION: The only dark board on the road. Charcoal with a thin cream frame, cream type and one fine yellow line ending in a dot, like a power line plugging in. Premium, works lit at dusk.
+
+PALETTE (use only these, show them as labelled swatches with hex codes): Charcoal #121316, Cream #F4EFE3, Sun yellow #FEF102 (the line only)
+TYPE: Manrope ExtraBold for ISAPUR, Manrope Regular wide-tracked for INDUSTRIAL PARK
+GRAPHIC DEVICE (the one recurring element): one thin yellow line ending in a round dot
+MOOD / PHOTOGRAPHY: warehouse facades at blue hour with warm lit windows, dark cladding, long calm shadows
+
+BOARD LAYOUT (tidy modular grid, generous white space, thin hairline dividers, small caps section labels):
+1. Top-left hero panel: logo + wordmark lockup on charcoal, with the tagline "Plug in. Build up.".
+2. Colour palette strip with swatches and hex codes, a typography specimen ("Aa" plus font names), 6 minimal line icons (plots, wide roads, power, water, connectivity, security).
+3. Large central panel: a vertical electric-pole advertising board (portrait 2:3, matte, slim dark frame) mounted on a street-light pole beside a hedge-lined road, with a row of identical boards receding behind it. The board design follows the direction above: charcoal face, thin cream inner frame, badge, ISAPUR, INDUSTRIAL PARK, 'Plug in. Build up.', a thin yellow line with a dot at the bottom. Photorealistic, neutral overcast daylight.
+4. Right column: (a) a highway hoarding (landscape) and (b) a gate/entrance fascia, both carrying the same identity; photorealistic.
+5. Bottom row: an illuminated pole box glowing at dusk, a black matte brochure with embossed badge, a visiting card.
+Every board must look recognisable from far away by colour and shape alone, like Vodafone's red pole banners.
+
+REALISM RULES: neutral true-colour daylight, NOT golden hour, no warm orange grade, no glow, no bloom, no HDR, no soft AI blur. Crisp sharp photographic mockups with natural grain. Text must be spelled exactly as given, no invented words, no gibberish, no phone numbers, no QR codes. Keep it minimal, calm and expensive, not cluttered.

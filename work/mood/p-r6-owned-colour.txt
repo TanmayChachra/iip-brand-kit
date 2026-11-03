@@ -1,0 +1,25 @@
+﻿Use your built-in image generation tool to create ONE image, then copy it (Copy-Item from the file under C:\Users\anshc\.codex\generated_images, never base64 on the command line) to D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\work\mood\r6-owned-colour.png and print the final path.
+
+TASK: a premium brand-identity MOODBOARD for "Isapur Industrial Park" (an industrial park in Ghaziabad, India), shown as ONE landscape 3:2 presentation board, like a professional agency brand-direction sheet. Route name: "One colour owned (Vodafone-style from afar)".
+
+LOGO (critical): the first attached image is the real logo, the yellow scalloped badge with red diamonds and green "IiP". Reproduce it EXACTLY, never redraw, recolour or restyle it. Place it ONLY as in the layout below. The wordmark beside it is set as: ISAPUR in bold, INDUSTRIAL PARK in wide-tracked capitals.
+
+DIRECTION: Recognisable from far away by colour alone. Every board is a full-bleed flat vermilion field with only the badge at large size and ISAPUR below, like Vodafone's red pole banners. Nothing else.
+
+PALETTE (use only these, show them as labelled swatches with hex codes): Signal vermilion #D6311F, White #FFFFFF, Ink #15171A
+TYPE: a bold neutral grotesque (Inter Bold) for ISAPUR in white
+GRAPHIC DEVICE (the one recurring element): the full-bleed colour field itself, repeated on every pole, rhythm of identical boards
+MOOD / PHOTOGRAPHY: a long road with identical vermilion pole boards in perspective, rhythm and repetition, seen from afar
+
+BOARD LAYOUT (tidy modular grid, generous white space, thin hairline dividers, small caps section labels):
+1. Top-left hero panel: logo + wordmark lockup on flat vermilion, with NO tagline text at all.
+2. Colour palette strip with swatches and hex codes, a typography specimen ("Aa" plus font names), 6 minimal line icons (plots, wide roads, power, water, connectivity, security).
+3. Large central panel: a vertical electric-pole advertising board (portrait 2:3, matte, slim dark frame) mounted on a street-light pole beside a hedge-lined road, with a row of identical boards receding behind it. The board design follows the direction above: full-bleed flat vermilion, white scalloped ring behind the badge, ISAPUR in white below, nothing else. Photorealistic, neutral overcast daylight.
+4. Right column: (a) a highway hoarding (landscape) and (b) a gate/entrance fascia, both carrying the same identity; photorealistic.
+5. Bottom row: a pole-row perspective shot, a vermilion vehicle wrap, a vermilion gate fascia.
+Every board must look recognisable from far away by colour and shape alone, like Vodafone's red pole banners.
+
+REALISM RULES: neutral true-colour daylight, NOT golden hour, no warm orange grade, no glow, no bloom, no HDR, no soft AI blur. Crisp sharp photographic mockups with natural grain. Text must be spelled exactly as given, no invented words, no gibberish, no phone numbers, no QR codes. Keep it minimal, calm and expensive, not cluttered.
+
+
+FINAL CHECK: every logo on the board, including every mockup, must be the exact attached yellow scalloped badge with red diamonds and green IiP. Never replace it with any other icon (no factory or gear icon). Do not invent any other logo.
