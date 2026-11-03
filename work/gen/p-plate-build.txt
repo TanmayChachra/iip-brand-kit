@@ -1,0 +1,5 @@
+﻿Use your built-in image generation tool to create ONE image, then copy it to D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\work\gen\plate-build.png and print the final path.
+
+Portrait 4:5 documentary photograph, a conceptual advertising background plate. Two construction workers in orange high-visibility vests and yellow safety helmets work on the top of a half-built concrete and steel-frame warehouse in rural north India: rebar sticking up, wooden shuttering, steel props. Shot from slightly below, they occupy only the lower third of the frame. The upper two thirds is a plain, pale, overcast grey-white sky, completely empty, leaving a large clean area for headline text. Neutral cool daylight, desaturated true colours, natural grain, honest and unglamorous. NOT golden hour, no warm grade, no glow, no HDR, no bokeh, no vignette. No text, no logos, no signs anywhere.
+
+IMPORTANT: after generating, locate the generated image file on disk (it is saved under C:\Users\anshc\.codex\generated_images) and use Copy-Item with that file path to copy it. Do NOT base64-encode the image or pass image data on the command line.

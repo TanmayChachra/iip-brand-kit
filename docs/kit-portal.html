@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IIP Portal direction</title><meta name="robots" content="noindex"><link rel="icon" href="assets/iip-logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Hind:wght@400;500;600;700&family=Teko:wght@500;600;700&family=Yatra+One&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F6F4EF;--ink:#15131A;--mut:#5E5B66;--line:#DAD6CC;--card:#fff;--yel:#FEF102;--max:1180px}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#121016;--ink:#F1EFEA;--mut:#A29FAA;--line:#2E2B35;--card:#1A1720}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 'Hind','Segoe UI',system-ui,sans-serif}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:8px;padding-bottom:8px}
+nav.top a{text-decoration:none;font-size:14px;font-weight:600;padding:7px 12px;border-radius:99px;color:var(--mut)}
+nav.top a.on,nav.top a:hover{background:var(--ink);color:var(--paper)}
+nav.top .brand{display:flex;align-items:center;gap:8px;margin-right:10px;padding:0;color:var(--ink)}nav.top .brand img{height:32px;width:32px}
+nav.top .brand:hover{background:none;color:var(--ink)}
+h1,h2,h3{font-family:'Archivo','Hind',sans-serif;line-height:1.1;margin:0 0 .4em;letter-spacing:-.015em}
+h1{font-size:clamp(34px,6vw,68px);font-weight:900}h2{font-size:clamp(26px,3.6vw,40px);font-weight:800}h3{font-size:20px;font-weight:800}
+p{margin:0 0 1em}.lead{font-size:clamp(18px,2.2vw,22px);color:var(--mut);max-width:760px}
+.kick{font:700 12px 'Archivo';letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+section{padding:56px 0;border-top:1px solid var(--line)}section.first{border-top:0}
+.grid{display:grid;gap:20px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}.g4.keep2{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card.flat{padding:0;overflow:hidden}
+figure{margin:0}figcaption{font-size:13px;color:var(--mut);margin-top:8px}
+.zoom{cursor:zoom-in;border-radius:10px}
+.pill{display:inline-block;font:700 12px 'Archivo';letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}
+.pill.dk{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.note{border-left:4px solid var(--yel);background:color-mix(in srgb,var(--yel) 18%,var(--card));padding:14px 18px;border-radius:0 12px 12px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{font:700 12px 'Archivo';letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.scroll{overflow-x:auto}
+.sw{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}.sw .c{height:110px;display:flex;align-items:flex-end;padding:10px;font:700 13px 'Archivo'}.sw .m{padding:10px 12px;font-size:13px}
+.sw .m b{display:block;font-size:15px}
+.bar{display:flex;height:34px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.dots{display:flex;gap:4px;margin:6px 0}.dots i{width:14px;height:14px;border-radius:50%;background:var(--line);display:block}.dots i.f{background:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.kitcard{display:block;text-decoration:none;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);transition:transform .2s}.kitcard:hover{transform:translateY(-4px)}
+.kitcard .t{padding:18px 20px 22px}.kitcard img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stat{font:900 44px 'Archivo';line-height:1}.stat small{display:block;font:500 14px 'Hind';color:var(--mut);margin-top:6px}
+.chips{display:flex;gap:4px;flex-wrap:wrap}.chip{width:26px;height:26px;border-radius:6px;border:1px solid rgba(0,0,0,.15)}
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:96vh}dialog::backdrop{background:rgba(0,0,0,.82)}dialog img{max-height:92vh;border-radius:8px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+.sizes{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}.sizes figure{flex:0 0 auto}
+.kitband{padding:70px 0 54px}
+.donts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:860px){.donts{grid-template-columns:1fr 1fr}}
+.dont{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;font-size:13px}.dont .t{height:120px;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:8px}
+.dont .t img{max-height:100px;width:auto}.dont .x{position:absolute;top:0;right:0;background:#d4202a;color:#fff;border-radius:50%;width:22px;height:22px;font:700 14px/22px 'Archivo'}
+.stage{padding:26px;border-radius:18px;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px}
+</style></head><body>
+<nav class="top"><div class="wrap"><a class="brand" href="index.html"><img src="assets/iip-logo.webp" alt="IIP"><b>IIP Brand Kit</b></a><a class="" href="index.html">Overview</a><a class="" href="research.html">Research</a><a class="" href="site.html">Site</a><a class="" href="kit-quiet.html">01 Quiet</a><a class="on" href="kit-portal.html">02 Portal</a><a class="" href="kit-ink.html">03 Ink</a><a class="" href="compare.html">Compare and decide</a></div></nav>
+
+<header class="wrap" style="padding-top:56px;padding-bottom:36px"><div class="kick">Direction 02</div><h1>Portal</h1><p class="lead">One red doorway. Step in. Quiet's cousin with one idea added: a red doorway that holds the badge. Memorable, still minimal.</p>
+<div style="margin-top:22px"><img class="zoom" src="assets/portal-hoarding.webp" alt="Portal hoarding" loading="lazy" ></div></header>
+<section class="first"><div class="wrap"><div class="kick">1 · Idea</div><h2>Why it works here</h2><p class="lead">Taken from the Portal element you liked in your own iterations: the entrance as a symbol. The badge sits inside a vermilion arch on warm ivory, the way a gateway frames a view. The arch is the only graphic device. It repeats on every board, on the gate fascia and as a stamp, so people learn it. It also gives a pole serial: three boards of rising red steps, then the doorway.</p>
+<div class="note" style="margin-top:18px"><b>Risk:</b> Vermilion next to the badge's own red needs care: keep the arch large and flat, never gradient.</div></div></section>
+<section><div class="wrap"><div class="kick">2 · Logo</div><h2>The logo, unchanged</h2><p class="lead">Used exactly as supplied, at 33 to 54 percent of the board width, with generous clear space (at least one tenth of its width). Never recoloured, stretched, rotated or given effects. Please supply the vector master before large print.</p></div></section>
+<section><div class="wrap"><div class="kick">3 · Colour and type</div><h2>Palette and typography</h2><div class="grid g4 keep2"><div class="sw"><div class="c" style="background:#F4F0E6;color:#14110F">Ivory</div><div class="m"><b>#F4F0E6</b>RGB 244, 240, 230<br>CMYK ~0 / 2 / 6 / 4<br><span style="color:var(--mut)">70% · Background</span></div></div><div class="sw"><div class="c" style="background:#15171A;color:#fff">Ink</div><div class="m"><b>#15171A</b>RGB 21, 23, 26<br>CMYK ~19 / 12 / 0 / 90<br><span style="color:var(--mut)">15% · Text, frame, base line</span></div></div><div class="sw"><div class="c" style="background:#D6311F;color:#fff">Vermilion</div><div class="m"><b>#D6311F</b>RGB 214, 49, 31<br>CMYK ~0 / 77 / 86 / 16<br><span style="color:var(--mut)">12% · The doorway only</span></div></div><div class="sw"><div class="c" style="background:#FEF102;color:#14110F">Badge colours</div><div class="m"><b>#FEF102</b>RGB 254, 241, 2<br>CMYK ~0 / 5 / 99 / 0<br><span style="color:var(--mut)">3% · Only inside the logo</span></div></div></div><div class="bar" style="margin-top:14px"><div style="flex:70.0;background:#F4F0E6"></div><div style="flex:15.0;background:#15171A"></div><div style="flex:12.0;background:#D6311F"></div><div style="flex:3.0;background:#FEF102"></div></div>
+<p style="font-size:13px;color:var(--mut)">Balance of colour. CMYK values are approximate: approve a printed proof.</p>
+<div class="grid g2" style="margin-top:20px"><div class="card"><div class="kick">Name and line</div><div style="font-family:'Sora',Hind,sans-serif;font-size:42px;line-height:1.1;margin:6px 0 10px;font-weight:700">ISAPUR</div><b>Sora</b><p style="color:var(--mut);margin:4px 0 0">700 with wide tracking for ISAPUR, 300 for the line</p></div><div class="card"><div class="kick">Hindi pair</div><div style="font-family:'Hind',Hind,sans-serif;font-size:42px;line-height:1.1;margin:6px 0 10px;font-weight:700">ISAPUR</div><b>Hind</b><p style="color:var(--mut);margin:4px 0 0">500</p></div></div><div class="card" style="margin-top:18px"><h3>Line bank</h3><table><tr><td style="font-size:20px"><b>Step in.</b></td></tr><tr><td style="font-size:20px"><b>अंदर आइए</b></td></tr><tr><td style="font-size:20px"><b>Every factory begins with one step.</b></td></tr><tr><td style="font-size:20px"><b>A modern industrial address.</b></td></tr></table></div></div></section>
+<section><div class="wrap"><div class="kick">4 · Pole boards</div><h2>10x10, 10x12, 10x14 inch</h2><div class="sizes"><figure style="width:150px"><img class="zoom" src="assets/portal-board-10x10.webp" alt="Portal 10x10" loading="lazy" ><figcaption><b>10x10 in</b></figcaption></figure><figure style="width:150px"><img class="zoom" src="assets/portal-board-10x12.webp" alt="Portal 10x12" loading="lazy" ><figcaption><b>10x12 in</b></figcaption></figure><figure style="width:150px"><img class="zoom" src="assets/portal-board-10x14.webp" alt="Portal 10x14" loading="lazy" ><figcaption><b>10x14 in</b></figcaption></figure></div>
+<h3 style="margin:30px 0 10px">On your real poles, next to the competition</h3><div class="grid g3"><figure style=""><img class="zoom" src="assets/portal-pole-10x10.webp" alt="10x10 inch on a pole, under a live competitor board" loading="lazy" ><figcaption>10x10 inch on a pole, under a live competitor board</figcaption></figure><figure style=""><img class="zoom" src="assets/portal-pole-10x12.webp" alt="10x12 inch on a pole, under a live competitor board" loading="lazy" ><figcaption>10x12 inch on a pole, under a live competitor board</figcaption></figure><figure style=""><img class="zoom" src="assets/portal-pole-10x14.webp" alt="10x14 inch on a pole, under a live competitor board" loading="lazy" ><figcaption>10x14 inch on a pole, under a live competitor board</figcaption></figure></div>
+<div class="grid g2" style="margin-top:20px"><figure style=""><img class="zoom" src="assets/portal-stack.webp" alt="10x14 at the foot of the competitor stack" loading="lazy" ><figcaption>10x14 at the foot of the competitor stack</figcaption></figure><figure style=""><img class="zoom" src="assets/portal-pole-18x25.webp" alt="Option: same artwork at about 18 x 25 inch" loading="lazy" ><figcaption>Option: same artwork at about 18 x 25 inch</figcaption></figure></div></div></section>
+<section><div class="wrap"><div class="kick">Option</div><h2>The pole serial</h2><p class="lead">Four poles in a row: three red steps rising, then the doorway. One idea told across 200 metres.</p><figure style=""><img class="zoom" src="assets/portal-serial.webp" alt="Poles 1 to 4" loading="lazy" ><figcaption>Poles 1 to 4</figcaption></figure></div></section>
+<section><div class="wrap"><div class="kick">5 · Street and site</div><h2>Pole row, hoarding, gate</h2>
+<figure style=""><img class="zoom" src="assets/portal-row.webp" alt="The same board on every street-light pole (10x18 proportion, an option for lit pole boxes)" loading="lazy" ><figcaption>The same board on every street-light pole (10x18 proportion, an option for lit pole boxes)</figcaption></figure>
+<div class="grid g2" style="margin-top:22px;align-items:center"><figure style=""><img class="zoom" src="assets/portal-hoarding.webp" alt="Highway hoarding about 2.4:1" loading="lazy" ><figcaption>Highway hoarding about 2.4:1</figcaption></figure><figure style=""><img class="zoom" src="assets/portal-art-hoarding.webp" alt="Hoarding artwork, flat" loading="lazy" ><figcaption>Hoarding artwork, flat</figcaption></figure></div>
+<div class="grid g2" style="margin-top:22px;align-items:center"><figure style=""><img class="zoom" src="assets/portal-gate.webp" alt="Gate fascia about 4:1" loading="lazy" ><figcaption>Gate fascia about 4:1</figcaption></figure><figure style=""><img class="zoom" src="assets/portal-art-gate.webp" alt="Gate fascia artwork, flat" loading="lazy" ><figcaption>Gate fascia artwork, flat</figcaption></figure></div></div></section>
+<footer><div class="wrap"><p>Isapur Industrial Park brand kit, concept stage for board review. All mockups are visualisations: the logo is the supplied artwork, unchanged. Phone numbers shown as 98XXX XXXXX are placeholders. Competitor details are read from field photographs and public listings and are not verified. Satellite imagery: Esri, Maxar, Earthstar Geographics. Prepared November 2026.</p></div></footer>
+<script>
+document.addEventListener('click',e=>{const i=e.target.closest('img.zoom');if(!i)return;const d=document.createElement('dialog');
+d.innerHTML='<img src="'+i.currentSrc+'" alt="">';document.body.appendChild(d);d.showModal();d.addEventListener('click',()=>{d.close();d.remove()})});
+</script></body></html>

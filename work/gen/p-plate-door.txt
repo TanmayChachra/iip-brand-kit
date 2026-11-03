@@ -1,0 +1,5 @@
+﻿Use your built-in image generation tool to create ONE image, then copy it to D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\work\gen\plate-door.png and print the final path.
+
+Portrait 4:5 minimalist architectural photograph, a conceptual advertising background plate. A huge, plain, matte stone-grey concrete wall fills the frame. In the lower centre there is one tall narrow rectangular doorway, with bright neutral white daylight flooding through it from the other side. A single small person in a dark suit, seen from behind, walks toward the doorway, tiny in the frame for scale. The wall above the doorway is completely empty and smooth, leaving a large clean area for headline text. Calm, quiet, premium, lots of empty space. Realistic photograph, neutral true colours, matte surfaces, fine film grain, no glow, no lens flare, no bokeh, no warm orange grade. No text, no logos, no signs anywhere.
+
+IMPORTANT: after generating, locate the generated image file on disk (it is saved under C:\Users\anshc\.codex\generated_images) and use Copy-Item with that file path to copy it. Do NOT base64-encode the image or pass image data on the command line.

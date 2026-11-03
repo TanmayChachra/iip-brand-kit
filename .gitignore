@@ -13,3 +13,7 @@ work/gen/*.png
 work/gen/*.log
 work/gen/*.err
 work/__pycache__/
+work/b2/
+work/mock2/
+work/concept/
+work/gen/*.jpg
