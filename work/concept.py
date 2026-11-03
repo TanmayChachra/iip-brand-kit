@@ -1,4 +1,4 @@
-"""Concept route: conceptual adverts. AI makes the empty photographic plate only; logo and all words are set exactly."""
+﻿"""Concept route: conceptual adverts. AI makes the empty photographic plate only; logo and all words are set exactly."""
 import base64, io, sys, pathlib
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -29,9 +29,8 @@ def steps_poster(w=1000, h=1250):
  <div style="position:absolute;left:70px;top:250px;width:640px;color:#15171A">
   <div style="font-weight:300;font-size:74px;line-height:1.08;letter-spacing:-.01em">Every factory<br>begins with<br><b style="font-weight:700">one step.</b></div>
   <div style="margin-top:34px;width:84px;height:7px;background:{B.RED}"></div>
-  <div style="margin-top:30px;font-weight:600;font-size:18px;letter-spacing:.36em">ISAPUR INDUSTRIAL PARK</div>
-  <div style="margin-top:10px;font:500 26px Hind;color:#4a4946">हर कारखाने की शुरुआत, एक क़दम से।</div></div>
- <div style="position:absolute;right:60px;bottom:48px;font:600 16px Inter;letter-spacing:.24em;color:#fff">{B.PHONE}</div></div>"""
+  <div style="margin-top:30px;font-weight:600;font-size:18px;letter-spacing:.36em">ISAPUR INDUSTRIAL PARK</div></div>
+ <div style="position:absolute;right:60px;bottom:48px;font:600 16px Inter;letter-spacing:.24em;color:#fff">9837057800  |  9219549800</div></div>"""
 
 
 def build_poster(w=1000, h=1250):
@@ -52,9 +51,8 @@ def door_poster(w=1000, h=1250):
  <img src="{B.LOGO}" style="position:absolute;left:70px;top:64px;width:120px">
  <div style="position:absolute;left:0;right:0;top:230px;text-align:center;color:#fff">
   <div style="font-weight:300;font-size:150px;letter-spacing:-.01em;line-height:1">Step in.</div>
-  <div style="margin-top:34px;font-weight:600;font-size:18px;letter-spacing:.36em">ISAPUR INDUSTRIAL PARK</div>
-  <div style="margin-top:12px;font:500 26px Hind;opacity:.9">अंदर आइए, यहीं से शुरू करें।</div></div>
- <div style="position:absolute;right:60px;bottom:48px;font:600 16px Inter;letter-spacing:.24em;color:#fff">{B.PHONE}</div></div>"""
+  <div style="margin-top:34px;font-weight:600;font-size:18px;letter-spacing:.36em">ISAPUR INDUSTRIAL PARK</div></div>
+ <div style="position:absolute;right:60px;bottom:48px;font:600 16px Inter;letter-spacing:.24em;color:#fff">9837057800  |  9219549800</div></div>"""
 
 
 def steps_wide():
@@ -97,3 +95,4 @@ def main(names):
 
 if __name__ == "__main__":
     main(sys.argv[1:] or list(POSTERS))
+

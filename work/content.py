@@ -1,6 +1,6 @@
-"""All words and numbers for the site. No em dashes anywhere."""
+﻿"""All words and numbers for the site. No em dashes anywhere."""
 
-PHONE = "98XXX XXXXX"
+PHONE = "9837057800  |  9219549800"
 ADDRESS = "Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022"
 
 KITS = {
@@ -138,3 +138,4 @@ SOURCES = [
         ("Modinagar (Wikipedia), Bhojpur exit of the Delhi-Meerut Expressway", "https://en.wikipedia.org/wiki/Modinagar"),
         ("Satellite imagery: Esri World Imagery", "https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9")]),
 ]
+

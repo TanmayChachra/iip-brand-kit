@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IIP process</title><meta name="robots" content="noindex"><link rel="icon" href="assets/iip-logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Hind:wght@400;500;600;700&family=Teko:wght@500;600;700&family=Yatra+One&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F6F4EF;--ink:#15131A;--mut:#5E5B66;--line:#DAD6CC;--card:#fff;--yel:#FEF102;--max:1180px}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--paper:#121016;--ink:#F1EFEA;--mut:#A29FAA;--line:#2E2B35;--card:#1A1720}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 'Hind','Segoe UI',system-ui,sans-serif}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:8px;padding-bottom:8px}
+nav.top a{text-decoration:none;font-size:14px;font-weight:600;padding:7px 12px;border-radius:99px;color:var(--mut)}
+nav.top a.on,nav.top a:hover{background:var(--ink);color:var(--paper)}
+nav.top .brand{display:flex;align-items:center;gap:8px;margin-right:10px;padding:0;color:var(--ink)}nav.top .brand img{height:32px;width:32px}
+nav.top .brand:hover{background:none;color:var(--ink)}
+h1,h2,h3{font-family:'Archivo','Hind',sans-serif;line-height:1.1;margin:0 0 .4em;letter-spacing:-.015em}
+h1{font-size:clamp(34px,6vw,68px);font-weight:900}h2{font-size:clamp(26px,3.6vw,40px);font-weight:800}h3{font-size:20px;font-weight:800}
+p{margin:0 0 1em}.lead{font-size:clamp(18px,2.2vw,22px);color:var(--mut);max-width:760px}
+.kick{font:700 12px 'Archivo';letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+section{padding:56px 0;border-top:1px solid var(--line)}section.first{border-top:0}
+.grid{display:grid;gap:20px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}.g4.keep2{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card.flat{padding:0;overflow:hidden}
+figure{margin:0}figcaption{font-size:13px;color:var(--mut);margin-top:8px}
+.zoom{cursor:zoom-in;border-radius:10px}
+.pill{display:inline-block;font:700 12px 'Archivo';letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mut)}
+.pill.dk{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.note{border-left:4px solid var(--yel);background:color-mix(in srgb,var(--yel) 18%,var(--card));padding:14px 18px;border-radius:0 12px 12px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{font:700 12px 'Archivo';letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.scroll{overflow-x:auto}
+.sw{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}.sw .c{height:110px;display:flex;align-items:flex-end;padding:10px;font:700 13px 'Archivo'}.sw .m{padding:10px 12px;font-size:13px}
+.sw .m b{display:block;font-size:15px}
+.bar{display:flex;height:34px;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.dots{display:flex;gap:4px;margin:6px 0}.dots i{width:14px;height:14px;border-radius:50%;background:var(--line);display:block}.dots i.f{background:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}@media(max-width:860px){.hero{grid-template-columns:1fr}}
+.kitcard{display:block;text-decoration:none;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--card);transition:transform .2s}.kitcard:hover{transform:translateY(-4px)}
+.kitcard .t{padding:18px 20px 22px}.kitcard img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stat{font:900 44px 'Archivo';line-height:1}.stat small{display:block;font:500 14px 'Hind';color:var(--mut);margin-top:6px}
+.chips{display:flex;gap:4px;flex-wrap:wrap}.chip{width:26px;height:26px;border-radius:6px;border:1px solid rgba(0,0,0,.15)}
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:96vh}dialog::backdrop{background:rgba(0,0,0,.82)}dialog img{max-height:92vh;border-radius:8px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+.sizes{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}.sizes figure{flex:0 0 auto}
+.kitband{padding:70px 0 54px}
+.donts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:860px){.donts{grid-template-columns:1fr 1fr}}
+.dont{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center;font-size:13px}.dont .t{height:120px;display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:8px}
+.dont .t img{max-height:100px;width:auto}.dont .x{position:absolute;top:0;right:0;background:#d4202a;color:#fff;border-radius:50%;width:22px;height:22px;font:700 14px/22px 'Archivo'}
+.stage{padding:26px;border-radius:18px;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px}
+
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;counter-reset:s}
+@media(max-width:860px){.flow{grid-template-columns:1fr 1fr}}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.step .n{font:900 28px 'Archivo';line-height:1}.step.done{border-color:#2f7d4f}.step.done .n{color:#2f7d4f}
+.step.now{border:2px solid var(--ink)}.step.now .n{color:#d6311f}.step .st{position:absolute;top:12px;right:12px;font:700 10px 'Archivo';letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.mood{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.mood .t{padding:14px 16px}.mood h3{font-size:18px;margin:0 0 4px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-top:14px}summary{cursor:pointer;font:800 18px 'Archivo'}
+</style></head><body>
+<nav class="top"><div class="wrap"><a class="brand" href="index.html"><img src="assets/iip-logo.webp" alt="IIP"><b>IIP Brand Kit</b></a><a class="" href="index.html">Home</a><a class="on" href="process.html">Process</a><a class="" href="research.html">Research</a><a class="" href="site.html">Site</a><a class="" href="routes.html">Routes</a><a class="" href="kit-quiet.html">Quiet</a><a class="" href="kit-ink.html">Ink</a><a class="" href="boards.html">Boards</a><a class="" href="concept.html">Concept</a><a class="" href="decide.html">Decide</a></div></nav>
+<header class="wrap" style="padding-top:56px;padding-bottom:24px"><div class="kick">Process</div><h1>How studios do it, and where we are.</h1><p class="lead">Discover, research, strategise, explore widely, narrow with the client, build, test in context, hand over. Feedback gates sit between rounds.</p></header>
+<section class="first"><div class="wrap"><div class="flow"><div class="step done"><div class="st">done</div><div class="n">1</div><h3 style="margin:8px 0 4px;font-size:17px">Brief and audit</h3><p style="margin:0;font-size:14px;color:var(--mut)">Logo, files, photos, what the board decides.</p></div><div class="step done"><div class="st">done</div><div class="n">2</div><h3 style="margin:8px 0 4px;font-size:17px">Research</h3><p style="margin:0;font-size:14px;color:var(--mut)">Kit anatomy, Indian brands, road, satellite, competitors.</p></div><div class="step done"><div class="st">done</div><div class="n">3</div><h3 style="margin:8px 0 4px;font-size:17px">Strategy</h3><p style="margin:0;font-size:14px;color:var(--mut)">Recognisable from afar with almost no words.</p></div><div class="step done"><div class="st">done</div><div class="n">4</div><h3 style="margin:8px 0 4px;font-size:17px">Territories</h3><p style="margin:0;font-size:14px;color:var(--mut)">Eight moodboards. Two chosen.</p></div><div class="step now"><div class="st">in progress</div><div class="n">5</div><h3 style="margin:8px 0 4px;font-size:17px">Build kits</h3><p style="margin:0;font-size:14px;color:var(--mut)">Quiet and Ink: logo rules, colour, type, boards, hoarding, gate.</p></div><div class="step now"><div class="st">in progress</div><div class="n">6</div><h3 style="margin:8px 0 4px;font-size:17px">Test in context</h3><p style="margin:0;font-size:14px;color:var(--mut)">Exact artwork on your real photos at the competitor board size.</p></div><div class="step next"><div class="st">next</div><div class="n">7</div><h3 style="margin:8px 0 4px;font-size:17px">Guidelines and rollout</h3><p style="margin:0;font-size:14px;color:var(--mut)">Rules, print specs, phases, budget structure.</p></div><div class="step next"><div class="st">next</div><div class="n">8</div><h3 style="margin:8px 0 4px;font-size:17px">Handover</h3><p style="margin:0;font-size:14px;color:var(--mut)">Print masters, editable files, vendor brief.</p></div></div>
+<div class="grid g2" style="margin-top:20px"><div class="card"><h3>Next feedback gate</h3><ol><li>Clean boards or proof lines (Section 80, Zila Panchayat map)?</li><li>Quiet or Ink as the main, the other as the night option?</li><li>Which poles first, and how many?</li></ol></div>
+<div class="card"><h3>Sources</h3><ul><li><a href="https://www.canny-creative.com/blog/branding-process-successful-business-branding/" target="_blank" rel="noopener">Canny Creative: 10-step branding process</a></li><li><a href="https://justcreative.com/brand-strategy-design-process/" target="_blank" rel="noopener">JUST Creative: brand strategy and design process</a></li><li><a href="https://www.brandyhq.com/blog/building-a-startup-branding-agency-a-step-by-step-guide" target="_blank" rel="noopener">Brandy HQ: step-by-step agency guide</a></li><li><a href="https://www.prosemedia.com/vertical-tab-groups/our-branding-process-from-discovery-to-delivery" target="_blank" rel="noopener">Prose Media: discovery to delivery</a></li></ul></div></div>
+<h2 style="margin-top:36px">Change log</h2><div class="card"><table><tr><td style='width:90px'><b>4 Nov</b></td><td>Round 3: Quiet and Ink only. Boards now match the competitor board size and shape on the pole. English only, real phone numbers, proof-line variants. Site rebuilt as multiple pages.</td></tr><tr><td style='width:90px'><b>4 Nov</b></td><td>Eight moodboards generated. Doorway, serif, mono, one-colour and editorial parked or dropped.</td></tr><tr><td style='width:90px'><b>3 Nov</b></td><td>Round 2: minimal kits, concept route, references sorted.</td></tr><tr><td style='width:90px'><b>2 Nov</b></td><td>Round 1 (loud colour directions) rejected.</td></tr></table></div></div></section>
+<footer><div class="wrap"><p>Isapur Industrial Park brand kit. Last updated 04 Nov 2026. Mockups are visualisations: the logo is the supplied artwork, unchanged, and all text on boards is set exactly. Claims such as Section 80 and the Zila Panchayat map approval are as stated by the owner and must be matched to documents before print. Competitor details are read from field photographs and public listings and are not verified. Satellite imagery: Esri, Maxar, Earthstar Geographics.</p></div></footer>
+<script>
+document.addEventListener('click',e=>{const i=e.target.closest('img.zoom');if(!i)return;const d=document.createElement('dialog');
+d.innerHTML='<img src="'+i.currentSrc+'" alt="">';document.body.appendChild(d);d.showModal();d.addEventListener('click',()=>{d.close();d.remove()})});
+</script></body></html>

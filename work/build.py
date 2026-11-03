@@ -313,7 +313,7 @@ def research_page():
     anatomy = [("Strategy", "Who it is for, what it stands for, one sentence of positioning.", "Yes, one page", "Brand archaeology, long surveys"),
                ("Logo system", "Primary version, clear space, minimum size, backgrounds, misuse.", "Yes", "Redrawing the logo (not allowed here)"),
                ("Colour", "Values for screen and print, usage balance, contrast pairs.", "Yes", "Ten-shade palettes"),
-               ("Typography", "Two typefaces at most, Hindi and English behaviour, hierarchy.", "Yes", "Full font licensing detail"),
+               ("Typography", "Two typefaces at most, one language (English), hierarchy.", "Yes", "Full font licensing detail"),
                ("Graphic devices", "The one or two recurring shapes or patterns that make the brand recognisable.", "Yes", "Icon libraries"),
                ("Voice", "How it speaks: sentence length, language mix, a line bank.", "Yes", "Full tone-of-voice manual"),
                ("Applications", "Real examples at real scale: boards, hoardings, gate, paper, phone.", "Yes, the heart of the pitch", "Every possible item"),
@@ -321,7 +321,7 @@ def research_page():
     rows = "".join(f"<tr><td><b>{a}</b></td><td>{b}</td><td>{c}</td><td style='color:var(--mut)'>{d}</td></tr>" for a, b, c, d in anatomy)
     cases = [
         ("McDonald's India", "A fixed visual core, local everything else.", "The arches, the red and yellow, packaging and store layout stay uniform, while the menu and communication are localised. Trade press records that early on the arches meant nothing to Indian customers, so signs needed words like 'Family Restaurant'.", "Keep the logo and colour identical everywhere; let words and offers flex."),
-        ("Bata India", "Colour taken straight from the logo, then repeated until it is the shop.", "Red and white stores mirror the logo, and the name is written in Hindi, Bengali, Odia and other scripts where Bata trades. Trust compounds over decades.", "Write the name in Hindi as well as English, and keep one colour pair as the brand's skin."),
+        ("Bata India", "Colour taken straight from the logo, then repeated until it is the shop.", "Red and white stores mirror the logo, and the name is written in Hindi, Bengali, Odia and other scripts where Bata trades. Trust compounds over decades.", "Keep one colour pair as the brand's skin."),
         ("boAt", "Sells identity, not specifications.", "Cases describe a brand built on lifestyle, a named community ('boAtheads'), influencers and bold youth-led design rather than technical talk.", "Give the road a voice and a community word; do not list features on a board."),
         ("Kofi Kafi", "One saturated colour, one face, hyper-local naming.", "No published case study was found. From your photograph: a single deep blue light-box, a white wordmark with a smile curve, the outlet named after the place ('Vishwavidyalay'), the menu visible through the glass. We treat this as an observation, not research.", "One colour, one symbol, name the place. A board you can recognise from the far end of the street."),
     ]
@@ -337,7 +337,7 @@ def research_page():
 <div class="grid g4 keep2">{"".join(f'<div class="card"><div class="stat">{i}</div><h3 style="margin-top:8px">{h}</h3><p style="margin:0;color:var(--mut);font-size:15px">{t}</p></div>' for i,(h,t) in enumerate([("The situation","The road, the competitors, the gap."),("The directions","Three ideas, each with a one-line reason."),("The proof","Real photos, true scale, measured colour."),("The decision","Scorecard, size question, phases, tiers.")],1))}</div>
 <p style="margin-top:18px;color:var(--mut)">What a pitch should not claim: approvals, utilities, road widths, plot availability, prices or investment returns that have not been signed off. This deck uses none.</p></div></section>
 <section><div class="wrap"><div class="kick">3 · Rooted brands</div><h2>Four Indian brands and the mechanic each shows</h2><div class="grid g2">{cases_html}</div>
-<div class="card" style="margin-top:20px"><h3>Five mechanics we applied to IIP</h3><ol><li><b>Own a colour</b> nobody around you owns (Jamun, Gulaal).</li><li><b>One symbol</b>, never redrawn: the rosette stays exactly as drawn.</li><li><b>One repeated sentence</b> that people can say back to you.</li><li><b>Say it in Hindi</b> and write the name in both scripts.</li><li><b>Consistent placement:</b> the same board at the same pole height, at every pole.</li></ol></div></div></section>
+<div class="card" style="margin-top:20px"><h3>Five mechanics we applied to IIP</h3><ol><li><b>Own a look</b> nobody around you owns: white space or a dark board (Quiet, Ink).</li><li><b>One symbol</b>, never redrawn: the rosette stays exactly as drawn.</li><li><b>One repeated sentence</b> that people can say back to you.</li><li><b>Say it plainly</b>: short English lines, the name large.</li><li><b>Consistent placement:</b> the same board at the same pole height, at every pole.</li></ol></div></div></section>
 <section><div class="wrap"><div class="kick">4 · How this was made</div><h2>Method and honesty notes</h2>
 <div class="grid g2"><div class="card"><ul><li>The logo is the supplied artwork, cleaned to a transparent master. Nothing redrawn.</li><li>Every board, hoarding and gate is exact artwork placed into photographs, so the logo and text are never re-drawn by AI.</li><li>The blank scenes (hoarding, gate) were generated with ChatGPT image generation from your own roadside photo as the lighting reference, with a neutral-light, unedited-phone-photo prompt, then the artwork was warped into the blank panel keeping the panel's own shading.</li><li>The pole mockups use your own photographs at true scale (pole face about 10 inch).</li><li>Colour distance is measured with CIEDE2000 on colours sampled from your photographs.</li></ul></div>
 <div class="card"><ul><li>Public search found no authoritative description of IIP or its Phase 1 and Phase 2. We used the brief and the Google Maps listing.</li><li>Competitor claims (approvals, prices, road widths) are what their boards say; none verified.</li><li>No cost figures are quoted because none were supplied; the decision page gives structure and cost drivers.</li></ul></div></div></div></section>
@@ -370,7 +370,7 @@ def site_page():
 <section><div class="wrap"><div class="kick">Colour audit</div><h2>What is already taken</h2>
 <div class="grid g3"><div class="card"><h3>The environment</h3><p style="color:var(--mut);font-size:14px">Dominant colours sampled from the photos.</p>{"".join(f'<p style="margin:10px 0 4px"><b>{n}</b></p>{ch(c)}' for n, c in AN["env"].items())}</div>
 <div class="card"><h3>Competitor boards</h3>{"".join(f'<p style="margin:10px 0 4px"><b>{n}</b></p>{ch(c)}' for n, c in AN["comp"].items())}</div>
-<div class="card"><h3>What nobody uses</h3><ul><li>Violet or purple</li><li>Rani or magenta pink</li><li>Warm ivory with a heavy black frame</li><li>White space</li><li>A symbol other than a monogram or a house icon</li><li>Hindi as the main language of the headline, except SHD</li></ul></div></div>
+<div class="card"><h3>What nobody uses</h3><ul><li>Generous empty space</li><li>Charcoal or near-black boards</li><li>A thin frame and one rule instead of stamps and badges</li><li>A symbol other than a monogram or a house icon</li><li>Boards with only the name and phone numbers</li></ul></div></div>
 <div class="note" style="margin-top:22px"><b>Pattern across every competitor:</b> a rendered gate or township image, a price or approval badge, two phone numbers, navy, gold or red. Copy density is high, so on a pole at 40 km/h only the phone numbers are readable. That is the gap: IIP can be recognised from far away because it carries almost no copy.</div></div></section>"""
     return shell("site.html", "IIP site and competitors", body)
 
@@ -428,4 +428,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
