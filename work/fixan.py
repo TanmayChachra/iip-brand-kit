@@ -1,0 +1,12 @@
+s = open('analysis.py', encoding='utf-8').read()
+s = s.replace("from sklearn.cluster import KMeans", "from scipy.cluster.vq import kmeans2")
+s = s.replace("""    km = KMeans(k, n_init=4, random_state=1).fit(px)
+    cnt = np.bincount(km.labels_)
+    order = np.argsort(-cnt)
+    return [tuple(int(v) for v in km.cluster_centers_[i]) for i in order]""",
+"""    np.random.seed(1)
+    cen, lbl = kmeans2(px.astype(float), k, minit='++', seed=1)
+    cnt = np.bincount(lbl, minlength=k)
+    order = np.argsort(-cnt)
+    return [tuple(int(v) for v in cen[i]) for i in order if cnt[i] > 0]""")
+open('analysis.py', 'w', encoding='utf-8').write(s)

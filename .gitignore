@@ -1,0 +1,15 @@
+00_Brand_Kit_Project/
+IIP Assets/
+competitor-boards*.jpeg
+work/src/
+work/boards/
+work/wide/
+work/mock/
+work/shots/
+work/logo/*.png
+work/logo/*.jpg
+work/logo/*.svg
+work/gen/*.png
+work/gen/*.log
+work/gen/*.err
+work/__pycache__/
