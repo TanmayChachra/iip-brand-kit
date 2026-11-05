@@ -145,9 +145,9 @@ def hoarding_wide():
     b = sunburst(1780, 400, 430, C["mist"]) + sunburst(1780, 400, 430, "none", C["line"], 4)
     s, wd = lockup_horizontal(90, 215, 260, uid="hw"); b += s
     b += f'<rect x="{1010 - 3}" y="190" width="6" height="330" fill="{C["charcoal"]}" fill-opacity=".25"/>'
-    b += tag3(1080, 290, 108, "start")
-    b += proof(1000, 560, 34)
-    b += phones(1000, 650, 74)
+    b += tag3(1080, 245, 96, "start")
+    b += proof(1000, 585, 32)
+    b += phones(1000, 664, 70)
     b += stripe(0, 705, W, 45, 40)
     return svg(W, H, b, "40ft", "15ft", "Hoarding 40 x 15 ft (8:3)", C["white"])
 
