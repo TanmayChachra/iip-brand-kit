@@ -1,0 +1,23 @@
+{
+  "$description": "ISAPUR INDUSTRIAL PARK design tokens. Single source of truth. Change a value here and re-run Brand-Kit/_build/build_kit.py to regenerate every asset.",
+  "color": {
+    "white":    {"value": "#FFFFFF", "use": "Primary board and page background"},
+    "charcoal": {"value": "#111827", "use": "Text, contrast, wordmark"},
+    "yellow":   {"value": "#FFD600", "use": "Highlight, stripe, CTA (the badge artwork keeps its own #FEF102)"},
+    "red":      {"value": "#E53935", "use": "Accent line and highlight only"},
+    "green":    {"value": "#0F4D3A", "use": "Secondary: stripe, sustainability badge"},
+    "mist":     {"value": "#F2F4F6", "use": "Surfaces, panels, subtle sunburst"},
+    "gray":     {"value": "#6B7280", "use": "Secondary text"},
+    "line":     {"value": "#E5E7EB", "use": "Hairlines"}
+  },
+  "font": {
+    "display": {"family": "Montserrat", "weights": [500, 600, 800], "use": "Headlines, signage, advertising"},
+    "text":    {"family": "Inter", "weights": [400, 500, 600], "use": "Subheads, body, digital"}
+  },
+  "logo": {
+    "badge-colors": {"yellow": "#FEF102", "red": "#EE1D23", "green": "#00A54F", "note": "Measured from the supplied artwork. Do not retint the badge."},
+    "clear-space": "0.25 x badge width on every side",
+    "min-size": {"print": "30 mm wide (full lockup)", "digital": "120 px wide", "badge-only": "16 px"}
+  },
+  "layout": {"safe-margin": "6% of the shorter side", "max-words-on-board": 7}
+}
