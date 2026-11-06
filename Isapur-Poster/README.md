@@ -33,6 +33,8 @@ VectorCraft (installed from github.com/storytold/vectorcraft v0.21.1, SHA256 ver
 
 - 2026-11-06 (round 3): fixed SVG that would not open in strict editors (duplicate attributes, `_build/fix_round3.py`). Bottom row now: Manufacturing, Power, Highway Connectivity, Waste Water Drainage, Street Lighting (new lamp icon), Planted Greenery. Straight-line note removed from the expressway stat. Files renumbered, PDF first.
 
+- 2026-11-06 (round 4): top facts are now a 3 x 2 grid (`_build/grid_3x2.py`, canvas 1827 x 2290). Row 1: Acres, Zilla Panchayat, Section 80 Legally Compliant. Row 2: 50 ft roads, plot size, Delhi-Meerut Expressway 4 km. Previous one-row version: `_archive/v09_before-3x2-grid.svg`.
+
 ## Honest limits
 - The logo is a trace of a JPEG, not the designer's original vector. Edges are clean, the thin die-cut outline of the star is not included. Use the original vector for very large print if it exists.
 - The warehouse image is raster (embedded WEBP crop). It cannot be vectorized meaningfully.
