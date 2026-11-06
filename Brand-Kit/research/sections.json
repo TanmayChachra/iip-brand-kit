@@ -1,0 +1,329 @@
+[
+ {
+  "id": "01-story",
+  "title": "Brand story, mission and positioning",
+  "why": "Everything else (voice, imagery, claims) is judged against it. Guides open with it.",
+  "contains": [
+   "Why the park exists",
+   "who it is for (local factory owners",
+   "SME manufacturers)",
+   "what it promises",
+   "one-line positioning",
+   "values"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/",
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template",
+   "https://www.yotpo.com/glossary/what-is-a-brand-book/"
+  ]
+ },
+ {
+  "id": "02-logo",
+  "title": "Logo system",
+  "why": "The most copied and most misused asset.",
+  "contains": [
+   "Primary lockup",
+   "horizontal and stacked",
+   "badge-only",
+   "wordmark",
+   "mono and reversed",
+   "clear space",
+   "minimum size"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://www.4over4.com/content-hub/stories/brand-guidelines-checklist",
+   "https://www.centricdxb.com/insights/elements-brand-style-guide",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/"
+  ]
+ },
+ {
+  "id": "03-logo-misuse",
+  "title": "Logo do and do not",
+  "why": "Minimum set of any guide: stops stretching, recolouring, effects.",
+  "contains": [
+   "Wrong colours",
+   "stretch",
+   "outline",
+   "shadow",
+   "low-contrast backgrounds"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://www.centricdxb.com/insights/elements-brand-style-guide",
+   "https://www.teamlewis.com/asia/magazine/the-essentials-of-brand-guidelines-and-why-you-should-care/",
+   "https://www.4over4.com/content-hub/stories/brand-guidelines-checklist"
+  ]
+ },
+ {
+  "id": "04-colour",
+  "title": "Colour system",
+  "why": "Recognition from afar; printers need exact codes.",
+  "contains": [
+   "Primary",
+   "secondary",
+   "neutral",
+   "HEX",
+   "RGB",
+   "CMYK",
+   "Pantone",
+   "usage ratio",
+   "contrast rules"
+  ],
+  "iip_status": "partial",
+  "sources": [
+   "https://www.4over4.com/content-hub/stories/brand-guidelines-checklist",
+   "https://www.wearetenet.com/blog/brand-guideline-elements",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/"
+  ]
+ },
+ {
+  "id": "05-type",
+  "title": "Typography",
+  "why": "Keeps every page and post looking like one brand.",
+  "contains": [
+   "Headline and body fonts",
+   "weights",
+   "type scale",
+   "fallback fonts",
+   "licence",
+   "where to download"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://www.centricdxb.com/insights/elements-brand-style-guide",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/",
+   "https://aytm.com/post/developing-brand-identity-guidelines-part-2"
+  ]
+ },
+ {
+  "id": "06-voice",
+  "title": "Voice and tone",
+  "why": "Most skipped section, most needed once several people post.",
+  "contains": [
+   "Personality",
+   "words we use and avoid",
+   "tone by situation",
+   "example captions",
+   "English only rule"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template",
+   "https://papertiger.com/posts/united-by-design-crafting-a-brand-book-that-inspires-teams",
+   "https://blog.hootsuite.com/social-media-style-guide"
+  ]
+ },
+ {
+  "id": "07-imagery",
+  "title": "Photography and imagery",
+  "why": "Sets the look of every photo; stock and AI treatment rules.",
+  "contains": [
+   "Subjects",
+   "light",
+   "framing",
+   "real vs AI imagery",
+   "do and do not",
+   "crop rules for the sunburst mask"
+  ],
+  "iip_status": "partial",
+  "sources": [
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/",
+   "https://www.4over4.com/content-hub/stories/brand-guidelines-checklist",
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template"
+  ]
+ },
+ {
+  "id": "08-icons",
+  "title": "Iconography and illustration",
+  "why": "Fast scanning on boards and posts.",
+  "contains": [
+   "Line style",
+   "stroke",
+   "grid",
+   "full set",
+   "usage"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template",
+   "https://www.centricdxb.com/insights/elements-brand-style-guide"
+  ]
+ },
+ {
+  "id": "09-graphic",
+  "title": "Graphic elements and patterns",
+  "why": "Brand device that works when the logo is small.",
+  "contains": [
+   "Sunburst",
+   "tri-colour stripe",
+   "accent line",
+   "diagonal panels",
+   "pattern",
+   "badges"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://www.wearetenet.com/blog/brand-guideline-elements",
+   "https://www.centricdxb.com/insights/elements-brand-style-guide"
+  ]
+ },
+ {
+  "id": "10-layout",
+  "title": "Layout and grid",
+  "why": "Lets non designers build on brand pages.",
+  "contains": [
+   "Margins",
+   "grid",
+   "hierarchy",
+   "max words per board",
+   "safe areas"
+  ],
+  "iip_status": "partial",
+  "sources": [
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/"
+  ]
+ },
+ {
+  "id": "11-apps",
+  "title": "Applications",
+  "why": "Shows rules in real use.",
+  "contains": [
+   "Pole board",
+   "hoarding",
+   "gate",
+   "stationery",
+   "ID",
+   "helmet",
+   "vest",
+   "vehicle",
+   "sales kit"
+  ],
+  "iip_status": "have",
+  "sources": [
+   "https://www.manypixels.co/blog/post/best-brand-guide-examples",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/",
+   "https://aytm.com/post/developing-brand-identity-guidelines-part-2"
+  ]
+ },
+ {
+  "id": "12-signage",
+  "title": "Signage and site hoarding specs",
+  "why": "Park specific: sizes, materials, illumination.",
+  "contains": [
+   "Sizes",
+   "materials",
+   "viewing distance",
+   "entry totem",
+   "directory board",
+   "wayfinding arrows",
+   "contrast"
+  ],
+  "iip_status": "partial",
+  "sources": [
+   "https://www.ipswichplanning.com.au/__data/assets/pdf_file/0009/239688/ICC-Signage-Manual.pdf",
+   "https://cdn.csu.edu.au/__data/assets/pdf_file/0005/3799274/201211-22488-CSU_SIGNAGE_GUIDELINES-03.pdf",
+   "https://edqdad.dsdip.qld.gov.au/developmentAssessments/attachments/view/27064/",
+   "https://bewonder.co.uk/?p=5251",
+   "https://idsignsystems.com/?p=16140",
+   "https://www.brand.airbus.com/en/guidelines/on-site/signage"
+  ]
+ },
+ {
+  "id": "13-social",
+  "title": "Social media guidelines",
+  "why": "Next phase. Platform consistency.",
+  "contains": [
+   "Profile image",
+   "cover sizes",
+   "post templates",
+   "hashtags",
+   "emoji",
+   "posting rules",
+   "reply rules",
+   "AI guardrails"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://blog.hootsuite.com/social-media-style-guide",
+   "https://www.socialpilot.co/de/blog/social-media-style-guide",
+   "https://www.ucl.ac.uk/brand-and-experience/brand/using-our-brand/social-media/how-brand-your-social-media-channel",
+   "https://www.justwords.in/blog/social-media-style-guide/",
+   "https://checklist.design/brand/social-media"
+  ]
+ },
+ {
+  "id": "14-digital",
+  "title": "Digital and web presence",
+  "why": "Google profile, website, WhatsApp need the same identity.",
+  "contains": [
+   "Favicon",
+   "Google Business profile",
+   "WhatsApp profile",
+   "email signature",
+   "link in bio",
+   "domain"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://checklist.design/brand/social-media",
+   "https://www.ucl.ac.uk/brand-and-experience/brand/using-our-brand/social-media/how-brand-your-social-media-channel"
+  ]
+ },
+ {
+  "id": "15-motion",
+  "title": "Motion",
+  "why": "Rare but growing; for reels and status videos.",
+  "contains": [
+   "Timing",
+   "easing",
+   "logo reveal",
+   "transitions"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template"
+  ]
+ },
+ {
+  "id": "16-assets",
+  "title": "File formats and asset library",
+  "why": "People must find the right file.",
+  "contains": [
+   "SVG",
+   "PDF",
+   "PNG",
+   "WEBP",
+   "source files",
+   "naming",
+   "version numbers",
+   "fonts folder"
+  ],
+  "iip_status": "partial",
+  "sources": [
+   "https://www.4over4.com/content-hub/stories/brand-guidelines-checklist",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/"
+  ]
+ },
+ {
+  "id": "17-governance",
+  "title": "Governance and updates",
+  "why": "Prevents drift after handover.",
+  "contains": [
+   "Owner",
+   "approval",
+   "change log",
+   "contact",
+   "who may use the logo (brokers",
+   "buyers)"
+  ],
+  "iip_status": "missing",
+  "sources": [
+   "https://fabrikbrands.com/insights/branding/best-branding-book-template",
+   "https://papertiger.com/posts/united-by-design-crafting-a-brand-book-that-inspires-teams",
+   "https://brandyhq.com/blog/how-to-create-brand-guidelines/"
+  ]
+ }
+]

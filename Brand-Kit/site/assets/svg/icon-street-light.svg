@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="256px" height="256px">
+<title>street-light</title>
+
+<g transform="translate(0.00 0.00) scale(1.0000)" fill="none" stroke="#111827" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><title>street-light</title><path d="M12 42V18c0-6 4-9 10-9h10"/><path d="M28 9h12l-2 6H30z"/><path d="M35 19v4M30 18l-2 4M40 18l2 4"/><path d="M8 42h10"/></g>
+</svg>

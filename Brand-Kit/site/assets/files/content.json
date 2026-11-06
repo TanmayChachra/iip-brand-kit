@@ -1,0 +1,69 @@
+{
+  "$description": "Words and numbers used on every asset. Edit here, then re-run build_kit.py.",
+  "name": "ISAPUR",
+  "descriptor": "INDUSTRIAL PARK",
+  "tagline": [
+    "A Modern",
+    "Industrial",
+    "Address."
+  ],
+  "tagline_one_line": "A Modern Industrial Address.",
+  "phones": [
+    "9837057800",
+    "9219549800"
+  ],
+  "address": "Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022",
+  "cta": [
+    "INDUSTRIAL PLOTS",
+    "AVAILABLE NOW"
+  ],
+  "proof_lines": [
+    "Section 80 approved",
+    "Map passed by Zila Panchayat"
+  ],
+  "show_proof": false,
+  "features": [
+    [
+      "industrial-plots",
+      "INDUSTRIAL",
+      "PLOTS"
+    ],
+    [
+      "wide-roads",
+      "WIDE",
+      "ROADS"
+    ],
+    [
+      "power-supply",
+      "RELIABLE",
+      "POWER"
+    ],
+    [
+      "water-supply",
+      "WATER",
+      "SUPPLY"
+    ],
+    [
+      "connectivity",
+      "CONNECTIVITY",
+      ""
+    ]
+  ],
+  "note": "Proof lines come from the owner and must be matched to documents before print.",
+  "taglines": {
+    "rule": "Adaptive, not fixed. Pick the line that fits the creative. Never combine two lines on one asset.",
+    "approved": [
+      "A Modern Industrial Address.",
+      "The groundwork for growth."
+    ],
+    "parked": [
+      "Where Industry Moves Forward.",
+      "Built for Business. Designed for Growth.",
+      "The Next Address of Industry.",
+      "Space for What's Next."
+    ],
+    "rejected": [
+      "Plug in. Build up."
+    ]
+  }
+}

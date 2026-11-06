@@ -1,7 +1,0 @@
-Use your built-in image generation tool to create ONE image, then copy it to D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\work\gen\scene-hoarding-a.png and print the final path.
-
-The attached photo is a real roadside photo from Modinagar-Hapur road, Uttar Pradesh, India. Match its exact look: flat hazy daylight, neutral white balance, slightly desaturated dusty colours, plain pale blue-grey sky, no warm tint.
-
-Scene: an unedited, documentary-style phone photograph (24mm main camera of a mid-range Android phone, standing at the roadside, slightly off-level) of a large empty highway hoarding: a rectangular steel-frame billboard about 3:1 landscape, blank matte WHITE panel with faint panel seams and slightly dirty galvanised frame, on a single thick steel pole, beside a two-lane Indian state highway with dusty verge, litter, a concrete electric pole, overhead wires, a few neem and eucalyptus trees, a truck and a tempo far away. Camera sees the board almost straight on, slightly from the left, so the panel is a mild trapezoid.
-
-Realism rules (very important): neutral cool-to-neutral midday daylight, hazy sky, NOT golden hour, NO warm orange grade, NO glow, NO bloom, NO HDR look, NO bokeh or soft focus, NO vignette, NO painterly or smooth AI skin-like surfaces. Everything in sharp deep focus like a phone photo, with fine sensor noise, mild JPEG compression, real dust on the road, uneven concrete, rust streaks. Colours must be true to life, not saturated. No text anywhere in the image, no logos, nothing printed on the board.
