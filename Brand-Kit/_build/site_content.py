@@ -3,13 +3,21 @@ Truth labels: DRAFT = proposed by us, owner to confirm. OWNER = owner stated. UN
 
 # asset tuples: (stem, folder, label, note)  folder = subfolder under live/ and outlined/
 LOGO = [
-    ("logo-primary-vertical", "01_Logo", "Primary lockup (vertical)", "Default. Badge over ISAPUR over INDUSTRIAL PARK with red accent line."),
-    ("logo-horizontal", "01_Logo", "Horizontal lockup", "Wide spaces: letterhead, web header, hoarding corners."),
+    ("logo-primary-vertical", "01_Logo", "Primary lockup (vertical)", "Default. Badge over ISAPUR over INDUSTRIAL PARK with the red accent line."),
+    ("logo-horizontal", "01_Logo", "Horizontal lockup", "Badge, rule, ISAPUR over INDUSTRIAL PARK. Wide spaces: letterhead, web header, hoarding corners."),
     ("logo-badge-only", "01_Logo", "Badge only", "Icon, favicon, social avatar, helmet, stamps."),
-    ("logo-badge-mono-green", "01_Logo", "Badge, one colour (deep green)", "Traced from the supplied dark green emblem. For embossing, single colour print, stamps."),
+]
+MONO = [
     ("logo-mono-black", "01_Logo", "Mono black", "Newspaper, fax, one colour print."),
     ("logo-reversed-on-charcoal", "01_Logo", "Reversed on charcoal", "Dark backgrounds."),
-    ("logo-clear-space-guide", "01_Logo", "Clear space guide", "Keep X (a quarter of the badge width) free on every side."),
+    ("logo-badge-mono-green", "01_Logo", "Badge, one colour (deep green)", "Traced from the supplied emblem. Stamps, embossing, one colour print."),
+    ("logo-monotone-use", "01_Logo", "Monotone use sheet", "Black, deep green and white versions."),
+]
+GUIDES = [
+    ("logo-clear-space-vertical", "01_Logo", "Clear space, vertical", "Keep X free, X is a quarter of the badge width."),
+    ("logo-clear-space-horizontal", "01_Logo", "Clear space, horizontal", "Same X rule."),
+    ("logo-minimum-size", "01_Logo", "Minimum size", "Print and screen limits."),
+    ("logo-misuse-sheet", "01_Logo", "Misuse", "What not to do."),
 ]
 PATTERN = [
     ("sunburst-outline", "02_Pattern", "Sunburst outline", "Base shape. Subtle background element, corner crop."),
@@ -20,36 +28,33 @@ PATTERN = [
     ("diagonal-panels", "02_Pattern", "Diagonal panels", "Layer or section divider."),
     ("cta-badges", "02_Pattern", "Call to action badges", "Plots Available Now, Growth Ready, Strategic Location, Sustainable Development."),
 ]
-ICONS_BASE = [(f"icon-{n}", "03_Icons", n.replace("-", " ").title(), "") for n in
-              ["industrial-plots", "wide-roads", "power-supply", "water-supply", "connectivity", "sustainable", "secure", "business-support", "plug-and-play", "growth"]]
-ICONS_EXTRA = [(f"icon-{n}", "03_Icons", t, "Added for the park claims shown on the poster.") for n, t in
-               [("expressway", "Expressway"), ("highway-truck", "Highway and trucks"), ("drainage", "Waste water drainage"),
-                ("street-light", "Street lighting"), ("planted-greenery", "Planted greenery"), ("section-80", "Section 80 compliance")]]
-STATIONERY = [
-    ("business-card-front", "04_Templates", "Business card, front", "3.5 x 2 in"), ("business-card-back", "04_Templates", "Business card, back", "Deep green back."),
-    ("letterhead-A4", "04_Templates", "Letterhead", "A4"), ("id-card-54x86mm", "04_Templates", "ID card", "54 x 86 mm"),
-]
-SIGNAGE = [
-    ("pole-board-20x32in-clean", "04_Templates", "Pole board, clean", "20 x 32 in, matches competitor boards. No photo."),
-    ("pole-board-20x32in-photo", "04_Templates", "Pole board with photo", "Replace the AI placeholder with a real site photo."),
-    ("street-pole-24x36in-2to3", "04_Templates", "Street pole board 2:3", "24 x 36 in"),
-    ("hoarding-40x20ft", "04_Templates", "Hoarding 40 x 20 ft", "Confirm panel size with the media owner."),
-    ("hoarding-40x15ft", "04_Templates", "Hoarding 40 x 15 ft", "Wide format."),
-]
+ICON_NAMES = [("industrial-plots","Industrial plots"),("wide-roads","Wide roads"),("power-supply","Power supply"),("water-supply","Water supply"),("connectivity","Connectivity"),
+ ("sustainable","Sustainable"),("secure","Secure"),("business-support","Business support"),("plug-and-play","Plug and play"),("growth","Growth"),
+ ("expressway","Expressway"),("highway-truck","Highway and trucks"),("drainage","Waste water drainage"),("street-light","Street lighting"),("planted-greenery","Planted greenery"),
+ ("section-80","Section 80"),("acres","Acres"),("zilla-panchayat","Zilla Panchayat"),("plot-layers","Plot layers"),("manufacturing","Manufacturing"),
+ ("warehouse","Warehouse"),("location-pin","Location"),("phone","Phone"),("site-visit","Site visit")]
+ICONS_ALL = [(f"icon-{n}", "03_Icons", t_, "") for n, t_ in ICON_NAMES]
+STATIONERY = [(s, "06_Stationery", l, n) for s, l, n in [
+    ("card-front-A", "Business card front, vertical lockup", "3.5 x 2 in"), ("card-front-B", "Business card front, horizontal lockup", "3.5 x 2 in"),
+    ("card-back", "Business card back", "Deep green back"), ("letterhead-A4", "Letterhead", "A4"), ("envelope-DL", "Envelope DL", "220 x 110 mm"),
+    ("envelope-C5", "Envelope C5", "229 x 162 mm"), ("id-card-front", "ID card front", "54 x 86 mm"), ("id-card-back", "ID card back", "54 x 86 mm"),
+    ("notepad-A5", "Notepad cover", "A5"), ("folder-cover-A4", "Folder cover", "A4"), ("doc-header-strip", "Quotation and invoice header", "Strip"),
+    ("email-signature", "Email signature", "600 px"), ("helmet-decals", "Helmet decals", "Badge decal sizes"), ("vest-layout", "Safety vest layout", "Chest badge and back lockup"),
+    ("catalogue-cover-1080", "WhatsApp catalogue cover", "1080 x 1080")]]
+SIGNAGE = [(s, "04_Templates", l, n) for s, l, n in [
+    ("sign-pole-20x32in-A", "Pole board A", "20 x 32 in, tagline A Modern Industrial Address."), ("sign-pole-20x32in-B", "Pole board B", "20 x 32 in, tagline The Groundwork for Growth."),
+    ("sign-street-pole-24x36in", "Street pole board", "24 x 36 in"), ("sign-hoarding-40x20ft-A", "Hoarding 40 x 20 ft, A", "Confirm panel size with the media owner"),
+    ("sign-hoarding-40x20ft-B", "Hoarding 40 x 20 ft, B", "Tagline B"), ("sign-hoarding-40x15ft", "Hoarding 40 x 15 ft", "Wide format"),
+    ("sign-gate-fascia-4to1", "Gate fascia", "4:1"), ("sign-pole-20x32in-A-print", "Pole board A, print file", "1 in bleed and crop marks"),
+    ("sign-hoarding-40x20ft-A-print", "Hoarding A, print file", "3 in bleed and crop marks")]]
 SOCIAL = [
     ("avatar-badge-1080", "05_Social", "Profile picture", "Badge on white, circle safe."),
     ("avatar-badge-sunburst-1080", "05_Social", "Profile picture, sunburst", "Badge on a soft sunburst."),
     ("cover-3to1-1500x500", "05_Social", "Cover banner 3:1", "X header, LinkedIn and Facebook with safe crops."),
     ("post-4x5-1080x1350", "05_Social", "Post 4:5", "Instagram and Facebook portrait."),
-    ("social-post-1080x1080", "04_Templates", "Post 1:1", "Square."),
-    ("whatsapp-status-1080x1920", "04_Templates", "WhatsApp status and story 9:16", "Also Instagram story and reel cover."),
+    ("whatsapp-status-1080x1920", "05_Social", "WhatsApp status and story 9:16", "Also Instagram story and reel cover."),
 ]
-
-MOCKS = [("stationery-letterhead-envelope", "Stationery"), ("business-card", "Business card"), ("id-card", "ID card"), ("safety-helmet", "Safety helmet"),
-         ("safety-vest", "Safety vest"), ("wall-sign", "Wall sign"), ("envelope-sunburst", "Envelope with sunburst"),
-         ("pole-board-street", "Street pole board"), ("hoarding-billboard", "Hoarding"), ("gate-fascia", "Gate fascia"), ("boundary-wall", "Boundary wall")]
-SUNMOCK = [("sunburst-image-mask", "Image mask (photos)"), ("sunburst-feature-badge", "Feature badge (icon + text)"),
-           ("sunburst-cta-badge", "CTA badge"), ("sunburst-variations", "Colour variations")]
+CONTEXT = [("pole-board-street", "Street pole board"), ("hoarding-billboard", "Hoarding"), ("gate-fascia", "Gate fascia")]
 
 SOCIAL_SPECS = [  # platform, item, size, note   (typical sizes, reported, re-check before upload)
     ("Instagram", "Profile picture", "320 x 320 shown, upload 1080 x 1080", "Circle crop. Use the badge only."),
@@ -71,22 +76,24 @@ CLAIMS = [  # claim, status, proof to file
     ("Approved by Zilla Panchayat", "OWNER", "Sanctioned map with stamp and number"),
     ("Section 80, legally compliant", "OWNER", "Document that names Section 80, its authority and date"),
     ("50 ft. wide RCC roads", "OWNER", "Layout plan with road widths, dated road photo"),
-    ("4 km to Delhi-Meerut Expressway", "COMPUTED", "Straight-line from an approximate pin. Needs a dated driven distance"),
+    ("4.7 km by road to the Delhi-Meerut Expressway on-ramp", "MEASURED", "Google Maps driving, 2026-11-06. Poster still says 4 km (straight-line), update to match"),
     ("Waste water drainage (naala at the back)", "OWNER", "Dated naala photo, outfall on the plan, pollution board consent"),
     ("Reliable power supply", "OWNER", "Connection or sanctioned load letter"),
     ("Street lighting", "OWNER", "Dated photo of the lit road"),
     ("Planted greenery", "OWNER", "Dated site photos"),
-    ("Warehouse picture on boards", "NOT REAL", "AI generated, not IIP. Replace with a real photo before print"),
+    ("Any warehouse or building picture", "NOT REAL", "No photos exist yet. Never show an AI picture as the park"),
 ]
 
-DISTANCES = [  # to, straight-line, driving
-    ("Delhi-Meerut Expressway (nearest point)", "3.9 km", "not measured"),
-    ("Bhojpur exit (expressway)", "4.3 km", "not measured"),
-    ("Modinagar town centre", "9.3 km", "not measured"),
-    ("Hapur town centre", "13.0 km", "not measured"),
-    ("Shri Haridas Industrial Park (SHD)", "about 0.54 km", "not measured"),
-    ("CKS Industrial Park", "about 0.69 km", "not measured"),
-    ("Atom Industrial Park", "about 3.1 km", "not measured"),
+DISTANCES = [  # to, driving (Google Maps, 2026-11-06), straight-line
+    ("Delhi-Meerut Expressway on-ramp (NE 3, Bhojpur)", "4.7 km, about 8 min", "3.9 km"),
+    ("Modinagar bus stand", "11.4 km, about 28 min", "9.3 km"),
+    ("Hapur bus stand", "13.4 km, about 31 min", "13.0 km"),
+    ("Meerut City railway station", "29.3 km, about 56 min (NE 3, tolls)", ""),
+    ("Ghaziabad railway station", "34.7 km, about 47 min (NE 3, tolls)", ""),
+    ("Anand Vihar ISBT, Delhi", "46.0 km, about 89 min (NE 3, tolls)", ""),
+    ("Shri Haridas (SHD) Industrial Park", "0.65 km, 2 min", "0.54 km"),
+    ("CKS Industrial Park", "0.7 km, 1 min", "0.69 km"),
+    ("Atom Industrial Park", "3.1 km, 4 min", "3.1 km"),
 ]
 COMPETITORS = [
     ("Shri Balaji Industrial Park", "Sarawa bus stand", "Blue gradient and gold type, rendered township, approval stamp, two numbers"),

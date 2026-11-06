@@ -36,7 +36,11 @@ with sync_playwright() as p:
         pg.set_content(html.replace('<?xml version="1.0" encoding="UTF-8"?>', ""))
         pg.wait_for_timeout(150)
         out = PNG / (f.stem + ".png")
-        pg.screenshot(path=str(out), omit_background=("logo-badge" in f.name or "logo-" in f.name and "reversed" not in f.name))
+        for attempt in range(4):                              # Windows sometimes refuses a write for a moment
+            try:
+                pg.screenshot(path=str(out), omit_background=("logo-badge" in f.name or "logo-" in f.name and "reversed" not in f.name)); break
+            except OSError:
+                import time; time.sleep(1.5)
         # vector PDF at true physical size
         wi, hi = to_px(wcss) / 96, to_px(hcss) / 96
         if max(wi, hi) > 200:  # hoarding: cap PDF page at 40in wide, scale down (print at 100%+ from vector)

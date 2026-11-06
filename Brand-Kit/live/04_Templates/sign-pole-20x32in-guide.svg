@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1600" width="20in" height="32in">
+<title>Pole board guide overlay</title>
+
+<rect x="0" y="0" width="1000" height="1600" fill="none" stroke="#111827" stroke-width="1.7"/><rect x="75" y="75" width="850" height="1450" fill="none" stroke="#0F4D3A" stroke-width="1.7" stroke-dasharray="11.4 7.1"/><path d="M500.0 0V1600M0 800.0H1000" stroke="#E53935" stroke-width="0.9" stroke-dasharray="5.7 5.7"/><text x="83.57" y="100.71" font-family="Inter, sans-serif" font-weight="600" font-size="15.71" letter-spacing="0.63" fill="#0F4D3A" >SAFE MARGIN 1.5 in</text>
+</svg>

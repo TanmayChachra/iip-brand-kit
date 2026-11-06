@@ -3,11 +3,10 @@
   "name": "ISAPUR",
   "descriptor": "INDUSTRIAL PARK",
   "tagline": [
-    "A Modern",
-    "Industrial",
-    "Address."
+    "The Groundwork",
+    "for Growth."
   ],
-  "tagline_one_line": "A Modern Industrial Address.",
+  "tagline_one_line": "The Groundwork for Growth.",
   "phones": [
     "9837057800",
     "9219549800"
@@ -54,7 +53,7 @@
     "rule": "Adaptive, not fixed. Pick the line that fits the creative. Never combine two lines on one asset.",
     "approved": [
       "A Modern Industrial Address.",
-      "The groundwork for growth."
+      "The Groundwork for Growth."
     ],
     "parked": [
       "Where Industry Moves Forward.",
@@ -64,6 +63,17 @@
     ],
     "rejected": [
       "Plug in. Build up."
-    ]
+    ],
+    "alt_lines": {
+      "A Modern Industrial Address.": [
+        "A Modern",
+        "Industrial",
+        "Address."
+      ],
+      "The Groundwork for Growth.": [
+        "The Groundwork",
+        "for Growth."
+      ]
+    }
   }
 }

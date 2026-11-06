@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-06",
+  "tool": "Google Maps directions, driving mode, read in Chrome at about 6:50 PM IST (live traffic included, times vary)",
+  "origin_used": "Pin 28.7812,77.6559. Maps snapped it to the address 'Turbostar Engineering Industries Private Limited, Khasra No.167, Plot D-11, Yusufpur Isapur'. Checked against Maps listings: Isapur Industrial Park Phase 1 (28.78090,77.65588, Hapur-Modinagar Rd near Indian Oil), Phase 2 (28.78165,77.65564), Phase 3 (28.78655,77.65830, Isapur-Kharkoda Rd). Distances from Phase 3 differ by 0.1 to 1.2 km.",
+  "results": [
+    {
+      "destination": "Delhi-Meerut Expressway entry (Get on NE 3 in Bhojpur)",
+      "driving_km": 4.7,
+      "minutes": 8,
+      "straight_line_km": 3.9,
+      "note": "From the Maps step list of the Meerut route: 'Get on NE 3 in Bhojpur, 8 min (4.7 km)'. 4.8 km from the Phase 1 listing, 4.6 km from the Phase 3 listing. This is the driving distance to the on-ramp. Straight-line 3.9 km is to the nearest expressway geometry, 4.3 km to the Bhojpur exit node."
+    },
+    {
+      "destination": "Modinagar Bus Stand",
+      "driving_km": 11.4,
+      "minutes": 28,
+      "straight_line_km": 9.3,
+      "note": "Fastest now due to traffic, via Modinagar Rd. Another route 11.4 km 37 min."
+    },
+    {
+      "destination": "Hapur Bus Stand",
+      "driving_km": 13.4,
+      "minutes": 31,
+      "straight_line_km": 13.0,
+      "note": "Via Modinagar Rd. Another route 13.5 km 32 min."
+    },
+    {
+      "destination": "Meerut City Railway Station",
+      "driving_km": 29.3,
+      "minutes": 56,
+      "straight_line_km": null,
+      "note": "Via NE 3, tolls apply, heavier traffic than usual."
+    },
+    {
+      "destination": "Ghaziabad Railway Station",
+      "driving_km": 34.7,
+      "minutes": 47,
+      "straight_line_km": null,
+      "note": "Via NE 3, tolls apply."
+    },
+    {
+      "destination": "Anand Vihar ISBT, Delhi",
+      "driving_km": 46.0,
+      "minutes": 89,
+      "straight_line_km": null,
+      "note": "Via NE 3, tolls apply. Alternative 47.3 km 88 min via Modinagar Rd and NE 3."
+    },
+    {
+      "destination": "SHD Industrial Park (Maps place 28.7781,77.6604)",
+      "driving_km": 0.65,
+      "minutes": 2,
+      "straight_line_km": 0.54,
+      "note": "From Phase 1 listing coordinates. Query 'Shri Haridas Industrial Park' matched the wrong place (Sri Ram industrial park), so the SHD INDUSTRIAL PARK listing was used."
+    },
+    {
+      "destination": "CKS Industrial Park (Maps place 28.7767,77.6611)",
+      "driving_km": 0.7,
+      "minutes": 1,
+      "straight_line_km": 0.69,
+      "note": "Fastest route, usual traffic."
+    },
+    {
+      "destination": "Atom Industrial Park",
+      "driving_km": 3.1,
+      "minutes": 4,
+      "straight_line_km": 3.1,
+      "note": "Fastest route, usual traffic via Modinagar Rd."
+    }
+  ],
+  "discarded": [
+    "Routes to 'Bhojpur Toll Plaza 1' (22.9 km) and a toll plaza search result (16.9 km): the destination is on the expressway itself, so the number is a ride along NE 3, not the distance to the entry."
+  ]
+}

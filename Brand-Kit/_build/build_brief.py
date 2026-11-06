@@ -13,11 +13,11 @@ sw = "".join(f'<div class="s"><i style="background:{v["value"]}"></i><b>{k.title
 QUESTIONS = [
     ("Logo", "Does an original vector file exist (from the designer or printer)? The kit uses a trace of the supplied artwork.", "Before very large or close print"),
     ("Approvals", "Copy of the Zilla Panchayat sanctioned map (number, date) and the document behind 'Section 80'. What exact wording is legally right?", "Before any approval claim is printed"),
-    ("Distances", "Driven distance from the gate to the Bhojpur exit and the expressway, plus Modinagar and Hapur. Current figures are straight-line.", "Before 'km away' goes on a hoarding"),
+    ("Poster wording", "The poster says 4 km (straight-line). By road it is 4.7 km. Which wording do you want, 5 km or 4.7 km?", "Before the poster is printed"),
     ("Drainage", "Photo of the naala, where the park outfall meets it, and any pollution control board consent.", "Before drainage is advertised"),
     ("Facilities", "Which of these exist now: street lights, 24x7 security and CCTV, gated entry, truck parking, water supply, power load? How many acres are developed?", "To choose true bottom-row claims"),
-    ("Site photos", "A shoot of the real gate, roads, lights, trees, plots. The warehouse picture is AI generated.", "Replaces the placeholder"),
-    ("Company", "Registered company or developer name, RERA or other registration if any, GST for invoices. Link with Shri Hari Das (SHD), if any?", "Footer, legal line, letterhead"),
+    ("Site photos", "A shoot of the real gate, roads, lights, trees, plots, drainage. No photos exist yet.", "Boards and posts with real proof"),
+    ("Registrations", "Any RERA or other registration number and GST for invoices that may appear on stationery. The developer name stays unpublished.", "Legal line, letterhead"),
     ("Plots", "Plot sizes, price per sq.yard or 'on request', phase 1 and phase 2 scope, launch date.", "Offer posts and plot list"),
     ("Online", "Preferred handle, website domain, email, Google Business and WhatsApp numbers already owned.", "Social and web setup"),
     ("Print", "Panel sizes and media owners for poles and hoardings, printer, material, budget.", "Final print files"),
@@ -27,19 +27,19 @@ body = f"""<main style="display:block;max-width:1000px;margin:0 auto;padding:30p
 <p class="lead">A short brief of who we are, how we look and sound, where the brand shows up, and what we still need from you. Full rules are in the <a href="index.html">brand kit</a> and the <a href="assets/files/ISAPUR-Brand-Book.pdf">brand book PDF</a>.</p></div></div>
 <section><header><span class="num">1</span><h2>The brand on one page</h2></header>
 <div class="two"><div><h4>Idea</h4><p>A modern industrial address on the Hapur-Modinagar Road for local manufacturers: clear plots, real facilities, one number to call.</p>
-<h4>Taglines (adaptive, pick one per creative)</h4><p class="big">A Modern Industrial Address.</p><p class="big">The groundwork for growth.</p>
+<h4>Taglines (adaptive, pick one per creative)</h4><p class="big">A Modern Industrial Address.</p><p class="big">The Groundwork for Growth.</p>
 <h4>Type</h4><p><b>Montserrat</b> for headlines and signage, <b>Inter</b> for body. Free fonts.</p><h4>Rules</h4><ul><li>The logo is never changed.</li><li>English only. Maximum 7 words on a board.</li><li>No claim without a document on file.</li></ul></div>
 <div><h4>Colour</h4><div class="sw" style="grid-template-columns:repeat(3,1fr)">{sw}</div></div></div></section>
 <section><header><span class="num">2</span><h2>Who, where, how to reach</h2></header>
 <div class="tw"><table><tbody><tr><th>Audience</th><td>Local factory owners and small industrial buyers (primary). Warehouse and logistics operators, investors, brokers (to confirm).</td></tr>
 <tr><th>Address</th><td>{e(CT['address'])}</td></tr><tr><th>Phones</th><td>{" | ".join(CT['phones'])}</td></tr>
-<tr><th>Location</th><td>About 3.9 km (straight-line) to the Delhi-Meerut Expressway, 4.3 km to the Bhojpur exit, 9.3 km to Modinagar, 13 km to Hapur. Driven distances are not yet measured.</td></tr>
+<tr><th>Location</th><td>By road (Google Maps): 4.7 km to the Delhi-Meerut Expressway on-ramp, 11.4 km to Modinagar bus stand, 13.4 km to Hapur bus stand.</td></tr>
 <tr><th>Competitors</th><td>Shri Balaji, Shri Haridas (SHD), Shivansh, CKS, Atom, Mahamaya. Their boards use navy, gold or red with dense copy. IIP uses white space, one logo, one line.</td></tr></tbody></table></div></section>
 <section><header><span class="num">3</span><h2>Where the brand appears</h2></header>
-<div class="grid"><figure class="card"><div class="thumb"><img src="assets/ref/pole-board-street.webp" alt="Pole board"></div><figcaption><b>Pole boards</b><span>20 x 32 in, same size as competitors.</span></figcaption></figure>
-<figure class="card"><div class="thumb"><img src="assets/ref/hoarding-billboard.webp" alt="Hoarding"></div><figcaption><b>Hoardings</b><span>40 x 20 ft and 40 x 15 ft.</span></figcaption></figure>
+<div class="grid"><figure class="card"><div class="thumb"><img src="assets/p/sign-pole-20x32in-A.webp" alt="Pole board"></div><figcaption><b>Pole boards</b><span>20 x 32 in, same size as competitors.</span></figcaption></figure>
+<figure class="card"><div class="thumb"><img src="assets/p/sign-hoarding-40x20ft-A.webp" alt="Hoarding"></div><figcaption><b>Hoardings</b><span>40 x 20 ft and 40 x 15 ft.</span></figcaption></figure>
 <figure class="card"><div class="thumb"><img src="assets/ref/poster.webp" alt="Poster"></div><figcaption><b>Poster</b><span>Facts grid and facilities row.</span></figcaption></figure>
-<figure class="card"><div class="thumb"><img src="assets/ref/safety-helmet.webp" alt="Helmet"></div><figcaption><b>Stationery, ID, workwear</b><span>Card, letterhead, ID, helmet, vest.</span></figcaption></figure></div></section>
+<figure class="card"><div class="thumb"><img src="assets/p/card-front-A.webp" alt="Business card"></div><figcaption><b>Stationery, ID, workwear</b><span>Card, letterhead, ID, helmet, vest.</span></figcaption></figure></div></section>
 <section><header><span class="num">4</span><h2>Next phase: social and online presence</h2></header>
 <ol><li><b>Week 1.</b> Confirm handles, set profile picture (badge), cover and bio on Instagram, Facebook, LinkedIn, YouTube, WhatsApp Business, Google Business Profile.</li>
 <li><b>Week 1 to 2.</b> Site photo shoot (gate, 50 ft road, lights, greenery, drainage, plots, drone).</li><li><b>Week 2 onward.</b> Three posts a week: one fact, one proof, one action. Status and story daily for WhatsApp.</li>

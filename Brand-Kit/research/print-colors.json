@@ -1,0 +1,227 @@
+{
+ "profile": "US Web Coated SWOP (RSWOP.icm), relative colorimetric",
+ "note": "Planning values. Always approve a printer proof; offset, flex and vinyl each print a little differently.",
+ "colors": {
+  "white": {
+   "hex": "#FFFFFF",
+   "rgb": [
+    255,
+    255,
+    255
+   ],
+   "cmyk": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "on_press_hex": "#FFFFFF",
+   "delta_e": 0.0,
+   "verdict": "close match"
+  },
+  "charcoal": {
+   "hex": "#111827",
+   "rgb": [
+    17,
+    24,
+    39
+   ],
+   "cmyk": [
+    7,
+    8,
+    6,
+    99
+   ],
+   "on_press_hex": "#1E201F",
+   "delta_e": 10.4,
+   "verdict": "noticeably duller on press, ask for a proof"
+  },
+  "yellow": {
+   "hex": "#FFD600",
+   "rgb": [
+    255,
+    214,
+    0
+   ],
+   "cmyk": [
+    1,
+    12,
+    96,
+    1
+   ],
+   "on_press_hex": "#FBD22E",
+   "delta_e": 2.0,
+   "verdict": "close match"
+  },
+  "red": {
+   "hex": "#E53935",
+   "rgb": [
+    229,
+    57,
+    53
+   ],
+   "cmyk": [
+    1,
+    97,
+    91,
+    2
+   ],
+   "on_press_hex": "#DF3834",
+   "delta_e": 1.3,
+   "verdict": "close match"
+  },
+  "green": {
+   "hex": "#0F4D3A",
+   "rgb": [
+    15,
+    77,
+    58
+   ],
+   "cmyk": [
+    71,
+    39,
+    61,
+    58
+   ],
+   "on_press_hex": "#3F4A3E",
+   "delta_e": 12.3,
+   "verdict": "noticeably duller on press, ask for a proof"
+  },
+  "mist": {
+   "hex": "#F2F4F6",
+   "rgb": [
+    242,
+    244,
+    246
+   ],
+   "cmyk": [
+    5,
+    3,
+    3,
+    0
+   ],
+   "on_press_hex": "#F4F1F1",
+   "delta_e": 2.5,
+   "verdict": "close match"
+  },
+  "gray": {
+   "hex": "#6B7280",
+   "rgb": [
+    107,
+    114,
+    128
+   ],
+   "cmyk": [
+    52,
+    38,
+    23,
+    21
+   ],
+   "on_press_hex": "#767580",
+   "delta_e": 4.3,
+   "verdict": "slightly duller on press"
+  },
+  "line": {
+   "hex": "#E5E7EB",
+   "rgb": [
+    229,
+    231,
+    235
+   ],
+   "cmyk": [
+    9,
+    5,
+    4,
+    0
+   ],
+   "on_press_hex": "#ECEAEB",
+   "delta_e": 2.3,
+   "verdict": "close match"
+  },
+  "badge yellow": {
+   "hex": "#FEF102",
+   "rgb": [
+    254,
+    241,
+    2
+   ],
+   "cmyk": [
+    2,
+    0,
+    98,
+    0
+   ],
+   "on_press_hex": "#FBED22",
+   "delta_e": 1.2,
+   "verdict": "close match"
+  },
+  "badge red": {
+   "hex": "#EE1D23",
+   "rgb": [
+    238,
+    29,
+    35
+   ],
+   "cmyk": [
+    0,
+    100,
+    97,
+    2
+   ],
+   "on_press_hex": "#E0332F",
+   "delta_e": 2.7,
+   "verdict": "close match"
+  },
+  "badge green": {
+   "hex": "#00A54F",
+   "rgb": [
+    0,
+    165,
+    79
+   ],
+   "cmyk": [
+    81,
+    1,
+    91,
+    1
+   ],
+   "on_press_hex": "#2DA24C",
+   "delta_e": 1.8,
+   "verdict": "close match"
+  },
+  "dark gray": {
+   "hex": "#6B7280",
+   "rgb": [
+    107,
+    114,
+    128
+   ],
+   "cmyk": [
+    52,
+    38,
+    23,
+    21
+   ],
+   "on_press_hex": "#767580",
+   "delta_e": 4.3,
+   "verdict": "slightly duller on press"
+  },
+  "light gray": {
+   "hex": "#E6E8EB",
+   "rgb": [
+    230,
+    232,
+    235
+   ],
+   "cmyk": [
+    8,
+    5,
+    4,
+    0
+   ],
+   "on_press_hex": "#EDEBEB",
+   "delta_e": 2.3,
+   "verdict": "close match"
+  }
+ }
+}

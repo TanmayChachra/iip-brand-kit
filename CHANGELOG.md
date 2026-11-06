@@ -1,0 +1,22 @@
+# Changelog (newest first, written for the owner)
+
+## 2026-11-06, round 7
+- Brand kit v1.1: story approved (developer not named), new accurate clear space, minimum size, monotone and misuse sheets, print colour guide (CMYK from an ICC profile), print guide teaching bleed and trim with marked diagrams.
+- All signage redone (pole boards A and B, street pole, hoardings, gate, print files with bleed) and all stationery redone (cards in two wordmark styles, letterhead, envelopes, ID, notepad, folder, helmet, vest and more), plus a flat-lay and six realistic context mockups.
+- Icons: wide-roads restored, 2.4 stroke everywhere, 24 icons. Real sunburst ring and visible pattern.
+- One master SVG: the brand book as 13 editable artboards plus every asset.
+- Driving distances (Google Maps): expressway on-ramp 4.7 km. Poster wording still to decide.
+- Old kit, mockups and exports moved to `Archive/`.
+
+## 2026-11-06, round 6
+- New horizontal logo (badge, rule, ISAPUR over INDUSTRIAL PARK), accurate clear space and minimum size guides, monotone logo use.
+- 24 polished line icons in one style. Real sunburst ring cut from the badge. A visible repeating pattern.
+- Tagline is adaptive: A Modern Industrial Address. / The Groundwork for Growth.
+- Driving distances from Google Maps added to the knowledge file.
+- Project instructions (CLAUDE.md), TODOS and this changelog added so every chat has context.
+
+## 2026-11-06, round 5
+- Brand kit v1.0 page, brand book PDF, brand brief, social templates, central knowledge file, old work archived.
+
+## 2026-11-02 to 2026-11-05
+- Competitor research, moodboards, poster, first brand kit. See `Archive/` and git history.

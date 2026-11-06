@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4000 2000" width="40ft" height="20ft">
+<title>Hoarding guide overlay</title>
+
+<rect x="0" y="0" width="4000" height="2000" fill="none" stroke="#111827" stroke-width="6.9"/><rect x="50" y="50" width="3900" height="1900" fill="none" stroke="#0F4D3A" stroke-width="6.9" stroke-dasharray="45.7 28.6"/><path d="M2000.0 0V2000M0 1000.0H4000" stroke="#E53935" stroke-width="3.4" stroke-dasharray="22.9 22.9"/><text x="84.29" y="152.86" font-family="Inter, sans-serif" font-weight="600" font-size="62.86" letter-spacing="2.51" fill="#0F4D3A" >SAFE MARGIN 6 in</text>
+</svg>

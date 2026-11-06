@@ -64,14 +64,18 @@ def esc(s): return s.replace("&", "&amp;").replace("<", "&lt;")
 
 
 def badge(x, y, size, mono=None, uid="b"):
-    """Traced badge placed with top-left (x,y), width=size. mono=None for full colour, or (base, detail) colours."""
+    """Traced badge placed with top-left (x,y), width=size. mono=None for full colour, or (base, detail) colours.
+    The three badge paths are defined once per file (see svg()) and reused, so files stay small."""
     k = size / BADGE["w"]
     base, red, green = (BADGE["colors"][n] for n in ("base", "red", "green"))
     if mono: base, red, green = mono[0], mono[1], mono[1]
+    u = lambda n, f: f'<use href="#iip-b-{n}" xlink:href="#iip-b-{n}" fill="{f}" fill-rule="evenodd"/>'
+    return (f'<g id="badge-{uid}" transform="translate({x:.2f} {y:.2f}) scale({k:.5f})">{u("base", base)}{u("red", red)}{u("green", green)}</g>')
+
+
+def badge_defs():
     P = BADGE["paths"]
-    return (f'<g id="badge-{uid}" transform="translate({x:.2f} {y:.2f}) scale({k:.5f})">'
-            f'<path d="{P["base"]}" fill="{base}" fill-rule="evenodd"/><path d="{P["red"]}" fill="{red}" fill-rule="evenodd"/>'
-            f'<path d="{P["green"]}" fill="{green}" fill-rule="evenodd"/></g>')
+    return '<defs>' + "".join(f'<path id="iip-b-{n}" d="{P[n]}"/>' for n in ("base", "red", "green")) + '</defs>'
 
 
 def lockup_vertical(cx, y, w, ink=None, mono=None, uid="v", line=None):
@@ -94,20 +98,26 @@ def lockup_vertical(cx, y, w, ink=None, mono=None, uid="v", line=None):
 
 
 def lockup_horizontal(x, y, h, ink=None, mono=None, uid="h", line=None, divider=True):
-    ink = ink or C["charcoal"]; line = line or C["red"]
+    """Horizontal lockup (owner approved layout, round 5): badge | thick rule | ISAPUR over INDUSTRIAL PARK.
+    INDUSTRIAL PARK is tracked so both lines have exactly the same width. No red line unless line is given."""
+    ink = ink or C["charcoal"]
     s = badge(x, y, h, mono, uid)
-    tx = x + h + h * 0.30
-    if divider:
-        s += f'<rect x="{x + h + h * 0.13:.2f}" y="{y + h * 0.1:.2f}" width="{h * 0.012:.2f}" height="{h * 0.8:.2f}" fill="{ink}" fill-opacity=".35"/>'
-        tx = x + h + h * 0.30
-    fs = h * 0.34
-    ty = y + h * 0.56
-    s += text("ISAPUR", tx, ty, fs, "Montserrat-ExtraBold", ink, 0.035)
-    sub = fs * 0.27; sy = ty + sub * 2.0
-    sw = width("INDUSTRIAL PARK", "Montserrat-SemiBold", sub, 0.30)
-    s += text("INDUSTRIAL PARK", tx, sy, sub, "Montserrat-SemiBold", ink, 0.30)
-    s += f'<rect x="{tx:.2f}" y="{sy + sub * 0.75:.2f}" width="{sw:.2f}" height="{sub * 0.13:.2f}" fill="{line}"/>'
-    return s, tx + width("ISAPUR", "Montserrat-ExtraBold", fs, 0.035) - x
+    rx = x + h + h * 0.22
+    s += f'<rect x="{rx:.2f}" y="{y + h * 0.13:.2f}" width="{h * 0.022:.2f}" height="{h * 0.74:.2f}" fill="{ink}"/>'
+    tx = rx + h * 0.26
+    fs = h * 0.40
+    wI = width("ISAPUR", "Montserrat-ExtraBold", fs, 0.02)
+    sub = fs * 0.30
+    base = width("INDUSTRIAL PARK", "Montserrat-SemiBold", sub, 0.0)
+    tr = (wI - base) / (14 * sub)                      # tracking that makes the second line as wide as the first
+    cap1, cap2 = fs * 0.70, sub * 0.70; gap = h * 0.075
+    top = y + h / 2 - (cap1 + gap + cap2) / 2
+    by1 = top + cap1; by2 = by1 + gap + cap2
+    s += text("ISAPUR", tx, by1, fs, "Montserrat-ExtraBold", ink, 0.02)
+    s += text("INDUSTRIAL PARK", tx, by2, sub, "Montserrat-SemiBold", ink, tr)
+    if line:
+        s += f'<rect x="{tx:.2f}" y="{by2 + sub * 0.7:.2f}" width="{wI:.2f}" height="{sub * 0.13:.2f}" fill="{line}"/>'
+    return s, tx + wI - x
 
 
 def stripe(x, y, w, h, skew=None):
@@ -160,5 +170,13 @@ def icon(name, x, y, size, stroke="#111827", sw=2.6):
 
 def svg(w, h, body, width_attr, height_attr, title, bg=None, defs=""):
     r = f'<rect width="{w}" height="{h}" fill="{bg}"/>' if bg else ""
+    if '#iip-b-' in body and 'id="iip-b-base"' not in defs: defs = defs + badge_defs()
     return (f'<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
             f'viewBox="0 0 {w} {h}" width="{width_attr}" height="{height_attr}">\n<title>{esc(title)}</title>{defs}\n{r}\n{body}\n</svg>\n')
+
+# round 5: polished icon set (owner approved style)
+from icons_v2 import ICONS_V2
+ICONS.update(ICONS_V2)
+
+# owner pick: the original wide-roads icon (from the hoarding design) and its 2.4 stroke for every icon
+ICONS["wide-roads"] = '<path d="M14 42L20 6M34 42L28 6"/><path d="M24 8v6M24 20v8M24 34v8"/>'

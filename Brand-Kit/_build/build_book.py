@@ -9,8 +9,8 @@ OUT = SITE / "assets/files/ISAPUR-Brand-Book.pdf"
 CSS = """
 @page{size:A4 landscape;margin:12mm 12mm 14mm}
 html{scroll-behavior:auto}body{display:block;font-size:12px;line-height:1.5}#side{display:none}
-main{max-width:none;padding:0}
-.hero{display:grid;grid-template-columns:90mm 1fr;min-height:176mm;break-after:page;border:0;padding:0;align-content:center}
+main{max-width:none;padding:0;zoom:1.3}
+.hero{display:grid;grid-template-columns:90mm 1fr;min-height:176mm;break-after:page;border:0;padding:0;align-content:center}.hero:before{width:150mm;height:150mm;right:-30mm;top:-20mm;opacity:.5}.hero .bar.big{position:absolute;left:0;right:0;bottom:0;margin:0;height:14px}section .bar{margin-bottom:8px}
 .hero h1{font-size:44px}.hero .btn,.hero p.small{display:none}
 section{break-before:page;padding:0;border:0}section:first-of-type{break-before:auto}
 section header{margin-bottom:6px}section h2{font-size:24px}.lead{font-size:14px;max-width:none}

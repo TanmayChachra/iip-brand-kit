@@ -85,7 +85,7 @@ def patterns():
 
 
 def icons():
-    for n in K.ICONS: put(f"03_Icons/icon-{n}", svg(48, 48, icon(n, 0, 0, 48, C["charcoal"], 2.6), "256px", "256px", n))
+    for n in K.ICONS: put(f"03_Icons/icon-{n}", svg(48, 48, icon(n, 0, 0, 48, C["charcoal"], 2.4), "256px", "256px", n))
 
 
 # ---------------- templates ----------------
@@ -204,9 +204,7 @@ def build_all():
     for outline in (False, True):
         K.MODE["outline"] = outline
         OUTS.clear()
-        logos(); patterns(); icons(); business_cards(); letterhead(); id_card(); social()
-        put("04_Templates/pole-board-20x32in-photo", pole_board(True)); put("04_Templates/pole-board-20x32in-clean", pole_board(False))
-        put("04_Templates/street-pole-24x36in-2to3", street_pole()); put("04_Templates/hoarding-40x20ft", hoarding()); put("04_Templates/hoarding-40x15ft", hoarding_wide())
+        logos(); patterns(); icons()      # round 5: signage, stationery and social now live in build_signage.py, build_stationery.py, build_social.py
         sub = "outlined" if outline else "live"
         for rel, s in OUTS.items():
             p = KIT / sub / (rel + ".svg"); p.parent.mkdir(parents=True, exist_ok=True); p.write_text(s, encoding="utf-8")

@@ -31,8 +31,8 @@ Truth labels used below: **VERIFIED** (read on a primary source or measured), **
 | Phones | 9837057800, 9219549800 | OWNER-STATED (2026-11-02) |
 | Address line used on assets | Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022 | OWNER-STATED location, pin code from public listing (UNVERIFIED) |
 | Nearby village or town names used | Yusufpur Isapur (also written Ishapur), Bhojpur, Modinagar, Hapur, Sarawa | UNVERIFIED spelling variants |
-| Phases | Owner speaks of Phase 1 and Phase 2. No authoritative description found. | UNKNOWN details |
-| Legal registered name, developer entity, any link to "Shri Hari Das" | UNKNOWN. A project called Shri Hari Das Industrial Park (SHD) exists at the same village, treated here as a competitor. | UNKNOWN |
+| Phases | Owner speaks of Phase 1 and Phase 2. Google Maps lists Phase 1, 2 and 3 as separate places. Scope of each is UNKNOWN. | UNKNOWN details |
+| Legal registered name, developer entity | DECISION 2026-11-06: the name is "Isapur Industrial Park" and the developer is NOT revealed anywhere in public material. Link with "Shri Hari Das" is UNKNOWN. A project called Shri Hari Das Industrial Park (SHD) exists at the same village, treated here as a competitor. | UNKNOWN |
 | Website, social handles, email | UNKNOWN (social media phase is next) | UNKNOWN |
 | Business | Industrial plots, 100+ acres, plots from 300 sq.yards (poster claim) | OWNER-STATED, see section 3 |
 | Language | English only. Hindi was tried and rejected by the owner on 2026-11-02 ("i dont think hindi will work at all"). | DECISION |
@@ -42,20 +42,21 @@ Truth labels used below: **VERIFIED** (read on a primary source or measured), **
 IIP Phase 1 is on the Hapur-Modinagar Road at Yusufpur Isapur, near Bhojpur, Modinagar, Ghaziabad district, Uttar Pradesh. Pin used in all maps: lat 28.7812, lon 77.6559 (`work/maps.py`, comment says "approximate, read from Google Maps; verify against imagery"). Estimated accuracy about 200 m. Map centre used for the satellite image: 28.7755, 77.6695.
 
 ### 2.1 Distances from the IIP pin
-**All figures below are straight-line (as the crow flies). No driving distance has been measured or verified.** Road distance will be longer. Date computed: 2026-11-06. Method: haversine from the pin above to OpenStreetMap geometry or town centre coordinates.
+Two kinds of figure. **Driving** distances were read from Google Maps (driving mode, 2026-11-06, about 6:50 PM IST, live traffic, source `Brand-Kit/research/driving-distances.json`). **Straight-line** distances were computed earlier (haversine to OpenStreetMap geometry). The pin (28.7812, 77.6559) is approximate (about 200 m). Maps snapped it to a factory address in Yusufpur Isapur. Maps lists Isapur Industrial Park Phase 1 (28.78090, 77.65588), Phase 2 (28.78165, 77.65564) and Phase 3 (28.78655, 77.65830, Isapur-Kharkoda Rd). Phase 3 distances differ by 0.1 to 1.2 km.
 
-| To | Straight-line | Driving | Source and note |
+| To | Driving (Google Maps) | Straight-line | Note |
 |---|---|---|---|
-| Delhi-Meerut Expressway, nearest point | 3.9 km | UNKNOWN | OpenStreetMap (Overpass) geometry |
-| Delhi-Meerut Expressway "Bhojpur Exit 6" junction (28.7976, 77.6162) | 4.3 km | UNKNOWN | OpenStreetMap node. OSRM routing returned 22.86 km driving, rejected as unreliable (snapped to a motorway ramp). |
-| Modinagar town centre (28.8321, 77.5800) | 9.3 km | UNKNOWN | coordinates approximate |
-| Hapur town centre (28.7306, 77.7759) | 13.0 km | UNKNOWN | coordinates approximate |
-| SHD (Shri Haridas Industrial Park) | about 540 m | UNKNOWN | `work/gen/dist.json` (538 m), pins approximate |
-| CKS Industrial Park | about 690 m | UNKNOWN | `work/gen/dist.json` (689 m) |
-| Atom Industrial Park | about 3.1 km | UNKNOWN | `work/gen/dist.json` (3102 m) |
+| Delhi-Meerut Expressway on-ramp (Get on NE 3 in Bhojpur) | **4.7 km, about 8 min** | 3.9 km nearest expressway point, 4.3 km Bhojpur exit node | Use the driving figure on boards. |
+| Modinagar bus stand | 11.4 km, 28 min | 9.3 km | via Modinagar Rd |
+| Hapur bus stand | 13.4 km, 31 min | 13.0 km | via Modinagar Rd |
+| Meerut City railway station | 29.3 km, 56 min | n/a | via NE 3, tolls |
+| Ghaziabad railway station | 34.7 km, 47 min | n/a | via NE 3, tolls |
+| Anand Vihar ISBT, Delhi | 46.0 km, 89 min | n/a | via NE 3, tolls |
+| SHD Industrial Park | 0.65 km, 2 min | 0.54 km | competitor |
+| CKS Industrial Park | 0.7 km, 1 min | 0.69 km | competitor |
+| Atom Industrial Park | 3.1 km, 4 min | 3.1 km | competitor |
 
-Poster wording in use: "4 km away / Delhi-Meerut Expressway". The 4 km is the straight-line figure. A news report puts a different Modinagar logistics park about 4 km from the expressway (UNVERIFIED, not IIP). No published IIP figure exists.
-**To file:** odometer drive from the gate to the Bhojpur exit and to the expressway; screenshot of Google Maps driving directions with date.
+Poster wording in use: "4 km away / Delhi-Meerut Expressway" is the straight-line figure and understates the 4.7 km drive. Decision pending (see TODOS.md).
 
 ### 2.2 Other location facts
 - The Hapur-Modinagar road runs through Sarawa (bus stand, Shri Balaji board photographed there), Yusufpur Isapur and Bhojpur.
@@ -260,3 +261,5 @@ Delegation rule: lowest-limit model (Claude) does decisions, edits, verification
 - 2026-11-06: File created from project READMEs, tokens, work scripts, docs pages, archived research and decisions of this conversation. Nothing invented; unknowns marked UNKNOWN.
 - 2026-11-06: Tagline made adaptive (two approved lines). New assets: dark green emblem trace, 6 extra icons, 4 social templates, brand kit page `Brand-Kit/site/`. Orchestrator skill updated with the ArtCraft family (on demand only).
 - 2026-11-06: Folders reorganised. Old `work/` moved to `Archive/work-v1/`, old site to `Archive/docs-site-v1/`, PROCESS.md to `Archive/PROCESS-v1.md`. New site in `docs/` (index.html brand kit, brief.html brand brief). Brand book PDF `docs/assets/files/ISAPUR-Brand-Book.pdf`, brief PDF `ISAPUR-Brand-Brief.pdf`. Rebuild with `Brand-Kit/_build/publish.py`. Not pushed to GitHub yet.
+- 2026-11-06 (round 6): Owner feedback applied page by page. Decisions: story approved, developer never revealed; horizontal logo = badge, rule, ISAPUR over INDUSTRIAL PARK (from the owner's image); deep green badge is a monotone variant only; clear space and minimum size guides redrawn accurately; tagline cased "The Groundwork for Growth."; icons redrawn in the park-claims style; ring and pattern rebuilt; old signage, stationery and AI mockups dropped and redone; imagery section is a shoot plan only (no imagery yet); content pillars later with ChatGPT help; hashtags via an Apify actor (key from owner, open todo); presence build is next phase; motion parked; AI-driven assets are phase 3 in `AI-Assets/`; kit keeps a distinctive human-crafted character; driving distances measured on Google Maps; project docs (CLAUDE.md, TODOS.md, CHANGELOG.md) added, modelled on gstack document-release.
+- 2026-11-06 (round 7, built while the owner was away): rebuilt kit v1.1 and brand book per page-by-page feedback. Wide-roads icon restored and 2.4 stroke on all icons (owner request). Signage and stationery redesigned, 6 context mockups (`Brand-Kit/reference/mockups/ctx-*.webp`, pole boards on the owner's real photos, others on AI blank scenes). Master file `Brand-Kit/IIP-master-assets.svg` holds the brand book artboards and all assets. Print colours from ICC conversion in `Brand-Kit/research/print-colors.json`. Old kit moved to `Archive/kit-v1-*`. Nothing pushed to GitHub after round 5; the live site still shows v1.0.
