@@ -134,11 +134,16 @@ def make(v, hero=None):
             elif k == "fill" and val.lower() in ("#fdfdfd", "#ffffff"): e.set(k, v["bg"])
     if hero:
         import base64, io
-        im = Image.open(hero).convert("RGB").resize((1812, 530), Image.LANCZOS); buf = io.BytesIO(); im.save(buf, "WEBP", quality=88)
+        im = Image.open(hero).convert("RGB").resize((1812, 530), Image.LANCZOS)
+        if v.get("invert"):
+            from PIL import ImageOps; im = ImageOps.invert(im)
+        buf = io.BytesIO(); im.save(buf, "WEBP", quality=88)
         hero_img.set("{http://www.w3.org/1999/xlink}href", "data:image/webp;base64," + base64.b64encode(buf.getvalue()).decode())
         hero_img.set("preserveAspectRatio", "xMidYMid slice")
     bgrect = [e for e in layer if e.get("id") == "background"][0]; bgrect.set("fill", v["bg"])
-    if v.get("dark"):  # keep the photo as a clean rounded window
+    if v.get("blend"):
+        hero_g.set("style", f"mix-blend-mode:{v['blend']}")
+    elif v.get("dark"):  # keep the photo as a clean rounded window
         cp = ET.fromstring(f'<clipPath xmlns="{SVGNS}" id="hero-window"><rect x="40" y="1122" width="1747" height="500" rx="30"/></clipPath>')
         layer.insert(0, cp); hero_g.set("clip-path", "url(#hero-window)")
     else:
@@ -176,11 +181,39 @@ def image_variants():
     return out
 
 
+def split_tex(top="#DDE8D8", y=1110, fid="sp"):
+    return (f'<path d="M0 0H{W}V{y - 90}L0 {y + 90}Z" fill="{top}"/>' + grain(0.30, 0.85, "0.35 0.3 0.2", fid, 12))
+
+
+def byid(i): return [v for v in V if v["id"] == i][0]
+
+
+def mixes():
+    H1, A = "hero/", "hero-ai/"
+    def mk(i, name, base, hero, note, **kw):
+        d = dict(byid(base)); d.update(id="mix-" + i, name=name, note=note, hero=str(HERE / hero), **kw); return d
+    return [
+        mk("blueprint-room", "Blueprint room", "02-blueprint-grid", A + "hero-ai-blueprint-line.png", "Hairline grid, Barlow Semi Condensed and the AI line drawing. A survey sheet that happens to sell plots."),
+        mk("blueprint-night", "Blueprint night", "07-deep-green", A + "hero-ai-blueprint-line.png", "Deep green canvas, the line drawing inverted to cream and screen blended in. Feels like a lit drawing board.", invert=True, blend="screen",
+           tex=lambda: grid(color="#FFFFFF", a1=0.06, a2=0.12) + grain(0.22, 0.9, "1 1 1", "gmn", 6)),
+        mk("sun-aerial", "Sun and aerial", "03-sunburst-echo", A + "hero-ai-aerial-layout.png", "Sunburst rays, Poppins and the isometric plot layout. Bright and energetic, the layout is the star."),
+        mk("land-aerial", "Land and layout", "04-contour-land", A + "hero-ai-aerial-layout.png", "Contour lines under the isometric layout, Bricolage Grotesque. The land theme made literal."),
+        mk("concrete-mono", "Brutalist", "05-concrete", H1 + "hero-mono.png", "Concrete grey, Space Grotesk and the charcoal photo. Colour comes only from the badge, CTA and flag."),
+        mk("halftone-golden", "Golden print", "06-halftone-warm", A + "hero-ai-golden-hour.png", "Warm halftone dots, Outfit and the golden hour render. Looks like a screen printed poster."),
+        mk("sand-warm", "Quiet premium", "08-sand-gradient", H1 + "hero-warm-grade.png", "Sand gradient, Red Hat Display and the warm graded photo. The most calm and expensive feeling."),
+        mk("grid-sketch", "Technical sketch", "02-blueprint-grid", H1 + "hero-line-sketch.png", "Grid, Barlow and the local line sketch of the real render. Technical without any AI image."),
+        mk("sunshine", "Sunshine yellow", "03-sunburst-echo", H1 + "hero-original.png", "A pale brand yellow canvas with darker rays, Poppins, original render. The badge colour carried across the whole sheet.",
+           bg="#FFEFA8", leaf="#F7DF86", tex=lambda: rays(color="#F2B705", op=0.20) + grain(0.22, 0.9, "0.5 0.4 0.1", "gsun", 5)),
+        mk("split-sage", "Split sage", "01-bone-paper", H1 + "hero-duotone-green.png", "Sage block over bone with a slanted join (echoing the flag), Archivo and the green duotone photo. Two zones, one calm palette.",
+           tex=lambda: split_tex()),
+    ]
+
+
 def main():
     for d in ("svg", "png", "thumbs"): (HERE / d).mkdir(exist_ok=True)
     with sync_playwright() as p:
         br = p.chromium.launch(); pg = br.new_page(viewport={"width": W, "height": H})
-        for v in V + image_variants():
+        for v in V + image_variants() + mixes():
             s = make(v, v.get("hero")); (HERE / f"svg/{v['id']}.svg").write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + s, encoding="utf-8")
             pg.goto((HERE / f"svg/{v['id']}.svg").as_uri()); pg.wait_for_timeout(1800); pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(600)
@@ -190,7 +223,7 @@ def main():
             im.resize((W // 3, H // 3)).save(HERE / f"thumbs/{v['id']}-s.webp", quality=78, method=6)
             print("ok", v["id"])
         br.close()
-    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants()], open(HERE / "variants.json", "w"), indent=1)
+    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants() + mixes()], open(HERE / "variants.json", "w"), indent=1)
 
 
 if __name__ == "__main__":

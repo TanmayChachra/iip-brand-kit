@@ -16,7 +16,8 @@ def card(v):
 <a class="dl" href="svg/{v['id']}.svg" download>SVG</a> <a class="dl" href="png/{v['id']}.png" download>PNG</a></figcaption></figure>'''
 
 
-cards = "".join(card(v) for v in V if not v["id"].startswith("img-"))
+cards = "".join(card(v) for v in V if v["id"][:3].isdigit())
+mix_cards = "".join(card(v) for v in V if v["id"].startswith("mix-"))
 img_cards = "".join(card(v) for v in V if v["id"].startswith("img-"))
 refs = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(t)}</a></li>' for t, u in REFS)
 page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IIP Poster Lab</title>
@@ -31,6 +32,7 @@ figcaption p{{margin:6px 0 10px;font-size:14px}}.dl{{font-size:13px;margin-right
 <h1>IIP poster lab</h1><p class="lead">Same layout and same text as the final poster. Only the font, background texture and background colour change. Pure white is replaced by warm or tinted bases, and the photo is multiplied into the base so it never sits in a white box. The final poster is untouched.</p>
 <h2>Fonts, textures and colours</h2><div class="grid">{cards}</div>
 <h2>Image experiments</h2><p class="lead">Same bone paper background and same Montserrat and Inter as the final, only the hero picture changes. Cards starting with "AI" are AI generated concepts, not photos of the park. Real site photos replace any of these once the shoot happens.</p><div class="grid">{img_cards}</div>
+<h2>Mix and shuffle</h2><p class="lead">Final round: the best fonts, textures and images crossed with each other. Layout and text are still identical to the final poster.</p><div class="grid">{mix_cards}</div>
 <h2>How to read this</h2><div class="rules"><ul><li>Tap a poster for the full size PNG. SVG files open in a browser or vector app (fonts load from Google Fonts).</li><li>Badge, text, icons and CTA are identical in every card. The brand colours (yellow, red, green) and the thin flag are unchanged.</li><li>Card 09 is the control: the original Montserrat and Inter on bone only, so you can judge what the background alone does.</li><li>Card 07 is the boldest: brand green canvas, cream text, photo as a rounded window.</li><li>Any pick would still need a print test: textures and tints print differently from screens.</li></ul></div>
 <h2>References</h2><ul>{refs}</ul></main></body></html>'''
 (H / "index.html").write_text(page, encoding="utf-8"); print("page ok")

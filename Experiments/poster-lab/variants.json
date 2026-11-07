@@ -178,5 +178,105 @@
   ],
   "bg": "#F4F0E8",
   "note": "AI generated concept: warm golden hour version of the scene."
+ },
+ {
+  "id": "mix-blueprint-room",
+  "name": "Blueprint room",
+  "font": [
+   "Barlow Semi Condensed",
+   "Barlow"
+  ],
+  "bg": "#EEF2EE",
+  "note": "Hairline grid, Barlow Semi Condensed and the AI line drawing. A survey sheet that happens to sell plots."
+ },
+ {
+  "id": "mix-blueprint-night",
+  "name": "Blueprint night",
+  "font": [
+   "Plus Jakarta Sans",
+   "Plus Jakarta Sans"
+  ],
+  "bg": "#0F4D3A",
+  "note": "Deep green canvas, the line drawing inverted to cream and screen blended in. Feels like a lit drawing board."
+ },
+ {
+  "id": "mix-sun-aerial",
+  "name": "Sun and aerial",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#F8F2E2",
+  "note": "Sunburst rays, Poppins and the isometric plot layout. Bright and energetic, the layout is the star."
+ },
+ {
+  "id": "mix-land-aerial",
+  "name": "Land and layout",
+  "font": [
+   "Bricolage Grotesque",
+   "Instrument Sans"
+  ],
+  "bg": "#EEF0E4",
+  "note": "Contour lines under the isometric layout, Bricolage Grotesque. The land theme made literal."
+ },
+ {
+  "id": "mix-concrete-mono",
+  "name": "Brutalist",
+  "font": [
+   "Space Grotesk",
+   "Space Grotesk"
+  ],
+  "bg": "#E7E6E2",
+  "note": "Concrete grey, Space Grotesk and the charcoal photo. Colour comes only from the badge, CTA and flag."
+ },
+ {
+  "id": "mix-halftone-golden",
+  "name": "Golden print",
+  "font": [
+   "Outfit",
+   "DM Sans"
+  ],
+  "bg": "#F7F0E3",
+  "note": "Warm halftone dots, Outfit and the golden hour render. Looks like a screen printed poster."
+ },
+ {
+  "id": "mix-sand-warm",
+  "name": "Quiet premium",
+  "font": [
+   "Red Hat Display",
+   "Red Hat Text"
+  ],
+  "bg": "#F8F2E4",
+  "note": "Sand gradient, Red Hat Display and the warm graded photo. The most calm and expensive feeling."
+ },
+ {
+  "id": "mix-grid-sketch",
+  "name": "Technical sketch",
+  "font": [
+   "Barlow Semi Condensed",
+   "Barlow"
+  ],
+  "bg": "#EEF2EE",
+  "note": "Grid, Barlow and the local line sketch of the real render. Technical without any AI image."
+ },
+ {
+  "id": "mix-sunshine",
+  "name": "Sunshine yellow",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#FFEFA8",
+  "note": "A pale brand yellow canvas with darker rays, Poppins, original render. The badge colour carried across the whole sheet."
+ },
+ {
+  "id": "mix-split-sage",
+  "name": "Split sage",
+  "font": [
+   "Archivo",
+   "Archivo"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Sage block over bone with a slanted join (echoing the flag), Archivo and the green duotone photo. Two zones, one calm palette."
  }
 ]
