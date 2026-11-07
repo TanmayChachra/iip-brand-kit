@@ -17,6 +17,7 @@ def card(v):
 
 
 cards = "".join(card(v) for v in V if v["id"][:3].isdigit())
+lay_cards = "".join(card(v) for v in V if v["id"].startswith("lay-"))
 mix_cards = "".join(card(v) for v in V if v["id"].startswith("mix-"))
 img_cards = "".join(card(v) for v in V if v["id"].startswith("img-"))
 refs = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{html.escape(t)}</a></li>' for t, u in REFS)
@@ -33,6 +34,8 @@ figcaption p{{margin:6px 0 10px;font-size:14px}}.dl{{font-size:13px;margin-right
 <h2>Fonts, textures and colours</h2><div class="grid">{cards}</div>
 <h2>Image experiments</h2><p class="lead">Same bone paper background and same Montserrat and Inter as the final, only the hero picture changes. Cards starting with "AI" are AI generated concepts, not photos of the park. Real site photos replace any of these once the shoot happens.</p><div class="grid">{img_cards}</div>
 <h2>Mix and shuffle</h2><p class="lead">Final round: the best fonts, textures and images crossed with each other. Layout and text are still identical to the final poster.</p><div class="grid">{mix_cards}</div>
+<h2>Layout experiments</h2><p class="lead">Same elements, same words, rearranged. Each layout applies a design principle, listed below the cards. Fonts, textures and images are borrowed from the earlier rounds.</p><div class="grid">{lay_cards}</div>
+<div class="rules"><b>Principles used</b><ul><li><b>Visual hierarchy:</b> size, contrast and position decide what is read first (name, then proof, then CTA). The "three second test": what does a glance pick up?</li><li><b>Proximity (Gestalt):</b> related items sit together so the poster reads as a few chunks, not many pieces.</li><li><b>One alignment axis:</b> commit to centre or left, then keep it (Left editorial).</li><li><b>Reading path:</b> the eye enters top, travels down and ends bottom, so the action belongs at the base (all layouts keep the CTA last).</li><li><b>Contrast for action:</b> the CTA gets its highest contrast on the dark footer band.</li><li><b>Whitespace:</b> separates the chunks; the compact header trades header height for a bigger image.</li></ul>Sources: <a href="https://amaranth.unm.edu/craft/poster-design" target="_blank" rel="noopener">UNM poster design guide</a>, <a href="https://anzaae.nz/wp-content/uploads/2024/01/Poster-design-principles-and-elements.pdf" target="_blank" rel="noopener">Poster design principles and elements</a>, <a href="https://piktochart.com/blog/what-not-to-include-in-a-poster/" target="_blank" rel="noopener">Piktochart on poster calls to action</a>.</div>
 <h2>How to read this</h2><div class="rules"><ul><li>Tap a poster for the full size PNG. SVG files open in a browser or vector app (fonts load from Google Fonts).</li><li>Badge, text, icons and CTA are identical in every card. The brand colours (yellow, red, green) and the thin flag are unchanged.</li><li>Card 09 is the control: the original Montserrat and Inter on bone only, so you can judge what the background alone does.</li><li>Card 07 is the boldest: brand green canvas, cream text, photo as a rounded window.</li><li>Any pick would still need a print test: textures and tints print differently from screens.</li></ul></div>
 <h2>References</h2><ul>{refs}</ul></main></body></html>'''
 (H / "index.html").write_text(page, encoding="utf-8"); print("page ok")

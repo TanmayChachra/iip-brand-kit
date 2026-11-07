@@ -148,6 +148,7 @@ def make(v, hero=None):
         layer.insert(0, cp); hero_g.set("clip-path", "url(#hero-window)")
     else:
         hero_g.set("style", "mix-blend-mode:multiply")
+    if v.get("layout"): LAYOUTS[v["layout"]](root, layer)
     tex = ET.fromstring(f'<g xmlns="{SVGNS}" id="lab-texture">{v["tex"]()}</g>') if v["tex"]() else None
     if tex is not None: layer.insert(list(layer).index(bgrect) + 1, tex)
     fams = {v["font"][0], v["font"][1]}
@@ -179,6 +180,87 @@ def image_variants():
             n, note = IMG_NOTES[f.stem]
             out.append(dict(IMG_BASE, id="img-" + f.stem.replace("hero-", ""), name=n, note=note, hero=str(f)))
     return out
+
+
+
+# ---------- layouts (same elements, different arrangement) ----------
+def _ctx(root):
+    par = {c: p for p in root.iter() for c in p}
+    by = {e.get("id"): e for e in root.iter() if e.get("id")}
+    sub_g = par[by["subtitle"]]
+    feats = [by["shift-feature-dividers"], by["shift-feature-icons"], by["shift-features-text"]]
+    return par, by, sub_g, feats
+
+
+def _wrap(par, el, transform):
+    g = ET.Element(f"{{{SVGNS}}}g", {"transform": transform}); parent = par[el]; i = list(parent).index(el)
+    parent.remove(el); g.append(el); parent.insert(i, g); par[g] = parent; par[el] = g; return g
+
+
+def _photo(by, y, h):
+    hg = by["shift-hero-photo"]; hg.set("transform", "translate(0 0)")
+    im = [e for e in hg.iter() if tag(e) == "image"][0]
+    for k in ("transform",): im.attrib.pop(k, None)
+    im.set("x", "0"); im.set("y", str(y)); im.set("width", "1827"); im.set("height", str(h)); im.set("preserveAspectRatio", "xMidYMid slice")
+
+
+def lay_photo_first(root, layer):
+    par, by, sub, feats = _ctx(root); _photo(by, 0, 760)
+    _wrap(par, by["logo"], "translate(0 515)")
+    _wrap(par, by["title"], "translate(0 519)"); _wrap(par, sub, "translate(0 519)")
+    _wrap(par, by["stats"], "translate(0 468)")
+    for f in feats: _wrap(par, f, "translate(0 -96)")
+
+
+def lay_sandwich(root, layer):
+    par, by, sub, feats = _ctx(root); _photo(by, 790, 530)
+    _wrap(par, by["stats"], "translate(0 534)")
+    for f in feats: _wrap(par, f, "translate(0 -34)")
+
+
+def lay_left(root, layer):
+    par, by, sub, feats = _ctx(root)
+    _wrap(par, by["logo"], "translate(-589 0)")
+    t = by["title"]; t.set("transform", "matrix(1 0 0 1 140 618)"); t.set("text-anchor", "start")
+    _wrap(par, sub, "translate(-296 0)")
+
+
+def lay_compact(root, layer):
+    par, by, sub, feats = _ctx(root); _photo(by, 420, 760)
+    _wrap(par, by["logo"], f"translate({225 - 729 * 0.78:.1f} {110 - 75 * 0.78:.1f}) scale(0.78)")
+    t = by["title"]; t.set("transform", "matrix(1.15 0 0 1.15 520 270)"); t.set("text-anchor", "start")
+    _wrap(par, sub, f"translate({520 - 436 * 1.15:.1f} {294 - 656 * 1.15:.1f}) scale(1.15)")
+    _wrap(par, by["stats"], "translate(0 424)")
+    for f in feats: _wrap(par, f, "translate(0 -124)")
+
+
+FEAT_DARK = {"#101d1a": "#F4EFE3", "#111111": "#F4EFE3", "#151515": "#F4EFE3", "#666666": "#C9CFD8", "#000000": "#F4EFE3", "#d6d6d6": "#4a5568", "#dcdcdc": "#4a5568", "#CFCFCF": "#4a5568"}
+
+
+def lay_band(root, layer):
+    par, by, sub, feats = _ctx(root)
+    band = ET.fromstring(f'<rect xmlns="{SVGNS}" x="0" y="1915" width="1827" height="375" fill="#111827"/>')
+    parent = par[feats[0]]; parent.insert(list(parent).index(feats[0]), band)
+    for f in feats:
+        for e in f.iter():
+            for k in ("fill", "stroke"):
+                if e.get(k) in FEAT_DARK: e.set(k, FEAT_DARK[e.get(k)])
+
+
+LAYOUTS = {"photo-first": lay_photo_first, "sandwich": lay_sandwich, "left": lay_left, "compact": lay_compact, "band": lay_band}
+
+
+def layouts():
+    A = "hero-ai/"; H1 = "hero/"
+    def mk(i, name, base, hero, lay, note, **kw):
+        d = dict(byid(base)); d.update(id="lay-" + i, name=name, note=note, hero=str(HERE / hero), layout=lay, **kw); return d
+    return [
+        mk("photo-first", "Photo first", "08-sand-gradient", A + "hero-ai-golden-hour.png", "photo-first", "Hero image leads at the top, the badge sits on its lower edge, then name, proof, facilities, CTA. Emotion before facts."),
+        mk("sandwich", "Sandwich", "01-bone-paper", H1 + "hero-original.png", "sandwich", "Name, then the photo, then the proof grid. Photo moves up so the eye lands on the place before the numbers."),
+        mk("left-editorial", "Left editorial", "02-blueprint-grid", H1 + "hero-line-sketch.png", "left", "Badge and name aligned to one left edge, the rest stays on the full width grid. Strong single alignment axis."),
+        mk("compact-header", "Compact header", "03-sunburst-echo", A + "hero-ai-aerial-layout.png", "compact", "Badge beside the name saves height, so the image gets 760 px and the stats stay unchanged."),
+        mk("footer-band", "Footer band", "06-halftone-warm", H1 + "hero-original.png", "band", "Charcoal band behind facilities and CTA: the yellow CTA gets maximum contrast and the page gets a clear base."),
+    ]
 
 
 def split_tex(top="#DDE8D8", y=1110, fid="sp"):
@@ -213,7 +295,7 @@ def main():
     for d in ("svg", "png", "thumbs"): (HERE / d).mkdir(exist_ok=True)
     with sync_playwright() as p:
         br = p.chromium.launch(); pg = br.new_page(viewport={"width": W, "height": H})
-        for v in V + image_variants() + mixes():
+        for v in V + image_variants() + mixes() + layouts():
             s = make(v, v.get("hero")); (HERE / f"svg/{v['id']}.svg").write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + s, encoding="utf-8")
             pg.goto((HERE / f"svg/{v['id']}.svg").as_uri()); pg.wait_for_timeout(1800); pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(600)
@@ -223,7 +305,7 @@ def main():
             im.resize((W // 3, H // 3)).save(HERE / f"thumbs/{v['id']}-s.webp", quality=78, method=6)
             print("ok", v["id"])
         br.close()
-    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants() + mixes()], open(HERE / "variants.json", "w"), indent=1)
+    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants() + mixes() + layouts()], open(HERE / "variants.json", "w"), indent=1)
 
 
 if __name__ == "__main__":

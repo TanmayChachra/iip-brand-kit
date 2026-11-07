@@ -2,6 +2,7 @@
 
 ## 2026-11-07, poster lab
 - New `Experiments/poster-lab/index.html`: 9 font, texture and colour variants and 9 hero image variants (5 local grades, 4 AI concepts) of the final poster. The final poster is untouched. AI images are concepts, not photos of the park.
+- Poster lab layout round: 5 rearranged layouts (photo first, sandwich, left editorial, compact header, footer band), each tied to a design principle. Page published at /experiments/poster-lab/.
 - Poster lab final round: 10 mix and shuffle posters (font x texture x image crosses, including a blueprint night, brutalist concrete and sunshine yellow). Nothing here replaces the final poster until the owner picks.
 
 ## 2026-11-07, round 8

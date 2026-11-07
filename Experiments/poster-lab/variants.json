@@ -278,5 +278,55 @@
   ],
   "bg": "#F4F0E8",
   "note": "Sage block over bone with a slanted join (echoing the flag), Archivo and the green duotone photo. Two zones, one calm palette."
+ },
+ {
+  "id": "lay-photo-first",
+  "name": "Photo first",
+  "font": [
+   "Red Hat Display",
+   "Red Hat Text"
+  ],
+  "bg": "#F8F2E4",
+  "note": "Hero image leads at the top, the badge sits on its lower edge, then name, proof, facilities, CTA. Emotion before facts."
+ },
+ {
+  "id": "lay-sandwich",
+  "name": "Sandwich",
+  "font": [
+   "Archivo",
+   "Archivo"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Name, then the photo, then the proof grid. Photo moves up so the eye lands on the place before the numbers."
+ },
+ {
+  "id": "lay-left-editorial",
+  "name": "Left editorial",
+  "font": [
+   "Barlow Semi Condensed",
+   "Barlow"
+  ],
+  "bg": "#EEF2EE",
+  "note": "Badge and name aligned to one left edge, the rest stays on the full width grid. Strong single alignment axis."
+ },
+ {
+  "id": "lay-compact-header",
+  "name": "Compact header",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#F8F2E2",
+  "note": "Badge beside the name saves height, so the image gets 760 px and the stats stay unchanged."
+ },
+ {
+  "id": "lay-footer-band",
+  "name": "Footer band",
+  "font": [
+   "Outfit",
+   "DM Sans"
+  ],
+  "bg": "#F7F0E3",
+  "note": "Charcoal band behind facilities and CTA: the yellow CTA gets maximum contrast and the page gets a clear base."
  }
 ]
