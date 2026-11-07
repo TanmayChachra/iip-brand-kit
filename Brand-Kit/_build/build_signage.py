@@ -82,7 +82,7 @@ def pole(variant):
         ps = 98 if variant == "A" else 118
         b += text("CALL", 500, ry + 80, 32, IS, GRAY, 0.3, "middle")
         p, yb2 = phones(500, ry + 80 + ps * 1.05, ps, "middle"); b += p
-        b += stripe(-e - 76, H - 84, W + 2 * e + 2 * 76, 84 + e, 76)
+        b += stripe(-e - 76, H - K.thin(W), W + 2 * e + 2 * 76, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "20in", "32in", 50
 
@@ -100,7 +100,7 @@ def street():
         for ic, lab in FACTS:                                                      # facts as three rows, big icons
             b += icon(ic, 90, y - 52, 76, INK, 2.6) + text(lab, 195, y + 12, 44, IS, INK, 0.04); y += 118
         p, yb2 = phones(90, y + 40, 100); b += p
-        b += stripe(-e - 80, H - 90, W + 2 * e + 2 * 80, 90 + e, 80)
+        b += stripe(-e - 80, H - K.thin(W), W + 2 * e + 2 * 80, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "24in", "36in", 50
 
@@ -114,7 +114,7 @@ def hoarding_a():
         t, yb = tagline(lines, 2050, 560, size); b += t
         b += rule(2050, yb + 80, 360, 34)
         p, _ = phones(2050, yb + 340, 140); b += p
-        b += stripe(-e - 130, H - 150, W + 2 * e + 2 * 130, 150 + e, 130)
+        b += stripe(-e - 130, H - K.thin(W), W + 2 * e + 2 * 130, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "40ft", "20ft", 100 / 12
 
@@ -130,7 +130,7 @@ def hoarding_b():
         t, yb = tagline(lines, 260, 1200, size); b += t
         b += rule(260, yb + 100, 360, 34)
         b += text(CT["address"], 3740, yb + 125, 58, IM, GRAY, 0.0, "end")
-        b += stripe(-e - 130, H - 150, W + 2 * e + 2 * 130, 150 + e, 130)
+        b += stripe(-e - 130, H - K.thin(W), W + 2 * e + 2 * 130, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "40ft", "20ft", 100 / 12
 
@@ -145,7 +145,7 @@ def hoarding_wide():
         t, yb = tagline(lines, 3760, 520, size, "end"); b += t
         p, _ = phones(3760, 920, 118, "end"); b += p
         b += facts(240, 1190, 3520, 54, FACTS)
-        b += stripe(-e - 100, H - 110, W + 2 * e + 2 * 100, 110 + e, 100)
+        b += stripe(-e - 100, H - K.thin(W), W + 2 * e + 2 * 100, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "40ft", "15ft", 100 / 12
 
@@ -159,7 +159,7 @@ def gate():
         lines = LINES[TAG_B]; size = fit(lines, SB, 1280)
         t, yb = tagline(lines, 3760, 400, size, "end"); b += t
         b += rule(3760 - 300, yb + 70, 300, 22)
-        b += stripe(-e - 62, H - 70, W + 2 * e + 2 * 62, 70 + e, 62)
+        b += stripe(-e - 62, H - K.thin(W), W + 2 * e + 2 * 62, K.thin(W) + e, K.thin(W), cap=False)
         return frame(W, H, e, b)
     return art, W, H, "20ft", "5ft", 100 / 12
 

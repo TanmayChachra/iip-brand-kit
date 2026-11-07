@@ -26,7 +26,7 @@ def crop(W, H, inner, uid):
 
 def tri(x, y, w, h, cols, sk=None):
     """Stripe in any three colours (stripe() is fixed to yellow, red, green)."""
-    sk = sk if sk is not None else h * 0.9; unit = (w - sk) / 3.0; s = ""
+    h0 = h; h = min(h, K.thin(w)); y = y + h0 - h; sk = h; unit = (w - sk) / 3.0; s = ""
     for i, c in enumerate(cols):
         x0 = x + i * unit
         s += f'<polygon points="{x0 + sk:.1f},{y:.1f} {x0 + sk + unit * 1.05:.1f},{y:.1f} {x0 + unit * 1.05:.1f},{y + h:.1f} {x0:.1f},{y + h:.1f}" fill="{c}"/>'

@@ -120,9 +120,18 @@ def lockup_horizontal(x, y, h, ink=None, mono=None, uid="h", line=None, divider=
     return s, tx + wI - x
 
 
-def stripe(x, y, w, h, skew=None):
-    """Tri-colour stripe (yellow, red, green) of parallelograms. h = height."""
-    sk = skew if skew is not None else h * 0.9
+def thin(w):
+    """The tri-colour flag is always thin: 1 percent of the width it runs across."""
+    return max(2.0, w * 0.01)
+
+
+def stripe(x, y, w, h, skew=None, cap=True, anchor="bottom"):
+    """Tri-colour flag (yellow, red, green) of parallelograms. Always thin: with cap the drawn height is limited to thin(w),
+    kept on the bottom (or top) edge of the box y..y+h.  cap=False draws exactly h (used where bleed is added)."""
+    if cap:
+        th = min(h, thin(w)); y = y + h - th if anchor == "bottom" else y; h = th; sk = th * 1.0
+    else:
+        sk = skew if skew is not None else h * 0.9
     unit = (w - sk) / 3.0
     cols = [C["yellow"], C["red"], C["green"]]
     s = ""

@@ -5,7 +5,8 @@
 - Poster (10x10 ft banner) now carries the tri-colour line along the bottom. Previous version kept as `_archive/v10_before-tricolor-line.svg`.
 - Social post 4:5 no longer crops the tagline. Tri-colour stripes on cards, letterhead and posts now run edge to edge, so the right end is no longer cut.
 - Removed the old clear space guide (the two accurate clear space sheets stay).
-- CTA "Industrial Plot Available" added to the poster footer (yellow pill above the tri-colour line). Same wording now in the content tokens, social post, CTA badge and site examples.
+- CTA "Industrial Plots Available" added to the poster footer (yellow pill above the tri-colour line). Same wording now in the content tokens, social post, CTA badge and site examples.
+- The tri-colour flag is now always thin (1 percent of the width it runs across, one rule in the kit code) on the poster, signage, cards, letterhead, posts and book pages.
 - Tri-colour footer strip also saved as its own file: `Isapur-Poster/03_Design/03_tricolor-footer-strip.svg`.
 
 ## 2026-11-06, round 7

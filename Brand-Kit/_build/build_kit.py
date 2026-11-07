@@ -58,7 +58,7 @@ def logos():
 
 # ---------------- patterns ----------------
 def patterns():
-    put("02_Pattern/tri-colour-stripe", svg(1200, 160, stripe(40, 40, 1120, 80), "1200px", "160px", "Tri-colour stripe (highlight, tag, CTA)", C["white"]))
+    put("02_Pattern/tri-colour-stripe", svg(1200, 64, stripe(40, 26, 1120, 12), "1200px", "64px", "Tri-colour stripe (highlight, tag, CTA)", C["white"]))
     put("02_Pattern/sunburst-outline", svg(800, 800, sunburst(400, 400, 340, "none", C["gray"], 4), "800px", "800px", "Sunburst outline", C["white"]))
     put("02_Pattern/sunburst-solid-yellow", svg(800, 800, sunburst(400, 400, 340, C["yellow"]), "800px", "800px", "Sunburst solid", C["white"]))
     ring = "".join(f'<polygon points="0,-26 26,0 0,26 -26,0" fill="{C["red"]}" stroke="{C["yellow"]}" stroke-width="6" transform="translate({400 + 330 * __import__("math").cos(__import__("math").pi * 2 * i / 24):.1f} {400 + 330 * __import__("math").sin(__import__("math").pi * 2 * i / 24):.1f}) rotate({360 * i / 24 + 0})"/>' for i in range(24))
@@ -67,7 +67,7 @@ def patterns():
     put("02_Pattern/sunburst-repeat-pattern", svg(1100, 1000, cells, "1100px", "1000px", "Sunburst repeating pattern (subtle background)", C["white"]))
     pan = (f'<polygon points="260,0 1200,0 940,520 0,520" fill="{C["mist"]}"/><polygon points="0,0 360,0 100,520 0,520" fill="{C["line"]}" opacity=".7"/>')
     put("02_Pattern/diagonal-panels", svg(1200, 520, pan, "1200px", "520px", "Diagonal panels (section divider)", C["white"]))
-    badges = [("PLOT", "AVAILABLE", "", C["white"], C["charcoal"], C["yellow"], C["red"]), ("GROWTH", "READY", "", C["yellow"], C["charcoal"], None, None),
+    badges = [("PLOTS", "AVAILABLE", "", C["white"], C["charcoal"], C["yellow"], C["red"]), ("GROWTH", "READY", "", C["yellow"], C["charcoal"], None, None),
               ("STRATEGIC", "LOCATION", "", C["red"], "#FFFFFF", None, None), ("SUSTAINABLE", "DEVELOPMENT", "", C["green"], "#FFFFFF", None, None)]
     s = ""
     for i, (a, b, c3, fill, ink, st, st2) in enumerate(badges):
@@ -164,7 +164,7 @@ def business_cards():
 def letterhead():
     W, H = 2100, 2970
     s, wd = lockup_horizontal(160, 150, 300, uid="lh")
-    b = s + stripe(0, 0, W, 38, 34)
+    b = s + stripe(0, 0, W, 38, 34, anchor="top")
     b += f'<rect x="160" y="520" width="1780" height="2" fill="{C["line"]}"/>'
     b += stripe(0, 2860, W, 38, 34) + text(CT["address"], 160, 2815, 34, "Inter-Regular", C["gray"]) + text("  |  ".join(CT["phones"]), 1940, 2815, 34, "Inter-SemiBold", C["charcoal"], 0, "end")
     put("04_Templates/letterhead-A4", svg(W, H, b, "210mm", "297mm", "Letterhead A4", C["white"]))
@@ -172,7 +172,7 @@ def letterhead():
 
 def id_card():
     W, H = 540, 860
-    b = stripe(0, 0, W, 34, 30)
+    b = stripe(0, 0, W, 34, 30, anchor="top")
     s, h = lockup_vertical(270, 80, 120, uid="id"); b += s
     b += f'<rect x="170" y="330" width="200" height="240" rx="14" fill="{C["mist"]}" stroke="{C["line"]}" stroke-width="2"/>' + text("PHOTO", 270, 460, 24, "Inter-Medium", C["gray"], 0.1, "middle")
     b += text("Employee Name", 270, 640, 42, "Montserrat-ExtraBold", C["charcoal"], 0, "middle") + text("Designation  |  ID 0001", 270, 685, 24, "Inter-Medium", C["gray"], 0.04, "middle")
