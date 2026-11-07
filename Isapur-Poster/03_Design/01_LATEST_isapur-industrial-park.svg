@@ -109,6 +109,7 @@
       <polygon points="1573,1990 1689,1828 1766.564,1828 1658.564,1990" fill="#e3131b"/>
       <polygon points="1668,1990 1776,1828 1820,1828 1820,1990" fill="#0b4d3a"/>
     </g>
-    <g id="tricolor-line"><polygon points="0.0,2190.0 671.0,2190.0 581.0,2290.0 -90.0,2290.0" fill="#FFD600"/><polygon points="639.0,2190.0 1310.0,2190.0 1220.0,2290.0 549.0,2290.0" fill="#E53935"/><polygon points="1278.0,2190.0 1949.0,2190.0 1859.0,2290.0 1188.0,2290.0" fill="#0F4D3A"/></g>
+    <g id="cta-industrial-plot-available"><rect x="458" y="2116" width="911" height="64" rx="32" fill="#FFD600"/><text x="913.5" y="2160" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="38" font-weight="800" letter-spacing="2.5" fill="#111827">INDUSTRIAL PLOT AVAILABLE</text></g>
+    <g id="tricolor-line"><polygon points="0.0,2208.0 666.1,2208.0 590.1,2290.0 -76.0,2290.0" fill="#FFD600"/><polygon points="634.3,2208.0 1300.4,2208.0 1224.4,2290.0 558.3,2290.0" fill="#E53935"/><polygon points="1268.7,2208.0 1934.7,2208.0 1858.7,2290.0 1192.7,2290.0" fill="#0F4D3A"/></g>
   </g>
 </svg>

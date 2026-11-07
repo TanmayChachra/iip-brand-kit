@@ -35,7 +35,7 @@ def post45():
     ts = min(128, 920 / max(K.width(l, "Montserrat-SemiBold", 1.0, 0.0) for l in B.CT["tagline"]))
     b += B.tag3(80, 700, ts, "start")
     b += f'<rect x="80" y="1010" width="130" height="9" fill="{C["red"]}"/>'
-    b += text("Industrial plots available", 80, 1100, 40, "Inter-Medium", C["charcoal"], 0.0, "start")
+    b += text("Industrial Plot Available", 80, 1100, 40, "Inter-Medium", C["charcoal"], 0.0, "start")
     b += text(B.PH, 80, 1190, 46, "Montserrat-ExtraBold", C["charcoal"], 0.02, "start")
     b += stripe(-(72), 1270, W + 2 * (72), 80, 72)
     OUT["05_Social/post-4x5-1080x1350"] = svg(W, H, b, "1080px", "1350px", "Social post 4:5", C["white"])

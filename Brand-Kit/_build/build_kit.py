@@ -67,7 +67,7 @@ def patterns():
     put("02_Pattern/sunburst-repeat-pattern", svg(1100, 1000, cells, "1100px", "1000px", "Sunburst repeating pattern (subtle background)", C["white"]))
     pan = (f'<polygon points="260,0 1200,0 940,520 0,520" fill="{C["mist"]}"/><polygon points="0,0 360,0 100,520 0,520" fill="{C["line"]}" opacity=".7"/>')
     put("02_Pattern/diagonal-panels", svg(1200, 520, pan, "1200px", "520px", "Diagonal panels (section divider)", C["white"]))
-    badges = [("PLOTS", "AVAILABLE", "NOW", C["white"], C["charcoal"], C["yellow"], C["red"]), ("GROWTH", "READY", "", C["yellow"], C["charcoal"], None, None),
+    badges = [("PLOT", "AVAILABLE", "", C["white"], C["charcoal"], C["yellow"], C["red"]), ("GROWTH", "READY", "", C["yellow"], C["charcoal"], None, None),
               ("STRATEGIC", "LOCATION", "", C["red"], "#FFFFFF", None, None), ("SUSTAINABLE", "DEVELOPMENT", "", C["green"], "#FFFFFF", None, None)]
     s = ""
     for i, (a, b, c3, fill, ink, st, st2) in enumerate(badges):

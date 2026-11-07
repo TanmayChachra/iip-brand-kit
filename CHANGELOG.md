@@ -5,6 +5,8 @@
 - Poster (10x10 ft banner) now carries the tri-colour line along the bottom. Previous version kept as `_archive/v10_before-tricolor-line.svg`.
 - Social post 4:5 no longer crops the tagline. Tri-colour stripes on cards, letterhead and posts now run edge to edge, so the right end is no longer cut.
 - Removed the old clear space guide (the two accurate clear space sheets stay).
+- CTA "Industrial Plot Available" added to the poster footer (yellow pill above the tri-colour line). Same wording now in the content tokens, social post, CTA badge and site examples.
+- Tri-colour footer strip also saved as its own file: `Isapur-Poster/03_Design/03_tricolor-footer-strip.svg`.
 
 ## 2026-11-06, round 7
 - Brand kit v1.1: story approved (developer not named), new accurate clear space, minimum size, monotone and misuse sheets, print colour guide (CMYK from an ICC profile), print guide teaching bleed and trim with marked diagrams.
