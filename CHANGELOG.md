@@ -1,5 +1,8 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-07, poster lab
+- New `Experiments/poster-lab/index.html`: 9 font, texture and colour variants and 9 hero image variants (5 local grades, 4 AI concepts) of the final poster. The final poster is untouched. AI images are concepts, not photos of the park.
+
 ## 2026-11-07, round 8
 - Poster is FINAL (CTA pill and thin tri-colour flag). Print PDF, editable SVG, preview, site downloads and brand book all carry this version.
 - Pole boards, street pole and both hoardings: the tagline is now lighter and smaller than ISAPUR, so the name and the heading no longer fight.

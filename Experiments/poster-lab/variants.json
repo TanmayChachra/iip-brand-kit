@@ -1,0 +1,182 @@
+[
+ {
+  "id": "01-bone-paper",
+  "name": "Bone paper",
+  "font": [
+   "Archivo",
+   "Archivo"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Warm bone base with fine paper grain. The calmest step away from pure white."
+ },
+ {
+  "id": "02-blueprint-grid",
+  "name": "Blueprint hairline grid",
+  "font": [
+   "Barlow Semi Condensed",
+   "Barlow"
+  ],
+  "bg": "#EEF2EE",
+  "note": "Pale sage with an engineer's hairline grid (60 px minor, 300 px major). Says plots, survey, plan."
+ },
+ {
+  "id": "03-sunburst-echo",
+  "name": "Sunburst echo",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#F8F2E2",
+  "note": "The badge's sunburst repeated as faint rays across the whole poster. Ties everything to the logo."
+ },
+ {
+  "id": "04-contour-land",
+  "name": "Contour land",
+  "font": [
+   "Bricolage Grotesque",
+   "Instrument Sans"
+  ],
+  "bg": "#EEF0E4",
+  "note": "Topographic contour lines: land, plots, terrain. Hand-drawn feel that templates rarely have."
+ },
+ {
+  "id": "05-concrete",
+  "name": "Concrete",
+  "font": [
+   "Space Grotesk",
+   "Space Grotesk"
+  ],
+  "bg": "#E7E6E2",
+  "note": "Cool concrete grey with coarse mottling plus fine grain. Industrial, honest, a little brutalist."
+ },
+ {
+  "id": "06-halftone-warm",
+  "name": "Warm halftone",
+  "font": [
+   "Outfit",
+   "DM Sans"
+  ],
+  "bg": "#F7F0E3",
+  "note": "Print-style halftone dots fading from the top right corner in warm amber. Poster-shop energy."
+ },
+ {
+  "id": "07-deep-green",
+  "name": "Deep green night",
+  "font": [
+   "Plus Jakarta Sans",
+   "Plus Jakarta Sans"
+  ],
+  "bg": "#0F4D3A",
+  "note": "Brand green as the whole canvas, cream text. Boldest option; the photo sits as a clean window."
+ },
+ {
+  "id": "08-sand-gradient",
+  "name": "Sand gradient",
+  "font": [
+   "Red Hat Display",
+   "Red Hat Text"
+  ],
+  "bg": "#F8F2E4",
+  "note": "Soft cream to sand gradient with a touch of grain. Quiet and premium."
+ },
+ {
+  "id": "09-control-montserrat",
+  "name": "Control: bone only",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Same Montserrat and Inter as the final, only the bone colour. Shows what the background alone changes."
+ },
+ {
+  "id": "img-duotone-green",
+  "name": "Duotone green",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Same render turned into brand green and white. Looks printed, ties to the badge green."
+ },
+ {
+  "id": "img-line-sketch",
+  "name": "Line sketch",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Same render as fine charcoal linework. Plan and drawing feel, very distinctive."
+ },
+ {
+  "id": "img-mono",
+  "name": "Charcoal mono",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Same render in greyscale. Lets the yellow badge and CTA carry the colour."
+ },
+ {
+  "id": "img-original",
+  "name": "Original render",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "The supplied render, on bone paper. Baseline for the image tests."
+ },
+ {
+  "id": "img-warm-grade",
+  "name": "Warm grade",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Same render graded warm, like late afternoon light."
+ },
+ {
+  "id": "img-ai-aerial-layout",
+  "name": "AI aerial layout",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "AI generated concept: isometric plot layout."
+ },
+ {
+  "id": "img-ai-blueprint-line",
+  "name": "AI blueprint line",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "AI generated concept: architectural line drawing."
+ },
+ {
+  "id": "img-ai-flat-illustration",
+  "name": "AI flat illustration",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "AI generated concept: flat vector style in brand colours."
+ },
+ {
+  "id": "img-ai-golden-hour",
+  "name": "AI golden hour",
+  "font": [
+   "Montserrat",
+   "Inter"
+  ],
+  "bg": "#F4F0E8",
+  "note": "AI generated concept: warm golden hour version of the scene."
+ }
+]
