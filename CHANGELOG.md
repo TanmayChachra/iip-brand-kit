@@ -1,6 +1,7 @@
 # Changelog (newest first, written for the owner)
 
 ## 2026-11-07, round 8
+- Poster is FINAL (CTA pill and thin tri-colour flag). Print PDF, editable SVG, preview, site downloads and brand book all carry this version.
 - Pole boards, street pole and both hoardings: the tagline is now lighter and smaller than ISAPUR, so the name and the heading no longer fight.
 - Poster (10x10 ft banner) now carries the tri-colour line along the bottom. Previous version kept as `_archive/v10_before-tricolor-line.svg`.
 - Social post 4:5 no longer crops the tagline. Tri-colour stripes on cards, letterhead and posts now run edge to edge, so the right end is no longer cut.

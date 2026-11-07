@@ -47,3 +47,4 @@ VectorCraft (installed from github.com/storytold/vectorcraft v0.21.1, SHA256 ver
 | Poster | Python generator (`_build/build_poster.py`) | `03_Design/isapur-industrial-park.svg` |
 | PDF and preview | vectorcraft-cli | `03_Design/*.pdf`, `preview-vectorcraft.png` |
 | Static fonts | fontTools instancer (`_build/make_*_static.py`) | `fonts/*.ttf` |
+- 2026-11-07: FINAL (owner approved). Added CTA pill "INDUSTRIAL PLOTS AVAILABLE" and the thin tri-colour flag on the bottom edge (ids `cta-industrial-plot-available`, `tricolor-line`). Flag also saved alone as `03_Design/03_tricolor-footer-strip.svg`. Previous versions in `_archive/` (v10 to v12). Re-render with `_build/render.py pdf`.
