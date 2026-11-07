@@ -21,7 +21,7 @@ def fit(lines, font, maxw, tracking=0.0):
 
 
 def tagline(lines, x, y, size, anchor="start", lh=1.06, ink=INK):
-    s = "".join(text(l, x, y + i * size * lh, size, XB, ink, 0.0, anchor) for i, l in enumerate(lines))
+    s = "".join(text(l, x, y + i * size * lh, size, SB, ink, 0.0, anchor) for i, l in enumerate(lines))
     return s, y + (len(lines) - 1) * size * lh
 
 
@@ -74,7 +74,7 @@ def pole(variant):
         b = burst(W - 20, 150, 600) if variant == "A" else burst(40, 1230, 560)
         s, h = lockup_vertical(500, 110, 250, uid="pl" + variant); b += s
         lines = LINES[TAG_A if variant == "A" else TAG_B]
-        size = min(fit(lines, XB, 860), 152 if variant == "A" else 130)
+        size = min(fit(lines, SB, 860), 118 if variant == "A" else 100)
         y0 = 820 if variant == "A" else 890
         t, yb = tagline(lines, 500, y0, size, "middle"); b += t
         ry = yb + size * 0.40
@@ -94,7 +94,7 @@ def street():
         s, wd = lockup_horizontal(90, 110, 100, uid="st"); k = 1020 / wd
         s, wd = lockup_horizontal(90, 110, 100 * k, uid="st"); b += s
         lines = LINES[TAG_A]
-        t, yb = tagline(lines, 90, 640, 156); b += t
+        t, yb = tagline(lines, 90, 640, 118); b += t
         b += rule(90, yb + 50, 170, 16)
         y = yb + 160
         for ic, lab in FACTS:                                                      # facts as three rows, big icons
@@ -110,7 +110,7 @@ def hoarding_a():
     def art(e):
         b = burst(3350, 900, 1480)
         s, h, wd = v_lockup_left(240, 250, 640, "ha"); b += s
-        lines = LINES[TAG_A]; size = min(fit(lines, XB, 1700), 290)
+        lines = LINES[TAG_A]; size = min(fit(lines, SB, 1700), 215)
         t, yb = tagline(lines, 2050, 560, size); b += t
         b += rule(2050, yb + 80, 360, 34)
         p, _ = phones(2050, yb + 340, 140); b += p
@@ -126,7 +126,7 @@ def hoarding_b():
         s, wd = lockup_horizontal(260, 200, 100, uid="hb"); k = 1900 / wd
         s, wd = lockup_horizontal(260, 200, 100 * k, uid="hb"); b += s
         p, _ = phones(3740, 330, 150, "end"); b += p
-        lines = LINES[TAG_B]; size = 372
+        lines = LINES[TAG_B]; size = 285
         t, yb = tagline(lines, 260, 1200, size); b += t
         b += rule(260, yb + 100, 360, 34)
         b += text(CT["address"], 3740, yb + 125, 58, IM, GRAY, 0.0, "end")
@@ -141,7 +141,7 @@ def hoarding_wide():
         b = burst(3500, 650, 1150)
         s, wd = lockup_horizontal(240, 190, 100, uid="hw"); k = 2150 / wd
         s, wd = lockup_horizontal(240, 190, 100 * k, uid="hw"); b += s
-        lines = LINES[TAG_B]; size = fit(lines, XB, 1250)
+        lines = LINES[TAG_B]; size = fit(lines, SB, 1250)
         t, yb = tagline(lines, 3760, 520, size, "end"); b += t
         p, _ = phones(3760, 920, 118, "end"); b += p
         b += facts(240, 1190, 3520, 54, FACTS)
@@ -156,7 +156,7 @@ def gate():
         b = burst(3700, 520, 760)
         s, wd = lockup_horizontal(260, 140, 100, uid="gt"); k = 600 / 100
         s, wd = lockup_horizontal(260, 120, 100 * k, uid="gt"); b += s
-        lines = LINES[TAG_B]; size = fit(lines, XB, 1280)
+        lines = LINES[TAG_B]; size = fit(lines, SB, 1280)
         t, yb = tagline(lines, 3760, 400, size, "end"); b += t
         b += rule(3760 - 300, yb + 70, 300, 22)
         b += stripe(-e - 62, H - 70, W + 2 * e + 2 * 62, 70 + e, 62)

@@ -1,5 +1,11 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-07, round 8
+- Pole boards, street pole and both hoardings: the tagline is now lighter and smaller than ISAPUR, so the name and the heading no longer fight.
+- Poster (10x10 ft banner) now carries the tri-colour line along the bottom. Previous version kept as `_archive/v10_before-tricolor-line.svg`.
+- Social post 4:5 no longer crops the tagline. Tri-colour stripes on cards, letterhead and posts now run edge to edge, so the right end is no longer cut.
+- Removed the old clear space guide (the two accurate clear space sheets stay).
+
 ## 2026-11-06, round 7
 - Brand kit v1.1: story approved (developer not named), new accurate clear space, minimum size, monotone and misuse sheets, print colour guide (CMYK from an ICC profile), print guide teaching bleed and trim with marked diagrams.
 - All signage redone (pole boards A and B, street pole, hoardings, gate, print files with bleed) and all stationery redone (cards in two wordmark styles, letterhead, envelopes, ID, notepad, folder, helmet, vest and more), plus a flat-lay and six realistic context mockups.

@@ -24,7 +24,7 @@ def cover():
     b += text("A Modern Industrial Address.", 1380, 300, 30, "Montserrat-SemiBold", C["charcoal"], 0.0, "end")
     b += f'<rect x="1230" y="322" width="150" height="7" fill="{C["red"]}"/>'
     b += text(B.PH, 1380, 386, 28, "Montserrat-ExtraBold", C["charcoal"], 0.02, "end")
-    b += stripe(0, 450, W, 50, 46)
+    b += stripe(-(46), 450, W + 2 * (46), 50, 46)
     OUT["05_Social/cover-3to1-1500x500"] = svg(W, H, b, "1500px", "500px", "Cover banner 3:1", C["white"])
 
 
@@ -32,11 +32,12 @@ def post45():
     W, H = 1080, 1350                              # Instagram and Facebook portrait post
     b = sunburst(930, 200, 470, C["mist"])
     s, _ = lockup_horizontal(80, 90, 210, uid="p45"); b += s
-    b += B.tag3(80, 700, 128, "start")
+    ts = min(128, 920 / max(K.width(l, "Montserrat-SemiBold", 1.0, 0.0) for l in B.CT["tagline"]))
+    b += B.tag3(80, 700, ts, "start")
     b += f'<rect x="80" y="1010" width="130" height="9" fill="{C["red"]}"/>'
     b += text("Industrial plots available", 80, 1100, 40, "Inter-Medium", C["charcoal"], 0.0, "start")
     b += text(B.PH, 80, 1190, 46, "Montserrat-ExtraBold", C["charcoal"], 0.02, "start")
-    b += stripe(0, 1270, W, 80, 72)
+    b += stripe(-(72), 1270, W + 2 * (72), 80, 72)
     OUT["05_Social/post-4x5-1080x1350"] = svg(W, H, b, "1080px", "1350px", "Social post 4:5", C["white"])
 
 

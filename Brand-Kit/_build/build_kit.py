@@ -54,10 +54,6 @@ def logos():
     put("01_Logo/logo-badge-only", svg(500, 500, badge(50, 50, 400, uid="bo"), "500px", "500px", "Badge only (icon, favicon, social avatar, helmet)"))
     s, h = lockup_vertical(500, 90, 300, ink="#000000", mono=("#000000", "#FFFFFF"), line="#000000", uid="m"); put("01_Logo/logo-mono-black", svg(1000, 90 + h + 90, s, "1000px", f"{90 + h + 90}px", "Single colour black logo", C["white"]))
     s, h = lockup_vertical(500, 90, 300, ink="#FFFFFF", mono=("#FFFFFF", C["charcoal"]), line="#FFFFFF", uid="r"); put("01_Logo/logo-reversed-on-charcoal", svg(1000, 90 + h + 90, s, "1000px", f"{90 + h + 90}px", "Reversed logo for dark backgrounds", C["charcoal"]))
-    s, h = lockup_vertical(500, 90, 300, uid="c"); cs = 75
-    guide = (f'<rect x="{500 - 150 - cs}" y="{90 - cs}" width="{300 + 2 * cs}" height="{h + 2 * cs}" fill="none" stroke="{C["red"]}" stroke-width="2" stroke-dasharray="10 8"/>'
-             + text("X = 0.25 x badge width", 500, 90 + h + 2 * cs + 40, 24, "Inter-Medium", C["gray"], 0, "middle"))
-    put("01_Logo/logo-clear-space-guide", svg(1000, 90 + h + 2 * cs + 90, s + guide, "1000px", f"{90 + h + 2 * cs + 90}px", "Clear space guide", C["white"]))
 
 
 # ---------------- patterns ----------------

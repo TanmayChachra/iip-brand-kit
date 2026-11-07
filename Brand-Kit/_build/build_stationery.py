@@ -44,7 +44,7 @@ def card_front_A():
     W, H = 889, 508
     b = crop(W, H, sunburst(835, 70, 250, MIST), "a")
     s, h = lockup_vertical(W / 2, 70, 172, uid="cfa"); b += s
-    b += stripe(0, 456, W, 52, 46)
+    b += stripe(-(46), 456, W + 2 * (46), 52, 46)
     OUT["06_Stationery/card-front-A"] = page(88.9, 50.8, b, "Business card front A, vertical lockup")
 
 
@@ -52,7 +52,7 @@ def card_front_B():
     W, H = 889, 508
     b = crop(W, H, sunburst(60, 460, 230, MIST), "b")
     b += centred(lockup_horizontal, W, 228, 150, uid="cfb")
-    b += stripe(0, 456, W, 52, 46)
+    b += stripe(-(46), 456, W + 2 * (46), 52, 46)
     OUT["06_Stationery/card-front-B"] = page(88.9, 50.8, b, "Business card front B, horizontal lockup")
 
 
@@ -77,7 +77,7 @@ def visiting_card():
     b += icon("phone", 58, 262, 30, INK, 2.2) + text(PH, 104, 286, 24, "Inter-Medium", INK)
     b += icon("location-pin", 58, 312, 30, INK, 2.2) + text(ADDR1, 104, 331, 20, "Inter-Regular", INK) + text(ADDR2, 104, 357, 20, "Inter-Regular", INK)
     b += text("ISAPUR", 62, 435, 28, "Montserrat-ExtraBold", INK, 0.04) + text("INDUSTRIAL PARK", 190, 435, 16, "Montserrat-SemiBold", INK, 0.3)
-    b += stripe(0, 466, W, 42, 38)
+    b += stripe(-(38), 466, W + 2 * (38), 42, 38)
     OUT["06_Stationery/visiting-card"] = page(88.9, 50.8, b, "Visiting card with name and designation placeholders")
 
 
@@ -91,7 +91,7 @@ def letterhead():
     b += f'<rect x="200" y="400" width="1700" height="2" fill="{INK}" fill-opacity=".18"/>'
     b += text("Ref. No.", 200, 500, 21, "Inter-Medium", GRAY) + text("Date", 1900, 500, 21, "Inter-Medium", GRAY, 0.0, "end")
     b += text(TAG[0], 1050, 2815, 21, "Inter-Medium", GRAY, 0.0, "middle")
-    b += stripe(0, 2890, W, 80, 70)
+    b += stripe(-(70), 2890, W + 2 * (70), 80, 70)
     OUT["06_Stationery/letterhead-A4"] = page(210, 297, b, "Letterhead A4")
 
 
@@ -100,7 +100,7 @@ def doc_header():
     s, _ = lockup_horizontal(200, 85, 150, uid="dh"); b = s
     b += text("QUOTATION", 1900, 160, 46, "Montserrat-ExtraBold", INK, 0.04, "end")
     b += text("Ref. No.            Date", 1900, 212, 21, "Inter-Medium", GRAY, 0.0, "end")
-    b += stripe(0, 310, W, 40, 36)
+    b += stripe(-(36), 310, W + 2 * (36), 40, 36)
     OUT["06_Stationery/doc-header-strip"] = page(210, 35, b, "Invoice and quotation header strip")
 
 
@@ -111,7 +111,7 @@ def notepad():
     b += f'<rect x="130" y="330" width="{W - 260}" height="2" fill="{INK}" fill-opacity=".18"/>'
     for y in range(450, 1900, 64): b += f'<rect x="130" y="{y}" width="{W - 260}" height="2" fill="{LINE}"/>'
     b += text(PH, W / 2, 2000, 22, "Montserrat-ExtraBold", INK, 0.02, "middle")
-    b += stripe(0, 2042, W, 58, 52)
+    b += stripe(-(52), 2042, W + 2 * (52), 58, 52)
     OUT["06_Stationery/notepad-A5"] = page(148, 210, b, "Notepad sheet A5")
 
 
@@ -122,7 +122,7 @@ def envelope(wmm, hmm, name, title):
     s, _ = lockup_horizontal(110 * k, 110 * k, 110 * k, uid="en" + name); b += s
     b += text("Isapur Industrial Park", 110 * k, 880 * k, 24 * k, "Montserrat-ExtraBold", INK, 0.02)
     b += text(ADDR1 + " " + ADDR2, 110 * k, 925 * k, 18 * k, "Inter-Regular", GRAY) + text(PH, 110 * k, 962 * k, 18 * k, "Inter-Medium", GRAY)
-    b += stripe(0, H - 56 * k, W, 56 * k, 50 * k)
+    b += stripe(-(50 * k), H - 56 * k, W + 2 * (50 * k), 56 * k, 50 * k)
     OUT[f"06_Stationery/{name}"] = page(wmm, hmm, b, title)
 
 
@@ -136,7 +136,7 @@ def id_front():
     b += text("PHOTO", 270, 525, 20, "Inter-Medium", GRAY, 0.1, "middle")
     b += text("Full Name", W / 2, 700, 42, "Montserrat-ExtraBold", INK, 0.0, "middle") + text("Designation", W / 2, 738, 22, "Inter-Medium", GRAY, 0.0, "middle")
     b += text("ID No.", W / 2, 782, 20, "Inter-Medium", GRAY, 0.0, "middle")
-    b += stripe(0, 820, W, 40, 36)
+    b += stripe(-(36), 820, W + 2 * (36), 40, 36)
     OUT["06_Stationery/id-card-front"] = page(54, 86, b, "ID card front, 54 x 86 mm")
 
 
@@ -151,7 +151,7 @@ def id_back():
     b += text(CT["phones"][0], W / 2, 520, 28, "Montserrat-ExtraBold", INK, 0.02, "middle") + text(CT["phones"][1], W / 2, 560, 28, "Montserrat-ExtraBold", INK, 0.02, "middle")
     b += text("Blood group", 70, 650, 18, "Inter-Medium", GRAY) + f'<rect x="200" y="652" width="270" height="2" fill="{LINE}"/>'
     b += text("Emergency no.", 70, 700, 18, "Inter-Medium", GRAY) + f'<rect x="200" y="702" width="270" height="2" fill="{LINE}"/>'
-    b += stripe(0, 820, W, 40, 36)
+    b += stripe(-(36), 820, W + 2 * (36), 40, 36)
     OUT["06_Stationery/id-card-back"] = page(54, 86, b, "ID card back, 54 x 86 mm")
 
 
@@ -174,7 +174,7 @@ def catalogue():
     b += f'<rect x="80" y="740" width="150" height="10" fill="{RED}"/>'
     b += text("Plot list, layout map and documents", 80, 820, 38, "Inter-Medium", GRAY)
     b += text(PH, 80, 960, 40, "Montserrat-ExtraBold", INK, 0.02)
-    b += stripe(0, 1010, W, 70, 62)
+    b += stripe(-(62), 1010, W + 2 * (62), 70, 62)
     OUT["06_Stationery/catalogue-cover-1080"] = page(W, W, b, "WhatsApp catalogue cover 1080", unit=1, px=True)
 
 
@@ -188,7 +188,7 @@ def folder():
     b += f'<rect x="200" y="1370" width="260" height="14" fill="{RED}"/>'
     b += text("Industrial plots on the Hapur-Modinagar Road", 200, 1480, 46, "Inter-Medium", GRAY)
     b += text(PH, 200, 2700, 56, "Montserrat-ExtraBold", INK, 0.02) + text(ADDR1 + " " + ADDR2, 200, 2760, 30, "Inter-Regular", GRAY)
-    b += stripe(0, 2880, W, 90, 80)
+    b += stripe(-(80), 2880, W + 2 * (80), 90, 80)
     OUT["06_Stationery/folder-cover-A4"] = page(210, 297, b, "Folder or brochure cover A4")
 
 
