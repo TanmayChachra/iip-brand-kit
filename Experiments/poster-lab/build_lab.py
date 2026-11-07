@@ -263,6 +263,130 @@ def layouts():
     ]
 
 
+
+# ---------- NEW BRAND TEXTURES (built from the brand's own parts: sunburst, diamonds, flag, roads, plots, circuit, halo) ----------
+import random
+YEL, RED, GRN = "#FFD600", "#E53935", "#0F4D3A"
+
+
+def _star(cx, cy, r, n=22, depth=0.86):
+    pts = []
+    for i in range(2 * n):
+        a = math.pi * i / n - math.pi / 2; rr = r if i % 2 == 0 else r * depth
+        pts.append(f"{cx + rr * math.cos(a):.1f},{cy + rr * math.sin(a):.1f}")
+    return "M" + "L".join(pts) + "Z"
+
+
+def t_sunburst_tiles(W, H, color=GRN, op=0.045, pitch=170, r=40):
+    d = ""
+    for j, y in enumerate(range(0, H + pitch, pitch // 2)):
+        for x in range(-pitch, W + pitch, pitch):
+            d += _star(x + (pitch // 2 if j % 2 else 0), y, r)
+    return f'<path d="{d}" fill="{color}" fill-opacity="{op}"/>'
+
+
+def t_diamond_chain(W, H, op=0.24, pitch=46, size=8):
+    s = ""
+    for j, y in enumerate(range(0, H + pitch, pitch)):
+        col = YEL if j % 6 == 3 else RED
+        for x in range(0, W + pitch, pitch):
+            cx = x + (pitch / 2 if j % 2 else 0)
+            s += f'<path d="M{cx} {y - size}L{cx + size} {y}L{cx} {y + size}L{cx - size} {y}Z" fill="{col}"/>'
+    return f'<g fill-opacity="{op}">{s}</g>'
+
+
+def t_flag_hatch(W, H, op=0.20, pitch=96, wd=7):
+    return (f'<defs><pattern id="fh" width="{pitch}" height="{pitch}" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">'
+            f'<rect x="0" width="{wd}" height="{pitch}" fill="{YEL}"/><rect x="{wd * 1.8}" width="{wd}" height="{pitch}" fill="{RED}"/><rect x="{wd * 3.6}" width="{wd}" height="{pitch}" fill="{GRN}"/></pattern></defs>'
+            f'<rect width="{W}" height="{H}" fill="url(#fh)" opacity="{op}"/>')
+
+
+def t_roads(W, H, op=0.08):
+    s = ""
+    for x in range(120, W, 330):
+        s += f'<rect x="{x - 20}" y="0" width="40" height="{H}" fill="{GRN}" fill-opacity="{op}"/><path d="M{x} 0V{H}" stroke="{YEL}" stroke-opacity="0.55" stroke-width="3" stroke-dasharray="26 22"/>'
+    for y in range(200, H, 420):
+        s += f'<rect x="0" y="{y - 14}" width="{W}" height="28" fill="{GRN}" fill-opacity="{op * 0.8}"/><path d="M0 {y}H{W}" stroke="{YEL}" stroke-opacity="0.45" stroke-width="2.5" stroke-dasharray="22 20"/>'
+    return s
+
+
+def t_plot_plan(W, H, seed=4):
+    rng = random.Random(seed); s = ""
+    bw, bh, gap = 150, 100, 30
+    for y in range(0, H + bh, bh + gap):
+        for x in range(0, W + bw, bw + gap):
+            r = rng.random(); fill = f' fill="{YEL}" fill-opacity="0.12"' if r < 0.10 else (f' fill="{GRN}" fill-opacity="0.07"' if r < 0.17 else ' fill="none"')
+            s += f'<rect x="{x}" y="{y}" width="{bw}" height="{bh}" rx="3"{fill} stroke="{GRN}" stroke-opacity="0.13" stroke-width="2"/>'
+    return s
+
+
+def t_circuit(W, H, color=GRN, op=0.17, seed=21, n=70):
+    rng = random.Random(seed); g = 44; d = ""; nodes = ""
+    dirs = [(1, 0), (0, 1), (1, 1), (-1, 1), (-1, 0), (0, -1)]
+    for _ in range(n):
+        x, y = rng.randrange(0, W // g) * g, rng.randrange(0, H // g) * g; d += f"M{x} {y}"
+        for _ in range(rng.randint(2, 6)):
+            dx, dy = rng.choice(dirs); k = rng.randint(1, 3); x += dx * g * k; y += dy * g * k; d += f"L{x} {y}"
+        nodes += f'<circle cx="{x}" cy="{y}" r="7" fill="none" stroke="{color}" stroke-width="3"/>'
+    return f'<g stroke="{color}" stroke-opacity="{op}" fill="none" stroke-width="3" stroke-linejoin="round"><path d="{d}"/><g stroke-opacity="{op + 0.1}">{nodes}</g></g>'
+
+
+def t_halo_rings(W, H, cx=913.5, cy=235, op=0.12):
+    s = ""
+    for i, r in enumerate(range(130, 3400, 78)):
+        col, w, o = (YEL, 4, op * 2.4) if i % 3 == 0 else (GRN, 2, op)
+        s += f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{col}" stroke-width="{w}" stroke-opacity="{o:.2f}"/>'
+    return s
+
+
+def t_starfield(W, H, seed=9, n=70):
+    rng = random.Random(seed); s = ""
+    for _ in range(n):
+        r = rng.choice([14, 22, 34, 50]); col = rng.choice([YEL, YEL, RED, GRN])
+        s += f'<path d="{_star(rng.uniform(0, W), rng.uniform(0, H), r)}" fill="{col}" fill-opacity="{0.22 if col == YEL else 0.14}"/>'
+    return s
+
+
+TEXTURES = {
+    "sunburst-tiles": ("Sunburst tiles", "The badge's 22 point sunburst repeated as a quiet half-drop tile.", t_sunburst_tiles),
+    "diamond-chain": ("Diamond chain", "The badge's red diamonds as rows, with a yellow row every sixth line.", t_diamond_chain),
+    "flag-hatch": ("Flag hatch", "Yellow, red and green slanted hairlines, the tri-colour flag turned into a texture.", t_flag_hatch),
+    "road-lanes": ("Road lanes", "Wide RCC roads with yellow dashed centre lines. The park's main promise, as a pattern.", t_roads),
+    "plot-plan": ("Plot plan", "A site plan of plots and lanes, a few plots filled yellow and green.", t_plot_plan),
+    "circuit-trace": ("Circuit trace", "Orthogonal and 45 degree traces with ring nodes, from the circuit-style LiP lettering.", t_circuit),
+    "halo-rings": ("Halo rings", "Concentric ripples radiating from the badge, every third ring yellow.", t_halo_rings),
+    "starfield": ("Mini suns", "Scattered small sunbursts in brand colours at four sizes.", t_starfield),
+}
+
+
+def brand_variants():
+    def mk(i, name, base, hero, tid, note, **kw):
+        d = dict(byid(base)); fn = TEXTURES[tid][2]
+        d.update(id="brand-" + i, name=name, note=note, hero=str(HERE / hero), tex=(lambda fn=fn: fn(W, H) + grain(0.16, 0.9, "0.4 0.3 0.2", "gb" + i, 3))); d.update(kw); return d
+    O = "hero/hero-original.png"; A = "hero-ai/"
+    return [
+        mk("sun-tiles", "Sun tiles on bone", "01-bone-paper", O, "sunburst-tiles", "Bone, tiny sunbursts repeated across the sheet, Archivo."),
+        mk("plot-plan", "Plot plan sage", "02-blueprint-grid", A + "hero-ai-aerial-layout.png", "plot-plan", "Sage with a site plan behind the content, Barlow, the isometric layout image."),
+        mk("circuit-night", "Circuit night", "07-deep-green", O, "circuit-trace", "Deep green with fine cream circuit traces, Plus Jakarta Sans.", tex=lambda: t_circuit(W, H, color="#FFFFFF", op=0.2) + grain(0.16, 0.9, "1 1 1", "gbc", 3)),
+        mk("flag-hatch", "Flag hatch on sand", "08-sand-gradient", "hero/hero-warm-grade.png", "flag-hatch", "Sand gradient with the flag colours as faint slanted hairlines, Red Hat Display."),
+        mk("diamonds", "Diamond chain cream", "03-sunburst-echo", O, "diamond-chain", "Cream with rows of the badge diamonds, Poppins.", bg="#F8F2E2"),
+        mk("rings", "Halo rings", "06-halftone-warm", O, "halo-rings", "Ripples from the badge across a warm base, Outfit and DM Sans."),
+        mk("road-lanes", "Road lanes concrete", "05-concrete", "hero/hero-mono.png", "road-lanes", "Concrete grey with road lanes and yellow dashes, Space Grotesk."),
+        mk("mini-suns", "Mini suns on yellow", "03-sunburst-echo", O, "starfield", "Pale brand yellow with small sunbursts, Poppins.", bg="#FFEFA8", leaf="#F7DF86"),
+    ]
+
+
+def texture_swatches():
+    out = []; (HERE / "textures").mkdir(exist_ok=True)
+    for tid, (name, note, fn) in TEXTURES.items():
+        w, h = 1200, 800
+        body = f'<rect width="{w}" height="{h}" fill="#F4F0E8"/>' + fn(w, h)
+        svg = f'<svg xmlns="{SVGNS}" width="{w}" height="{h}" viewBox="0 0 {w} {h}"><title>texture {tid}</title><defs><clipPath id="cl"><rect width="{w}" height="{h}"/></clipPath></defs><g clip-path="url(#cl)">{body}</g></svg>'
+        (HERE / f"textures/texture-{tid}.svg").write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + svg, encoding="utf-8")
+        out.append(dict(id=tid, name=name, note=note))
+    return out
+
+
 def split_tex(top="#DDE8D8", y=1110, fid="sp"):
     return (f'<path d="M0 0H{W}V{y - 90}L0 {y + 90}Z" fill="{top}"/>' + grain(0.30, 0.85, "0.35 0.3 0.2", fid, 12))
 
@@ -295,7 +419,7 @@ def main():
     for d in ("svg", "png", "thumbs"): (HERE / d).mkdir(exist_ok=True)
     with sync_playwright() as p:
         br = p.chromium.launch(); pg = br.new_page(viewport={"width": W, "height": H})
-        for v in V + image_variants() + mixes() + layouts():
+        for v in V + image_variants() + mixes() + layouts() + brand_variants():
             s = make(v, v.get("hero")); (HERE / f"svg/{v['id']}.svg").write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + s, encoding="utf-8")
             pg.goto((HERE / f"svg/{v['id']}.svg").as_uri()); pg.wait_for_timeout(1800); pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(600)
@@ -304,8 +428,14 @@ def main():
             im.save(HERE / f"thumbs/{v['id']}.webp", quality=80, method=6)
             im.resize((W // 3, H // 3)).save(HERE / f"thumbs/{v['id']}-s.webp", quality=78, method=6)
             print("ok", v["id"])
+        sw = texture_swatches(); pg2 = br.new_page(viewport={"width": 1200, "height": 800})
+        for t in sw:
+            pg2.goto((HERE / f"textures/texture-{t['id']}.svg").as_uri()); pg2.wait_for_timeout(300)
+            pg2.screenshot(path=str(HERE / f"thumbs/tex-{t['id']}.png"))
+            im = Image.open(HERE / f"thumbs/tex-{t['id']}.png").convert("RGB"); im.save(HERE / f"thumbs/tex-{t['id']}.webp", quality=82, method=6); (HERE / f"thumbs/tex-{t['id']}.png").unlink()
+        json.dump(sw, open(HERE / "textures.json", "w"), indent=1)
         br.close()
-    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants() + mixes() + layouts()], open(HERE / "variants.json", "w"), indent=1)
+    json.dump([{k: v[k] for k in ("id", "name", "font", "bg", "note")} for v in V + image_variants() + mixes() + layouts() + brand_variants()], open(HERE / "variants.json", "w"), indent=1)
 
 
 if __name__ == "__main__":

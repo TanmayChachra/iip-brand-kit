@@ -328,5 +328,85 @@
   ],
   "bg": "#F7F0E3",
   "note": "Charcoal band behind facilities and CTA: the yellow CTA gets maximum contrast and the page gets a clear base."
+ },
+ {
+  "id": "brand-sun-tiles",
+  "name": "Sun tiles on bone",
+  "font": [
+   "Archivo",
+   "Archivo"
+  ],
+  "bg": "#F4F0E8",
+  "note": "Bone, tiny sunbursts repeated across the sheet, Archivo."
+ },
+ {
+  "id": "brand-plot-plan",
+  "name": "Plot plan sage",
+  "font": [
+   "Barlow Semi Condensed",
+   "Barlow"
+  ],
+  "bg": "#EEF2EE",
+  "note": "Sage with a site plan behind the content, Barlow, the isometric layout image."
+ },
+ {
+  "id": "brand-circuit-night",
+  "name": "Circuit night",
+  "font": [
+   "Plus Jakarta Sans",
+   "Plus Jakarta Sans"
+  ],
+  "bg": "#0F4D3A",
+  "note": "Deep green with fine cream circuit traces, Plus Jakarta Sans."
+ },
+ {
+  "id": "brand-flag-hatch",
+  "name": "Flag hatch on sand",
+  "font": [
+   "Red Hat Display",
+   "Red Hat Text"
+  ],
+  "bg": "#F8F2E4",
+  "note": "Sand gradient with the flag colours as faint slanted hairlines, Red Hat Display."
+ },
+ {
+  "id": "brand-diamonds",
+  "name": "Diamond chain cream",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#F8F2E2",
+  "note": "Cream with rows of the badge diamonds, Poppins."
+ },
+ {
+  "id": "brand-rings",
+  "name": "Halo rings",
+  "font": [
+   "Outfit",
+   "DM Sans"
+  ],
+  "bg": "#F7F0E3",
+  "note": "Ripples from the badge across a warm base, Outfit and DM Sans."
+ },
+ {
+  "id": "brand-road-lanes",
+  "name": "Road lanes concrete",
+  "font": [
+   "Space Grotesk",
+   "Space Grotesk"
+  ],
+  "bg": "#E7E6E2",
+  "note": "Concrete grey with road lanes and yellow dashes, Space Grotesk."
+ },
+ {
+  "id": "brand-mini-suns",
+  "name": "Mini suns on yellow",
+  "font": [
+   "Poppins",
+   "Poppins"
+  ],
+  "bg": "#FFEFA8",
+  "note": "Pale brand yellow with small sunbursts, Poppins."
  }
 ]

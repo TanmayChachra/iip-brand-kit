@@ -1,0 +1,42 @@
+[
+ {
+  "id": "sunburst-tiles",
+  "name": "Sunburst tiles",
+  "note": "The badge's 22 point sunburst repeated as a quiet half-drop tile."
+ },
+ {
+  "id": "diamond-chain",
+  "name": "Diamond chain",
+  "note": "The badge's red diamonds as rows, with a yellow row every sixth line."
+ },
+ {
+  "id": "flag-hatch",
+  "name": "Flag hatch",
+  "note": "Yellow, red and green slanted hairlines, the tri-colour flag turned into a texture."
+ },
+ {
+  "id": "road-lanes",
+  "name": "Road lanes",
+  "note": "Wide RCC roads with yellow dashed centre lines. The park's main promise, as a pattern."
+ },
+ {
+  "id": "plot-plan",
+  "name": "Plot plan",
+  "note": "A site plan of plots and lanes, a few plots filled yellow and green."
+ },
+ {
+  "id": "circuit-trace",
+  "name": "Circuit trace",
+  "note": "Orthogonal and 45 degree traces with ring nodes, from the circuit-style LiP lettering."
+ },
+ {
+  "id": "halo-rings",
+  "name": "Halo rings",
+  "note": "Concentric ripples radiating from the badge, every third ring yellow."
+ },
+ {
+  "id": "starfield",
+  "name": "Mini suns",
+  "note": "Scattered small sunbursts in brand colours at four sizes."
+ }
+]
