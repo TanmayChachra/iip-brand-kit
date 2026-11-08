@@ -1,0 +1,12 @@
+{
+  "updated": "2026-11-08",
+  "workstreams": [
+    {"id": "01_Brand", "agent": "brand", "state": "locked", "summary": "Kit v1.1 and poster are final. Poster lab (fonts, textures, layouts) parked for owner pick.", "next": "Promote chosen brand textures only if the owner picks them"},
+    {"id": "02_Website", "agent": "web", "state": "planned", "summary": "Stack decided on paper: Astro on Cloudflare Pages. No code yet.", "next": "Owner confirms stack and domain, then build the skeleton"},
+    {"id": "03_SEO", "agent": "seo", "state": "research done", "summary": "Competitors, stack, playbook, tooling, backlinks and AEO/GEO researched and filed.", "next": "Keyword map once OpenSEO is connected"},
+    {"id": "04_Analytics", "agent": "analytics", "state": "spec written", "summary": "Event spec and GTM plan written. Nothing installed yet.", "next": "Owner creates GTM, GA4, Search Console"},
+    {"id": "05_Local-Presence", "agent": "local", "state": "audit done", "summary": "GBP audited (3 profiles plus 2 duplicate pins, no website field). 48 listing targets filed.", "next": "Owner decides main profile and gives access"},
+    {"id": "06_Content", "agent": "content", "state": "waiting", "summary": "Starts after the keyword map and site skeleton.", "next": "Pillars with ChatGPT, hashtags with Apify"},
+    {"id": "_ops", "agent": "lead", "state": "live", "summary": "Agent entry points, contract files, this board, weekly SEO watch.", "next": "Review the board with the owner"}
+  ]
+}

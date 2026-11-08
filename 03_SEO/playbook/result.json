@@ -1,0 +1,27 @@
+{
+  "status": "done",
+  "job": "top SEO strategies, data to collect, A/B tests, 90 day plan",
+  "date": "2026-11-08",
+  "files": [
+    "03_SEO/playbook/top-seo-strategies.md",
+    "03_SEO/playbook/data-to-collect.md",
+    "03_SEO/playbook/ab-tests.md"
+  ],
+  "metrics": {
+    "tactics": 23,
+    "primary_sources_read": ["Google AI features doc", "Google helpful content doc", "Google Business Profile ranking help", "Ahrefs AI search strategy (Jul 2026)", "Marie Haynes Dec 2025 core update post", "Backlinko high quality backlinks", "Seer low traffic A/B testing"],
+    "sources_blocked_or_search_summary_only": ["Whitespark LSRF", "SparkToro zero click", "Aleyda Solis checklist", "Kevin Indig Growth Memo (paywall)", "Neil Patel", "Sterling Sky studies", "Lily Ray", "Tim Soulo (SEJ)"],
+    "sample_size_table": "computed with two proportion formula, 95% confidence, 80% power"
+  },
+  "failures": [
+    "Aleyda, Whitespark, SparkToro and SEJ pages return 403 to automated reads, so numbers from them are labelled R",
+    "No source found for industrial park landlord SEO, ranking is judgement",
+    "No 2026 specific content found for Glenn Gabe, Mike Blumenthal, Claire Carlile service area advice"
+  ],
+  "next": [
+    "Owner reads Whitespark LSRF and Aleyda checklist in a browser and confirms weights",
+    "Get owner data in data-to-collect.md section A1 to A4",
+    "Re-run sample size table after 4 weeks of GA4 data",
+    "Compare competitor fork findings (03_SEO/competitors) to tactic 15"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "done",
+  "job": "listings, backlinks, AEO/GEO plan",
+  "date": "2026-11-08",
+  "files": [
+    "05_Local-Presence/citations/citations-targets.md",
+    "05_Local-Presence/citations/citations-targets.csv",
+    "05_Local-Presence/citations/_gen_citations.py",
+    "03_SEO/backlinks/backlinks.md",
+    "03_SEO/aeo-geo/aeo-geo-plan.md"
+  ],
+  "metrics": {"citation_targets": 48, "p0_targets": 15, "backlink_ideas": 20, "searches_run": 9},
+  "failures": [
+    "No web fetch tool: signup URLs not re-opened today, labelled as such",
+    "Amul, Inox Air, Patanjali near the park: no source found, labelled reported by owner, unverified",
+    "Follow vs nofollow unknown for most Indian sites, test after listing"
+  ],
+  "next": [
+    "Owner: confirm plot sizes and price range, pump brand, partner permissions, UPSIDA or pledge park eligibility",
+    "Run the P0 listings after GBP is cleaned",
+    "Re-verify domains marked not verified (HPDA, Laghu Udyog Bharti, Indian Industry Association)"
+  ]
+}

@@ -1,5 +1,11 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-08, phase 2 starts (visibility)
+- Folders reorganised into numbered workstreams: 01_Brand, 02_Website, 03_SEO, 04_Analytics, 05_Local-Presence, 06_Content, _ops. Brand kit and poster are the locked main kit. Kit rebuild and publish still work from the new paths.
+- Six research jobs done and filed: competitor audit, Astro stack decision, top SEO strategies with data to collect and A/B tests, free listings and backlinks plus AEO and GEO plan, MCP and Claude skills shortlist, Google Business Profile audit.
+- New phase 2 board on GitHub Pages: /board/. AI entry points (`_ops/AGENTS.md`, an AGENT.md in every folder) so agents can work in parallel.
+- GTM and GA4 plan and event spec written. Weekly SEO watch scheduled (Mondays), writes to `03_SEO/watch/`.
+
 ## 2026-11-07, poster lab
 - New `Experiments/poster-lab/index.html`: 9 font, texture and colour variants and 9 hero image variants (5 local grades, 4 AI concepts) of the final poster. The final poster is untouched. AI images are concepts, not photos of the park.
 - Poster lab brand textures: 8 new textures from the brand's own parts (sunburst tiles, diamond chain, flag hatch, road lanes, plot plan, circuit trace, halo rings, mini suns) as SVG, plus 8 posters using them.

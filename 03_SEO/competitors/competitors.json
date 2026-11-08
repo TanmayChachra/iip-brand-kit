@@ -1,0 +1,81 @@
+{
+  "checked": "2026-11-08",
+  "labels": {"V": "verified by reading page", "R": "reported by listing or search summary", "G": "guess"},
+  "competitors": [
+    {
+      "name": "CKS Industrial Park (listings also say CKS Atom Industrial Park)",
+      "developer": "CKS Buildtech Private Limited",
+      "site": "https://cksindustrialpark.com",
+      "site_exists": true, "label": "V",
+      "title": "CKS Industrial Park | UPSIDA Private Industrial Park in Bhojpur, Ghaziabad",
+      "meta_description": "CKS Industrial Park offers 100+ acres of well-planned industrial plots for manufacturing, warehousing, logistics & MSMEs in Village Kilhora, Bhojpur, Ghaziabad. A UPSIDA Private Industrial Park by CKS Buildtech.",
+      "h1": "Strategically Planned Industrial Spaces in Bhojpur, Ghaziabad",
+      "canonical": "https://cksindustrialpark.com",
+      "schema": ["FAQPage", "LocalBusiness", "Organization", "ContactPoint", "PostalAddress", "Question", "Answer"],
+      "key_pages": ["/about", "/gallery", "/industrial-park", "/industrial-plots", "/location", "/blog", "/contact", "/industrial-plots-in-ghaziabad", "/industrial-plots-in-meerut", "/industrial-commercial-plots-hapur", "/industrial-plots-in-bhojpur", "/industrial-commercial-plots-ncr", "/industrial-commercial-plots-noida"],
+      "blog_posts": 4,
+      "tracking": {"gtm": false, "ga": true, "fb_pixel": false},
+      "whatsapp": true, "tel": "+91 9760730500", "forms": 2, "images_in_html": 10, "video": false, "map_embed": false,
+      "sitemap": true, "robots": true, "llms_txt": true,
+      "claims": ["UPSIDA approved private park (PIP-2022 per listings)", "100+ acres", "freehold plots", "50 ft roads", "6 min to Delhi-Meerut Expressway", "10 min / 10 km to Eastern Peripheral Expressway"],
+      "listing_prices": "NoBroker resale about Rs 80 lakh for 4,500 sq ft; 99acres CKS Atom resale about Rs 2 crore for 7,200 sq ft (R)",
+      "gmb": "not captured (link is in llms.txt: https://share.google/LAwq9EF2rVf6waBBW)",
+      "gaps": ["no GTM", "no video", "few images", "no map embed", "no named neighbour brands", "no proof of operating factories on page"]
+    },
+    {
+      "name": "Shree Haridas Industrial Park (SHD)",
+      "site": "https://shdindustrialpark.co.in",
+      "site_exists": true, "label": "V",
+      "title": "Shree Haridas Industrial Park | 9266850850 | Ishapur Modinagar",
+      "meta_description": "Shree Haridas Industrial Park Ishapur Delhi-Meerut Expressway, Modinagar. A new Industrial Project in Delhi-Meerut Expressway. Best deal with Limited offer to grow your business.",
+      "h1": "Starting Price Rs 21000 /-sq.yd.",
+      "canonical": null,
+      "schema": [],
+      "tracking": {"gtm": true, "ga": true, "fb_pixel": false},
+      "whatsapp": false, "tel": "9266850850", "forms": 3, "images_in_html": 36, "video": false, "map_embed": false,
+      "sitemap": true, "robots": true, "llms_txt": false,
+      "claims": ["100 acre (approx)", "RCC roads", "UP Revenue Code 2006 section 80 passed", "70 ft entry road, rest 60 ft minimum", "near Inox oxygen centre", "24h electricity, water, security, CCTV, internet", "5 min drive from Bhojpur Change Over", "from Rs 21,000 per sq yd, from Rs 75 lakh"],
+      "listing_prices": "500 sq yd at Rs 1.10 crore, freehold (RealEstateIndia, R)",
+      "gmb": "not captured",
+      "gaps": ["no schema", "no canonical", "apartment floor plans and Noida text left from a template", "sitemap lists 40+ child sitemaps of numeric URLs that return the same home page", "no WhatsApp", "no llms.txt"]
+    },
+    {
+      "name": "Next Phase Industrial Hub (broker)",
+      "site": "https://nextphaseindustrialhub.in",
+      "site_exists": true, "label": "V",
+      "title": "Industrial Plots for Sale in Ghaziabad for Growing Industry",
+      "meta_description": "Find industrial plots for sale in Ghaziabad with top connectivity, budget-friendly options, and development-ready sites perfect for manufacturing units",
+      "h1": null,
+      "canonical": "https://nextphaseindustrialhub.in/",
+      "schema": ["WebSite", "SearchAction", "WebPage", "Article", "Person", "ImageObject"],
+      "tracking": {"gtm": false, "ga": true, "fb_pixel": false},
+      "whatsapp": true, "tel": "+918383075927", "forms": 1, "images_in_html": 65, "video": false, "map_embed": true,
+      "sitemap": true, "robots": true, "llms_txt": false,
+      "projects_sold": [
+        {"name": "Reliance Road Industrial Park", "acres": 50, "price_per_sq_yd": 25000, "road": "NH-9 Ghaziabad-Hapur", "from_sq_yd": 300},
+        {"name": "Dhaulana Industrial Park", "acres": 35, "price_per_sq_yd": 18000, "road": "Masuri Galaoti Road", "from_sq_yd": 300},
+        {"name": "Sai Industrial Park", "acres": 50, "price_per_sq_yd": 25000, "road": "NH-9", "from_sq_yd": 300},
+        {"name": "Mahamaya Industrial Park Bhojpur", "acres": 55, "price_per_sq_yd": 16000, "road": "near Delhi-Meerut Expressway", "from_sq_yd": 300},
+        {"name": "Indo World Space Phase 1", "acres": 20, "price_per_sq_yd": 27000, "road": "NH-9", "from_sq_yd": 300},
+        {"name": "Logi Industrial Hero Park", "acres": 30, "price_per_sq_yd": 27000, "road": "NH-9", "from_sq_yd": 300},
+        {"name": "Kishori Industrial Park", "acres": 5, "price_per_sq_yd": 32000, "road": "NH-9", "from_sq_yd": 500},
+        {"name": "Kanha Industrial Park", "acres": null, "price_per_sq_yd": 28000, "road": "NH-9", "from_sq_yd": null}
+      ],
+      "gmb": "not captured",
+      "gaps": ["no H1 on home page", "no GTM", "llms.txt URL returns the home page (soft 404)", "lead shell for other developers' parks"]
+    },
+    {
+      "name": "Mahamaya Industrial Park, Bhojpur",
+      "site": null, "site_exists": false, "label": "R (not found by search, not proof of absence)",
+      "claims": ["55 acres", "plots from 300 sq yd", "CLU approved, Dhara 80", "50 ft roads", "5 min from Delhi-Meerut Expressway"],
+      "note": "Another seller page says Jheela Panchayat approved, 50 acres, NH9 Ghaziabad-Hapur: inconsistent with the 55 acre Bhojpur page.",
+      "gmb": "not captured"
+    },
+    {"name": "Shri Balaji Industrial Park", "site": null, "site_exists": false, "label": "R (not found by search)", "note": "Only unrelated firms and the agent Balaji Promoters found."},
+    {"name": "Shivansh Industrial Park", "site": null, "site_exists": false, "label": "R (not found by search)", "note": "Only Shivansh Enterprises (nuts and bolts dealer) found."},
+    {"name": "Atom Industrial Park", "site": null, "site_exists": false, "label": "R", "note": "Appears only as CKS Atom Industrial Park on NoBroker and 99acres."},
+    {"name": "Kanha Industrial Park", "site": "https://kanhaindustrialpark.com", "site_exists": true, "label": "R, own fetch failed", "note": "Fetch failed with SSL certificate expired (V). Title from search: Kanha Industrial Park | 7838 999 444."}
+  ],
+  "portals_that_rank": ["realestateindia.com", "squareyards.com", "99acres.com", "housing.com", "nobroker.in", "1acre.in", "ghar.tv", "olx.in", "realtyofindia.com", "sukhmaniassociate.com", "indiamart.com (agents)"],
+  "iip_presence": "Searches for Isapur Industrial Park and Isapur Industrial Area returned nothing relevant (V, 2026-11-08)."
+}

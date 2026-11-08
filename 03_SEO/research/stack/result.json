@@ -1,0 +1,26 @@
+{
+  "status": "partial",
+  "date": "2026-11-08",
+  "files": ["03_SEO/research/stack/result.json"],
+  "metrics": {
+    "recommendation": "Astro 7.4.7 static + Cloudflare Pages free + Markdown content; Keystatic CMS after ~30 pages",
+    "astro_version": "7.4.7 (node >=22.23.4, npm registry 2026-11-08)",
+    "hosting_rule": "GitHub Pages terms bar business sites (verified); Cloudflare Pages recommended",
+    "cwv_thresholds_verified": "LCP 2.5s, INP 200ms, CLS 0.1 at p75 (web.dev)",
+    "openseo": "every-app/open-seo, MIT, ~26.8k stars, MCP server, DataForSEO key needed (verified README + GitHub API)",
+    "google_ai_features": "no extra tech requirement, no special files or schema (verified)"
+  },
+  "failures": [
+    "findings.md NOT written: the harness refused a subagent report file write. Full findings are in the fork's final message text; parent must save them to 03_SEO/research/stack/findings.md",
+    "No neutral current HTTP Archive table comparing all frameworks; pass rates are reported by blogs only",
+    "Non-OpenAI AI crawler tokens (ClaudeBot, PerplexityBot, Google-Extended) not verified at vendor pages",
+    "Netlify and Vercel free tier numbers are from blogs, not provider pages",
+    "OpenSEO MCP localhost endpoint and GSC OAuth detail are from a third party page, not docs"
+  ],
+  "next": [
+    "Parent: save findings text to findings.md",
+    "Owner: domain, Cloudflare account, DataForSEO spend cap, OpenSEO host URL",
+    "Re-read provider pricing pages on deploy day",
+    "Prototype Astro page and run Lighthouse mobile to confirm budgets"
+  ]
+}

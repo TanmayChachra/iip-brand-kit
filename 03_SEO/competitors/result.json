@@ -1,0 +1,27 @@
+{
+  "status": "done",
+  "files": [
+    "03_SEO/competitors/findings.md",
+    "03_SEO/competitors/serp-notes.md",
+    "03_SEO/competitors/competitors.json",
+    "03_SEO/competitors/result.json"
+  ],
+  "metrics": {
+    "web_searches": 25,
+    "sites_read_directly": 3,
+    "competitor_sites_found": 3,
+    "named_competitors_with_no_site_found": ["Shri Balaji", "Shivansh", "Atom (stand-alone)", "Mahamaya (own site)"],
+    "keyword_opportunities": 10
+  },
+  "failures": [
+    "GMB ratings and review counts not visible via search, not captured",
+    "PageSpeed API returned 429 without key, no speed scores",
+    "Indian local pack not measurable (search index is US-based)",
+    "kanhaindustrialpark.com fetch failed: expired SSL certificate"
+  ],
+  "next": [
+    "GMB fork or browser: read competitor Maps listings (CKS, SHD, Next Phase) for rating, reviews, photos, categories",
+    "Run Lighthouse on cksindustrialpark.com, shdindustrialpark.co.in, nextphaseindustrialhub.in once OpenSEO or a PageSpeed key is available",
+    "Owner: decide whether to show price on site (SHD does, CKS does not)"
+  ]
+}

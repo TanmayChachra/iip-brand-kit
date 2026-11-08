@@ -1,6 +1,12 @@
-00_Brand_Kit_Project/
-IIP Assets/
-competitor-boards*.jpeg
+Archive/
+01_Brand/IIP Assets/
+01_Brand/References/competitors/
+01_Brand/Experiments/poster-lab/png/
+01_Brand/Experiments/poster-lab/svg/
+01_Brand/Experiments/poster-lab/hero-ai/
+__pycache__/
+*.env
+.env*
 work/src/
 work/boards/
 work/wide/

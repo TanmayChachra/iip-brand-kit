@@ -1,0 +1,29 @@
+{
+ "status": "done",
+ "files": [
+  "audit.md",
+  "competitor-gmb.csv",
+  "screenshots/phase1-listing.webp",
+  "screenshots/search-three-phase-listings.webp",
+  "screenshots/unclaimed-building-duplicate.webp",
+  "screenshots/unclaimed-building-duplicate-2.webp"
+ ],
+ "metrics": {
+  "isapur_profiles": 3,
+  "unclaimed_duplicates": 2,
+  "total_reviews": 14,
+  "profiles_with_website": 0,
+  "description_chars": 471,
+  "competitors_checked": 10
+ },
+ "failures": [
+  "Competitor place pages did not load in the limited Maps view, so only list-level fields captured",
+  "Posts, Q&A, products, attributes, secondary categories not visible signed out",
+  "Shivansh not matched to one listing"
+ ],
+ "next": [
+  "Owner exports Insights and search terms",
+  "Decide primary profile and merge plan",
+  "Add website with UTM after launch"
+ ]
+}

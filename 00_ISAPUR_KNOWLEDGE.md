@@ -266,3 +266,5 @@ Delegation rule: lowest-limit model (Claude) does decisions, edits, verification
 - 2026-11-07: signage taglines set in SemiBold, smaller than the wordmark (hierarchy fix); tri-colour line added to the poster bottom; stripes bleed edge to edge; old clear-space-guide removed.
 - 2026-11-07: CTA wording set to "Industrial Plots Available" across poster, kit tokens, post, badge; footer strip exported as separate file.
 - 2026-11-07: poster declared FINAL by owner (CTA pill, thin tri-colour flag). Wording "4 km away" still to be decided vs 4.7 km driving.
+- 2026-11-08: phase 2 (visibility) started. Folder layout is now numbered workstreams (01_Brand, 02_Website, 03_SEO, 04_Analytics, 05_Local-Presence, 06_Content, _ops). This file stays at the root. Decision pending owner review: website on Astro, hosted on Cloudflare Pages (research in 03_SEO/research/stack/findings.md). Kit v1.1 and the poster are the locked main brand kit.
+

@@ -1,0 +1,27 @@
+{
+  "status": "done",
+  "date": "2026-11-08",
+  "files": [
+    "03_SEO/research/tooling/mcp-servers.md",
+    "03_SEO/research/tooling/claude-skills.md",
+    "03_SEO/research/tooling/result.json"
+  ],
+  "metrics": {
+    "mcp_servers_evaluated": 21,
+    "skill_repos_evaluated": 11,
+    "repos_verified_via_github_api": 36,
+    "mcp_install_now": ["OpenSEO", "Astro docs MCP"],
+    "mcp_later": ["Google Analytics MCP", "Search Console MCP", "Tag Manager MCP", "Playwright MCP", "Lighthouse MCP", "Firecrawl", "Cloudflare MCP", "Workspace MCP", "Screaming Frog"],
+    "skills_top8": ["OpenSEO agent skills", "marketingskills (selective)", "claude-seo core", "jdevalk astro-seo", "marketingskills analytics set", "marketingskills directory and link set", "gtm-engineer-skills AEO/GEO", "marketingskills cro and copy"]
+  },
+  "failures": [
+    "Not read in full: openseo.so/docs/mcp and skills setup pages (only README and repo docs read). OpenSEO MCP add command is reported from wiki snippet, local URL http://localhost:3001/mcp matches repo docs line about clients connecting to /mcp.",
+    "Ahrefs remote endpoint and pricing, Brave and Exa pricing, Screaming Frog 500 URL limit are reported, not verified from vendor pages.",
+    "Skill security scan is regex only, not a code audit."
+  ],
+  "next": [
+    "Owner self hosts OpenSEO (Docker) and sets a DataForSEO spend cap.",
+    "Parent installs Astro docs MCP and selected skills after owner approval.",
+    "Re-check Semrush and Ahrefs endpoints on vendor pages before any paid use."
+  ]
+}

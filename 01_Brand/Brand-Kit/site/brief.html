@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ISAPUR Brand Brief</title>
+<style>@font-face{font-family:'Montserrat';font-weight:800;src:url('assets/fonts/Montserrat-ExtraBold.ttf')}@font-face{font-family:'Montserrat';font-weight:600;src:url('assets/fonts/Montserrat-SemiBold.ttf')}@font-face{font-family:'Inter';font-weight:400;src:url('assets/fonts/Inter-Regular.ttf')}@font-face{font-family:'Inter';font-weight:500;src:url('assets/fonts/Inter-Medium.ttf')}:root{--bg:#fff;--surface:#F2F4F6;--ink:#111827;--muted:#6B7280;--line:#E5E7EB;--yellow:#FFD600;--red:#E53935;--green:#0F4D3A;--card:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1117;--surface:#161b22;--ink:#e8ecf1;--muted:#9aa4b2;--line:#2a313b;--card:#161b22}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif;display:grid;grid-template-columns:290px 1fr}
+h1,h2,h3,h4,.brand b{font-family:Montserrat,Inter,sans-serif}
+#side{position:sticky;top:0;height:100vh;overflow:auto;padding:20px 16px;border-right:1px solid var(--line);background:var(--surface)}
+.brand{display:grid;grid-template-columns:44px 1fr;column-gap:10px;align-items:center;text-decoration:none;color:var(--ink);margin-bottom:14px}
+.brand img{grid-row:1/3;width:44px;height:44px}.brand b{font-weight:800;letter-spacing:.04em}.brand small{color:var(--muted)}
+#side ol{list-style:none;margin:0;padding:0}#side a{display:flex;gap:10px;padding:7px 8px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:14px}
+#side a span{color:var(--muted);font-variant-numeric:tabular-nums;min-width:22px}#side a:hover,#side a:focus-visible{background:var(--bg);outline:2px solid var(--yellow)}
+.side-foot{font-size:12px;color:var(--muted);margin-top:16px}code{background:var(--surface);padding:1px 5px;border-radius:4px;font-size:.9em}
+main{padding:32px clamp(16px,4vw,56px) 60px;max-width:1240px;min-width:0}
+.hero{display:grid;grid-template-columns:minmax(180px,300px) 1fr;gap:40px;align-items:center;padding:20px 0 40px;border-bottom:1px solid var(--line)}
+.hero img{width:100%;height:auto}.eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--muted);margin:0}
+h1{line-height:1.1;font-size:clamp(32px,5vw,56px);font-weight:800;margin:.1em 0;letter-spacing:.01em}
+section{padding:44px 0;border-bottom:1px solid var(--line)}section header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+section h2{margin:0;font-size:clamp(24px,3vw,34px);font-weight:800}.num{font:800 14px Montserrat;background:var(--yellow);color:#111827;border-radius:6px;padding:3px 8px}
+h4{margin:24px 0 8px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:18px;max-width:70ch}.big{font:800 26px Montserrat;margin:.2em 0}.small{font-size:13px;color:var(--muted)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.note{background:var(--surface);border-left:4px solid var(--yellow);padding:10px 14px;border-radius:6px;font-size:14px}
+.tg{display:inline-block;font:600 11px Inter;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--surface);border:1px solid var(--line);color:var(--muted)}
+.tg.have,.tg.verified{background:#e3f4ea;color:#0F4D3A;border-color:#bfe3cf}.tg.partial,.tg.draft,.tg.computed,.tg.owner{background:#fff6cc;color:#6b5600;border-color:#f1de80}.tg.new{background:#e1ecff;color:#1c4ed8;border-color:#bcd0fb}.tg.not-real{background:#fde2e1;color:#a4201b;border-color:#f6b8b5}
+@media (prefers-color-scheme:dark){.tg{filter:brightness(.9)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin:16px 0}.grid.icons{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.grid.one{grid-template-columns:minmax(240px,520px)}
+.card{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);display:flex;flex-direction:column}.card.wide{grid-column:1/-1}
+.thumb{background:#fff;display:grid;place-items:center;padding:14px;min-height:140px}.thumb img{max-width:100%;max-height:340px;width:auto;height:auto;object-fit:contain}.card.wide .thumb img{max-height:none;width:100%}
+figcaption{padding:10px 12px 12px;display:grid;gap:4px;font-size:13px}figcaption b{font-size:14px}figcaption span{color:var(--muted)}
+.dl{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}.dl a,.btn{font:600 12px Inter;text-decoration:none;border:1px solid var(--ink);color:var(--ink);padding:4px 10px;border-radius:99px;background:transparent}
+.btn{font-size:14px;padding:9px 18px;background:var(--ink);color:var(--bg);display:inline-block;margin:4px 6px 4px 0}.btn.ghost{background:transparent;color:var(--ink)}
+.dl a:hover,.btn:hover{background:var(--yellow);color:#111827;border-color:var(--yellow)}a:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.tw{overflow-x:auto;margin:10px 0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}th{font:600 12px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--surface)}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}.s{border:1px solid var(--line);border-radius:12px;padding:10px;display:grid;gap:3px;font-size:12px;background:var(--card)}.s i{display:block;height:70px;border-radius:8px;border:1px solid var(--line)}.s b{font-size:14px}.s em{color:var(--muted);font-style:normal}
+.dd{list-style:none;padding:0;margin:0;display:grid;gap:6px}.dd li{padding-left:26px;position:relative}.dd li:before{position:absolute;left:0;font-weight:800}.dd.ok li:before{content:"\2713";color:#16a34a}.dd.no li:before{content:"\2717";color:#dc2626}
+.spec{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--card)}
+footer{padding-top:30px;color:var(--muted);font-size:13px}
+@media (max-width:900px){body{grid-template-columns:1fr}#side{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--line)}.hero{grid-template-columns:1fr}}
+@media print{#side{display:none}body{display:block}section{break-inside:avoid-page}}
+/* round 6: brand character and new components */
+.bar{display:flex;height:6px;margin:0 0 18px;max-width:340px;transform:skewX(-30deg)}.bar i{flex:1}.bar i:nth-child(1){background:var(--yellow);flex:3}.bar i:nth-child(2){background:var(--red);flex:2}.bar i:nth-child(3){background:var(--green);flex:2}
+.bar.big{grid-column:1/-1;max-width:none;height:10px;margin:22px 0 0}
+.hero{position:relative;overflow:hidden}.hero:before{content:"";position:absolute;right:-140px;top:-120px;width:560px;height:560px;background:url(assets/p/sunburst-outline.webp) center/contain no-repeat;opacity:.45;pointer-events:none}.hero>*{position:relative}
+@media (prefers-color-scheme:dark){.hero:before{filter:invert(1);opacity:.18}}
+.tg.next,.tg.to-decide,.tg.to-research,.tg.parked,.tg.measured{background:#e1ecff;color:#1c4ed8;border-color:#bcd0fb}.tg.parked{background:var(--surface);color:var(--muted);border-color:var(--line)}.tg.measured{background:#e3f4ea;color:#0F4D3A;border-color:#bfe3cf}.tg.ready{background:#e3f4ea;color:#0F4D3A;border-color:#bfe3cf}
+.strip{display:flex;height:64px;border-radius:12px;overflow:hidden;margin:14px 0 4px}.strip i{display:block}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:8px;overflow:hidden;border:1px solid var(--line)}.chips i{display:block;height:64px}
+.s .cm{font-variant-numeric:tabular-nums}.v{font-weight:600}.v.ok{color:#15803d}.v.mid{color:#a16207}.v.low{color:#b45309}
+.pairs{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin:10px 0}.pairs .p{border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;gap:2px}.pairs .p b{font:800 34px Montserrat}.pairs .p span{font-size:13px;font-weight:600}.pairs .p em{font-size:12px;font-style:normal;opacity:.85}
+.hier{display:grid;gap:6px;max-width:560px}.hier small{letter-spacing:.2em;color:var(--red);font:600 12px Inter}.hier b{font:800 clamp(26px,3.4vw,40px)/1.1 Montserrat}.hier strong{font:800 22px Montserrat}
+.grid.wideimg{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))}.grid.wideimg .thumb img{max-height:420px}
+.sw{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.thumb img{box-shadow:0 1px 8px rgba(17,24,39,.14);border-radius:2px}.grid.icons .thumb img,.thumb img[src*="icon-"]{box-shadow:none}
+body{display:block}@page{size:A4;margin:12mm}@media print{.hero{grid-template-columns:50mm 1fr}section{break-inside:auto;padding:18px 0}.card{break-inside:avoid}.thumb img{max-height:38mm}.grid{grid-template-columns:repeat(4,1fr)}}</style></head><body><main style="display:block;max-width:1000px;margin:0 auto;padding:30px clamp(16px,4vw,40px)">
+<div class="hero"><img src="assets/p/logo-primary-vertical.webp" alt="ISAPUR Industrial Park"><div><p class="eyebrow">Brand brief, version 1.0, 2026-11-08</p><h1>ISAPUR Industrial Park</h1>
+<p class="lead">A short brief of who we are, how we look and sound, where the brand shows up, and what we still need from you. Full rules are in the <a href="index.html">brand kit</a> and the <a href="assets/files/ISAPUR-Brand-Book.pdf">brand book PDF</a>.</p></div></div>
+<section><header><span class="num">1</span><h2>The brand on one page</h2></header>
+<div class="two"><div><h4>Idea</h4><p>A modern industrial address on the Hapur-Modinagar Road for local manufacturers: clear plots, real facilities, one number to call.</p>
+<h4>Taglines (adaptive, pick one per creative)</h4><p class="big">A Modern Industrial Address.</p><p class="big">The Groundwork for Growth.</p>
+<h4>Type</h4><p><b>Montserrat</b> for headlines and signage, <b>Inter</b> for body. Free fonts.</p><h4>Rules</h4><ul><li>The logo is never changed.</li><li>English only. Maximum 7 words on a board.</li><li>No claim without a document on file.</li></ul></div>
+<div><h4>Colour</h4><div class="sw" style="grid-template-columns:repeat(3,1fr)"><div class="s"><i style="background:#FFFFFF"></i><b>White</b><code>#FFFFFF</code><em>Primary board and page background</em></div><div class="s"><i style="background:#111827"></i><b>Charcoal</b><code>#111827</code><em>Text, contrast, wordmark</em></div><div class="s"><i style="background:#FFD600"></i><b>Yellow</b><code>#FFD600</code><em>Highlight, stripe, CTA (the badge artwork keeps its own #FEF102)</em></div><div class="s"><i style="background:#E53935"></i><b>Red</b><code>#E53935</code><em>Accent line and highlight only</em></div><div class="s"><i style="background:#0F4D3A"></i><b>Green</b><code>#0F4D3A</code><em>Secondary: stripe, sustainability badge</em></div><div class="s"><i style="background:#F2F4F6"></i><b>Mist</b><code>#F2F4F6</code><em>Surfaces, panels, subtle sunburst</em></div></div></div></div></section>
+<section><header><span class="num">2</span><h2>Who, where, how to reach</h2></header>
+<div class="tw"><table><tbody><tr><th>Audience</th><td>Local factory owners and small industrial buyers (primary). Warehouse and logistics operators, investors, brokers (to confirm).</td></tr>
+<tr><th>Address</th><td>Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022</td></tr><tr><th>Phones</th><td>9837057800 | 9219549800</td></tr>
+<tr><th>Location</th><td>By road (Google Maps): 4.7 km to the Delhi-Meerut Expressway on-ramp, 11.4 km to Modinagar bus stand, 13.4 km to Hapur bus stand.</td></tr>
+<tr><th>Competitors</th><td>Shri Balaji, Shri Haridas (SHD), Shivansh, CKS, Atom, Mahamaya. Their boards use navy, gold or red with dense copy. IIP uses white space, one logo, one line.</td></tr></tbody></table></div></section>
+<section><header><span class="num">3</span><h2>Where the brand appears</h2></header>
+<div class="grid"><figure class="card"><div class="thumb"><img src="assets/p/sign-pole-20x32in-A.webp" alt="Pole board"></div><figcaption><b>Pole boards</b><span>20 x 32 in, same size as competitors.</span></figcaption></figure>
+<figure class="card"><div class="thumb"><img src="assets/p/sign-hoarding-40x20ft-A.webp" alt="Hoarding"></div><figcaption><b>Hoardings</b><span>40 x 20 ft and 40 x 15 ft.</span></figcaption></figure>
+<figure class="card"><div class="thumb"><img src="assets/ref/poster.webp" alt="Poster"></div><figcaption><b>Poster</b><span>Facts grid and facilities row.</span></figcaption></figure>
+<figure class="card"><div class="thumb"><img src="assets/p/card-front-A.webp" alt="Business card"></div><figcaption><b>Stationery, ID, workwear</b><span>Card, letterhead, ID, helmet, vest.</span></figcaption></figure></div></section>
+<section><header><span class="num">4</span><h2>Next phase: social and online presence</h2></header>
+<ol><li><b>Week 1.</b> Confirm handles, set profile picture (badge), cover and bio on Instagram, Facebook, LinkedIn, YouTube, WhatsApp Business, Google Business Profile.</li>
+<li><b>Week 1 to 2.</b> Site photo shoot (gate, 50 ft road, lights, greenery, drainage, plots, drone).</li><li><b>Week 2 onward.</b> Three posts a week: one fact, one proof, one action. Status and story daily for WhatsApp.</li>
+<li><b>Month 1.</b> One page website with map, distances (stating straight-line or driven), plot list, documents and a call button.</li></ol>
+<p class="note">Proposed plan. Starter templates are in the brand kit under Social media.</p></section>
+<section><header><span class="num">5</span><h2>What we need from you</h2></header>
+<div class="tw"><table><thead><tr><th>Topic</th><th>Question</th><th>Needed for</th></tr></thead><tbody><tr><td><b>Logo</b></td><td>Does an original vector file exist (from the designer or printer)? The kit uses a trace of the supplied artwork.</td><td>Before very large or close print</td></tr><tr><td><b>Approvals</b></td><td>Copy of the Zilla Panchayat sanctioned map (number, date) and the document behind &#x27;Section 80&#x27;. What exact wording is legally right?</td><td>Before any approval claim is printed</td></tr><tr><td><b>Poster wording</b></td><td>The poster says 4 km (straight-line). By road it is 4.7 km. Which wording do you want, 5 km or 4.7 km?</td><td>Before the poster is printed</td></tr><tr><td><b>Drainage</b></td><td>Photo of the naala, where the park outfall meets it, and any pollution control board consent.</td><td>Before drainage is advertised</td></tr><tr><td><b>Facilities</b></td><td>Which of these exist now: street lights, 24x7 security and CCTV, gated entry, truck parking, water supply, power load? How many acres are developed?</td><td>To choose true bottom-row claims</td></tr><tr><td><b>Site photos</b></td><td>A shoot of the real gate, roads, lights, trees, plots, drainage. No photos exist yet.</td><td>Boards and posts with real proof</td></tr><tr><td><b>Registrations</b></td><td>Any RERA or other registration number and GST for invoices that may appear on stationery. The developer name stays unpublished.</td><td>Legal line, letterhead</td></tr><tr><td><b>Plots</b></td><td>Plot sizes, price per sq.yard or &#x27;on request&#x27;, phase 1 and phase 2 scope, launch date.</td><td>Offer posts and plot list</td></tr><tr><td><b>Online</b></td><td>Preferred handle, website domain, email, Google Business and WhatsApp numbers already owned.</td><td>Social and web setup</td></tr><tr><td><b>Print</b></td><td>Panel sizes and media owners for poles and hoardings, printer, material, budget.</td><td>Final print files</td></tr></tbody></table></div></section>
+<footer>ISAPUR Industrial Park brand brief v1.0. Central facts live in 00_ISAPUR_KNOWLEDGE.md.</footer></main></body></html>
