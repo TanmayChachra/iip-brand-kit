@@ -1,0 +1,23 @@
+{
+ "status": "done",
+ "installed": 32,
+ "skipped": 0,
+ "top_level_skills_before": 77,
+ "top_level_skills_after": 109,
+ "renamed": [
+  "seo-audit (open-seo) -> openseo-seo-audit"
+ ],
+ "not_copied": [
+  "claude-seo install.sh, install.ps1, extensions, hooks, agents",
+  "open-seo internal dev skills",
+  "evals folders"
+ ],
+ "files": [
+  "03_SEO/research/tooling/installed.md"
+ ],
+ "failures": [],
+ "next": [
+  "Restart Claude Code session to load new skills",
+  "Connect OpenSEO MCP for the 12 OpenSEO skills"
+ ]
+}

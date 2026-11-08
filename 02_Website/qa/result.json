@@ -1,0 +1,28 @@
+{
+ "status": "done",
+ "files": [
+  "02_Website/site/",
+  "02_Website/qa/report.md",
+  "02_Website/qa/qa.json",
+  "02_Website/qa/screenshots/"
+ ],
+ "metrics": {
+  "pages": 16,
+  "broken_links": 0,
+  "claims_hits": 0,
+  "lighthouse_home_perf": [
+   75,
+   100,
+   98
+  ],
+  "lighthouse_location_perf": 98
+ },
+ "failures": [
+  "home TBT spike on one run under machine load"
+ ],
+ "next": [
+  "replace placeholder copy with 06_Content/website-copy",
+  "set domain, GTM ID, form endpoint",
+  "swap illustrations for photos"
+ ]
+}

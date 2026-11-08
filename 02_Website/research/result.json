@@ -1,0 +1,11 @@
+{
+  "status": "done",
+  "date": "2026-11-08",
+  "files": ["02_Website/research/web-skills.md", "02_Website/research/dev-cycle.md", "02_Website/research/result.json"],
+  "metrics": {"repos_checked": 22, "skills_added_now": 4, "skills_later": 3, "skipped": 9, "qa_gates": 10},
+  "add_now": ["Astro Docs MCP", "anthropics/skills frontend-design", "addyosmani/web-quality-skills", "jdevalk/skills astro-seo and metadata-check"],
+  "add_later": ["pbakaus/impeccable (after first build)", "ChromeDevTools/chrome-devtools-mcp (only if Lighthouse CI is not enough)", "coreyhaines31/marketingskills subset (see 03_SEO/research/tooling)"],
+  "already_installed_keep": ["web-design-guidelines", "taste-skill"],
+  "failures": ["No npm or repo search hit for a dedicated axe MCP, so the plan uses @axe-core/playwright", "Security notes are targeted greps, not full audits", "addyosmani/agent-skills and obra/superpowers licences and scripts not read"],
+  "next": ["Lead installs the 4 add-now items by name when the Astro project exists", "Web agent creates qa/ scripts from dev-cycle.md and CHECKLIST.md"]
+}

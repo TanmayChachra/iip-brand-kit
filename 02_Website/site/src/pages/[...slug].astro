@@ -1,0 +1,87 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import CTA from '../components/CTA.astro';
+import Distances from '../components/Distances.astro';
+import { SITE } from '../lib/site';
+import { fillDeep } from '../lib/phones.mjs';
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (p) => !p.data.draft && p.id !== 'home');
+  return pages.map((p) => ({ params: { slug: p.id }, props: { entry: p } }));
+}
+const { entry } = Astro.props;
+const d = fillDeep(entry.data);
+const { Content } = await render(entry);
+const path = `/${entry.id}/`;
+const parts = entry.id.split('/');
+const crumbs = [{ name: 'Home', href: '/' }];
+if (parts[0] === 'location' && parts.length > 1) crumbs.push({ name: 'Location', href: '/location/' });
+crumbs.push({ name: d.h1.length > 38 ? d.title.split('|')[0].trim() : d.h1, href: path });
+const rows: string[][] = d.place ? JSON.parse(d.place) : [];
+const locSlug = parts[0] === 'location' && parts.length > 1 ? parts[1].replace('industrial-plots-', '').replace('in-', '').replace('near-', '') : 'none';
+const sizes = [['300 sq yards', 'Starting size. Good for a compact workshop or assembly unit.'], ['Larger plots', 'Ask us for the current plot list and sizes.'], ['Plot map', 'We share the map and road layout on call or at the site.']];
+const formAction = import.meta.env.PUBLIC_FORM_ENDPOINT || 'mailto:?subject=Industrial%20plot%20enquiry';
+---
+<Base title={d.title} description={d.description} pageType={d.pageType} path={path} crumbs={crumbs} faq={d.faq} place={d.schema.includes('Place')} locationSlug={locSlug}>
+  <section class="pagehead">
+    <div class="wrap">
+      <p class="eyebrow">{d.pageType === 'landing' ? 'Location' : 'Isapur Industrial Park'}</p>
+      <h1>{d.h1}</h1>
+      {d.lead && <p class="lead">{d.lead}</p>}
+    </div>
+  </section>
+  <div class="divider" aria-hidden="true"></div>
+
+  {d.pageType === 'faq' ? (
+    <section class="sec"><div class="wrap" style="max-width:820px">
+      {d.faq?.map((f, i) => <details class="faq" data-faq={`faq-${i + 1}`}><summary>{f.q}</summary><div class="ans">{f.a}</div></details>)}
+      <CTA section="faq" id="faq" />
+    </div></section>
+  ) : d.pageType === 'contact' ? (
+    <section class="sec"><div class="wrap two" style="align-items:start">
+      <div>
+        <h2>Call or WhatsApp</h2>
+        <p>{SITE.phones[0].display} and {SITE.phones[1].display}</p>
+        <CTA section="contact" id="contact" directions />
+        <h3 style="margin-top:28px">Address</h3>
+        <p>{SITE.address}</p>
+        <p class="note">{SITE.hours} Call before you come.</p>
+      </div>
+      <form id="lead-form" class="form" method="post" action={formAction} enctype="text/plain">
+        <h2>Send an enquiry</h2>
+        <label>Your name<input name="name" required autocomplete="name" /></label>
+        <label>Phone number<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+ ]{10,14}" /></label>
+        <label>Plot size you need<select name="plot_size"><option value="">Not sure yet</option><option>300 to 500 sq yards</option><option>500 to 1000 sq yards</option><option>1000 sq yards or more</option></select></label>
+        <label>Purpose<select name="purpose"><option value="own-use">Own factory or warehouse</option><option value="invest">Investment</option></select></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <button class="btn btn-green" type="submit" data-cta-id="contact-form-submit" data-section="contact">Send enquiry</button>
+        <p class="note">We use your details only to reply. If the form does not open, just call us.</p>
+      </form>
+    </div></section>
+  ) : (
+    <section class="sec"><div class="wrap">
+      {d.pageType === 'plots' && <div class="grid g3" style="margin-bottom:36px">{sizes.map(([t, p]) => <article class="card"><p class="stat" style="font-size:30px">{t}</p><p>{p}</p></article>)}</div>}
+      {d.pageType === 'landing' && rows.length > 0 && (
+        <div class="two" style="margin-bottom:36px">
+          <div><h2>Distances from the park</h2><div class="tscroll"><table class="tbl"><thead><tr><th>To</th><th>By road</th><th>Time</th></tr></thead><tbody>{rows.map((r) => <tr><td>{r[0]}</td><td><b>{r[1]}</b></td><td>{r[2]}</td></tr>)}</tbody></table></div><p class="note">Google Maps driving, 6 November 2026. Times vary with traffic.</p></div>
+          <div class="diagram"><img src="/img/location-diagram.webp" width="800" height="500" alt="Schematic of the park and the expressway (not to scale)" loading="lazy" decoding="async" /></div>
+        </div>
+      )}
+      {d.pageType === 'location' && (
+        <div class="two" style="margin-bottom:36px">
+          <div class="diagram"><img src="/img/location-diagram.webp" width="800" height="500" alt="Schematic of the park, Hapur-Modinagar Road and the Delhi-Meerut Expressway (not to scale)" decoding="async" /><p class="cap">Schematic, not to scale.</p></div>
+          <div><Distances /></div>
+        </div>
+      )}
+      <div class="prose"><Content /></div>
+      <CTA section={d.pageType} id={d.pageType} directions={d.pageType !== 'other'} />
+    </div></section>
+  )}
+  {d.pageType !== 'other' && d.pageType !== 'contact' && (
+    <section class="sec band-green" data-view="contact"><div class="wrap">
+      <h2>See the park yourself</h2>
+      <p class="lead">Call or WhatsApp us for the plot list, then visit the site.</p>
+      <CTA section="page-end" id={`${d.pageType}-end`} light />
+    </div></section>
+  )}
+</Base>

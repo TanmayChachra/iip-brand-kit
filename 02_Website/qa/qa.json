@@ -1,0 +1,171 @@
+{
+ "pages": {
+  "/about/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 21.8,
+   "html_gzip_kb": 6.8,
+   "schema": 1,
+   "title": "About Isapur Industrial Park",
+   "desc_len": 134
+  },
+  "/amenities/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 22.1,
+   "html_gzip_kb": 6.9,
+   "schema": 1,
+   "title": "50 ft RCC Roads and Lighting | Isapur Industrial Park",
+   "desc_len": 144
+  },
+  "/blog/how-to-choose-an-industrial-plot/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 26.5,
+   "html_gzip_kb": 8.6,
+   "schema": 1,
+   "title": "How to Choose an Industrial Plot | Isapur Industrial Park",
+   "desc_len": 140
+  },
+  "/blog/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 19.7,
+   "html_gzip_kb": 6.2,
+   "schema": 1,
+   "title": "Industrial Plot Guides | Isapur Industrial Park",
+   "desc_len": 107
+  },
+  "/blog/industrial-plot-buying-checklist/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 27.0,
+   "html_gzip_kb": 8.6,
+   "schema": 1,
+   "title": "Industrial Plot Buying Checklist | Isapur Industrial Park",
+   "desc_len": 123
+  },
+  "/contact/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 21.1,
+   "html_gzip_kb": 6.6,
+   "schema": 1,
+   "title": "Contact and Site Visit | Isapur Industrial Park",
+   "desc_len": 133
+  },
+  "/faq/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 35.4,
+   "html_gzip_kb": 8.9,
+   "schema": 1,
+   "title": "Industrial Plot FAQ | Isapur Industrial Park",
+   "desc_len": 126
+  },
+  "/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 26.5,
+   "html_gzip_kb": 7.7,
+   "schema": 1,
+   "title": "Isapur Industrial Park | Industrial Plots, Modinagar",
+   "desc_len": 143
+  },
+  "/industrial-plots/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 23.1,
+   "html_gzip_kb": 7.1,
+   "schema": 1,
+   "title": "Industrial Plots from 300 Sq Yards | Isapur Industrial Park",
+   "desc_len": 132
+  },
+  "/location/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 24.7,
+   "html_gzip_kb": 7.3,
+   "schema": 1,
+   "title": "Location and Distances | Isapur Industrial Park",
+   "desc_len": 130
+  },
+  "/location/industrial-plots-in-bhojpur/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 23.3,
+   "html_gzip_kb": 7.0,
+   "schema": 1,
+   "title": "Industrial Plots in Bhojpur, Isapur | Isapur Industrial Park",
+   "desc_len": 128
+  },
+  "/location/industrial-plots-in-ghaziabad/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 23.6,
+   "html_gzip_kb": 7.1,
+   "schema": 1,
+   "title": "Industrial Plots in Ghaziabad | Isapur Industrial Park",
+   "desc_len": 131
+  },
+  "/location/industrial-plots-in-hapur/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 23.2,
+   "html_gzip_kb": 7.0,
+   "schema": 1,
+   "title": "Industrial Plots near Hapur | Isapur Industrial Park",
+   "desc_len": 127
+  },
+  "/location/industrial-plots-in-modinagar/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 23.4,
+   "html_gzip_kb": 7.1,
+   "schema": 1,
+   "title": "Industrial Plots in Modinagar | Isapur Industrial Park",
+   "desc_len": 128
+  },
+  "/location/industrial-plots-near-delhi-meerut-expressway/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 24.2,
+   "html_gzip_kb": 7.3,
+   "schema": 1,
+   "title": "Plots near Delhi-Meerut Expressway | Isapur Industrial Park",
+   "desc_len": 129
+  },
+  "/neighbours/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 22.2,
+   "html_gzip_kb": 6.9,
+   "schema": 1,
+   "title": "Around the Park: Industry and Fuel Nearby | Isapur Industrial Park",
+   "desc_len": 133
+  },
+  "/privacy/": {
+   "h1": 1,
+   "canonical": 1,
+   "html_kb": 20.4,
+   "html_gzip_kb": 6.4,
+   "schema": 1,
+   "title": "Privacy | Isapur Industrial Park",
+   "desc_len": 80
+  }
+ },
+ "broken_links": [],
+ "claims_hits": [
+  "/amenities/: 'drainage'",
+  "/amenities/: 'security'",
+  "/blog/how-to-choose-an-industrial-plot/: 'drainage'",
+  "/blog/: 'drainage'",
+  "/blog/industrial-plot-buying-checklist/: 'drainage'",
+  "/faq/: 'drainage'",
+  "/neighbours/: '24 hour'",
+  "/neighbours/: 'inox'",
+  "/neighbours/: 'petrol'"
+ ],
+ "problems": [],
+ "mobile_overflow_x": false
+}

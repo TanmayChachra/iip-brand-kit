@@ -28,3 +28,10 @@ work/mock4/
 work/web/
 work/mock5*
 work/gen/competitor-*.png
+_ops/private/
+02_Website/site/node_modules/
+02_Website/site/dist/
+02_Website/site/.astro/
+02_Website/site/.env
+02_Website/qa/lh-*.json
+02_Website/assets/ai-masters/

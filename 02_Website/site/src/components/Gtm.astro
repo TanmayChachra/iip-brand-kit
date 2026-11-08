@@ -1,0 +1,10 @@
+---
+// GTM loads after the first interaction (or 5 s), only when PUBLIC_GTM_ID is set. Absent otherwise.
+const id = import.meta.env.PUBLIC_GTM_ID;
+---
+{id && (
+  <script is:inline define:vars={{ id }}>
+    (function(){var l=0;function go(){if(l)return;l=1;window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+id;document.head.appendChild(s);}
+    ['scroll','click','touchstart','keydown','mousemove'].forEach(function(e){window.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,5000);})();
+  </script>
+)}

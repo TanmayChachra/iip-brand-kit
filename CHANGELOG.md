@@ -1,5 +1,11 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-08 (evening), website v1 built
+- Website built locally in Astro: 17 colourful pages, mobile first, Lighthouse mobile about 98 to 100, about 160 KB per page. Not on a domain yet.
+- Fresh brand-style artwork, keyword map, all page copy, FAQ and two blog posts, neighbours page from verified Google Maps data (INOX Air plant 0.6 km, Namaste India 0.7 km, IndianOil pump beside the park).
+- Your decisions applied: contact for price, plots from 300 sq yards, hours 8 am to 8 pm except Tuesday, phases not mentioned, second phone 9837764222 for now (one swap point).
+- 32 Claude skills installed locally. Domain and email research done (isapurindustrialpark.in recommended). Google profile edits left for your approval.
+
 ## 2026-11-08, phase 2 starts (visibility)
 - Folders reorganised into numbered workstreams: 01_Brand, 02_Website, 03_SEO, 04_Analytics, 05_Local-Presence, 06_Content, _ops. Brand kit and poster are the locked main kit. Kit rebuild and publish still work from the new paths.
 - Six research jobs done and filed: competitor audit, Astro stack decision, top SEO strategies with data to collect and A/B tests, free listings and backlinks plus AEO and GEO plan, MCP and Claude skills shortlist, Google Business Profile audit.

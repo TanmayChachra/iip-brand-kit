@@ -1,0 +1,34 @@
+{
+ "status": "done",
+ "files": [
+  "404.md",
+  "about.md",
+  "amenities.md",
+  "approvals.md",
+  "blog.md",
+  "blog__how-to-choose-an-industrial-plot.md",
+  "blog__industrial-plot-buying-checklist.md",
+  "contact.md",
+  "faq.md",
+  "gallery.md",
+  "index.md",
+  "industrial-plots.md",
+  "location.md",
+  "location__industrial-plots-in-bhojpur.md",
+  "location__industrial-plots-in-ghaziabad.md",
+  "location__industrial-plots-in-hapur.md",
+  "location__industrial-plots-in-modinagar.md",
+  "location__industrial-plots-near-delhi-meerut-expressway.md",
+  "neighbours.md",
+  "placeholders.md",
+  "privacy.md"
+ ],
+ "metrics": {
+  "pages": 20,
+  "placeholders": 54,
+  "distinct": 48,
+  "faq_questions": 22
+ },
+ "failures": [],
+ "next": "Owner resolves placeholders.md; web agent applies copy and keyword map"
+}

@@ -1,0 +1,12 @@
+# Isapur Industrial Park
+
+> Industrial plots on Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, Uttar Pradesh. Plots from 300 sq yards. 50 ft wide RCC roads, street lighting, planted greenery. 4.7 km by road (about 8 minutes) to the Delhi-Meerut Expressway on-ramp at Bhojpur.
+
+Contact: 98370 57800, 92195 49800. Address: Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022.
+
+## Pages
+- [Industrial plots](https://isapurindustrialpark.example/industrial-plots/): plot sizes and how to buy
+- [Amenities](https://isapurindustrialpark.example/amenities/): roads, lighting, greenery
+- [Location](https://isapurindustrialpark.example/location/): distances and directions
+- [FAQ](https://isapurindustrialpark.example/faq/): short answers
+- [Contact](https://isapurindustrialpark.example/contact/): call, WhatsApp, enquiry form

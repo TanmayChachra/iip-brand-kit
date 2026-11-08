@@ -1,0 +1,92 @@
+---
+import { getEntry, getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import CTA from '../components/CTA.astro';
+import Distances from '../components/Distances.astro';
+import { SITE } from '../lib/site';
+import { fillDeep } from '../lib/phones.mjs';
+const home = (await getEntry('pages', 'home'))!;
+const faqEntry = await getEntry('pages', 'faq');
+const faqs = fillDeep(faqEntry?.data.faq ?? []).slice(0, 4);
+const d = fillDeep(home.data);
+const icons = [
+  ['wide-roads', '50 ft wide RCC roads', 'Room for trucks and containers to turn and cross.'],
+  ['street-light', 'Street lighting', 'Lit roads for evening and night shifts.'],
+  ['planted-greenery', 'Planted greenery', 'Trees along the roads for a cooler, calmer park.'],
+  ['expressway', '4.7 km to the expressway', 'By road to the Delhi-Meerut Expressway on-ramp at Bhojpur.'],
+];
+---
+<Base title={d.title} description={d.description} pageType="home" path="/" place preloadHero>
+  <section class="hero" data-view="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Industrial plots, Hapur-Modinagar Road</p>
+        <h1>{d.h1}</h1>
+        <p class="lead">{d.lead}</p>
+        <CTA section="hero" id="hero" directions />
+        <ul class="chips"><li>50 ft wide RCC roads</li><li>Street lighting</li><li>Planted greenery</li><li>4.7 km by road to the expressway</li></ul>
+      </div>
+      <div class="hero-art"><img src="/img/hero-illustration.svg" width="800" height="600" alt="Illustration of an industrial road lined with factory sheds and trees (not the actual site)" fetchpriority="high" decoding="async" /></div>
+    </div>
+  </section>
+  <div class="divider" aria-hidden="true"></div>
+
+  <section class="sec band-green" data-view="amenities">
+    <div class="wrap">
+      <p class="eyebrow">Why factory owners choose us</p>
+      <h2>Built for how factories work</h2>
+      <div class="grid g4">
+        {icons.map(([i, t, p]) => <article class="card"><span class="ico" style={`--i:url(/brand/icons/icon-${i}.svg)`} aria-hidden="true"></span><h3>{t}</h3><p>{p}</p></article>)}
+      </div>
+      <p style="margin-top:22px"><a href="/amenities/">See the amenities &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="sec band-cream" data-view="plots">
+    <div class="wrap two">
+      <div>
+        <p class="eyebrow">Plots</p>
+        <p class="stat">300 sq yd</p>
+        <h2>Industrial plots from 300 sq yards</h2>
+        <p class="lead">Pick the size that fits your unit today and your growth tomorrow. We share the plot list, plot map and price on call, on WhatsApp or at the site.</p>
+        <CTA section="plots" id="plots" />
+        <p style="margin-top:14px"><a href="/industrial-plots/"><b>How to choose a plot &rarr;</b></a></p>
+      </div>
+      <div class="diagram"><img src="/img/plot-layout-schematic.webp" width="800" height="500" alt="Schematic of industrial plots along wide roads (illustrative, not to scale)" loading="lazy" decoding="async" /><p class="cap">Illustration, not to scale.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" data-view="location">
+    <div class="wrap">
+      <p class="eyebrow">Location</p>
+      <h2>On Hapur-Modinagar Road, under 5 km from the expressway</h2>
+      <div class="two">
+        <div class="diagram"><img src="/img/location-diagram.webp" width="800" height="500" alt="Diagram of the park, Hapur-Modinagar Road and the Delhi-Meerut Expressway (schematic, not to scale)" loading="lazy" decoding="async" /><p class="cap">Schematic, not to scale.</p></div>
+        <div>
+          <Distances only={['Delhi-Meerut Expressway on-ramp, Bhojpur', 'Modinagar bus stand', 'Hapur bus stand']} />
+          <CTA section="location" id="location" call={false} directions />
+          <p><a href="/location/"><b>All distances and directions &rarr;</b></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band-sage" data-view="faq">
+    <div class="wrap">
+      <p class="eyebrow">Quick answers</p>
+      <h2>Questions factory owners ask</h2>
+      <div style="max-width:800px">
+        {faqs.map((f, i) => <details class="faq" data-faq={`home-${i + 1}`}><summary>{f.q}</summary><div class="ans">{f.a}</div></details>)}
+      </div>
+      <p><a href="/faq/"><b>More answers &rarr;</b></a></p>
+    </div>
+  </section>
+
+  <section class="sec on-yellow" style="background:var(--yellow)" data-view="contact">
+    <div class="wrap">
+      <h2>Visit the site this week</h2>
+      <p class="lead" style="color:#1f2937">Call or message us. We will share the plot list and fix a time to see the park.</p>
+      <CTA section="footer-cta" id="bottom" directions />
+    </div>
+  </section>
+</Base>

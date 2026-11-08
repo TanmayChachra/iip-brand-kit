@@ -1,0 +1,15 @@
+{
+ "status": "done",
+ "files": [
+  "keyword-map.md",
+  "keyword-backlog.md"
+ ],
+ "metrics": {
+  "build_pages": 17,
+  "draft_pages": 3,
+  "backlog_keywords": 44,
+  "volumes": "unknown, all guesses until OpenSEO"
+ },
+ "failures": [],
+ "next": "Replace guesses with OpenSEO volumes, re-rank"
+}

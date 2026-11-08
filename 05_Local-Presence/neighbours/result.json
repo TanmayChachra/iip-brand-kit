@@ -1,0 +1,32 @@
+{
+  "status": "done",
+  "date": "2026-11-08",
+  "files": [
+    "05_Local-Presence/neighbours/maps-findings.md",
+    "05_Local-Presence/neighbours/petrol-pump.md",
+    "05_Local-Presence/neighbours/building-pins.md",
+    "05_Local-Presence/neighbours/nearby-brands.csv",
+    "05_Local-Presence/neighbours/screenshots/ (5 WEBP)"
+  ],
+  "metrics": {
+    "pump": "IndianOil Captain Filling Station UP-3927, 6 AM to 10 PM, EV charging, no CNG, kerbside parking only, 0.06 km from Phase 2 pin and 0.19 km from Phase 1 pin (straight-line)",
+    "inox_air_km": 0.6,
+    "namaste_india_km": 0.7,
+    "amul_nearest_distributor_km": 8.9,
+    "amul_nearest_plant_km": 39.9,
+    "patanjali_nearest_store_km": 9.4,
+    "patanjali_nearest_plant_km": 35.8,
+    "building_pins": "open farmland south of Isapur-Kharkoda Rd, no gate or building visible, about 240 m from the Phase 3 pin"
+  },
+  "failures": [
+    "Driving distances were not read from Maps directions (only short walking routes); all distances are straight-line from pins.",
+    "Street View was not available in the limited signed-out view.",
+    "Namaste India listing detail screenshot not saved (panel loaded late); data read from page text.",
+    "Atom brochure PDF not searched (out of scope)."
+  ],
+  "next": [
+    "Owner confirms which brands may be named, and permission for logos.",
+    "Parent searches for the Atom neighbours PDF.",
+    "Owner confirms the pump is the one meant by 'exit of the park' and supplies photos."
+  ]
+}

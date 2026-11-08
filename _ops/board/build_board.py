@@ -28,7 +28,7 @@ FIRST = [
     ("Day 76 to 90", "Read what Search Console shows, double down on the two best pages, start careful location pages, decide what to drop."),
 ]
 
-QUESTIONS = [
+OLD_QUESTIONS = [
     "Domain: which name do you want (for example isapurindustrialpark.com or .in), and will you buy it? Same for the email address.",
     "Plot sizes you sell, and the price approach: show a starting price, show ranges, or 'contact for price'? (SHD shows a price, CKS does not.)",
     "Approvals: which documents can we publish (Zilla Panchayat map approval, Section 80, UPSIDA or pledge park status)? We publish no approval claim without a document.",
@@ -75,7 +75,33 @@ DOCS = [("Competitor findings", "03_SEO/competitors/findings.md"), ("Stack decis
         ("MCP shortlist", "03_SEO/research/tooling/mcp-servers.md"), ("Claude skills shortlist", "03_SEO/research/tooling/claude-skills.md"), ("Google profile audit", "05_Local-Presence/gmb/audit.md"),
         ("Listing targets (48)", "05_Local-Presence/citations/citations-targets.md"), ("GTM and GA4 plan", "04_Analytics/gtm-plan.md"), ("Event spec", "04_Analytics/event-spec.md"), ("AI entry points", "_ops/AGENTS.md")]
 
-STATE_CLASS = {"locked": "ok", "live": "ok", "research done": "ok", "audit done": "ok", "spec written": "ok", "planned": "wait", "waiting": "wait"}
+STATE_CLASS = {"built (local)": "ok", "copy done": "ok", "locked": "ok", "live": "ok", "research done": "ok", "audit done": "ok", "spec written": "ok", "planned": "wait", "waiting": "wait"}
+
+
+FINDINGS = [f for f in FINDINGS if f[0] != "Partner brands"] + [
+    ("Neighbours (checked on Google Maps)", "INOX Air Products plant about 0.6 km from Phase 1 and Namaste India plant about 0.7 km (straight-line), both verified. IndianOil pump (Captain Filling Station) is about 190 m from Phase 1 and 60 m from Phase 2, open 6 am to 10 pm, not 24 hours. Amul has no plant or depot near us, Patanjali only shops: both stay off the site. The Atom brochure PDF could not be found.", "05_Local-Presence/neighbours/maps-findings.md"),
+    ("Domain and email", "Best pick: isapurindustrialpark.in (also unregistered: .com, protect it with a redirect). Backups isapurindustrial.in and isapurpark.in. All 116 names checked were free. Hostinger India lists .in at about Rs 899 a year. Email: start free with Zoho Mail Forever Free (webmail), fallback Cloudflare Email Routing.", "02_Website/domain-email.md"),
+    ("Two unclaimed Google pins", "Both 'Building' pins sit at one spot on open farmland about 240 m from the Phase 3 pin, no gate or building visible. They look like junk duplicates. Best handled by a suggest-an-edit report, not a claim.", "05_Local-Presence/neighbours/building-pins.md"),
+]
+DONE = [
+    "Website built (Astro, 17 pages, colourful, mobile first): Lighthouse mobile 98 to 100 on quiet runs, about 160 KB per page, SEO 100.",
+    "Keyword map for every page plus 44 backlog keywords, and written copy for all pages, 22 FAQ answers and 2 blog posts.",
+    "Fresh vector assets in brand style: hero scene, plot layout, location diagram, spot art, OG images, favicons.",
+    "Neighbours page live in the build from verified Maps data (text only, no logos). Contact for price. Hours 8 am to 8 pm except Tuesday.",
+    "Phone numbers behind one swap point (second number 9837764222 now, 9219549800 later). Brand kit rebuilt with it.",
+    "32 Claude skills installed (marketingskills 12, claude-seo core 5, jdevalk 3, OpenSEO 12). They load from the next session.",
+    "Sales questions list in Hinglish and English with safe draft answers. Domain and email research. Google profile fix list ready.",
+]
+STILL = [
+    "Approvals: documents for Zilla Panchayat and Section 80 (until then no approval claim is public).",
+    "Domain: buy isapurindustrialpark.in (and the .com), then I set up Cloudflare Pages, Search Console and Zoho or routing mail.",
+    "OpenSEO host URL and the Google account for GTM, GA4 and Search Console (you said tonight).",
+    "Real photos and video of the park, petrol pump and plots.",
+    "Real caller questions and objections from your dad, to replace the guessed list.",
+    "Which number is on WhatsApp (the site assumes 9837057800).",
+    "Approve the Google profile edits (description, services, categories). The safety check blocked me from editing your profile, so I left the paste-ready text in the audit.",
+    "Plot sizes beyond 300 sq yards, payment plan, power and drainage facts (these stay off the site until confirmed).",
+]
 
 
 def cards(rows):
@@ -89,7 +115,8 @@ def link(u): return f'<a href="{u}" target="_blank" rel="noopener">link</a>' if 
 tools = "".join(f'<tr><td><b>{e(n)}</b></td><td><span class="pill {"ok" if "now" in w.lower() else "wait"}">{e(w)}</span></td><td>{e(d)}</td><td>{link(u)}</td></tr>' for n, w, d, u in TOOLS)
 skills = "".join(f'<tr><td><b>{e(n)}</b></td><td><span class="pill ok">{e(w)}</span></td><td>{e(d)}</td><td><a href="{u}" target="_blank" rel="noopener">link</a></td></tr>' for n, w, d, u in SKILLS)
 first = "".join(f'<li><b>{e(t)}</b><span>{e(b)}</span></li>' for t, b in FIRST)
-qs = "".join(f"<li>{e(q)}</li>" for q in QUESTIONS)
+qs = "".join(f"<li>{e(q)}</li>" for q in STILL)
+done = "".join(f"<li>{e(d)}</li>" for d in DONE)
 lst = "".join(f'<a class="chip" href="{u}" target="_blank" rel="noopener">{e(n)}</a>' for n, u in LISTINGS)
 tst = "".join(f"<li><b>{e(i)}</b> {e(t)}</li>" for i, t in TESTS)
 docs = "".join(f'<li>{a(p, t)}</li>' for t, p in DOCS)
@@ -106,13 +133,16 @@ h1{{font-size:clamp(28px,4.4vw,46px);margin:0 0 6px;letter-spacing:-.02em}}h2{{m
 ol.steps{{list-style:none;padding:0;display:grid;gap:12px}}ol.steps li{{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--yel);border-radius:12px;padding:12px 16px}}ol.steps b{{display:block}}ol.steps span{{color:var(--mut)}}
 table{{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}}td{{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}}tr:last-child td{{border-bottom:0}}
 .wrap{{overflow-x:auto}}.chips{{display:flex;flex-wrap:wrap;gap:8px}}.chip{{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;text-decoration:none;color:inherit;font-size:14px}}.chip:hover{{border-color:var(--green)}}
-ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}}.note{{font-size:13px;color:var(--mut)}}</style></head><body><main>
+ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}}.note{{font-size:13px;color:var(--mut)}}.shots{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:start}}.shots figure{{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}}.shots img{{width:100%;display:block;max-height:640px;object-fit:cover;object-position:top}}.shots figcaption{{padding:8px 12px;font-size:13px;color:var(--mut)}}</style></head><body><main>
 <div class="flag"></div><h1>IIP Phase 2: visibility board</h1>
 <p class="lead">Website, SEO, local presence, AEO and GEO, analytics. Updated {e(S["updated"])}. Brand kit and poster are locked. Everything below is research and plan, nothing is built or published on the new site yet.</p>
 <h2>Workstreams</h2><div class="grid">{ws}</div>
 <h2>What the research found</h2><div class="grid">{cards(FINDINGS)}</div>
+<h2>Done while you were away</h2><ul>{done}</ul>
+<h2>Website preview (screenshots of the local build)</h2><p class="lead">Not published on a domain yet. Colour comes from the brand kit: green, yellow, bone and sage, charcoal only for text. All artwork is illustration, labelled not to scale.</p>
+<div class="shots"><figure><img src="site/home-desktop.webp" alt="Home page desktop" loading="lazy"><figcaption>Home, desktop</figcaption></figure><figure class="mob"><img src="site/home-mobile.webp" alt="Home page mobile" loading="lazy"><figcaption>Home, mobile</figcaption></figure><figure><img src="site/location-desktop.webp" alt="Location page" loading="lazy"><figcaption>Location</figcaption></figure><figure><img src="site/neighbours-desktop.webp" alt="Around us page" loading="lazy"><figcaption>Around us</figcaption></figure></div>
 <h2>First 90 days</h2><ol class="steps">{first}</ol>
-<h2>Questions for you (this unblocks the most work)</h2><ol class="q">{qs}</ol>
+<h2>Still needed from you</h2><ol class="q">{qs}</ol>
 <h2>Free listings to claim first</h2><p class="lead">Exact sign-up pages. Use one identical name, address and phone everywhere. The full list of 48 with link type and notes is in the listing targets note.</p><div class="chips">{lst}</div>
 <h2>Tests we will run</h2><ul>{tst}</ul><p class="note">Low traffic means big changes first (details and sample sizes in the A/B note).</p>
 <h2>MCP servers that boost the workflow</h2><div class="wrap"><table>{tools}</table></div>

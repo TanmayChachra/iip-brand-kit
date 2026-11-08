@@ -1,0 +1,724 @@
+{
+ "checked": "2026-11-08",
+ "method": {
+  "com": "Verisign RDAP (404 = unregistered)",
+  "org": "PIR RDAP (404 = unregistered)",
+  "in_and_co_in": "whois.nixiregistry.in port 43 ('is available for registration')",
+  "dns": "Google DNS NS lookup, NXDOMAIN for all",
+  "control": "google.com RDAP 200, flipkart.in and tata.co.in whois registered"
+ },
+ "counts": {
+  "checked": 116,
+  "free": 116,
+  "registered": 0
+ },
+ "recommendation": {
+  "primary": "isapurindustrialpark.in",
+  "protect": "isapurindustrialpark.com (301 to primary)",
+  "backups": [
+   "isapurindustrial.in",
+   "isapurpark.in"
+  ],
+  "email": "Zoho Mail Forever Free for sales@ and info@, Cloudflare Email Routing as fallback, Google Workspace Business Base (INR 99 per user per month) when volume grows",
+  "do_not_buy": "hyphen names, .org, many long variants",
+  "note": "Nothing bought, no accounts created. Confirm price and availability at checkout."
+ },
+ "domains": [
+  {
+   "domain": "isapurindustrialpark.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialpark.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialpark.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialpark.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrial.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrial.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrial.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrial.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurip.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurip.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurip.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurip.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipisapur.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipisapur.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipisapur.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipisapur.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipghaziabad.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipghaziabad.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipghaziabad.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipghaziabad.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplots.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplots.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplots.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplots.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplots.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplots.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplots.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplots.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialarea.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialarea.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialarea.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialarea.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "theisapurpark.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "theisapurpark.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "theisapurpark.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "theisapurpark.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialhub.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialhub.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialhub.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialhub.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustries.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustries.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustries.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustries.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialestate.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialestate.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialestate.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialestate.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryplots.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryplots.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryplots.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryplots.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialzone.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialzone.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialzone.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialzone.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurbusinesspark.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurbusinesspark.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurbusinesspark.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurbusinesspark.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialcity.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialcity.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialcity.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialcity.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplotsonline.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplotsonline.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplotsonline.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurplotsonline.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialland.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialland.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialland.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialland.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurparkghaziabad.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurparkghaziabad.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurparkghaziabad.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurparkghaziabad.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurmodinagar.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurmodinagar.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurmodinagar.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurmodinagar.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipmodinagar.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipmodinagar.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipmodinagar.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "iipmodinagar.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialparkghaziabad.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialparkghaziabad.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialparkghaziabad.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialparkghaziabad.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplot.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplot.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplot.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialplot.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryland.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryland.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryland.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurfactoryland.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark2.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark2.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark2.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurpark2.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "myisapurpark.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "myisapurpark.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "myisapurpark.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "myisapurpark.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialvilla.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialvilla.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialvilla.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapurindustrialvilla.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapur-industrial-park.com",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapur-industrial-park.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapur-industrial-park.co.in",
+   "state": "free",
+   "source": "whois.nixiregistry.in",
+   "dns_nxdomain": true
+  },
+  {
+   "domain": "isapur-industrial-park.org",
+   "state": "free",
+   "source": "rdap",
+   "dns_nxdomain": true
+  }
+ ]
+}

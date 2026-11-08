@@ -1,0 +1,18 @@
+---
+// Verified distances: 01_Brand/Brand-Kit/research/driving-distances.md (Google Maps, 2026-11-06). Pin accuracy about 200 m.
+interface Props { only?: string[] }
+const ALL = [
+  ['Delhi-Meerut Expressway on-ramp, Bhojpur', '4.7 km', '8 min', '3.9 km'],
+  ['Modinagar bus stand', '11.4 km', '28 min', '9.3 km'],
+  ['Hapur bus stand', '13.4 km', '31 min', '13.0 km'],
+  ['Meerut City railway station', '29.3 km', '56 min', 'n/a'],
+  ['Ghaziabad railway station', '34.7 km', '47 min', 'n/a'],
+  ['Anand Vihar ISBT, Delhi', '46.0 km', '89 min', 'n/a'],
+];
+const rows = Astro.props.only ? ALL.filter((r) => Astro.props.only!.includes(r[0])) : ALL;
+---
+<div class="tscroll"><table class="tbl">
+  <thead><tr><th>From the park to</th><th>By road</th><th>Drive time</th><th>Straight-line</th></tr></thead>
+  <tbody>{rows.map((r) => <tr><td>{r[0]}</td><td><b>{r[1]}</b></td><td>{r[2]}</td><td>{r[3]}</td></tr>)}</tbody>
+</table></div>
+<p class="note">Distances from the park to each place, by Google Maps driving (live traffic, 6 November 2026) or straight-line. Routes via the Delhi-Meerut Expressway have tolls. Drive times vary with traffic.</p>

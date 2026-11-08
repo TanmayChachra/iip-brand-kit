@@ -1,0 +1,69 @@
+# Copy import log
+
+- about: removed '[OWNER TO CONFIRM: total area and phase scope, what is open to buy now'
+- about: removed '[OWNER TO CONFIRM: any more commitments you want to state]'
+- amenities: removed '[OWNER TO CONFIRM: road widths inside the park, which roads are 50 ft,'
+- amenities: removed '[OWNER TO CONFIRM: number of street lights installed and working]'
+- amenities: removed '[OWNER TO CONFIRM: what is planted, where, and whether more is planned'
+- amenities: dropped empty line: [OWNER TO CONFIRM: what is planted, where, and whether more is planned]
+- amenities: removed '[OWNER TO CONFIRM: facilities that exist today, with a short descripti'
+- approvals: removed '[OWNER TO CONFIRM: one plain sentence naming each approval exactly as '
+- approvals: dropped empty line: [OWNER TO CONFIRM: one plain sentence naming each approval exactly as the document words i
+- approvals: dropped table row: | Sanctioned layout map, "Approved by Zilla Panchayat" per the poster | [OWNER TO CONFIRM] | [OWNER 
+- approvals: dropped table row: | "Section 80" per the poster, exact legal meaning | [OWNER TO CONFIRM: the document that names Sect
+- approvals: dropped table row: | Land use for industrial activity | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] |
+- approvals: dropped table row: | Power sanction or load letter | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] |
+- approvals: dropped table row: | Pollution board consent for drainage, if it applies | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [O
+- approvals: removed '[OWNER TO CONFIRM: a short, correct explanation of each approval for a'
+- approvals: dropped empty line: [OWNER TO CONFIRM: a short, correct explanation of each approval for a factory owner, revi
+- approvals: removed '[OWNER TO CONFIRM: office names and how to check]'
+- blog__industrial-plot-buying-checklist: answered '[OWNER TO CONFIRM: documents and rates we can share before a' -> Contact for price
+- contact: answered '[OWNER TO CONFIRM: which number is on WhatsApp, and the sale' -> Open 8 am to 8 pm every day except Tuesd
+- contact: answered '[OWNER TO CONFIRM: callback time promise, for example "same ' -> Open 8 am to 8 pm every day except Tuesd
+- faq: removed '[OWNER TO CONFIRM: all plot sizes and which are available]'
+- faq: answered '[OWNER TO CONFIRM: starting price, ranges, or "contact for p' -> Contact for price
+- faq: removed '[OWNER TO CONFIRM: booking amount and payment plan]'
+- faq: removed '[OWNER TO CONFIRM: documents we hand over]'
+- faq: removed '[OWNER TO CONFIRM: permitted uses at the park]'
+- faq: removed '[OWNER TO CONFIRM: payment plans, booking amount and due dates]'
+- faq: removed '[OWNER TO CONFIRM: roads inside the park and their widths]'
+- faq: removed '[OWNER TO CONFIRM: number of lights installed and working]'
+- faq: removed '[OWNER TO CONFIRM: what is planted and where]'
+- faq: removed '[OWNER TO CONFIRM: facilities that exist today]'
+- faq: answered '[OWNER TO CONFIRM: sales office hours and visit rules]' -> Open 8 am to 8 pm every day except Tuesd
+- faq: answered '[OWNER TO CONFIRM: what is shared over WhatsApp]' -> {{phone1}}
+- faq: removed '[OWNER TO CONFIRM: any other buyer types]'
+- gallery: removed '[OWNER TO CONFIRM: shoot date]'
+- gallery: removed '[OWNER TO CONFIRM: photos and video, with date taken]'
+- gallery: dropped empty line: [OWNER TO CONFIRM: photos and video, with date taken]
+- index: removed '[OWNER TO CONFIRM: other plot sizes available]'
+- index: answered '[OWNER TO CONFIRM: show a starting price, show ranges, or "c' -> Contact for price
+- index: answered '[OWNER TO CONFIRM: sales office hours and visit rules]' -> Open 8 am to 8 pm every day except Tuesd
+- industrial-plots: removed '[OWNER TO CONFIRM: actual plot dimensions and available sizes]'
+- industrial-plots: dropped table row: | [OWNER TO CONFIRM: next size] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] |
+- industrial-plots: dropped table row: | [OWNER TO CONFIRM: larger size] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] |
+- industrial-plots: answered '[OWNER TO CONFIRM: show a starting price, show ranges, or "c' -> Contact for price
+- industrial-plots: removed '[OWNER TO CONFIRM: list of documents you hand over]'
+- industrial-plots: removed '[OWNER TO CONFIRM: booking amount, payment plan, registry steps]'
+- industrial-plots: dropped empty line: 5. **Book and register.** [OWNER TO CONFIRM: booking amount, payment plan, registry steps]
+- location: removed '[OWNER TO CONFIRM: exact pin or plus code of the main gate]'
+- location__industrial-plots-in-bhojpur: answered '[OWNER TO CONFIRM: sizes and price approach]' -> Contact for price
+- location__industrial-plots-in-ghaziabad: answered '[OWNER TO CONFIRM: sizes and price approach]' -> Contact for price
+- location__industrial-plots-in-hapur: answered '[OWNER TO CONFIRM: plot sizes and price approach]' -> Contact for price
+- location__industrial-plots-in-modinagar: answered '[OWNER TO CONFIRM: price approach]' -> Contact for price
+- location__industrial-plots-near-delhi-meerut-expressway: answered '[OWNER TO CONFIRM: sizes and price approach]' -> Contact for price
+- neighbours: answered '[OWNER TO CONFIRM: one sentence on what is next to or around' -> Contact for price
+- neighbours: removed '[OWNER TO CONFIRM]'
+- neighbours: removed '[OWNER TO CONFIRM: measured in metres]'
+- neighbours: removed '[OWNER TO CONFIRM]'
+- neighbours: removed '[OWNER TO CONFIRM]'
+- neighbours: removed '[OWNER TO CONFIRM]'
+- neighbours: removed '[OWNER TO CONFIRM: dated photo of the pump and the exit]'
+- neighbours: dropped table row: | [OWNER TO CONFIRM: brand] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [yes or
+- neighbours: dropped table row: | [OWNER TO CONFIRM: brand] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [yes or
+- neighbours: dropped table row: | [OWNER TO CONFIRM: brand] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [OWNER TO CONFIRM] | [yes or
+- neighbours: removed '[OWNER TO CONFIRM: banks, clinics, eateries, transport, with road dist'
+- neighbours: dropped empty line: [OWNER TO CONFIRM: banks, clinics, eateries, transport, with road distances]
+- privacy: removed '[OWNER TO CONFIRM: have this reviewed by a lawyer before launch, inclu'
+- privacy: removed '[OWNER TO CONFIRM: whether details are shared with a CRM or sales part'
+- privacy: removed '[OWNER TO CONFIRM: cookie notice and consent banner approach]'

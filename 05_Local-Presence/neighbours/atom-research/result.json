@@ -1,0 +1,23 @@
+{
+  "status": "partial",
+  "task": "Atom PDF and neighbour brand verification",
+  "date": "2026-11-08",
+  "files": ["atom-neighbours.md", "brand-verification.md", "result.json"],
+  "metrics": {
+    "atom_pdf_found": false,
+    "brands_checked": 5,
+    "verified": ["INOX Air Products (plant in Modinagar town, distance to IIP not measured)", "Umesh Modi Group units (Modinagar)"],
+    "reported": ["Namaste India"],
+    "unverified": ["Amul", "Patanjali (retail store only)"]
+  },
+  "failures": [
+    "Atom brochure PDF not found by web search or by guessed domains",
+    "Google Maps could not be opened in the browser pane (navigation to google.com refused)",
+    "Two attempts to read search engine result pages by command line were blocked by the safety classifier and not retried"
+  ],
+  "next": [
+    "Get the Atom PDF from the owner's contact",
+    "Measure INOX and Namaste India distances on Google Maps",
+    "Owner permission per brand, text only, no logos"
+  ]
+}

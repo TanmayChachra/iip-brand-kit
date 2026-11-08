@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+import SEO from '../components/SEO.astro';
+import Schema from '../components/Schema.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Gtm from '../components/Gtm.astro';
+import { SITE, NAV, waLink } from '../lib/site';
+import trackJs from '../scripts/track.js?raw';
+interface Props {
+  title: string; description: string; pageType: string; path: string; crumbs?: { name: string; href: string }[];
+  faq?: { q: string; a: string }[]; article?: { date: Date }; place?: boolean; noindex?: boolean; ogImage?: string; locationSlug?: string; preloadHero?: boolean;
+}
+const { title, description, pageType, path, crumbs = [], faq, article, place, noindex, ogImage, locationSlug = 'none', preloadHero = false } = Astro.props;
+---
+<!doctype html>
+<html lang="en-IN" data-page-type={pageType} data-location-slug={locationSlug} data-tagline-variant="A">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0F4D3A" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/Montserrat-VF-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Inter-VF-latin.woff2" as="font" type="font/woff2" crossorigin />
+    {preloadHero && <link rel="preload" href="/img/hero-illustration.svg" as="image" fetchpriority="high" />}
+    <SEO title={title} description={description} noindex={noindex} ogImage={ogImage} type={article ? 'article' : 'website'} />
+    <Schema path={path} title={title} description={description} crumbs={crumbs} faq={faq} article={article} place={place} />
+    <script is:inline set:html={trackJs}></script>
+    <Gtm />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="flag" aria-hidden="true"></div>
+      <div class="wrap bar">
+        <a class="brand" href="/" aria-label="Isapur Industrial Park, home"><img src="/brand/logo-horizontal.svg" width="188" height="54" alt="Isapur Industrial Park" /></a>
+        <nav class="nav" aria-label="Main">{NAV.map((n) => <a href={n.href} aria-current={path === n.href ? 'page' : undefined}>{n.label}</a>)}</nav>
+        <a class="btn btn-yellow hide-sm" href={`tel:${SITE.phones[0].tel}`} data-cta-id="header-call" data-section="header">Call {SITE.phones[0].display}</a>
+        <details class="menu"><summary aria-label="Menu"><span></span></summary>
+          <nav aria-label="Mobile">{NAV.map((n) => <a href={n.href}>{n.label}</a>)}</nav>
+        </details>
+      </div>
+    </header>
+    <main id="main">
+      {crumbs.length > 1 && <div class="wrap"><Breadcrumbs crumbs={crumbs} /></div>}
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="flag" aria-hidden="true"></div>
+      <div class="wrap foot">
+        <div><img src="/brand/logo-badge-only.svg" width="64" height="64" alt="" loading="lazy" /><p class="fname">Isapur Industrial Park</p><p>{SITE.address}</p>
+          <p><a href={`tel:${SITE.phones[0].tel}`} data-cta-id="footer-call" data-section="footer">{SITE.phones[0].display}</a> &nbsp;|&nbsp; <a href={`tel:${SITE.phones[1].tel}`} data-cta-id="footer-call2" data-section="footer">{SITE.phones[1].display}</a></p></div>
+        <nav aria-label="Footer"><p class="fh">Explore</p>{NAV.map((n) => <a href={n.href}>{n.label}</a>)}</nav>
+        <nav aria-label="Places"><p class="fh">Industrial plots in</p>
+          <a href="/location/industrial-plots-in-modinagar/">Modinagar</a><a href="/location/industrial-plots-in-hapur/">Hapur</a><a href="/location/industrial-plots-in-ghaziabad/">Ghaziabad</a><a href="/location/industrial-plots-near-delhi-meerut-expressway/">Near the Expressway</a><a href="/location/industrial-plots-in-bhojpur/">Bhojpur</a></nav>
+      </div>
+      <p class="wrap legal">&copy; Isapur Industrial Park. Distances are by Google Maps driving or straight-line as stated. <a href="/privacy/">Privacy</a></p>
+    </footer>
+    <div class="sticky-bar" role="region" aria-label="Contact">
+      <a class="sb-call" href={`tel:${SITE.phones[0].tel}`} data-cta-id="sticky-call" data-section="sticky">Call now</a>
+      <a class="sb-wa" href={waLink()} data-cta-id="sticky-whatsapp" data-section="sticky" rel="noopener">WhatsApp</a>
+    </div>
+  </body>
+</html>

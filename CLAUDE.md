@@ -6,7 +6,7 @@ Read this first, then `00_ISAPUR_KNOWLEDGE.md` (single source of truth, never de
 Marketing, brand and visibility for Isapur Industrial Park (the name is exactly "Isapur Industrial Park", short form IIP; the developer is NOT revealed anywhere). Audience: local factory owners on the Hapur-Modinagar Road. Live boards: https://tanmaychachra.github.io/iip-brand-kit/ (brand kit), `/board/` (phase 2), `/experiments/poster-lab/`.
 
 ## Hard rules
-- The logo is never changed. English only. Phones 9837057800 and 9219549800.
+- The logo is never changed. English only. Phones 9837057800 and 9837764222 (owner decision 2026-11-08; 9837764222 will later be swapped for 9219549800, so keep every use behind one swap point: `01_Brand/Brand-Kit/tokens/content.json` and `02_Website/site/src/lib/phones.mjs`).
 - Taglines are ADAPTIVE, never fixed: "A Modern Industrial Address." and "The Groundwork for Growth." Use one per creative, never both.
 - No claim on a board, post or web page unless its proof is on file (knowledge file section 3). Distances: say straight-line or driving. Partner brands (Amul, Inox Air, Patanjali and similar) are named only after the owner confirms and the brand's presence is verified. Never put schema markup for a claim that has no proof.
 - Online images are WEBP. No em dashes anywhere. No Co-Authored-By lines or Claude mentions in git. Never type or store secrets (API keys live in env vars the owner sets).

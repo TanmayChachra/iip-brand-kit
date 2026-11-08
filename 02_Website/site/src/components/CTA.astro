@@ -1,0 +1,11 @@
+---
+import { SITE, waLink } from '../lib/site';
+// Primary CTAs. tel: and wa.me links need no JS. data-cta-id and data-section feed 04_Analytics/event-spec.md.
+interface Props { section: string; id: string; call?: boolean; wa?: boolean; directions?: boolean; waText?: string; light?: boolean }
+const { section, id, call = true, wa = true, directions = false, waText, light = false } = Astro.props;
+---
+<div class="cta-row">
+  {call && <a class="btn btn-yellow" href={`tel:${SITE.phones[0].tel}`} data-cta-id={`${id}-call`} data-section={section}>Call {SITE.phones[0].display}</a>}
+  {wa && <a class={light ? 'btn btn-ghost-light' : 'btn btn-green'} href={waLink(waText)} data-cta-id={`${id}-whatsapp`} data-section={section} rel="noopener">WhatsApp us</a>}
+  {directions && <a class={light ? 'btn btn-ghost-light' : 'btn btn-line'} href={SITE.directionsUrl} data-cta-id={`${id}-directions`} data-section={section} rel="noopener">Get directions</a>}
+</div>

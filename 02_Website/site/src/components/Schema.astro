@@ -1,0 +1,27 @@
+---
+import { SITE } from '../lib/site';
+// Only facts that are visible on the page and on file. No approvals, no price, no hours (not confirmed).
+interface Props { path: string; title: string; description: string; crumbs?: { name: string; href: string }[]; faq?: { q: string; a: string }[]; article?: { date: Date }; place?: boolean; }
+const { path, title, description, crumbs = [], faq, article, place = false } = Astro.props;
+const base = Astro.site!.href.replace(/\/$/, '');
+const abs = (p: string) => base + p;
+const org = {
+  '@type': ['LocalBusiness', 'Organization'], '@id': abs('/#org'), name: SITE.name, url: abs('/'), description: 'Industrial plots on Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad.',
+  telephone: SITE.phones[0].tel, logo: abs('/brand/logo-badge-only.svg'), image: abs('/img/og/home.jpg'),
+  address: { '@type': 'PostalAddress', streetAddress: SITE.street, addressLocality: SITE.city, addressRegion: SITE.region, postalCode: SITE.postal, addressCountry: 'IN' },
+  geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.lat, longitude: SITE.geo.lon }, hasMap: SITE.mapsUrl,
+  contactPoint: SITE.phones.map((p) => ({ '@type': 'ContactPoint', telephone: p.tel, contactType: 'sales', areaServed: 'IN', availableLanguage: 'English' })),
+  areaServed: ['Modinagar', 'Hapur', 'Ghaziabad', 'Meerut'], sameAs: [SITE.mapsUrl],
+};
+const graph: any[] = [
+  org,
+  { '@type': 'WebSite', '@id': abs('/#website'), url: abs('/'), name: SITE.name, publisher: { '@id': abs('/#org') }, inLanguage: 'en-IN' },
+  { '@type': article ? 'Article' : 'WebPage', '@id': abs(path) + '#page', url: abs(path), name: title, description, isPartOf: { '@id': abs('/#website') }, inLanguage: 'en-IN',
+    ...(article ? { headline: title, datePublished: article.date.toISOString().slice(0, 10), author: { '@id': abs('/#org') }, publisher: { '@id': abs('/#org') }, image: abs('/img/og/home.jpg') } : {}) },
+];
+if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.href) })) });
+if (faq?.length) graph.push({ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+if (place) graph.push({ '@type': 'Place', name: SITE.name, address: org.address, geo: org.geo, hasMap: SITE.mapsUrl });
+const json = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+---
+<script type="application/ld+json" set:html={json} />
