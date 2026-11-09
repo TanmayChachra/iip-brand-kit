@@ -433,13 +433,12 @@
       ]
     },
     {
-      "group": "Now unlocked: DataForSEO funded (about 50.97528 USD left)",
+      "group": "Done: first paid research run (about 0.42 USD, balance about 50.56 USD). Next paid steps below",
       "items": [
-        "OpenSEO to DataForSEO test call (it currently returns an access error on the Labs endpoint, most likely because the account is still on trial credit).",
-        "Real keyword research: volumes, difficulty, intent for the 60 planned keywords, replacing my guesses in the keyword map.",
-        "Competitor analysis: what CKS, SHD and others rank for, their backlinks.",
-        "Local rank grid around the park and rank tracker for the money keywords, with a cost estimate before each run.",
-        "Site audit of the live site, AI visibility tracking."
+        "Done: IIP project in OpenSEO, 92 keywords, seed ideas, CKS backlinks, local SERP, 5x5 Maps rank grid. Report: 03_SEO/keywords/openseo-research-2026-11-09.md.",
+        "Finding: Phase 1 is first or top 3 on Google Maps across a 12 km area for industrial plots. Exact local keywords have almost no measured volume.",
+        "Next (cheap): rank tracker on 10 money keywords, monthly 5x5 grid, Hindi and Hinglish keyword check, site audit once the site is live.",
+        "Next (needs your choice): AI visibility tracking and competitor reviews monitoring."
       ]
     },
     {
