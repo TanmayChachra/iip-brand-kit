@@ -15,7 +15,7 @@ Last verified: 2026-11-09.
 
 ## 2. Infrastructure
 - **OpenSEO** (self-hosted, Cloudflare Worker): https://openseo.tanmay-hq.in , MCP at /mcp. Protected by Cloudflare Access (team domain tanmaypersonaln8n.cloudflareaccess.com). Managed OAuth is ON, allowed redirect URIs: loopback for Claude Code, https://claude.ai/api/mcp/auth_callback and https://claude.com/api/mcp/auth_callback for Claude Desktop and web. It holds one project today (Default, crownmont.ca, not IIP). Create an IIP project only after the domain exists.
-- **DataForSEO**: API account connected 2026-11-09, balance 1 USD (trial credit), no funds added yet. Budget idea: about 5K a month (currency to confirm). Spend cap in the account is still to set. Paid calls only after the owner's yes and a cost estimate.
+- **DataForSEO**: API account connected 2026-11-09, funds added by the owner on 2026-11-09 (51 USD deposited), OpenSEO to DataForSEO verified with one keyword call (earlier 403 was the trial limit). Budget idea: about 5K a month (currency to confirm). Spend cap in the account is still to set. Paid calls only after the owner's yes and a cost estimate.
 - **GitHub**: repo TanmayChachra/iip-brand-kit (public). Pages from /docs: kit (/), board (/board/), poster lab (/experiments/poster-lab/). Source of the board: `_ops/board/build_board.py` from `_ops/status.json`.
 - **Local site builds**: `02_Website/site` (v1, rejected), `02_Website/site-v2` (Astro, taste-skill 2.5.1, work in progress). Preview ports 4321 (v1) and 4323 (v2) via `.claude/launch.json`. Node 24, Astro 7.x pinned in package.json.
 - **Scheduled task**: `iip-seo-weekly-watch` (Mondays about 9:13, runs while the Claude app is open, writes proposals to `03_SEO/watch/`).
@@ -51,3 +51,4 @@ marketingskills (12: seo-audit, schema, site-architecture, ai-seo, programmatic-
 - Secret values never go in this repo, docs, chat or screenshots. They live in the owner's password manager or in each service's own settings (for example the Claude Desktop connector settings for DataForSEO).
 - Proposed, not installed: a local git pre-commit hook that runs `_ops/private/scan_secrets.py` to block commits containing key-like strings, private files or blocklisted addresses. It needs the owner's explicit yes because it changes `.git/hooks`.
 - If a secret was exposed, rotate it the same day using the recovery column in the private map.
+- 2026-11-09: owner added DataForSEO funds (51 USD). OpenSEO test call succeeded, 92 keywords checked (about 50.97528 USD left). OpenCLI extension is enabled but Reddit needs the owner logged in to reddit.com in Chrome.

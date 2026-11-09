@@ -145,12 +145,11 @@
     },
     {
       "id": "dataforseo",
-      "title": "DataForSEO account and credits",
+      "title": "DataForSEO funded and connected (done 2026-11-09)",
       "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
       "steps": [
-        "Connected: the DataForSEO MCP works (free balance read shows 1 USD trial credit).",
-        "When you are ready: add funds in the DataForSEO account (check their minimum top-up), then set a monthly spend cap. Never paste the API password in chat.",
-        "I run a cost estimate before any paid call and wait for your yes."
+        "51 USD deposited, OpenSEO test call works (92 keywords checked, results in 03_SEO/keywords/real-volumes-2026-11-09.md).",
+        "Still do: set a monthly spend cap in the DataForSEO account. I show a cost estimate before every paid run."
       ],
       "links": [
         [
@@ -164,7 +163,7 @@
       ],
       "time": "20 min",
       "unlocks": "Real keyword volumes and rank tracking in OpenSEO",
-      "state": "connected, no funds"
+      "state": "done"
     },
     {
       "id": "openseo",
@@ -434,7 +433,7 @@
       ]
     },
     {
-      "group": "Unlocks when DataForSEO has funds (after you add the 50 USD minimum)",
+      "group": "Now unlocked: DataForSEO funded (about 50.97528 USD left)",
       "items": [
         "OpenSEO to DataForSEO test call (it currently returns an access error on the Labs endpoint, most likely because the account is still on trial credit).",
         "Real keyword research: volumes, difficulty, intent for the 60 planned keywords, replacing my guesses in the keyword map.",
