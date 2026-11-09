@@ -105,6 +105,48 @@
       "state": "open"
     },
     {
+      "id": "cloudflare-mcp-auth",
+      "title": "Authorize the Cloudflare MCP (already added globally)",
+      "why": "I added cloudflare-api and astro-docs at user scope for all projects. Cloudflare needs your OAuth click once. After that I can edit DNS, Pages and the Access settings for you.",
+      "steps": [
+        "In Claude Code run /mcp, choose cloudflare-api, authenticate in the browser.",
+        "Approve only: DNS edit, Pages, Email Routing, Zero Trust and Access apps (read and edit). Tell me when it shows connected."
+      ],
+      "links": [
+        [
+          "Cloudflare MCP docs",
+          "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+        ]
+      ],
+      "time": "5 min",
+      "unlocks": "DNS, Pages deploy, and fixing the OpenSEO Access setting",
+      "state": "open"
+    },
+    {
+      "id": "openseo-oauth",
+      "title": "OpenSEO: turn on Managed OAuth in Cloudflare Access",
+      "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
+      "steps": [
+        "Cloudflare dashboard, Zero Trust, Access controls, Applications, open the OpenSEO application, Edit.",
+        "Additional settings, OAuth, turn on Managed OAuth.",
+        "In Managed OAuth settings allow localhost and loopback redirect URIs (for Claude Code). For the Claude Desktop connector also add its HTTPS redirect URI, then Save.",
+        "In Claude Code run /mcp, choose openseo, authenticate. I then run the free checks (whoami, list_projects). After the Cloudflare MCP is authorized I can also do step 1 to 3 through the API if you say so."
+      ],
+      "links": [
+        [
+          "OpenSEO guide",
+          "https://github.com/every-app/open-seo/blob/main/docs/SELF_HOSTING_CLOUDFLARE_OPERATIONS.md#through-cloudflare-access"
+        ],
+        [
+          "OpenSEO MCP docs",
+          "https://openseo.so/docs/mcp"
+        ]
+      ],
+      "time": "10 min",
+      "unlocks": "OpenSEO tools in Claude: keyword research, ranks, audits",
+      "state": "open"
+    },
+    {
       "id": "dataforseo",
       "title": "DataForSEO account and credits",
       "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
@@ -155,6 +197,20 @@
       ],
       "time": "1 to 2 hours",
       "unlocks": "Real keyword map, weekly rank checks, AI visibility tracking",
+      "state": "open"
+    },
+    {
+      "id": "bizgoogle",
+      "title": "Separate business Google account (my advice: yes)",
+      "why": "Recommended: a dedicated account owns the business assets so they are not tied to your personal Gmail. I cannot create accounts, you do.",
+      "steps": [
+        "Create the account (isapurindustrialpark@gmail.com if free, or the closest variant). Strong unique password in a password manager, 2-step verification, recovery email or phone set to yours.",
+        "Make it Owner of the Business Profiles, GA4, GTM and Search Console, and keep your personal account as a second Owner or Manager so you never lose access.",
+        "Later, when the domain exists, move to Google Workspace or keep Gmail plus domain email forwarding."
+      ],
+      "links": [],
+      "time": "20 min",
+      "unlocks": "Clean ownership of every Google asset",
       "state": "open"
     },
     {
@@ -305,6 +361,73 @@
       "time": "10 min or skip",
       "unlocks": "Automatic design detectors",
       "state": "open"
+    },
+    {
+      "id": "plotmaps",
+      "title": "Plotting maps and the Google Earth project",
+      "why": "Phase 1, 2, 3 and Phase 1 extension maps become clean SVGs, one unit per plot, saved as a brand asset (01_Brand/Plot-Maps) for future projects like a plot selector. Colours on your maps do not matter, I trace boundaries.",
+      "steps": [
+        "Send the plotting maps (images or PDFs) of Phase 1, Phase 2, Phase 3 and Phase 1 extension.",
+        "Send the Google Earth project link, or export it as KML or KMZ. The KML gives exact boundaries.",
+        "I will not scrape Google imagery. If you want a satellite backdrop, screenshots from your own Earth project are fine.",
+        "Tell me the plot numbers and areas if you have them (sq yards), so plots.json is filled."
+      ],
+      "links": [
+        [
+          "Spec",
+          "01_Brand/Plot-Maps/README.md"
+        ]
+      ],
+      "time": "30 min to gather",
+      "unlocks": "SVG maps with selectable plots, future plot selector",
+      "state": "open"
+    },
+    {
+      "id": "groundphotos",
+      "title": "On-ground photos, including the Phase 1 extension",
+      "why": "Real photos show the rapid growth at the Phase 1 extension and replace stock photos on the site and the Google profile. You said about a week.",
+      "steps": [
+        "Shoot all areas incl. the Phase 1 extension works in progress (dated, wide and close).",
+        "Drop them in one folder with the date taken and tell me. I resize, convert to WEBP, and use them where they fit (site, listings, posts)."
+      ],
+      "links": [],
+      "time": "about a week",
+      "unlocks": "Real photos everywhere, growth story in the data and posts",
+      "state": "open"
+    },
+    {
+      "id": "tour360",
+      "title": "360 degree traversal (later, 3 to 4 months)",
+      "why": "A walkable 360 tour of the private park, like Google Earth street level, since Google Maps does not cover the park. Needs the camera first.",
+      "steps": [
+        "Source an Insta360 camera (planned in 3 to 4 months).",
+        "When ready: capture along the main roads and plots, publish as street level coverage where possible and embed a viewer on the site. I will research the Street View publishing route then."
+      ],
+      "links": [],
+      "time": "later",
+      "unlocks": "Street level coverage, a standout section for the site",
+      "state": "later"
+    },
+    {
+      "id": "abprogram",
+      "title": "A/B testing program (after the draft site is live)",
+      "why": "Once a basic draft is live and SEO work is running, we test pages and keep optimising at a regular rhythm set by visitor numbers and how fast conversions validate.",
+      "steps": [
+        "No action now. When the site is live and GTM and GA4 collect data I propose a test calendar from 04_Analytics/gtm-plan.md and 03_SEO/playbook/ab-tests.md and review results monthly."
+      ],
+      "links": [
+        [
+          "Test plan",
+          "03_SEO/playbook/ab-tests.md"
+        ],
+        [
+          "Measurement plan",
+          "04_Analytics/gtm-plan.md"
+        ]
+      ],
+      "time": "later",
+      "unlocks": "Steady conversion gains",
+      "state": "later"
     }
   ]
 }

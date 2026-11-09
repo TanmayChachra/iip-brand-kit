@@ -1,6 +1,12 @@
 # TODOS (kept current, see CLAUDE.md for the sync rule)
 
 ## Phase 2: still needed from the owner
+- [ ] Authorize the Cloudflare MCP (/mcp, cloudflare-api) and turn on Managed OAuth for the OpenSEO Access application (steps on the board), then connect openseo.
+- [ ] Plotting maps of Phase 1, 2, 3 and Phase 1 extension plus the Google Earth project (KML or link) for SVG plot maps in `01_Brand/Plot-Maps/`.
+- [ ] On-ground photos including the Phase 1 extension (about a week).
+- [ ] Later (3 to 4 months): 360 degree traversal with an Insta360 camera.
+- [ ] After the draft site is live: start the A/B testing program on a regular cadence.
+- [ ] Create a separate business Google account and make it owner of the Google assets (keep personal as co-owner).
 - [ ] Approvals: documents for Zilla Panchayat and Section 80 (owner asks family). No approval claim is public until then. Owner-stated sales answer: maps are passed by the Zilla Panchayat.
 - [ ] Buy the domain: isapurindustrialpark.in (primary) and the .com (redirect). Notes in `02_Website/domain-email.md`. Free email: Zoho Mail Forever Free or Cloudflare Email Routing.
 - [ ] OpenSEO host URL and MCP connection; Google account for GTM, GA4, Search Console (owner said tonight, 2026-11-08). DataForSEO cap about 5K a month.

@@ -1,5 +1,9 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-09, global MCPs and plot maps plan
+- Cloudflare API, Astro docs and OpenSEO MCPs added globally (all projects). Astro docs is connected. Cloudflare needs your OAuth click, OpenSEO needs Managed OAuth switched on in Cloudflare Access (steps on the board).
+- New folder `01_Brand/Plot-Maps/` with the plan for SVG maps of Phase 1, 2, 3 and the Phase 1 extension (one unit per plot) for a future plot selector. Board tasks added for maps, on-ground photos, the 360 tour, A/B testing and a business Google account.
+
 ## 2026-11-08 (evening), website v1 built
 - Website built locally in Astro: 17 colourful pages, mobile first, Lighthouse mobile about 98 to 100, about 160 KB per page. Not on a domain yet.
 - Fresh brand-style artwork, keyword map, all page copy, FAQ and two blog posts, neighbours page from verified Google Maps data (INOX Air plant 0.6 km, Namaste India 0.7 km, IndianOil pump beside the park).
