@@ -1,0 +1,548 @@
+{
+ "start": "2026-11-08T17:01:43.561Z",
+ "round": 1,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-08T17:03:25.206Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 6,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "../../dist/location/industrial-plots-near-delhi-meerut-expressway/index.html",
+  "url": null,
+  "root": "../../dist",
+  "kind": "place",
+  "category": "industrial plots",
+  "primary": "Book a site visit",
+  "rounds": 3,
+  "start": "2026-11-08T17:01:43.561Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "87ddcae23ef5273f:2236ba6f",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "87ddcae23ef5273f",
+ "page": "../../dist/location/industrial-plots-near-delhi-meerut-expressway/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "section-gaps",
+    "where": "section#distance / section#s1",
+    "msg": "508px between these sections, +63% against the median 312px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#distance / section#s1"
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / section#distance",
+    "msg": "120px between these sections, -81% against the median 618px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--place / section#distance"
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "(the page)",
+    "msg": "the page is 344px wide on a 320px screen and scrolls sideways",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     320
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "#distance section.section \"Distance from the parkToBy roadT\"",
+    "msg": "its content fills 44% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "#distance section.section \"Distance from the parkToBy roadT\""
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "#s1 section.section.sec \"Three plot distances, all labell\"",
+    "msg": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "#s1 section.section.sec \"Three plot distances, all labell\""
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "#s2 section.section.sec \"Distances from the plots via the\"",
+    "msg": "its content fills 48% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "#s2 section.section.sec \"Distances from the plots via the\""
+    ]
+   },
+   {
+    "check": "hero-lines",
+    "where": "section.hero h1",
+    "msg": "the check fills the h1 to 49 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 390, 3 at most",
+    "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-lines"
+    ],
+    "wheres": [
+     "section.hero h1"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "scroll-reveal",
+    "where": "section#s1 > div.wrap.grid > figure.pl-photo.span-6",
+    "msg": "starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / section#distance",
+    "msg": "225px between these sections, -28% against the median 312px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s3 / footer#contact",
+    "msg": "uneven space at the edge of a band: 191px outside its edge, 121px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "main#top > section.hero.hero--place > picture.hero__bg > img \"expressway-a-hero-1600.webp\"",
+    "msg": "2 photographs in more than one look: lightness from 0.49 to 0.92; the odd one out is expressway-a-hero-1600.webp",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#distance \"Distance from the park\"",
+    "msg": "40% of the section is empty: 288px under its last (a), in its 720px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book a site visit\"",
+    "msg": "\"book a site visit\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "section#distance \"Distance from the parkToBy roadTimeExpre\"",
+    "msg": "the content fills 43.5% of the section's height (392 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "div.span-6 > div.prose > p:nth-of-type(5) > a \"Plot sizes and how buying works\"",
+    "msg": "a 248x22px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#s1 \"Three plot distances, all labelled\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#s2 \"Distances from the plots via the express\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#distance / section#s1",
+    "msg": "351px between these sections, -43% against the median 618px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s1 / section#s2",
+    "msg": "920px between these sections (never on one screen), +49% against the median 618px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s2 / section#s3",
+    "msg": "885px between these sections (never on one screen), +43% against the median 618px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "section#s1 > div.wrap.grid > figure.pl-photo.span-6 > img \"verge-palms-43-600.webp\"",
+    "msg": "5 photographs in more than one look: lightness from 0.43 to 0.92; the odd one out is verge-palms-43-600.webp",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "label-centre",
+    "where": "nav.actionbar > a.btn.btn--primary \"Book a site visit\"",
+    "msg": "its label sits 18px off-centre (14px of room at the left, 32px at the right)",
+    "fix": "centre the label in its button, or fill the empty side with an icon",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#s1 \"Three plot distances, all labelled\"",
+    "msg": "47% of the section is empty: 704px under its last (figure.pl-photo.span-6), in its 1491px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#s2 \"Distances from the plots via the express\"",
+    "msg": "45% of the section is empty: 672px under its last (img), in its 1491px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-cut",
+    "where": "div.wrap > div.hero-text > div.hero__text > p.hero__lead \"The Delhi-Meerut Expressway on-ramp at B\"",
+    "msg": "a line of the hero text is sliced by the bottom of the first screen",
+    "fix": "size the hero so the heading ends above the fold, or starts below it",
+    "widths": [
+     320
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 96,
+   "layout": 6
+  }
+ },
+ "open": [
+  {
+   "check": "section-gaps",
+   "where": "section#distance / section#s1",
+   "msg": "508px between these sections, +63% against the median 312px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#distance / section#s1"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "main#top > section.hero.hero--place / section#distance",
+   "msg": "120px between these sections, -81% against the median 618px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--place / section#distance"
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "(the page)",
+   "msg": "the page is 344px wide on a 320px screen and scrolls sideways",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    320
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "#distance section.section \"Distance from the parkToBy roadT\"",
+   "msg": "its content fills 44% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "#distance section.section \"Distance from the parkToBy roadT\""
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "#s1 section.section.sec \"Three plot distances, all labell\"",
+   "msg": "its content fills 45% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "#s1 section.section.sec \"Three plot distances, all labell\""
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "#s2 section.section.sec \"Distances from the plots via the\"",
+   "msg": "its content fills 48% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "#s2 section.section.sec \"Distances from the plots via the\""
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+   ],
+   "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  },
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+   ],
+   "reason": "the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in"
+  },
+  {
+   "check": "hero-lines",
+   "where": "section.hero h1",
+   "msg": "the check fills the h1 to 49 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 390, 3 at most",
+   "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-lines"
+   ],
+   "wheres": [
+    "section.hero h1"
+   ],
+   "reason": "the real h1 is final and fits the hero at every width; the check fills it to the hero's maxChars in the kit's brand face Montserrat"
+  }
+ ],
+ "warnCount": 20,
+ "at": "2026-11-08T17:03:25.207Z"
+}

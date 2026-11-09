@@ -1,0 +1,259 @@
+{
+ "start": "2026-11-08T16:42:51.441Z",
+ "round": 0,
+ "idle": 0,
+ "errors": 0,
+ "status": "pass",
+ "history": [
+  {
+   "at": "2026-11-08T16:44:37.490Z",
+   "mode": "manual",
+   "status": "pass",
+   "fails": 0,
+   "round": 0,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "../../dist/faq/index.html",
+  "url": null,
+  "root": "../../dist",
+  "kind": "place",
+  "category": "industrial plots",
+  "primary": "Book a site visit",
+  "rounds": 3,
+  "start": "2026-11-08T16:42:51.441Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "fp": "1d099bd8b32fbe88",
+ "page": "../../dist/faq/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+    ]
+   },
+   {
+    "check": "hero-lines",
+    "where": "section.hero h1",
+    "msg": "the check fills the h1 to 48 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 390, 3 at most",
+    "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-lines"
+    ],
+    "wheres": [
+     "section.hero h1"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "scroll-reveal",
+    "where": "section#q1 > div.wrap.grid > figure.pl-photo.span-6",
+    "msg": "starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book a site visit\"",
+    "msg": "\"book a site visit\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-height",
+    "where": "main#top",
+    "msg": "the page is 7 screens long (6300px on a 900px screen): a place page runs 3 to 6 screens (over 7 FAIL) (SR-2)",
+    "fix": "keep a place page at 3 to 6 screens: merge a short block into the section above, or cut a section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#q4 \"Location and distances\"",
+    "msg": "pictures, effects and mocks cover 24% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / section#q1",
+    "msg": "120px between these sections, -42% against the median 208px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "proximity",
+    "where": "section#q1 > div.wrap.grid > figure.pl-photo.span-6 \"Plots and price What plot sizes do you h\"",
+    "msg": "stacked at this width, the visual starts 15px under the text and buttons above it (\"Plots and price What plot size\"): it reads glued to them (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "give the stacked split the section's own gap between text and visual (40px or more on a phone)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "proximity",
+    "where": "section#q2 > div.wrap.grid > figure.pl-photo.span-6 \"Plot paperwork Which documents should I \"",
+    "msg": "stacked at this width, the visual starts 15px under the text and buttons above it (\"Plot paperwork Which documents\"): it reads glued to them (and 1 more like it: \"Plot roads and lights Wh\")",
+    "fix": "give the stacked split the section's own gap between text and visual (40px or more on a phone)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "label-centre",
+    "where": "nav.actionbar > a.btn.btn--primary \"Book a site visit\"",
+    "msg": "its label sits 18px off-centre (14px of room at the left, 32px at the right)",
+    "fix": "centre the label in its button, or fill the empty side with an icon",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-cut",
+    "where": "div.wrap > div.hero-text > div.hero__text > p.hero__lead \"Plain answers about plots from 300 sq ya\"",
+    "msg": "a line of the hero text is sliced by the bottom of the first screen",
+    "fix": "size the hero so the heading ends above the fold, or starts below it",
+    "widths": [
+     320
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 100,
+   "layout": 5
+  }
+ },
+ "open": [],
+ "waived": [
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+   ],
+   "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  },
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+   ],
+   "reason": "the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in"
+  },
+  {
+   "check": "hero-lines",
+   "where": "section.hero h1",
+   "msg": "the check fills the h1 to 48 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 390, 3 at most",
+   "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-lines"
+   ],
+   "wheres": [
+    "section.hero h1"
+   ],
+   "reason": "the real h1 is final and fits the hero at every width; the check fills it to the hero's maxChars in the kit's brand face Montserrat"
+  }
+ ],
+ "warnCount": 11,
+ "at": "2026-11-08T16:44:37.491Z"
+}

@@ -1,0 +1,7 @@
+gate: checking ../../dist/faq/index.html (place); this takes a few minutes on a CPU Chrome
+gate: no open FAIL
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) "tel:+919837: the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) "tel:+919837: the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in
+  WAIVED hero-lines section.hero h1: the real h1 is final and fits the hero at every width; the check fills it to the hero's maxChars in the kit's brand face Montserrat
+  11 WARN (not blocking), first: scroll-reveal section#q1 > div.wrap.grid > figure.pl-p; photo-credit (the page text); action-repeat header.nav > div.wrap.nav__bar > div.nav; section-height main#top; nav header.nav > div.wrap.nav__bar > button.
+GATE: PASS

@@ -1,0 +1,11 @@
+{
+ "page": "../../dist/blog/industrial-plot-buying-checklist/index.html",
+ "url": null,
+ "root": "../../dist",
+ "kind": "place",
+ "category": "industrial plots",
+ "primary": "Book a site visit",
+ "rounds": 3,
+ "start": "2026-11-08T17:04:48.629Z",
+ "by": "gate.mjs --start"
+}

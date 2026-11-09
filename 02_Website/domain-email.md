@@ -92,3 +92,10 @@ If Zoho says your account is on the `.com` data centre use `mx.zoho.com`, `mx2.z
 - Microsoft 365 and live registrar checkouts (GoDaddy India, Namecheap, BigRock) blocked automated reads, so prices there are from trackers (R).
 - Zoho India data centre availability for the free plan is not confirmed by an official page ("select data centers").
 - Zoho India MX values and Google's current MX are from general knowledge (G): use the dashboard values.
+
+## Decision update 2026-11-09: where to buy, and both .in and .com?
+- **Buy at Porkbun.** Official MCP (https://porkbun.com/mcp) that registers domains and edits DNS, flat renewals, free WHOIS privacy. Live public API prices on 2026-11-09: .in 7.83 USD a year, .com 11.81 USD a year, renewal the same (a 1 USD first-year coupon appears in the API). Cheaper first-year .in prices exist (GoDaddy about 1 USD, Hostinger about 3 USD) but renew higher and add privacy fees (reported by comparison sites, not verified at checkout). Spaceship lists a flat 5.97 USD for .in (reported), about 2 USD a year cheaper, but I found no MCP for it.
+- **Buy both.** .in is the primary (trusted in India, matches local intent). The .com costs about 12 USD a year and only needs a redirect to the .in; it stops a look-alike and catches people who type .com. If money is tight, buy .in first and the .com later.
+- **Point both to Cloudflare nameservers** (free DNS). Then the official Cloudflare MCP edits every record (site, mail, Search Console TXT), and Cloudflare Pages hosts the site and Email Routing forwards mail, so the registrar MCP is needed only for buying.
+- Cloudflare Registrar sells .com at cost (about 10.44 USD, reported) but I could not confirm .in support and it has no registrar MCP, so it is not worth a second account.
+- Owner does the signup, payment and the checkout. Never paste card details or API keys in chat.

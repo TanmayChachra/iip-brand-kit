@@ -35,3 +35,8 @@ _ops/private/
 02_Website/site/.env
 02_Website/qa/lh-*.json
 02_Website/assets/ai-masters/
+02_Website/site-v2/node_modules/
+02_Website/site-v2/dist/
+02_Website/site-v2/.astro/
+02_Website/site-v2/.taste-skill/
+02_Website/assets/map/cache/

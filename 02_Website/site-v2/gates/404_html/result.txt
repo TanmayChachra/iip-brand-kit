@@ -1,0 +1,11 @@
+gate: checking ../../dist/404.html (place); this takes a few minutes on a CPU Chrome
+gate: 1 FAIL open
+  FAIL moment-none      (the page)  [1440]
+       a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)
+       fix: deal one (moments.mjs pick --page place --photo) and mount it in its own section
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) "tel:+919837: the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) "tel:+919837: the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in
+  waiver ignored (matches no open finding): hero-lines "section.hero h1"
+  5 WARN (not blocking), first: photo-credit (the page text); label-centre div.hero-text > div.hero__text > div.btn; section-height main#top; nav header.nav > div.wrap.nav__bar > button.; section-gaps main#top > section.hero.hero--place / fo
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 1 (round 1 of 3)

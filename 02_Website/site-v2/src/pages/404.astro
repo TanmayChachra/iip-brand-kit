@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import HeroPic from '../components/HeroPic.astro';
+import { photoFig } from '../lib/photos.mjs';
+---
+<Base title="Page not found | Isapur Industrial Park" description="This page does not exist. Go to the Isapur Industrial Park home page or call us." pageType="other" path="/404/" noindex>
+  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
+    <HeroPic k={'road-green'} alt="" pos="50% 50%" />
+    <div class="wrap"><div class="hero-text"><div class="hero__text">
+      <h1 id="hero-h">Page not found, see the industrial plots</h1>
+      <p class="hero__lead">Plots from 300 sq yards on the Hapur-Modinagar Road.</p>
+      <div class="btn-row"><a class="btn btn--primary" href="/" data-cta-id="404-home" data-section="404">See the home page</a></div>
+    </div></div></div>
+  </section>
+  <section class="section sec" id="plots" aria-labelledby="plots-h" style="--hm: 1">
+    <div class="wrap grid grid--top">
+      <div class="span-6"><div class="section-head"><h2 id="plots-h">See the industrial plots</h2></div>
+        <div class="prose"><p>Plots start from 300 sq yards, with 50 ft RCC roads, street lighting and planted greenery. Read the <a href="/industrial-plots/">plot sizes</a>, check the <a href="/location/">location</a> or book a <a href="/contact/#book">site visit</a>.</p></div></div>
+      <Fragment set:html={photoFig('sheds-blue', 'start-7', true)} />
+    </div>
+  </section>
+</Base>

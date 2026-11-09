@@ -1,0 +1,49 @@
+{
+ "status": "done",
+ "scope": "read only audit of 02_Website/site-v2 dist",
+ "skills_used": [
+  "impeccable (hand run, no binary)",
+  "web-design-guidelines",
+  "awesome-design-md (airbnb, figma)",
+  "playwright-cli 0.1.23"
+ ],
+ "metrics": {
+  "screenshots": 18,
+  "pages_checked": 6,
+  "overflow_pages": 0,
+  "broken_images": 0,
+  "h1_ok": true,
+  "contrast_fails": 0,
+  "tap_target_fails_390": 0,
+  "yellow_elements": 0,
+  "flag_present": false,
+  "map_on_site": false,
+  "css_gzip_kb": 27.8,
+  "js_gzip_kb": 12.3,
+  "home_html_gzip_kb": 7.6
+ },
+ "top_defects": [
+  "hero photo wrong geography and sky-heavy",
+  "CGI-looking shed image repeated",
+  "photo set not Indian",
+  "no yellow and no tri-colour flag",
+  "Work Sans weight 400 instead of kit Montserrat 800",
+  "address type larger than H1",
+  "real OSM map not placed",
+  "markdown leaks on contact and faq",
+  "form posts to mailto .example",
+  "orphan headings in cols2"
+ ],
+ "files": [
+  "02_Website/qa/v3/audit/audit.md",
+  "02_Website/qa/v3/audit/screenshots/",
+  "02_Website/qa/v3/audit/shoot.js",
+  "02_Website/qa/v3/audit/checks.js",
+  "02_Website/qa/v3/audit/checks2.js"
+ ],
+ "failures": [
+  "impeccable detector not run (downloaded binary policy)",
+  "builder still editing, inner pages not finished at audit time"
+ ],
+ "next": "fix list 1 to 15 in audit.md"
+}

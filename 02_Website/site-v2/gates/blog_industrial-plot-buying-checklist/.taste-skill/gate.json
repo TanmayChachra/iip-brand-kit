@@ -1,0 +1,279 @@
+{
+ "start": "2026-11-08T17:04:48.629Z",
+ "round": 1,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-08T17:06:10.794Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "../../dist/blog/industrial-plot-buying-checklist/index.html",
+  "url": null,
+  "root": "../../dist",
+  "kind": "place",
+  "category": "industrial plots",
+  "primary": "Book a site visit",
+  "rounds": 3,
+  "start": "2026-11-08T17:04:48.629Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "2b6d50090a3e93b6:2236ba6f",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "2b6d50090a3e93b6",
+ "page": "../../dist/blog/industrial-plot-buying-checklist/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#s1 \"The short answer on buying a plotShortli\"",
+    "msg": "the section's content does not fit it: its content is 28px taller than the section (scrollHeight 928, clientHeight 900); its lowest content ends 902px below its top, past 828px (the section less 72px of bottom padding); 4 parts lie outside the section's box (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#s1 \"The short answer on buying a plotShortli\"",
+     "section#s1 > div.wrap.grid > div.span-6 \"The short answer on buying a plotShortli\"",
+     "section#s1 > div.wrap.grid > div.span-6 > div.prose \"Shortlist two or three parks, visit with\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s1 / section#s2",
+    "msg": "373px between these sections, +79% against the median 208px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#s1 / section#s2"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "scroll-reveal",
+    "where": "section#s1 > div.wrap.grid > figure.pl-photo.span-6",
+    "msg": "starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s1 / section#s2",
+    "msg": "118px between these sections, -48% against the median 225px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s2 / footer#contact",
+    "msg": "313px between these sections, +39% against the median 225px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book a site visit\"",
+    "msg": "\"book a site visit\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#s1 \"The short answer on buying a plot\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / section#s1",
+    "msg": "120px between these sections, -42% against the median 208px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "label-centre",
+    "where": "nav.actionbar > a.btn.btn--primary \"Book a site visit\"",
+    "msg": "its label sits 18px off-centre (14px of room at the left, 32px at the right)",
+    "fix": "centre the label in its button, or fill the empty side with an icon",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 76,
+   "layout": 6
+  }
+ },
+ "open": [
+  {
+   "check": "section-height",
+   "where": "section#s1 \"The short answer on buying a plotShortli\"",
+   "msg": "the section's content does not fit it: its content is 28px taller than the section (scrollHeight 928, clientHeight 900); its lowest content ends 902px below its top, past 828px (the section less 72px of bottom padding); 4 parts lie outside the section's box (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#s1 \"The short answer on buying a plotShortli\"",
+    "section#s1 > div.wrap.grid > div.span-6 \"The short answer on buying a plotShortli\"",
+    "section#s1 > div.wrap.grid > div.span-6 > div.prose \"Shortlist two or three parks, visit with\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#s1 / section#s2",
+   "msg": "373px between these sections, +79% against the median 208px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#s1 / section#s2"
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+   ],
+   "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  },
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+   ],
+   "reason": "the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in"
+  }
+ ],
+ "warnCount": 9,
+ "at": "2026-11-08T17:06:10.795Z"
+}

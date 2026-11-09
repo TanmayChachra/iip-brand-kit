@@ -1,0 +1,11 @@
+{
+ "page": "../../dist/faq/index.html",
+ "url": null,
+ "root": "../../dist",
+ "kind": "place",
+ "category": "industrial plots",
+ "primary": "Book a site visit",
+ "rounds": 3,
+ "start": "2026-11-08T16:42:51.441Z",
+ "by": "gate.mjs --start"
+}

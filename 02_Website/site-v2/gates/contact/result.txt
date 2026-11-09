@@ -1,0 +1,23 @@
+gate: checking ../../dist/contact/index.html (place); this takes a few minutes on a CPU Chrome
+gate: 5 FAIL open
+  FAIL phone-number     div.grid.grid--top > div.span-6.stack-4 > p.phones > a:nth-of-type(1) "98370 57800"  [1440]
+       a phone number after its label: "98370 57800"; a visitor can dial it and reach a stranger (and in the same element: "tel:+919837057800")
+       fix: drop the number and its tel: link (a "Request a call" form may stand in), unless the brief gives the number
+  FAIL phone-number     div.grid.grid--top > div.span-6.stack-4 > p.phones > a:nth-of-type(2) "98377 64222"  [1440]
+       a phone number after its label: "98377 64222"; a visitor can dial it and reach a stranger (and in the same element: "tel:+919837764222")
+       fix: drop the number and its tel: link (a "Request a call" form may stand in), unless the brief gives the number
+  FAIL section-gaps     main#top > section.hero.hero--place / section#book  [390]
+       120px between these sections, -77% against the median 533px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL section-gaps     section#book / footer#contact  [390]
+       946px between these sections (never on one screen), +77% against the median 533px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL sparse           #book section.section "Book a site visitHapur-Modinagar"  [390]
+       its content fills 44% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  waiver ignored (matches no open finding): phone-number "tel:+919837057800"
+  waiver ignored (matches no open finding): phone-number "tel:+919837764222"
+  waiver ignored (matches no open finding): hero-lines "section.hero h1"
+  7 WARN (not blocking), first: scroll-reveal div.wrap > div.grid.grid--top > div.span; photo-credit (the page text); label-centre div.book__panel.span-6 > form.form > div; action-repeat header.nav > div.wrap.nav__bar > div.nav; nav header.nav > div.wrap.nav__bar > button.
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 5 (round 1 of 3)

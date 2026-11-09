@@ -1,0 +1,23 @@
+gate: checking ../../dist/location/industrial-plots-in-ghaziabad/index.html (place); this takes a few minutes on a CPU Chrome
+gate: 5 FAIL open
+  FAIL section-gaps     section#distance / section#s1  [1440]
+       508px between these sections, +85% against the median 274px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL section-gaps     main#top > section.hero.hero--place / section#distance  [390]
+       120px between these sections, -66% against the median 351px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL section-gaps     section#s1 / section#s2  [390]
+       575px between these sections, +64% against the median 351px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL tap-size         div.span-6 > div.prose > p:nth-of-type(4) > a "Plot sizes and how buying works"  [320]
+       a 248x22px tap target: 0px from the next one (""), so a thumb lands on the wrong one
+       fix: make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid pa
+  FAIL sparse           #distance section.section "Distance from the parkToBy roadT"  [1440]
+       its content fills 44% of its screen; merge it or give it its visual (0.55 is the aim)
+       fix: fill the section or make it a screen shorter
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) "tel:+919837: the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) "tel:+919837: the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in
+  waiver ignored (matches no open finding): hero-lines "section.hero h1"
+  12 WARN (not blocking), first: scroll-reveal section#s1 > div.wrap.grid > figure.pl-p; section-gaps section#s2 / footer#contact; photo-set main#top > section.hero.hero--place > pi; photo-credit (the page text); empty-area section#distance "Distance from the park
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 5 (round 1 of 3)

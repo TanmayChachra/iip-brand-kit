@@ -1,0 +1,35 @@
+{
+ "status": "done",
+ "files": {
+  "map-park-sm.webp": 29,
+  "map-park-tall.webp": 83,
+  "map-park.svg": 544,
+  "map-park.webp": 90
+ },
+ "dimensions": {
+  "map-park-sm.webp": [
+   800,
+   533
+  ],
+  "map-park-tall.webp": [
+   1200,
+   1500
+  ],
+  "map-park.webp": [
+   1800,
+   1200
+  ]
+ },
+ "credit": "Map data from OpenStreetMap contributors, ODbL (https://www.openstreetmap.org/copyright)",
+ "metrics": {
+  "svg_kb": 544,
+  "webp_kb": 90,
+  "tall_kb": 83,
+  "sm_kb": 29
+ },
+ "failures": [
+  "road name from knowledge file, OSM has ref MDR148W only",
+  "OSRM route 4.5 km vs 4.7 km Google figure on the plate"
+ ],
+ "next": "site-v2 uses map-park.webp with footer credit"
+}

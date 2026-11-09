@@ -1,0 +1,89 @@
+gate: checking ../../dist/neighbours/index.html (place); this takes a few minutes on a CPU Chrome
+gate: 27 FAIL open
+  FAIL container-edges  table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL container-edges  table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (and 4 more like it: "Measured", "Google Maps, 8 November ", "
+       fix: keep it inside the container lines (.wrap): full width is for background layers and grounds only
+  FAIL row-lines        table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" ends at 1380px, past the container's right line at 1320px (SR-7)
+       fix: end it at the container's right line
+  FAIL row-lines        table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" ends at 1380px, past the container's right line at 1320px (SR-7)
+       fix: end it at the container's right line
+  FAIL row-lines        table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) "Google Maps, 8 November 2026"  [1440]
+       "Google Maps, 8 November 2026" ends at 1380px, past the container's right line at 1320px (SR-7)
+       fix: end it at the container's right line
+  FAIL hero-fill        section#s1 "What is nearby the plots"  [390]
+       the next section shows on the first screen: it starts at 940px on a 1197px screen (the hero ends at 844px)
+       fix: let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load
+  FAIL off-viewport     (the page)  [390]
+       the page is 553px wide on a 390px screen and scrolls sideways
+       fix: keep it inside the screen at this width: let it shrink, wrap or stack
+  FAIL cut-text         table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(2) "Industrial gas plant, open 24   [390]
+       cut 37px by the right edge of the screen (and 2 more like it: "about 190 m from Phase 1", "Book a site visit")
+       fix: give the text room: no overflow clipping a line, no line past its box
+  FAIL section-gaps     section#s1 / section#s2  [390]
+       824px between these sections, +296% against the median 208px
+       fix: use one gap between sections (all within 25% of each other)
+  FAIL section-tile     main#top > section.hero.hero--place "Working industry and a fuel station next"  [390]
+       the first section is 844px tall (0.71 screens at 390x844), shorter than the screen: the first screen shows 788px of it and 353px of the next section, its heading "What is nearby the plots" on screen
+       fix: make the hero exactly one screen (height: 100svh) with its content between the nav and 24px above the fold
+  FAIL section-tile     section#s2 "Why a fuel station near the plots helps"  [390]
+       the section is 1049px tall (0.88 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 993px of it and 148px of the next section, its heading "Book a site visit" on screen
+       fix: set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb
+  FAIL section-tile     footer#contact "Book a site visit"  [390]
+       the section is 844px tall (0.71 screens at 390x844), shorter than the screen: its tile, held at the page's end (scroll 3228px) shows 844px of it and 297px of the section above ("Why a fuel station near the pl"), its pict
+       fix: set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb
+  FAIL off-viewport     header.nav > div.wrap.nav__bar "Skip to content"  [320]
+       at 320px wide it runs 209px past the screen's right edge (the page is 553px wide and scrolls sideways)
+       fix: keep it inside the screen at this width: let it shrink, wrap or stack
+  FAIL spill            #s1 table.dist "Place What it is Distance from t"  [1440]
+       x 120 to 1379.7, the page runs 120 to 1320
+       fix: keep it inside the .wrap; nothing past the right edge
+  FAIL edge-right       nav actions  [390]
+       end at x 529, the page's right line is 366
+       fix: end it on the .wrap right line
+  FAIL screen-short     section.hero.hero--place section.hero.hero--place "Working industry and a fuel stat"  [390]
+       844px tall; one screen under the nav is 1197px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL neighbour        section.hero.hero--place section.hero.hero--place "Working industry and a fuel stat"  [390]
+       framed, 155px of #s1 section.section.sec "What is nearby the plots Place W" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL screen-height    #s1 section.section.sec "What is nearby the plots Place W"  [390]
+       1688px, 1.41 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills
+       fix: make the section exactly one or two screens (--h: 1 or 2)
+  FAIL screen-short (screen-height) #s2 section.section.sec "Why a fuel station near the plot"  [390]
+       1049px tall; one screen under the nav is 1197px
+       fix: make the section one full screen (--h: 1, layout-v4.md section 2)
+  FAIL neighbour        #s2 section.section.sec "Why a fuel station near the plot"  [390]
+       framed, 148px of the footer shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL hero-fold        section.hero.hero--place section.hero.hero--place "Working industry and a fuel stat"  [390]
+       ends at y 844, above the fold (1197)
+       fix: the hero fills the first screen alone, its button inside it
+  FAIL hero-fold        #s1 section.section.sec "What is nearby the plots Place W"  [390]
+       shows on the first screen from y 940
+       fix: the hero fills the first screen alone, its button inside it
+  FAIL overflow-x       page  [390]
+       the page scrolls sideways
+       fix: remove what scrolls sideways
+  FAIL hero-maxchars    section.hero.hero--place section.hero.hero--place "Working industry and a fuel stat"  [390]
+       with a 48-character h1 (heroes.json maxChars): ends at y 844, above the fold (1197)
+       fix: shorten the h1 or give the hero room for the longest headline
+  FAIL hero-maxchars    #s1 section.section.sec "What is nearby the plots Place W"  [390]
+       with a 48-character h1 (heroes.json maxChars): shows on the first screen from y 940
+       fix: shorten the h1 or give the hero room for the longest headline
+  FAIL hero-maxchars    page  [390]
+       with a 48-character h1 the page scrolls sideways
+       fix: shorten the h1 or give the hero room for the longest headline
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) "tel:+919837: the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites
+  WAIVED phone-number div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) "tel:+919837: the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in
+  waiver ignored (matches no open finding): hero-lines "section.hero h1"
+  7 WARN (not blocking), first: overlap-text section#s1 > div.wrap.grid > figure.pl-p; scroll-reveal section#s1 > div.wrap.grid > figure.pl-p; section-gaps section#s2 / footer#contact; photo-credit (the page text); action-repeat header.nav > div.wrap.nav__bar > div.nav
+A FAIL you judge false: add {"check": "<id>", "target": "<its where, enough to name that one finding>", "reason": "<why, 12+ characters>"} to .taste-skill/waivers.json (one finding each, 5 at most, never for kit-edited or checker-gaming); it goes in your report. Never edit the kit's files or hide the page from the checker.
+GATE: FAIL 27 (round 1 of 3)

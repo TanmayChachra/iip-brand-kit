@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "iip-site",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4321",
+        "--directory",
+        "02_Website/site/dist"
+      ],
+      "port": 4321
+    },
+    {
+      "name": "iip-site-v2",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "4323",
+        "--directory",
+        "02_Website/site-v2/dist"
+      ],
+      "port": 4323
+    }
+  ]
+}

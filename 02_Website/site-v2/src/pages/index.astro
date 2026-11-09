@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, mapSearch } from '../lib/site';
+import BookForm from '../components/BookForm.astro';
+import HeroPic from '../components/HeroPic.astro';
+const strip = [['street-light', 'Street light pole beside a road under a blue sky', '/amenities/'], ['factory-yard', 'Factory yard with generators and tanks beside a paved lane', '/neighbours/'], ['verge-palms', 'Road edge lined with planted palm and trees', '/amenities/'], ['road-green', 'Fresh black-top road between green slopes', '/industrial-plots/']] as const;
+const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>';
+---
+<Base title="Isapur Industrial Park | Industrial plots, Modinagar" description="Industrial plots from 300 sq yards at Yusufpur Isapur, Ghaziabad. 50 ft RCC roads, street lighting and 4.7 km by road to the Delhi-Meerut Expressway." pageType="home" path="/" home place>
+  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
+    <HeroPic k={'expressway-a'} alt="Delhi-Meerut Expressway at Ghaziabad, six lanes and street lights" pos="50% 70%" />
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
+        <h1 id="hero-h">Industrial plots on Hapur-Modinagar Road</h1>
+        <p class="hero__lead">Plots from 300 sq yards. Open 8 am to 8 pm, every day except Tuesday.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#book" data-cta-id="hero-book" data-section="hero">Book a site visit<Fragment set:html={arrow} /></a></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section" id="visit" data-place="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="visit-h">Address and hours</h2></div>
+      <p class="type-moment"><a href={mapSearch} rel="noopener" data-cta-id="visit-address" data-section="visit">Hapur-Modinagar Road, Yusufpur Isapur</a></p>
+      <div class="grid grid--top">
+        <div class="visit visit--card span-6">
+          <div class="visit__head"><p class="t-small" data-open-now></p></div>
+          <div class="visit__cols">
+            <div class="visit__col stack-4">
+              <address class="visit__address">Hapur-Modinagar Road<br>Yusufpur Isapur, Ghaziabad</address>
+              <a class="link" href={mapSearch} rel="noopener" data-cta-id="visit-directions" data-section="visit">Get directions</a>
+            </div>
+            <div class="visit__col">
+              <dl class="hours" data-tz="Asia/Kolkata"><dt data-days="mon,wed,thu,fri,sat,sun">Monday, Wednesday to Sunday</dt><dd>8:00 to 20:00</dd><dt data-days="tue">Tuesday</dt><dd>Closed</dd></dl>
+            </div>
+          </div>
+          <ul class="visit__rows">
+            <li><span>Sales desk</span><span><a href={`tel:${SITE.phones[0].tel}`} data-cta-id="visit-call" data-section="visit">{SITE.phones[0].display}</a> or <a href={`tel:${SITE.phones[1].tel}`} data-cta-id="visit-call2" data-section="visit">{SITE.phones[1].display}</a></span></li>
+            <li><span>Fuel next door</span><span>IndianOil pump, about 190 m</span></li>
+          </ul>
+        </div>
+        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333" data-moment="picture-develops"><img src="/img/photo/sheds-blue-43-800.webp" srcset="/img/photo/sheds-blue-43-600.webp 600w, /img/photo/sheds-blue-43-800.webp 800w, /img/photo/sheds-blue-43-1350.webp 1350w" sizes="(min-width: 1024px) 588px, (min-width: 640px) 720px, 342px" width="1350" height="1013" alt="Row of blue industrial sheds beside a paved road" loading="lazy" data-source="stand-in" data-subject="industrial sheds"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="plots" aria-labelledby="plots-h">
+    <div class="wrap">
+      <div class="section-head--split"><h2 id="plots-h">Plots, roads and distances</h2><a class="link" href="/location/">All distances</a></div>
+      <div class="grps">
+        <div class="grp"><h3>The plots</h3>
+          <ul class="rows">
+            <li><span class="rows__name">Plot size, from</span><span class="rows__value">300 sq yards</span></li>
+            <li><span class="rows__name">Price</span><span class="rows__value">On request</span></li>
+            <li><span class="rows__name">Site visits</span><span class="rows__value">8 am to 8 pm</span></li>
+            <li><span class="rows__name">Closed on</span><span class="rows__value">Tuesdays</span></li>
+          </ul></div>
+        <div class="grp"><h3>Roads and facilities</h3>
+          <ul class="rows">
+            <li><span class="rows__name">Roads</span><span class="rows__value">50 ft RCC</span></li>
+            <li><span class="rows__name">Street lighting</span><span class="rows__value">Installed</span></li>
+            <li><span class="rows__name">Greenery</span><span class="rows__value">Planted</span></li>
+            <li><span class="rows__name">Petrol pump</span><span class="rows__value">IndianOil, next door</span></li>
+          </ul></div>
+        <div class="grp"><h3>Getting here</h3>
+          <ul class="rows">
+            <li><span class="rows__name">Delhi-Meerut Expressway</span><span class="rows__value">4.7 km by road</span></li>
+            <li><span class="rows__name">Modinagar bus stand</span><span class="rows__value">11.4 km by road</span></li>
+            <li><span class="rows__name">Hapur bus stand</span><span class="rows__value">13.4 km by road</span></li>
+            <li><span class="rows__name">Bhojpur exit</span><span class="rows__value">4.3 km straight-line</span></li>
+          </ul></div>
+      </div>
+      <div class="pl-strip">
+        {strip.map(([n, alt, href]) => <a href={href}><figure><img src={`/img/photo/${n}-sq-600.webp`} srcset={`/img/photo/${n}-sq-320.webp 320w, /img/photo/${n}-sq-600.webp 600w`} sizes="(min-width: 1024px) 282px, (min-width: 640px) 350px, 165px" width="600" height="600" alt={alt} loading="lazy" data-source="stand-in" data-subject={n}></figure></a>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="map" aria-labelledby="map-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="map-h">Where the park is</h2></div>
+      <div class="grid grid--top">
+        <div class="span-6 facts">
+          <p class="fact"><b>50 ft</b><span>RCC roads inside the park</span></p>
+          <p class="fact"><b>4.7 km</b><span>by road to the Delhi-Meerut Expressway on-ramp</span></p>
+          <p class="fact"><b>300 sq yards</b><span>the smallest plot, price on request</span></p>
+        </div>
+        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333"><a href="/location/"><img src="/img/map/map-park-sm.webp" srcset="/img/map/map-park-sm.webp 800w, /img/map/map-park.webp 1800w" sizes="(min-width: 1024px) 588px, 342px" width="1800" height="1200" alt="Map of Hapur-Modinagar Road from the Delhi-Meerut Expressway on-ramp to Isapur Industrial Park, with Modinagar and Hapur marked" loading="lazy" style="object-position: 40% 50%" data-source="map" data-subject="route map"></a></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="book-h">Book a site visit</h2></div>
+      <div class="grid grid--top">
+        
+        <div class="book__panel span-6">
+          <BookForm />
+        </div>
+        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333"><img src="/img/photo/jcb-lowbed-43-800.webp" srcset="/img/photo/jcb-lowbed-43-600.webp 600w, /img/photo/jcb-lowbed-43-800.webp 800w, /img/photo/jcb-lowbed-43-1350.webp 1350w" sizes="(min-width: 1024px) 588px, (min-width: 640px) 720px, 342px" width="1350" height="1013" alt="Excavator on a low-bed truck beside an open road and sheds" loading="lazy" data-source="stand-in" data-subject="site road"></figure>
+      </div>
+    </div>
+  </section>
+</Base>

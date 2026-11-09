@@ -1,0 +1,202 @@
+{
+ "start": "2026-11-08T16:51:10.976Z",
+ "round": 1,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-08T16:52:12.233Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 1,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "../../dist/404.html",
+  "url": null,
+  "root": "../../dist",
+  "kind": "place",
+  "category": "industrial plots",
+  "primary": "Book a site visit",
+  "rounds": 3,
+  "start": "2026-11-08T16:51:10.976Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "29dbda643418bb47:2236ba6f",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "29dbda643418bb47",
+ "page": "../../dist/404.html",
+ "found": {
+  "fails": [
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+    ]
+   },
+   {
+    "check": "moment-none",
+    "where": "(the page)",
+    "msg": "a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+    "fix": "deal one (moments.mjs pick --page place --photo) and mount it in its own section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "moment-none"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "label-centre",
+    "where": "div.hero-text > div.hero__text > div.btn-row > a.btn.btn--primary \"See the home page\"",
+    "msg": "its label sits 18px off-centre (25px of room at the left, 43px at the right)",
+    "fix": "centre the label in its button, or fill the empty side with an icon",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-height",
+    "where": "main#top",
+    "msg": "the page is 2 screens long (1800px on a 900px screen): a place page runs 3 to 6 screens (over 7 FAIL) (SR-2)",
+    "fix": "keep a place page at 3 to 6 screens: merge a short block into the section above, or cut a section",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / footer#contact",
+    "msg": "uneven space at the edge of a band: 24px outside its edge, 96px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 55,
+   "layout": 5
+  }
+ },
+ "open": [
+  {
+   "check": "moment-none",
+   "where": "(the page)",
+   "msg": "a place page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+   "fix": "deal one (moments.mjs pick --page place --photo) and mount it in its own section",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "moment-none"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+   ],
+   "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  },
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+   ],
+   "reason": "the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in"
+  }
+ ],
+ "warnCount": 5,
+ "at": "2026-11-08T16:52:12.234Z"
+}

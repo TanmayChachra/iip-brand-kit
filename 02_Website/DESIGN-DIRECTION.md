@@ -1,44 +1,22 @@
-# Website design direction (v1, 2026-11-08)
+# Website design direction v3 (2026-11-08, replaces v1 and v2)
 
-Performance and SEO come first. Design is secondary but must follow the locked brand kit (`01_Brand/Brand-Kit/`, tokens in `01_Brand/Brand-Kit/tokens/brand.tokens.json`). The owner does NOT want a mostly black and white site: use the brand colours with confidence.
+History: v1 looked like a template (owner: "I hate that website design"). v2 (dark forest theme with AI generated renders) was stopped: the owner does not like the artificial imagery direction. v3 is rebuilt as `02_Website/site-v2/` with the updated taste-skill (tasteskill 2.5.1, its run, deal and gate) and Impeccable. The v1 Astro site stays in `02_Website/site/` for reference only.
 
-## Palette (from the kit, plus warm neutrals proven in the poster lab)
-| Role | Hex | Use |
-|---|---|---|
-| Yellow | #FFD600 | CTA buttons, highlights, rule accents, badge halo |
-| Red | #E53935 | Short accent lines, small highlights only |
-| Green | #0F4D3A | Full-width bands (cream text), headings accent, footer |
-| Charcoal | #111827 | Body text and wordmark only. Never a big background |
-| Bone | #F4F0E8 | Default page background (no pure white pages) |
-| Sage | #EEF2EE | Alternate section background |
-| Cream yellow | #FFF6CC | Soft highlight band |
-| Mist | #F2F4F6, gray #6B7280, line #E5E7EB | Cards, secondary text, hairlines |
-Section rhythm (top to bottom): bone hero with sunburst, green band, sage, cream yellow, bone, green footer. At least 40 percent of the scroll height has colour (green, yellow or a coloured illustration).
+## Design read
+Reading this as: a PLACE (people come to visit the park and book a site visit) for local factory owners, with a plain, confident, photograph-led company language at the figma.com and x.ai level of finish, built as Astro static pages. Kind = place, page type = place, site-kind = other. Main action: Book a site visit (one label everywhere, the call and WhatsApp buttons are separate intents in the phone bar).
 
-## Type
-Montserrat (800 for H1 and H2, 600 for H3) and Inter (400, 500, 600) as in the kit. Self-host Latin subset variable fonts, `font-display: swap`, preload the heading font. Tagline in SemiBold, smaller than the wordmark (the signage lesson). The wordmark and badge come from kit SVGs and are never altered.
+## Imagery (hard rule, owner decision)
+NO AI generated imagery and no flat cartoon illustration. Allowed:
+1. Real licensed stand-in photographs found with the skill's `scripts/photos.mjs` (live search, licence recorded): industrial buildings, concrete roads, steel, trucks and loading, trees and verges, Indian industrial belt, dusk and daylight. 12 to 20 on the full page. Credits in ONE footer line only (no captions under images, skill house rule 1). Never shown as the park's own pictures and never with another maker's name; the footer line says photographs are stand-ins until the park's own shoot.
+2. A real map of the area drawn from OpenStreetMap data (accurate roads, expressway, villages) in the brand colours (`site-v2/public/img/map/`), attribution in the footer credit line.
+3. Typography, real numerals, flat brand colour grounds, the thin tri-colour flag, the brand sunburst as a large cropped line motif, the brand badge from the kit.
+The park's own photographs and the owner's supplied poster render are not used on the site yet. Real photos drop in later under the same file names.
 
-## Motifs from the kit (use, do not invent new logo variants)
-- The thin tri-colour flag (about 1 percent of the width) as section dividers and under the header.
-- The 22 point sunburst as large faint hero background, and as a seal behind stats.
-- Textures from the poster lab, at low opacity: sunburst tiles, road lanes, plot plan, halo rings (`01_Brand/Experiments/poster-lab/textures/`).
-- The 24 kit icons (`01_Brand/Brand-Kit/live/03_Icons/`), stroke 2.4.
-- Yellow pill CTA with charcoal text (as on the poster).
+## Look
+Place rules from the skill: flat grounds, square photographs, one button style, the phone bar, dealt moments, no shader effect, no grain, no gradient scene, light page (dark pages and dark heroes are for tech only). Colour is the client's own, through `start.mjs brand`: brand green #0F4D3A, brand yellow #FFD600 as the accent, red #E53935 only inside the thin flag, ink #111827, off-white ground (not pure white), light sage and cream-yellow tints as flat section grounds, one full brand-green band for contrast. Not black and white: green and yellow are visible on every screen. Type: the kit's Montserrat (display) and Inter (text), self-hosted subsets, unless the skill's own check fails them, then say why. No em dashes anywhere.
 
-## Imagery rules
-- The owner has no real photos yet. Never present AI or illustrated images as the park. All artwork is illustrative and labelled "Illustration, not to scale" where it could be mistaken for the site.
-- Real photo slots are built in (aspect ratio boxes with a swap path) so photos drop in later.
-- Fresh assets for the site are created by the assets agent into `02_Website/assets/` and copied to `02_Website/site/public/img/`: hero illustration, isometric plot layout schematic, road and expressway distance diagram, section spot illustrations, plot size card graphics, OG images, favicon set.
+## Structure, copy, claims
+Same pages and URLs as `02_Website/pages.md`. Same words as `06_Content/website-copy/` and the imported site copy, edited to the skill's copy rules (plain, concrete, fact on the first screen, headings name things, buttons verb plus object). Claims unchanged: only 50 ft RCC roads, street lighting, planted greenery, plots from 300 sq yards, contact for price, hours 8 am to 8 pm except Tuesday, distances with road or straight-line labels, neighbours from Maps (INOX Air plant about 0.6 km, Namaste India plant about 0.7 km, IndianOil pump about 190 m from Phase 1, straight-line, text only). No approvals, no drainage, power or security claims. No phases or resale. Phones only from `phones.mjs` (the skill's rule 9 about phone formats is for invented demo sites: these are the client's real numbers, waive with the brief as the reason).
 
-## Layout and UX principles
-- Mobile first (390 px), then desktop. One clear job per page, one primary CTA per screen.
-- Sticky bottom bar on mobile: Call, WhatsApp. Header CTA on desktop. `tel:` and `wa.me` links only, no JS needed.
-- Hierarchy: name, proof (only proven), plots, location, CTA. Proof lines appear only when the document is on file.
-- Hero: H1 states what it is and where (keyword aligned), 2 CTAs, 3 proof chips that are verified (50 ft RCC roads, street lighting, planted greenery, 4.7 km driving to the Delhi-Meerut Expressway on-ramp). Approvals chips stay hidden until proof is on file.
-- Accessibility: contrast AA, focus rings, skip link, alt text, 44 px tap targets.
-
-## Performance budget (hard)
-HTML under 30 KB gzip, CSS under 30 KB, JS under 60 KB gzip (GTM counted separately and loaded after interaction), hero image under 100 KB, first load under 500 KB, Lighthouse mobile 95 plus, CLS 0, LCP 1.8 s.
-
-## Claims
-Allowed now (verified in the knowledge file): 50 ft RCC roads, street lighting, planted greenery, Delhi-Meerut Expressway 4.7 km driving to the on-ramp (about 8 min) and 3.9 km straight-line, Bhojpur exit 4.3 km straight-line, Modinagar bus stand 11.4 km driving, Hapur bus stand 13.4 km driving, plots from 300 sq yards (poster). NOT allowed until proof: Section 80, Zilla Panchayat approval, drainage, 24 hour power, security, brand neighbours (Amul, Inox Air, Patanjali), petrol pump details. Draft pages for those exist with `draft: true` and are excluded from the build.
+## Budgets and tracking
+Hard: HTML under 30 KB gzip, CSS under 30 KB, JS under 60 KB (GTM separate and deferred), first load under 500 KB on mobile, Lighthouse mobile 95 plus, CLS 0, WEBP images with width and height. The skill's `perf.mjs`, `consistency.mjs`, `check.mjs` and `gate.mjs` must pass (waivers only with reasons in `.taste-skill/waivers.json`). Keep the v1 plumbing: SEO and Schema components, sitemap, robots, llms.txt, tracking script and event spec (`04_Analytics/event-spec.md`), data-cta-id attributes, content collections.

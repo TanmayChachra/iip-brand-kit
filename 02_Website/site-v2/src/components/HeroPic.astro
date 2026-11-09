@@ -1,0 +1,8 @@
+---
+// The place hero photograph as photos.mjs prints it: a <picture class="hero__bg"> with a 4:5 phone crop (layout.css, data-phone-fill).
+const { k, alt = '', pos = '50% 50%' } = Astro.props;
+---
+<picture class="hero__bg" data-phone-fill style={`--ly-pos: ${pos}`}>
+  <source media="(max-width: 639px)" srcset={`/img/photo/${k}-m-780.webp`}>
+  <img src={`/img/photo/${k}-hero-1600.webp`} srcset={`/img/photo/${k}-hero-960.webp 960w, /img/photo/${k}-hero-1600.webp 1600w`} sizes="100vw" width="1600" height="444" alt={alt} fetchpriority="high" data-phone-fill data-source="stand-in" data-subject={k}>
+</picture>

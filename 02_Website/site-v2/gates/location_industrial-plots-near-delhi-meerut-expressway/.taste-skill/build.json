@@ -1,0 +1,11 @@
+{
+ "page": "../../dist/location/industrial-plots-near-delhi-meerut-expressway/index.html",
+ "url": null,
+ "root": "../../dist",
+ "kind": "place",
+ "category": "industrial plots",
+ "primary": "Book a site visit",
+ "rounds": 3,
+ "start": "2026-11-08T17:01:43.561Z",
+ "by": "gate.mjs --start"
+}

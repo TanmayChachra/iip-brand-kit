@@ -1,0 +1,92 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import BookForm from '../components/BookForm.astro';
+import HeroPic from '../components/HeroPic.astro';
+import { fillDeep } from '../lib/phones.mjs';
+import { SITE, mapSearch } from '../lib/site';
+import { sections } from '../lib/sections.mjs';
+import { ALT as heroAlt, photoFig, mapFig, pick } from '../lib/photos.mjs';
+export async function getStaticPaths() {
+  const pages = await getCollection('pages', (p) => !p.data.draft && p.id !== 'home');
+  return pages.map((p) => ({ params: { slug: p.id }, props: { entry: p } }));
+}
+const { entry } = Astro.props;
+const d = fillDeep(entry.data);
+const { Content } = await render(entry);
+const path = `/${entry.id}/`;
+const heroPhoto: Record<string, string> = { plots: 'sheds-blue', amenities: 'street-light', location: 'expressway-a', brands: 'factory-yard', faq: 'verge-palms', contact: 'jcb-lowbed', about: 'sheds-blue', other: 'road-green' };
+const bySlug: Record<string, string> = { 'industrial-plots-in-modinagar': 'sheds-blue', 'industrial-plots-in-hapur': 'expressway-b', 'industrial-plots-in-ghaziabad': 'road-green', 'industrial-plots-near-delhi-meerut-expressway': 'expressway-a', 'industrial-plots-in-bhojpur': 'factory-yard' };
+const key = bySlug[entry.id.split('/').pop() ?? ''] ?? heroPhoto[d.pageType] ?? 'lane';
+const parts = entry.id.split('/');
+const crumbs = [{ name: 'Home', href: '/' }];
+if (parts[0] === 'location' && parts.length > 1) crumbs.push({ name: 'Location', href: '/location/' });
+crumbs.push({ name: d.title.split('|')[0].trim(), href: path });
+const ALL = [['Delhi-Meerut Expressway on-ramp, Bhojpur', '4.7 km', '8 min'], ['Modinagar bus stand', '11.4 km', '28 min'], ['Hapur bus stand', '13.4 km', '31 min']];
+const rows: string[][] = d.place ? JSON.parse(d.place) : [];
+const faqs: { q: string; a: string }[] = d.faq ?? [];
+const chunks: { q: string; a: string }[][] = [];
+for (let i = 0; i < faqs.length; i += 4) chunks.push(faqs.slice(i, i + 4));
+const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>';
+const isContact = d.pageType === 'contact';
+const secs = (d.pageType === 'faq' || isContact) ? [] : await sections(entry.body, rows.length ? 4 : 5);
+const hasMapRows = rows.length > 0;
+if (hasMapRows && secs[0]) secs[0].w += rows.length * 12;
+if (hasMapRows && secs[0]) secs[0].html = `<table class="dist"><thead><tr><th>To</th><th>By road</th><th>Time</th></tr></thead><tbody>${rows.map((r) => `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table>` + secs[0].html;
+const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const md = (t: string) => esc(t).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+---
+<Base title={d.title} description={d.description} pageType={d.pageType} path={path} crumbs={crumbs} faq={d.pageType === 'faq' ? faqs : undefined} place={d.schema.includes('Place')}>
+  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
+    <HeroPic k={key} alt={heroAlt[key] ?? ''} pos="50% 50%" />
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
+        <h1 id="hero-h">{d.h1}</h1>
+        {d.lead && <p class="hero__lead">{d.lead.replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').split(/(?<=[.!?])\s/)[0]}</p>}
+        <div class="btn-row"><a class="btn btn--primary" href={isContact ? '#book' : '/contact/#book'} data-cta-id="hero-book" data-section="hero">Book a site visit<Fragment set:html={arrow} /></a></div>
+      </div>
+    </div></div>
+  </section>
+
+  {d.pageType === 'faq' ? chunks.map((c, i) => (
+    <section class="section sec" id={`q${i + 1}`} aria-labelledby={`q${i + 1}-h`} style="--h: 1">
+      <div class="wrap grid grid--top">
+        <div class={`span-6 ${''}`}>
+          <div class="section-head"><h2 id={`q${i + 1}-h`}>{['Plots and price', 'Plot paperwork', 'Plot roads and lights', 'Location and distances', 'Visit the plots'][i] ?? 'More questions'}</h2></div>
+          <div class="faqs">{c.map((f) => <div><h3>{f.q}</h3><p set:html={md(f.a)}></p></div>)}</div>
+        </div>
+        <Fragment set:html={i === 3 ? mapFig('start-7') : photoFig(pick('faq', i, key), 'start-7', i === 0)} />
+      </div>
+    </section>
+  )) : isContact ? (
+    <section class="section" id="book" aria-labelledby="book-h" style="--hm: 1">
+      <div class="wrap">
+        <div class="section-head"><h2 id="book-h">Book a site visit</h2></div>
+        <div class="grid grid--top">
+          <div class="span-6 stack-4 prose">
+            <p>{SITE.address}</p>
+            <p><a class="link" href={mapSearch} rel="noopener" data-cta-id="contact-directions" data-section="contact">Get directions</a></p>
+            <p>{SITE.hours}</p>
+            <p class="phones"><a href={`tel:${SITE.phones[0].tel}`} data-cta-id="contact-call" data-section="contact">{SITE.phones[0].display}</a><a href={`tel:${SITE.phones[1].tel}`} data-cta-id="contact-call2" data-section="contact">{SITE.phones[1].display}</a></p>
+            <Fragment set:html={photoFig('jcb-lowbed', 'contact-photo', true)} />
+          </div>
+          <div class="book__panel span-6 start-7"><BookForm /></div>
+        </div>
+      </div>
+    </section>
+  ) : (
+    <>
+      {secs.map((g, i) => {
+        const flip = false;
+        const useMap = hasMapRows ? i === 0 : g.map && i > 0 && !secs.slice(0, i).some((x) => x.map);
+        const fig = useMap ? mapFig(flip ? 'start-1' : 'start-7') : photoFig(pick(entry.id, i, key), flip ? 'start-1' : 'start-7', i === (hasMapRows ? 1 : 0));
+        const body = <div class={`span-6 ${flip ? 'start-7 col-text' : ''}`}><div class="section-head"><h2 id={`s${i + 1}-h`}>{g.h}</h2></div><div class="prose" set:html={g.html}></div></div>;
+        return (
+          <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 300 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
+            <div class="wrap grid grid--top">{body}<Fragment set:html={fig} /></div>
+          </section>
+        );
+      })}
+    </>
+  )}
+</Base>

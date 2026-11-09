@@ -1,0 +1,11 @@
+{
+ "page": "../../dist/blog/how-to-choose-an-industrial-plot/index.html",
+ "url": null,
+ "root": "../../dist",
+ "kind": "place",
+ "category": "industrial plots",
+ "primary": "Book a site visit",
+ "rounds": 3,
+ "start": "2026-11-08T16:48:30.827Z",
+ "by": "gate.mjs --start"
+}

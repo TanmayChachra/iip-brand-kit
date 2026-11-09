@@ -1,0 +1,1057 @@
+{
+ "start": "2026-11-08T16:56:06.342Z",
+ "round": 1,
+ "idle": 0,
+ "errors": 0,
+ "status": "fail",
+ "history": [
+  {
+   "at": "2026-11-08T16:57:30.041Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 27,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "../../dist/neighbours/index.html",
+  "url": null,
+  "root": "../../dist",
+  "kind": "place",
+  "category": "industrial plots",
+  "primary": "Book a site visit",
+  "rounds": 3,
+  "start": "2026-11-08T16:56:06.342Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "a911e8509e288dbb:2236ba6f",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "a911e8509e288dbb",
+ "page": "../../dist/neighbours/index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+    ]
+   },
+   {
+    "check": "phone-number",
+    "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+    "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+    "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "phone-number"
+    ],
+    "wheres": [
+     "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)",
+    "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)",
+    "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (and 4 more like it: \"Measured\", \"Google Maps, 8 November \", \"Google Maps, 8 November \") (SR-6)",
+    "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+    "fix": "end it at the container's right line",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+    "fix": "end it at the container's right line",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+    "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+    "fix": "end it at the container's right line",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+    ]
+   },
+   {
+    "check": "hero-fill",
+    "where": "section#s1 \"What is nearby the plots\"",
+    "msg": "the next section shows on the first screen: it starts at 940px on a 1197px screen (the hero ends at 844px)",
+    "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "hero-fill"
+    ],
+    "wheres": [
+     "section#s1 \"What is nearby the plots\""
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "(the page)",
+    "msg": "the page is 553px wide on a 390px screen and scrolls sideways",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "cut-text",
+    "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(2) \"Industrial gas plant, open 24 hours on i\"",
+    "msg": "cut 37px by the right edge of the screen (and 2 more like it: \"about 190 m from Phase 1\", \"Book a site visit\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cut-text"
+    ],
+    "wheres": [
+     "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(2) \"Industrial gas plant, open 24 hours on i\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s1 / section#s2",
+    "msg": "824px between these sections, +296% against the median 208px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#s1 / section#s2"
+    ]
+   },
+   {
+    "check": "section-tile",
+    "where": "main#top > section.hero.hero--place \"Working industry and a fuel station next\"",
+    "msg": "the first section is 844px tall (0.71 screens at 390x844), shorter than the screen: the first screen shows 788px of it and 353px of the next section, its heading \"What is nearby the plots\" on screen",
+    "fix": "make the hero exactly one screen (height: 100svh) with its content between the nav and 24px above the fold",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-tile"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--place \"Working industry and a fuel station next\""
+    ]
+   },
+   {
+    "check": "section-tile",
+    "where": "section#s2 \"Why a fuel station near the plots helps\"",
+    "msg": "the section is 1049px tall (0.88 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 993px of it and 148px of the next section, its heading \"Book a site visit\" on screen",
+    "fix": "set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-tile"
+    ],
+    "wheres": [
+     "section#s2 \"Why a fuel station near the plots helps\""
+    ]
+   },
+   {
+    "check": "section-tile",
+    "where": "footer#contact \"Book a site visit\"",
+    "msg": "the section is 844px tall (0.71 screens at 390x844), shorter than the screen: its tile, held at the page's end (scroll 3228px) shows 844px of it and 297px of the section above (\"Why a fuel station near the pl\"), its picture on screen",
+    "fix": "set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-tile"
+    ],
+    "wheres": [
+     "footer#contact \"Book a site visit\""
+    ]
+   },
+   {
+    "check": "off-viewport",
+    "where": "header.nav > div.wrap.nav__bar \"Skip to content\"",
+    "msg": "at 320px wide it runs 209px past the screen's right edge (the page is 553px wide and scrolls sideways)",
+    "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+    "widths": [
+     320
+    ],
+    "from": "consistency",
+    "ids": [
+     "off-viewport"
+    ],
+    "wheres": [
+     "header.nav > div.wrap.nav__bar \"Skip to content\""
+    ]
+   },
+   {
+    "check": "spill",
+    "where": "#s1 table.dist \"Place What it is Distance from t\"",
+    "msg": "x 120 to 1379.7, the page runs 120 to 1320",
+    "fix": "keep it inside the .wrap; nothing past the right edge",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "spill"
+    ],
+    "wheres": [
+     "#s1 table.dist \"Place What it is Distance from t\""
+    ]
+   },
+   {
+    "check": "edge-right",
+    "where": "nav actions",
+    "msg": "end at x 529, the page's right line is 366",
+    "fix": "end it on the .wrap right line",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-right"
+    ],
+    "wheres": [
+     "nav actions"
+    ]
+   },
+   {
+    "check": "screen-short",
+    "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+    "msg": "844px tall; one screen under the nav is 1197px",
+    "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-short"
+    ],
+    "wheres": [
+     "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+    ]
+   },
+   {
+    "check": "neighbour",
+    "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+    "msg": "framed, 155px of #s1 section.section.sec \"What is nearby the plots Place W\" shows",
+    "fix": "keep the next section's heading and picture out of this screen",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "neighbour"
+    ],
+    "wheres": [
+     "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+    ]
+   },
+   {
+    "check": "screen-height",
+    "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+    "msg": "1688px, 1.41 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills",
+    "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-height"
+    ],
+    "wheres": [
+     "#s1 section.section.sec \"What is nearby the plots Place W\""
+    ]
+   },
+   {
+    "check": "screen-short",
+    "where": "#s2 section.section.sec \"Why a fuel station near the plot\"",
+    "msg": "1049px tall; one screen under the nav is 1197px",
+    "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "screen-short",
+     "screen-height"
+    ],
+    "wheres": [
+     "#s2 section.section.sec \"Why a fuel station near the plot\""
+    ]
+   },
+   {
+    "check": "neighbour",
+    "where": "#s2 section.section.sec \"Why a fuel station near the plot\"",
+    "msg": "framed, 148px of the footer shows",
+    "fix": "keep the next section's heading and picture out of this screen",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "neighbour"
+    ],
+    "wheres": [
+     "#s2 section.section.sec \"Why a fuel station near the plot\""
+    ]
+   },
+   {
+    "check": "hero-fold",
+    "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+    "msg": "ends at y 844, above the fold (1197)",
+    "fix": "the hero fills the first screen alone, its button inside it",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-fold"
+    ],
+    "wheres": [
+     "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+    ]
+   },
+   {
+    "check": "hero-fold",
+    "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+    "msg": "shows on the first screen from y 940",
+    "fix": "the hero fills the first screen alone, its button inside it",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-fold"
+    ],
+    "wheres": [
+     "#s1 section.section.sec \"What is nearby the plots Place W\""
+    ]
+   },
+   {
+    "check": "overflow-x",
+    "where": "page",
+    "msg": "the page scrolls sideways",
+    "fix": "remove what scrolls sideways",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "overflow-x"
+    ],
+    "wheres": [
+     "page"
+    ]
+   },
+   {
+    "check": "hero-maxchars",
+    "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+    "msg": "with a 48-character h1 (heroes.json maxChars): ends at y 844, above the fold (1197)",
+    "fix": "shorten the h1 or give the hero room for the longest headline",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-maxchars"
+    ],
+    "wheres": [
+     "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+    ]
+   },
+   {
+    "check": "hero-maxchars",
+    "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+    "msg": "with a 48-character h1 (heroes.json maxChars): shows on the first screen from y 940",
+    "fix": "shorten the h1 or give the hero room for the longest headline",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-maxchars"
+    ],
+    "wheres": [
+     "#s1 section.section.sec \"What is nearby the plots Place W\""
+    ]
+   },
+   {
+    "check": "hero-maxchars",
+    "where": "page",
+    "msg": "with a 48-character h1 the page scrolls sideways",
+    "fix": "shorten the h1 or give the hero room for the longest headline",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-maxchars"
+    ],
+    "wheres": [
+     "page"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "overlap-text",
+    "where": "section#s1 > div.wrap.grid > figure.pl-photo.span-6 > img \"img: Multi-lane expressway with a servic\"",
+    "msg": "lies over the text \"Distance from the park\" (tr > th:nth-of-type(3)) (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#s1 > div.wrap.grid > figure.pl-photo.span-6",
+    "msg": "starts an animation (1.6 s) the moment it is scrolled into view (an IntersectionObserver) on img (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#s2 / footer#contact",
+    "msg": "uneven space at the edge of a band: 192px outside its edge, 121px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (unsplash): the page credits unsplash; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book a site visit\"",
+    "msg": "\"book a site visit\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--place / section#s1",
+    "msg": "120px between these sections, -42% against the median 208px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#s1 \"What is nearby the plots\"",
+    "msg": "40% of the section is empty: 592px under its last (figure.pl-photo.span-6), in its 1480px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 78,
+   "layout": 6
+  }
+ },
+ "open": [
+  {
+   "check": "container-edges",
+   "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)",
+   "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (SR-6)",
+   "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" runs 1133-1380px, outside the container lines of section 2 at 120-1320px: full width is for background layers and grounds only (and 4 more like it: \"Measured\", \"Google Maps, 8 November \", \"Google Maps, 8 November \") (SR-6)",
+   "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+   "fix": "end it at the container's right line",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+   "fix": "end it at the container's right line",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(2) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\"",
+   "msg": "\"Google Maps, 8 November 2026\" ends at 1380px, past the container's right line at 1320px (SR-7)",
+   "fix": "end it at the container's right line",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(3) > td:nth-of-type(4) \"Google Maps, 8 November 2026\""
+   ]
+  },
+  {
+   "check": "hero-fill",
+   "where": "section#s1 \"What is nearby the plots\"",
+   "msg": "the next section shows on the first screen: it starts at 940px on a 1197px screen (the hero ends at 844px)",
+   "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "hero-fill"
+   ],
+   "wheres": [
+    "section#s1 \"What is nearby the plots\""
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "(the page)",
+   "msg": "the page is 553px wide on a 390px screen and scrolls sideways",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "cut-text",
+   "where": "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(2) \"Industrial gas plant, open 24 hours on i\"",
+   "msg": "cut 37px by the right edge of the screen (and 2 more like it: \"about 190 m from Phase 1\", \"Book a site visit\")",
+   "fix": "give the text room: no overflow clipping a line, no line past its box",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cut-text"
+   ],
+   "wheres": [
+    "table.dist > tbody > tr:nth-of-type(1) > td:nth-of-type(2) \"Industrial gas plant, open 24 hours on i\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#s1 / section#s2",
+   "msg": "824px between these sections, +296% against the median 208px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#s1 / section#s2"
+   ]
+  },
+  {
+   "check": "section-tile",
+   "where": "main#top > section.hero.hero--place \"Working industry and a fuel station next\"",
+   "msg": "the first section is 844px tall (0.71 screens at 390x844), shorter than the screen: the first screen shows 788px of it and 353px of the next section, its heading \"What is nearby the plots\" on screen",
+   "fix": "make the hero exactly one screen (height: 100svh) with its content between the nav and 24px above the fold",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-tile"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--place \"Working industry and a fuel station next\""
+   ]
+  },
+  {
+   "check": "section-tile",
+   "where": "section#s2 \"Why a fuel station near the plots helps\"",
+   "msg": "the section is 1049px tall (0.88 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 993px of it and 148px of the next section, its heading \"Book a site visit\" on screen",
+   "fix": "set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-tile"
+   ],
+   "wheres": [
+    "section#s2 \"Why a fuel station near the plots helps\""
+   ]
+  },
+  {
+   "check": "section-tile",
+   "where": "footer#contact \"Book a site visit\"",
+   "msg": "the section is 844px tall (0.71 screens at 390x844), shorter than the screen: its tile, held at the page's end (scroll 3228px) shows 844px of it and 297px of the section above (\"Why a fuel station near the pl\"), its picture on screen",
+   "fix": "set every section after the hero to one screen or two (height: calc(var(--h,1) * 100vh)) and fit its content above --padb",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-tile"
+   ],
+   "wheres": [
+    "footer#contact \"Book a site visit\""
+   ]
+  },
+  {
+   "check": "off-viewport",
+   "where": "header.nav > div.wrap.nav__bar \"Skip to content\"",
+   "msg": "at 320px wide it runs 209px past the screen's right edge (the page is 553px wide and scrolls sideways)",
+   "fix": "keep it inside the screen at this width: let it shrink, wrap or stack",
+   "widths": [
+    320
+   ],
+   "from": "consistency",
+   "ids": [
+    "off-viewport"
+   ],
+   "wheres": [
+    "header.nav > div.wrap.nav__bar \"Skip to content\""
+   ]
+  },
+  {
+   "check": "spill",
+   "where": "#s1 table.dist \"Place What it is Distance from t\"",
+   "msg": "x 120 to 1379.7, the page runs 120 to 1320",
+   "fix": "keep it inside the .wrap; nothing past the right edge",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "spill"
+   ],
+   "wheres": [
+    "#s1 table.dist \"Place What it is Distance from t\""
+   ]
+  },
+  {
+   "check": "edge-right",
+   "where": "nav actions",
+   "msg": "end at x 529, the page's right line is 366",
+   "fix": "end it on the .wrap right line",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-right"
+   ],
+   "wheres": [
+    "nav actions"
+   ]
+  },
+  {
+   "check": "screen-short",
+   "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+   "msg": "844px tall; one screen under the nav is 1197px",
+   "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-short"
+   ],
+   "wheres": [
+    "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+   ]
+  },
+  {
+   "check": "neighbour",
+   "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+   "msg": "framed, 155px of #s1 section.section.sec \"What is nearby the plots Place W\" shows",
+   "fix": "keep the next section's heading and picture out of this screen",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "neighbour"
+   ],
+   "wheres": [
+    "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+   ]
+  },
+  {
+   "check": "screen-height",
+   "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+   "msg": "1688px, 1.41 screens; a section is exactly one or two (--h), or on a phone at least one that its content fills",
+   "fix": "make the section exactly one or two screens (--h: 1 or 2)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-height"
+   ],
+   "wheres": [
+    "#s1 section.section.sec \"What is nearby the plots Place W\""
+   ]
+  },
+  {
+   "check": "screen-short",
+   "where": "#s2 section.section.sec \"Why a fuel station near the plot\"",
+   "msg": "1049px tall; one screen under the nav is 1197px",
+   "fix": "make the section one full screen (--h: 1, layout-v4.md section 2)",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "screen-short",
+    "screen-height"
+   ],
+   "wheres": [
+    "#s2 section.section.sec \"Why a fuel station near the plot\""
+   ]
+  },
+  {
+   "check": "neighbour",
+   "where": "#s2 section.section.sec \"Why a fuel station near the plot\"",
+   "msg": "framed, 148px of the footer shows",
+   "fix": "keep the next section's heading and picture out of this screen",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "neighbour"
+   ],
+   "wheres": [
+    "#s2 section.section.sec \"Why a fuel station near the plot\""
+   ]
+  },
+  {
+   "check": "hero-fold",
+   "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+   "msg": "ends at y 844, above the fold (1197)",
+   "fix": "the hero fills the first screen alone, its button inside it",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-fold"
+   ],
+   "wheres": [
+    "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+   ]
+  },
+  {
+   "check": "hero-fold",
+   "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+   "msg": "shows on the first screen from y 940",
+   "fix": "the hero fills the first screen alone, its button inside it",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-fold"
+   ],
+   "wheres": [
+    "#s1 section.section.sec \"What is nearby the plots Place W\""
+   ]
+  },
+  {
+   "check": "overflow-x",
+   "where": "page",
+   "msg": "the page scrolls sideways",
+   "fix": "remove what scrolls sideways",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "overflow-x"
+   ],
+   "wheres": [
+    "page"
+   ]
+  },
+  {
+   "check": "hero-maxchars",
+   "where": "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\"",
+   "msg": "with a 48-character h1 (heroes.json maxChars): ends at y 844, above the fold (1197)",
+   "fix": "shorten the h1 or give the hero room for the longest headline",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-maxchars"
+   ],
+   "wheres": [
+    "section.hero.hero--place section.hero.hero--place \"Working industry and a fuel stat\""
+   ]
+  },
+  {
+   "check": "hero-maxchars",
+   "where": "#s1 section.section.sec \"What is nearby the plots Place W\"",
+   "msg": "with a 48-character h1 (heroes.json maxChars): shows on the first screen from y 940",
+   "fix": "shorten the h1 or give the hero room for the longest headline",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-maxchars"
+   ],
+   "wheres": [
+    "#s1 section.section.sec \"What is nearby the plots Place W\""
+   ]
+  },
+  {
+   "check": "hero-maxchars",
+   "where": "page",
+   "msg": "with a 48-character h1 the page scrolls sideways",
+   "fix": "shorten the h1 or give the hero room for the longest headline",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-maxchars"
+   ],
+   "wheres": [
+    "page"
+   ]
+  }
+ ],
+ "waived": [
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837057800\"; a visitor can dial it and reach a stranger (and 1 more like it: nav.actionbar > a.btn.btn--secondary)",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(1) \"tel:+919837057800\""
+   ],
+   "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  },
+  {
+   "check": "phone-number",
+   "where": "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\"",
+   "msg": "a tel: link calls a number in a real dialable format: \"tel:+919837764222\"; a visitor can dial it and reach a stranger",
+   "fix": "drop the number and its tel: link (a \"Request a call\" form may stand in), unless the brief gives the number",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "phone-number"
+   ],
+   "wheres": [
+    "div.grid > div.span-4.stack-4 > p.footer__phones > a:nth-of-type(2) \"tel:+919837764222\""
+   ],
+   "reason": "the client's own real number 9837764222, given in the brief (swap point phones.mjs); not an invented stand-in"
+  }
+ ],
+ "warnCount": 7,
+ "at": "2026-11-08T16:57:30.043Z"
+}

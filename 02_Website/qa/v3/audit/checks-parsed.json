@@ -1,0 +1,128 @@
+{
+ "tab": [
+  "A Skip to content | outline solid 2px | top 14 UNDER-HEADER",
+  "A Isapur Industrial Park,  | outline solid 2px | top 16 UNDER-HEADER",
+  "A Visit | outline solid 2px | top 18 UNDER-HEADER",
+  "A Plots | outline solid 2px | top 18 UNDER-HEADER",
+  "A Location | outline solid 2px | top 18 UNDER-HEADER",
+  "A Around us | outline solid 2px | top 18 UNDER-HEADER",
+  "A FAQ | outline solid 2px | top 18 UNDER-HEADER",
+  "A Book a site visit | outline solid 2px | top 14 UNDER-HEADER",
+  "A Book a site visit | outline solid 2px | top 673",
+  "A Hapur-Modinagar Road, Yu | outline solid 2px | top 380",
+  "A Get directions | outline solid 2px | top 742",
+  "A 98370 57800 | outline solid 2px | top 811",
+  "A 98377 64222 | outline solid 2px | top 811",
+  "A All distances | outline solid 2px | top 436",
+  "A  | outline solid 2px | top 618",
+  "A  | outline solid 2px | top 618",
+  "A  | outline solid 2px | top 618",
+  "A  | outline solid 2px | top 618",
+  "A Who is nearby | outline solid 2px | top 436",
+  "A  | outline solid 2px | top 463",
+  "A  | outline solid 2px | top 463",
+  "A  | outline solid 2px | top 463"
+ ],
+ "contrast": [
+  ".nav__link 15px/500 14.96",
+  "main p 20px/400 14.96",
+  ".rows__name 16px/500 14.96",
+  ".rows__value 16px/400 14.96",
+  ".type-moment 66px/400 14.96",
+  "h1 48px/400 14.96",
+  "h2 31.9728px/400 14.96",
+  ".btn--primary 15px/500 8.92",
+  ".btn--secondary 16px/500 14.96",
+  ".footer__col a 14px/400 8.92",
+  ".footer__phones a 18px/400 8.92",
+  "label 14px/500 13.58",
+  ".visit__rows 16px/400 13.58",
+  "input 16px/400 14.96"
+ ],
+ "type": {
+  "t": [
+   "h1: \"Work Sans\" 48px w400 lh 52.992px ls -1.2px",
+   "h2: \"Work Sans\" 31.9728px w400 lh 39.966px ls -0.79932px",
+   "h3: \"Work Sans\" 13px w500 lh 16px ls -0.325px",
+   "main p: \"Work Sans\" 20px w400 lh 30px ls normal",
+   ".nav__link: \"Work Sans\" 15px w500 lh 23.25px ls normal",
+   ".btn--primary: \"Work Sans\" 15px w500 lh 15px ls normal",
+   ".rows__name: \"Work Sans\" 16px w500 lh 24.8px ls normal"
+  ],
+  "sections": [
+   " 900h pad 589px/64px bg rgb(243, 245, 239)",
+   "visit 900h pad 120px/72px bg rgba(0, 0, 0, 0)",
+   "plots 900h pad 120px/72px bg rgba(0, 0, 0, 0)",
+   "around 900h pad 120px/72px bg rgba(0, 0, 0, 0)",
+   "book 900h pad 120px/72px bg rgba(0, 0, 0, 0)"
+  ],
+  "btn": "44px pad 0px 24px radius 2px font 15px",
+  "yellow": 0,
+  "flag": false
+ },
+ "reduced": {
+  "runningAnimations": 0,
+  "hiddenEls": 0
+ },
+ "motion": {
+  "anims": 0,
+  "scrollListeners": "n/a",
+  "tdAll": 0
+ },
+ "form": [
+  {
+   "n": "name",
+   "type": "text",
+   "ac": "name",
+   "label": true,
+   "req": true,
+   "im": ""
+  },
+  {
+   "n": "phone",
+   "type": "tel",
+   "ac": "tel",
+   "label": true,
+   "req": true,
+   "im": "tel"
+  },
+  {
+   "n": "plot_size",
+   "type": "text",
+   "ac": "off",
+   "label": true,
+   "req": false,
+   "im": ""
+  },
+  {
+   "n": "day",
+   "type": "text",
+   "ac": "off",
+   "label": true,
+   "req": true,
+   "im": ""
+  }
+ ],
+ "markdownLeaks": [
+  "**98370 57800**",
+  "**98377 64222**"
+ ],
+ "leaks/faq/": {
+  "bold": [],
+  "links": [
+   "](/location/)",
+   "](/blog/industrial-plot-buying-checklist/)"
+  ]
+ },
+ "leaks/contact/": {
+  "bold": [
+   "**98370 57800**",
+   "**98377 64222**"
+  ],
+  "links": []
+ },
+ "leaks/industrial-plots/": {
+  "bold": [],
+  "links": []
+ }
+}
