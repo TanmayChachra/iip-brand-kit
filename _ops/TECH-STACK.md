@@ -45,3 +45,9 @@ marketingskills (12: seo-audit, schema, site-architecture, ai-seo, programmatic-
 
 ## 6. Change log
 - 2026-11-09: Cloudflare, OpenSEO and DataForSEO MCPs connected and verified through Claude Desktop connectors. Astro docs MCP added. DataForSEO balance read: 1 USD.
+
+## 7. Secrets and addresses policy (how nothing gets lost)
+- Account email addresses and where every secret lives are in the local-only map `_ops/private/ACCOUNTS-AND-SECRETS-MAP.md` (git ignored). A backup copy outside the project (`~/IIP-private-backup`) can be made with `python _ops/private/backup.py` once the owner approves. Claude memory holds a pointer.
+- Secret values never go in this repo, docs, chat or screenshots. They live in the owner's password manager or in each service's own settings (for example the Claude Desktop connector settings for DataForSEO).
+- Proposed, not installed: a local git pre-commit hook that runs `_ops/private/scan_secrets.py` to block commits containing key-like strings, private files or blocklisted addresses. It needs the owner's explicit yes because it changes `.git/hooks`.
+- If a secret was exposed, rotate it the same day using the recovery column in the private map.

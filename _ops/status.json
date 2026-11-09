@@ -421,5 +421,52 @@
       "unlocks": "Steady conversion gains",
       "state": "later"
     }
+  ],
+  "automation": [
+    {
+      "group": "I can start right now (no input from you)",
+      "items": [
+        "Finish website v2: inner pages to gate pass, polish, screenshots (the builder is paused, I resume it when the usage window allows).",
+        "Plot maps scaffold: SVG conventions, plots.json schema, a tracing script ready for your KML and maps.",
+        "Draft the Approvals, Gallery and FAQ pages so only the documents and photos are missing.",
+        "Keep docs, board and tech record in sync; weekly SEO watch keeps running.",
+        "Hindi and Hinglish keyword backlog and page drafts for later."
+      ]
+    },
+    {
+      "group": "Unlocks when DataForSEO has funds (after you add the 50 USD minimum)",
+      "items": [
+        "OpenSEO to DataForSEO test call (it currently returns an access error on the Labs endpoint, most likely because the account is still on trial credit).",
+        "Real keyword research: volumes, difficulty, intent for the 60 planned keywords, replacing my guesses in the keyword map.",
+        "Competitor analysis: what CKS, SHD and others rank for, their backlinks.",
+        "Local rank grid around the park and rank tracker for the money keywords, with a cost estimate before each run.",
+        "Site audit of the live site, AI visibility tracking."
+      ]
+    },
+    {
+      "group": "Unlocks when the domain is bought",
+      "items": [
+        "DNS, redirect of the .com to the .in, Cloudflare Pages deploy, email routing, Search Console verification (all through the Cloudflare MCP).",
+        "Create the IIP project in OpenSEO, connect Search Console and GA4.",
+        "Final canonical URLs, sitemap submission, Bing import, IndexNow."
+      ]
+    },
+    {
+      "group": "Unlocks when you send material",
+      "items": [
+        "Plot maps and the Google Earth project: SVG maps with one unit per plot.",
+        "Photos: resize, WEBP, place on the site, Google profile posts, listings.",
+        "Approval documents: Approvals page, schema, Google profile text.",
+        "Sales questions and facts: complete the FAQ and plots page."
+      ]
+    },
+    {
+      "group": "Needs your approval each time",
+      "items": [
+        "Any change to your Google Business Profile, DNS or Access settings.",
+        "Any paid DataForSEO or OpenSEO run.",
+        "Pushing to GitHub or deploying the site."
+      ]
+    }
   ]
 }
