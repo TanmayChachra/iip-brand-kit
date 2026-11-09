@@ -127,10 +127,10 @@
       "title": "OpenSEO: turn on Managed OAuth in Cloudflare Access",
       "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
       "steps": [
-        "Cloudflare dashboard, Zero Trust, Access controls, Applications, open the OpenSEO application, Edit.",
-        "Additional settings, OAuth, turn on Managed OAuth.",
-        "In Managed OAuth settings allow localhost and loopback redirect URIs (for Claude Code). For the Claude Desktop connector also add its HTTPS redirect URI, then Save.",
-        "In Claude Code run /mcp, choose openseo, authenticate. I then run the free checks (whoami, list_projects). After the Cloudflare MCP is authorized I can also do step 1 to 3 through the API if you say so."
+        "Managed OAuth is on (done), but the Access OAuth server at tanmaypersonaln8n.cloudflareaccess.com advertises no dynamic client registration yet (checked 2026-11-09), so MCP clients cannot register.",
+        "In the OpenSEO Access application, Additional settings, OAuth, Managed OAuth settings: allow loopback (localhost) redirect URIs for Claude Code, and add these HTTPS redirect URIs for Claude Desktop and web: https://claude.ai/api/mcp/auth_callback and https://claude.com/api/mcp/auth_callback. Save.",
+        "Claude Desktop: Settings, Connectors, Add custom connector, URL https://openseo.tanmay-hq.in/mcp, Add, sign in with your allowed email, approve.",
+        "Claude Code: in a terminal run claude, then /mcp, choose openseo, authenticate. Then I run the free checks (whoami, list_projects)."
       ],
       "links": [
         [
@@ -202,7 +202,7 @@
     {
       "id": "bizgoogle",
       "title": "Separate business Google account (my advice: yes)",
-      "why": "Recommended: a dedicated account owns the business assets so they are not tied to your personal Gmail. I cannot create accounts, you do.",
+      "why": "Recommended: a dedicated account owns the business assets so they are not tied to your personal Gmail. I cannot create accounts, you do. Your personal OpenSEO stays on the personal Cloudflare and Google setup; the business account owns only IIP assets.",
       "steps": [
         "Create the account (isapurindustrialpark@gmail.com if free, or the closest variant). Strong unique password in a password manager, 2-step verification, recovery email or phone set to yours.",
         "Make it Owner of the Business Profiles, GA4, GTM and Search Console, and keep your personal account as a second Owner or Manager so you never lose access.",
