@@ -106,11 +106,10 @@
     },
     {
       "id": "cloudflare-mcp-auth",
-      "title": "Authorize the Cloudflare MCP (already added globally)",
+      "title": "Cloudflare MCP authorized (done 2026-11-09)",
       "why": "I added cloudflare-api and astro-docs at user scope for all projects. Cloudflare needs your OAuth click once. After that I can edit DNS, Pages and the Access settings for you.",
       "steps": [
-        "In Claude Code run /mcp, choose cloudflare-api, authenticate in the browser.",
-        "Approve only: DNS edit, Pages, Email Routing, Zero Trust and Access apps (read and edit). Tell me when it shows connected."
+        "Verified: whoami returns the owner account. Next: I add DNS, Pages and Email Routing records after the domain is bought."
       ],
       "links": [
         [
@@ -120,17 +119,15 @@
       ],
       "time": "5 min",
       "unlocks": "DNS, Pages deploy, and fixing the OpenSEO Access setting",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "openseo-oauth",
-      "title": "OpenSEO: turn on Managed OAuth in Cloudflare Access",
+      "title": "OpenSEO MCP connected (done 2026-11-09)",
       "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
       "steps": [
-        "Managed OAuth is on (done), but the Access OAuth server at tanmaypersonaln8n.cloudflareaccess.com advertises no dynamic client registration yet (checked 2026-11-09), so MCP clients cannot register.",
-        "In the OpenSEO Access application, Additional settings, OAuth, Managed OAuth settings: allow loopback (localhost) redirect URIs for Claude Code, and add these HTTPS redirect URIs for Claude Desktop and web: https://claude.ai/api/mcp/auth_callback and https://claude.com/api/mcp/auth_callback. Save.",
-        "Claude Desktop: Settings, Connectors, Add custom connector, URL https://openseo.tanmay-hq.in/mcp, Add, sign in with your allowed email, approve.",
-        "Claude Code: in a terminal run claude, then /mcp, choose openseo, authenticate. Then I run the free checks (whoami, list_projects)."
+        "Verified from Claude Desktop: whoami works (self-hosted mode, owner account), list_projects returns one project (Default, crownmont.ca, not ours).",
+        "Next on my side: create an IIP project once the domain exists, then keyword research (paid DataForSEO calls only after your yes and a cost estimate)."
       ],
       "links": [
         [
@@ -144,17 +141,16 @@
       ],
       "time": "10 min",
       "unlocks": "OpenSEO tools in Claude: keyword research, ranks, audits",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "dataforseo",
       "title": "DataForSEO account and credits",
       "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
       "steps": [
-        "Sign up at DataForSEO and verify the account.",
-        "Top up a small first balance (minimum top-up and per-call prices are on their pricing page: check them, I have not verified them).",
-        "Create an API login and password. Keep them in a password manager. Never paste them in chat.",
-        "Set a monthly spend alert or cap in the account."
+        "Connected: the DataForSEO MCP works (free balance read shows 1 USD trial credit).",
+        "When you are ready: add funds in the DataForSEO account (check their minimum top-up), then set a monthly spend cap. Never paste the API password in chat.",
+        "I run a cost estimate before any paid call and wait for your yes."
       ],
       "links": [
         [
@@ -168,18 +164,14 @@
       ],
       "time": "20 min",
       "unlocks": "Real keyword volumes and rank tracking in OpenSEO",
-      "state": "open"
+      "state": "connected, no funds"
     },
     {
       "id": "openseo",
-      "title": "Host OpenSEO and connect its MCP",
+      "title": "OpenSEO hosted on Cloudflare (done, openseo.tanmay-hq.in)",
       "why": "Gives me live search data (volumes, rank, backlinks, audits, AI visibility). Self hosted and MIT licensed.",
       "steps": [
-        "Pick a host: your own machine with Docker (fastest to try) or your Cloudflare account (always on).",
-        "Follow the OpenSEO self-host guide and put the DataForSEO login in the server's environment variables only.",
-        "Open the app. The first visitor becomes admin: create your admin login.",
-        "Connect the MCP to Claude with the command from the MCP docs, for example: claude mcp add --transport http --scope user openseo http://localhost:3001/mcp (confirm the exact URL in the docs).",
-        "Tell me when it answers. Then I run keyword research and fill the keyword map with real volumes."
+        "Already hosted by you. Remaining: add the DataForSEO credentials in the OpenSEO settings and set a spend cap (see the DataForSEO task)."
       ],
       "links": [
         [
@@ -197,7 +189,7 @@
       ],
       "time": "1 to 2 hours",
       "unlocks": "Real keyword map, weekly rank checks, AI visibility tracking",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "bizgoogle",

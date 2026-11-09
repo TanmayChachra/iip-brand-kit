@@ -1,6 +1,6 @@
 # ISAPUR Industrial Park (IIP): project instructions for every chat in this repo
 
-Read this first, then `00_ISAPUR_KNOWLEDGE.md` (single source of truth, never delete or move, append to its change log), then `_ops/AGENTS.md` (who owns which folder). Open work is in `TODOS.md`, history in `CHANGELOG.md`.
+Read this first, then `00_ISAPUR_KNOWLEDGE.md` (single source of truth, never delete or move, append to its change log), then `_ops/AGENTS.md` (who owns which folder) and `_ops/TECH-STACK.md` (accounts, hosting, MCPs and skills for this project: maintain it end to end, never delete the MCPs listed there). Open work is in `TODOS.md`, history in `CHANGELOG.md`.
 
 ## What this project is
 Marketing, brand and visibility for Isapur Industrial Park (the name is exactly "Isapur Industrial Park", short form IIP; the developer is NOT revealed anywhere). Audience: local factory owners on the Hapur-Modinagar Road. Live boards: https://tanmaychachra.github.io/iip-brand-kit/ (brand kit), `/board/` (phase 2), `/experiments/poster-lab/`.
@@ -24,7 +24,7 @@ After every change that ships, update the affected docs in the same commit:
 2. `TODOS.md`: tick done items, add new ones, remove stale ones.
 3. `CHANGELOG.md`: one dated entry written for the owner (what they can now do), newest first.
 4. `README.md` folder map and this file if structure, rules or phases changed.
-5. `_ops/status.json` (feeds the board), then rebuild the board and the kit as needed (commands in `README.md`).
+5. `_ops/TECH-STACK.md` for any account, MCP, skill, host or scheduled task change, then `_ops/status.json` (feeds the board), then rebuild the board and the kit as needed (commands in `README.md`).
 Coverage by type: reference (kit page, competitor tables), how-to (README, playbook), explanation (knowledge file, research findings), tutorial (brief). Flag gaps in TODOS.md.
 
 ## Research truth labels

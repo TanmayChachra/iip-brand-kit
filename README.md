@@ -14,7 +14,7 @@ Live boards (GitHub Pages): brand kit https://tanmaychachra.github.io/iip-brand-
 | `04_Analytics/` | GTM and GA4 plan, event spec, dashboards, A/B test log | analytics |
 | `05_Local-Presence/` | Google Business Profile audit (`gmb/`), listings and citations (`citations/`), reviews | local |
 | `06_Content/` | Content pillars, blog and social calendar, copy drafts (later) | content |
-| `_ops/` | Agent entry points, status board data (`status.json`), logs, inbox for questions | lead |
+| `_ops/` | Tech stack record (`TECH-STACK.md`), agent entry points, status board data (`status.json`), logs, inbox for questions | lead |
 | `docs/` | Published copy for GitHub Pages (kit, brief, `board/`, `experiments/`). Generated, do not hand edit | generated |
 | `Archive/` | Old work. Git ignores it | archived |
 
