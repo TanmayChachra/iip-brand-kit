@@ -37,3 +37,11 @@
 2. Site: one strong home page and plots page for "industrial plots in Ghaziabad" and "industrial plot for sale", an "industrial areas in Ghaziabad" guide page for the 1,300 searches, and the location landing pages as supporting content.
 3. Do not spend more on volume research for exact local phrases: the demand is below the data threshold. Spend instead on rank tracking (to see movement) and a Hindi and Hinglish check.
 4. Track Maps rank monthly with the same 5x5 grid (about 0.1 USD) and compare.
+
+## 5. Hindi and Hinglish check (2026-11-10, cost a few cents)
+42 more terms checked (30 Hinglish and local-area phrases in English letters, 12 in Devanagari). Almost nothing is measurable:
+- "industrial plot near me": 260 a month, difficulty 48, commercial. This is Maps driven, the Google profile matters most for it.
+- "plot ki registry kaise hoti hai": 260 a month, informational, no difficulty. A Hindi or Hinglish buying-process page is worth testing.
+- "industrial plot in delhi ncr": 30.
+- Every Devanagari term and every Hinglish local phrase (factory ke liye plot, modinagar me plot, hapur me plot, factory shed ghaziabad, sahibabad, loni, dasna, pilkhuwa, upsida) returned no volume.
+- Decision: no Hindi landing pages for traffic yet. Keep one Hinglish buying-process guide as a test, and write Hindi content later for trust and WhatsApp sharing, not for search.

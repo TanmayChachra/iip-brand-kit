@@ -49,3 +49,4 @@
 - [x] Driving distances measured on Google Maps (`Brand-Kit/research/driving-distances.md`).
 - [x] Horizontal lockup, accurate clear space and minimum size guides, monotone use.
 - [x] Polished 24 icon set. Real badge ring and a visible repeating pattern.
+- [ ] Test one Hinglish buying-process guide (plot ki registry kaise hoti hai, 260 a month) after the site is live.
