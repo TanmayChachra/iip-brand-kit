@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "workstreams": [
     {
       "id": "01_Brand",
@@ -54,12 +54,10 @@
   "owner_tasks": [
     {
       "id": "domain",
-      "title": "Domain: isapurindustrialpark.com bought (done). Decide on the .in",
-      "why": "The .com is registered at Porkbun under the business Gmail (nameservers still Porkbun's). The registry shows isapurindustrialpark.in as NOT registered yet, so either it was not bought or the e-KYC step is pending.",
+      "title": "Domains bought at Porkbun: isapurindustrialpark.com and .in (done)",
+      "why": "Both are registered at Porkbun under the business Gmail. Both still use Porkbun nameservers. The .com is the primary until you say otherwise, the .in redirects to it.",
       "steps": [
-        "Tell me if you also bought the .in. If not, buy it at Porkbun (about 7.83 USD a year) and tell me; it then redirects to the primary.",
-        "Decide the primary: the .com is the one bought, so the site is built on isapurindustrialpark.com unless you say otherwise.",
-        "Keep WHOIS privacy on (free)."
+        "Done. Next step is the Cloudflare nameserver switch below."
       ],
       "links": [
         [
@@ -75,18 +73,19 @@
           "02_Website/domain-email.md"
         ]
       ],
-      "time": "5 min",
+      "time": "done",
       "unlocks": "Everything below that needs a domain",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "cloudflare",
       "title": "Point the .com nameservers from Porkbun to Cloudflare",
       "why": "I created the Cloudflare zone for isapurindustrialpark.com (under the IsapurIndustrialPark account). It stays pending until Porkbun uses Cloudflare's nameservers. After that I add the DNS, Pages, email routing and Search Console records through the Cloudflare MCP.",
       "steps": [
-        "Porkbun, Domain Management, isapurindustrialpark.com, Authoritative Nameservers: replace the four Porkbun ones with celeste.ns.cloudflare.com and decker.ns.cloudflare.com, save.",
-        "Or connect the Porkbun MCP (I added it to Claude, sign in through /mcp yourself) and I change them for you. It may ask for API access: enable API access for the domain in Porkbun and keep the keys in your password manager, never in chat.",
-        "Tell me when done. Propagation takes minutes to a few hours."
+        "In Claude, run /mcp (no words after it), pick porkbun, choose Authenticate and sign in on Porkbun's page. I then switch the nameservers of both domains to Cloudflare myself.",
+        "If the MCP asks for API keys instead: Porkbun, Account, API Access, create keys, enable API access on each domain. Keys go only into the connector, never in chat.",
+        "Fallback by hand at Porkbun, each domain, Authoritative Nameservers: set the two Cloudflare ones shown on the zone (the .com uses celeste.ns.cloudflare.com and decker.ns.cloudflare.com).",
+        "Business Gmail was invited as Administrator on the IsapurIndustrialPark Cloudflare account (pending): accept the invite from that mailbox."
       ],
       "links": [
         [
@@ -101,6 +100,92 @@
       "time": "5 min",
       "unlocks": "Deploy, DNS records, Search Console verification, email routing",
       "state": "open"
+    },
+    {
+      "id": "cloudflare-mcp-auth",
+      "title": "Cloudflare MCP authorized (done 2026-11-09)",
+      "why": "I added cloudflare-api and astro-docs at user scope for all projects. Cloudflare needs your OAuth click once. After that I can edit DNS, Pages and the Access settings for you.",
+      "steps": [
+        "Verified: whoami returns the owner account. Next: I add DNS, Pages and Email Routing records after the domain is bought."
+      ],
+      "links": [
+        [
+          "Cloudflare MCP docs",
+          "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
+        ]
+      ],
+      "time": "5 min",
+      "unlocks": "DNS, Pages deploy, and fixing the OpenSEO Access setting",
+      "state": "done"
+    },
+    {
+      "id": "openseo-oauth",
+      "title": "OpenSEO MCP connected (done 2026-11-09)",
+      "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
+      "steps": [
+        "Verified from Claude Desktop: whoami works (self-hosted mode, owner account), list_projects returns one project (Default, crownmont.ca, not ours).",
+        "Next on my side: create an IIP project once the domain exists, then keyword research (paid DataForSEO calls only after your yes and a cost estimate)."
+      ],
+      "links": [
+        [
+          "OpenSEO guide",
+          "https://github.com/every-app/open-seo/blob/main/docs/SELF_HOSTING_CLOUDFLARE_OPERATIONS.md#through-cloudflare-access"
+        ],
+        [
+          "OpenSEO MCP docs",
+          "https://openseo.so/docs/mcp"
+        ]
+      ],
+      "time": "10 min",
+      "unlocks": "OpenSEO tools in Claude: keyword research, ranks, audits",
+      "state": "done"
+    },
+    {
+      "id": "dataforseo",
+      "title": "DataForSEO funded and connected (done 2026-11-09)",
+      "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
+      "steps": [
+        "51 USD deposited, OpenSEO test call works (92 keywords checked, results in 03_SEO/keywords/real-volumes-2026-11-09.md).",
+        "Still do: set a monthly spend cap in the DataForSEO account. I show a cost estimate before every paid run."
+      ],
+      "links": [
+        [
+          "DataForSEO",
+          "https://dataforseo.com/"
+        ],
+        [
+          "Pricing",
+          "https://dataforseo.com/pricing"
+        ]
+      ],
+      "time": "20 min",
+      "unlocks": "Real keyword volumes and rank tracking in OpenSEO",
+      "state": "done"
+    },
+    {
+      "id": "openseo",
+      "title": "OpenSEO hosted on Cloudflare (done, openseo.tanmay-hq.in)",
+      "why": "Gives me live search data (volumes, rank, backlinks, audits, AI visibility). Self hosted and MIT licensed.",
+      "steps": [
+        "Already hosted by you. Remaining: add the DataForSEO credentials in the OpenSEO settings and set a spend cap (see the DataForSEO task)."
+      ],
+      "links": [
+        [
+          "OpenSEO repo",
+          "https://github.com/every-app/open-seo"
+        ],
+        [
+          "OpenSEO MCP docs",
+          "https://openseo.so/docs/mcp"
+        ],
+        [
+          "Skills setup",
+          "https://openseo.so/docs/skills/setup"
+        ]
+      ],
+      "time": "1 to 2 hours",
+      "unlocks": "Real keyword map, weekly rank checks, AI visibility tracking",
+      "state": "done"
     },
     {
       "id": "bizgoogle",
