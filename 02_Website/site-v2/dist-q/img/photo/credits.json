@@ -1,0 +1,27 @@
+{
+ "note": "Stand-ins until the park's own shoot. Unsplash License (free, no credit needed) and Wikimedia Commons (credit and licence below).",
+ "unsplash": {
+  "road-india": "https://unsplash.com/photos/1598105397032",
+  "road-green": "https://unsplash.com/photos/1596829568009",
+  "verge-palms": "https://unsplash.com/photos/1705821365889",
+  "sheds-blue": "https://unsplash.com/photos/1787063757757",
+  "sheds-aerial": "https://unsplash.com/photos/1787058105751",
+  "street-light": "https://unsplash.com/photos/1578326516120",
+  "factory-yard": "https://unsplash.com/photos/1636867900334",
+  "jcb-lowbed": "https://unsplash.com/photos/1709735133497",
+  "shed-dusk": "https://unsplash.com/photos/1655575900119",
+  "truck-white": "https://unsplash.com/photos/1627019866926"
+ },
+ "wikimedia": {
+  "expressway-a": {
+   "by": "Pinakpani",
+   "licence": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Delhi%E2%80%93Meerut_Expressway_in_Ghaziabad_05.jpg"
+  },
+  "expressway-b": {
+   "by": "Pinakpani",
+   "licence": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Delhi%E2%80%93Meerut_Expressway_in_Ghaziabad_03.jpg"
+  }
+ }
+}

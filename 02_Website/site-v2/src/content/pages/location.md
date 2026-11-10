@@ -46,6 +46,7 @@ The Hapur-Modinagar Road runs through Sarawa, Yusufpur Isapur and Bhojpur. The p
 - [Industrial plots in Ghaziabad](/location/industrial-plots-in-ghaziabad/)
 - [Plots near the Delhi-Meerut Expressway](/location/industrial-plots-near-delhi-meerut-expressway/)
 - [Industrial plots in Bhojpur and Isapur](/location/industrial-plots-in-bhojpur/)
+- [Industrial areas in Ghaziabad: a guide](/industrial-areas-in-ghaziabad/)
 
 ## Visit
 

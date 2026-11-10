@@ -12,9 +12,9 @@ schema: []
 
 | Place | What it is | Distance from the park |
 |---|---|---|
-| INOX Air Products, Modinagar plant | Industrial gas plant, open 24 hours on its Maps listing | about 0.6 km from Phase 1 (straight-line) |
-| Namaste India plant | Working factory | about 0.7 km from Phase 1 (straight-line) |
-| IndianOil petrol pump (Captain Filling Station) | Fuel station on Hapur-Modinagar Road | about 190 m from Phase 1 and about 60 m from Phase 2 (straight-line) |
+| INOX Air Products, Modinagar plant | Industrial gas plant, open 24 hours on its Maps listing | about 0.6 km from the park (straight-line) |
+| Namaste India plant | Working factory | about 0.7 km from the park (straight-line) |
+| IndianOil petrol pump (Captain Filling Station) | Fuel station on Hapur-Modinagar Road | about 60 to 190 m from the park (straight-line) |
 
 Measured on Google Maps, 8 November 2026.
 

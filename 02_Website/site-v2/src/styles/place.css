@@ -181,3 +181,20 @@ html[data-type="place"] .hero--place { --photo: 400px; }
 html:root[data-type="place"]:not([data-page-type="home"]) .hero--place { --t-h1: clamp(36px, 2.6vw + 26px, 64px); --photo: 340px; }
 html[data-type="place"]:not([data-page-type="home"]) .hero--place .hero__text h1 { max-width: 24ch; }
 .dist td.nw { white-space: nowrap; }
+
+/* v2.2 (2026-11-10): h1, h2 and numerals scale up together; the map gets the wider column */
+html:root[data-type="place"] .hero--place { --t-h1: clamp(44px, 4.4vw + 24px, 92px); }
+html:root[data-type="place"] { --t-h2: clamp(30px, 2.6vw + 18px, 58px); }
+html[data-type="place"] .hero--place .hero__text h1 { max-width: 20ch; }
+@media (min-width: 1024px) {
+  #map .facts { grid-column: 1 / span 5 !important; }
+  #map .pl-photo { grid-column: 6 / span 7 !important; --pl-r: 1.5; }
+}
+.fact span { max-width: 30ch; }
+
+/* v2.3: a link that stands alone in a paragraph is a control (44 px), tighter lists so two-screen sections fit, no photo between stacked text sections on a phone */
+.sec .prose p > a:only-child { display: inline-block; min-height: 44px; line-height: 44px; }
+.dist th, .dist td { padding: 7px 0; }
+.sec .prose li { padding: 8px 0; }
+.sec .prose p { margin: 0 0 12px; }
+@media (max-width: 639px) { .sec .pl-photo { --pl-r: 2.4 !important; } }

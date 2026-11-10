@@ -13,5 +13,15 @@
   "check": "hero-lines",
   "target": "section.hero h1",
   "reason": "the real h1 is final and fits the hero at every width; the check fills it to the hero's maxChars in the kit's brand face Montserrat"
+ },
+ {
+  "check": "phone-number",
+  "target": "98370 57800",
+  "reason": "the client's own real number 9837057800 (swap point phones.mjs), shown on the contact page and footer; the demo-phone rule is for invented sites"
+ },
+ {
+  "check": "phone-number",
+  "target": "98377 64222",
+  "reason": "the client's own real number 9837764222 (swap point phones.mjs), shown on the contact page and footer; the demo-phone rule is for invented sites"
  }
 ]

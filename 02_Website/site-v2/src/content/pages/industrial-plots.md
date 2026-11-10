@@ -1,7 +1,7 @@
 ---
-title: Industrial Plots from 300 Sq Yards | Isapur Industrial Park
-description: Industrial plots from 300 sq yards on the Hapur-Modinagar Road, Ghaziabad. See sizes, how buying works and how to book a site visit.
-h1: Industrial plots from 300 sq yards on the Hapur-Modinagar Road
+title: "Industrial Plot for Sale from 300 Sq Yards | Isapur"
+description: "Industrial plots for sale from 300 sq yards on Hapur-Modinagar Road, Ghaziabad. See sizes, how buying works and how to book a site visit."
+h1: "Industrial plots for sale in Ghaziabad, from 300 sq yards"
 lead: Isapur Industrial Park offers industrial plots starting from 300 sq yards at Yusufpur Isapur, Ghaziabad district. Call us for the current plot list and rates.
 pageType: plots
 cta: plots

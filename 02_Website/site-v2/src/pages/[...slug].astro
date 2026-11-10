@@ -82,7 +82,7 @@ const md = (t: string) => esc(t).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong
         const fig = useMap ? mapFig(flip ? 'start-1' : 'start-7') : photoFig(pick(entry.id, i, key), flip ? 'start-1' : 'start-7', i === (hasMapRows ? 1 : 0));
         const body = <div class={`span-6 ${flip ? 'start-7 col-text' : ''}`}><div class="section-head"><h2 id={`s${i + 1}-h`}>{g.h}</h2></div><div class="prose" set:html={g.html}></div></div>;
         return (
-          <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 300 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
+          <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 170 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
             <div class="wrap grid grid--top">{body}<Fragment set:html={fig} /></div>
           </section>
         );

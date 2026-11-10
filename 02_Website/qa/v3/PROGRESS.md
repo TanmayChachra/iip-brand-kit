@@ -35,3 +35,5 @@ Update 3: gate PASS on home; stale photo keys fixed on inner pages, blog, 404; s
 - Heading scale: h1 80px, h2 52px, numerals 52px at 1440 (42 / 28 / 28 at 390). Set through `--t-h1` on the hero and `--t-h2` on :root.
 - Photo set cut to one cohesive daylight tone: expressway-a, expressway-b, road-green, sheds-blue, factory-yard, verge-palms, jcb-lowbed, street-light (amenities only). Removed: cyan aerial, amber dusk, teal road-india, goods truck.
 - Checks run per page with `scripts/q.sh` and `scripts/qall.sh` on a copy of dist (`dist-q`), one at a time.
+- 2026-11-10 resumed: neighbours phase mentions removed; robots.txt and llms.txt now generated from PUBLIC_SITE_URL and phones.mjs; guide page /industrial-areas-in-ghaziabad/ added; home and plots titles retargeted.
+- 2026-11-10 round: quick consistency on all inner pages; remaining FAILs were section-height by 1 to 30 px (threshold for two-screen sections now 170 words), tap size of lone prose links (44 px), phone-number waivers for the contact page text (98370 57800, 98377 64222) in scripts/waivers.default.json; mobile photos kept (hiding them failed no-visual), shorter ratio 2.4 instead.

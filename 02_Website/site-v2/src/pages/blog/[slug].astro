@@ -25,7 +25,7 @@ const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path
     </div></div></div>
   </section>
   {secs.map((g, i) => (
-    <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 300 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
+    <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 170 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
       <div class="wrap grid grid--top">
         <div class="span-6"><div class="section-head"><h2 id={`s${i + 1}-h`}>{g.h}</h2></div><div class="prose" set:html={g.html}></div></div>
         <Fragment set:html={photoFig(pick(entry.id, i, 'verge-palms'), 'start-7', i === 0)} />
