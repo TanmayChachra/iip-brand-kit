@@ -79,13 +79,10 @@
     },
     {
       "id": "cloudflare",
-      "title": "Point the .com nameservers from Porkbun to Cloudflare",
+      "title": "Cloudflare: both domains active, admin invited (done)",
       "why": "I created the Cloudflare zone for isapurindustrialpark.com (under the IsapurIndustrialPark account). It stays pending until Porkbun uses Cloudflare's nameservers. After that I add the DNS, Pages, email routing and Search Console records through the Cloudflare MCP.",
       "steps": [
-        "In Claude, run /mcp (no words after it), pick porkbun, choose Authenticate and sign in on Porkbun's page. I then switch the nameservers of both domains to Cloudflare myself.",
-        "If the MCP asks for API keys instead: Porkbun, Account, API Access, create keys, enable API access on each domain. Keys go only into the connector, never in chat.",
-        "Fallback by hand at Porkbun, each domain, Authoritative Nameservers: set the two Cloudflare ones shown on the zone (the .com uses celeste.ns.cloudflare.com and decker.ns.cloudflare.com).",
-        "Business Gmail was invited as Administrator on the IsapurIndustrialPark Cloudflare account (pending): accept the invite from that mailbox."
+        "Done 2026-11-11: nameservers switched, zones active, .in redirects to .com, Business Gmail is Administrator. Porkbun MCP not needed (Cloudflare MCP controls DNS)."
       ],
       "links": [
         [
@@ -99,7 +96,7 @@
       ],
       "time": "5 min",
       "unlocks": "Deploy, DNS records, Search Console verification, email routing",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "cloudflare-mcp-auth",
@@ -202,13 +199,11 @@
     },
     {
       "id": "google",
-      "title": "Google accounts: GA4, GTM, Search Console, Business Profile",
+      "title": "Google: GA4, GTM, Search Console done. Business Profiles remain",
       "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
       "steps": [
-        "From the business Gmail: create a GA4 property and a GTM web container, send me the IDs (G-XXXX and GTM-XXXX).",
-        "Add isapurindustrialpark.com as a Domain property in Search Console. I add the verification TXT through the Cloudflare MCP once the nameservers are on Cloudflare.",
-        "Business Profile: keep Phase 1, 2 and 3 as separate profiles, Phase 1 primary, add the business Gmail as Owner, hours 8 am to 8 pm except Tuesday, fix the phones. Tell me when done and I read them in OpenSEO.",
-        "Google MCPs are optional now: OpenSEO already reads GA4, Search Console and the profiles once connected to the business Gmail."
+        "Done: GA4 stream and GTM container created, Search Console Domain property added (IDs in 04_Analytics/gtm-plan.md).",
+        "Left: move the three Business Profiles (Phase 1 primary) under the business Gmail as Owner, hours 8 am to 8 pm except Tuesday, fix phones. Tell me and I read them in OpenSEO."
       ],
       "links": [
         [
@@ -246,11 +241,10 @@
     },
     {
       "id": "email",
-      "title": "Business email on the domain",
+      "title": "Business email: sales@ and info@ forward to the business Gmail (done)",
       "why": "Looks professional and receives form and listing mail. Free path first.",
       "steps": [
-        "Easiest free path: Cloudflare Email Routing for sales@ and info@ forwarding to the business Gmail. I set it up through the Cloudflare MCP once the nameservers are on Cloudflare.",
-        "Later, if volume grows: Zoho Mail Forever Free or Google Workspace."
+        "Done via Cloudflare Email Routing. Optional later: send-as from Gmail, or Zoho or Workspace if volume grows."
       ],
       "links": [
         [
@@ -264,7 +258,7 @@
       ],
       "time": "30 min",
       "unlocks": "Contact email on the site and listings",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "bing",
@@ -428,11 +422,12 @@
       ]
     },
     {
-      "group": "Unlocks when the nameservers are on Cloudflare (your 5 minute step)",
+      "group": "Next on my side (domains are live)",
       "items": [
-        "DNS, www redirect, Cloudflare Pages deploy, email routing, Search Console TXT, all through the Cloudflare MCP.",
-        "OpenSEO: site audit, rank tracker on the money keywords, Search Console and GA4 link.",
-        "Sitemap submission, Bing import, IndexNow."
+        "Finish website v2 and deploy to Cloudflare Pages on the .com, add the apex record then.",
+        "GTM: GA4 configuration tag and the events from 04_Analytics/event-spec.md.",
+        "Submit the sitemap, Bing import, IndexNow after the site is live.",
+        "OpenSEO: audit and rank tracker once the site is live (needs OpenSEO re-authentication in /mcp)."
       ]
     },
     {

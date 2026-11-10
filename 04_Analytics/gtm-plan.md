@@ -37,3 +37,7 @@ Run on the first Monday of each month, write `04_Analytics/reviews/YYYY-MM.md` (
 
 ## Owner data needed
 GA4 and GTM container created under the owner's Google account (add the agent's email as editor only if the owner wants), Search Console domain verification, GBP access for Insights exports.
+
+## IDs (public, 2026-11-11)
+- GTM container: GTM-KMBRGVSD (site env PUBLIC_GTM_ID)
+- GA4 measurement ID: G-0KL7R35B0X (configure as a GA4 Configuration tag inside GTM, never hard-coded in the site)
