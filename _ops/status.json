@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "workstreams": [
     {
       "id": "01_Brand",
@@ -12,15 +12,15 @@
       "id": "02_Website",
       "agent": "web",
       "state": "v2 in progress",
-      "summary": "v1 rejected by owner. v2 (site-v2, taste-skill 2.5.1, real stand-in photos, real OSM map) home passes the gate, inner pages open. Builder paused by the usage limit until 11:30 IST.",
-      "next": "Resume builder, finish inner pages, then Cloudflare Pages deploy after the domain"
+      "summary": "v1 rejected. v2 (site-v2, taste-skill, stand-in photos, real OSM map) home passes the gate, inner pages still being finished. Builder paused by the usage limit. Launcher: Desktop IIP-Site-v2-Launcher.bat.",
+      "next": "Resume builder, finish inner pages, deploy to Cloudflare Pages on isapurindustrialpark.com"
     },
     {
       "id": "03_SEO",
       "agent": "seo",
-      "state": "research done",
-      "summary": "Competitors, stack, playbook, tooling, backlinks and AEO/GEO researched and filed.",
-      "next": "Keyword map once OpenSEO is connected"
+      "state": "research done, data live",
+      "summary": "Competitors, stack, playbook, backlinks, AEO/GEO filed. Real volumes and Maps rank grid pulled via OpenSEO (project Isapur Industrial Park).",
+      "next": "Rank tracker on money keywords once the site is live; Hindi check done"
     },
     {
       "id": "04_Analytics",
@@ -34,7 +34,7 @@
       "agent": "local",
       "state": "audit done",
       "summary": "GBP audited, neighbours and petrol pump verified on Maps, 48 listing targets filed. Profile edits wait for owner approval.",
-      "next": "Owner decides main profile and gives access"
+      "next": "Owner moves the Business Profiles to the new Google account, then I read them via OpenSEO"
     },
     {
       "id": "06_Content",
@@ -47,20 +47,19 @@
       "id": "_ops",
       "agent": "lead",
       "state": "live",
-      "summary": "Agent entry points, contract files, this board, weekly SEO watch.",
+      "summary": "Agent entry points, contract files, this board, weekly SEO watch, tech record, local secrets map.",
       "next": "Review the board with the owner"
     }
   ],
   "owner_tasks": [
     {
       "id": "domain",
-      "title": "Buy the domain (.in and .com)",
-      "why": "Needed for the site, email, Search Console and listings. Porkbun has an official MCP, flat renewals and free WHOIS privacy. Prices from Porkbun's public API on 2026-11-09: .in 7.83 USD and .com 11.81 USD a year, same on renewal (a 1 USD first-year coupon may apply).",
+      "title": "Domain: isapurindustrialpark.com bought (done). Decide on the .in",
+      "why": "The .com is registered at Porkbun under the business Gmail (nameservers still Porkbun's). The registry shows isapurindustrialpark.in as NOT registered yet, so either it was not bought or the e-KYC step is pending.",
       "steps": [
-        "Create a Porkbun account (you do the signup and payment).",
-        "Buy isapurindustrialpark.in (primary) and isapurindustrialpark.com (defensive redirect). Recheck availability at checkout.",
-        "Keep WHOIS privacy on (free).",
-        "Tell me the domain names. I put them in the site config, schema and the NAP file."
+        "Tell me if you also bought the .in. If not, buy it at Porkbun (about 7.83 USD a year) and tell me; it then redirects to the primary.",
+        "Decide the primary: the .com is the one bought, so the site is built on isapurindustrialpark.com unless you say otherwise.",
+        "Keep WHOIS privacy on (free)."
       ],
       "links": [
         [
@@ -76,143 +75,55 @@
           "02_Website/domain-email.md"
         ]
       ],
-      "time": "15 min",
+      "time": "5 min",
       "unlocks": "Everything below that needs a domain",
       "state": "open"
     },
     {
       "id": "cloudflare",
-      "title": "Cloudflare account, nameservers, Pages",
-      "why": "Free DNS, free hosting for the lead site (commercial use allowed) and free email forwarding in one place. Its official MCP lets me edit DNS and Pages for you.",
+      "title": "Point the .com nameservers from Porkbun to Cloudflare",
+      "why": "I created the Cloudflare zone for isapurindustrialpark.com (under the IsapurIndustrialPark account). It stays pending until Porkbun uses Cloudflare's nameservers. After that I add the DNS, Pages, email routing and Search Console records through the Cloudflare MCP.",
       "steps": [
-        "Create a free Cloudflare account.",
-        "Add both domains, then change the nameservers at Porkbun to the two Cloudflare ones.",
-        "Create an empty Pages project named iip-site (I connect the build later).",
-        "Connect the Cloudflare MCP: follow the repo README, sign in through OAuth yourself and approve only DNS, Pages and Email Routing scopes."
+        "Porkbun, Domain Management, isapurindustrialpark.com, Authoritative Nameservers: replace the four Porkbun ones with celeste.ns.cloudflare.com and decker.ns.cloudflare.com, save.",
+        "Or connect the Porkbun MCP (I added it to Claude, sign in through /mcp yourself) and I change them for you. It may ask for API access: enable API access for the domain in Porkbun and keep the keys in your password manager, never in chat.",
+        "Tell me when done. Propagation takes minutes to a few hours."
       ],
       "links": [
         [
-          "Cloudflare sign up",
-          "https://dash.cloudflare.com/sign-up"
+          "Porkbun",
+          "https://porkbun.com/account/domainsSpeedy"
         ],
         [
-          "Cloudflare MCP",
-          "https://github.com/cloudflare/mcp-server-cloudflare"
+          "Cloudflare dashboard",
+          "https://dash.cloudflare.com/"
         ]
       ],
-      "time": "30 min",
+      "time": "5 min",
       "unlocks": "Deploy, DNS records, Search Console verification, email routing",
       "state": "open"
     },
     {
-      "id": "cloudflare-mcp-auth",
-      "title": "Cloudflare MCP authorized (done 2026-11-09)",
-      "why": "I added cloudflare-api and astro-docs at user scope for all projects. Cloudflare needs your OAuth click once. After that I can edit DNS, Pages and the Access settings for you.",
-      "steps": [
-        "Verified: whoami returns the owner account. Next: I add DNS, Pages and Email Routing records after the domain is bought."
-      ],
-      "links": [
-        [
-          "Cloudflare MCP docs",
-          "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
-        ]
-      ],
-      "time": "5 min",
-      "unlocks": "DNS, Pages deploy, and fixing the OpenSEO Access setting",
-      "state": "done"
-    },
-    {
-      "id": "openseo-oauth",
-      "title": "OpenSEO MCP connected (done 2026-11-09)",
-      "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
-      "steps": [
-        "Verified from Claude Desktop: whoami works (self-hosted mode, owner account), list_projects returns one project (Default, crownmont.ca, not ours).",
-        "Next on my side: create an IIP project once the domain exists, then keyword research (paid DataForSEO calls only after your yes and a cost estimate)."
-      ],
-      "links": [
-        [
-          "OpenSEO guide",
-          "https://github.com/every-app/open-seo/blob/main/docs/SELF_HOSTING_CLOUDFLARE_OPERATIONS.md#through-cloudflare-access"
-        ],
-        [
-          "OpenSEO MCP docs",
-          "https://openseo.so/docs/mcp"
-        ]
-      ],
-      "time": "10 min",
-      "unlocks": "OpenSEO tools in Claude: keyword research, ranks, audits",
-      "state": "done"
-    },
-    {
-      "id": "dataforseo",
-      "title": "DataForSEO funded and connected (done 2026-11-09)",
-      "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
-      "steps": [
-        "51 USD deposited, OpenSEO test call works (92 keywords checked, results in 03_SEO/keywords/real-volumes-2026-11-09.md).",
-        "Still do: set a monthly spend cap in the DataForSEO account. I show a cost estimate before every paid run."
-      ],
-      "links": [
-        [
-          "DataForSEO",
-          "https://dataforseo.com/"
-        ],
-        [
-          "Pricing",
-          "https://dataforseo.com/pricing"
-        ]
-      ],
-      "time": "20 min",
-      "unlocks": "Real keyword volumes and rank tracking in OpenSEO",
-      "state": "done"
-    },
-    {
-      "id": "openseo",
-      "title": "OpenSEO hosted on Cloudflare (done, openseo.tanmay-hq.in)",
-      "why": "Gives me live search data (volumes, rank, backlinks, audits, AI visibility). Self hosted and MIT licensed.",
-      "steps": [
-        "Already hosted by you. Remaining: add the DataForSEO credentials in the OpenSEO settings and set a spend cap (see the DataForSEO task)."
-      ],
-      "links": [
-        [
-          "OpenSEO repo",
-          "https://github.com/every-app/open-seo"
-        ],
-        [
-          "OpenSEO MCP docs",
-          "https://openseo.so/docs/mcp"
-        ],
-        [
-          "Skills setup",
-          "https://openseo.so/docs/skills/setup"
-        ]
-      ],
-      "time": "1 to 2 hours",
-      "unlocks": "Real keyword map, weekly rank checks, AI visibility tracking",
-      "state": "done"
-    },
-    {
       "id": "bizgoogle",
-      "title": "Separate business Google account (my advice: yes)",
-      "why": "Recommended: a dedicated account owns the business assets so they are not tied to your personal Gmail. I cannot create accounts, you do. Your personal OpenSEO stays on the personal Cloudflare and Google setup; the business account owns only IIP assets.",
+      "title": "Business Google account created (done 2026-11-10)",
+      "why": "The business Google account now exists (address kept in the local private map). Remaining: make it Owner of the Business Profiles, GA4, GTM and Search Console, keep your personal account as second Owner.",
       "steps": [
-        "Create the account (isapurindustrialpark@gmail.com if free, or the closest variant). Strong unique password in a password manager, 2-step verification, recovery email or phone set to yours.",
-        "Make it Owner of the Business Profiles, GA4, GTM and Search Console, and keep your personal account as a second Owner or Manager so you never lose access.",
-        "Later, when the domain exists, move to Google Workspace or keep Gmail plus domain email forwarding."
+        "Add this account as Owner of GA4, GTM, Search Console and the three Business Profiles (see the Google task).",
+        "Turn on 2-step verification and store the password in your password manager."
       ],
       "links": [],
       "time": "20 min",
       "unlocks": "Clean ownership of every Google asset",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "google",
       "title": "Google accounts: GA4, GTM, Search Console, Business Profile",
       "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
       "steps": [
-        "Create a GA4 property (web stream later with the domain) and a GTM web container under your Google account.",
-        "Add the domain as a Domain property in Search Console (verify with the DNS TXT record: I add it through the Cloudflare MCP).",
-        "Business Profile: keep Phase 1, 2 and 3 as separate profiles, Phase 1 primary, add all to your account, set hours 8 am to 8 pm except Tuesday and fix the phones.",
-        "Connect the Google MCPs one by one (you do the OAuth): GA4 official, Search Console, Tag Manager (every write needs your approval), Google Workspace (Sheets and Docs)."
+        "From the business Gmail: create a GA4 property and a GTM web container, send me the IDs (G-XXXX and GTM-XXXX).",
+        "Add isapurindustrialpark.com as a Domain property in Search Console. I add the verification TXT through the Cloudflare MCP once the nameservers are on Cloudflare.",
+        "Business Profile: keep Phase 1, 2 and 3 as separate profiles, Phase 1 primary, add the business Gmail as Owner, hours 8 am to 8 pm except Tuesday, fix the phones. Tell me when done and I read them in OpenSEO.",
+        "Google MCPs are optional now: OpenSEO already reads GA4, Search Console and the profiles once connected to the business Gmail."
       ],
       "links": [
         [
@@ -253,8 +164,8 @@
       "title": "Business email on the domain",
       "why": "Looks professional and receives form and listing mail. Free path first.",
       "steps": [
-        "Create the mailbox with Zoho Mail Forever Free (check current free limits), or use Cloudflare Email Routing to forward info@ to your Gmail and send from Gmail.",
-        "Add the mail DNS records (I add them through the Cloudflare MCP once connected)."
+        "Easiest free path: Cloudflare Email Routing for sales@ and info@ forwarding to the business Gmail. I set it up through the Cloudflare MCP once the nameservers are on Cloudflare.",
+        "Later, if volume grows: Zoho Mail Forever Free or Google Workspace."
       ],
       "links": [
         [
@@ -338,7 +249,7 @@
     },
     {
       "id": "impeccable",
-      "title": "Impeccable engine decision",
+      "title": "Impeccable engine decision (optional, low priority)",
       "why": "The design skill's detector is a downloaded program. I will not run it. You can run it, or we install Rust and I build it from source.",
       "steps": [
         "Option A: run ~/.claude/skills/impeccable/scripts/impeccable context in your own terminal. Option B: install Rust from rustup.rs and I build it from source. Option C: keep the by-hand critique."
@@ -351,7 +262,7 @@
       ],
       "time": "10 min or skip",
       "unlocks": "Automatic design detectors",
-      "state": "open"
+      "state": "later"
     },
     {
       "id": "plotmaps",
@@ -423,45 +334,41 @@
   ],
   "automation": [
     {
-      "group": "I can start right now (no input from you)",
+      "group": "I can do now (no input from you)",
       "items": [
-        "Finish website v2: inner pages to gate pass, polish, screenshots (the builder is paused, I resume it when the usage window allows).",
-        "Plot maps scaffold: SVG conventions, plots.json schema, a tracing script ready for your KML and maps.",
-        "Draft the Approvals, Gallery and FAQ pages so only the documents and photos are missing.",
-        "Keep docs, board and tech record in sync; weekly SEO watch keeps running.",
-        "Hindi and Hinglish keyword backlog and page drafts for later."
+        "Finish website v2: inner pages to gate pass, polish, screenshots (builder resumes when the usage window allows).",
+        "Set the site address to isapurindustrialpark.com in config, schema, NAP and tech record.",
+        "Plot maps scaffold, Approvals, Gallery and FAQ page drafts so only documents and photos are missing.",
+        "Keep docs, board and tech record in sync; weekly SEO watch keeps running."
       ]
     },
     {
-      "group": "Done: first paid research run (about 0.42 USD, balance about 50.56 USD). Next paid steps below",
+      "group": "Unlocks when the nameservers are on Cloudflare (your 5 minute step)",
       "items": [
-        "Done: IIP project in OpenSEO, 92 keywords, seed ideas, CKS backlinks, local SERP, 5x5 Maps rank grid. Report: 03_SEO/keywords/openseo-research-2026-11-09.md.",
-        "Finding: Phase 1 is first or top 3 on Google Maps across a 12 km area for industrial plots. Exact local keywords have almost no measured volume.",
-        "Next (cheap): rank tracker on 10 money keywords, monthly 5x5 grid, Hindi and Hinglish keyword check, site audit once the site is live.",
-        "Next (needs your choice): AI visibility tracking and competitor reviews monitoring."
+        "DNS, www redirect, Cloudflare Pages deploy, email routing, Search Console TXT, all through the Cloudflare MCP.",
+        "OpenSEO: site audit, rank tracker on the money keywords, Search Console and GA4 link.",
+        "Sitemap submission, Bing import, IndexNow."
       ]
     },
     {
-      "group": "Unlocks when the domain is bought",
+      "group": "Done so far on data (about 0.42 USD spent, balance about 50.56 USD)",
       "items": [
-        "DNS, redirect of the .com to the .in, Cloudflare Pages deploy, email routing, Search Console verification (all through the Cloudflare MCP).",
-        "Create the IIP project in OpenSEO, connect Search Console and GA4.",
-        "Final canonical URLs, sitemap submission, Bing import, IndexNow."
+        "OpenSEO project, 92 keyword volumes, local SERP, 5x5 Maps rank grid. Finding: Phase 1 is first or top 3 on Maps across 12 km, exact local keywords have almost no search volume. Report: 03_SEO/keywords/openseo-research-2026-11-09.md."
       ]
     },
     {
       "group": "Unlocks when you send material",
       "items": [
-        "Plot maps and the Google Earth project: SVG maps with one unit per plot.",
-        "Photos: resize, WEBP, place on the site, Google profile posts, listings.",
-        "Approval documents: Approvals page, schema, Google profile text.",
-        "Sales questions and facts: complete the FAQ and plots page."
+        "Plot maps and Google Earth project: SVG maps, one unit per plot.",
+        "Photos: resize, WEBP, place on the site, profile posts, listings.",
+        "Approval documents: Approvals page, schema, profile text.",
+        "Sales facts and WhatsApp number: complete the FAQ and plots page."
       ]
     },
     {
       "group": "Needs your approval each time",
       "items": [
-        "Any change to your Google Business Profile, DNS or Access settings.",
+        "Any change to Business Profiles, DNS or Access settings.",
         "Any paid DataForSEO or OpenSEO run.",
         "Pushing to GitHub or deploying the site."
       ]
