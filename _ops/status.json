@@ -1,26 +1,26 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "workstreams": [
     {
       "id": "01_Brand",
       "agent": "brand",
       "state": "locked",
-      "summary": "Kit v1.1 and poster are final. Poster lab (fonts, textures, layouts) parked for owner pick.",
-      "next": "Promote chosen brand textures only if the owner picks them"
+      "summary": "Kit v1.1 and poster final. Plot maps rebuilt from the architect PDFs (Phase 1 incl. extension, 2, 3): plots, areas, shops. Restyle to website quality in progress.",
+      "next": "Owner reviews the restyled maps"
     },
     {
       "id": "02_Website",
       "agent": "web",
-      "state": "v2 in progress",
-      "summary": "v1 rejected. v2 (site-v2, taste-skill, stand-in photos, real OSM map) home passes the gate, inner pages still being finished. Builder paused by the usage limit. Launcher: Desktop IIP-Site-v2-Launcher.bat.",
-      "next": "Resume builder, finish inner pages, deploy to Cloudflare Pages on isapurindustrialpark.com"
+      "state": "v3 direction",
+      "summary": "v2 passes the technical gate (19 pages, CSS 27.5 KiB) but the owner rejected the look of the home. v3 research written (02_Website/V3-DIRECTION.md): concepts First Light (recommended), Ground to Growth, The Site Board; font fix Erode plus Inter. Phones swapped. Not deployed.",
+      "next": "Owner picks a v3 concept, then rebuild home, Approvals and plot map sections, then deploy"
     },
     {
       "id": "03_SEO",
       "agent": "seo",
       "state": "research done, data live",
       "summary": "Competitors, stack, playbook, backlinks, AEO/GEO filed. Real volumes and Maps rank grid pulled via OpenSEO (project Isapur Industrial Park).",
-      "next": "Rank tracker on money keywords once the site is live; Hindi check done"
+      "next": "OpenSEO reconnected 2026-11-12. Rank tracker and site audit after the site is live"
     },
     {
       "id": "04_Analytics",
@@ -34,14 +34,14 @@
       "agent": "local",
       "state": "audit done",
       "summary": "GBP audited, neighbours and petrol pump verified on Maps, 48 listing targets filed. Profile edits wait for owner approval.",
-      "next": "Owner moves the Business Profiles to the new Google account, then I read them via OpenSEO"
+      "next": "Move Phase 3 profile from the old manager to the business Gmail, then read all three in OpenSEO and change phones to 92195 49800"
     },
     {
       "id": "06_Content",
       "agent": "content",
       "state": "copy done",
       "summary": "Website copy, 22 FAQ, 2 posts and a sales question list written.",
-      "next": "Pillars with ChatGPT, hashtags with Apify"
+      "next": "Remove unproven claims (RCC, lighting, 100+ acres); add Approvals page from 06_Content/approvals-facts.md"
     },
     {
       "id": "_ops",
@@ -117,11 +117,11 @@
     },
     {
       "id": "openseo-oauth",
-      "title": "OpenSEO MCP connected (done 2026-11-09)",
+      "title": "OpenSEO MCP reconnected (2026-11-12)",
       "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
       "steps": [
-        "Verified from Claude Desktop: whoami works (self-hosted mode, owner account), list_projects returns one project (Default, crownmont.ca, not ours).",
-        "Next on my side: create an IIP project once the domain exists, then keyword research (paid DataForSEO calls only after your yes and a cost estimate)."
+        "Reconnected after it dropped. whoami works, project Isapur Industrial Park is there (its domain field still says .in, primary is now .com).",
+        "Nothing paid has run since the first research."
       ],
       "links": [
         [
@@ -202,8 +202,10 @@
       "title": "Google: GA4, GTM, Search Console done. Business Profiles remain",
       "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
       "steps": [
-        "Done: GA4 stream and GTM container created, Search Console Domain property added (IDs in 04_Analytics/gtm-plan.md).",
-        "Left: move the three Business Profiles (Phase 1 primary) under the business Gmail as Owner, hours 8 am to 8 pm except Tuesday, fix phones. Tell me and I read them in OpenSEO."
+        "Done: GA4 stream, GTM container, Search Console Domain property, business Gmail, Cloudflare admin invite.",
+        "Left: request ownership of the Phase 3 profile from the old manager to the business Gmail; Phase 1 and 2 are IIP's own.",
+        "Then: Owner of all three profiles, hours 8 am to 8 pm except Tuesday, phones to 92195 49800 and 98377 64222.",
+        "I read the profiles in OpenSEO (reconnected 2026-11-12) once they are under the business Gmail."
       ],
       "links": [
         [
@@ -279,21 +281,20 @@
     },
     {
       "id": "proof",
-      "title": "Approval documents (ask your dad)",
-      "why": "No approval claim goes public without a document. The most common caller question is whether it is approved.",
+      "title": "Approval documents (received 2026-11-12, read)",
+      "why": "Read from your Drive folder. Facts and safe wording are in 06_Content/approvals-facts.md (private of names). Supported: layouts sanctioned by Zila Panchayat Ghaziabad, road widths per layout, drainage, rain water harvesting, a Section 80 order. Not supported: 100+ acres, RCC, power, lighting.",
       "steps": [
-        "Get the Zilla Panchayat map approval and any Section 80 or other papers (photos or scans).",
-        "Put them in a private folder and tell me the path. I add an Approvals page and the right markup only with the documents."
+        "Optional: sharper scans of the Phase 1 extension and Phase 3 approvals (stamp dates are blurry), and any document that proves RCC roads or street lighting."
       ],
       "links": [],
       "time": "as soon as you can",
       "unlocks": "Approvals page and the approved claim on the site and Google profile",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "photos",
       "title": "Photos and video of the park",
-      "why": "Real pictures beat any stock photo. The biggest single upgrade for the site and the Google profile.",
+      "why": "Real photos still beat any stock photo. A few can come from the Google profile listings but need cleaning up; no AI scenes passed off as the park.",
       "steps": [
         "Shoot: gate and signboard, 50 ft road, street lights, trees, plots with boundary, petrol pump, a drone or wide shot, in daylight and near sunset, landscape and portrait.",
         "Drop the files in a folder and tell me. I resize, convert to WEBP and place them."
@@ -308,9 +309,10 @@
       "title": "Facts and sales answers",
       "why": "The site cannot state what you have not confirmed. Real questions also decide the FAQ.",
       "steps": [
-        "Plot sizes beyond 300 sq yards, payment plan, power, water and drainage facts, security, permitted uses.",
-        "The 20 questions callers ask and how you answer. My guessed list is in 06_Content/sales-faq-suggestions.md.",
-        "Which number is on WhatsApp (the site assumes 9837057800)."
+        "Done: minimum plot 300 sq yd, larger sizes vary (shops are smaller).",
+        "Still needed: price policy (on request is the current line), payment plan, power and water facts, security, permitted uses.",
+        "The 20 questions callers ask. Guess list: 06_Content/sales-faq-suggestions.md.",
+        "WhatsApp is 98377 64222 (done). Call number is 92195 49800 (done)."
       ],
       "links": [
         [
@@ -345,13 +347,11 @@
     },
     {
       "id": "plotmaps",
-      "title": "Plotting maps and the Google Earth project",
-      "why": "Phase 1, 2, 3 and Phase 1 extension maps become clean SVGs, one unit per plot, saved as a brand asset (01_Brand/Plot-Maps) for future projects like a plot selector. Colours on your maps do not matter, I trace boundaries.",
+      "title": "Plot maps (received, rebuilt, restyle in progress)",
+      "why": "Architect PDFs are converted: Phase 1 incl. extension, Phase 2, Phase 3, with computed areas (under 1.5% error where checked). Very small plots are commercial shops and stay. Restyle to site quality is running; a PDF snapshot is the fallback.",
       "steps": [
-        "Send the plotting maps (images or PDFs) of Phase 1, Phase 2, Phase 3 and Phase 1 extension.",
-        "Send the Google Earth project link, or export it as KML or KMZ. The KML gives exact boundaries.",
-        "I will not scrape Google imagery. If you want a satellite backdrop, screenshots from your own Earth project are fine.",
-        "Tell me the plot numbers and areas if you have them (sq yards), so plots.json is filled."
+        "Ask your architect: plot 30 (outline open) and whether S-1(II) and S-4(II) are real plots or duplicate labels.",
+        "Optional: the Google Earth KML and the Phase 3 final map when ready."
       ],
       "links": [
         [
@@ -409,40 +409,52 @@
       "time": "later",
       "unlocks": "Steady conversion gains",
       "state": "later"
+    },
+    {
+      "id": "v3pick",
+      "title": "Pick the v3 website concept and give your views",
+      "why": "You rejected the v2 home (hero, navbar logo, address block, facts table, map). Research of your reference sites and three concepts is in 02_Website/V3-DIRECTION.md.",
+      "steps": [
+        "Read the three concepts when ready and pick one, plus the font choice (Fontshare options).",
+        "Send your remaining views on the site (you said next chat)."
+      ],
+      "links": [
+        [
+          "Direction",
+          "02_Website/V3-DIRECTION.md"
+        ]
+      ],
+      "time": "20 min",
+      "unlocks": "The rebuild of the home page and the rest of v3",
+      "state": "open"
     }
   ],
   "automation": [
     {
-      "group": "I can do now (no input from you)",
+      "group": "Running or next on my side",
       "items": [
-        "Finish website v2: inner pages to gate pass, polish, screenshots (builder resumes when the usage window allows).",
-        "Set the site address to isapurindustrialpark.com in config, schema, NAP and tech record.",
-        "Plot maps scaffold, Approvals, Gallery and FAQ page drafts so only documents and photos are missing.",
-        "Keep docs, board and tech record in sync; weekly SEO watch keeps running."
+        "Plot maps restyled to website quality, with all plot numbers, real roads and a PDF snapshot fallback.",
+        "v3 rebuild once you pick a concept (research done).",
+        "Approvals page and plot map section, using only claims in approvals-facts.md.",
+        "Remove unproven claims from copy and schema.",
+        "Update the NAP file and listings plan for the new phone numbers."
       ]
     },
     {
-      "group": "Next on my side (domains are live)",
+      "group": "Ready once the site is live",
       "items": [
-        "Finish website v2 and deploy to Cloudflare Pages on the .com, add the apex record then.",
-        "GTM: GA4 configuration tag and the events from 04_Analytics/event-spec.md.",
-        "Submit the sitemap, Bing import, IndexNow after the site is live.",
-        "OpenSEO: audit and rank tracker once the site is live (needs OpenSEO re-authentication in /mcp)."
+        "Cloudflare Pages deploy on isapurindustrialpark.com (steps in 02_Website/DEPLOY.md, needs your yes).",
+        "GTM: GA4 configuration tag and the events from the spec.",
+        "OpenSEO: rank tracker, site audit, 5x5 Maps grid again. Sitemap, Bing, IndexNow."
       ]
     },
     {
-      "group": "Done so far on data (about 0.42 USD spent, balance about 50.56 USD)",
+      "group": "Done so far",
       "items": [
-        "OpenSEO project, 92 keyword volumes, local SERP, 5x5 Maps rank grid. Finding: Phase 1 is first or top 3 on Maps across 12 km, exact local keywords have almost no search volume. Report: 03_SEO/keywords/openseo-research-2026-11-09.md."
-      ]
-    },
-    {
-      "group": "Unlocks when you send material",
-      "items": [
-        "Plot maps and Google Earth project: SVG maps, one unit per plot.",
-        "Photos: resize, WEBP, place on the site, profile posts, listings.",
-        "Approval documents: Approvals page, schema, profile text.",
-        "Sales facts and WhatsApp number: complete the FAQ and plots page."
+        "Domains .com and .in bought and live on Cloudflare; .in redirects to .com; sales@ and info@ forward to the business Gmail.",
+        "OpenSEO connected and reconnected; first paid research done (about 0.42 USD): Phase 1 is first or top 3 on Maps across 12 km.",
+        "Approvals and layouts received and read; plot maps and areas built.",
+        "Phones swapped on the site."
       ]
     },
     {
