@@ -156,8 +156,6 @@ ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-column
 <h2>Workstreams</h2><div class="grid">{ws}</div>
 <h2>What the research found</h2><div class="grid">{cards(FINDINGS)}</div>
 <h2>Done while you were away</h2><ul>{done}</ul>
-<h2>Website preview (screenshots of the local build)</h2><p class="lead">Not published on a domain yet. Colour comes from the brand kit: green, yellow, bone and sage, charcoal only for text. All artwork is illustration, labelled not to scale.</p>
-<div class="shots"><figure><img src="site/home-desktop.webp" alt="Home page desktop" loading="lazy"><figcaption>Home, desktop</figcaption></figure><figure class="mob"><img src="site/home-mobile.webp" alt="Home page mobile" loading="lazy"><figcaption>Home, mobile</figcaption></figure><figure><img src="site/location-desktop.webp" alt="Location page" loading="lazy"><figcaption>Location</figcaption></figure><figure><img src="site/neighbours-desktop.webp" alt="Around us page" loading="lazy"><figcaption>Around us</figcaption></figure></div>
 <h2>First 90 days</h2><ol class="steps">{first}</ol>
 <h2>What is next and what I can pick up myself</h2><div class="grid">{AUTO_HTML}</div>
 <h2>Your tasks (in order, I tick them when you tell me)</h2><div class="grid">{OWNER}</div><h2>Smaller items</h2><ol class="q">{qs}</ol>
