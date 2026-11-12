@@ -199,13 +199,12 @@
     },
     {
       "id": "google",
-      "title": "Google: GA4, GTM, Search Console done. Business Profiles remain",
+      "title": "Google: all done except profile edits (GBPs transferred 2026-11-12)",
       "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
       "steps": [
-        "Done: GA4 stream, GTM container, Search Console Domain property, business Gmail, Cloudflare admin invite.",
-        "Left: request ownership of the Phase 3 profile from the old manager to the business Gmail; Phase 1 and 2 are IIP's own.",
-        "Then: Owner of all three profiles, hours 8 am to 8 pm except Tuesday, phones to 92195 49800 and 98377 64222.",
-        "I read the profiles in OpenSEO (reconnected 2026-11-12) once they are under the business Gmail."
+        "Done: GA4, GTM, Search Console, business Gmail, Cloudflare admin, all three Business Profiles transferred to the business Gmail.",
+        "Left (needs your OK before I change anything): hours 8 am to 8 pm except Tuesday, phone 98377 64222 (92195 49800 added after about a week), website link once the site is live, descriptions and photos from 05_Local-Presence/gmb/audit.md.",
+        "Next for me: connect OpenSEO to the business Gmail so I can read the three profiles, reviews and Search Console."
       ],
       "links": [
         [
@@ -309,10 +308,10 @@
       "title": "Facts and sales answers",
       "why": "The site cannot state what you have not confirmed. Real questions also decide the FAQ.",
       "steps": [
-        "Done: minimum plot 300 sq yd, larger sizes vary (shops are smaller).",
-        "Still needed: price policy (on request is the current line), payment plan, power and water facts, security, permitted uses.",
+        "Done: plot sizes 300 to 2500 sq yd, shops smaller, areas computed from the layouts (no plot area list exists).",
+        "Still needed: price policy (currently on request), payment plan, power and water facts, security, permitted uses.",
         "The 20 questions callers ask. Guess list: 06_Content/sales-faq-suggestions.md.",
-        "WhatsApp is 98377 64222 (done). Call number is 92195 49800 (done)."
+        "Done: call and WhatsApp 98377 64222; 92195 49800 held for about a week."
       ],
       "links": [
         [
@@ -350,8 +349,9 @@
       "title": "Plot maps (received, rebuilt, restyle in progress)",
       "why": "Architect PDFs are converted: Phase 1 incl. extension, Phase 2, Phase 3, with computed areas (under 1.5% error where checked). Very small plots are commercial shops and stay. Restyle to site quality is running; a PDF snapshot is the fallback.",
       "steps": [
-        "Ask your architect: plot 30 (outline open) and whether S-1(II) and S-4(II) are real plots or duplicate labels.",
-        "Optional: the Google Earth KML and the Phase 3 final map when ready."
+        "No plot area list exists, so areas stay computed from the drawings.",
+        "Ask your architect: plot 30 (fixed), whether S-1(II) and S-4(II) are real plots or duplicate labels.",
+        "Optional: Google Earth KML, final Phase 3 map."
       ],
       "links": [
         [
@@ -412,11 +412,11 @@
     },
     {
       "id": "v3pick",
-      "title": "Pick the v3 website concept and give your views",
-      "why": "You rejected the v2 home (hero, navbar logo, address block, facts table, map). Research of your reference sites and three concepts is in 02_Website/V3-DIRECTION.md.",
+      "title": "Approve the v3 home page, then give your other views",
+      "why": "The v3 home is built (The plot is the page: layout drawing, size finder, zoomed-out map, shutter footer, Erode). Screens in 02_Website/qa/v3/screens, notes in 02_Website/V3-HOME.md.",
       "steps": [
-        "Read the three concepts when ready and pick one, plus the font choice (Fontshare options).",
-        "Send your remaining views on the site (you said next chat)."
+        "Look at the home (Launcher on the Desktop) and say what to change.",
+        "On approval I roll the look to the inner pages, add the Approvals page, Phase 1 and 3 maps, then deploy with your yes."
       ],
       "links": [
         [
@@ -433,11 +433,11 @@
     {
       "group": "Running or next on my side",
       "items": [
-        "Plot maps restyled to website quality, with all plot numbers, real roads and a PDF snapshot fallback.",
-        "v3 rebuild once you pick a concept (research done).",
-        "Approvals page and plot map section, using only claims in approvals-facts.md.",
-        "Remove unproven claims from copy and schema.",
-        "Update the NAP file and listings plan for the new phone numbers."
+        "Rework the v3 home after your feedback.",
+        "Roll the v3 look to inner pages, Approvals page, Phase 1 and 3 layouts.",
+        "Connect OpenSEO to the business Gmail, read the three profiles.",
+        "Prepare Business Profile edits for your approval; add 92195 49800 on the date you say.",
+        "Keep NAP, listings plan and docs in sync with the phones."
       ]
     },
     {

@@ -8,10 +8,10 @@
   ],
   "tagline_one_line": "The Groundwork for Growth.",
   "phones": [
-    "9837057800",
+    
     "9837764222"
   ],
-  "phones_note": "Owner decision 2026-11-08: second number is 9837764222 for now. Planned swap later: 9219549800. Website swap point: 02_Website/site/src/lib/phones.mjs",
+  "phones_note": "Owner decision 2026-11-12: 92195 49800 is the call number, 98377 64222 is the second and the WhatsApp number, 98370 57800 retired. Website swap point: 02_Website/site-v2/src/lib/phones.mjs",
   "address": "Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022",
   "cta": [
     "INDUSTRIAL PLOTS",
