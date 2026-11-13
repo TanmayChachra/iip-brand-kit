@@ -452,6 +452,23 @@
       "time": "later",
       "unlocks": "Competitor facts for the site, sales answers and the board",
       "state": "later"
+    },
+    {
+      "id": "mapquestions",
+      "title": "Map questions left (answer when you have a minute)",
+      "why": "The three maps are marked done. Four small things are still undecided.",
+      "steps": [
+        "Phase 1: is the plot above C-9 (I) called C-9 (II)?",
+        "Phase 1: are S-1 (II) and S-4 (II) real plots or duplicate labels? Your architect can confirm.",
+        "Phase 1: do you want the left chakh strip beside D5 and D4, or only the one behind D4 to D8?",
+        "Phase 1 legend: keep or remove the separate 'Block E' entry?",
+        "Phase 2: the strip behind A9 to A1 is lettered NALI in the PDF. Is it a nali?",
+        "Phase 2: D15 and D16 area is about 8,429 sq yd. Is that right?"
+      ],
+      "links": [],
+      "time": "5 min",
+      "unlocks": "Final map text and the 3D film",
+      "state": "open"
     }
   ],
   "automation": [
