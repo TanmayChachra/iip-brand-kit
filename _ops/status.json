@@ -18,22 +18,22 @@
     {
       "id": "03_SEO",
       "agent": "seo",
-      "state": "research done, data live",
-      "summary": "Competitors, stack, playbook, backlinks, AEO/GEO filed. Real volumes and Maps rank grid pulled via OpenSEO (project Isapur Industrial Park).",
-      "next": "OpenSEO reconnected 2026-11-12. Rank tracker and site audit after the site is live"
+      "state": "tools installed",
+      "summary": "Real volumes and Maps ranks pulled; connectivity and Dadri shipping facts verified; SEO content tools installed (claude-seo briefs, Vale, promptfoo); new pages being written.",
+      "next": "Rank tracker and audit after launch; sitemap and Bing import on launch day"
     },
     {
       "id": "04_Analytics",
       "agent": "analytics",
-      "state": "spec written",
-      "summary": "Event spec and GTM plan written. Nothing installed yet.",
-      "next": "Owner creates GTM, GA4, Search Console"
+      "state": "IDs live",
+      "summary": "GTM and GA4 created on the business Gmail, GTM id in the site build; Search Console domain property added. Tags and events still to wire after launch.",
+      "next": "GA4 configuration tag and events from 04_Analytics/event-spec.md after launch"
     },
     {
       "id": "05_Local-Presence",
       "agent": "local",
       "state": "profiles connected",
-      "summary": "GBP audited, neighbours and petrol pump verified on Maps, 48 listing targets filed. Profile edits wait for owner approval.",
+      "summary": "All three Business Profiles transferred and connected. Neighbours and pump verified on Maps, 48 listing targets filed. Edits wait for owner approval.",
       "next": "Read the three profiles in OpenSEO (small paid read, asks first), then prepare edits for approval"
     },
     {
@@ -48,7 +48,7 @@
       "agent": "lead",
       "state": "live",
       "summary": "Agent entry points, contract files, this board, weekly SEO watch, tech record, local secrets map.",
-      "next": "Review the board with the owner"
+      "next": "Preview deploy now, public launch on the owner's yes"
     }
   ],
   "owner_tasks": [

@@ -93,14 +93,13 @@ DONE = [
     "Sales questions list in Hinglish and English with safe draft answers. Domain and email research. Google profile fix list ready.",
 ]
 STILL = [
-    "Approvals: documents for Zilla Panchayat and Section 80 (until then no approval claim is public).",
-    "Domain: buy isapurindustrialpark.in (and the .com), then I set up Cloudflare Pages, Search Console and Zoho or routing mail.",
-    "OpenSEO host URL and the Google account for GTM, GA4 and Search Console (you said tonight).",
-    "Real photos and video of the park, petrol pump and plots.",
-    "Real caller questions and objections from your dad, to replace the guessed list.",
-    "Which number is on WhatsApp (the site assumes 9837057800).",
-    "Approve the Google profile edits (description, services, categories). The safety check blocked me from editing your profile, so I left the paste-ready text in the audit.",
-    "Plot sizes beyond 300 sq yards, payment plan, power and drainage facts (these stay off the site until confirmed).",
+    "Delete the six test files D:\bt_*.png by hand (Blender tests, blocked for me).",
+    "Hold the second phone number 92195 49800 off the site until you say (about 2026-11-19).",
+    "Ask your dad for the payment plan percentage and the real caller questions.",
+    "Ask your architect what the thin Phase 1 plot below C-9 should be called.",
+    "Send the exact gate position and your Google Earth screenshots of the three phases.",
+    "Approve the Google profile edits, then I change the phone to 98377 64222 on all three profiles and the listings.",
+    "Photos of the gate, sign, road, pump and plots (shoot list in 01_Brand/Photo-Direction).",
 ]
 
 
@@ -115,7 +114,9 @@ def task_card(t):
             f'<h3>{e(t["title"])}</h3><p>{e(t["why"])}</p><ol>{steps}</ol><p class="more"><b>Unlocks:</b> {e(t["unlocks"])}</p><p class="more">{links}</p></article>')
 
 
-OWNER = "".join(task_card(t) for t in S.get("owner_tasks", []))
+_open=[t for t in S.get("owner_tasks", []) if t["state"]!="done"]
+_done=[t for t in S.get("owner_tasks", []) if t["state"]=="done"]
+OWNER = "".join(task_card(t) for t in _open) + (f'</div><details class="done"><summary>Completed ({len(_done)}), open to see</summary><div class="grid">' + "".join(task_card(t) for t in _done) + '</div></details><div class="grid">' if _done else "")
 
 
 AUTO_HTML = "".join(f'<article class="card"><h3>{e(g["group"])}</h3><ul>' + "".join(f"<li>{e(i)}</li>" for i in g["items"]) + "</ul></article>" for g in S.get("automation", []))
@@ -150,16 +151,15 @@ h1{{font-size:clamp(28px,4.4vw,46px);margin:0 0 6px;letter-spacing:-.02em}}h2{{m
 ol.steps{{list-style:none;padding:0;display:grid;gap:12px}}ol.steps li{{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--yel);border-radius:12px;padding:12px 16px}}ol.steps b{{display:block}}ol.steps span{{color:var(--mut)}}
 table{{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}}td{{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}}tr:last-child td{{border-bottom:0}}
 .wrap{{overflow-x:auto}}.chips{{display:flex;flex-wrap:wrap;gap:8px}}.chip{{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 14px;text-decoration:none;color:inherit;font-size:14px}}.chip:hover{{border-color:var(--green)}}
-ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}}.note{{font-size:13px;color:var(--mut)}}.shots{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:start}}.shots figure{{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}}.shots img{{width:100%;display:block;max-height:640px;object-fit:cover;object-position:top}}.shots figcaption{{padding:8px 12px;font-size:13px;color:var(--mut)}}</style></head><body><main>
+details.done{{margin:18px 0}}details.done summary{{cursor:pointer;font-weight:600;padding:10px 14px;background:var(--card);border:1px solid var(--line);border-radius:12px}}details.done .grid{{margin-top:14px}}ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}}.note{{font-size:13px;color:var(--mut)}}.shots{{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:start}}.shots figure{{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}}.shots img{{width:100%;display:block;max-height:640px;object-fit:cover;object-position:top}}.shots figcaption{{padding:8px 12px;font-size:13px;color:var(--mut)}}</style></head><body><main>
 <div class="flag"></div><h1>IIP Phase 2: visibility board</h1>
-<p class="lead">Website, SEO, local presence, AEO and GEO, analytics. Updated {e(S["updated"])}. Brand kit and poster are locked. Everything below is research and plan, nothing is built or published on the new site yet.</p>
+<p class="lead">Website, SEO, local presence, AEO and GEO, analytics. Updated {e(S["updated"])}. Brand kit and design language are locked. The v3 site is built and tested locally; a private preview comes first, the public launch needs your yes.</p>
 <h2>Workstreams</h2><div class="grid">{ws}</div>
 <h2>What is next and what I can pick up myself</h2><div class="grid">{AUTO_HTML}</div>
 <h2>Your tasks (in order, I tick them when you tell me)</h2><div class="grid">{OWNER}</div><h2>Smaller items</h2><ol class="q">{qs}</ol>
 <h2>Free listings to claim first</h2><p class="lead">Exact sign-up pages. Use one identical name, address and phone everywhere. The full list of 48 with link type and notes is in the listing targets note.</p><div class="chips">{lst}</div>
 <h2>Tests we will run</h2><ul>{tst}</ul><p class="note">Low traffic means big changes first (details and sample sizes in the A/B note).</p>
-<h2>MCP servers that boost the workflow</h2><div class="wrap"><table>{tools}</table></div>
-<h2>Claude skills to add (install by name, not whole packs)</h2><div class="wrap"><table>{skills}</table></div>
+<h2>Tools in use</h2><div class="card"><p>Cloudflare MCP (DNS, Pages, email), OpenSEO and DataForSEO (keywords, ranks, audits), Blender 5.3 (3D film, on hold), Motion plus CSS scroll animation, claude-seo content skills, Vale and promptfoo (voice checks), the iip-copywriter skill and agent. Full record: _ops/TECH-STACK.md.</p></div>
 <h2>All notes</h2><div class="two"><ul>{docs}</ul><div class="card"><h3>How agents work in parallel</h3><p>Each folder has one owner agent and an AGENT.md entry point. Hand-offs happen only through contract files: keyword map, canonical name-address-phone, event spec, page list. A weekly scheduled task writes new SEO findings to <code>03_SEO/watch/</code> and only proposes.</p><p class="more">{a("_ops/AGENTS.md", "Read the rules")}</p></div></div>
 <p class="note" style="margin-top:36px">Truth labels in every note: verified (read at the source), reported (third party), guess. Source and competitor facts are as of 2026-11-08.</p></main></body></html>'''
 (OUT / "index.html").write_text(PAGE, encoding="utf-8")
