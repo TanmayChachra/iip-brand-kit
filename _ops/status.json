@@ -455,20 +455,15 @@
     },
     {
       "id": "mapquestions",
-      "title": "Map questions left (answer when you have a minute)",
-      "why": "The three maps are marked done. Four small things are still undecided.",
+      "title": "Map questions (closed 2026-11-13, fixes in progress)",
+      "why": "All six answered. Fixes: C-9 stays C-9 and C-8A, C-8B are added; chakh road styling made consistent; Block E legend entry removed and merged with the standard plot colour, C to E road consistent; Phase 2 nali only behind A8 to A14 with the chakh road behind it from A1 to A9; D15 and D16 area 8,429 sq yd confirmed; S-1 (II) and S-4 (II) being located in the PDF.",
       "steps": [
-        "Phase 1: is the plot above C-9 (I) called C-9 (II)?",
-        "Phase 1: are S-1 (II) and S-4 (II) real plots or duplicate labels? Your architect can confirm.",
-        "Phase 1: do you want the left chakh strip beside D5 and D4, or only the one behind D4 to D8?",
-        "Phase 1 legend: keep or remove the separate 'Block E' entry?",
-        "Phase 2: the strip behind A9 to A1 is lettered NALI in the PDF. Is it a nali?",
-        "Phase 2: D15 and D16 area is about 8,429 sq yd. Is that right?"
+        "Open point only: where S-1 (II) and S-4 (II) are in the architect's PDF (owner cannot find them, crop sent)."
       ],
       "links": [],
       "time": "5 min",
       "unlocks": "Final map text and the 3D film",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "connectivity",
