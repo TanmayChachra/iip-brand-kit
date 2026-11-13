@@ -53,446 +53,142 @@
   ],
   "owner_tasks": [
     {
-      "id": "domain",
-      "title": "Domains bought at Porkbun: isapurindustrialpark.com and .in (done)",
-      "why": "Both are registered at Porkbun under the business Gmail. Both still use Porkbun nameservers. The .com is the primary until you say otherwise, the .in redirects to it.",
+      "id": "v3pick",
+      "title": "Look at the website and say what to change",
+      "why": "The v3 home and all inner pages are built locally (not deployed). Design language is locked. The hero map is being fixed and regenerated from the final maps.",
       "steps": [
-        "Done. Next step is the Cloudflare nameserver switch below."
-      ],
-      "links": [
-        [
-          "Porkbun",
-          "https://porkbun.com/"
-        ],
-        [
-          "Porkbun MCP",
-          "https://porkbun.com/mcp"
-        ],
-        [
-          "Notes and alternatives",
-          "02_Website/domain-email.md"
-        ]
-      ],
-      "time": "done",
-      "unlocks": "Everything below that needs a domain",
-      "state": "done"
-    },
-    {
-      "id": "cloudflare",
-      "title": "Cloudflare: both domains active, admin invited (done)",
-      "why": "I created the Cloudflare zone for isapurindustrialpark.com (under the IsapurIndustrialPark account). It stays pending until Porkbun uses Cloudflare's nameservers. After that I add the DNS, Pages, email routing and Search Console records through the Cloudflare MCP.",
-      "steps": [
-        "Done 2026-11-11: nameservers switched, zones active, .in redirects to .com, Business Gmail is Administrator. Porkbun MCP not needed (Cloudflare MCP controls DNS)."
-      ],
-      "links": [
-        [
-          "Porkbun",
-          "https://porkbun.com/account/domainsSpeedy"
-        ],
-        [
-          "Cloudflare dashboard",
-          "https://dash.cloudflare.com/"
-        ]
-      ],
-      "time": "5 min",
-      "unlocks": "Deploy, DNS records, Search Console verification, email routing",
-      "state": "done"
-    },
-    {
-      "id": "cloudflare-mcp-auth",
-      "title": "Cloudflare MCP authorized (done 2026-11-09)",
-      "why": "I added cloudflare-api and astro-docs at user scope for all projects. Cloudflare needs your OAuth click once. After that I can edit DNS, Pages and the Access settings for you.",
-      "steps": [
-        "Verified: whoami returns the owner account. Next: I add DNS, Pages and Email Routing records after the domain is bought."
-      ],
-      "links": [
-        [
-          "Cloudflare MCP docs",
-          "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/"
-        ]
-      ],
-      "time": "5 min",
-      "unlocks": "DNS, Pages deploy, and fixing the OpenSEO Access setting",
-      "state": "done"
-    },
-    {
-      "id": "openseo-oauth",
-      "title": "OpenSEO MCP reconnected (2026-11-12)",
-      "why": "Your OpenSEO is already hosted at openseo.tanmay-hq.in. The MCP URL answers with a Cloudflare Access login page, so MCP clients cannot connect. I added the MCP globally; it fails until this one setting is on.",
-      "steps": [
-        "Reconnected after it dropped. whoami works, project Isapur Industrial Park is there (its domain field still says .in, primary is now .com).",
-        "Nothing paid has run since the first research."
-      ],
-      "links": [
-        [
-          "OpenSEO guide",
-          "https://github.com/every-app/open-seo/blob/main/docs/SELF_HOSTING_CLOUDFLARE_OPERATIONS.md#through-cloudflare-access"
-        ],
-        [
-          "OpenSEO MCP docs",
-          "https://openseo.so/docs/mcp"
-        ]
-      ],
-      "time": "10 min",
-      "unlocks": "OpenSEO tools in Claude: keyword research, ranks, audits",
-      "state": "done"
-    },
-    {
-      "id": "dataforseo",
-      "title": "DataForSEO funded and connected (done 2026-11-09)",
-      "why": "OpenSEO gets all its keyword, rank and backlink data from DataForSEO. You said about 5K a month. Start small and cap it.",
-      "steps": [
-        "51 USD deposited, OpenSEO test call works (92 keywords checked, results in 03_SEO/keywords/real-volumes-2026-11-09.md).",
-        "Still do: set a monthly spend cap in the DataForSEO account. I show a cost estimate before every paid run."
-      ],
-      "links": [
-        [
-          "DataForSEO",
-          "https://dataforseo.com/"
-        ],
-        [
-          "Pricing",
-          "https://dataforseo.com/pricing"
-        ]
-      ],
-      "time": "20 min",
-      "unlocks": "Real keyword volumes and rank tracking in OpenSEO",
-      "state": "done"
-    },
-    {
-      "id": "openseo",
-      "title": "OpenSEO hosted on Cloudflare (done, openseo.tanmay-hq.in)",
-      "why": "Gives me live search data (volumes, rank, backlinks, audits, AI visibility). Self hosted and MIT licensed.",
-      "steps": [
-        "Already hosted by you. Remaining: add the DataForSEO credentials in the OpenSEO settings and set a spend cap (see the DataForSEO task)."
-      ],
-      "links": [
-        [
-          "OpenSEO repo",
-          "https://github.com/every-app/open-seo"
-        ],
-        [
-          "OpenSEO MCP docs",
-          "https://openseo.so/docs/mcp"
-        ],
-        [
-          "Skills setup",
-          "https://openseo.so/docs/skills/setup"
-        ]
-      ],
-      "time": "1 to 2 hours",
-      "unlocks": "Real keyword map, weekly rank checks, AI visibility tracking",
-      "state": "done"
-    },
-    {
-      "id": "bizgoogle",
-      "title": "Business Google account created (done 2026-11-10)",
-      "why": "The business Google account now exists (address kept in the local private map). Remaining: make it Owner of the Business Profiles, GA4, GTM and Search Console, keep your personal account as second Owner.",
-      "steps": [
-        "Add this account as Owner of GA4, GTM, Search Console and the three Business Profiles (see the Google task).",
-        "Turn on 2-step verification and store the password in your password manager."
+        "Open the launcher on your Desktop or the local preview and tell me what to change.",
+        "Then we deploy (see the deploy card)."
       ],
       "links": [],
       "time": "20 min",
-      "unlocks": "Clean ownership of every Google asset",
-      "state": "done"
+      "unlocks": "Deploy, GTM tags, sitemap",
+      "state": "open"
+    },
+    {
+      "id": "deploy",
+      "title": "Deploy and share links with your friend",
+      "why": "The site is a static build: no servers. Cloudflare Pages hosts it free. Every version can get its own link.",
+      "steps": [
+        "Say 'deploy' and I create the Cloudflare Pages project and publish the preview first (noindex, private link, optional Cloudflare Access so only your friend's email can open it).",
+        "Then we point isapurindustrialpark.com at it when you approve.",
+        "To show older variants (v1, v2, v3 home) I can publish each as its own preview link from the saved builds."
+      ],
+      "links": [],
+      "time": "5 min of yours",
+      "unlocks": "Links for your friend, then the live site",
+      "state": "open"
     },
     {
       "id": "google",
-      "title": "Google: all done except profile edits (GBPs transferred 2026-11-12)",
-      "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
+      "title": "Business Profiles and search setup",
+      "why": "Profiles are connected. I read them in OpenSEO (small paid read) and prepare edits from 05_Local-Presence/gmb/audit.md for your approval. Also after launch: Bing Webmaster import and IndexNow.",
       "steps": [
-        "Done: GA4, GTM, Search Console, business Gmail, Cloudflare admin, all three Business Profiles transferred and connected (2026-11-13).",
-        "Left (needs your OK before I change anything): hours 8 am to 8 pm except Tuesday, phone 98377 64222 (92195 49800 added on your word, about 2026-11-19), website link once the site is live, descriptions and photos.",
-        "Next for me: read the three profiles in OpenSEO (a small paid read, I ask first) and prepare the edits from 05_Local-Presence/gmb/audit.md."
+        "Say 'read the profiles' to allow the small paid read.",
+        "Approve hours 8 am to 8 pm except Tuesday, phone 98377 64222, website link, descriptions and photos.",
+        "After the site is live: Bing Webmaster import."
       ],
-      "links": [
-        [
-          "GA4",
-          "https://analytics.google.com/"
-        ],
-        [
-          "Tag Manager",
-          "https://tagmanager.google.com/"
-        ],
-        [
-          "Search Console",
-          "https://search.google.com/search-console"
-        ],
-        [
-          "GA4 MCP",
-          "https://github.com/googleanalytics/google-analytics-mcp"
-        ],
-        [
-          "Search Console MCP",
-          "https://github.com/AminForou/mcp-gsc"
-        ],
-        [
-          "Tag Manager MCP",
-          "https://github.com/stape-io/google-tag-manager-mcp-server"
-        ],
-        [
-          "Workspace MCP",
-          "https://github.com/taylorwilsdon/google_workspace_mcp"
-        ]
-      ],
-      "time": "1 hour",
-      "unlocks": "Tracking IDs for the site, indexing, query data, profile edits",
+      "links": [],
+      "time": "15 min",
+      "unlocks": "Stronger Google profiles and Bing visibility",
       "state": "open"
     },
     {
-      "id": "email",
-      "title": "Business email: sales@ and info@ forward to the business Gmail (done)",
-      "why": "Looks professional and receives form and listing mail. Free path first.",
+      "id": "connectivity",
+      "title": "Pick the connectivity facts for the Where section",
+      "why": "Measured driving distances are in 02_Website/research/connectivity.md and dadri-shipping.md (expressway entry 4.2 km, Modinagar 10.7, Hapur 13.6, EPE junction 17.8, Meerut 29.9, Dadri depot 46.3, Delhi 46 to 55). No freight corridor link claimed.",
       "steps": [
-        "Done via Cloudflare Email Routing. Optional later: send-as from Gmail, or Zoho or Workspace if volume grows."
-      ],
-      "links": [
-        [
-          "Zoho Mail pricing",
-          "https://www.zoho.com/mail/zohomail-pricing.html"
-        ],
-        [
-          "Cloudflare Email Routing",
-          "https://developers.cloudflare.com/email-routing/"
-        ]
-      ],
-      "time": "30 min",
-      "unlocks": "Contact email on the site and listings",
-      "state": "done"
-    },
-    {
-      "id": "bing",
-      "title": "Bing Webmaster and IndexNow",
-      "why": "Bing feeds ChatGPT search, Copilot and others. Import from Search Console and it is nearly automatic.",
-      "steps": [
-        "After Search Console is done, sign in to Bing Webmaster Tools and import the site."
-      ],
-      "links": [
-        [
-          "Bing Webmaster",
-          "https://www.bing.com/webmasters"
-        ]
-      ],
-      "time": "10 min",
-      "unlocks": "Bing and AI search visibility",
-      "state": "open"
-    },
-    {
-      "id": "proof",
-      "title": "Approval documents (received 2026-11-12, read)",
-      "why": "Read from your Drive folder. Facts and safe wording are in 06_Content/approvals-facts.md (private of names). Supported: layouts sanctioned by Zila Panchayat Ghaziabad, road widths per layout, drainage, rain water harvesting, a Section 80 order. Not supported: 100+ acres, RCC, power, lighting.",
-      "steps": [
-        "Optional: sharper scans of the Phase 1 extension and Phase 3 approvals (stamp dates are blurry), and any document that proves RCC roads or street lighting."
+        "Tell me which to feature (I suggest expressway, Meerut, Dadri depot, Delhi, EPE).",
+        "Send the exact gate position so everything is measured from the gate."
       ],
       "links": [],
-      "time": "as soon as you can",
-      "unlocks": "Approvals page and the approved claim on the site and Google profile",
-      "state": "done"
-    },
-    {
-      "id": "photos",
-      "title": "Photos and video of the park",
-      "why": "Real photos still beat any stock photo. A few can come from the Google profile listings but need cleaning up; no AI scenes passed off as the park.",
-      "steps": [
-        "Shoot: gate and signboard, 50 ft road, street lights, trees, plots with boundary, petrol pump, a drone or wide shot, in daylight and near sunset, landscape and portrait.",
-        "Drop the files in a folder and tell me. I resize, convert to WEBP and place them."
-      ],
-      "links": [],
-      "time": "half a day",
-      "unlocks": "Real hero and gallery, Google profile photos",
+      "time": "5 min",
+      "unlocks": "A stronger Where section",
       "state": "open"
     },
     {
       "id": "facts",
-      "title": "Facts and sales answers",
-      "why": "The site cannot state what you have not confirmed. Real questions also decide the FAQ.",
+      "title": "Facts for the site",
+      "why": "The site can only say what you confirm.",
       "steps": [
-        "Done: plot sizes 300 to 2500 sq yd, shops smaller, areas computed from the layouts (no plot area list exists).",
-        "Still needed: price policy (currently on request), payment plan, power and water facts, security, permitted uses.",
-        "The 20 questions callers ask. Guess list: 06_Content/sales-faq-suggestions.md.",
-        "Done: call and WhatsApp 98377 64222; 92195 49800 held for about a week."
-      ],
-      "links": [
-        [
-          "Guessed question list",
-          "06_Content/sales-faq-suggestions.md"
-        ],
-        [
-          "All placeholders",
-          "06_Content/website-copy/placeholders.md"
-        ]
-      ],
-      "time": "1 hour",
-      "unlocks": "Complete FAQ and plots page",
-      "state": "open"
-    },
-    {
-      "id": "impeccable",
-      "title": "Impeccable engine decision (optional, low priority)",
-      "why": "The design skill's detector is a downloaded program. I will not run it. You can run it, or we install Rust and I build it from source.",
-      "steps": [
-        "Option A: run ~/.claude/skills/impeccable/scripts/impeccable context in your own terminal. Option B: install Rust from rustup.rs and I build it from source. Option C: keep the by-hand critique."
-      ],
-      "links": [
-        [
-          "Impeccable repo",
-          "https://github.com/pbakaus/impeccable"
-        ]
-      ],
-      "time": "10 min or skip",
-      "unlocks": "Automatic design detectors",
-      "state": "later"
-    },
-    {
-      "id": "plotmaps",
-      "title": "Plot maps (received, rebuilt, restyle in progress)",
-      "why": "Architect PDFs are converted: Phase 1 incl. extension, Phase 2, Phase 3, with computed areas (under 1.5% error where checked). Very small plots are commercial shops and stay. Restyle to site quality is running; a PDF snapshot is the fallback.",
-      "steps": [
-        "Review the three SVG maps (sent 2026-11-13). Say yes only if you like the direction; the 3D film is built from them and waits for your yes.",
-        "Ask your architect: whether S-1(II) and S-4(II) are real plots or duplicate labels.",
-        "Optional: Google Earth KML and screenshots of the three phases, real photos of the gate, sign and pump (references for the film)."
-      ],
-      "links": [
-        [
-          "Spec",
-          "01_Brand/Plot-Maps/README.md"
-        ]
-      ],
-      "time": "30 min to gather",
-      "unlocks": "SVG maps with selectable plots, future plot selector",
-      "state": "open"
-    },
-    {
-      "id": "groundphotos",
-      "title": "On-ground photos, including the Phase 1 extension",
-      "why": "Real photos show the rapid growth at the Phase 1 extension and replace stock photos on the site and the Google profile. You said about a week.",
-      "steps": [
-        "Shoot all areas incl. the Phase 1 extension works in progress (dated, wide and close).",
-        "Drop them in one folder with the date taken and tell me. I resize, convert to WEBP, and use them where they fit (site, listings, posts)."
+        "Payment plan percentage (ask your dad) and the 20 questions callers ask.",
+        "Phase 1 thin plot below C-9 still called C-9 (I): what should it be called?",
+        "Second phone number: tell me the date to add 92195 49800 (about 2026-11-19)."
       ],
       "links": [],
-      "time": "about a week",
-      "unlocks": "Real photos everywhere, growth story in the data and posts",
+      "time": "15 min",
+      "unlocks": "Complete FAQ and the buying page",
       "state": "open"
     },
     {
-      "id": "tour360",
-      "title": "360 degree traversal (later, 3 to 4 months)",
-      "why": "A walkable 360 tour of the private park, like Google Earth street level, since Google Maps does not cover the park. Needs the camera first.",
+      "id": "photos",
+      "title": "Photos and the photographic direction",
+      "why": "Real photos beat anything else, and the 'no AI imagery' rule ends once the direction is approved (01_Brand/Photo-Direction/PHOTO-DIRECTION.md).",
       "steps": [
-        "Source an Insta360 camera (planned in 3 to 4 months).",
-        "When ready: capture along the main roads and plots, publish as street level coverage where possible and embed a viewer on the site. I will research the Street View publishing route then."
+        "Answer the 8 questions at the end of PHOTO-DIRECTION.md.",
+        "Shoot the list in the file (gate, sign, road, pump, shops, three phases, extension works) and send the folder.",
+        "Send your Google Earth screenshots of the three phases for the satellite view."
+      ],
+      "links": [],
+      "time": "half a day",
+      "unlocks": "Real hero, gallery, profile photos, the 3D film",
+      "state": "open"
+    },
+    {
+      "id": "approve",
+      "title": "Approve print and brand kit",
+      "why": "Rebuilt locally, not published.",
+      "steps": [
+        "Look at the new poster, signs and mockups.",
+        "Say 'publish the kit' so I publish the updated brand kit to GitHub Pages.",
+        "Delete the six test files D:\bt_*.png by hand."
+      ],
+      "links": [],
+      "time": "10 min",
+      "unlocks": "Brand kit live with Erode and the new facts",
+      "state": "open"
+    },
+    {
+      "id": "later",
+      "title": "Later",
+      "why": "Nothing needed now.",
+      "steps": [
+        "Blender 3D scroll film: resumes when you approve (tonight if tokens allow).",
+        "360 degree traversal in 3 to 4 months (Insta360).",
+        "A/B testing after the site is live and collecting data.",
+        "Impeccable engine decision (optional)."
       ],
       "links": [],
       "time": "later",
-      "unlocks": "Street level coverage, a standout section for the site",
+      "unlocks": "Extras",
       "state": "later"
     },
     {
-      "id": "abprogram",
-      "title": "A/B testing program (after the draft site is live)",
-      "why": "Once a basic draft is live and SEO work is running, we test pages and keep optimising at a regular rhythm set by visitor numbers and how fast conversions validate.",
+      "id": "done-log",
+      "title": "Done so far (grouped)",
+      "why": "Everything below is finished. Nothing to do.",
       "steps": [
-        "No action now. When the site is live and GTM and GA4 collect data I propose a test calendar from 04_Analytics/gtm-plan.md and 03_SEO/playbook/ab-tests.md and review results monthly."
-      ],
-      "links": [
-        [
-          "Test plan",
-          "03_SEO/playbook/ab-tests.md"
-        ],
-        [
-          "Measurement plan",
-          "04_Analytics/gtm-plan.md"
-        ]
-      ],
-      "time": "later",
-      "unlocks": "Steady conversion gains",
-      "state": "later"
-    },
-    {
-      "id": "v3pick",
-      "title": "Review the v3 home (round 3) and say what to change",
-      "why": "Round 3 is built: ink-drawing art, scroll-linked shed build, shutter lift, faster map zoom, plain copy. Design language is approved and locked (02_Website/DESIGN-LANGUAGE.md). Notes in 02_Website/V3-HOME.md.",
-      "steps": [
-        "Look at the home (Launcher on the Desktop) and say what to change.",
-        "On approval I roll the look to the inner pages, add the Approvals page, Phase 1 and 3 maps, then deploy with your yes."
-      ],
-      "links": [
-        [
-          "Direction",
-          "02_Website/V3-DIRECTION.md"
-        ]
-      ],
-      "time": "20 min",
-      "unlocks": "The rebuild of the home page and the rest of v3",
-      "state": "open"
-    },
-    {
-      "id": "photodirection",
-      "title": "Finalise the photographic direction for the brand",
-      "why": "The 'no AI imagery' rule ends once the photo direction is finalised. Until then only real photos, stand-ins, drawings and stylised 3D. This also decides how we use AI-assisted images and how we improve the Google profile photos.",
-      "steps": [
-        "I research and draft 01_Brand/Photo-Direction/PHOTO-DIRECTION.md: mood, light, palette, subjects, shot list for the shoot, and the AI policy (what may be generated or edited, what must be real, labelling).",
-        "You pick references, answer the questions in it and approve. Then the rule in CLAUDE.md is replaced by the policy."
+        "Domains: isapurindustrialpark.com (primary) and .in (redirects to the .com) bought at Porkbun and live on Cloudflare; sales@ and info@ forward to the business Gmail.",
+        "Accounts and tools: Cloudflare MCP, OpenSEO (hosted, reconnected), DataForSEO funded, the business Google account, GA4, GTM, Search Console, all three Business Profiles transferred and connected.",
+        "Approvals documents received and read (06_Content/approvals-facts.md). Atom Estates PDF read (03_SEO/competitors/atom-pdf).",
+        "Plot maps for Phase 1, 2 and 3 corrected and marked DONE v1.0 (map questions closed).",
+        "Print: poster reprinted, signs with the new CTA block, realistic mockup template, print media regenerated with Erode and one phone."
       ],
       "links": [],
-      "time": "30 min of your time",
-      "unlocks": "Photography for the website, posts and listings; AI-assisted imagery inside clear rules",
-      "state": "open"
-    },
-    {
-      "id": "atompdf",
-      "title": "Atom Estates PDF read (done)",
-      "why": "Read and analysed. Atom claims 40+ acres, 55 ft RCC roads, plots from 300 sq m (not yd), a Govt Approved seal naming no authority, no contact details. Report: 03_SEO/competitors/atom-pdf/ATOM-ANALYSIS.md (all reported by the competitor, not verified).",
-      "steps": [
-        "Our edge: a plain contact block, a named approving authority (Zila Panchayat Ghaziabad, with the safe wording), plots from 300 sq yd. We do not echo their sewer, STP, security or substation claims."
-      ],
-      "links": [],
-      "time": "later",
-      "unlocks": "Competitor facts for the site, sales answers and the board",
+      "time": "-",
+      "unlocks": "-",
       "state": "done"
-    },
-    {
-      "id": "mapquestions",
-      "title": "Map questions (closed 2026-11-13, fixes in progress)",
-      "why": "All six answered. Fixes: C-9 stays C-9 and C-8A, C-8B are added; chakh road styling made consistent; Block E legend entry removed and merged with the standard plot colour, C to E road consistent; Phase 2 nali only behind A8 to A14 with the chakh road behind it from A1 to A9; D15 and D16 area 8,429 sq yd confirmed; S-1 (II) and S-4 (II) being located in the PDF.",
-      "steps": [
-        "Open point only: where S-1 (II) and S-4 (II) are in the architect's PDF (owner cannot find them, crop sent)."
-      ],
-      "links": [],
-      "time": "5 min",
-      "unlocks": "Final map text and the 3D film",
-      "state": "done"
-    },
-    {
-      "id": "connectivity",
-      "title": "Connectivity facts to show on the site (research done, your call)",
-      "why": "Measured driving distances from the park (OSRM, free-flow, from the middle of the three phases): Delhi-Meerut Expressway entry 4.2 km, Modinagar 10.7, Hapur 13.6, Meerut 29.9, Ghaziabad 33.5, Dadri 44.2, EPE junction (Kallu Garhi) 17.8, Anand Vihar 46.0, India Gate 54.9. The site now shows Modinagar 11.4 and Hapur 13.4 from Google Maps; the two sources differ by origin. No Western Freight Corridor link was found near Ghaziabad or Hapur, so we do not say 'on the freight corridor'.",
-      "steps": [
-        "Tell me which numbers to show (I suggest the expressway, Meerut, Dadri, Delhi, EPE) and I redesign the Where map into a distance ladder.",
-        "Send the exact gate position so every distance is measured from the gate."
-      ],
-      "links": [
-        [
-          "Research",
-          "02_Website/research/connectivity.md"
-        ]
-      ],
-      "time": "5 min",
-      "unlocks": "A stronger Where section",
-      "state": "open"
     }
   ],
   "automation": [
     {
       "group": "Running or next on my side",
       "items": [
-        "Blender film route is ON HOLD until you approve the SVG maps. Research on how to raise render quality is being written (02_Website/video/RESEARCH-BLENDER.md).",
-        "Copywriter: rewrite the lines listed in V3-HOME.md, then roll the locked design language to the inner pages.",
-        "Approvals page and Phase 1 and 3 layouts on the site.",
-        "Read the three Business Profiles in OpenSEO (small paid read, I ask first); prepare the profile edits for your approval.",
-        "Photographic direction draft (01_Brand/Photo-Direction) after you finish the SVG review."
+        "Hero blank fix and map data regeneration (running).",
+        "Copywriter and SEO agent research, then a content plan to fill the blank site (running).",
+        "Use the Google Earth boundaries for real positions on the maps and the film.",
+        "Deploy previews on Cloudflare Pages when you say so.",
+        "Read the three Business Profiles when you approve the small paid read."
       ]
     },
     {
