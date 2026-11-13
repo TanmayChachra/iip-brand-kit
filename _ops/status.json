@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "workstreams": [
     {
       "id": "01_Brand",
@@ -202,9 +202,9 @@
       "title": "Google: all done except profile edits (GBPs transferred 2026-11-12)",
       "why": "Tracking and search data. These are your accounts, so you create them. Google MCPs then let me read reports and edit tags with your approval.",
       "steps": [
-        "Done: GA4, GTM, Search Console, business Gmail, Cloudflare admin, all three Business Profiles transferred to the business Gmail.",
-        "Left (needs your OK before I change anything): hours 8 am to 8 pm except Tuesday, phone 98377 64222 (92195 49800 added after about a week), website link once the site is live, descriptions and photos from 05_Local-Presence/gmb/audit.md.",
-        "Next for me: connect OpenSEO to the business Gmail so I can read the three profiles, reviews and Search Console."
+        "Done: GA4, GTM, Search Console, business Gmail, Cloudflare admin, all three Business Profiles transferred and connected (2026-11-13).",
+        "Left (needs your OK before I change anything): hours 8 am to 8 pm except Tuesday, phone 98377 64222 (92195 49800 added on your word, about 2026-11-19), website link once the site is live, descriptions and photos.",
+        "Next for me: read the three profiles in OpenSEO (a small paid read, I ask first) and prepare the edits from 05_Local-Presence/gmb/audit.md."
       ],
       "links": [
         [
@@ -349,9 +349,9 @@
       "title": "Plot maps (received, rebuilt, restyle in progress)",
       "why": "Architect PDFs are converted: Phase 1 incl. extension, Phase 2, Phase 3, with computed areas (under 1.5% error where checked). Very small plots are commercial shops and stay. Restyle to site quality is running; a PDF snapshot is the fallback.",
       "steps": [
-        "No plot area list exists, so areas stay computed from the drawings.",
-        "Ask your architect: plot 30 (fixed), whether S-1(II) and S-4(II) are real plots or duplicate labels.",
-        "Optional: Google Earth KML, final Phase 3 map."
+        "Review the three SVG maps (sent 2026-11-13). Say yes only if you like the direction; the 3D film is built from them and waits for your yes.",
+        "Ask your architect: whether S-1(II) and S-4(II) are real plots or duplicate labels.",
+        "Optional: Google Earth KML and screenshots of the three phases, real photos of the gate, sign and pump (references for the film)."
       ],
       "links": [
         [
@@ -412,8 +412,8 @@
     },
     {
       "id": "v3pick",
-      "title": "Approve the v3 home page, then give your other views",
-      "why": "The v3 home is built (The plot is the page: layout drawing, size finder, zoomed-out map, shutter footer, Erode). Screens in 02_Website/qa/v3/screens, notes in 02_Website/V3-HOME.md.",
+      "title": "Review the v3 home (round 3) and say what to change",
+      "why": "Round 3 is built: ink-drawing art, scroll-linked shed build, shutter lift, faster map zoom, plain copy. Design language is approved and locked (02_Website/DESIGN-LANGUAGE.md). Notes in 02_Website/V3-HOME.md.",
       "steps": [
         "Look at the home (Launcher on the Desktop) and say what to change.",
         "On approval I roll the look to the inner pages, add the Approvals page, Phase 1 and 3 maps, then deploy with your yes."
@@ -446,11 +446,11 @@
     {
       "group": "Running or next on my side",
       "items": [
-        "Rework the v3 home after your feedback.",
-        "Roll the v3 look to inner pages, Approvals page, Phase 1 and 3 layouts.",
-        "Connect OpenSEO to the business Gmail, read the three profiles.",
-        "Prepare Business Profile edits for your approval; add 92195 49800 on the date you say.",
-        "Keep NAP, listings plan and docs in sync with the phones."
+        "Blender film route is ON HOLD until you approve the SVG maps. Research on how to raise render quality is being written (02_Website/video/RESEARCH-BLENDER.md).",
+        "Copywriter: rewrite the lines listed in V3-HOME.md, then roll the locked design language to the inner pages.",
+        "Approvals page and Phase 1 and 3 layouts on the site.",
+        "Read the three Business Profiles in OpenSEO (small paid read, I ask first); prepare the profile edits for your approval.",
+        "Photographic direction draft (01_Brand/Photo-Direction) after you finish the SVG review."
       ]
     },
     {
