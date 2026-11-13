@@ -154,9 +154,6 @@ ul.q li{{margin:8px 0}}a{{color:inherit}}.two{{display:grid;grid-template-column
 <div class="flag"></div><h1>IIP Phase 2: visibility board</h1>
 <p class="lead">Website, SEO, local presence, AEO and GEO, analytics. Updated {e(S["updated"])}. Brand kit and poster are locked. Everything below is research and plan, nothing is built or published on the new site yet.</p>
 <h2>Workstreams</h2><div class="grid">{ws}</div>
-<h2>What the research found</h2><div class="grid">{cards(FINDINGS)}</div>
-<h2>Done while you were away</h2><ul>{done}</ul>
-<h2>First 90 days</h2><ol class="steps">{first}</ol>
 <h2>What is next and what I can pick up myself</h2><div class="grid">{AUTO_HTML}</div>
 <h2>Your tasks (in order, I tick them when you tell me)</h2><div class="grid">{OWNER}</div><h2>Smaller items</h2><ol class="q">{qs}</ol>
 <h2>Free listings to claim first</h2><p class="lead">Exact sign-up pages. Use one identical name, address and phone everywhere. The full list of 48 with link type and notes is in the listing targets note.</p><div class="chips">{lst}</div>

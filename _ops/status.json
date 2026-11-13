@@ -5,15 +5,15 @@
       "id": "01_Brand",
       "agent": "brand",
       "state": "locked",
-      "summary": "Kit v1.1 and poster final. Plot maps rebuilt from the architect PDFs (Phase 1 incl. extension, 2, 3): plots, areas, shops. Restyle to website quality in progress.",
-      "next": "Owner reviews the restyled maps"
+      "summary": "Kit rebuilt locally (Erode, design language, voice, plot maps, photography pages), not published. Plot maps for all 3 phases corrected, Phase 1 triangle B23 to B22A left open. Print media regenerated; poster reprint, sign CTA and realistic mockup template in progress.",
+      "next": "Owner approves maps and local kit, then publish and resume the 3D film (held until night)"
     },
     {
       "id": "02_Website",
       "agent": "web",
-      "state": "v3 direction",
-      "summary": "v2 passes the technical gate (19 pages, CSS 27.5 KiB) but the owner rejected the look of the home. v3 research written (02_Website/V3-DIRECTION.md): concepts First Light (recommended), Ground to Growth, The Site Board; font fix Erode plus Inter. Phones swapped. Not deployed.",
-      "next": "Owner picks a v3 concept, then rebuild home, Approvals and plot map sections, then deploy"
+      "state": "v3 home built, owner review",
+      "summary": "v3 home round 3 built locally: locked design language, ink-drawing art, scroll-linked shed build, map zoom. Not deployed. Inner pages and Approvals page not started.",
+      "next": "Owner feedback on the home, then inner pages and Approvals page, then deploy with a yes"
     },
     {
       "id": "03_SEO",
@@ -32,16 +32,16 @@
     {
       "id": "05_Local-Presence",
       "agent": "local",
-      "state": "audit done",
+      "state": "profiles connected",
       "summary": "GBP audited, neighbours and petrol pump verified on Maps, 48 listing targets filed. Profile edits wait for owner approval.",
-      "next": "Move Phase 3 profile from the old manager to the business Gmail, then read all three in OpenSEO and change phones to 92195 49800"
+      "next": "Read the three profiles in OpenSEO (small paid read, asks first), then prepare edits for approval"
     },
     {
       "id": "06_Content",
       "agent": "content",
-      "state": "copy done",
-      "summary": "Website copy, 22 FAQ, 2 posts and a sales question list written.",
-      "next": "Remove unproven claims (RCC, lighting, 100+ acres); add Approvals page from 06_Content/approvals-facts.md"
+      "state": "voice system built",
+      "summary": "Copywriter system (voice files, skill, subagent) and a first marketing pack built from the plot data. Approvals facts filed.",
+      "next": "Rewrite the lines listed in V3-HOME.md; owner answers photo direction questions"
     },
     {
       "id": "_ops",
