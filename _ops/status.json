@@ -443,15 +443,15 @@
     },
     {
       "id": "atompdf",
-      "title": "Atom Estates PDF saved, read it later (reminder)",
-      "why": "You sent the Atom Estates PDF; it is saved and unread to save tokens. When you say, I read it and put the comparison on this board.",
+      "title": "Atom Estates PDF read (done)",
+      "why": "Read and analysed. Atom claims 40+ acres, 55 ft RCC roads, plots from 300 sq m (not yd), a Govt Approved seal naming no authority, no contact details. Report: 03_SEO/competitors/atom-pdf/ATOM-ANALYSIS.md (all reported by the competitor, not verified).",
       "steps": [
-        "Tell me when to read it."
+        "Our edge: a plain contact block, a named approving authority (Zila Panchayat Ghaziabad, with the safe wording), plots from 300 sq yd. We do not echo their sewer, STP, security or substation claims."
       ],
       "links": [],
       "time": "later",
       "unlocks": "Competitor facts for the site, sales answers and the board",
-      "state": "later"
+      "state": "done"
     },
     {
       "id": "mapquestions",
@@ -468,6 +468,24 @@
       "links": [],
       "time": "5 min",
       "unlocks": "Final map text and the 3D film",
+      "state": "open"
+    },
+    {
+      "id": "connectivity",
+      "title": "Connectivity facts to show on the site (research done, your call)",
+      "why": "Measured driving distances from the park (OSRM, free-flow, from the middle of the three phases): Delhi-Meerut Expressway entry 4.2 km, Modinagar 10.7, Hapur 13.6, Meerut 29.9, Ghaziabad 33.5, Dadri 44.2, EPE junction (Kallu Garhi) 17.8, Anand Vihar 46.0, India Gate 54.9. The site now shows Modinagar 11.4 and Hapur 13.4 from Google Maps; the two sources differ by origin. No Western Freight Corridor link was found near Ghaziabad or Hapur, so we do not say 'on the freight corridor'.",
+      "steps": [
+        "Tell me which numbers to show (I suggest the expressway, Meerut, Dadri, Delhi, EPE) and I redesign the Where map into a distance ladder.",
+        "Send the exact gate position so every distance is measured from the gate."
+      ],
+      "links": [
+        [
+          "Research",
+          "02_Website/research/connectivity.md"
+        ]
+      ],
+      "time": "5 min",
+      "unlocks": "A stronger Where section",
       "state": "open"
     }
   ],
