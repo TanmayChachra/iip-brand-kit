@@ -53,3 +53,5 @@
 - [ ] Owner: review the 2026-11-13 home round 3 locally (shed build, shutter lift, map zoom). Copywriter: rewrite the lines listed in 02_Website/V3-HOME.md. Confirm the Papers line may drop 'subject to conditions'.
 - [ ] **Finalise the photographic direction for the brand** (owner, 2026-11-13): decide the look of real and AI-assisted photography (mood, light, palette, subjects, shot list for the on-ground shoot, what may be AI generated or edited and what must be real, how it is labelled, enhancement of the Google profile photos). Output: `01_Brand/Photo-Direction/PHOTO-DIRECTION.md` with mood boards, do and do not, shot list and the AI policy. When the owner approves it, the 'no AI imagery' rule in CLAUDE.md and DESIGN-DIRECTION.md is replaced by that policy. Owner: pick references and approve. Claude: research options, prepare the draft after the Blender film milestone.
 
+
+- [ ] **REMIND OWNER: Atom Estates PDF is saved** at `03_SEO/competitors/atom-pdf/atomestates.pdf` (2.8 MB, 5 pages, from atomestates.in, saved 2026-11-13, not read yet). Later: read it, extract what it claims, compare with IIP, and put findings on the board.

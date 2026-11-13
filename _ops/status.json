@@ -440,6 +440,18 @@
       "time": "30 min of your time",
       "unlocks": "Photography for the website, posts and listings; AI-assisted imagery inside clear rules",
       "state": "open"
+    },
+    {
+      "id": "atompdf",
+      "title": "Atom Estates PDF saved, read it later (reminder)",
+      "why": "You sent the Atom Estates PDF; it is saved and unread to save tokens. When you say, I read it and put the comparison on this board.",
+      "steps": [
+        "Tell me when to read it."
+      ],
+      "links": [],
+      "time": "later",
+      "unlocks": "Competitor facts for the site, sales answers and the board",
+      "state": "later"
     }
   ],
   "automation": [
