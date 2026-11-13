@@ -292,3 +292,7 @@ Delegation rule: lowest-limit model (Claude) does decisions, edits, verification
 - 2026-11-13: v3 home design language LOCKED by the owner (see 02_Website/DESIGN-LANGUAGE.md). Illustrations are architect style ink drawings, the shed build is scroll scrubbed beside six text steps, the visit shutter lift is scrubbed, hero map zoom 3x faster with plus, minus, reset and double tap. Hedging disclaimers removed from the page; all changed lines listed in 02_Website/V3-HOME.md for the copywriter.
 
 - 2026-11-13 owner: the "no AI imagery" rule drops once the photographic direction is finalised. Open task photodirection (TODOS.md, board). Blender film route: research a lot, use open-source helpers and learn from existing work (RESEARCH-BLENDER.md).
+
+- 2026-11-13: Owner supplied Google Earth boundaries of the three phases (Sites.kml, not 100 percent accurate). Cleaned copy with only the 3 phase polygons: 01_Brand/Plot-Maps/data/phase-boundaries.geojson (other placemarks in the KML are personal, never copied or used). Use for real placement of phases on the hero map, the where map and the 3D film.
+
+- 2026-11-13 owner feedback: print update of hoardings and pole signs (CTA block) rejected as unprofessional and childish; redo before the kit goes online. Owner loves the ink-drawing illustration style and the short yellow line bullet: add both to the brand kit. Kit publish blocked until the CTA redo is approved.

@@ -55,3 +55,6 @@
 
 
 - [ ] **REMIND OWNER: Atom Estates PDF is saved** at `03_SEO/competitors/atom-pdf/atomestates.pdf` (2.8 MB, 5 pages, from atomestates.in, saved 2026-11-13, not read yet). Later: read it, extract what it claims, compare with IIP, and put findings on the board.
+
+- [ ] **Redo the hoarding (40x20 A and B, 40x15) and pole sign (20x32, 24x36) CTA before the new brand kit is published** (owner 2026-11-13: the arrow-tip yellow CTA block "looked crap, unprofessional, kindergarten drawing"). Everything else in print was fine. Needs a refined CTA treatment (study real highway hoardings, restrained shapes, strong type, one clear action, quiet phone). Kit publish is BLOCKED until the owner approves the redo.
+- [ ] **Add to the brand kit:** the new ink-drawing illustration style (owner loves it) and the short yellow line bullet used on the site (owner loves it). Atom PDF is already read (03_SEO/competitors/atom-pdf/ATOM-ANALYSIS.md), nothing left there.

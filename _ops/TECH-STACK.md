@@ -46,6 +46,8 @@ marketingskills (12: seo-audit, schema, site-architecture, ai-seo, programmatic-
 ## 6. Change log
 - 2026-11-09: Cloudflare, OpenSEO and DataForSEO MCPs connected and verified through Claude Desktop connectors. Astro docs MCP added. DataForSEO balance read: 1 USD.
 
+- 2026-11-13: Voice and SEO tools installed (owner approved). Vale 3.27.0, official errata-ai release binary, C:\Users\anshc\tools\vale\vale.exe (no installer), config 06_Content/voice/.vale.ini, rules 06_Content/voice/vale/styles/IIP/ (banned words and claims, hedging, phones, brands, freight corridor, em dash, subject-to). Tested on a bad and a good sample. promptfoo 0.125.1 as a dev tool in 06_Content/voice/evals (not in site-v2), offline echo provider, no API key, one eval of 6 lines passes (npx promptfoo eval --no-cache --no-write, with PROMPTFOO_DISABLE_TELEMETRY=1). claude-seo content-brief skills were installed earlier (03_SEO/research/copy-seo-agents.md).
+
 ## 7. Secrets and addresses policy (how nothing gets lost)
 - Account email addresses and where every secret lives are in the local-only map `_ops/private/ACCOUNTS-AND-SECRETS-MAP.md` (git ignored). A backup copy outside the project (`~/IIP-private-backup`) can be made with `python _ops/private/backup.py` once the owner approves. Claude memory holds a pointer.
 - Secret values never go in this repo, docs, chat or screenshots. They live in the owner's password manager or in each service's own settings (for example the Claude Desktop connector settings for DataForSEO).

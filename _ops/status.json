@@ -136,11 +136,12 @@
     },
     {
       "id": "approve",
-      "title": "Approve print and brand kit",
-      "why": "Rebuilt locally, not published.",
+      "title": "Print CTA redo, then approve and publish the brand kit",
+      "why": "You rejected the hoarding and pole sign CTA (unprofessional, childish). The kit stays unpublished until a redo is approved. The kit also gets the ink-drawing illustration style and the short yellow line bullet you like.",
       "steps": [
-        "Look at the new poster, signs and mockups.",
-        "Say 'publish the kit' so I publish the updated brand kit to GitHub Pages.",
+        "I redo the CTA on hoardings and poles with a refined treatment and show you options.",
+        "You approve, then I add the ink-drawing style and the yellow bullet to the kit and say when it is ready.",
+        "Say 'publish the kit' after that.",
         "Delete the six test files D:\bt_*.png by hand."
       ],
       "links": [],
