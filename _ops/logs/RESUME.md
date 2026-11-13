@@ -22,3 +22,9 @@ Also pending from the owner: plot maps and Google Earth KML, on-ground photos, s
 3. When approval docs arrive: Approvals page and markup.
 4. When GBP is under the new account: read profiles via OpenSEO, apply the ready edits in `05_Local-Presence/gmb/audit.md` only with the owner's approval.
 5. Keep board, TODOS, knowledge file and TECH-STACK in sync, then push.
+
+## Overnight rule (owner, 2026-11-11)
+Run builder batches back to back. Before each batch check get_usage: stop launching when the 5-hour window is at 95 percent or more (keep 5 percent free). When idle (no batch left or limit reached), run `shutdown /h` to hibernate the laptop. Next morning: say resume.
+
+## 2026-11-11 night status
+Site v2: all 19 pages pass the gate (only waived phone numbers), CSS 27.5 KiB, perf 0 FAIL. Not deployed. Next: owner approves deploy (02_Website/DEPLOY.md), then GTM tags, sitemap, OpenSEO audit. Note: site-v2 CSS files were minified in place; keep originals out of repo, edit with care.

@@ -10,7 +10,7 @@ Marketing, brand and visibility for Isapur Industrial Park (the name is exactly 
 - Taglines are ADAPTIVE, never fixed: "A Modern Industrial Address." and "The Groundwork for Growth." Use one per creative, never both.
 - No claim on a board, post or web page unless its proof is on file (knowledge file section 3). Distances: say straight-line or driving. Partner brands (Amul, Inox Air, Patanjali and similar) are named only after the owner confirms and the brand's presence is verified. Never put schema markup for a claim that has no proof.
 - Online images are WEBP. No em dashes anywhere. No Co-Authored-By lines or Claude mentions in git. Never type or store secrets (API keys live in env vars the owner sets).
-- The owner has NO photos yet. Do not use AI warehouse images as if they were the park.
+- The owner has NO photos yet. Do not use AI warehouse images as if they were the park. This rule lasts only until the photographic direction for the brand is finalised (open task `photodirection` in TODOS.md and on the board); the owner will then allow AI-assisted imagery inside that direction. Until then only real photos, licensed stand-ins, drawings and stylised 3D.
 - Never edit another agent's folder (see `_ops/AGENTS.md`). Cross-agent hand-offs happen only through the contract files listed there.
 
 ## Phases

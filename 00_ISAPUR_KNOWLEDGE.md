@@ -286,3 +286,9 @@ Delegation rule: lowest-limit model (Claude) does decisions, edits, verification
 - 2026-11-12 owner facts: payment about 3 months on average (negotiable later, say average only if used); power 24/7; say NOTHING about water, security, permitted uses or price policy (offline sales). 
 
 - 2026-11-12 owner facts (buying and neighbours): ALL plots are sold, IIP works on a RESALE basis, shows available inventory, mediates, payments flow through IIP, registry after about 3 months, IIP will resell the land if the owner needs. Buyers: factories, warehouses, godowns, investors. Running units (no brand names): tile-bonding chemicals, comfort cushions, industrial water tanks, PVC pipes. Shops: all commercial, free use (confectionery, quick food, tyre repair at Phase 2 entry). Power: government lines from both Modinagar and Hapur sides, 24/7. Security (gate, 12 hour night guard) known but NOT for the site. Satellite view: owner supplies own Google Earth screenshots and KML, never scrape imagery. Remove old website images from the board.
+
+- 2026-11-12 context only (do NOT mark or label on any map or page): the whole E sector in the Phase 1 layout is the Phase 1 extension.
+
+- 2026-11-13: v3 home design language LOCKED by the owner (see 02_Website/DESIGN-LANGUAGE.md). Illustrations are architect style ink drawings, the shed build is scroll scrubbed beside six text steps, the visit shutter lift is scrubbed, hero map zoom 3x faster with plus, minus, reset and double tap. Hedging disclaimers removed from the page; all changed lines listed in 02_Website/V3-HOME.md for the copywriter.
+
+- 2026-11-13 owner: the "no AI imagery" rule drops once the photographic direction is finalised. Open task photodirection (TODOS.md, board). Blender film route: research a lot, use open-source helpers and learn from existing work (RESEARCH-BLENDER.md).

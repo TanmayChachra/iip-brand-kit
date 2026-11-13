@@ -427,6 +427,19 @@
       "time": "20 min",
       "unlocks": "The rebuild of the home page and the rest of v3",
       "state": "open"
+    },
+    {
+      "id": "photodirection",
+      "title": "Finalise the photographic direction for the brand",
+      "why": "The 'no AI imagery' rule ends once the photo direction is finalised. Until then only real photos, stand-ins, drawings and stylised 3D. This also decides how we use AI-assisted images and how we improve the Google profile photos.",
+      "steps": [
+        "I research and draft 01_Brand/Photo-Direction/PHOTO-DIRECTION.md: mood, light, palette, subjects, shot list for the shoot, and the AI policy (what may be generated or edited, what must be real, labelling).",
+        "You pick references, answer the questions in it and approve. Then the rule in CLAUDE.md is replaced by the policy."
+      ],
+      "links": [],
+      "time": "30 min of your time",
+      "unlocks": "Photography for the website, posts and listings; AI-assisted imagery inside clear rules",
+      "state": "open"
     }
   ],
   "automation": [
