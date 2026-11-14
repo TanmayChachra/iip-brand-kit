@@ -31,3 +31,6 @@ FAIL on target: Lighthouse mobile home 87 to 89 (target 90); location 98, plot-m
 Gaps: Vale not run, form submit not browser-tested, road label tilt on plot maps, dist-q (tracked) kept, previews/dist locked (rerun package.mjs for nav, v1, kit before next full preview deploy), Base.astro dead code.
 Changes this pass: Consent.astro (banner pad after load, body margin so footer stays reachable), plotmaps.css road label halo. Uncommitted.
 Blocks go-live: nothing hard. Lead attaches domain and DNS.
+
+## LIVE 2026-11-14
+Production project iip-site, domain isapurindustrialpark.com attached, DNS CNAME @ added. www and .in redirect to the .com. Verified 200, HSTS, CSP, robots Allow, canonical, sitemap 200. Source committed (0f940619). Remaining: Search Console sitemap submit (owner), Cloudflare Web Analytics toggle, Business Profile website links, Bing import, print CTA redo, kit publish.

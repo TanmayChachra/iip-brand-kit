@@ -1,5 +1,8 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-14: the website is live
+You can now open https://isapurindustrialpark.com on any phone. It is mobile first, in Erode and the locked brand look, with the shed that builds itself as you scroll, all three phase maps, the new Where map with the Delhi-Meerut Expressway and the distance ladder, and new pages (how buying works, roads and freight, shops, layout approvals, plot maps, approvals, privacy, terms). Call and WhatsApp go to 98377 64222. The consent banner keeps Google Analytics off until a visitor accepts. The .in and www addresses redirect to the .com. Private previews of every version are at https://iipreview-nav.pages.dev/.
+
 ## 2026-11-13, brand kit brought in line with your latest decisions (local only, not published)
 - The whole brand kit is rebuilt locally. Headlines in every board, card, post and the kit page use Erode, text uses Inter, Montserrat stays only inside the logo. The logo is untouched.
 - One phone number everywhere in the kit (98377 64222). The second number is held and appears nowhere. Old kit copy that named water, drainage, Section 80, 100 acres or the 4 km expressway line is gone. The claims table now lists only what you allowed, plus what must never be said.

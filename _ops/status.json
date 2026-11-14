@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "workstreams": [
     {
       "id": "01_Brand",
@@ -11,9 +11,9 @@
     {
       "id": "02_Website",
       "agent": "web",
-      "state": "v3 home built, owner review",
-      "summary": "v3 home round 3 built locally: locked design language, ink-drawing art, scroll-linked shed build, map zoom. Not deployed. Inner pages and Approvals page not started.",
-      "next": "Owner feedback on the home, then inner pages and Approvals page, then deploy with a yes"
+      "state": "LIVE",
+      "summary": "Live at https://isapurindustrialpark.com since 2026-11-14: mobile first, locked design, consent and security headers, 26 pages. Home Lighthouse mobile 87 to 89, others 96 to 98.",
+      "next": "Submit sitemap in Search Console, enable Cloudflare Web Analytics, speed polish of the home, GEO content, rank tracker"
     },
     {
       "id": "03_SEO",
@@ -54,11 +54,12 @@
   "owner_tasks": [
     {
       "id": "v3pick",
-      "title": "Look at the website and say what to change",
-      "why": "The v3 home and all inner pages are built locally (not deployed). Design language is locked. The hero map is being fixed and regenerated from the final maps.",
+      "title": "Site is live: look at it on your phone and tell me what to change",
+      "why": "https://isapurindustrialpark.com is live. Previews of every version are at https://iipreview-nav.pages.dev/.",
       "steps": [
-        "Open the launcher on your Desktop or the local preview and tell me what to change.",
-        "Then we deploy (see the deploy card)."
+        "Open the live site on your phone, scroll all pages, and send what to change.",
+        "Submit the sitemap in Search Console (Sitemaps, add sitemap-index.xml).",
+        "Enable Cloudflare Web Analytics in the Pages project settings (or tell me to guide you)."
       ],
       "links": [],
       "time": "20 min",
@@ -67,17 +68,15 @@
     },
     {
       "id": "deploy",
-      "title": "Deploy and share links with your friend",
+      "title": "Deployed (done)",
       "why": "The site is a static build: no servers. Cloudflare Pages hosts it free. Every version can get its own link.",
       "steps": [
-        "Say 'deploy' and I create the Cloudflare Pages project and publish the preview first (noindex, private link, optional Cloudflare Access so only your friend's email can open it).",
-        "Then we point isapurindustrialpark.com at it when you approve.",
-        "To show older variants (v1, v2, v3 home) I can publish each as its own preview link from the saved builds."
+        "Live on isapurindustrialpark.com; previews at iipreview-*.pages.dev."
       ],
       "links": [],
       "time": "5 min of yours",
       "unlocks": "Links for your friend, then the live site",
-      "state": "open"
+      "state": "done"
     },
     {
       "id": "google",
@@ -185,11 +184,11 @@
     {
       "group": "Running or next on my side",
       "items": [
-        "Hero blank fix and map data regeneration (running).",
-        "Copywriter and SEO agent research, then a content plan to fill the blank site (running).",
-        "Use the Google Earth boundaries for real positions on the maps and the film.",
-        "Deploy previews on Cloudflare Pages when you say so.",
-        "Read the three Business Profiles when you approve the small paid read."
+        "Site speed polish of the home (Lighthouse 87 to 89, target 90 plus).",
+        "GEO and AI search research and content (after the weekly reset), then more pages.",
+        "Print CTA redo and brand kit additions, then publish the kit.",
+        "GA4 tags and events, Clarity through GTM after consent, rank tracker and site audit in OpenSEO.",
+        "Business Profile edits for your approval (website link, phone)."
       ]
     },
     {
