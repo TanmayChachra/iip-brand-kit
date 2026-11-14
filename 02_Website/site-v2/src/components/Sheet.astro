@@ -1,0 +1,19 @@
+---
+// Ink drawing for pages that have no drawing of their own: a loaded truck on the 50 ft RCC road, with a street light and a tree. Same style as Vig.astro (see DESIGN-LANGUAGE.md).
+import Truck from './Truck.astro';
+interface Props { uid: string; label: string }
+const { uid, label } = Astro.props;
+const soil = Array.from({ length: 66 }, (_, i) => `M${i * 9 + 6} 210l-5 7`).join('');
+---
+<svg class="vig ink" viewBox="0 0 600 262" role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg">
+  <title id={`${uid}-t`}>{label}</title>
+  <path class="o gl" d="M0 210H600"/>
+  <path class="o3" d={soil}/>
+  <path class="o" d="M0 232H600M0 244H600"/><path class="o3 da" d="M0 238H600"/>
+  <text class="tx" x="300" y="258" text-anchor="middle">50 FT RCC ROAD</text>
+  <g transform="translate(70 209) scale(1.85)"><Truck/></g>
+  <path class="o" d="M470 210V84M470 84H500M500 84V92"/><path class="o fy" d="M494 92H512V98H494Z"/>
+  <path class="o3" d="M500 98L497 210"/>
+  <path class="o" d="M556 210V150"/><circle class="o fg2" cx="556" cy="128" r="26"/><path class="o3" d="M556 150V118M556 138L546 126M556 134L566 122"/>
+  <text class="tx" x="470" y="72" text-anchor="middle">STREET LIGHT</text>
+</svg>

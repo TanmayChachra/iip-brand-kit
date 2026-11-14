@@ -5,7 +5,7 @@ import { WHATSAPP } from '../lib/phones.mjs';
 const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT || '';
 const wa = `https://wa.me/${import.meta.env.PUBLIC_WHATSAPP || WHATSAPP}`;
 ---
-<form class="form" action={endpoint || wa} method={endpoint ? 'post' : 'get'} target={endpoint ? undefined : '_blank'} rel="noopener" data-endpoint={endpoint} data-sent="Your site visit request is in. We call to confirm the time." data-wa={endpoint ? undefined : ''} novalidate>
+<form class="form" aria-label="Site visit request" action={endpoint || wa} method={endpoint ? 'post' : 'get'} target={endpoint ? undefined : '_blank'} rel="noopener" data-endpoint={endpoint} data-sent="Your site visit request is in. We call to confirm the time." data-wa={endpoint ? undefined : ''} novalidate>
   <input type="hidden" name="text" value="Hello, I want to book a site visit at Isapur Industrial Park.">
   <div class="form__pair">
     <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" spellcheck="false" required aria-describedby="f-name-err"><p class="field__error" id="f-name-err" hidden>Write the name we should ask for.</p></div>
@@ -15,9 +15,9 @@ const wa = `https://wa.me/${import.meta.env.PUBLIC_WHATSAPP || WHATSAPP}`;
     <div class="field"><label for="f-size">Plot size you need</label><select id="f-size" name="plot_size"><option>From 300 sq yards</option><option>Larger</option><option>Not sure yet</option></select></div>
     <div class="field"><label for="f-day">Day you can visit</label><input id="f-day" name="day" type="date" required aria-describedby="f-day-err"><p class="field__error" id="f-day-err" hidden>Choose the day you can come.</p></div>
   </div>
-  <div class="btn-row"><button class="btn btn--primary" type="submit" data-cta-id="form-submit" data-section="book">Book a site visit</button></div>
+  <div class="btn-row"><button class="b b--g" type="submit" data-cta-id="form-submit" data-section="book">Book a site visit</button></div>
   <p class="form__status" role="status" data-form-status></p>
-  <p class="t-small">The button opens WhatsApp with your details. We call to confirm the time.</p>
+  <p class="t-small">The button opens WhatsApp with your details. We call to confirm the time. Your details are used only to call you back, see the <a href="/privacy/">privacy page</a>.</p>
 </form>
 <script is:inline>
   // fills the WhatsApp message from the fields before the browser follows the form's link; without script the default line is sent

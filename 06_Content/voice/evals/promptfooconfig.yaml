@@ -1,0 +1,37 @@
+# Voice eval. Offline: the built-in echo provider returns each sample line unchanged, so no model and no API key.
+# Run: PROMPTFOO_DISABLE_TELEMETRY=1 PROMPTFOO_DISABLE_UPDATE=1 npx promptfoo eval --no-cache --no-write
+description: IIP voice check of sample copy against APPROVED and REJECTED lines
+prompts:
+  - "{{line}}"
+providers:
+  - echo
+tests:
+  # Good lines must pass every rule.
+  - &good
+    description: approved, shops line
+    vars: { line: "Shops for the people who serve the factories" }
+    assert: &goodrules
+      - type: not-icontains-any
+        value: [premium, luxury, world-class, unmatched, dream, hurry, limited, exclusive, guaranteed, "100%", water, secure, security, resale, not a promise, may vary, subject to, "92195", "98370", amul, patanjali, inox]
+      - type: javascript
+        value: 'output.indexOf(String.fromCharCode(8212)) < 0 && output.trim().split(/\s+/).length <= 18'
+  - description: approved, tagline
+    vars: { line: "The Groundwork for Growth" }
+    assert: *goodrules
+  - description: approved, gate line
+    vars: { line: "Petrol pump at the entry and exit" }
+    assert: *goodrules
+  - description: new line in voice
+    vars: { line: "Walk the 50 ft road, see the lights, then call 98377 64222." }
+    assert: *goodrules
+  # Rejected lines: the eval passes only when the rules DETECT the problem.
+  - description: REJECTED line is caught, defensive
+    vars: { line: "It is not a promise that every plot is available." }
+    assert:
+      - type: icontains-any
+        value: [not a promise, may vary, subject to]
+  - description: REJECTED line is caught, hype
+    vars: { line: "Premium plots, hurry, limited stock!" }
+    assert:
+      - type: icontains-any
+        value: [premium, hurry, limited]

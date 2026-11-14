@@ -1,35 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import HeroPic from '../../components/HeroPic.astro';
+import Inner from '../../layouts/Inner.astro';
 import { fillDeep } from '../../lib/phones.mjs';
-import { sections } from '../../lib/sections.mjs';
-import { photoFig, mapFig, pick } from '../../lib/photos.mjs';
+import { parts } from '../../lib/inner.mjs';
 export async function getStaticPaths() {
   const posts = await getCollection('posts', (p) => !p.data.draft);
   return posts.map((p) => ({ params: { slug: p.id }, props: { entry: p } }));
 }
 const { entry } = Astro.props;
 const d = fillDeep(entry.data);
-const secs = await sections(entry.body, 5);
+const secs = await parts(entry.body);
 const path = `/blog/${entry.id}/`;
-const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>';
 ---
-<Base title={d.title} description={d.description} pageType="blog" path={path} article={{ date: d.date }} faq={d.faq} crumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/blog/' }, { name: d.h1, href: path }]}>
-  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
-    <HeroPic k={'verge-palms'} alt="" pos="50% 60%" />
-    <div class="wrap"><div class="hero-text"><div class="hero__text">
-      <h1 id="hero-h">{d.h1}</h1>
-      <p class="hero__lead">{d.description}</p>
-      <div class="btn-row"><a class="btn btn--primary" href="/contact/#book" data-cta-id="hero-book" data-section="hero">Book a site visit<Fragment set:html={arrow} /></a></div>
-    </div></div></div>
-  </section>
+<Inner title={d.title} description={d.description} path={path} pageType="blog" article={{ date: d.date }} faq={d.faq} crumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/blog/' }, { name: d.h1, href: path }]} eyebrow="Guide" h1={d.h1} lead={d.lead ?? d.description} vis="truck">
   {secs.map((g, i) => (
-    <section class="section sec" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`} style={`--h: ${g.w > 170 ? 2 : 1}; --hm: ${g.w > 125 ? 2 : 1}`}>
-      <div class="wrap grid grid--top">
-        <div class="span-6"><div class="section-head"><h2 id={`s${i + 1}-h`}>{g.h}</h2></div><div class="prose" set:html={g.html}></div></div>
-        <Fragment set:html={photoFig(pick(entry.id, i, 'verge-palms'), 'start-7', i === 0)} />
-      </div>
+    <section class="sec is" id={`s${i + 1}`} aria-labelledby={`s${i + 1}-h`}>
+      <div class="wrap isg"><div class="isg__h"><h2 id={`s${i + 1}-h`}>{g.h}</h2></div><div class="isg__b prose" set:html={g.html}></div></div>
     </section>
   ))}
-</Base>
+</Inner>

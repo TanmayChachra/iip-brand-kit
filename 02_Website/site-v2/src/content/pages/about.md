@@ -2,39 +2,31 @@
 title: About Isapur Industrial Park
 description: What Isapur Industrial Park is, who it is for and where it stands. Industrial plots on the Hapur-Modinagar Road in Ghaziabad district.
 h1: About Isapur Industrial Park
-lead: Isapur Industrial Park, or IIP, sells industrial plots at Yusufpur Isapur on the Hapur-Modinagar Road, near Bhojpur, in Ghaziabad district. It is made for local factory owners and small industrial buyers.
+lead: Isapur Industrial Park, or IIP, has industrial plots at Yusufpur Isapur on the Hapur-Modinagar Road, near Bhojpur, in Ghaziabad district.
 pageType: about
 ---
 
-## The short answer
-
-
-
 ## Who the plots are for
 
-- First time owners who want their own workshop, not a rented shed.
+- First-time owners who want their own workshop, not a rented shed.
 - Small manufacturers who need room to grow and a road a loaded truck can use.
-- Storage and warehouse users who need easy access to the expressway.
+- Warehouse and godown owners who want the expressway close.
+- Investors who want a plot in a park with roads, lights and power in place.
 
-## What the plots have on site
+## What is inside the park
 
-- 50 ft RCC roads
-- Street lighting
-- Planted greenery
-- A short drive to the Delhi-Meerut Expressway: 4.7 km by road to the on-ramp at Bhojpur, about 8 minutes
+- 50 ft RCC roads.
+- Street lighting and planted greenery.
+- Power 24/7.
+- A petrol pump at the entry and exit.
+- Shops for the people who serve the factories.
 
-Plots start from 300 sq yards.
+Plots run from 300 sq yards. The Delhi-Meerut Expressway on-ramp at Bhojpur is 4.2 km by road, about 5 minutes.
 
 ## How we sell plots
 
-We show you the site before we ask for anything. We give distances as road distances and say when a figure is a straight line. We tell you which papers to read and suggest you read them with your own advisor. We say what is on site today, and mark the rest as coming only when we have confirmed it.
+We show you the site before we ask for anything. We show you the papers and you bring your own advisor. We tell you what is for sale today and we give distances by road.
 
-## Our location
+## Where to find us
 
-Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022.
-
-[See the location page](/location/)
-
-## Talk to us
-
-[WhatsApp us](https://wa.me/{{wa}}) · [Book a site visit](/contact/)
+Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. See the [location page](/location/) or the [plot maps](/plot-maps/).

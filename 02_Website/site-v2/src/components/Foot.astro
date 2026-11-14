@@ -1,0 +1,29 @@
+---
+// Footer shared by the home and every inner page. `cta` adds the closing call and WhatsApp strip (inner pages).
+import { SITE, waLink } from '../lib/site';
+import { ICON_CALL, ICON_WA } from '../lib/icons.mjs';
+interface Props { cta?: boolean }
+const { cta = false } = Astro.props;
+const tel = SITE.phones[0];
+const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road';
+---
+<footer class="foot" id="contact">
+  <div class="wrap">
+    {cta && (
+      <div class="fcta">
+        <div><h2>Come and see the plots</h2><p>Open 8 am to 8 pm, every day except Tuesday.</p></div>
+        <div class="btns">
+          <a class="b b--y" href={`tel:${tel.tel}`} data-cta-id="close-call" data-section="close"><Fragment set:html={ICON_CALL} />Call {tel.display}</a>
+          <a class="b b--w" href={waLink()} rel="noopener" data-cta-id="close-wa" data-section="close"><Fragment set:html={ICON_WA} />WhatsApp</a>
+        </div>
+      </div>
+    )}
+    <div class="fgrid">
+      <div><h3>Isapur Industrial Park</h3><address>Hapur-Modinagar Road,<br>Yusufpur Isapur, Ghaziabad, UP 201022</address><a class="fphone" href={`tel:${tel.tel}`} data-cta-id="footer-call" data-section="footer">{tel.display}</a></div>
+      <div><h3>Visit</h3><ul><li><a href="/location/">Location</a></li><li><a href="/neighbours/">Around us</a></li><li><a href="/roads-and-freight/">Roads and freight</a></li><li><a href={dir} rel="noopener">Directions</a></li></ul></div>
+      <div><h3>Plots</h3><ul><li><a href="/industrial-plots/">Plot sizes</a></li><li><a href="/plot-maps/">Plot maps</a></li><li><a href="/how-buying-works/">How buying works</a></li><li><a href="/approvals/">Approvals</a></li><li><a href="/layout-approvals/">Layout approval</a></li><li><a href="/shops/">Shops</a></li><li><a href="/amenities/">Roads and lighting</a></li><li><a href="/faq/">Questions</a></li></ul></div>
+      <div><h3>Industrial plots in</h3><ul><li><a href="/location/industrial-plots-in-modinagar/">Modinagar</a></li><li><a href="/location/industrial-plots-in-hapur/">Hapur</a></li><li><a href="/location/industrial-plots-in-ghaziabad/">Ghaziabad</a></li><li><a href="/location/industrial-plots-near-delhi-meerut-expressway/">Near the expressway</a></li></ul></div>
+    </div>
+    <div class="flegal"><span>&copy; 2026 Isapur Industrial Park</span><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><button type="button" data-consent-open>Cookie settings</button><a href="/blog/">Guides</a><span class="credit">Map data from OpenStreetMap contributors (ODbL). Layout drawing by the park's architect. Illustrations are drawn for the park.</span></div>
+  </div>
+</footer>

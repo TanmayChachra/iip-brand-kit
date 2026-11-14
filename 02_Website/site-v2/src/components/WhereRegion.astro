@@ -1,0 +1,104 @@
+---
+// Home "Where" section: regional connectivity map (OSM, lazy loaded geometry) plus the distance ladder. Numbers: OSRM driving, 2026-11-13, free-flow.
+import d from '../assets/where-pins.json';
+const pos = (p: number[]) => `left:${p[0]}%;top:${p[1]}%`;
+// ladder order = distance order. k = map key, side = label side on the map, sub = small line
+const rows = [
+  { k: 'ramp', n: 'Delhi-Meerut Expressway entry', s: 'Bhojpur', km: '4.2', v: 4.2, side: 'r', short: 'Expressway entry' },
+  { k: 'mod', n: 'Modinagar', s: '', km: '10.7', v: 10.7, side: 'l' },
+  { k: 'hap', n: 'Hapur', s: '', km: '13.6', v: 13.6, side: 'l' },
+  { k: 'epe', n: 'Eastern Peripheral Expressway junction', s: 'Kallu Garhi', km: '17.8', v: 17.8, side: 'l', short: 'EPE junction' },
+  { k: 'meerut', n: 'Meerut', s: '', km: '29.9', v: 29.9, side: 'l' },
+  { k: 'delhi', n: 'Delhi, Anand Vihar', s: '', km: '46', v: 46, side: 'b', short: 'Delhi' },
+  { k: 'dadri', n: 'CONCOR container depot at Dadri', s: '', km: '46.3', v: 46.3, side: 'r', short: 'Dadri depot' },
+];
+const { ladder = true } = Astro.props;
+const pins = d.pins as Record<string, number[]>;
+const ctx = d.ctx as Record<string, number[]>;
+---
+<div class="wr" data-wr data-view="region">
+  <figure class="wr__map" data-wr-map role="group" aria-labelledby="wr-cap">
+    <div class="wr__tabs" role="group" aria-label="Map view">
+      <button type="button" class="wr__tab" data-v="region" aria-pressed="true">Region</button>
+      <button type="button" class="wr__tab" data-v="park" aria-pressed="false">The park from above</button>
+    </div>
+    <div class="wr__stage" style={`--px:${pins.park[0]}%;--py:${pins.park[1]}%`}>
+      <div class="wr__lay wr__lay--r" data-lay="region"></div>
+      <div class="wr__lay wr__lay--p" data-lay="park"></div>
+
+      <div class="wr__pins" data-pins>
+        <span class="wr__x" style={`${pos(d.xl)};--a:${d.xl[2]}deg`} aria-hidden="true"><svg viewBox="0 0 24 28"><path d="M12 1 22.5 4.5v10.2c0 6.2-4.2 10.4-10.5 12.3C5.700 25.100 1.500 20.900 1.500 14.700V4.500Z" fill="#111827" stroke="#FFD600" stroke-width="2"/><text x="12" y="17.500" text-anchor="middle" font-size="9.500" font-weight="800" fill="#FFD600" font-family="Inter,sans-serif">NE3</text></svg><span><i>Delhi-Meerut </i>Expressway</span></span>
+        {Object.entries(ctx).map(([k, p]) => <span class={`wr__c wr__c--${k}`} style={pos(p)}>{k === 'ghz' ? 'Ghaziabad' : 'Noida'}</span>)}
+        {rows.map((r, i) => (
+          <button type="button" class={`wr__p wr__p--${r.side}`} style={pos(pins[r.k])} data-k={r.k} aria-label={`${r.n}, ${r.km} km`}><i class="wr__d"><b>{i + 1}</b></i><span class="wr__l">{r.short ?? r.n}</span></button>
+        ))}
+        <span class="wr__pk" style={pos(pins.park)}><i class="wr__r"></i><i class="wr__r wr__r2"></i><img src="/brand/logo-badge-only.svg" width="48" height="48" alt=""></span>
+      </div>
+
+      <div class="wr__ppins" data-ppins aria-hidden="true">
+        <span class="wr__ph wr__ph--1" style={pos(d.pk.ph[0])}>Phase 1</span>
+        <span class="wr__ph wr__ph--2" style={pos(d.pk.ph[1])}>Phase 2</span>
+        <span class="wr__ph wr__ph--3" style={pos(d.pk.ph[2])}>Phase 3</span>
+        <span class="wr__rd" style={`${pos(d.pk.road)};--a:${d.pk.road[2]}deg`}>Hapur-Modinagar Road</span>
+        <span class="wr__go" style={`--a:${d.pk.ramp}deg`}><i></i><b>Delhi-Meerut Expressway, 4.2 km by road</b></span>
+        <span class="wr__pkb" style={pos(d.pk.park)}><img src="/brand/logo-badge-only.svg" width="40" height="40" alt=""></span>
+      </div>
+      <figcaption class="wr__a" id="wr-cap">Map data from OpenStreetMap contributors.<span class="wr__ap"> Phase outlines approximate.</span></figcaption>
+    </div>
+    <p class="sr" id="wr-d">Map of the region around the park. From the park a road runs 4.2 km to the Delhi-Meerut Expressway entry at Bhojpur. The expressway runs south west to Ghaziabad and Delhi and north east to Meerut. The Eastern Peripheral Expressway crosses it 17.8 km from the park. Modinagar is 10.7 km and Hapur 13.6 km on the Hapur-Modinagar Road. The CONCOR container depot at Dadri is 46.3 km by road. The distance list next to the map gives every figure.</p>
+  </figure>
+
+  {ladder && <div class="wr__ladder">
+    <ol class="lad" aria-label="Driving distance from the park">
+      {rows.map((r, i) => (
+        <li><button type="button" class="lad__r" data-k={r.k} style={`--v:${(r.v / 46.3).toFixed(3)};--i:${i}`}><span class="lad__n">{i + 1}</span><span class="lad__t"><b>{r.n}</b>{r.s && <em>{r.s}</em>}</span><span class="lad__km"><b>{r.km}</b><small>km</small></span><i class="lad__bar" aria-hidden="true"></i></button></li>
+      ))}
+    </ol>
+    <p class="lad__note">Driving distances from the park, measured on the road, no traffic.</p>
+  </div>}
+</div>
+<script>
+  // lazy: map geometry loads when the section is near, routes draw once when it is on screen, then stay at rest
+  const root = document.querySelector('[data-wr]') as HTMLElement | null;
+  if (root) {
+    const lay = (n: string) => root.querySelector(`[data-lay="${n}"]`) as HTMLElement;
+    const rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let loaded = false;
+    const load = () => {
+      if (loaded) return; loaded = true;
+      fetch('/data/where-region.json').then((r) => r.json()).then((j) => {
+        lay('region').innerHTML = j.region; lay('park').innerHTML = j.park;
+        root.dataset.ready = '';
+        if (!rm) { root.dataset.m = 'pre'; if (vis) root.dataset.m = 'go'; }
+      }).catch(() => { loaded = false; });
+    };
+    let vis = false;
+    new IntersectionObserver(([e]) => { if (e.isIntersecting) load(); }, { rootMargin: '700px 0px' }).observe(root);
+    new IntersectionObserver(([e]) => {
+      vis = e.isIntersecting;
+      root.toggleAttribute('data-live', vis);
+      if (vis && root.dataset.m === 'pre') root.dataset.m = 'go';
+    }, { threshold: 0.3 }).observe(root.querySelector('[data-wr-map]')!);
+
+    const hi = (k: string | null) => { if (k) root.dataset.hi = k; else delete root.dataset.hi; };
+    root.querySelectorAll<HTMLElement>('[data-k]').forEach((el) => {
+      const k = el.dataset.k!;
+      el.addEventListener('mouseenter', () => hi(k));
+      el.addEventListener('mouseleave', () => hi(null));
+      el.addEventListener('focus', () => hi(k));
+      el.addEventListener('blur', () => hi(null));
+      el.addEventListener('click', () => {
+        root.dataset.hi = k; root.dataset.pin = k;
+        if (root.dataset.view !== 'region') setView('region');
+        const m = root.querySelector('[data-wr-map]') as HTMLElement; const b = m.getBoundingClientRect();
+        if (b.top < 60 || b.bottom > innerHeight) m.scrollIntoView({ block: 'nearest', behavior: rm ? 'auto' : 'smooth' });
+      });
+    });
+    const setView = (v: string) => {
+      root.dataset.view = v;
+      root.querySelectorAll<HTMLElement>('.wr__tab').forEach((t) => t.setAttribute('aria-pressed', String(t.dataset.v === v)));
+    };
+    root.querySelectorAll<HTMLElement>('.wr__tab').forEach((t) => t.addEventListener('click', () => setView(t.dataset.v!)));
+    root.querySelector('.wr__pk')!.addEventListener('click', () => setView('park'));
+  }
+</script>

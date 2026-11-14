@@ -93,4 +93,4 @@ Go once in the day with questions and once at a different hour to see how the si
 
 If you want to see an example of what to check, visit Isapur Industrial Park at Yusufpur Isapur on the Hapur-Modinagar Road. Plots start from 300 sq yards, and the park has 50 ft RCC roads, street lighting and planted greenery. [Plot sizes and how buying works](/industrial-plots/) · [Buying checklist](/blog/industrial-plot-buying-checklist/) · [Questions and answers](/faq/)
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)

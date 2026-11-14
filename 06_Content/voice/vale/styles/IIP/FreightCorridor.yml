@@ -1,0 +1,10 @@
+extends: existence
+message: "'%s': the park is not on or connected to the freight corridor. Say container depot at Dadri (CONCOR) only."
+level: error
+ignorecase: true
+tokens:
+  - '(on|connected to|next to|beside|adjacent to|access to|near)\s+(the\s+)?(western\s+|eastern\s+)?(dedicated\s+)?freight corridor'
+  - '\bDFC\b'
+  - 'modinagar exit'
+  - goods station
+  - goods yard

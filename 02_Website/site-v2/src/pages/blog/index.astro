@@ -1,23 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
-import Base from '../../layouts/Base.astro';
-import HeroPic from '../../components/HeroPic.astro';
-import { photoFig } from '../../lib/photos.mjs';
+import Inner from '../../layouts/Inner.astro';
 const posts = (await getCollection('posts', (p) => !p.data.draft)).sort((a, b) => +b.data.date - +a.data.date);
-const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>';
 ---
-<Base title="Industrial plot guides | Isapur Industrial Park" description="Plain guides for factory owners: how to choose an industrial plot and what to check before you buy." pageType="blog" path="/blog/" crumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/blog/' }]}>
-  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
-    <HeroPic k={'road-green'} alt="" pos="50% 50%" />
-    <div class="wrap"><div class="hero-text"><div class="hero__text">
-      <h1 id="hero-h">Guides for industrial plot buyers</h1>
-      <p class="hero__lead">Two short guides for buyers of plots from 300 sq yards.</p>
-      <div class="btn-row"><a class="btn btn--primary" href="/contact/#book" data-cta-id="hero-book" data-section="hero">Book a site visit<Fragment set:html={arrow} /></a></div>
-    </div></div></div>
+<Inner title="Industrial plot guides | Isapur Industrial Park" description="Plain guides for factory owners: how to choose an industrial plot and what to check before you buy." path="/blog/" pageType="blog" crumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/blog/' }]} eyebrow="Guides" h1="Guides for industrial plot buyers" lead="Two short guides for buyers of plots from 300 sq yards.">
+  <section class="sec is" id="guides" aria-labelledby="guides-h">
+    <div class="wrap isg">
+      <div class="isg__h"><h2 id="guides-h">All plot guides</h2></div>
+      <div class="isg__b"><div class="postlist">{posts.map((p) => <a href={`/blog/${p.id}/`}><h3>{p.data.h1}</h3><p>{p.data.description}</p><span class="more">Read the guide</span></a>)}</div></div>
+    </div>
   </section>
-  <section class="section sec" id="guides" aria-labelledby="guides-h"><div class="wrap grid grid--top">
-    <div class="span-6"><div class="section-head"><h2 id="guides-h">All plot guides</h2></div>
-    <div class="postlist">{posts.map((p) => <a href={`/blog/${p.id}/`}><h3 class="t-card">{p.data.h1}</h3><p>{p.data.description}</p></a>)}</div></div>
-    <Fragment set:html={photoFig('factory-yard', 'start-7', true)} />
-  </div></section>
-</Base>
+</Inner>

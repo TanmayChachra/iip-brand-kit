@@ -23,8 +23,8 @@ We do not sell your details. We do not send your enquiry to other companies. [OW
 
 ## Your choices
 
-You can ask us to delete your enquiry by calling 98370 57800. You can block analytics in your browser settings. [OWNER TO CONFIRM: cookie notice and consent banner approach]
+You can ask us to delete your enquiry by calling 98377 64222. You can block analytics in your browser settings. [OWNER TO CONFIRM: cookie notice and consent banner approach]
 
 ## Contact
 
-Isapur Industrial Park, Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. Phone 98370 57800.
+Isapur Industrial Park, Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. Phone 98377 64222.

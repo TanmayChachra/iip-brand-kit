@@ -1,0 +1,1184 @@
+=== location
+1440x900  4 screens  42 FAIL  16 WARN
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Come and see the plots" while the page scrolls: part of the line shows beside it  [1440-18-nav-covers.jpg]
+  FAIL overlap-text    figure.wr__map > div.wr__stage > div.wr__lay.wr__lay--r > svg.wr__svg
+       lies over the text "GHAZIABAD" (div.wr__pins > span.wr__c.wr__c--ghz)  [1440-01-overlap-text.jpg]
+  FAIL no-visual       section#s2  "Distances by road"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-16-no-visual.jpg]
+  FAIL text-only       section#s4  "Industrial plots by town"
+       the closing section is only text: no picture, icon, mock or effect in it  [1440-19-text-only.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #f2f4f6 ("Location"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd ones out: "Call 98377 64222", "WhatsApp"  [1440-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #f2f4f6 ("Location"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "WhatsApp", "Accept"  [1440-20-button-styles.jpg]
+  FAIL button-styles   (the page)
+       6 button styles on the page: soft, fill #f2f4f6 x1 ("Location"); soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-03-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-05-same-action.jpg]
+  FAIL cta             section#s4  "Industrial plots by town"
+       the last section before the footer ends with no button  [1440-21-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-22-off-grid.jpg]
+  FAIL tilt            figure.wr__map > div.wr__stage > div.wr__pins > span.wr__x  "NE3 DELHI-MEERUT EXPRESSWAY"
+       rotated -49.7°  [1440-06-tilt.jpg]
+  FAIL contrast        div.wr__stage > div.wr__pins > span.wr__x > span  "DELHI-MEERUT EXPRESSWAY"
+       body text over a effect reads at 1.2:1 at its worst tenth (needs 4.5:1), on a busy ground (and 1 more like it: "DELHI-MEERUT")  [1440-07-contrast.jpg]
+  FAIL visual-caption  figcaption#wr-cap  "Map data from OpenStreetMap contributors"
+       a figcaption under the drawing (svg): "Map data from OpenStreetMap contributors..."; no caption or description under any image, render or visual (house rule)  [1440-08-visual-caption.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-visible   figure.wr__map > div.wr__stage:nth-of-type(2) > div.wr__pins:nth-of-type(3) > button.wr__p.wr__p--r:nth-of-type(1)  "Delhi-Meerut Expressway entry, 4.2 km"
+       Tab stop 15, button "Delhi-Meerut Expressway entry, 4.2 km": the focus lands on something you cannot see  [1440-28-focus-visible.jpg]
+  FAIL focus-visible   figure.wr__map > div.wr__stage:nth-of-type(2) > div.wr__pins:nth-of-type(3) > button.wr__p.wr__p--l:nth-of-type(2)  "Modinagar, 10.7 km"
+       Tab stop 16, button "Modinagar, 10.7 km": the focus lands on something you cannot see  [1440-29-focus-visible.jpg]
+  FAIL focus-visible   figure.wr__map > div.wr__stage:nth-of-type(2) > div.wr__pins:nth-of-type(3) > button.wr__p.wr__p--l:nth-of-type(3)  "Hapur, 13.6 km"
+       Tab stop 17, button "Hapur, 13.6 km": the focus lands on something you cannot see  [1440-30-focus-visible.jpg]
+  FAIL focus-visible   figure.wr__map > div.wr__stage:nth-of-type(2) > div.wr__pins:nth-of-type(3) > button.wr__p.wr__p--l:nth-of-type(4)  "Eastern Peripheral Expressway junction, "
+       Tab stop 18, button "Eastern Peripheral Expressway junction, 17.8 km": the focus lands on something you cannot see  [1440-31-focus-visible.jpg]
+  FAIL hero-screen     section#hero  "HomeLocation and DistancesLocationWhere "
+       the hero ends at 865px on a 900px screen, 35px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#s1  "Find the parkHapur-Modinagar Road, Yusuf"
+       35px of the next section shows on the first screen (from 865px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s3  "The road to the plotsThe Hapur-Modinagar"
+       the section is 187px tall (0.2 screens), 713px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s1  "Find the parkHapur-Modinagar Road, Yusuf"
+       the section is 202px tall (0.2 screens), 698px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#s4  "Industrial plots by town Industrial plot"
+       the section is 318px tall (0.4 screens), 582px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: "Distances by road From t", "Come and see the plotsOp") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 2211px, 411px below the screen grid (2 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s2  "Distances by road From the park By road "
+       the section starts at 1067px, 167px below the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s3  "The road to the plotsThe Hapur-Modinagar"
+       the section starts at 1707px, 93px above the screen grid (2 x 900px): sections start on whole screens (and 2 more like it: "Industrial plots by town", "Find the parkHapur-Modin") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s1  "Find the parkHapur-Modinagar Road, Yusuf"
+       the section's content does not fit it: its lowest content ends 151px below its top, past 130px (the section less 72px of bottom padding) (and 3 more like it: "Industrial plots by town", "Distances by road From t", "The road to the plotsThe") (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#s4-h  "Industrial plots by town"
+       the screen at scroll 1707px (the top of section 4) shows 318px of section 5 and the heading of section 5 whole and the content of 3 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#s4-h  "Industrial plots by town"
+       the screen at scroll 1800px (stride 2) shows 318px of section 5 and the heading of section 5 whole and the content of 2 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     section#s4  "Industrial plots by town Industrial plot"
+       the screen at scroll 1893px (the top of section 5) shows 246px of section 5 and the content of 2 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (and 4 more like it: scroll 1067px, scroll 865px, scroll 900px) (SR-4)
+  FAIL one-heading     h2#s2-h  "Distances by road"
+       headings of two sections show whole on one screen at 28 of 41 scroll positions (68.3%; at scroll 300, 350, 400, 450px), here with "Find the park": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeLocation and Distanc") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeLocation and DistancesLocationWhere "
+       the two columns of the split start 134px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeLocation and DistancesLocationWhere "
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#s2 > div.wrap.isg  "Distances by road From the park By road "
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+390x844  7 screens  15 FAIL  7 WARN
+  FAIL overlap-text    figure.wr__map > div.wr__stage > div.wr__lay.wr__lay--r > svg.wr__svg
+       lies over the text "GHAZIABAD" (div.wr__pins > span.wr__c.wr__c--ghz)  [390-09-overlap-text.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-20-collide.jpg]
+  FAIL cut-text        div.wr__stage > div.wr__pins > button.wr__p.wr__p--r:nth-of-type(1) > span.wr__l  "EXPRESSWAY ENTRY"
+       cut 22px at the right by the overflow of div.ih__v > div.wr > figure.wr__map > div.wr__stage  [390-01-cut-text.jpg]
+  FAIL no-visual       section#s2  "Distances by road"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-14-no-visual.jpg]
+  FAIL text-only       section#s4  "Industrial plots by town"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-15-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-10-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); the odd ones out: "Accept", "Call 98377 64222", "WhatsApp"  [390-18-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, fill #ffffff, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-19-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-03-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-04-same-action.jpg]
+  FAIL cta             section#s4  "Industrial plots by town"
+       the last section before the footer ends with no button  [390-16-cta.jpg]
+  FAIL tilt            figure.wr__map > div.wr__stage > div.wr__pins > span.wr__x  "NE3 EXPRESSWAY"
+       rotated -49.7°  [390-11-tilt.jpg]
+  FAIL contrast        div.wr__stage > div.wr__pins > span.wr__x > span  "EXPRESSWAY"
+       body text over a effect reads at 1.2:1 at its worst tenth (needs 4.5:1), on a busy ground  [390-12-contrast.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 266px of the section above, its heading "Find the park" on screen  [390-21-section-tile.jpg]
+  FAIL hero-fill       [1152] section#s1  "Find the park"
+       the next section shows on the first screen: it starts at 807px on a 864px screen (the hero ends at 757px) (also at 1024)  [sweep-1152-01-hero-fill.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-04-collide.jpg]
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          WARN copy-headline          
+  PASS copy-fact              PASS copy-headings          WARN copy-buttons           
+  FAIL contrast               PASS text-contrast          PASS body-size              
+  PASS busy-ground            PASS section-gaps           WARN proximity              
+  FAIL visual-caption         PASS visual-empty           FAIL effect-kind            
+  PASS hero-enter             WARN moment-none            PASS street-number          
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+total  59 FAIL  26 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\location\.taste-skill\consistency)
+=== faq
+1440x900  4 screens  40 FAIL  13 WARN
+  FAIL hero-fill       section#q1  "Plots"
+       the next section shows on the first screen: it starts at 594px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Privacy" while the page scrolls: part of the line shows beside it  [1440-19-nav-covers.jpg]
+  FAIL text-only       section#q1  "Plots"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [1440-02-text-only.jpg]
+  FAIL text-only       section#q2  "Buying a plot"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [1440-13-text-only.jpg]
+  FAIL text-only       section#q3  "Inside the park"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [1440-14-text-only.jpg]
+  FAIL text-only       section#q4  "Location"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [1440-16-text-only.jpg]
+  FAIL text-only       section#q5  "Your visit"
+       the closing section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [1440-17-text-only.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #f2f4f6 ("FAQ"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd ones out: "Call 98377 64222", "WhatsApp"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #f2f4f6 ("FAQ"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "WhatsApp", "Accept"  [1440-20-button-styles.jpg]
+  FAIL button-styles   (the page)
+       6 button styles on the page: soft, fill #f2f4f6 x1 ("FAQ"); soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-04-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-05-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-06-same-action.jpg]
+  FAIL cta             section#q5  "Your visit"
+       the last section before the footer ends with no button  [1440-18-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-21-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL section-tile    section#q4  "Location"
+       the section is 350px tall (0.39 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 278px of it and 289px of the next section, its heading "Your visit" on screen  [1440-27-section-tile.jpg]
+  FAIL hero-screen     section#hero  "HomeIndustrial Plot FAQQuestionsIndustri"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#q1  "PlotsWhat plot sizes do you have?Plots r"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#q5  "Your visitCan I visit before I decide?Ye"
+       the section is 289px tall (0.3 screens), 611px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#q1  "PlotsWhat plot sizes do you have?Plots r"
+       the section is 349px tall (0.4 screens), 551px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#q2  "Buying a plotHow do I buy an industrial "
+       the section is 350px tall (0.4 screens), 550px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 3 more like it: "LocationWhere is Isapur ", "Inside the parkWhat are ", "Come and see the plotsOp") (SR-2)
+  FAIL section-height  section#q1  "PlotsWhat plot sizes do you have?Plots r"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 2354px, 346px above the screen grid (3 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#q3  "Inside the parkWhat are the roads inside"
+       the section starts at 1243px, 343px below the screen grid (1 x 900px): sections start on whole screens (and 3 more like it: "Your visitCan I visit be", "LocationWhere is Isapur ", "Buying a plotHow do I bu") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#q4-h  "Location"
+       the screen at scroll 1243px (the top of section 4) shows 350px of section 5 and the heading of section 5 whole and the content of 3 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#q1-h  "Plots"
+       the screen at scroll 0px (stride 0) shows 349px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#q5-h  "Your visit"
+       the screen at scroll 1800px (stride 2) shows 289px of section 6 and the heading of section 6 whole and the content of 3 sections, over 24px each beside section 7: a screen shows one section (another may peek 8px, 24px WARN) (and 5 more like it: scroll 893px, scroll 1715px, scroll 544px) (SR-4)
+  FAIL one-heading     h2#q2-h  "Buying a plot"
+       headings of two sections show whole on one screen at 36 of 43 scroll positions (83.7%; at scroll 150, 200, 250, 300px), here with "Plots": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeIndustrial Plot FAQQ") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeIndustrial Plot FAQQuestionsIndustri"
+       the two columns of the split start 20px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeIndustrial Plot FAQQuestionsIndustri"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#q1 > div.wrap.isg  "PlotsWhat plot sizes do you have?Plots r"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#q2 > div.wrap.isg  "Buying a plotHow do I buy an industrial "
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#q3 > div.wrap.isg  "Inside the parkWhat are the roads inside"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (and 2 more like it: "LocationWhere is Isapur ", "Your visitCan I visit be") (SR-8)
+390x844  6 screens  17 FAIL  5 WARN
+  FAIL hero-fill       section#q1  "Plots"
+       the next section shows on the first screen: it starts at 764px on a 844px screen (the hero ends at 729px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-19-collide.jpg]
+  FAIL text-only       section#q1  "Plots"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [390-09-text-only.jpg]
+  FAIL text-only       section#q2  "Buying a plot"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [390-10-text-only.jpg]
+  FAIL text-only       section#q3  "Inside the park"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [390-11-text-only.jpg]
+  FAIL text-only       section#q4  "Location"
+       the section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [390-12-text-only.jpg]
+  FAIL text-only       section#q5  "Your visit"
+       the closing section is only text: no picture, icon, mock or effect in it (5 sections like it at this width)  [390-13-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "Accept"  [390-14-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-18-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-15-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#q5  "Your visit"
+       the last section before the footer ends with no button  [390-16-cta.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 396px of the section above, its heading "Buying a plot" on screen  [390-22-section-tile.jpg]
+  FAIL section-tile    section#q4  "Location"
+       the section is 396px tall (0.47 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 324px of it and 326px of the next section, its heading "Your visit" on screen  [390-25-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              PASS copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+total  58 FAIL  18 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\faq\.taste-skill\consistency)
+=== contact
+1440x900  3 screens  37 FAIL  16 WARN
+  FAIL hero-fill       section#book  "Book a site visit"
+       the next section shows on the first screen: it starts at 596px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "8 am to 8 pm" while the page scrolls: part of the line shows beside it  [1440-02-nav-covers.jpg]
+  FAIL no-visual       section#book  "Book a site visit"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-11-no-visual.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, outline #0f4d3a ("WhatsApp"); soft, fill #0f4d3a ("Call 98377 64222"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, outline #0f4d3a ("WhatsApp"); soft, fill #0f4d3a ("Book a site visit"); square, fill #ffffff, outline #0f4d3a ("Accept"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); the odd ones out: "Accept", "Call 98377 64222", "WhatsApp"  [1440-12-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x2 ("Call 98377 64222"); soft, outline #0f4d3a x3 ("WhatsApp"); square, fill #ffffff, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-13-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-05-same-action.jpg]
+  FAIL cta             section#s2  "How to find us"
+       the last section before the footer ends with no button  [1440-14-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements)  [1440-15-off-grid.jpg]
+  FAIL text-contrast   div.wrap.ct > div.ct__f.panel > form.form > p.t-small  "The button opens WhatsApp with your deta"
+       body text in #4b5563 on #f2f4f6 reads 6.85:1 (needs 7:1)  [1440-16-text-contrast.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-hidden    div.wrap.ct > div.ct__i:nth-of-type(1) > div.btns > a.b.b--g:nth-of-type(1)  "98377 64222"
+       Tab stop 13, "98377 64222" is wholly under div#consent: a keyboard user cannot see where they are  [1440-24-focus-hidden.jpg]
+  FAIL hero-screen     section#hero  "HomeContact and Site VisitVisitBook a vi"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#book  "Hapur-Modinagar Road,Yusufpur Isapur, Gh"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s2  "How to find usBy road it is 4.2 km, abou"
+       the section is 187px tall (0.2 screens), 713px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s1  "Before you come Bring the truck you run."
+       the section is 207px tall (0.2 screens), 693px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#book  "Hapur-Modinagar Road,Yusufpur Isapur, Gh"
+       the section is 599px tall (0.7 screens), 301px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 1 more like it: "Come and see the plotsOp") (SR-2)
+  FAIL section-height  section#s2  "How to find usBy road it is 4.2 km, abou"
+       the section starts at 1349px, 449px below the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#book  "Hapur-Modinagar Road,Yusufpur Isapur, Gh"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 1536px, 264px above the screen grid (2 x 900px): sections start on whole screens (and 1 more like it: "Before you come Bring th") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s1  "Before you come Bring the truck you run."
+       the section's content does not fit it: its lowest content ends 156px below its top, past 135px (the section less 72px of bottom padding) (and 1 more like it: "How to find usBy road it") (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#book-h  "Book a site visit"
+       the screen at scroll 0px (stride 0) shows 356px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#s1-h  "Before you come"
+       the screen at scroll 544px (the top of section 2) shows 207px of section 3 and the heading of section 3 whole and the content of 3 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#s1-h  "Before you come"
+       the screen at scroll 900px (stride 1) shows 207px of section 3 and the heading of section 3 whole and the content of 4 sections, over 24px each beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (and 1 more like it: scroll 1143px) (SR-4)
+  FAIL one-heading     h2#s1-h  "Before you come"
+       headings of two sections show whole on one screen at 19 of 27 scroll positions (70.4%; at scroll 400, 450, 500, 550px), here with "Book a site visit": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeContact and Site Vis") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL container-edges h2#book-h  "Book a site visit"
+       the h2 starts 555px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeContact and Site VisitVisitBook a vi"
+       the two columns of the split start 20px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeContact and Site VisitVisitBook a vi"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#book > div.wrap.ct  "Hapur-Modinagar Road,Yusufpur Isapur, Gh"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+390x844  6 screens  15 FAIL  6 WARN
+  FAIL hero-fill       section#book  "Book a site visit"
+       the next section shows on the first screen: it starts at 766px on a 844px screen (the hero ends at 729px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-19-collide.jpg]
+  FAIL no-visual       section#book  "Book a site visit"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-08-no-visual.jpg]
+  FAIL no-visual       section#s1  "Before you come"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-11-no-visual.jpg]
+  FAIL text-only       section#s2  "How to find us"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-15-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-09-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-16-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x4 ("Call"); soft, outline #0f4d3a x4 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-17-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 4 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#s2  "How to find us"
+       the last section before the footer ends with no button  [390-18-cta.jpg]
+  FAIL text-contrast   div.wrap.ct > div.ct__f.panel > form.form > p.t-small  "The button opens WhatsApp with your deta"
+       body text in #4b5563 on #f2f4f6 reads 6.85:1 (needs 7:1)  [390-12-text-contrast.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 772px of the section above, its heading "Book a site visit" on screen  [390-21-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-02-collide.jpg]
+  FAIL spill                  PASS off-viewport           WARN fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              WARN copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+  FAIL focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+total  53 FAIL  23 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\contact\.taste-skill\consistency)
+=== plot-maps
+1440x900  4 screens  29 FAIL  9 WARN
+  FAIL hero-fill       section#maps  "Choose a phase"
+       the next section shows on the first screen: it starts at 491px on a 900px screen (the hero ends at 440px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Privacy" while the page scrolls: part of the line shows beside it  [1440-16-nav-covers.jpg]
+  FAIL no-visual       section#hero  "Plot maps of all three phases"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-02-no-visual.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #0f4d3a ("Call 98377 64222"); square, outline #0f4d3a ("Accept"); soft, fill #f2f4f6 ("Plot maps"); soft, outline #0f4d3a ("WhatsApp"); the odd ones out: "Plot maps", "WhatsApp"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #f2f4f6 ("Plot maps"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "WhatsApp", "Accept"  [1440-13-button-styles.jpg]
+  FAIL button-styles   (the page)
+       6 button styles on the page: soft, fill #f2f4f6 x1 ("Plot maps"); soft, fill #0f4d3a x2 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-04-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-05-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-06-same-action.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-14-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL hero-screen     section#hero  "HomePlot mapsPlot mapsPlot maps of all t"
+       the hero ends at 440px on a 900px screen, 460px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       460px of the next section shows on the first screen (from 440px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section is 692px tall (0.8 screens), 208px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       the section is 1666px tall (1.9 screens), 134px short of two screens (1800px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       the section starts at 440px, 440px below the screen grid (0 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 2106px, 306px below the screen grid (2 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       the section's content does not fit it: its lowest content ends 1614px below its top, past 1594px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h1#hero-h  "Plot maps of all three phases"
+       the screen at scroll 0px (stride 0) shows 368px of section 1 and the heading of section 1 whole and the content of 2 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       the screen at scroll 1800px (stride 2) shows 234px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     section#maps  "Choose a phasePhase 1Phase 2Phase 3Plots"
+       the screen at scroll 1898px (the top of section 3) shows 136px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-05-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomePlot mapsPlot mapsPl") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL container-edges h2#maps-h  "Choose a phase"
+       the h2 starts 843px right of the container's left: every h1 and h2 starts on it, 2px either way (SR-6)
+  FAIL container-edges section#maps > div.wrap.pmg > div.pmv__main > div.pm  "1A1B2A2B34567891011A11B1213141516A16B171"
+       a box over half the container wide runs 100-919px, not on the container's lines at 100-1340px (SR-6)
+390x844  5 screens  8 FAIL  4 WARN
+  FAIL hero-fill       section#maps  "Choose a phase"
+       the next section shows on the first screen: it starts at 558px on a 844px screen (the hero ends at 523px)  [390-01-hero-fill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-11-collide.jpg]
+  FAIL no-visual       section#hero  "Plot maps of all three phases"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-02-no-visual.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-08-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x4 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-09-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL no-visual              PASS text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            PASS one-heading            
+  FAIL container-edges        PASS row-lines              PASS split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+total  38 FAIL  13 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\plot-maps\.taste-skill\consistency)
+=== blog/how-to-choose-an-industrial-plot
+1440x900  3 screens  36 FAIL  14 WARN
+  FAIL hero-fill       section#s1  "Size, road and highway"
+       the next section shows on the first screen: it starts at 594px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Privacy" while the page scrolls: part of the line shows beside it  [1440-13-nav-covers.jpg]
+  FAIL no-visual       section#s1  "Size, road and highway"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-02-no-visual.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd one out: "WhatsApp"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [1440-14-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-04-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-05-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-06-same-action.jpg]
+  FAIL cta             section#s4  "Where to see a plot next"
+       the last section before the footer ends with no button  [1440-11-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-15-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-hidden    footer#contact > div.wrap > div.flegal:nth-of-type(3) > a:nth-of-type(1)  "About"
+       Tab stop 38, "About" is wholly under div#consent: a keyboard user cannot see where they are  [1440-21-focus-hidden.jpg]
+  FAIL hero-screen     section#hero  "HomeGuidesHow to choose an industrial pl"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#s1  "Size, road and highway Size. List your m"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s4  "Where to see a plot nextIsapur Industria"
+       the section is 187px tall (0.2 screens), 713px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s3  "Cost and visits Cost. Add registry and s"
+       the section is 224px tall (0.2 screens), 676px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#s2  "Power and papers Power. Ask what load yo"
+       the section is 251px tall (0.3 screens), 649px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 2 more like it: "Size, road and highway S", "Come and see the plotsOp") (SR-2)
+  FAIL section-height  section#s4  "Where to see a plot nextIsapur Industria"
+       the section starts at 1415px, 385px above the screen grid (2 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s1  "Size, road and highway Size. List your m"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s3  "Cost and visits Cost. Add registry and s"
+       the section starts at 1191px, 291px below the screen grid (1 x 900px): sections start on whole screens (and 2 more like it: "Come and see the plotsOp", "Power and papers Power. ") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s2  "Power and papers Power. Ask what load yo"
+       the section's content does not fit it: its lowest content ends 201px below its top, past 179px (the section less 72px of bottom padding) (and 3 more like it: "Where to see a plot next", "Size, road and highway S", "Cost and visits Cost. Ad") (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#s1-h  "Size, road and highway"
+       the screen at scroll 0px (stride 0) shows 356px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#s2-h  "Power and papers"
+       the screen at scroll 544px (the top of section 2) shows 251px of section 3 and the heading of section 3 whole and the content of 3 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#s3-h  "Cost and visits"
+       the screen at scroll 940px (the top of section 3) shows 224px of section 4 and the heading of section 4 whole and the content of 4 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (and 2 more like it: scroll 900px, scroll 1191px) (SR-4)
+  FAIL one-heading     h2#s2-h  "Power and papers"
+       headings of two sections show whole on one screen at 24 of 28 scroll positions (85.7%; at scroll 200, 250, 300, 350px), here with "Size, road and highway": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeGuidesHow to choose ") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeGuidesHow to choose an industrial pl"
+       the two columns of the split start 20px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeGuidesHow to choose an industrial pl"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#s1 > div.wrap.isg  "Size, road and highway Size. List your m"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#s2 > div.wrap.isg  "Power and papers Power. Ask what load yo"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+390x844  6 screens  15 FAIL  4 WARN
+  FAIL hero-fill       section#s1  "Size, road and highway"
+       the next section shows on the first screen: it starts at 781px on a 844px screen (the hero ends at 746px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-17-collide.jpg]
+  FAIL no-visual       section#s1  "Size, road and highway"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-09-no-visual.jpg]
+  FAIL no-visual       section#s2  "Power and papers"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-11-no-visual.jpg]
+  FAIL no-visual       section#s3  "Cost and visits"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-12-no-visual.jpg]
+  FAIL text-only       section#s4  "Where to see a plot next"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-13-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-14-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-15-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#s4  "Where to see a plot next"
+       the last section before the footer ends with no button  [390-16-cta.jpg]
+  FAIL off-grid        nav.crumbs > ol > li:nth-of-type(3) > span  "How to choose an industrial plot: 7 chec"
+       left edge at 33.5px, 13.5px off the page margin at 20px (40 elements, like p.eyebrow)  [390-06-off-grid.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 281px of the section above, its heading "Power and papers" on screen  [390-20-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              WARN copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+  FAIL focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+total  52 FAIL  18 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\blog\how-to-choose-an-industrial-plot\.taste-skill\consistency)
+=== 404.html
+1440x900  2 screens  27 FAIL  9 WARN
+  FAIL hero-fill       section#plots  "See the industrial plots"
+       the next section shows on the first screen: it starts at 594px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Come and see the plots" while the page scrolls: part of the line shows beside it  [1440-02-nav-covers.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: square, fill #ffffff, outline #0f4d3a ("Accept"); soft, fill #0f4d3a ("Go to the home page"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); the odd ones out: "Call 98377 64222", "WhatsApp"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (the page)
+       4 button styles on the page: soft, fill #0f4d3a x1 ("Go to the home page"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp"); square, fill #ffffff, outline #0f4d3a x2 ("Accept")  [1440-04-button-styles.jpg]
+  FAIL cta             section#plots  "See the industrial plots"
+       the last section before the footer ends with no button  [1440-05-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements)  [1440-06-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-visible   footer#contact > div.wrap > div.flegal:nth-of-type(3) > button  "Cookie settings"
+       Tab stop 37, button "Cookie settings": its focus change is faint: 1.81:1 against the ground, 3:1 needed  [1440-15-focus-visible.jpg]
+  FAIL focus-hidden    footer#contact > div.wrap > div.flegal:nth-of-type(3) > a:nth-of-type(1)  "About"
+       Tab stop 34, "About" is wholly under div#consent: a keyboard user cannot see where they are  [1440-13-focus-hidden.jpg]
+  FAIL hero-screen     section#hero  "Page not foundThat page is not here, but"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#plots  "See the industrial plotsPlots start from"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#plots  "See the industrial plotsPlots start from"
+       the section is 218px tall (0.2 screens), 682px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section is 692px tall (0.8 screens), 208px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#plots  "See the industrial plotsPlots start from"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 762px, 138px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#plots  "See the industrial plotsPlots start from"
+       the section's content does not fit it: its lowest content ends 166px below its top, past 146px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#plots-h  "See the industrial plots"
+       the screen at scroll 0px (stride 0) shows 218px of section 2 and the heading of section 2 whole and the content of 3 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     section#plots  "See the industrial plotsPlots start from"
+       the screen at scroll 544px (the top of section 2) shows 146px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-heading     div.wrap > div.fcta > div:nth-of-type(1) > h2  "Come and see the plots"
+       headings of two sections show whole on one screen at 11 of 12 scroll positions (91.7%; at scroll 0, 50, 100, 150px), here with "See the industrial plots": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "Page not foundThat page ") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "Page not foundThat page is not here, but"
+       the two columns of the split start 65px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+390x844  4 screens  9 FAIL  1 WARN
+  FAIL hero-fill       section#plots  "See the industrial plots"
+       the next section shows on the first screen: it starts at 637px on a 844px screen (the hero ends at 602px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-09-collide.jpg]
+  FAIL text-only       section#plots  "See the industrial plots"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-03-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); square, outline #0f4d3a ("Accept"); soft, outline #0f4d3a ("WhatsApp"); the odd one out: "WhatsApp"  [390-04-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-08-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-05-button-styles.jpg]
+  FAIL same-action     main#top > div.actionbar > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-06-same-action.jpg]
+  FAIL cta             section#plots  "See the industrial plots"
+       the last section before the footer ends with no button  [390-07-cta.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL cta                    PASS pricing-tiers          WARN copy-headline          
+  PASS copy-fact              PASS copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+total  37 FAIL  10 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\.taste-skill\consistency-404)
+=== industrial-plots
+1440x900  4 screens  40 FAIL  14 WARN
+  FAIL hero-fill       section#s1  "What 300 sq yards means"
+       the next section shows on the first screen: it starts at 648px on a 900px screen (the hero ends at 598px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Where the plots are" while the page scrolls: part of the line shows beside it  [1440-16-nav-covers.jpg]
+  FAIL no-visual       section#s2  "Plot sizes"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-12-no-visual.jpg]
+  FAIL no-visual       section#s3  "How buying a plot works"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-13-no-visual.jpg]
+  FAIL text-only       section#s5  "Where the plots are"
+       the closing section is only text: no picture, icon, mock or effect in it  [1440-17-text-only.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #f2f4f6 ("Plots"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd ones out: "Call 98377 64222", "WhatsApp"  [1440-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #f2f4f6 ("Plots"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "WhatsApp", "Accept"  [1440-19-button-styles.jpg]
+  FAIL button-styles   (the page)
+       6 button styles on the page: soft, fill #f2f4f6 x1 ("Plots"); soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-03-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-05-same-action.jpg]
+  FAIL cta             section#s5  "Where the plots are"
+       the last section before the footer ends with no button  [1440-18-cta.jpg]
+  FAIL copy-headings   ol.buy > li:nth-of-type(1) > div:nth-of-type(2) > h3  "First meeting"
+       "First meeting" names no product, part, place or section (3 headings like it; at most one brand line per page) (and 2 more like it: "Payments through us", "Registry day")  [1440-14-copy-headings.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-20-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL hero-screen     section#hero  "HomeIndustrial Plot for Sale from 300 Sq"
+       the hero ends at 598px on a 900px screen, 302px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#s1  "What 300 sq yards means300 sq yards is a"
+       302px of the next section shows on the first screen (from 598px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s1  "What 300 sq yards means300 sq yards is a"
+       the section is 186px tall (0.2 screens), 714px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s5  "Where the plots areOn the Hapur-Modinaga"
+       the section is 230px tall (0.3 screens), 670px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#s4  "What the plots already have 50 ft RCC ro"
+       the section is 287px tall (0.3 screens), 613px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 3 more like it: "Plot sizes Plot Area Goo", "Come and see the plotsOp", "How buying a plot works1") (SR-2)
+  FAIL section-height  section#s5  "Where the plots areOn the Hapur-Modinaga"
+       the section starts at 2202px, 402px below the screen grid (2 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s1  "What 300 sq yards means300 sq yards is a"
+       the section starts at 598px, 302px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s3  "How buying a plot works1First meetingWe "
+       the section starts at 1176px, 276px below the screen grid (1 x 900px): sections start on whole screens (and 3 more like it: "Come and see the plotsOp", "Plot sizes Plot Area Goo", "What the plots already h") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s2  "Plot sizes Plot Area Good for 300 sq yar"
+       the section's content does not fit it: its lowest content ends 343px below its top, past 321px (the section less 72px of bottom padding) (and 4 more like it: "What the plots already h", "Where the plots areOn th", "How buying a plot works1") (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     h2#s3-h  "How buying a plot works"
+       the screen at scroll 598px (the top of section 2) shows 322px of section 4 and the heading of section 4 whole and the content of 3 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     section#s2  "Plot sizes Plot Area Good for 300 sq yar"
+       the screen at scroll 783px (the top of section 3) shows 321px of section 3 and the content of 2 sections, over 24px each beside section 4: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#s5-h  "Where the plots are"
+       the screen at scroll 1800px (stride 2) shows 268px of section 7 and the heading of section 6 whole and the content of 3 sections, over 24px each beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (and 5 more like it: scroll 1915px, scroll 900px, scroll 0px) (SR-4)
+  FAIL one-heading     h2#s2-h  "Plot sizes"
+       headings of two sections show whole on one screen at 30 of 45 scroll positions (66.7%; at scroll 50, 100, 150, 200px), here with "What 300 sq yards means": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeIndustrial Plot for ") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#s3 > div.wrap.isg  "How buying a plot works1First meetingWe "
+       the two columns of the split start 28px apart at the top: a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeIndustrial Plot for Sale from 300 Sq"
+       the two columns of the split start 27px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeIndustrial Plot for Sale from 300 Sq"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#s2 > div.wrap.isg  "Plot sizes Plot Area Good for 300 sq yar"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#s3 > div.wrap.isg  "How buying a plot works1First meetingWe "
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#s4 > div.wrap.isg  "What the plots already have 50 ft RCC ro"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (and 1 more like it: "Where the plots areOn th") (SR-8)
+390x844  7 screens  15 FAIL  5 WARN
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a layout plan"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-01-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-18-collide.jpg]
+  FAIL no-visual       section#s2  "Plot sizes"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-09-no-visual.jpg]
+  FAIL no-visual       section#s3  "How buying a plot works"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-11-no-visual.jpg]
+  FAIL no-visual       section#s4  "What the plots already have"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-13-no-visual.jpg]
+  FAIL text-only       section#s5  "Where the plots are"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-14-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-10-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); the odd ones out: "Accept", "Call 98377 64222", "WhatsApp"  [390-15-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, fill #ffffff, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-16-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-03-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-04-same-action.jpg]
+  FAIL cta             section#s5  "Where the plots are"
+       the last section before the footer ends with no button  [390-17-cta.jpg]
+  FAIL off-grid        nav.crumbs > ol > li:nth-of-type(2) > span  "Industrial Plot for Sale from 300 Sq Yar"
+       left edge at 33.5px, 13.5px off the page margin at 20px (51 elements, like p.eyebrow)  [390-05-off-grid.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 262px of the section above, its heading "What 300 sq yards means" on screen  [390-19-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          WARN copy-headline          
+  PASS copy-fact              FAIL copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+total  56 FAIL  19 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\industrial-plots\.taste-skill\consistency)
+=== privacy
+1440x900  5 screens  45 FAIL  11 WARN
+  FAIL hero-fill       section#s1  "Who we are"
+       the next section shows on the first screen: it starts at 594px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "How long we keep it" while the page scrolls: part of the line shows beside it  [1440-13-nav-covers.jpg]
+  FAIL no-visual       section#s2  "What we collect"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-11-no-visual.jpg]
+  FAIL no-visual       section#s4  "Cookies"
+       no picture, effect or mock in this section; a feature section needs a visual  [1440-14-no-visual.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd one out: "WhatsApp"  [1440-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [1440-15-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-03-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-05-same-action.jpg]
+  FAIL cta             section#s10  "Contact"
+       the last section before the footer ends with no button  [1440-16-cta.jpg]
+  FAIL copy-headings   h2#s1-h  "Who we are"
+       "Who we are" names no product, part, place or section (8 headings like it; at most one brand line per page) (and 7 more like it: "What we collect", "Why we use your details", "Cookies", "Who else handles your de", ...)  [1440-06-copy-headings.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-17-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL section-tile    section#s3  "Why we use your details"
+       the section is 267px tall (0.30 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 195px of it and 423px of the next section, its heading "Cookies" on screen  [1440-22-section-tile.jpg]
+  FAIL section-tile    section#s4  "Cookies"
+       the section is 423px tall (0.47 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 351px of it and 314px of the next section, its heading "Who else handles your details" on screen  [1440-23-section-tile.jpg]
+  FAIL section-tile    section#s5  "Who else handles your details"
+       the section is 314px tall (0.35 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 242px of it and 197px of the next section, its heading "How long we keep it" on screen  [1440-24-section-tile.jpg]
+  FAIL section-tile    section#s7  "Your rights"
+       the section is 241px tall (0.27 screens at 1440x900), shorter than the screen: its tile (the screen from its top) shows 168px of it and 187px of the next section, its heading "Questions and complaints" on screen (and 2 more like it: "Questions and compla", "Changes")  [1440-26-section-tile.jpg]
+  FAIL hero-screen     section#hero  "HomePrivacyIsapur Industrial ParkPrivacy"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#s1  "Who we areIsapur Industrial Park, Hapur-"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s1  "Who we areIsapur Industrial Park, Hapur-"
+       the section is 172px tall (0.2 screens), 728px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s9  "ChangesIf this page changes, the date at"
+       the section is 173px tall (0.2 screens), 727px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#s10  "ContactIsapur Industrial Park, Hapur-Mod"
+       the section is 173px tall (0.2 screens), 727px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 8 more like it: "Questions and complaints", "How long we keep it Enqu", "Your rightsYou can ask u") (SR-2)
+  FAIL section-height  section#s6  "How long we keep it Enquiry details: for"
+       the section starts at 2236px, 436px below the screen grid (2 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 3207px, 393px above the screen grid (4 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s1  "Who we areIsapur Industrial Park, Hapur-"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (and 8 more like it: "ContactIsapur Industrial", "Why we use your details ", "CookiesThe site sets no ") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s2  "What we collect Site visit form. Your na"
+       the section's content does not fit it: its lowest content ends 459px below its top, past 444px (the section less 72px of bottom padding) (and 9 more like it: "Why we use your details ", "CookiesThe site sets no ", "Who else handles your de") (SR-2)
+  FAIL section-air     section#s9  "ChangesIf this page changes, the date at"
+       the content fills 30% of the section's height (52 of 173px): 55% or more (40% WARN) (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL section-air     section#s1  "Who we areIsapur Industrial Park, Hapur-"
+       the content fills 30.2% of the section's height (52 of 172px): 55% or more (40% WARN) (SR-3)
+  FAIL section-air     section#s10  "ContactIsapur Industrial Park, Hapur-Mod"
+       the content fills 33.5% of the section's height (58 of 173px): 55% or more (40% WARN) (and 2 more like it: "Questions and complaints", "How long we keep it Enqu") (SR-3)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+  FAIL one-section     h2#s3-h  "Why we use your details"
+       the screen at scroll 900px (stride 1) shows 267px of section 4 and the heading of section 4 whole and the content of 3 sections, over 24px each beside section 5: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#s6-h  "How long we keep it"
+       the screen at scroll 1800px (stride 2) shows 241px of section 8 and the heading of section 7 whole and the content of 3 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#s6-h  "How long we keep it"
+       the screen at scroll 1922px (the top of section 6) shows 241px of section 8 and the heading of section 7 whole and the content of 4 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (and 7 more like it: scroll 544px, scroll 1232px, scroll 2236px) (SR-4)
+  FAIL one-heading     h2#s2-h  "What we collect"
+       headings of two sections show whole on one screen at 59 of 60 scroll positions (98.3%; at scroll 0, 50, 100, 150px), here with "Who we are": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomePrivacyIsapur Indust") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomePrivacyIsapur Industrial ParkPrivacy"
+       the two columns of the split start 20px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomePrivacyIsapur Industrial ParkPrivacy"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+  FAIL split-pair      section#s2 > div.wrap.isg  "What we collect Site visit form. Your na"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#s3 > div.wrap.isg  "Why we use your details To call you back"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (SR-8)
+  FAIL split-pair      section#s4 > div.wrap.isg  "CookiesThe site sets no cookie until you"
+       the split's columns are off the page's one pair of lines: its right column starts at x 627, the first split's at 732 (and 2 more like it: "Who else handles your de", "Your rightsYou can ask u") (SR-8)
+390x844  9 screens  21 FAIL  3 WARN
+  FAIL hero-fill       section#s1  "Who we are"
+       the next section shows on the first screen: it starts at 737px on a 844px screen (the hero ends at 702px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-18-collide.jpg]
+  FAIL no-visual       section#s2  "What we collect"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-08-no-visual.jpg]
+  FAIL no-visual       section#s3  "Why we use your details"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-09-no-visual.jpg]
+  FAIL no-visual       section#s4  "Cookies"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-10-no-visual.jpg]
+  FAIL no-visual       section#s5  "Who else handles your details"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-11-no-visual.jpg]
+  FAIL no-visual       section#s7  "Your rights"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-12-no-visual.jpg]
+  FAIL text-only       section#s8  "Questions and complaints"
+       the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)  [390-13-text-only.jpg]
+  FAIL text-only       section#s10  "Contact"
+       the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)  [390-14-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-15-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-16-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#s10  "Contact"
+       the last section before the footer ends with no button  [390-17-cta.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 672px of the section above, its heading "What we collect" on screen  [390-21-section-tile.jpg]
+  FAIL section-tile    section#s3  "Why we use your details"
+       the section is 412px tall (0.49 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 340px of it and 432px of the next section, its heading "Cookies" on screen  [390-22-section-tile.jpg]
+  FAIL section-tile    section#s4  "Cookies"
+       the section is 623px tall (0.74 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 551px of it and 221px of the next section, its heading "Who else handles your details" on screen  [390-23-section-tile.jpg]
+  FAIL section-tile    section#s5  "Who else handles your details"
+       the section is 490px tall (0.58 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 419px of it and 288px of the next section, its heading "How long we keep it" on screen  [390-24-section-tile.jpg]
+  FAIL section-tile    section#s7  "Your rights"
+       the section is 359px tall (0.43 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 288px of it and 305px of the next section, its heading "Questions and complaints" on screen (and 3 more like it: "Questions and compla", "Changes", "Contact")  [390-26-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              FAIL copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+total  67 FAIL  14 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\privacy\.taste-skill\consistency)
+=== blog
+1440x900  3 screens  34 FAIL  12 WARN
+  FAIL hero-fill       section#guides  "All plot guides"
+       the next section shows on the first screen: it starts at 594px on a 900px screen (the hero ends at 544px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Privacy" while the page scrolls: part of the line shows beside it  [1440-19-nav-covers.jpg]
+  FAIL text-only       section#guides  "All plot guides"
+       the closing section is only text: no picture, icon, mock or effect in it  [1440-02-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd one out: "WhatsApp"  [1440-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [1440-14-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-04-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-05-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-06-same-action.jpg]
+  FAIL cta             section#guides  "All plot guides"
+       the last section before the footer ends with no button  [1440-07-cta.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-15-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-visible   footer#contact > div.wrap > div.flegal:nth-of-type(3) > button  "Cookie settings"
+       Tab stop 37, button "Cookie settings": its focus change is faint: 1.81:1 against the ground, 3:1 needed  [1440-23-focus-visible.jpg]
+  FAIL focus-hidden    footer#contact > div.wrap > div.flegal:nth-of-type(3) > a:nth-of-type(1)  "About"
+       Tab stop 34, "About" is wholly under div#consent: a keyboard user cannot see where they are  [1440-21-focus-hidden.jpg]
+  FAIL hero-screen     section#hero  "HomeGuidesGuidesGuides for industrial pl"
+       the hero ends at 544px on a 900px screen, 356px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#guides  "All plot guidesHow to choose an industri"
+       356px of the next section shows on the first screen (from 544px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#guides  "All plot guidesHow to choose an industri"
+       the section is 499px tall (0.6 screens), 401px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section is 692px tall (0.8 screens), 208px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#guides  "All plot guidesHow to choose an industri"
+       the section starts at 544px, 356px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section starts at 1043px, 143px below the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#guides  "All plot guidesHow to choose an industri"
+       the section's content does not fit it: its lowest content ends 447px below its top, past 427px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL one-section     div.wrap > div.fcta > div:nth-of-type(1) > h2  "Come and see the plots"
+       the screen at scroll 544px (the top of section 2) shows 401px of section 3 and the heading of section 3 whole and the content of 2 sections, over 24px each beside section 2: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#guides-h  "All plot guides"
+       the screen at scroll 0px (stride 0) shows 356px of section 2 and the heading of section 2 whole and the content of 2 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     section#guides  "All plot guidesHow to choose an industri"
+       the screen at scroll 835px (the top of section 3) shows 136px of section 2 and the content of 2 sections, over 24px each beside section 3: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-heading     div.wrap > div.fcta > div:nth-of-type(1) > h2  "Come and see the plots"
+       headings of two sections show whole on one screen at 6 of 17 scroll positions (35.3%; at scroll 250, 300, 350, 400px), here with "All plot guides": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "HomeGuidesGuidesGuides f") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL container-edges section#guides > div.wrap.isg > div.isg__b > div.postlist  "How to choose an industrial plot: 7 chec"
+       a box over half the container wide runs 627-1340px, not on the container's lines at 100-1340px (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeGuidesGuidesGuides for industrial pl"
+       the two columns of the split start 35px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "HomeGuidesGuidesGuides for industrial pl"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+390x844  4 screens  11 FAIL  6 WARN
+  FAIL hero-fill       section#guides  "All plot guides"
+       the next section shows on the first screen: it starts at 737px on a 844px screen (the hero ends at 702px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of a loaded truc"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-16-collide.jpg]
+  FAIL text-only       section#guides  "All plot guides"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-09-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       4 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "Accept"  [390-10-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd ones out: "Call 98377 64222", "WhatsApp", "Accept"  [390-15-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-11-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#guides  "All plot guides"
+       the last section before the footer ends with no button  [390-12-cta.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-01-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL cta                    PASS pricing-tiers          PASS copy-headline          
+  PASS copy-fact              PASS copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+total  46 FAIL  18 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\blog\.taste-skill\consistency)
+=== amenities
+1440x900  4 screens  39 FAIL  13 WARN
+  FAIL hero-fill       section#s1  "50 ft RCC roads"
+       the next section shows on the first screen: it starts at 618px on a 900px screen (the hero ends at 568px)  [1440-01-hero-fill.jpg]
+  FAIL nav-covers      div#consent  "We use Google Analytics to see which pag"
+       sits on top of the text "Shops inside the park" while the page scrolls: part of the line shows beside it  [1440-12-nav-covers.jpg]
+  FAIL text-only       section#s7  "Keep reading"
+       the closing section is only text: no picture, icon, mock or effect in it  [1440-14-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: square, outline #0f4d3a ("Accept"); soft, fill #0f4d3a ("Call 98377 64222"); soft, outline #0f4d3a ("WhatsApp"); the odd one out: "WhatsApp"  [1440-02-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [1440-15-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x1 ("Call 98377 64222"); soft, outline #0f4d3a x1 ("WhatsApp"); square, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [1440-03-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [1440-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 2 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [1440-05-same-action.jpg]
+  FAIL cta             section#s7  "Keep reading"
+       the last section before the footer ends with no button  [1440-16-cta.jpg]
+  FAIL copy-headings   h2#s5-h  "A petrol pump at the gate"
+       "A petrol pump at the gate" names no product, part, place or section (2 headings like it; at most one brand line per page) (and 1 more like it: "Keep reading")  [1440-13-copy-headings.jpg]
+  FAIL off-grid        div.wrap > div.fcta > div.btns > a.b.b--w  "WhatsApp"
+       left edge at 1177px, 23px off a common edge of its section at 1154px (5 elements, like h3)  [1440-17-off-grid.jpg]
+  FAIL effect-kind     (the page)
+       a place page (--type) moves with the scroll: scroll libraries or timelines (view-timeline, animation-timeline:view, animation-timeline:scroll): effects fit tech, gaming and software pages and a product with a technical subject, never a place, shop or service page (house rule)
+  FAIL phone-number    header.nav > div.wrap.nav__in > a.b.b--g  "98377 64222"
+  FAIL focus-visible   footer#contact > div.wrap > div.flegal:nth-of-type(3) > button  "Cookie settings"
+       Tab stop 40, button "Cookie settings": its focus change is faint: 1.81:1 against the ground, 3:1 needed  [1440-28-focus-visible.jpg]
+  FAIL focus-hidden    footer#contact > div.wrap > div.flegal:nth-of-type(3) > a:nth-of-type(1)  "About"
+       Tab stop 37, "About" is wholly under div#consent: a keyboard user cannot see where they are  [1440-26-focus-hidden.jpg]
+  FAIL hero-screen     section#hero  "Home50 ft RCC Roads and LightingInside t"
+       the hero ends at 568px on a 900px screen, 332px above the fold: it ends at the fold, 1px either way (SR-1)  [1440-rhythm-01-hero-screen.jpg]
+  FAIL hero-screen     section#s1  "50 ft RCC roadsRCC means reinforced ceme"
+       332px of the next section shows on the first screen (from 568px on a 900px screen): nothing below the hero shows at load (SR-1)
+  FAIL section-height  section#s2  "Street lightingLights run along the road"
+       the section is 173px tall (0.2 screens), 727px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)  [1440-rhythm-02-section-height.jpg]
+  FAIL section-height  section#s3  "Planted greeneryTrees are planted along "
+       the section is 173px tall (0.2 screens), 727px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)
+  FAIL section-height  section#s4  "Power 24/7Power runs 24/7 on government "
+       the section is 173px tall (0.2 screens), 727px short of one screen (900px): every section after the hero is one screen or two, 2px either way (and 5 more like it: "A petrol pump at the gat", "Shops inside the parkSma", "50 ft RCC roadsRCC means") (SR-2)
+  FAIL section-height  section#s5  "A petrol pump at the gateA petrol pump s"
+       the section starts at 1301px, 401px below the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s1  "50 ft RCC roadsRCC means reinforced ceme"
+       the section starts at 568px, 332px above the screen grid (1 x 900px): sections start on whole screens (SR-2)
+  FAIL section-height  section#s6  "Shops inside the parkSmall commercial pl"
+       the section starts at 1474px, 326px above the screen grid (2 x 900px): sections start on whole screens (and 5 more like it: "Power 24/7Power runs 24/", "Keep reading Plot sizes ", "Come and see the plotsOp") (SR-2)
+  FAIL section-height  footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       the section's content does not fit it: its lowest content ends 669px below its top, past 620px (the section less 72px of bottom padding) (SR-2)
+  FAIL section-height  section#s7  "Keep reading Plot sizes and how buying w"
+       the section's content does not fit it: its lowest content ends 231px below its top, past 209px (the section less 72px of bottom padding) (and 6 more like it: "50 ft RCC roadsRCC means", "Street lightingLights ru", "Power 24/7Power runs 24/") (SR-2)
+  FAIL section-air     section#s3  "Planted greeneryTrees are planted along "
+       the content fills 29.4% of the section's height (51 of 173px): 55% or more (40% WARN) (SR-3)  [1440-rhythm-03-section-air.jpg]
+  FAIL section-air     section#s2  "Street lightingLights run along the road"
+       the content fills 30% of the section's height (52 of 173px): 55% or more (40% WARN) (SR-3)
+  FAIL section-air     section#s4  "Power 24/7Power runs 24/7 on government "
+       the content fills 30% of the section's height (52 of 173px): 55% or more (40% WARN) (and 3 more like it: "A petrol pump at the gat", "Shops inside the parkSma", "50 ft RCC roadsRCC means") (SR-3)
+  FAIL section-air     footer#contact > div.wrap > div.fcta  "Come and see the plotsOpen 8 am to 8 pm,"
+       a bottom border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+  FAIL one-section     h2#s7-h  "Keep reading"
+       the screen at scroll 1474px (the top of section 7) shows 281px of section 8 and the heading of section 8 whole and the content of 3 sections, over 24px each beside section 9: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)  [1440-rhythm-04-one-section.jpg]
+  FAIL one-section     h2#s6-h  "Shops inside the park"
+       the screen at scroll 1301px (the top of section 6) shows 273px of section 9 and the heading of section 7 whole and the content of 4 sections, over 24px each beside section 8: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)
+  FAIL one-section     h2#s1-h  "50 ft RCC roads"
+       the screen at scroll 0px (stride 0) shows 213px of section 2 and the heading of section 2 whole and the content of 3 sections, over 24px each beside section 1: a screen shows one section (another may peek 8px, 24px WARN) (and 5 more like it: scroll 1647px, scroll 568px, scroll 780px) (SR-4)
+  FAIL one-heading     h2#s2-h  "Street lighting"
+       headings of two sections show whole on one screen at 32 of 35 scroll positions (91.4%; at scroll 50, 100, 150, 200px), here with "50 ft RCC roads": at most 3% on a desktop (SR-5)  [1440-rhythm-05-one-heading.jpg]
+  FAIL container-edges a.skip  "Skip to content"
+       a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+  FAIL container-edges footer#contact  "Come and see the plotsOpen 8 am to 8 pm,"
+       a <footer> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)  [1440-rhythm-06-container-edges.jpg]
+  FAIL container-edges div#consent  "We use Google Analytics to see which pag"
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 1 more like it: "Home50 ft RCC Roads and ") (SR-6)
+  FAIL container-edges header.nav > div.bar
+       a box runs 0-1440px, outside the container lines of the nav at 100-1340px: full width is for background layers and grounds only (SR-6)
+  FAIL split-pair      section#hero > div.wrap.ih__g  "Home50 ft RCC Roads and LightingInside t"
+       the two columns of the split start 12px apart at the top (centred on each other): a split's columns are top-aligned, 8px either way (SR-8)  [1440-rhythm-07-split-pair.jpg]
+  FAIL split-pair      section#hero > div.wrap.ih__g  "Home50 ft RCC Roads and LightingInside t"
+       the split's left column starts with a picture or a box, not text: text left, the visual right, on every split (SR-8)
+390x844  6 screens  13 FAIL  5 WARN
+  FAIL hero-fill       section#s1  "50 ft RCC roads"
+       the next section shows on the first screen: it starts at 800px on a 844px screen (the hero ends at 765px)  [390-01-hero-fill.jpg]
+  FAIL spill           div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.vig.ink  "Architect style drawing of the park entr"
+       runs 78px past the left edge of the panel it sits on (div.wrap.ih__g > div.ih__v > div.panel.ihp > svg.burst)  [390-02-spill.jpg]
+  FAIL collide         div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Privacy": the page cannot scroll further, so it stays under the bar  [390-16-collide.jpg]
+  FAIL no-visual       section#s1  "50 ft RCC roads"
+       no picture, effect or mock in this section; a feature section needs a visual  [390-09-no-visual.jpg]
+  FAIL text-only       section#s7  "Keep reading"
+       the closing section is only text: no picture, icon, mock or effect in it  [390-11-text-only.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-03-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       3 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, outline #0f4d3a ("Accept"); the odd one out: "Accept"  [390-10-button-styles.jpg]
+  FAIL button-styles   (one screen)
+       5 button styles on one screen: soft, fill #0f4d3a ("Call"); soft, outline #0f4d3a ("WhatsApp"); square, fill #ffffff, outline #0f4d3a ("Accept"); soft, fill #ffd600 ("Call 98377 64222"); soft, outline #ffffff ("WhatsApp"); the odd ones out: "Accept", "Call 98377 64222", "WhatsApp"  [390-12-button-styles.jpg]
+  FAIL button-styles   (the page)
+       5 button styles on the page: soft, fill #0f4d3a x3 ("Call"); soft, outline #0f4d3a x2 ("WhatsApp"); square, fill #ffffff, outline #0f4d3a x2 ("Accept"); soft, fill #ffd600 x1 ("Call 98377 64222"); soft, outline #ffffff x1 ("WhatsApp")  [390-13-button-styles.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--g  "Call 98377 64222"
+       "Call 98377 64222" appears 2 times in different looks: soft, fill #0f4d3a and soft, fill #ffd600  [390-04-same-action.jpg]
+  FAIL same-action     div.wrap.ih__g > div.ih__t > div.btns > a.b.b--o  "WhatsApp"
+       "WhatsApp" appears 3 times in different looks: soft, outline #0f4d3a and soft, outline #ffffff  [390-05-same-action.jpg]
+  FAIL cta             section#s7  "Keep reading"
+       the last section before the footer ends with no button  [390-14-cta.jpg]
+  FAIL section-tile    main#top > div.actionbar  "Call WhatsApp"
+       the section is 65px tall (0.08 screens at 390x844), shorter than the screen: its tile (the screen from its top) shows 65px of it and 251px of the section above, its heading "Street lighting" on screen  [390-19-section-tile.jpg]
+  FAIL collide         [320] div#consent  "We use Google Analytics to see which pag"
+       at the end of the page the fixed bar covers "Guides": the page cannot scroll further, so it stays under the bar  [narrow-320-02-collide.jpg]
+  FAIL spill                  PASS off-viewport           PASS fold-card              
+  SKIP hover-spill            PASS overlap-text           FAIL collide                
+  FAIL no-visual              FAIL text-only              PASS card-visual            
+  SKIP hidden-visual          PASS card-family            PASS card-layout            
+  FAIL cta                    PASS pricing-tiers          WARN copy-headline          
+  PASS copy-fact              FAIL copy-headings          WARN copy-buttons           
+  FAIL phone-number           FAIL hero-screen            FAIL section-height         
+  FAIL section-air            FAIL one-section            FAIL one-heading            
+  FAIL container-edges        PASS row-lines              FAIL split-pair             
+  PASS motion-layer           PASS count-text             PASS loop-cycle             
+  FAIL section-tile           PASS empty-area             PASS a11y-name              
+  PASS img-alt                PASS field-label            PASS heading-order          
+  FAIL focus-hidden           PASS skip-link              PASS menu-toggle            
+  PASS lang                   PASS page-meta              PASS share-meta             
+total  53 FAIL  19 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-inner\amenities\.taste-skill\consistency)

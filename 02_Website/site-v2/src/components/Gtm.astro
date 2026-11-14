@@ -1,10 +1,21 @@
 ---
-// GTM loads after the first interaction (or 5 s), only when PUBLIC_GTM_ID is set. Absent otherwise.
+// Consent gate and GTM loader (head). Google Consent Mode v2 defaults are all denied and are set before anything else.
+// GTM is requested only after the visitor accepts analytics (stored 6 months in localStorage), then after the first interaction or 5 s.
+// Choice UI is Consent.astro. Absent when PUBLIC_GTM_ID is unset. See 04_Analytics/gtm-plan.md (consent mapping).
 const id = import.meta.env.PUBLIC_GTM_ID;
 ---
 {id && (
   <script is:inline define:vars={{ id }}>
-    (function(){var l=0;function go(){if(l)return;l=1;window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':Date.now(),event:'gtm.js'});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+id;document.head.appendChild(s);}
-    ['scroll','click','touchstart','keydown','mousemove'].forEach(function(e){window.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,5000);})();
+    (function(){var K='iip-consent',W=window,dl=W.dataLayer=W.dataLayer||[],l=0,fns=[];
+    function g(){dl.push(arguments)}
+    g('consent','default',{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
+    function go(){if(l)return;l=1;dl.push({'gtm.start':Date.now(),event:'gtm.js'});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtm.js?id='+id;document.head.appendChild(s);}
+    function later(){['scroll','click','touchstart','keydown','mousemove'].forEach(function(e){W.addEventListener(e,go,{once:true,passive:true});});setTimeout(go,5000);}
+    function get(){try{var o=JSON.parse(localStorage.getItem(K));if(o&&Date.now()-o.t<15552000000&&(o.v==='granted'||o.v==='denied'))return o.v}catch(e){}return null}
+    function wipe(){document.cookie.split(';').forEach(function(c){var n=c.split('=')[0].trim();if(/^(_ga|_gid|_gat|_clck|_clsk|CLID|MUID)/.test(n)){['',' ;domain='+location.hostname,' ;domain=.'+location.hostname.replace(/^www\./,'')].forEach(function(d){document.cookie=n+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'+d})}})}
+    function apply(v,fresh){g('consent','update',{analytics_storage:v});if(v==='granted'){fresh?go():later()}else if(l||fresh){wipe();}}
+    W.iipConsent={get:get,set:function(v){try{localStorage.setItem(K,JSON.stringify({v:v,t:Date.now()}))}catch(e){}apply(v,1);fns.forEach(function(f){f(v)})},on:function(f){fns.push(f)}};
+    var c=get();if(c)apply(c,0);
+    })();
   </script>
 )}

@@ -1,0 +1,57 @@
+---
+// v3 inner page layout: the home's header, footer, type and drawing style around a compact hero (text left, one ink drawing or the road map right).
+import Home from './Home.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Vig from '../components/Vig.astro';
+import Sheet from '../components/Sheet.astro';
+import WhereRegion from '../components/WhereRegion.astro';
+import Foot from '../components/Foot.astro';
+import innerCss from '../styles/inner.css?raw';
+import { SITE, waLink } from '../lib/site';
+import { ICON_CALL, ICON_WA } from '../lib/icons.mjs';
+import { burst } from '../lib/burst.mjs';
+interface Props {
+  title: string; description: string; path: string; pageType?: string; crumbs?: { name: string; href: string }[];
+  faq?: { q: string; a: string }[]; article?: { date: Date }; noindex?: boolean; place?: boolean; css?: string;
+  eyebrow: string; h1: string; lead?: string; vis?: 'where' | 'gate' | 'papers' | 'truck' | 'none'; visLabel?: string;
+}
+const { eyebrow, h1, lead, vis = 'truck', visLabel, css = '', ...rest } = Astro.props;
+const tel = SITE.phones[0];
+const bp = burst();
+const labels = {
+  gate: 'Architect style drawing of the park entry with two gate piers and a petrol pump with a canopy beside it',
+  papers: 'Architect style drawing of a layout plan sheet with roads, plots, a north arrow and a green approval stamp',
+  truck: 'Architect style drawing of a loaded truck on a 50 foot RCC road with a street light and a tree',
+};
+---
+<Home {...rest} pageType={rest.pageType ?? 'other'} css={innerCss + css}>
+  <section class={`ih${vis === 'none' ? ' ih--solo' : ''}`} id="hero" aria-labelledby="hero-h">
+    <div class="wrap ih__g">
+      <div class="ih__t">
+        <Breadcrumbs crumbs={rest.crumbs ?? []} />
+        <p class="eyebrow">{eyebrow}</p>
+        <h1 id="hero-h">{h1}</h1>
+        {lead && <p class="lead">{lead}</p>}
+        <div class="btns">
+          <slot name="actions">
+            <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="hero-call" data-section="hero"><Fragment set:html={ICON_CALL} />Call {tel.display}</a>
+            <a class="b b--o" href={waLink()} rel="noopener" data-cta-id="hero-wa" data-section="hero"><Fragment set:html={ICON_WA} />WhatsApp</a>
+          </slot>
+        </div>
+      </div>
+      {vis === 'where' && <div class="ih__v"><WhereRegion ladder={false} /></div>}
+      {(vis === 'gate' || vis === 'papers' || vis === 'truck') && (
+        <div class="ih__v"><div class="panel ihp">
+          <svg class="burst" viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="none" stroke="#E5E7EB" stroke-width="5"/></svg>
+          {vis === 'truck' ? <Sheet uid="ih" label={visLabel ?? labels.truck} /> : <Vig kind={vis} uid="ih" label={visLabel ?? labels[vis]} />}
+        </div></div>
+      )}
+    </div>
+  </section>
+  <slot />
+  <div class="actionbar" role="region" aria-label="Call or WhatsApp">
+    <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
+    <a class="b b--o" href={waLink()} rel="noopener" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} />WhatsApp</a>
+  </div>
+  <Foot slot="footer" cta />
+</Home>

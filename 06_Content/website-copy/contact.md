@@ -1,6 +1,6 @@
 ---
 title: "Contact and Site Visit | Isapur Industrial Park"
-description: "Call 98370 57800 or 92195 49800, message on WhatsApp or send an enquiry. Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022."
+description: "Call 98377 64222, message on WhatsApp or send an enquiry. Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022."
 h1: "Call us or book a site visit"
 primary_keyword: "isapur industrial park contact"
 schema: [ContactPage, LocalBusiness, BreadcrumbList]
@@ -11,9 +11,9 @@ status: build
 
 ## The fastest way
 
-Call **98370 57800** or **92195 49800**. Or message us on WhatsApp. We will fix a time for your site visit.
+Call **98377 64222**. Or message us on WhatsApp. We will fix a time for your site visit.
 
-[Call 98370 57800](tel:+919837057800) · [Call 92195 49800](tel:+919219549800) · [WhatsApp us](https://wa.me/919837057800)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222)
 
 [OWNER TO CONFIRM: which number is on WhatsApp, and the sales office hours]
 

@@ -11,7 +11,7 @@ status: build
 
 ## The short answer
 
-Isapur Industrial Park offers industrial plots starting from 300 sq yards at Yusufpur Isapur, Ghaziabad district. Call 98370 57800 for the current plot list and rates.
+Isapur Industrial Park offers industrial plots starting from 300 sq yards at Yusufpur Isapur, Ghaziabad district. Call 98377 64222 for the current plot list and rates.
 
 ## What 300 sq yards means
 
@@ -51,6 +51,6 @@ Hapur-Modinagar Road, 4.7 km by road to the Delhi-Meerut Expressway on-ramp at B
 
 ## Book a site visit
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Send an enquiry](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Send an enquiry](/contact/)
 
 Related: [How to choose an industrial plot](/blog/how-to-choose-an-industrial-plot/) · [Buying checklist](/blog/industrial-plot-buying-checklist/) · [Questions and answers](/faq/)

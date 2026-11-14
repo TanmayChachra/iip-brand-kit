@@ -1,5 +1,18 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-13, brand kit brought in line with your latest decisions (local only, not published)
+- The whole brand kit is rebuilt locally. Headlines in every board, card, post and the kit page use Erode, text uses Inter, Montserrat stays only inside the logo. The logo is untouched.
+- One phone number everywhere in the kit (98377 64222). The second number is held and appears nowhere. Old kit copy that named water, drainage, Section 80, 100 acres or the 4 km expressway line is gone. The claims table now lists only what you allowed, plus what must never be said.
+- The kit page has five new or rewritten pages: Typography (Erode plus Inter, type scale, sample headlines), Digital design language (palette use, flag stripe, ink drawing style, motion rules), Plot maps (the three restyled maps with a legend and block colours), Voice (tone, approved and rejected lines, how the copywriter learns) and Photography (a placeholder while the photographic direction is finalised).
+- PowerPoint templates are back (Erode, one phone, no AI image). Context mockups, flat lay, brief and brand book are rebuilt with the current artwork.
+- A full repo audit lists every line in the other folders that still disagrees (retired phone, old domain, claims, hours): `01_Brand/Brand-Kit/_build/SYNC-AUDIT-2026-11-13.md`. Nothing was published to GitHub Pages. The final poster still carries older claims, your call on a reprint.
+
+## 2026-11-13, home page round 3 (local only, not deployed)
+- The shed, trucks, gate, shops and layout sheet are now fine ink drawings like an architect's sheet, no more cartoons.
+- Scroll down and the shed builds step by step exactly with the text beside it, and back up again. At the end the shutter lifts as you scroll and shows the open now box and the call button.
+- Hero map zooms about three times faster, up to 10x, with plus, minus, reset, double tap and pinch.
+- Disclaimer lines are gone from the page. Design rules are written down in 02_Website/DESIGN-LANGUAGE.md.
+
 ## 2026-11-09, global MCPs and plot maps plan
 - Cloudflare API, Astro docs and OpenSEO MCPs added globally (all projects). Astro docs is connected. Cloudflare needs your OAuth click, OpenSEO needs Managed OAuth switched on in Cloudflare Access (steps on the board).
 - New folder `01_Brand/Plot-Maps/` with the plan for SVG maps of Phase 1, 2, 3 and the Phase 1 extension (one unit per plot) for a future plot selector. Board tasks added for maps, on-ground photos, the 360 tour, A/B testing and a business Google account.

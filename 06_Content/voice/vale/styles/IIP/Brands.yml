@@ -1,0 +1,14 @@
+extends: existence
+message: "Brand or partner name '%s' not allowed until the owner confirms."
+level: error
+ignorecase: true
+tokens:
+  - amul
+  - inox
+  - patanjali
+  - namaste india
+  - adani
+  - atom estates
+  - shri hari das
+  - shd
+  - cks

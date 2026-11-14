@@ -1,33 +1,25 @@
 ---
 title: Industry and Fuel Nearby | Isapur Industrial Park
-description: "What is next to Isapur Industrial Park: an INOX Air plant, Namaste India plant and an IndianOil petrol pump, with measured distances."
-h1: "Working industry and a fuel station next door"
-lead: "Within about 0.7 km straight-line: an INOX Air plant, a Namaste India plant and an IndianOil pump."
+description: "What is around Isapur Industrial Park: working factories close by, a petrol pump at the entry and exit, and shops inside the park."
+h1: "Working industry and a petrol pump next door"
+lead: "Factories already run close to the park, and an IndianOil petrol pump sits at its entry and exit."
 pageType: brands
 draft: false
 schema: []
 ---
 
-## What is nearby the plots
+## Working units close by
 
-| Place | What it is | Distance from the park |
-|---|---|---|
-| INOX Air Products, Modinagar plant | Industrial gas plant, open 24 hours on its Maps listing | about 0.6 km from the park (straight-line) |
-| Namaste India plant | Working factory | about 0.7 km from the park (straight-line) |
-| IndianOil petrol pump (Captain Filling Station) | Fuel station on Hapur-Modinagar Road | about 60 to 190 m from the park (straight-line) |
+Units near the park make tile-bonding chemicals, comfort cushions, industrial water tanks and PVC pipes. Your neighbours are factories, so the road already knows trucks.
 
-Measured on Google Maps, 8 November 2026.
+## Fuel at the gate
 
-Names are used only to say what is nearby. They show no partnership with these companies.
+An IndianOil petrol pump stands at the park entry and exit. Trucks, generators and staff vehicles fill up on the way in and the way out.
 
-## Why a fuel station near the plots helps
+## Shops in the park
 
-Trucks, generators and staff vehicles all need fuel. A pump at the park means a short trip, not a drive to town. The IndianOil listing shows opening hours of 6 am to 10 pm, so check before a late run.
+Small commercial plots serve the people who work here. A sweet shop, a quick-food counter, a tyre repair stall.
 
-## Other industry near the plots
+## Come and see it
 
-The Modinagar and Bhojpur belt has other long-running industrial units within a short drive. Ask us for the current list when you call, and see the park on your visit.
-
-## Visit the plots yourself
-
-Distances here are straight-line, so the road distance is longer. [Get directions](/contact/) or call us. {{hours}}
+Walk the park and the road around it. See the [location page](/location/) or the [plot maps](/plot-maps/). {{hours}}

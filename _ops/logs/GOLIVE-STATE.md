@@ -16,3 +16,18 @@ Owner order: finish the website and go live today. Mobile first. Do not exhaust 
 
 ## Still open
 CTA redo for print (kit publish blocked), kit additions (ink drawing style, yellow bullet), Blender film (on hold), Business Profile reads and edits, gate position, owner facts.
+
+## Integrator log
+- Step 1 merge check: one actionbar per page (home in index.astro, inner in Inner.astro), Consent included once in Home.astro (Inner wraps Home), Gtm in Home head, Foot shared with Privacy, Terms, Cookie settings, public/_headers is production, robots.txt.ts has no Disallow. Base.astro is dead code. dist-q is TRACKED in git (1818 files): not deleted.
+- Step 2 clean build OK (26 pages, 7.8M, no dist/assets). dist-home, dist-inner, dist-legal removed (untracked). dist-q kept (tracked).
+- Step 3 partial: static checks PASS (links, h1, titles, desc, canonical, jsonld, banned strings, phones, robots, sitemap 25). Lighthouse mobile: home 87-89 perf (a11y/bp/seo 100), location 98, plot-maps 96, contact 98, CLS 0. Home below 90 on this machine (banner and GTM not the cause; style/layout 1.4s under 4x CPU).
+- Step 3 done, report at 02_Website/qa/v3/TEST-REPORT.md. Consent banner fixed (stack above bar, body margin), road label halo added.
+- Step 4 preview v3 refreshed (iipreview-v3, noindex, 200). previews/dist is partly locked by a process (package.mjs rm fails EPERM; nav, v1, kit local dist gone, regenerate with package.mjs after reboot or unlock). Step 5: Pages project iip-site created.
+- Step 5 DONE: https://iip-site.pages.dev/ deployed (deployment be717896), 200, CSP and HSTS present, no X-Robots-Tag, robots Allow, home h1 1, built with GTM-KMBRGVSD and https://isapurindustrialpark.com. Custom domain and DNS NOT touched (lead does).
+
+## Integrator report (2026-11-14)
+PASS: merge check, clean build, static tests, banner and sticky bar, GTM consent gate, no console or CSP errors, preview, production package.
+FAIL on target: Lighthouse mobile home 87 to 89 (target 90); location 98, plot-maps 96, contact 98; a11y, BP, SEO 100 everywhere; CLS 0.
+Gaps: Vale not run, form submit not browser-tested, road label tilt on plot maps, dist-q (tracked) kept, previews/dist locked (rerun package.mjs for nav, v1, kit before next full preview deploy), Base.astro dead code.
+Changes this pass: Consent.astro (banner pad after load, body margin so footer stays reachable), plotmaps.css road label halo. Uncommitted.
+Blocks go-live: nothing hard. Lead attaches domain and DNS.

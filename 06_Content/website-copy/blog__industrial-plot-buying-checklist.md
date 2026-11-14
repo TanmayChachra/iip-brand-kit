@@ -115,4 +115,4 @@ You can check the visible items on site: 50 ft RCC roads, street lighting and pl
 
 [Plot sizes and how buying works](/industrial-plots/) · [Questions and answers](/faq/) · [How to choose a plot](/blog/how-to-choose-an-industrial-plot/)
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)

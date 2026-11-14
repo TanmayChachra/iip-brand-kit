@@ -1,52 +1,72 @@
 ---
 title: Industrial Plot FAQ | Isapur Industrial Park
-description: 'Plain answers for factory owners: plot sizes, price, roads, location, documents to check and how to visit the site.'
+description: "Plain answers for factory owners: plot sizes, roads, lights, location and how to visit the site and buy a plot."
 h1: Industrial plot questions, answered
 lead: Plain answers about plots from 300 sq yards on the Hapur-Modinagar Road. Call us if yours is not here.
 pageType: faq
 schema:
 - FAQPage
 faq:
-- q: What plot sizes do you have?
-  a: Plots start from 300 sq yards, about 2,700 sq ft. Call us for the sizes open today.
-- q: What is the price of a plot?
-  a: Contact for price. Rates depend on size, position and payment plan. Call us and we share today's list.
-- q: Can I pay for a plot in instalments?
-  a: Ask us about payment plans on the call. Get any plan in writing, with dates and amounts, before you book.
-- q: How do I buy an industrial plot here?
-  a: Call, visit the site, pick a plot on the layout plan, read the papers with your own advisor, then book and register.
-- q: Which documents should I check before buying a plot?
-  a: Check land use, title and sale papers, the layout plan, the plot number on it, and any dues. Ask your own lawyer to read them.
-- q: Can I use the plot for a factory or a warehouse?
-  a: Plots are meant for industrial use. Before you pay, confirm in the papers that your exact activity is allowed on that land.
-- q: What about power, water and drainage for a plot?
-  a: We do not publish these details here. Ask for them in writing on the call, then see each one on your visit.
-- q: Do you share the plot list on WhatsApp?
-  a: Message us on WhatsApp with your name, your industry and the plot size you need. We reply with what we can share.
-- q: What are the roads inside the industrial park like?
-  a: The park has 50 ft RCC roads. RCC is concrete, which carries loaded trucks better than a thin bitumen layer.
-- q: Can trucks reach the plots?
-  a: Yes, the 50 ft RCC roads are built for heavy vehicles. On your visit, check the turn into your plot with your own vehicle.
-- q: Is there street lighting in the industrial park?
-  a: Yes, the park has street lighting along its roads. Look at the poles and the spacing on your visit.
-- q: Is there greenery in the industrial park?
-  a: Yes, the park has planted greenery along its roads. It gives shade and makes the place better for workers.
-- q: Where is Isapur Industrial Park?
-  a: At Yusufpur Isapur on the Hapur-Modinagar Road, near Bhojpur, Ghaziabad, UP 201022. See the [location page](/location/).
-- q: How far is the expressway from the plots?
-  a: The Bhojpur on-ramp is 4.7 km by road, about 8 minutes. In a straight line the nearest expressway point is about 3.9 km.
-- q: How far are Modinagar and Hapur from the plots?
-  a: Modinagar bus stand is 11.4 km by road, about 28 minutes. Hapur bus stand is 13.4 km, about 31 minutes. Test drive it, traffic changes.
-- q: How far are Meerut, Ghaziabad and Delhi from the plots?
-  a: 'By road via the expressway: Meerut City station 29.3 km, Ghaziabad station 34.7 km, Anand Vihar ISBT 46.0 km. Tolls apply.'
-- q: Can I visit the plots before I decide?
-  a: Yes. Call us and we fix a time and meet you at the gate. Open 8 am to 8 pm every day except Tuesday.
-- q: What should I ask on a site visit?
-  a: Ask to see the plot on the layout plan, the road in front of it, the lights and the papers. Our [buying checklist](/blog/industrial-plot-buying-checklist/) lists more.
-- q: How do I contact you?
-  a: Call us, message us on WhatsApp, or use the form on the [contact page](/contact/). We call back.
-- q: Who are the industrial plots for?
-  a: 'Local factory owners and small industrial buyers: a first workshop, a move out of a rented shed, or a growing storage unit.'
+- q: "What plot sizes do you have?"
+  a: "Plots run from 300 sq yards, about 2,700 sq ft, up to 2000 to 2500 sq yards. See them all on the [plot maps](/plot-maps/)."
+- q: "Is an industrial plot available today?"
+  a: "Call us and we show you what is available today, in all three phases. We help you find a plot that suits your needs."
+- q: "Who are the plots for?"
+  a: "Factories, warehouses, godowns and investors. A first workshop, a move out of a rented shed, or a growing storage unit."
+- q: "Are there shops in the park?"
+  a: "Yes. Small commercial plots, for any trade. A sweet shop, a quick-food counter, a tyre repair stall."
+- q: "How do I buy an industrial plot here?"
+  a: "Call, visit the site, pick a plot on the layout, look at the papers with your advisor, agree the payment plan, then register. See [how buying works](/how-buying-works/)."
+- q: "What papers can I see?"
+  a: "Layouts sanctioned by Zila Panchayat Ghaziabad, subject to conditions. Read more on the [approvals page](/approvals/). Bring your advisor. We show every paper."
+- q: "How does payment work?"
+  a: "We agree a payment plan with you. Payments run for about three months on average, then we fix the registry day."
+- q: "Do you share the plot list on WhatsApp?"
+  a: "Message us on WhatsApp with your name, your industry and the plot size you need. We reply with what is available."
+- q: "What are the roads inside the park like?"
+  a: "The park has 50 ft RCC roads. RCC is reinforced cement concrete, made for loaded trucks."
+- q: "Can trucks reach the plots?"
+  a: "Yes. The 50 ft RCC roads carry loaded trucks. Bring your own truck on your visit and check the turn into your plot."
+- q: "Is there street lighting in the park?"
+  a: "Yes. Street lights are installed along the roads."
+- q: "Is there greenery in the park?"
+  a: "Yes. Trees are planted inside the park. They give shade to workers and visitors."
+- q: "What about power?"
+  a: "Power runs 24/7 on government lines, coming in from both the Modinagar side and the Hapur side."
+- q: "Is there a petrol pump?"
+  a: "Yes. A petrol pump sits at the park entry and exit."
+- q: "Where is Isapur Industrial Park?"
+  a: "At Yusufpur Isapur on the Hapur-Modinagar Road, near Bhojpur, Ghaziabad, UP 201022. See the [location page](/location/)."
+- q: "How far is the expressway?"
+  a: "The Bhojpur on-ramp of the Delhi-Meerut Expressway is 4.2 km by road, about 5 minutes."
+- q: "How far are Modinagar and Hapur?"
+  a: "Modinagar centre is 10.7 km by road, about 14 minutes. Hapur centre is 13.6 km, about 15 minutes."
+- q: "How far are Meerut, Ghaziabad and Delhi?"
+  a: "By road via the expressway, Meerut centre is 29.9 km, Ghaziabad station 33.5 km and Anand Vihar, Delhi 46 km."
+- q: "Can I visit before I decide?"
+  a: "Yes, and you should. Call us and we fix a time and meet you at the gate. We are open 8 am to 8 pm every day except Tuesday."
+- q: "What should I look at on a visit?"
+  a: "See the plot on the layout, the road in front of it, the lights and the papers. Our [buying checklist](/blog/industrial-plot-buying-checklist/) has more."
+- q: "How do I contact you?"
+  a: "Call or message us on WhatsApp, or use the form on the [contact page](/contact/). We call you back."
+- q: "What happens at the first meeting?"
+  a: "You walk the park, we show what is available, and we talk about your industry. No papers to sign. See [how buying works](/how-buying-works/)."
+- q: "Why do you ask about my industry?"
+  a: "Trust matters on both sides. You should know who sells the land, and we should know who our neighbours will be."
+- q: "Who handles the money?"
+  a: "Payments flow through us, so our name is on every sale and purchase. You always know who stands behind your plot."
+- q: "Can the payment plan change?"
+  a: "Payments run about three months on average. We talk the plan through with you, and it can be discussed later too."
+- q: "When is the registry day?"
+  a: "After the payments, we fix a date that suits you and the seller. Bring your advisor if you wish."
+- q: "What if I need to sell my plot later?"
+  a: "Come back to us. We help you find the next buyer, and the payments run through us as before."
+- q: "What does a sanctioned layout mean?"
+  a: "Zila Panchayat Ghaziabad checked the map of roads and plots and stamped it. Ask for the stamped map. See the [layout approval guide](/layout-approvals/)."
+- q: "Can I open any kind of shop?"
+  a: "Every shop in the park is commercial and the trade is your choice. A confectionery, quick food or tyre repair all fit. See [shops](/shops/)."
+- q: "How do I ship a container from the park?"
+  a: "Your truck takes the container 46.3 km by road to the CONCOR depot at Dadri, then it goes by rail. See [roads and freight](/roads-and-freight/)."
+- q: "How far is the Eastern Peripheral Expressway?"
+  a: "The junction with the Delhi-Meerut Expressway is 17.8 km by road from the park. See [roads and freight](/roads-and-freight/)."
 ---
-
-

@@ -1,0 +1,166 @@
+---
+// The shed as an architect's ink drawing (gable end elevation of a steel PEB shed). Modes:
+//  stage  : builds in six stages, scrubbed by the scroll (every .k element has --i step, --s/--e inside the step; see home.css)
+//  ghost  : plan view of a plot with the shed footprint (size finder)
+//  finale : the finished shed, shutter and truck, scrubbed by the visit section (home.css)
+// Strokes are hairlines in the ink colour, sparse spot fills (green roof, yellow shutter, flag stripe as fascia band). No gradients, no shadows.
+import Truck from './Truck.astro';
+interface Props { mode: 'stage' | 'ghost' | 'finale'; uid: string }
+const { mode, uid } = Astro.props;
+const stage = mode === 'stage', ghost = mode === 'ghost', fin = mode === 'finale';
+const r = (n: number) => Math.round(n * 10) / 10;
+const XL = 130, XR = 470, XC = 300, GL = 290, PL = 282, YE = 130;
+const W = fin ? 900 : 600;
+const ft = (x: number) => YE - (x <= XC ? x - XL : XR - x) / 10; // rafter top line
+const dp = (x: number) => 10 + (8 * Math.abs(x - XC)) / 170; // rafter depth
+const fl = (x: number) => ft(x) + dp(x); // rafter lower edge
+const YR = ft(XC);
+const OX0 = 215, OX1 = 385, OY0 = 184; // shutter opening
+const A = (cls: string, kf: string, i: number, s: number, e: number) => (stage ? { class: `${cls} k ${kf}`, style: `--i:${i};--s:${s};--e:${e}`, ...(kf === 'kd' ? { pathLength: '1' } : {}) } : { class: cls });
+const colL = `M${XL} ${r(fl(XL))}H${XL + 20}L${XL + 12} ${PL}H${XL}Z`;
+const colR = `M${XR} ${r(fl(XL))}H${XR - 20}L${XR - 12} ${PL}H${XR}Z`;
+const rafL = `M${XL} ${YE}L${XC} ${r(YR)}V${r(fl(XC))}L${XL + 20} ${r(fl(XL + 20))}L${XL} ${r(fl(XL))}Z`;
+const rafR = `M${XR} ${YE}L${XC} ${r(YR)}V${r(fl(XC))}L${XR - 20} ${r(fl(XR - 20))}L${XR} ${r(fl(XR))}Z`;
+const posts = [OX0, OX1].map((x) => `M${x - 3} ${r(fl(x))}V${PL}M${x + 3} ${r(fl(x))}V${PL}`).join('');
+const girts = [206, 246].map((y) => `M${XL + 20} ${y}H${OX0 - 3}M${OX1 + 3} ${y}H${XR - 20}`).join('');
+const purl = (xs: number[]) => xs.map((x) => `M${x - 3} ${r(ft(x) + 1)}V${r(ft(x) - 6)}H${x + 3}V${r(ft(x) + 1)}`).join('');
+const pxL = Array.from({ length: 11 }, (_, i) => 140 + i * 15), pxR = Array.from({ length: 11 }, (_, i) => 460 - i * 15);
+const knee = `M${XL + 20} ${r(fl(XL + 20)) + 2}L${XL + 12} ${r(fl(XL)) + 34}M${XR - 20} ${r(fl(XL)) + 2}L${XR - 12} ${r(fl(XL)) + 34}`;
+// wall sheeting ribs (vertical hairlines); the opening and the hood are left clear
+const ribs = (x0: number, x1: number) => {
+  let d = '';
+  for (let x = x0; x <= x1; x += 8) { const yb = x > 207 && x < 393 ? 164 : PL, yt = r(fl(x) + 8); d += `M${x} ${yb}V${yt}`; }
+  return d;
+};
+// fascia band: flag stripe under the rafters, in three runs along the gable line
+const band = (a: number, b: number) => {
+  const xs = [a, ...[XC].filter((v) => v > a && v < b), b];
+  const top = xs.map((x) => `${x} ${r(fl(x))}`), bot = xs.slice().reverse().map((x) => `${x} ${r(fl(x) + 8)}`);
+  return `M${top.join('L')}L${bot.join('L')}Z`;
+};
+const roofL = `M${XL - 12} ${r(ft(XL - 12) - 7)}L${XC} ${r(YR - 7)}V${r(YR - 14)}L${XL - 12} ${r(ft(XL - 12) - 14)}Z`;
+const roofR = `M${XR + 12} ${r(ft(XR + 12) - 7)}L${XC} ${r(YR - 7)}V${r(YR - 14)}L${XR + 12} ${r(ft(XR + 12) - 14)}Z`;
+const ribsRoofL = Array.from({ length: 19 }, (_, i) => { const x = 134 + i * 9; return `M${x} ${r(ft(x) - 7)}v-7`; }).join('');
+const ribsRoofR = Array.from({ length: 19 }, (_, i) => { const x = 466 - i * 9; return `M${x} ${r(ft(x) - 7)}v-7`; }).join('');
+const soil = Array.from({ length: fin ? 100 : 66 }, (_, i) => `M${i * 9 + 6} ${GL}l-5 7`).join('');
+const slabHatch = Array.from({ length: fin ? 64 : 44 }, (_, i) => `M${i * 14 + 4} 340l8-12`).join('');
+const slats = Array.from({ length: 18 }, (_, i) => `M${OX0 + 6} ${OY0 + 5 + i * 5}H${OX1 - 6}`).join('');
+const padHatch = (c: number) => `M${c - 12} 308l8-8M${c - 4} 308l12-12M${c + 5} 308l12-12M${c + 14} 308l3-3`;
+const pads = [136, 215, 385, 464];
+const tree = (x: number) => `M${x} ${GL}V${GL - 30}`;
+const canopy = (x: number) => { const cy = GL - 44, R = 17, n = 9; const pt = (i: number) => [x + R * Math.sin((2 * Math.PI * i) / n), cy - R * Math.cos((2 * Math.PI * i) / n)]; let d = `M${r(pt(0)[0])} ${r(pt(0)[1])}`; for (let i = 1; i <= n; i++) { const q = pt(i % n); d += `A8.5 8.5 0 0 1 ${r(q[0])} ${r(q[1])}`; } return d + 'Z'; };
+const treeIn = (x: number) => `M${x} ${GL - 30}V${GL - 40}M${x} ${GL - 38}L${x - 8} ${GL - 46}M${x} ${GL - 38}L${x + 8} ${GL - 48}M${x} ${GL - 44}V${GL - 56}`;
+const light = (x: number, d: number) => `M${x} ${GL}V${GL - 96}q0-10 ${d * 10}-10h${d * 22}`;
+const lamp = (x: number, d: number) => `M${x + d * 25} ${GL - 106}h${d * 14}v4h${d * -14}Z`;
+---
+<svg class="shedsvg ink" data-shed={mode} viewBox={ghost ? '0 0 520 200' : fin ? '20 70 880 330' : '0 70 600 300'} role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+  <title id={`${uid}-t`}>{ghost ? 'Architect style plan of a plot with a dashed footprint of a shed' : fin ? 'Architect style drawing of the finished shed with its roller shutter lifting and a truck driving off' : 'Architect style elevation of a steel shed being built on the plot in six stages: ground, footings, frame, walls, roof and finish'}</title>
+
+  {ghost && (<g>
+    <path class="o" d="M110 22H410V150H110Z"/>
+    <path class="o3" d="M110 154H410"/>
+    <path class="o3 da" d="M20 188H500"/>
+    {[110, 410].map((x) => [22, 150].map((y) => <g><path class="o" d={`M${x} ${y}v${y < 100 ? 8 : -8}`}/><path class="o fy" d={`M${x - 3} ${y < 100 ? y + 8 : y - 13}h6v5h-6Z`}/></g>))}
+    <g class="fp"><path class="o da fy2" d="M185 54H335V120H185Z"/><path class="o3" d="M185 54L335 120M185 120L335 54"/></g>
+    <path class="o3" d="M110 10V16M410 10V16M110 13H410"/>
+    <text class="tx" x="260" y="8" text-anchor="middle">PLOT</text>
+    <text class="tx" x="260" y="174" text-anchor="middle">50 FT RCC ROAD</text>
+    <text class="tx" x="260" y="140" text-anchor="middle">SHED FOOTPRINT</text>
+  </g>)}
+
+  {!ghost && (<g>
+    <!-- STEP 0: ground, datum, road, pegs -->
+    <path {...A('o gl', 'kd', 0, 0, 0.5)} d={`M0 290H${W}`}/>
+    <path {...A('o3', 'kfade', 0, 0.25, 0.6)} d={soil}/>
+    <g {...A('', 'kfade', 0, 0.45, 0.8)}>
+      <path class="o" d={`M0 326H${W}M0 340H${W}`}/><path class="o3" d={slabHatch}/>
+      <text class="tx" x="300" y="356" text-anchor="middle">50 FT RCC ROAD</text>
+    </g>
+    <g {...A('', 'kfade', 0, 0.55, 1)}>
+      {!fin && <path class="o" d="M12 290V268M588 290V268"/>}
+      {!fin && <path class="o fy" d="M9 264h6v6h-6ZM585 264h6v6h-6Z"/>}
+      <path class="ink2" d="M30 291l-5 8h10z"/><path class="o3" d="M30 299V306"/><text class="tx" x="22" y="316">GL 0.00</text>
+    </g>
+    {!fin && (
+    <g {...A('', 'kout', 2, 0, 0.2)}>
+      <path {...A('o', 'kd', 0, 0.4, 0.9)} d={`M${XL} 290V270M${XR} 290V270M${XL} 274H${XR}`}/>
+      <path class="o fy" d={`M${XL - 3} 266h6v6h-6ZM${XR - 3} 266h6v6h-6Z`}/>
+    </g>)}
+
+    <!-- STEP 1: footings and plinth -->
+    {pads.map((c, n) => (
+      <g>
+        <path {...A('o', 'kd', 1, n * 0.08, 0.5 + n * 0.08)} d={`M${c - 17} ${GL}V308H${c + 17}V${GL}H${c + 7}V${PL}H${c - 7}V${GL}Z`}/>
+        <path {...A('o3', 'kfade', 1, 0.5 + n * 0.08, 0.9)} d={padHatch(c)}/>
+        <path {...A('o2', 'kd', 1, 0.55, 0.95)} d={`M${c - 4} ${PL}V274M${c + 4} ${PL}V274`}/>
+      </g>
+    ))}
+    <path {...A('o', 'kd', 1, 0.3, 0.8)} d={`M${XL} ${PL}H${XR}`}/>
+    <g {...A('lb', 'kfade', 1, 0.7, 1)}><path class="o3" d="M476 304L494 314"/><text class="tx" x="498" y="317">RCC FOOTING</text></g>
+
+    <!-- STEP 2: steel frame -->
+    <path {...A('o', 'kd', 2, 0.1, 0.45)} d={colL}/>
+    <path {...A('o', 'kd', 2, 0.15, 0.5)} d={colR}/>
+    <path {...A('o', 'kd', 2, 0.4, 0.75)} d={rafL}/>
+    <path {...A('o', 'kd', 2, 0.45, 0.8)} d={rafR}/>
+    <path {...A('o2', 'kd', 2, 0.6, 0.9)} d={posts}/>
+    <path {...A('o2', 'kd', 2, 0.65, 0.95)} d={girts}/>
+    <path {...A('o2', 'kd', 2, 0.55, 0.85)} d={knee}/>
+    <path {...A('o2', 'kd', 2, 0.7, 1)} d={purl(pxL)}/>
+    <path {...A('o2', 'kd', 2, 0.75, 1)} d={purl(pxR)}/>
+    <g {...A('lb', 'kfade', 2, 0.6, 1)}>
+      <path class="o3" d={`M478 ${YE}H500`}/><text class="tx" x="504" y={YE + 3}>EAVE +5.70</text>
+      <path class="o3" d="M96 176H128"/><text class="tx" x="14" y="160">STEEL</text><text class="tx" x="14" y="172">PORTAL FRAME</text>
+    </g>
+
+    <!-- STEP 3: wall sheeting, clad from left to right -->
+    <path {...A('o3', 'kwipe', 3, 0, 0.45)} d={ribs(134, 210)}/>
+    <path {...A('o3', 'kwipe', 3, 0.3, 0.7)} d={ribs(218, 382)}/>
+    <path {...A('o3', 'kwipe', 3, 0.55, 1)} d={ribs(390, 466)}/>
+    <g {...A('lb', 'kfade', 3, 0.7, 1)}><path class="o3" d="M458 190L482 176H492"/><text class="tx" x="496" y="179">WALL SHEETING</text></g>
+
+    <!-- STEP 4: roof sheeting, green -->
+    <g {...A('', 'kwipeL', 4, 0, 0.55)}><path class="o fg" d={roofL}/><path class="ribg" d={ribsRoofL}/></g>
+    <g {...A('', 'kwipeR', 4, 0.2, 0.75)}><path class="o fg" d={roofR}/><path class="ribg" d={ribsRoofR}/></g>
+    <path {...A('o', 'kd', 4, 0.6, 0.9)} d={`M${XC - 6} ${r(YR - 14)}L${XC} ${r(YR - 19)}L${XC + 6} ${r(YR - 14)}`}/>
+    <g {...A('lb', 'kfade', 4, 0.7, 1)}>
+      <path class="o3" d={`M${XC + 8} ${r(YR - 19)}H500`}/><text class="tx" x="504" y={r(YR - 16)}>RIDGE +6.80</text>
+    </g>
+
+    <!-- STEP 5: finish. fascia band (flag stripe), sign, shutter, door, street lights, trees -->
+    <g {...A('', 'kwipe', 5, 0, 0.35)}>
+      <path class="o fy" d={band(XL, 243)}/><path class="o fr" d={band(243, 357)}/><path class="o fg" d={band(357, XR)}/>
+    </g>
+    <path {...A('o', 'kd', 5, 0.15, 0.5)} d={`M${OX0 - 8} 164H${OX1 + 8}V${OY0}H${OX0 - 8}Z`}/>
+    <path {...A('o2', 'kd', 5, 0.2, 0.55)} d={`M${OX0} ${OY0}V${PL}H${OX0 + 6}V${OY0}M${OX1} ${OY0}V${PL}H${OX1 - 6}V${OY0}`}/>
+    {!fin && (
+    <g {...A('', 'kwipeD', 5, 0.3, 0.7)}>
+      <path class="o fy" d={`M${OX0 + 6} ${OY0}H${OX1 - 6}V${PL}H${OX0 + 6}Z`}/>
+      <path class="o3" d={slats}/>
+      <path class="o fk" d={`M${OX0 + 6} 276H${OX1 - 6}V${PL}H${OX0 + 6}Z`}/>
+    </g>)}
+    <g {...A('', 'kfade', 5, 0.5, 0.85)}>
+      <path class="o fw" d="M268 136H332V160H268Z"/><image href="/brand/logo-badge-only.svg" x="290" y="138" width="20" height="20"/>
+      <path class="o fw" d={`M415 222H445V${PL}H415Z`}/><path class="o3" d="M420 228H440V252H420Z"/><path class="o" d="M441 258v6"/>
+    </g>
+    <path {...A('o', 'kd', 5, 0.55, 0.9)} d={light(92, 1)}/>
+    <path {...A('o', 'kd', 5, 0.6, 0.95)} d={light(508, -1)}/>
+    <path {...A('o fk2', 'kfade', 5, 0.75, 1)} d={`${lamp(92, 1)}${lamp(508, -1)}`}/>
+    <path {...A('o', 'kd', 5, 0.65, 1)} d={`${tree(48)}${tree(552)}`}/>
+    <g {...A('', 'kfade', 5, 0.7, 1)}>
+      <path class="o fg2" d={`${canopy(48)}${canopy(552)}`}/><path class="o3" d={`${treeIn(48)}${treeIn(552)}`}/>
+    </g>
+  </g>)}
+
+  {fin && (<g>
+    <clipPath id={`${uid}-dc`}><rect x={OX0 + 6} y={OY0} width={OX1 - OX0 - 12} height={PL - OY0}/></clipPath>
+    <g clip-path={`url(#${uid}-dc)`}>
+      <g class="k klift door" style="--tl:--fin;--r0:95;--rw:100;--rh:0;--s:0;--e:.55">
+        <path class="o fy" d={`M${OX0 + 6} ${OY0 - 2}H${OX1 - 6}V${PL}H${OX0 + 6}Z`}/>
+        <path class="o3" d={slats}/>
+        <path class="o fk" d={`M${OX0 + 6} 276H${OX1 - 6}V${PL}H${OX0 + 6}Z`}/>
+      </g>
+    </g>
+    <g class="k ktruck truck" style="--tl:--fin;--r0:95;--rw:100;--rh:0;--s:.6;--e:1"><g transform="translate(600 290)"><Truck/></g></g>
+  </g>)}
+</svg>

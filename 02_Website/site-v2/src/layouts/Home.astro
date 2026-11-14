@@ -1,0 +1,49 @@
+---
+// v3 home layout ("The Groundwork for Growth"). Self-contained: own CSS and one small module script. Inner pages keep Base.astro.
+import homeCss from '../styles/home.css?raw';
+import trackJs from '../scripts/track.js?raw';
+import SEO from '../components/SEO.astro';
+import Schema from '../components/Schema.astro';
+import Gtm from '../components/Gtm.astro';
+import Consent from '../components/Consent.astro';
+import { SITE, NAV, waLink } from '../lib/site';
+import { ICON_CALL } from '../lib/icons.mjs';
+interface Props { title: string; description: string; path: string; pageType?: string; crumbs?: { name: string; href: string }[]; faq?: { q: string; a: string }[]; article?: { date: Date }; noindex?: boolean; place?: boolean; css?: string; }
+const { title, description, path, pageType = 'home', crumbs = [], faq, article, noindex = false, place = true, css = '' } = Astro.props;
+const here = (h: string) => (h.startsWith('/#') ? undefined : path === h || (h !== '/' && path.startsWith(h)) ? 'page' : undefined);
+const tel = SITE.phones[0];
+---
+<!doctype html>
+<html lang="en" data-type="place" data-page-type={pageType} data-location-slug="none">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<SEO title={title} description={description} noindex={noindex} type={article ? 'article' : 'website'} />
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/Erode-VF.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Inter-VF-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style is:inline set:html={homeCss + css}></style>
+<Schema path={path} title={title} description={description} place={place} crumbs={crumbs} faq={faq} article={article} />
+<script is:inline set:html={trackJs}></script>
+<Gtm />
+</head>
+<body>
+<a class="skip" href="#top">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="/" aria-label="Isapur Industrial Park, home"><img src="/brand/logo-badge-only.svg" width="52" height="52" alt="" translate="no"><span>Isapur Industrial Park</span></a>
+    <nav class="nav__links" aria-label="Main">{NAV.map((n) => <a href={n.href} aria-current={here(n.href)}>{n.label}</a>)}</nav>
+    <a class="b b--g nav__call" href={`tel:${tel.tel}`} data-cta-id="header-call" data-section="header"><Fragment set:html={ICON_CALL} /><span class="nav__num">{tel.display}</span><span class="nav__lbl">Call</span></a>
+    <details class="menu"><summary aria-label="Menu"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 14h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></summary>
+      <nav class="menu__panel" aria-label="Menu">{NAV.map((n) => <a href={n.href} aria-current={here(n.href)}>{n.label}</a>)}<a href={waLink()} rel="noopener" data-cta-id="menu-wa" data-section="header">WhatsApp</a></nav>
+    </details>
+  </div>
+  <div class="bar" aria-hidden="true"><i></i></div>
+</header>
+<main id="top"><slot /></main>
+<slot name="footer" />
+<Consent />
+<script>import '../scripts/home.mjs';</script>
+</body>
+</html>

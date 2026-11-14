@@ -1,56 +1,28 @@
 ---
 title: Plots near Delhi-Meerut Expressway | Isapur Industrial Park
-description: 4.7 km by road to the Delhi-Meerut Expressway on-ramp at Bhojpur. Industrial plots from 300 sq yards on the Hapur-Modinagar Road.
+description: 4.2 km by road to the Delhi-Meerut Expressway on-ramp at Bhojpur. Industrial plots from 300 sq yards on the Hapur-Modinagar Road.
 h1: Industrial plots near the Delhi-Meerut Expressway
-lead: The Delhi-Meerut Expressway on-ramp at Bhojpur is 4.7 km by road from Isapur Industrial Park, about 8 minutes. Plots start from 300 sq yards.
+lead: The Delhi-Meerut Expressway on-ramp at Bhojpur is 4.2 km by road from Isapur Industrial Park, about 5 minutes. Plots run from 300 sq yards.
 pageType: landing
 schema:
 - Place
-place: '[["Expressway on-ramp, Bhojpur", "4.7 km", "8 min"], ["Meerut City railway station", "29.3 km", "56 min"]]'
+place: '[["Expressway on-ramp, Bhojpur", "4.2 km", "5 min"], ["Meerut centre", "29.9 km", "29 min"], ["Ghaziabad railway station", "33.5 km", "30 min"], ["Anand Vihar, Delhi", "46 km", "40 min"]]'
 ---
 
-## The short answer
-
-
-
-## Three plot distances, all labelled
-
-| What | Distance | Kind |
-|---|---|---|
-| Expressway on-ramp at Bhojpur | 4.7 km, about 8 min | by road (Google Maps, 6 November 2026) |
-| Nearest point of the expressway | 3.9 km | straight-line |
-| Bhojpur exit | 4.3 km | straight-line |
-
-Use the road figure to plan a truck. Straight-line figures are shorter and show only how near the expressway runs.
-
-## Distances from the plots via the expressway
-
-| From the park, via the expressway | By road | Time |
-|---|---|---|
-| Meerut City railway station | 29.3 km | about 56 min (toll) |
-| Ghaziabad railway station | 34.7 km | about 47 min (toll) |
-| Anand Vihar ISBT, Delhi | 46.0 km | about 89 min (toll) |
-
-Measured on Google Maps with live traffic at about 6:50 pm. Peak hours and tolls change the time.
-
-## What a short drive from the plots changes
+## What a short drive to the expressway changes
 
 - Loaded trucks reach a fast road in minutes, not on a congested town road.
 - Supplier and customer pick-ups plan better when the first leg is short and known.
 - Staff who come from Meerut or Ghaziabad can use the same road.
 
-## What the plots have
+## Inside the park
 
-50 ft RCC roads, street lighting and planted greenery. [See what each means](/amenities/).
+50 ft RCC roads, street lighting, planted greenery and power 24/7. A petrol pump sits at the entry and exit. See [roads and lighting](/amenities/).
 
 ## Plots
 
-From 300 sq yards (about 2,700 sq ft). Contact for price
+From 300 sq yards, about 2,700 sq ft. See [plot sizes and how buying works](/industrial-plots/) and the [plot maps](/plot-maps/).
 
-[Plot sizes and how buying works](/industrial-plots/)
+## Drive to the plots
 
-## Drive to the plots yourself
-
-[Get directions](https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road) · [WhatsApp us](https://wa.me/{{wa}}) · [Book a site visit](/contact/)
-
-More: [All locations](/location/) · [Questions and answers](/faq/)
+[Get directions](https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road). See [all locations](/location/) and the [questions and answers](/faq/).

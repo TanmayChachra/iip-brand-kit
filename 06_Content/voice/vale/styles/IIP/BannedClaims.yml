@@ -1,0 +1,26 @@
+extends: existence
+message: "Claim not allowed: '%s' (water, security, permitted use, price, resale, developer)."
+level: error
+ignorecase: true
+tokens:
+  - water
+  - drainage
+  - sewer\w*
+  - secur(e|ity)
+  - '\bsafe\b'
+  - safety
+  - permitted uses?
+  - permitted
+  - prices?
+  - pricing
+  - priced
+  - resale
+  - resell\w*
+  - re-sale
+  - 100\+? acres?
+  - section 80
+  - legally compliant
+  - RERA
+  - clear title
+  - dispute[- ]free
+  - fully approved

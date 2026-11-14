@@ -8,13 +8,13 @@ import { fill } from './phones.mjs';
 let proc;
 const weight = (md) => md.split(/\s+/).filter(Boolean).length + (md.match(/^\|.*\|$/gm) || []).length * 12;
 
-export async function sections(body, max = 5) {
+export async function sections(body, max = 5, extra = 0) {
   proc ??= await createMarkdownProcessor({ remarkPlugins: [remarkFill] });
   const parts = (body || '').split(/^## /m);
   parts.shift(); // text before the first heading is not used
   const cta = /^(\[WhatsApp|More:|Next:|Related:|\[Get directions\]|\[See |\[Send an enquiry|\[Book a site visit)/;
   const chunks = parts.map((p) => { const i = p.indexOf('\n'); return { h: p.slice(0, i).trim(), md: p.slice(i + 1).split('\n').filter((l) => !cta.test(l.trim())).join('\n').trim() }; }).filter((c) => c.md);
-  const total = chunks.reduce((n, c) => n + weight(c.md), 0);
+  const total = chunks.reduce((n, c) => n + weight(c.md), 0) + extra;
   const target = Math.max(1, Math.min(max, chunks.length, Math.ceil(total / 125)));
   const per = total / target;
   const groups = [];

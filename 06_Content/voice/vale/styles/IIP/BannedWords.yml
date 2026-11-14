@@ -1,0 +1,35 @@
+extends: existence
+message: "Banned word '%s' (VOICE section 7)."
+level: error
+ignorecase: true
+tokens:
+  - premium
+  - luxury
+  - world-class
+  - best-in-class
+  - unmatched
+  - dream
+  - hurry
+  - limited
+  - exclusive
+  - unique
+  - state-of-the-art
+  - cutting-edge
+  - seamless
+  - hassle-free
+  - ultimate
+  - synergy
+  - ecosystem
+  - leverage
+  - unlock
+  - elevate
+  - solutions?
+  - tailored
+  - curated
+  - guaranteed
+  - assured
+  - 100%
+  - 'no\.\s?1'
+  - returns
+  - appreciation
+  - best

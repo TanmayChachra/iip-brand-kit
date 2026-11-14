@@ -1,0 +1,9 @@
+extends: existence
+message: "Held or retired phone number '%s'. Use 98377 64222 only."
+level: error
+ignorecase: true
+tokens:
+  - '92195\s?-?49800'
+  - '98370\s?-?57800'
+  - '\+?91[\s-]?92195'
+  - '\+?91[\s-]?98370'

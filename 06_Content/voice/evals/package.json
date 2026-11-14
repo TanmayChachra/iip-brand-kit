@@ -1,0 +1,1 @@
+{"name":"iip-voice-evals","private":true,"version":"0.0.1","description":"Voice evals for IIP copy. Dev tool, not part of the site.","devDependencies":{"promptfoo":"^0.125.1"}}

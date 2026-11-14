@@ -1,8 +1,8 @@
 [
  {
   "check": "phone-number",
-  "target": "tel:+919837057800",
-  "reason": "the client's own real number 9837057800, given in the brief; the demo-phone rule is for invented sites"
+  "target": "tel:+919219549800",
+  "reason": "the client's own real number 9219549800, given in the brief; the demo-phone rule is for invented sites"
  },
  {
   "check": "phone-number",
@@ -16,12 +16,27 @@
  },
  {
   "check": "phone-number",
-  "target": "98370 57800",
-  "reason": "the client's own real number 9837057800 (swap point phones.mjs), shown on the contact page and footer; the demo-phone rule is for invented sites"
+  "target": "92195 49800",
+  "reason": "the client's own real number 9219549800 (swap point phones.mjs), shown on the contact page and footer; the demo-phone rule is for invented sites"
  },
  {
   "check": "phone-number",
   "target": "98377 64222",
   "reason": "the client's own real number 9837764222 (swap point phones.mjs), shown on the contact page and footer; the demo-phone rule is for invented sites"
+ },
+ {
+  "check": "section-gaps",
+  "target": "section",
+  "reason": "inner pages are text-led: on a phone the gap between two stacked sections is the text plus its stacked photograph, so it differs from the gap under the hero by design"
+ },
+ {
+  "check": "one-section",
+  "target": "type-moment",
+  "reason": "the address link is open type across the container (the dealt address type moment), no box and no ground of its own"
+ },
+ {
+  "check": "forms",
+  "target": "book__panel",
+  "reason": "by design the form hands the request to WhatsApp (wa.me with the client's number) or to PUBLIC_FORM_ENDPOINT; there is no page to post to"
  }
 ]

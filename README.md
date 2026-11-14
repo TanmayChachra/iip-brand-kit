@@ -8,7 +8,7 @@ Live boards (GitHub Pages): brand kit https://tanmaychachra.github.io/iip-brand-
 | Path | What | Owner agent |
 |---|---|---|
 | `CLAUDE.md`, `00_ISAPUR_KNOWLEDGE.md`, `TODOS.md`, `CHANGELOG.md`, `README.md` | Rules, facts and decisions, open work, history, this map. Permanent, keep current | lead |
-| `01_Brand/` | Brand kit (`Brand-Kit/`), poster (`Isapur-Poster/`), supplied logo files, references, poster lab (`Experiments/`), `AI-Assets/` (phase 3 only) | brand |
+| `01_Brand/` | Brand kit (`Brand-Kit/`, v1.2 with Erode, design language, voice, plot maps pages), poster (`Isapur-Poster/`), plot maps (`Plot-Maps/`), supplied logo files, references, poster lab (`Experiments/`), `AI-Assets/` (phase 3 only) | brand |
 | `02_Website/` | The website: information architecture, page specs, the Astro project (`site/`, when build starts) | web |
 | `03_SEO/` | `research/` (stack, tooling), `competitors/`, `keywords/`, `backlinks/`, `aeo-geo/`, `playbook/`, `watch/` (scheduled research output) | seo |
 | `04_Analytics/` | GTM and GA4 plan, event spec, dashboards, A/B test log | analytics |
@@ -21,9 +21,10 @@ Live boards (GitHub Pages): brand kit https://tanmaychachra.github.io/iip-brand-
 ## Rebuild (brand kit and its Pages copy)
 ```
 python 01_Brand/Brand-Kit/_build/build_all.py   # every SVG, PDF, PNG, master file, print colours
-python 01_Brand/Brand-Kit/_build/publish.py     # page, brand book PDF, brief, copy to docs/ (keeps docs/board and docs/experiments)
+python 01_Brand/Brand-Kit/_build/build_site.py  # local preview of the kit page, then build_brief.py and build_book.py (no publish)
+python 01_Brand/Brand-Kit/_build/publish.py     # page, brand book PDF, brief, copy to docs/ (keeps docs/board and docs/experiments). Only after the owner has seen the local build
 python _ops/board/build_board.py                # phase 2 board into docs/board/
 ```
 
 ## Rules
-Logo never changes. English only. Taglines are adaptive (two approved lines). Developer is not named. No claim without proof on file. Online images are WEBP. No em dashes, no co-author lines in git. Secrets live only in env vars the owner sets.
+Logo never changes. English only. Display font Erode, text Inter, Montserrat only in the logo. One public phone, 98377 64222. Taglines are adaptive (two approved lines, one per creative). Developer is not named. Only claims on the owner's allowed list. Online images are WEBP. No em dashes, no co-author lines in git. Secrets live only in env vars the owner sets.

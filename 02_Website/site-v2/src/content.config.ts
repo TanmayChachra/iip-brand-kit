@@ -25,6 +25,7 @@ const posts = defineCollection({
     title: z.string(),
     description: z.string(),
     h1: z.string(),
+    lead: z.string().optional(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
     faq,

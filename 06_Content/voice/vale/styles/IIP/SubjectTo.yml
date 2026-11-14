@@ -1,0 +1,6 @@
+extends: existence
+message: "'subject to' is allowed only on the papers pages (approvals, layout-approvals)."
+level: error
+ignorecase: true
+tokens:
+  - subject to

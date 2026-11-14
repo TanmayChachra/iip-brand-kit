@@ -40,6 +40,6 @@ From 300 sq yards (about 2,700 sq ft). [OWNER TO CONFIRM: sizes and price approa
 
 ## Visit
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)
 
 More: [All locations](/location/) · [Questions and answers](/faq/)

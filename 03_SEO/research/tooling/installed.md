@@ -56,3 +56,6 @@
 
 ## Needs the OpenSEO MCP
 ai-prompt-research, ai-visibility-audit, competitive-landscape, competitor-analysis, keyword-clustering, keyword-research, link-prospecting, local-seo, openseo-seo-audit, seo-coach, seo-project-setup, seo-report.
+
+## 2026-11-13 addition
+- seo-content-brief and seo-programmatic (claude-seo, MIT) copied to ~/.claude/skills/ after full read. Details in copy-seo-agents.md section 6.

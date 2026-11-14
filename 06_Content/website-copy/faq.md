@@ -9,18 +9,18 @@ slug: "/faq/"
 status: build
 ---
 
-Every answer starts with the answer. Call 98370 57800 if yours is not here.
+Every answer starts with the answer. Call 98377 64222 if yours is not here.
 
 ## Plots and buying
 
 ### What plot sizes do you have?
-Plots start from 300 sq yards, which is about 2,700 sq ft. Other sizes depend on what is open today, so call 98370 57800 or 92195 49800 for the current list. We will tell you which plots are available and show their position on the layout plan. [OWNER TO CONFIRM: all plot sizes and which are available]
+Plots start from 300 sq yards, which is about 2,700 sq ft. Other sizes depend on what is open today, so call 98377 64222 for the current list. We will tell you which plots are available and show their position on the layout plan. [OWNER TO CONFIRM: all plot sizes and which are available]
 
 ### How big is 300 sq yards in feet?
 300 sq yards is about 2,700 sq ft, or about 251 sq m, because one sq yard is nine sq ft. As a rough shape that is a plot near 50 ft by 54 ft. The real shape depends on the plot map, so ask to see it.
 
 ### What is the price of a plot?
-Price: [OWNER TO CONFIRM: starting price, ranges, or "contact for price"]. Rates depend on size, position and payment plan. Call 98370 57800 or 92195 49800 and we will share today's list, so you compare real numbers and not guesses.
+Price: [OWNER TO CONFIRM: starting price, ranges, or "contact for price"]. Rates depend on size, position and payment plan. Call 98377 64222 and we will share today's list, so you compare real numbers and not guesses.
 
 ### How do I buy an industrial plot here?
 Call or message, visit the site, pick a plot on the layout plan, read the documents with your own advisor, then book and register. [OWNER TO CONFIRM: booking amount and payment plan]. Take your time between visit and booking, and never pay before you have read the papers.
@@ -71,20 +71,20 @@ By road via the expressway: Meerut City railway station 29.3 km (about 56 min), 
 ## Visiting and contact
 
 ### Can I visit before I decide?
-Yes, and you should. Call 98370 57800 or 92195 49800, or message us on WhatsApp, and we will fix a time and meet you at the gate. Bring the vehicle you use and your questions, and plan about an hour. [OWNER TO CONFIRM: sales office hours and visit rules]
+Yes, and you should. Call 98377 64222, or message us on WhatsApp, and we will fix a time and meet you at the gate. Bring the vehicle you use and your questions, and plan about an hour. [OWNER TO CONFIRM: sales office hours and visit rules]
 
 ### What should I ask on a site visit?
 Ask to see the plot position on the layout plan, the road in front of it, the lights, the turning space for your vehicle and the papers. Write down the answers. Our [buying checklist](/blog/industrial-plot-buying-checklist/) lists the questions.
 
 ### How do I contact you?
-Call 98370 57800 or 92195 49800, message us on WhatsApp, or send the enquiry form on the contact page. We call back. The address is Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. Use the directions link on the contact page to find the gate in Google Maps.
+Call 98377 64222, message us on WhatsApp, or send the enquiry form on the contact page. We call back. The address is Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. Use the directions link on the contact page to find the gate in Google Maps.
 
 ### Do you share the plot list over WhatsApp?
-Whether the plot list and layout plan are sent over WhatsApp is still to be confirmed by the owner. Meanwhile, message 98370 57800 with your name, your industry and the plot size you need, and we will reply with what we can share. [OWNER TO CONFIRM: what is shared over WhatsApp]
+Whether the plot list and layout plan are sent over WhatsApp is still to be confirmed by the owner. Meanwhile, message 98377 64222 with your name, your industry and the plot size you need, and we will reply with what we can share. [OWNER TO CONFIRM: what is shared over WhatsApp]
 
 ### Who is Isapur Industrial Park for?
 It is for local factory owners and small industrial buyers, for example people starting a first workshop, moving out of a rented shed or growing a small manufacturing or storage unit. If your needs are bigger, call us and tell us what you plan to make. [OWNER TO CONFIRM: any other buyer types]
 
 ## Book a visit
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Contact page](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Contact page](/contact/)

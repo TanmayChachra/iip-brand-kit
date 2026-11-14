@@ -37,6 +37,6 @@ We list only what you can see on site. Other facilities such as drainage, power 
 
 ## See it yourself
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)
 
 Next: [Plot sizes and how buying works](/industrial-plots/) · [Location and distances](/location/)

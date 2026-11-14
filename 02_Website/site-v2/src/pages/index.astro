@@ -1,106 +1,233 @@
 ---
-import Base from '../layouts/Base.astro';
-import { SITE, mapSearch } from '../lib/site';
-import BookForm from '../components/BookForm.astro';
-import HeroPic from '../components/HeroPic.astro';
-const strip = [['street-light', 'Street light pole beside a road under a blue sky', '/amenities/'], ['factory-yard', 'Factory yard with generators and tanks beside a paved lane', '/neighbours/'], ['verge-palms', 'Road edge lined with planted palm and trees', '/amenities/'], ['road-green', 'Fresh black-top road between green slopes', '/industrial-plots/']] as const;
-const arrow = '<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>';
+// Home v3 round 2: "The Groundwork for Growth". A shed builds itself on the plot as you scroll. Facts: 00_ISAPUR_KNOWLEDGE.md, 06_Content/approvals-facts.md.
+// Assets: scripts/build_home_assets.py. Anything marked DRAFT is a guess to confirm with the owner (also listed in 02_Website/V3-HOME.md).
+import Home from '../layouts/Home.astro';
+import Shed from '../components/Shed.astro';
+import Vig from '../components/Vig.astro';
+import WhereRegion from '../components/WhereRegion.astro';
+import Foot from '../components/Foot.astro';
+import { SITE, waLink } from '../lib/site';
+import { ICON_CALL, ICON_WA, ICON_ARROW } from '../lib/icons.mjs';
+import { burst } from '../lib/burst.mjs';
+import { splitMaster } from '../lib/mastermap.mjs';
+import bands from '../assets/layout-bands.json';
+import icoRoads from '../assets/icons/wide-roads.svg?raw';
+import icoLight from '../assets/icons/street-light.svg?raw';
+import icoGreen from '../assets/icons/planted-greenery.svg?raw';
+import icoPower from '../assets/icons/power-supply.svg?raw';
+import icoDrain from '../assets/icons/drainage.svg?raw';
+import icoRain from '../assets/icons/sustainable.svg?raw';
+const ico = (raw: string) => raw.replace(/^[\s\S]*?<g /, '<svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><g ').replace(/<title>.*?<\/title>/g, '').replace(/<\/svg>\s*$/, '</svg>');
+const masterSvg = splitMaster().shell;
+const tel = SITE.phones[0];
+const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road';
+const heroWa = waLink('Hello, I want to see what is for sale at Isapur Industrial Park.');
+const bandWa = (b: { id: string; label: string }) => waLink(b.id === 'shop' ? 'Hello, I am interested in a shop at Isapur Industrial Park. Please tell me what is available today.' : `Hello, I am looking for an industrial plot of ${b.label} at Isapur Industrial Park. Please tell me what is available today.`);
+const chipHead = (b: { id: string; label: string }) => (b.id === 'shop' ? 'Shops' : b.label.replace(' sq yards', ''));
+const scale: Record<string, number> = { b1: 0.62, b2: 0.8, b3: 1, shop: 0.38 };
+const bp = burst();
+const inside = [
+  [icoRoads, '50 ft RCC roads', 'Wide concrete roads for loaded trucks.'],
+  [icoLight, 'Street lighting', 'Installed along the roads.'],
+  [icoGreen, 'Greenery', 'Planted inside the park.'],
+  [icoPower, 'Power 24/7', 'Government supply on its own lines, coming in from both the Modinagar side and the Hapur side.'],
+  [icoDrain, 'Drainage lanes and green dividers', 'Part of every layout.'],
+  [icoRain, 'Rain water harvesting', 'Part of every layout.'],
+];
+const steps = [
+  ['First meeting', 'We show you what is for sale today. We get to know you and your industry, because personal trust matters, and we tell you about ours.'],
+  ['Papers and questions', 'We show you the approvals we hold and answer your objections and cross questions.'],
+  ['Payment plan', 'An industry standard plan. We assure you that if you ever need to sell, we will help you sell your land, so you can be at ease.'],
+  ['Payments through us', 'Once the plan is final, payments start and the cash flows through us, so our name is on every purchase and every sale and nobody walks away from a deal.'],
+  ['Registry day', 'After about three months of payments we fix the registry day to suit both sides, and the sale is made.'],
+]; // DRAFT: owner-stated process, wording to be confirmed by the owner
+const faq = [
+  ['Is an industrial plot available today?', 'Call us and we show you what is available today, in all three phases, and help you find a plot that suits your needs.'],
+  ['What plot sizes are there?', 'From 300 sq yards. The largest plots are 2000 to 2500 sq yards. Ask our sales team what is available in the size you need.'],
+  ['How big is 300 sq yards?', 'About 2,700 sq ft, because one sq yard is nine sq ft. Think of a plot near 50 ft by 54 ft. The real shape is on the layout.'],
+  ['Can trucks reach the plots?', 'The park has 50 ft RCC roads. On your visit, bring the vehicle you actually run and check the turn into your plot corner.'],
+  ['Can I visit before I decide?', 'Yes, and you should. We are open 8 am to 8 pm every day except Tuesday. Call or message on WhatsApp and we fix a time.'],
+];
+const buildSteps = [
+  ['Ground', 'Pegs and string mark your corners on the plot.', 'Pegs and string'],
+  ['Footings', 'Concrete footings go in and the plinth ties them together.', 'RCC footings'],
+  ['Frame', 'Steel columns and rafters go up, with girts and purlins between.', 'Steel frame'],
+  ['Walls', 'Sheeting closes the walls, panel by panel.', 'Wall sheeting'],
+  ['Roof', 'The green roof sheets go on from the eaves to the ridge.', 'Green roof'],
+  ['Finish', 'The shutter goes up, lights and trees line the road, and you are open for business.', 'Roller shutter'],
+];
 ---
-<Base title="Industrial Plots in Ghaziabad | Isapur Industrial Park" description="Industrial plots for sale in Ghaziabad district on Hapur-Modinagar Road. 50 ft RCC roads, street lighting, planted greenery. Book a site visit." pageType="home" path="/" home place>
-  <section class="hero hero--place" data-enter aria-labelledby="hero-h">
-    <HeroPic k={'expressway-a'} alt="Delhi-Meerut Expressway at Ghaziabad, six lanes and street lights" pos="50% 70%" />
-    <div class="wrap"><div class="hero-text">
-      <div class="hero__text">
-        <h1 id="hero-h">Industrial plots on Hapur-Modinagar Road</h1>
-        <p class="hero__lead">Plots from 300 sq yards. Open 8 am to 8 pm, every day except Tuesday.</p>
-        <div class="btn-row"><a class="btn btn--primary" href="#book" data-cta-id="hero-book" data-section="hero">Book a site visit<Fragment set:html={arrow} /></a></div>
+<Home title="Industrial Plots for Sale | Isapur Industrial Park" description="Industrial plots for sale in Ghaziabad district on Hapur-Modinagar Road. 50 ft RCC roads, street lighting, planted greenery. See what is available today." path="/">
+  <div class="wrap pair">
+    <div class="pair__txt">
+      <section class="hero" id="hero" aria-labelledby="hero-h">
+        <p class="tag">The Groundwork for Growth.</p>
+        <h1 id="hero-h">Industrial plots on Hapur-Modinagar Road, Ghaziabad</h1>
+        <p class="lead">Looking for an industrial plot for sale in Ghaziabad? Plots in all three phases run from 300 sq yards to 2000 to 2500 sq yards, on 50 ft RCC roads. Tell us your size and your industry and we show you what is available today.</p>
+        <div class="btns">
+          <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="hero-call" data-section="hero"><Fragment set:html={ICON_CALL} />Call {tel.display}</a>
+          <a class="b b--o" href={heroWa} rel="noopener" data-cta-id="hero-wa" data-section="hero"><Fragment set:html={ICON_WA} />See what is for sale</a>
+        </div>
+        <p class="fine">Open 8 am to 8 pm every day except Tuesday. For factories, warehouses, godowns and investors.</p>
+        <a class="more" href="/plot-maps/" data-cta-id="hero-plotmaps" data-section="hero">See every plot on the plot maps<Fragment set:html={ICON_ARROW} /></a>
+      </section>
+    </div>
+    <div class="pair__vis">
+      <div class="panel mm" data-mm>
+        <svg class="burst" viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="none" stroke="#E5E7EB" stroke-width="5"/></svg>
+        <div class="mm__bar" role="group" aria-label="Choose a phase">
+          <button type="button" class="mm__chip" data-ph="0" aria-pressed="true">All</button>
+          <button type="button" class="mm__chip" data-ph="1" aria-pressed="false">Phase 1</button>
+          <button type="button" class="mm__chip" data-ph="2" aria-pressed="false">Phase 2</button>
+          <button type="button" class="mm__chip" data-ph="3" aria-pressed="false">Phase 3</button>
+        </div>
+        <div class="mm__vp" tabindex="0" aria-label="Master map of the park. Drag to move, use plus and minus to zoom, double tap to zoom in." data-src="/data/master-map.json">
+          <div class="mm__drift"><Fragment set:html={masterSvg} /></div>
+          <noscript><p class="mm__ns">The plot map needs JavaScript. Call us and we show you every plot.</p></noscript>
+          <span class="mm__zoom"><button type="button" data-z="out" aria-label="Zoom out">&minus;</button><button type="button" data-z="in" aria-label="Zoom in">+</button><button type="button" data-z="reset" class="mm__rst" aria-label="Reset zoom">Reset</button></span>
+          <p class="mm__tip" role="status" hidden></p>
+        </div>
+        <p class="cap">All three phases at one scale. Use plus and minus, pinch or double tap to zoom, touch a plot for its size.</p>
       </div>
-    </div></div>
-  </section>
+    </div>
+  </div>
 
-  <section class="section" id="visit" data-place="visit" aria-labelledby="visit-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="visit-h">Address and hours</h2></div>
-      <p class="type-moment"><a href={mapSearch} rel="noopener" data-cta-id="visit-address" data-section="visit">Hapur-Modinagar Road, Yusufpur Isapur</a></p>
-      <div class="grid grid--top">
-        <div class="visit visit--card span-6">
-          <div class="visit__head"><p class="t-small" data-open-now></p></div>
-          <div class="visit__cols">
-            <div class="visit__col stack-4">
-              <address class="visit__address">Hapur-Modinagar Road<br>Yusufpur Isapur, Ghaziabad</address>
-              <a class="link" href={mapSearch} rel="noopener" data-cta-id="visit-directions" data-section="visit">Get directions</a>
-            </div>
-            <div class="visit__col">
-              <dl class="hours" data-tz="Asia/Kolkata"><dt data-days="mon,wed,thu,fri,sat,sun">Monday, Wednesday to Sunday</dt><dd>8:00 to 20:00</dd><dt data-days="tue">Tuesday</dt><dd>Closed</dd></dl>
-            </div>
+  <div class="wrap story" data-story>
+    <aside class="stage" aria-label="A shed built on the plot, stage by stage">
+      <div class="panel stagep">
+        <Shed mode="stage" uid="st" />
+        <p class="cap" id="stage-cap">One plot, built up stage by stage.</p>
+        <ol class="steps">
+          {buildSteps.map(([n], i) => <li><i><b class="k fill" style={`--i:${i};--s:0;--e:1`}></b></i><span>{n}</span></li>)}
+        </ol>
+      </div>
+    </aside>
+    <div class="flow">
+      <section class="sec build" id="build" aria-labelledby="build-h">
+        <p class="eyebrow">Build on it</p>
+        <h2 id="build-h">From bare plot to working shed</h2>
+        <p class="sub">Keep scrolling. The drawing builds as you read, one stage at a time.</p>
+        <ol class="bsteps">
+          {buildSteps.map(([, p, h], i) => <li class="bstep k" style={`--i:${i}`}><span class="bn">Stage {i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
+        </ol>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrap rest">
+    <div class="flow2">
+      <section class="sec" id="where" aria-labelledby="where-h">
+        <p class="eyebrow">Where it sits</p>
+        <h2 id="where-h">4.2 km from the Delhi-Meerut Expressway</h2>
+        <p class="sub">The park is on Hapur-Modinagar Road. One short drive puts you on the expressway, and from there Meerut, Ghaziabad and Delhi are one road away.</p>
+        <WhereRegion />
+      </section>
+
+      <section class="sec" id="road" aria-labelledby="road-h">
+        <p class="eyebrow">The road in</p>
+        <h2 id="road-h">Short drives, and wide roads inside</h2>
+        <ul class="nums">
+          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#FFD600"/></svg><b>4.2<small>km</small></b></div><p>by road to the Delhi-Meerut Expressway entry</p></li>
+          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#0F4D3A"/></svg><b class="lt">10.7<small>km</small></b></div><p>by road to Modinagar</p></li>
+          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#E53935"/></svg><b class="lt">13.6<small>km</small></b></div><p>by road to Hapur</p></li>
+        </ul>
+        <p class="sub">The expressway entry is at Bhojpur. Inside the park your trucks run on 50 ft RCC roads.</p>
+        <a class="more" href="/location/">All distances and directions<Fragment set:html={ICON_ARROW} /></a>
+      </section>
+
+      <section class="sec" id="inside" aria-labelledby="inside-h">
+        <p class="eyebrow">Inside the park</p>
+        <h2 id="inside-h">Roads, lights and power inside the park</h2>
+        <p class="sub">Units already running here make tile-bonding chemicals, comfort cushions, industrial water tanks and PVC pipes.</p>
+        <ul class="feat">
+          {inside.map(([svg, h, p]) => <li><Fragment set:html={ico(svg)} /><div><h3>{h}</h3><p>{p}</p></div></li>)}
+        </ul>
+      </section>
+
+      <section class="sec" id="gate" aria-labelledby="gate-h">
+        <p class="eyebrow">At the gate</p>
+        <h2 id="gate-h">Fuel is at the gate</h2>
+        <p class="sub">An IndianOil petrol pump stands right at the park's entry and exit. Your trucks fill up on the way in and the way out, and never run dry.</p>
+        <Vig kind="gate" uid="vg" label="Architect style drawing of the park entry with two gate piers and an IndianOil petrol pump with a canopy beside it"/>
+      </section>
+
+      <section class="sec" id="shops" aria-labelledby="shops-h">
+        <p class="eyebrow">Shops</p>
+        <h2 id="shops-h">Shops for the people who serve the factories</h2>
+        <p class="sub">Small commercial plots, right inside the park. A sweet shop, a quick-food counter, a tyre repair stall.</p>
+        <Vig kind="shops" uid="vs" label="Architect style drawing of a row of small shop fronts with roller shutters, some up and some down"/>
+        <a class="more" href={bandWa({ id: 'shop', label: 'shops' })} rel="noopener" data-cta-id="shops-wa" data-section="shops">Ask what shops are available<Fragment set:html={ICON_ARROW} /></a>
+      </section>
+
+      <section class="sec" id="sizes" aria-labelledby="sizes-h">
+        <p class="eyebrow">Sizes in the park</p>
+        <h2 id="sizes-h">An industrial plot for every size, 300 to 2500 sq yards</h2>
+        <p class="sub">Plots run from 300 sq yards up to 2000 to 2500 sq yards. Pick a size and watch those plots light up on the map above.</p>
+        <ul class="chips" aria-label="Plot size">
+          {bands.map((b) => <li><a class="chip" href={bandWa(b)} rel="noopener" data-band={b.id} data-n={b.n} data-wa={bandWa(b)} data-label={b.id === 'shop' ? 'shops' : b.label} data-sc={scale[b.id]} data-cta-id={`size-${b.id}`} data-section="sizes"><b>{chipHead(b)}</b><small>{b.n} plots</small></a></li>)}
+        </ul>
+        <p class="out" id="find-out" aria-live="polite">Pick a size to see how many plots of it the layouts hold.</p>
+        <a class="b b--y ask" id="find-ask" href={heroWa} rel="noopener" hidden data-cta-id="find-ask" data-section="sizes"><Fragment set:html={ICON_WA} />Ask what is available in this size</a>
+        <div class="ghost"><Shed mode="ghost" uid="gh" /><p class="cap" id="find-cap">A shed on a plot.</p></div>
+      </section>
+
+      <section class="sec" id="papers" aria-labelledby="papers-h">
+        <p class="eyebrow">The papers</p>
+        <h2 id="papers-h">Start with the papers</h2>
+        <p class="sub">Layouts sanctioned by Zila Panchayat Ghaziabad. Ask us to show you the sanctioned layout for the plot you like.</p>
+        <Vig kind="papers" uid="vp" label="Architect style drawing of a layout plan sheet with roads, plots, a north arrow and a green approval stamp"/>
+        <a class="more" href="/approvals/" data-cta-id="papers-link" data-section="papers">See the approvals<Fragment set:html={ICON_ARROW} /></a>
+      </section>
+
+      <section class="sec" id="buying" aria-labelledby="buying-h">
+        <p class="eyebrow">How buying works</p>
+        <h2 id="buying-h">How buying a plot works</h2>
+        <ol class="buy">
+          {steps.map(([h, p], i) => <li><div class="num"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill={['#FFD600', '#0F4D3A', '#E53935', '#0F4D3A', '#FFD600'][i]}/></svg><b class={i === 1 || i === 2 || i === 3 ? 'lt' : ''}>{i + 1}</b></div><div><h3>{h}</h3><p>{p}</p></div></li>)}
+        </ol>
+      </section>
+
+      <section class="sec" id="faq" aria-labelledby="faq-h">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">Short answers</h2>
+        <div class="faq">
+          {faq.map(([q, a]) => <details><summary>{q}<span aria-hidden="true"></span></summary><p>{a}</p></details>)}
+        </div>
+        <p class="sub">Anything else, ask our sales team on <a href={`tel:${tel.tel}`} data-cta-id="faq-call" data-section="faq">{tel.display}</a>.</p>
+      </section>
+    </div>
+  </div>
+
+  <section class="fin" id="visit" aria-labelledby="visit-h">
+    <div class="fin__run">
+      <div class="wrap fin__stick">
+        <p class="eyebrow">Visit the park</p>
+        <h2 id="visit-h">Industrial plot available? Come and see it</h2>
+        <div class="fin__art">
+          <div class="fin__inside k kfade" style="--tl:--fin;--r0:95;--rw:100;--rh:0;--s:.3;--e:.55">
+            <p class="status" data-open-now>Open 8 am to 8 pm, closed on Tuesday</p>
+            <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="visit-call" data-section="visit"><Fragment set:html={ICON_CALL} />{tel.display}</a>
+            <a class="b b--o fin__wa" href={heroWa} rel="noopener" data-cta-id="visit-wa-art" data-section="visit"><Fragment set:html={ICON_WA} />WhatsApp</a>
           </div>
-          <ul class="visit__rows">
-            <li><span>Sales desk</span><span><a href={`tel:${SITE.phones[0].tel}`} data-cta-id="visit-call" data-section="visit">{SITE.phones[0].display}</a> or <a href={`tel:${SITE.phones[1].tel}`} data-cta-id="visit-call2" data-section="visit">{SITE.phones[1].display}</a></span></li>
-            <li><span>Fuel next door</span><span>IndianOil pump, about 190 m</span></li>
-          </ul>
+          <Shed mode="finale" uid="fn" />
         </div>
-        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333" data-moment="picture-develops"><img src="/img/photo/sheds-blue-43-800.webp" srcset="/img/photo/sheds-blue-43-600.webp 600w, /img/photo/sheds-blue-43-800.webp 800w, /img/photo/sheds-blue-43-1350.webp 1350w" sizes="(min-width: 1024px) 588px, (min-width: 640px) 720px, 342px" width="1350" height="1013" alt="Row of blue industrial sheds beside a paved road" loading="lazy" data-source="stand-in" data-subject="industrial sheds"></figure>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="fin__info">
+        <address>Hapur-Modinagar Road,<br>Yusufpur Isapur, Ghaziabad</address>
+        <dl class="hours"><dt>Monday</dt><dd>8 am to 8 pm</dd><dt>Tuesday</dt><dd class="x">Closed</dd><dt>Wednesday to Sunday</dt><dd>8 am to 8 pm</dd></dl>
+        <div class="btns">
+          <a class="b b--g" href={dir} rel="noopener" data-cta-id="visit-directions" data-section="visit">Get directions</a>
+          <a class="b b--o" href={heroWa} rel="noopener" data-cta-id="visit-wa" data-section="visit"><Fragment set:html={ICON_WA} />WhatsApp {tel.display}</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="plots" aria-labelledby="plots-h">
-    <div class="wrap">
-      <div class="section-head--split"><h2 id="plots-h">Plots, roads and distances</h2><a class="link" href="/location/">All distances</a></div>
-      <div class="grps">
-        <div class="grp"><h3>The plots</h3>
-          <ul class="rows">
-            <li><span class="rows__name">Plot size, from</span><span class="rows__value">300 sq yards</span></li>
-            <li><span class="rows__name">Price</span><span class="rows__value">On request</span></li>
-            <li><span class="rows__name">Site visits</span><span class="rows__value">8 am to 8 pm</span></li>
-            <li><span class="rows__name">Closed on</span><span class="rows__value">Tuesdays</span></li>
-          </ul></div>
-        <div class="grp"><h3>Roads and facilities</h3>
-          <ul class="rows">
-            <li><span class="rows__name">Roads</span><span class="rows__value">50 ft RCC</span></li>
-            <li><span class="rows__name">Street lighting</span><span class="rows__value">Installed</span></li>
-            <li><span class="rows__name">Greenery</span><span class="rows__value">Planted</span></li>
-            <li><span class="rows__name">Petrol pump</span><span class="rows__value">IndianOil, next door</span></li>
-          </ul></div>
-        <div class="grp"><h3>Getting here</h3>
-          <ul class="rows">
-            <li><span class="rows__name">Delhi-Meerut Expressway</span><span class="rows__value">4.7 km by road</span></li>
-            <li><span class="rows__name">Modinagar bus stand</span><span class="rows__value">11.4 km by road</span></li>
-            <li><span class="rows__name">Hapur bus stand</span><span class="rows__value">13.4 km by road</span></li>
-            <li><span class="rows__name">Bhojpur exit</span><span class="rows__value">4.3 km straight-line</span></li>
-          </ul></div>
-      </div>
-      <div class="pl-strip">
-        {strip.map(([n, alt, href]) => <a href={href}><figure><img src={`/img/photo/${n}-sq-600.webp`} srcset={`/img/photo/${n}-sq-320.webp 320w, /img/photo/${n}-sq-600.webp 600w`} sizes="(min-width: 1024px) 282px, (min-width: 640px) 350px, 165px" width="600" height="600" alt={alt} loading="lazy" data-source="stand-in" data-subject={n}></figure></a>)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="map" aria-labelledby="map-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="map-h">Where the park is</h2></div>
-      <div class="grid grid--top">
-        <div class="span-6 facts">
-          <p class="fact"><b>50 ft</b><span>RCC roads inside the park</span></p>
-          <p class="fact"><b>4.7 km</b><span>by road to the Delhi-Meerut Expressway on-ramp</span></p>
-          <p class="fact"><b>300 sq yards</b><span>the smallest plot, price on request</span></p>
-          <p><a class="link" href="/industrial-areas-in-ghaziabad/">Compare industrial areas in Ghaziabad</a></p>
-        </div>
-        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333"><a href="/location/"><img src="/img/map/map-park-sm.webp" srcset="/img/map/map-park-sm.webp 800w, /img/map/map-park.webp 1800w" sizes="(min-width: 1024px) 588px, 342px" width="1800" height="1200" alt="Map of Hapur-Modinagar Road from the Delhi-Meerut Expressway on-ramp to Isapur Industrial Park, with Modinagar and Hapur marked" loading="lazy" style="object-position: 40% 50%" data-source="map" data-subject="route map"></a></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="book" aria-labelledby="book-h">
-    <div class="wrap">
-      <div class="section-head"><h2 id="book-h">Book a site visit</h2></div>
-      <div class="grid grid--top">
-        
-        <div class="book__panel span-6">
-          <BookForm />
-        </div>
-        <figure class="pl-photo span-6 start-7" style="--pl-r: 1.333"><img src="/img/photo/jcb-lowbed-43-800.webp" srcset="/img/photo/jcb-lowbed-43-600.webp 600w, /img/photo/jcb-lowbed-43-800.webp 800w, /img/photo/jcb-lowbed-43-1350.webp 1350w" sizes="(min-width: 1024px) 588px, (min-width: 640px) 720px, 342px" width="1350" height="1013" alt="Excavator on a low-bed truck beside an open road and sheds" loading="lazy" data-source="stand-in" data-subject="site road"></figure>
-      </div>
-    </div>
-  </section>
-</Base>
+  <div class="actionbar" role="region" aria-label="Call or WhatsApp">
+    <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
+    <a class="b b--o" href={waLink()} rel="noopener" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} />WhatsApp</a>
+  </div>
+  <Foot slot="footer" />
+</Home>

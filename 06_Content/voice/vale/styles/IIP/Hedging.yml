@@ -1,0 +1,22 @@
+extends: existence
+message: "Hedge or disclaimer '%s' (REJECTED: defensive legal tone)."
+level: error
+ignorecase: true
+tokens:
+  - not a promise
+  - may vary
+  - terms apply
+  - kindly note
+  - as per
+  - legal advice
+  - general (checklist|guide)
+  - not a statement
+  - never rely
+  - verbal promise
+  - we do not claim
+  - does not claim
+  - no guarantee
+  - without any liability
+  - for informational purposes
+  - 'OWNER TO CONFIRM'
+  - disclaimer

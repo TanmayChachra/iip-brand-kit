@@ -1,0 +1,10 @@
+extends: existence
+message: "Pattern '%s' is rejected (not X just Y, no fluff, bait)."
+level: error
+ignorecase: true
+tokens:
+  - 'not [\w ]+, just'
+  - no fluff
+  - 'no \w+, no \w+'
+  - hindi
+  - hinglish

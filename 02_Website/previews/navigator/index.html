@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IIP previews</title>
+<meta name="description" content="Private previews of the Isapur Industrial Park website and brand kit.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="brand/logo-badge-only.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Erode-VF.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Erode;src:url(fonts/Erode-VF.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:Inter;src:url(fonts/Inter-VF-latin.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--y:#ffd600;--r:#e53935;--g:#0f4d3a;--mist:#f2f4f6;--line:#e5e7eb;--ink:#111827;--mut:#4b5563}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.stripe{height:6px;background:url(brand/flag.svg) 0 0/300% 100% repeat-x;animation:flow 14s linear infinite}
+@keyframes flow{to{background-position:300% 0}}
+@media (prefers-reduced-motion:reduce){.stripe{animation:none}}
+.wrap{width:min(100% - 40px,720px);margin:0 auto;padding:28px 0 40px}
+.logo{display:block;width:min(52vw,200px);height:auto;margin:0 0 20px}
+h1{font:600 clamp(34px,8vw,52px)/1.06 Erode,Georgia,serif;letter-spacing:-.012em;margin:0;text-wrap:balance}
+h1:after{content:"";display:block;width:56px;height:4px;background:var(--r);margin-top:16px}
+.lead{color:var(--mut);margin:18px 0 28px;font-size:18px}
+h2{font:700 12px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin:32px 0 12px}
+.card{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 18px;margin:0 0 12px;border:2px solid var(--line);border-radius:6px;color:inherit;text-decoration:none;transition:border-color .16s,transform .16s}
+.card:hover,.card:focus-visible{border-color:var(--g)}
+.card:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.card:active{transform:scale(.98)}
+.card b{display:block;font:600 21px/1.2 Erode,Georgia,serif}
+.card small{display:block;color:var(--mut);font-size:15px;line-height:1.4;margin-top:2px}
+.pill{flex:none;font:700 11px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;border-radius:99px;background:var(--mist);color:var(--ink)}
+.pill.cur{background:var(--g);color:#fff}
+.pill.new{background:var(--y)}
+.pill.old{background:var(--mist);color:var(--mut)}
+footer{margin-top:36px;padding-top:16px;border-top:2px solid var(--line);color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="stripe" aria-hidden="true"></div>
+<main class="wrap">
+<img class="logo" src="brand/logo-badge-only.svg" width="200" height="200" alt="Isapur Industrial Park">
+<h1>IIP previews</h1>
+<p class="lead">Pick a version to look at. Each one opens in its own tab.</p>
+
+<h2>New previews</h2>
+<a class="card" href="https://iipreview-v3.pages.dev/" data-name="v3"><span><b>Website v3</b><small>The current website, every page, locked design.</small></span><span class="pill cur">Current</span></a>
+<a class="card" href="https://iipreview-kit.pages.dev/" data-name="kit"><span><b>Brand kit, new build</b><small>Local rebuild of the kit with the latest assets.</small></span><span class="pill new">New</span></a>
+
+<h2>Earlier versions</h2>
+<a class="card" href="https://iipreview-v2.pages.dev/" data-name="v2"><span><b>Website v2</b><small>Second version before the design was locked.</small></span><span class="pill old">Earlier</span></a>
+<a class="card" href="https://iipreview-v1.pages.dev/" data-name="v1"><span><b>Website v1</b><small>The first version of the site, kept for comparison.</small></span><span class="pill old">Rejected</span></a>
+<a class="card" href="https://tanmaychachra.github.io/iip-brand-kit/"><span><b>Brand kit, old live</b><small>The kit currently live on GitHub Pages.</small></span><span class="pill old">Live, old</span></a>
+
+<h2>Boards and labs</h2>
+<a class="card" href="https://tanmaychachra.github.io/iip-brand-kit/board/"><span><b>Project board</b><small>Phase 2 tasks and status.</small></span><span class="pill">Live</span></a>
+<a class="card" href="https://tanmaychachra.github.io/iip-brand-kit/experiments/poster-lab/"><span><b>Poster lab</b><small>Poster experiments.</small></span><span class="pill">Live</span></a>
+
+<footer>Private previews, not for search engines. Built 13 November 2026.</footer>
+</main>
+</body>
+</html>

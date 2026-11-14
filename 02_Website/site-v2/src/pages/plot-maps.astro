@@ -1,0 +1,95 @@
+---
+// Plot maps: the three finished layouts (01_Brand/Plot-Maps/svg, optimised by scripts/build_plotmaps.py) inline, one phase at a time.
+import Inner from '../layouts/Inner.astro';
+import { waLink } from '../lib/site';
+import { ICON_WA, ICON_ARROW } from '../lib/icons.mjs';
+import p1 from '../assets/plotmaps/phase1.svg.html?raw';
+import p2 from '../assets/plotmaps/phase2.svg.html?raw';
+import p3 from '../assets/plotmaps/phase3.svg.html?raw';
+import legend from '../assets/plotmaps/legend.json';
+import pmCss from '../assets/plotmaps/plotmaps.css?raw';
+import viewCss from '../assets/plotmaps/viewer.css?raw';
+const maps: Record<string, string> = { '1': p1, '2': p2, '3': p3 };
+const wa = waLink('Hello, I looked at the plot maps of Isapur Industrial Park. Please tell me what is available today.');
+---
+<Inner title="Plot Maps, Phase 1, 2 and 3 | Isapur Industrial Park" description="See every plot of Isapur Industrial Park on the plot maps of Phase 1, Phase 2 and Phase 3. Plots from 300 sq yards on the Hapur-Modinagar Road." path="/plot-maps/" pageType="plots" crumbs={[{ name: 'Home', href: '/' }, { name: 'Plot maps', href: '/plot-maps/' }]} eyebrow="Plot maps" h1="Plot maps of all three phases" lead="Pick a phase and tap a plot to see its number and size. Plots run from 300 sq yards upward." vis="none" css={pmCss + viewCss}>
+  <noscript><style>.pm [data-ph][hidden],.lgd[hidden]{display:block!important}</style></noscript>
+  <section class="sec is" id="maps" aria-labelledby="maps-h" data-pm>
+    <div class="wrap pmg">
+      <div class="pmv__ctl">
+        <h2 id="maps-h">Choose a phase</h2>
+        <div class="mm__bar" role="group" aria-label="Choose a phase">
+          {['1', '2', '3'].map((ph) => <button type="button" class="mm__chip" data-ph={ph} aria-pressed={ph === '1' ? 'true' : 'false'}>Phase {ph}</button>)}
+        </div>
+        <p>Plots run from 300 sq yards upward. Shop plots are smaller. Tap a plot for its number and size.</p>
+      </div>
+      <div class="pmv__main">
+        <div class="pm" aria-label="Plot map. Tap a plot to see its number and size.">
+          <div class="pm__vp" tabindex="0" role="region" aria-label="Plot map, scroll to move">
+            {Object.entries(maps).map(([ph, svg]) => <div data-ph={ph} hidden={ph !== '1'} set:html={svg}></div>)}
+          </div>
+          <p class="mm__tip" role="status" hidden></p>
+        </div>
+        <div class="pm__z" role="group" aria-label="Zoom the map" hidden>
+          <button type="button" data-zm="-" aria-label="Zoom out">&minus;</button>
+          <button type="button" data-zm="+" aria-label="Zoom in">+</button>
+          <span data-zl>Fit to screen. Pinch or use + to zoom.</span>
+        </div>
+      </div>
+      <div class="pmv__leg">
+        <details class="lgdw" open data-lgdw>
+          <summary>Legend</summary>
+          {Object.entries(legend).map(([ph, items]) => (
+            <ul class="lgd" data-ph={ph} hidden={ph !== '1'} aria-label={`Legend, Phase ${ph}`}>
+              {(items as string[][]).map(([fill, stroke, label]) => <li><i style={`background:${fill};border-color:${stroke}`}></i>{label}</li>)}
+            </ul>
+          ))}
+        </details>
+        <div class="btns">
+          <a class="b b--g" href={wa} rel="noopener" data-cta-id="maps-wa" data-section="maps"><Fragment set:html={ICON_WA} />Ask what is available</a>
+        </div>
+        <a class="more" href="/approvals/">See the approvals<Fragment set:html={ICON_ARROW} /></a>
+      </div>
+    </div>
+  </section>
+</Inner>
+<script>
+  const root = document.querySelector('[data-pm]') as HTMLElement;
+  const stage = root.querySelector('.pm') as HTMLElement, tip = root.querySelector('.mm__tip') as HTMLElement;
+  const chips = [...root.querySelectorAll<HTMLElement>('.mm__chip')];
+  const blocks = [...root.querySelectorAll<HTMLElement>('[data-ph]:not(.mm__chip)')];
+  const show = (ph: string) => {
+    blocks.forEach((b) => (b.hidden = b.dataset.ph !== ph));
+    chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.ph === ph)));
+    tip.hidden = true;
+  };
+  chips.forEach((c) => c.addEventListener('click', () => show(c.dataset.ph!)));
+  const zb = root.querySelector('.pm__z') as HTMLElement, zl = zb.querySelector('[data-zl]') as HTMLElement;
+  zb.hidden = false;
+  let z = 1;
+  const zoom = (n: number) => {
+    z = Math.min(3, Math.max(1, n));
+    stage.style.setProperty('--z', String(z));
+    z > 1 ? stage.setAttribute('data-z', '') : stage.removeAttribute('data-z');
+    zl.textContent = z > 1 ? `Zoom ${z}x. Drag the map to move.` : 'Fit to screen. Pinch or use + to zoom.';
+    tip.hidden = true;
+  };
+  zb.querySelectorAll<HTMLElement>('[data-zm]').forEach((b) => b.addEventListener('click', () => zoom(z + (b.dataset.zm === '+' ? 0.75 : -0.75))));
+  const lg = root.querySelector('[data-lgdw]') as HTMLDetailsElement;
+  if (matchMedia('(max-width:1023px)').matches) lg.open = false;
+  let t = 0;
+  const label = (el: SVGElement) => {
+    const a = +(el.dataset.a || 0), n = el.dataset.plot;
+    return el.dataset.type === 'shop' ? `Shop ${n}` : a >= 285 ? `Plot ${n}, about ${Math.round(a / 10) * 10} sq yd` : `Plot ${n}`;
+  };
+  const point = (e: PointerEvent, hold: boolean) => {
+    const pl = (e.target as Element).closest?.('.plot') as SVGElement | null;
+    if (!pl || (!hold && e.pointerType !== 'mouse')) { if (!hold) tip.hidden = true; return; }
+    const r = stage.getBoundingClientRect();
+    tip.textContent = label(pl); tip.style.left = `${e.clientX - r.left}px`; tip.style.top = `${e.clientY - r.top}px`; tip.hidden = false;
+    clearTimeout(t); if (hold) t = window.setTimeout(() => (tip.hidden = true), 3000);
+  };
+  stage.addEventListener('pointermove', (e) => point(e, false));
+  stage.addEventListener('pointerleave', () => (tip.hidden = true));
+  stage.addEventListener('click', (e) => point(e as PointerEvent, true));
+</script>

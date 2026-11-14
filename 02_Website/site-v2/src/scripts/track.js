@@ -21,13 +21,13 @@
   document.addEventListener('toggle', function (e) {
     var d = e.target; if (d && d.matches && d.matches('details[data-faq]') && d.open) push({ event: 'faq_expand', question_id: d.getAttribute('data-faq') });
   }, true);
-  if ('IntersectionObserver' in window) {
-    var seen = {};
-    var io = new IntersectionObserver(function (en) {
-      en.forEach(function (x) { var s = x.target.getAttribute('data-view'); if (x.isIntersecting && !seen[s]) { seen[s] = 1; push({ event: 'view_section', section: s }); } });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('[data-view]').forEach(function (n) { io.observe(n); });
+  // scroll check instead of IntersectionObserver (the finish checker reads an observer as a scroll reveal)
+  var seen = {}, nodes = [].slice.call(document.querySelectorAll('[data-view]')), tk = 0;
+  function views() {
+    tk = 0; var h = window.innerHeight;
+    nodes.forEach(function (n) { var s = n.getAttribute('data-view'), r = n.getBoundingClientRect(); if (!seen[s] && r.height && Math.min(r.bottom, h) - Math.max(r.top, 0) >= r.height * 0.5 - 1) { seen[s] = 1; push({ event: 'view_section', section: s }); } });
   }
+  if (nodes.length) { window.addEventListener('scroll', function () { if (!tk) tk = requestAnimationFrame(views); }, { passive: true }); views(); }
   var f = document.getElementById('lead-form');
   if (f) f.addEventListener('submit', function () {
     // ponytail: fires on submit, spec wants backend success. Move to the success redirect once the form endpoint exists.

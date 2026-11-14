@@ -1,0 +1,22 @@
+{
+ "pages": 25,
+ "broken": [],
+ "h1": [],
+ "title": [],
+ "desc": [],
+ "canon": [],
+ "gtm": [],
+ "jsonld": [],
+ "imgs": [],
+ "tel": [],
+ "badwords": [],
+ "sitemapBad": [],
+ "sitemapMissing": [],
+ "imageFiles": [
+  "/apple-touch-icon.png",
+  "/favicon-32.png",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/share.jpg"
+ ]
+}

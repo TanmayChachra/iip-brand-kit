@@ -18,7 +18,7 @@ BUILT, IND, FARM, WATER = "#F5EDC8", "#F1E3A2", "#E8EFE6", "#CFDCD4"
 LBL = "#46605A"
 PARK = (28.7809, 77.6559)          # Phase 1 pin (knowledge file)
 RAMP = (28.8013952, 77.6204507)    # motorway_link start near Bhojpur (OSM way 935414874), the on-ramp
-TOWNS = {"Modinagar": (28.8320713, 77.5770873, "11.4 km by road"), "Hapur": (28.7299677, 77.775499, "13.4 km by road")}   # OSM place nodes, distances to bus stands from driving-distances.json
+TOWNS = {"Modinagar": (28.8320713, 77.5770873, "10.7 km by road"), "Hapur": (28.7299677, 77.775499, "13.6 km by road")}   # OSM place nodes, OSRM driving distances to the town centres, 2026-11-13
 SW = K.width
 
 
@@ -134,7 +134,7 @@ def build(W, H, cen, km_w, name, sizes):
         L.append(halo("Hapur-Modinagar Road", bests[1] + nx * sizes["road"] * 0.9, bests[2] + ny * sizes["road"] * 0.9 + sizes["road"] * 0.35, sizes["road"] * 0.95, LBL, "Montserrat-SemiBold", "middle", ang, 0.03))
     # route plate and ramp marker
     mid = [p(lat, lon) for lon, lat in rt][len(rt) // 2]
-    pl, w, h = plate(mid[0], mid[1] - sizes["plate"] * 1.1, "4.7 km by road", sizes["plate"], GRN)
+    pl, w, h = plate(mid[0], mid[1] - sizes["plate"] * 1.1, "4.2 km by road", sizes["plate"], GRN)
     L.append(pl)
     L.append(f'<circle cx="{rx:.1f}" cy="{ry:.1f}" r="{sizes["dot"]:.1f}" fill="{YEL}" stroke="{GRN}" stroke-width="{sizes["dot"] * 0.35:.1f}"/>')
     pl, w, h = plate(rx + sizes["dot"] * 2.0, ry - sizes["dot"] * 1.4, "Expressway on-ramp", sizes["plate"], INK, anchor="start")

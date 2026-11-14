@@ -1,40 +1,30 @@
 ---
 title: Industrial Plots in Bhojpur, Isapur | Isapur Industrial Park
-description: Industrial plots at Yusufpur Isapur, near Bhojpur. 4.3 km straight-line to the Bhojpur expressway exit. Plots from 300 sq yards.
+description: Industrial plots at Yusufpur Isapur, near Bhojpur. 4.2 km by road to the Delhi-Meerut Expressway on-ramp at Bhojpur. Plots from 300 sq yards.
 h1: Industrial plots at Yusufpur Isapur, near Bhojpur
-lead: Isapur Industrial Park is at Yusufpur Isapur, close to Bhojpur, on the Hapur-Modinagar Road. The Bhojpur exit of the Delhi-Meerut Expressway is about 4.3 km away in a straight line, and the on-ramp is 4.7 km by road, about 8 minutes.
+lead: Isapur Industrial Park is at Yusufpur Isapur, close to Bhojpur, on the Hapur-Modinagar Road. The Delhi-Meerut Expressway on-ramp at Bhojpur is 4.2 km by road, about 5 minutes.
 pageType: landing
 schema:
 - Place
-place: '[["Expressway on-ramp, Bhojpur", "4.7 km", "8 min"]]'
+place: '[["Expressway on-ramp, Bhojpur", "4.2 km", "5 min"]]'
 ---
 
-## The short answer
+## On the road to Bhojpur
 
+The Hapur-Modinagar Road runs through Sarawa, Yusufpur Isapur and Bhojpur. Bhojpur is where you join the Delhi-Meerut Expressway. Modinagar centre is 10.7 km by road and Hapur centre 13.6 km.
 
+## One place, a few spellings
 
-## About the place names
+Yusufpur Isapur is also written Ishapur or Isapur. Bhojpur is on the same road. Search for Isapur Industrial Park, or use the directions link below.
 
-Yusufpur Isapur is also written Ishapur or Isapur. Bhojpur is on the same road. The park's address is Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022. If a map shows a different spelling, search for "Isapur Industrial Park" or use the directions link below.
+## Inside the park
 
-## What is around the plots
-
-- The Hapur-Modinagar Road runs through Sarawa, Yusufpur Isapur and Bhojpur.
-- Bhojpur is where you join the Delhi-Meerut Expressway.
-- Modinagar bus stand is 11.4 km by road, Hapur bus stand 13.4 km, both measured on Google Maps on 6 November 2026.
-
-## What the plots have
-
-50 ft RCC roads, street lighting and planted greenery. [See what each means](/amenities/).
+50 ft RCC roads, street lighting, planted greenery and power 24/7. A petrol pump sits at the entry and exit. See [roads and lighting](/amenities/).
 
 ## Plots
 
-From 300 sq yards (about 2,700 sq ft). Contact for price
+From 300 sq yards, about 2,700 sq ft. See [plot sizes and how buying works](/industrial-plots/) and the [plot maps](/plot-maps/).
 
-[Plot sizes and how buying works](/industrial-plots/)
+## Come to the gate
 
-## Directions to the plots gate
-
-[Get directions](https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road) · [WhatsApp us](https://wa.me/{{wa}}) · [Book a site visit](/contact/)
-
-More: [All locations](/location/) · [Questions and answers](/faq/)
+[Get directions](https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road) or see [all locations](/location/) and the [questions and answers](/faq/).

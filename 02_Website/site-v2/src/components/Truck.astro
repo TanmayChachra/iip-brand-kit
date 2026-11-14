@@ -1,0 +1,31 @@
+---
+// A rigid cab-over truck in side elevation, hairline ink drawing. Origin: ground at the tail, facing right, about 190 units long (7 m at the shed's scale).
+const wheel = (cx: number) => ({ cx, cy: -12 });
+const wheels = [36, 62, 148];
+const arch = (cx: number) => `M${cx - 16} -14A16 16 0 0 1 ${cx + 16} -14`;
+const stan = Array.from({ length: 8 }, (_, i) => `M${15 + i * 15} -35V-87`).join('');
+---
+<g class="truck-d">
+  <!-- chassis, underrun bar, fuel tank -->
+  <path class="o" d="M0 -30H188V-26H0Z"/>
+  <path class="o" d="M2 -22H12V-18"/>
+  <path class="o fw" d="M88 -26H112V-14H88Z"/><path class="o3" d="M92 -26V-14M108 -26V-14"/>
+  <!-- cargo body -->
+  <path class="o fw" d="M0 -30V-92H124V-30Z"/>
+  <path class="o3" d="M0 -87H124M0 -35H124"/>
+  <path class="o3" d={stan}/>
+  <path class="o fy" d="M4 -66H43V-60H4Z"/><path class="o fr" d="M43 -66H82V-60H43Z"/><path class="o fg" d="M82 -66H120V-60H82Z"/>
+  <!-- cab -->
+  <path class="o fw" d="M126 -30V-70L130 -74H172L181 -60L186 -44V-30Z"/>
+  <path class="o fk3" d="M146 -69H168L175 -58H146Z"/>
+  <path class="o3" d="M144 -72V-32M172 -56V-32M148 -48H156"/>
+  <path class="o fw" d="M184 -74H189V-64H184Z"/><path class="o" d="M181 -62H184"/>
+  <path class="o fw" d="M185 -44H188V-38H185Z"/><path class="o" d="M186 -34H190V-30"/>
+  <!-- wheel arches and wheels -->
+  <path class="o" d={`${arch(36)}${arch(62)}${arch(148)}`}/>
+  {wheels.map((x) => { const w = wheel(x); return (
+    <g>
+      <circle class="o tyre" cx={w.cx} cy={w.cy} r="12"/><circle class="o3" cx={w.cx} cy={w.cy} r="9"/><circle class="o rim" cx={w.cx} cy={w.cy} r="5.5"/><circle class="o" cx={w.cx} cy={w.cy} r="1.6"/>
+      <path class="o3" d={`M${w.cx} ${w.cy - 5.5}V${w.cy - 9}M${w.cx + 5.5} ${w.cy}H${w.cx + 9}M${w.cx} ${w.cy + 5.5}V${w.cy + 9}M${w.cx - 5.5} ${w.cy}H${w.cx - 9}`}/>
+    </g>); })}
+</g>

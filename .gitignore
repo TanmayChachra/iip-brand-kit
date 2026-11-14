@@ -40,3 +40,10 @@ _ops/private/
 02_Website/site-v2/.astro/
 02_Website/site-v2/.taste-skill/
 02_Website/assets/map/cache/
+02_Website/site-v2/dist-home/
+02_Website/toolkit-archive/
+
+# dependencies and local tools
+**/node_modules/
+06_Content/voice/evals/node_modules/
+02_Website/toolkit-archive/

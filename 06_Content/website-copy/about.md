@@ -40,4 +40,4 @@ Hapur-Modinagar Road, Yusufpur Isapur, Ghaziabad, UP 201022.
 
 ## Talk to us
 
-[Call 98370 57800](tel:+919837057800) · [Call 92195 49800](tel:+919219549800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)

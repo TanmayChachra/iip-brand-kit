@@ -1,6 +1,6 @@
 ---
 title: "Isapur Industrial Park | Industrial Plots, Modinagar"
-description: "Industrial plots on Hapur-Modinagar Road, Ghaziabad. 50 ft RCC roads, street lighting, planted greenery. Call 98370 57800 or book a site visit."
+description: "Industrial plots on Hapur-Modinagar Road, Ghaziabad. 50 ft RCC roads, street lighting, planted greenery. Call 98377 64222 or book a site visit."
 h1: "Industrial plots on the Hapur-Modinagar Road, near Bhojpur"
 primary_keyword: "isapur industrial park"
 schema: [Organization, LocalBusiness, WebSite, WebPage]
@@ -13,7 +13,7 @@ status: build
 
 Isapur Industrial Park sells industrial plots at Yusufpur Isapur on the Hapur-Modinagar Road, Ghaziabad district. Plots start from 300 sq yards. Come and see the site, then decide.
 
-[Call 98370 57800](tel:+919837057800) · [WhatsApp us](https://wa.me/919837057800) · [Book a site visit](/contact/)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp us](https://wa.me/919837764222) · [Book a site visit](/contact/)
 
 ## What you can check on site today
 
@@ -46,7 +46,7 @@ Measured on Google Maps by road, 6 November 2026. [Full distance table and map](
 
 - **What size plots are there?** From 300 sq yards. Call to hear what is open now.
 - **Can trucks reach the plots?** The park has 50 ft RCC roads.
-- **Can I visit before deciding?** Yes. Call 98370 57800 and we will fix a time.
+- **Can I visit before deciding?** Yes. Call 98377 64222 and we will fix a time.
 
 [Read all questions and answers](/faq/)
 
@@ -54,4 +54,4 @@ Measured on Google Maps by road, 6 November 2026. [Full distance table and map](
 
 Seeing the road, the lights and the plot is the best way to judge a park. Call or message us and we will meet you at the gate. [OWNER TO CONFIRM: sales office hours and visit rules]
 
-[Call 98370 57800](tel:+919837057800) · [Call 92195 49800](tel:+919219549800) · [WhatsApp](https://wa.me/919837057800)
+[Call 98377 64222](tel:+919837764222) · [WhatsApp](https://wa.me/919837764222)

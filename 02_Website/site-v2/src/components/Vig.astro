@@ -1,0 +1,99 @@
+---
+// Section drawings in the same architect's ink style as the shed: gate and fuel pump, shop row, layout sheet.
+// Each .vk element draws or fades with the scroll through its own figure (home.css, view timeline --v).
+import { burst } from '../lib/burst.mjs';
+interface Props { kind: 'gate' | 'shops' | 'papers'; uid: string; label: string }
+const { kind, uid, label } = Astro.props;
+const r = (n: number) => Math.round(n * 10) / 10;
+const V = (cls: string, kf: 'd' | 'f' | 'w', s: number, e: number) => ({ class: `${cls} vk vk${kf}`, style: `--s:${s};--e:${e}`, ...(kf === 'd' ? { pathLength: '1' } : {}) });
+const bp = burst();
+const GL = kind === 'gate' ? 210 : 186;
+const soil = (n: number) => Array.from({ length: n }, (_, i) => `M${i * 9 + 6} ${GL}l-5 7`).join('');
+// shops
+const bays = [0, 1, 2, 3, 4];
+const bx = (i: number) => 50 + i * 100;
+const sl = (x0: number, x1: number, y0: number, y1: number) => { let d = ''; for (let y = y0 + 5; y < y1; y += 5) d += `M${x0} ${y}H${x1}`; return d; };
+const shopState = [1, 0.45, 1, 0, 1]; // 1 closed, fraction = how much shutter is still down, 0 open
+// papers grid
+const quad = (x0: number, y0: number) => { let d = ''; for (let c = 0; c < 3; c++) for (let q = 0; q < 2; q++) d += `M${x0 + c * 34} ${y0 + q * 31}h32v29h-32Z`; return d; };
+---
+{kind === 'gate' && (
+<svg class="vig ink" viewBox="0 0 600 262" role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg">
+  <title id={`${uid}-t`}>{label}</title>
+  <path {...V('o gl', 'd', 0, 0.4)} d="M0 210H600"/>
+  <path {...V('o3', 'f', 0.2, 0.6)} d={soil(66)}/>
+  <g {...V('', 'f', 0.3, 0.7)}><path class="o" d="M0 232H600M0 244H600"/><path class="o3 da" d="M0 238H600"/><text class="tx" x="300" y="258" text-anchor="middle">50 FT RCC ROAD</text></g>
+  <!-- gate piers and sign beam -->
+  <path {...V('o', 'd', 0.1, 0.55)} d="M118 210V112H124V104H160V112H166V210"/>
+  <path {...V('o', 'd', 0.15, 0.6)} d="M254 210V112H260V104H296V112H302V210"/>
+  <path {...V('o3', 'd', 0.3, 0.7)} d="M130 196V124H154V196Z"/>
+  <path {...V('o3', 'd', 0.35, 0.75)} d="M266 196V124H290V196Z"/>
+  <g {...V('', 'f', 0.5, 0.9)}>
+    <path class="o fw" d="M166 114H254V150H166Z"/><image href="/brand/logo-badge-only.svg" x="196" y="118" width="28" height="28"/>
+  </g>
+  <g {...V('', 'f', 0.6, 1)}><path class="o3" d="M210 100V84"/><text class="tx" x="210" y="78" text-anchor="middle">PARK ENTRY</text></g>
+  <!-- fuel pump: canopy, columns, island, two dispensers -->
+  <path {...V('o', 'd', 0.3, 0.7)} d="M338 96V84H562V96Z"/>
+  <g {...V('', 'w', 0.5, 0.8)}><path class="o fy" d="M338 96H408V102H338Z"/><path class="o fr" d="M408 96H492V102H408Z"/><path class="o fg" d="M492 96H562V102H492Z"/></g>
+  <path {...V('o', 'd', 0.35, 0.75)} d="M356 102V210M364 102V210"/>
+  <path {...V('o', 'd', 0.4, 0.8)} d="M536 102V210M544 102V210"/>
+  <path {...V('o', 'd', 0.5, 0.85)} d="M380 210V200H520V210"/>
+  {[420, 480].map((x) => (
+    <g {...V('', 'f', 0.65, 1)}>
+      <path class="o fw" d={`M${x - 12} 200V146H${x + 12}V200Z`}/><path class="o fk3" d={`M${x - 8} 152H${x + 8}V166H${x - 8}Z`}/><path class="o3" d={`M${x - 12} 178H${x + 12}`}/>
+      <path class="o" d={`M${x + 12} 164q16 4 16 22v14`}/><path class="o" d={`M${x + 26} 200V190h4v10`}/>
+    </g>))}
+  <g {...V('', 'f', 0.75, 1)}><path class="o3" d="M450 82V66"/><text class="tx" x="450" y="60" text-anchor="middle">INDIANOIL PETROL PUMP</text></g>
+  <g {...V('', 'f', 0.2, 0.6)}><path class="ink2" d="M20 210l-5-8h10z"/><path class="o3" d="M27 210H70"/><text class="tx" x="30" y="205">GL 0.00</text></g>
+</svg>)}
+
+{kind === 'shops' && (
+<svg class="vig ink" viewBox="0 0 600 232" role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg">
+  <title id={`${uid}-t`}>{label}</title>
+  <path {...V('o gl', 'd', 0, 0.4)} d="M0 186H600"/>
+  <path {...V('o3', 'f', 0.2, 0.6)} d={soil(66)}/>
+  <!-- roof edge with flag stripe, fascia, chajja, columns -->
+  <path {...V('o', 'd', 0.1, 0.5)} d="M38 54H562V72H38Z"/>
+  <g {...V('', 'w', 0.3, 0.7)}><path class="o fy" d="M38 54H212V60H38Z"/><path class="o fr" d="M212 54H388V60H212Z"/><path class="o fg" d="M388 54H562V60H388Z"/></g>
+  <path {...V('o', 'd', 0.2, 0.6)} d="M38 104H562V112H38Z"/>
+  <path {...V('o3', 'd', 0.3, 0.7)} d="M50 72V104M150 72V104M250 72V104M350 72V104M450 72V104M550 72V104"/>
+  {bays.map((i) => (
+    <g {...V('', 'f', 0.4 + i * 0.07, 0.8 + i * 0.04)}><path class="o fw" d={`M${bx(i) + 8} 78H${bx(i) + 92}V98H${bx(i) + 8}Z`}/></g>))}
+  <path {...V('o', 'd', 0.25, 0.65)} d="M50 112V186M150 112V186M250 112V186M350 112V186M450 112V186M550 112V186"/>
+  {bays.map((i) => {
+    const st = shopState[i], y1 = 112 + Math.round(74 * st), x0 = bx(i) + 8, x1 = bx(i) + 92;
+    return (
+    <g {...V('', 'f', 0.5 + i * 0.06, 0.9 + i * 0.02)}>
+      {st < 1 && <path class="o3" d={`M${x0} 186H${x1}M${x0 + 8} 176V150H${x1 - 8}V176`}/>}
+      {st === 0 && <path class="o3" d={`M${x0 + 4} 160H${x1 - 4}M${x0 + 4} 140H${x1 - 4}M${x0 + 4} 120H${x1 - 4}`}/>}
+      {st > 0 && <path class="o fy" d={`M${x0} 112H${x1}V${y1}H${x0}Z`}/>}
+      {st > 0 && <path class="o3" d={sl(x0, x1, 112, y1)}/>}
+      {st > 0 && <path class="o fk" d={`M${x0} ${y1 - 4}H${x1}V${y1}H${x0}Z`}/>}
+    </g>); })}
+    <g {...V('', 'f', 0.2, 0.6)}><path class="ink2" d="M20 186l-5-8h10z"/><path class="o3" d="M27 186H46"/></g>
+  <g {...V('', 'f', 0.8, 1)}><text class="tx" x="300" y="214" text-anchor="middle">SHOP FRONTS</text></g>
+</svg>)}
+
+{kind === 'papers' && (
+<svg class="vig ink" viewBox="0 0 600 262" role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg">
+  <title id={`${uid}-t`}>{label}</title>
+  <path {...V('o fw', 'd', 0, 0.5)} d="M110 12H490V250H110Z"/>
+  <path {...V('o3', 'd', 0.1, 0.55)} d="M118 20H482V242H118Z"/>
+  <!-- roads: double lines forming a cross -->
+  <path {...V('o2', 'f', 0.2, 0.6)} d="M122 94H356M122 110H356M232 24V94M246 24V94M232 110V176M246 110V176"/>
+  <path {...V('o3', 'f', 0.3, 0.8)} d={`${quad(126, 30)}${quad(250, 30)}${quad(126, 116)}${quad(250, 116)}`}/>
+  <path {...V('o fy', 'f', 0.6, 0.9)} d="M160 61h32v29h-32Z"/>
+  <path {...V('o fg2', 'f', 0.7, 1)} d="M284 147h32v29h-32Z"/>
+  <path {...V('o3', 'f', 0.4, 0.8)} d="M126 184H356M126 180V188M356 180V188"/>
+  <text class="tx" x="241" y="198" text-anchor="middle">50 FT RCC ROAD</text>
+  <!-- north arrow, notes, title block with stamp -->
+  <g {...V('', 'f', 0.5, 0.9)}>
+    <circle class="o" cx="448" cy="50" r="12"/><path class="o fk" d="M448 38L453 54L448 51L443 54Z"/><text class="tx" x="448" y="30" text-anchor="middle">N</text>
+    <path class="o3" d="M370 36H420M370 46H410M370 56H415M370 66H400M370 76H418M370 86H405"/>
+  </g>
+  <g {...V('', 'f', 0.6, 1)}>
+    <path class="o" d="M366 176H476V236H366Z"/><path class="o3" d="M366 196H476M366 216H476"/>
+    <text class="tx" x="372" y="190">LAYOUT PLAN</text><text class="tx" x="372" y="210">SANCTIONED</text>
+    <g transform="translate(408 104) scale(.08)"><polygon points={bp} fill="#0F4D3A"/><path d="M270 420L370 520L540 320" fill="none" stroke="#fff" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+</svg>)}

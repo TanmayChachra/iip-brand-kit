@@ -1,0 +1,122 @@
+=== faq
+1440x900  9 screens  2 FAIL  4 WARN
+390x844  10 screens  0 FAIL  10 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            WARN section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  15 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\faq\.taste-skill\consistency)
+=== contact
+1440x900  4 screens  2 FAIL  4 WARN
+  FAIL phone-number    div.grid.grid--top > div.span-6.stack-4 > p.phones > a:nth-of-type(1)  "98370 57800"
+  FAIL phone-number    div.grid.grid--top > div.span-6.stack-4 > p.phones > a:nth-of-type(2)  "98377 64222"
+390x844  4 screens  0 FAIL  5 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  9 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\contact\.taste-skill\consistency)
+=== neighbours
+1440x900  5 screens  2 FAIL  4 WARN
+390x844  6 screens  0 FAIL  6 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  10 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\neighbours\.taste-skill\consistency)
+=== blog/how-to-choose-an-industrial-plot
+1440x900  5 screens  2 FAIL  4 WARN
+390x844  6 screens  0 FAIL  6 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  11 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\blog\how-to-choose-an-industrial-plot\.taste-skill\consistency)
+=== 404.html
+1440x900  4 screens  2 FAIL  4 WARN
+390x844  4 screens  0 FAIL  4 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  8 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\.taste-skill\consistency-404)
+=== blog
+1440x900  4 screens  2 FAIL  4 WARN
+390x844  4 screens  0 FAIL  6 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  10 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\blog\.taste-skill\consistency)
+=== location
+1440x900  5 screens  2 FAIL  5 WARN
+390x844  6 screens  0 FAIL  8 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  13 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\.taste-skill\consistency)
+=== industrial-plots
+1440x900  5 screens  2 FAIL  5 WARN
+390x844  6 screens  0 FAIL  5 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  10 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\industrial-plots\.taste-skill\consistency)
+=== amenities
+1440x900  5 screens  2 FAIL  5 WARN
+390x844  5 screens  0 FAIL  6 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  11 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\amenities\.taste-skill\consistency)
+=== about
+1440x900  5 screens  2 FAIL  5 WARN
+390x844  5 screens  0 FAIL  4 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  9 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\about\.taste-skill\consistency)
+=== privacy
+1440x900  5 screens  2 FAIL  4 WARN
+390x844  5 screens  0 FAIL  4 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  9 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\privacy\.taste-skill\consistency)
+=== location/industrial-plots-in-hapur
+1440x900  5 screens  2 FAIL  7 WARN
+390x844  5 screens  0 FAIL  7 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  15 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\industrial-plots-in-hapur\.taste-skill\consistency)
+=== location/industrial-plots-in-ghaziabad
+1440x900  5 screens  2 FAIL  6 WARN
+390x844  6 screens  0 FAIL  7 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  13 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\industrial-plots-in-ghaziabad\.taste-skill\consistency)
+=== location/industrial-plots-near-delhi-meerut-expressway
+1440x900  6 screens  2 FAIL  6 WARN
+390x844  7 screens  0 FAIL  8 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  14 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\industrial-plots-near-delhi-meerut-expressway\.taste-skill\consistency)
+=== location/industrial-plots-in-bhojpur
+1440x900  5 screens  2 FAIL  5 WARN
+390x844  5 screens  0 FAIL  8 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  13 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\industrial-plots-in-bhojpur\.taste-skill\consistency)
+=== location/industrial-plots-in-modinagar
+1440x900  5 screens  2 FAIL  7 WARN
+390x844  6 screens  0 FAIL  8 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  16 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\location\industrial-plots-in-modinagar\.taste-skill\consistency)
+=== blog/industrial-plot-buying-checklist
+1440x900  6 screens  2 FAIL  5 WARN
+390x844  7 screens  0 FAIL  6 WARN
+  WARN nav             header.nav > div.wrap.nav__bar > button.nav__toggle
+  FAIL phone-number           PASS hero-screen            PASS section-height         
+  PASS section-air            PASS one-section            PASS one-heading            
+total  2 FAIL  11 WARN  (crops and report.json in D:\SILVERLEAF_BUILDCON\03_Marketing\IIP Branding\02_Website\site-v2\dist-q\blog\industrial-plot-buying-checklist\.taste-skill\consistency)
+DONE

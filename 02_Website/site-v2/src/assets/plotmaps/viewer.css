@@ -1,0 +1,35 @@
+/* plot maps, MOBILE FIRST: chips, map (scrolls both ways, zoom buttons, pinch and double tap allowed), legend, then the ask. From 1024 the controls sit beside the map. */
+.pmg{display:grid;grid-template-columns:minmax(0,1fr);row-gap:20px;align-items:start}
+.pmv__ctl h2{font-size:clamp(24px,1.6vw + 10px,32px)}
+.pmv__ctl p{margin-top:14px;max-width:26em}
+.mm__bar{display:flex;flex-wrap:nowrap;gap:8px;margin:16px calc(-1 * var(--gut)) 0;padding:2px var(--gut);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.mm__bar::-webkit-scrollbar{display:none}
+.mm__chip{flex:none;min-height:48px;min-width:96px;padding:0 20px;border:2px solid var(--line);border-radius:999px;background:#fff;font:600 16px/1 var(--sans);color:var(--ink);cursor:pointer}
+.mm__chip[aria-pressed=true]{background:var(--g);border-color:var(--g);color:#fff}
+.pmv__main{min-width:0}
+.pm{position:relative;background:#fbfbf9;border:2px solid var(--line);border-radius:6px}
+.pm:before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:url(/brand/flag.svg) 0 0/100% 100% no-repeat;z-index:2}
+.pm__vp{position:relative;overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y pinch-zoom}
+.pm[data-z] .pm__vp{max-height:75svh}
+.pm [data-ph][hidden]{display:none}
+.pmsvg{display:block;height:auto;width:calc(var(--z,1) * 100%);max-width:none}
+.pm .mm__tip{transform:translate(-50%,-140%)}
+.pm__z{display:flex;gap:8px;align-items:center;margin-top:10px}
+.pm__z button{min-width:48px;min-height:48px;border:2px solid var(--g);border-radius:6px;background:#fff;color:var(--g);font:700 22px/1 var(--sans);cursor:pointer}
+.pm__z span{font-size:15px;color:var(--mut)}
+.lgdw{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lgdw summary{display:flex;align-items:center;justify-content:space-between;min-height:52px;font:600 17px/1 var(--sans);cursor:pointer;list-style:none}
+.lgdw summary::-webkit-details-marker{display:none}
+.lgdw summary:after{content:"+";font-size:24px;color:var(--g)}
+.lgdw[open] summary:after{content:"\2212"}
+.lgd{display:grid;gap:6px;padding:4px 0 16px}
+.lgd[hidden]{display:none}
+.lgd li{display:flex;align-items:center;gap:10px;font-size:16px;min-height:32px}
+.lgd i{width:18px;height:18px;border-radius:3px;border:1px solid;flex:none}
+.pmv__leg .btns{margin-top:20px}
+.pmv__leg .more{display:inline-flex;align-items:center;min-height:48px;margin-top:6px}
+@media(min-width:1024px){
+  .pmg{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;grid-template-areas:"m m m m m m m m c c c c" "m m m m m m m m l l l l"}
+  .pmv__ctl{grid-area:c}.pmv__main{grid-area:m}.pmv__leg{grid-area:l}
+  .mm__bar{margin:20px 0 0;padding:2px 0;flex-wrap:wrap;overflow:visible}
+}

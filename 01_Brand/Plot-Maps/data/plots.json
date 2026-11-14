@@ -1,0 +1,8339 @@
+[
+ {
+  "id": "p1-001",
+  "phase": 1,
+  "plot": "1A",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 649.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   198.5,
+   1096.3
+  ],
+  "bbox": [
+   148.0,
+   1084.3,
+   249.2,
+   1108.4
+  ]
+ },
+ {
+  "id": "p1-214",
+  "phase": 1,
+  "plot": "S6",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 19.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   244.9,
+   1098.2
+  ],
+  "bbox": [
+   239.8,
+   1095.7,
+   249.7,
+   1100.7
+  ]
+ },
+ {
+  "id": "p1-213",
+  "phase": 1,
+  "plot": "S5",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 21.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   245.8,
+   1102.2
+  ],
+  "bbox": [
+   241.0,
+   1099.4,
+   250.4,
+   1105.0
+  ]
+ },
+ {
+  "id": "p1-212",
+  "phase": 1,
+  "plot": "S4",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 19.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   246.8,
+   1106.6
+  ],
+  "bbox": [
+   242.3,
+   1103.8,
+   251.0,
+   1109.4
+  ]
+ },
+ {
+  "id": "p1-211",
+  "phase": 1,
+  "plot": "S3",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 18.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   247.8,
+   1111.0
+  ],
+  "bbox": [
+   243.6,
+   1108.3,
+   251.6,
+   1113.8
+  ]
+ },
+ {
+  "id": "p1-210",
+  "phase": 1,
+  "plot": "S2",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 16.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   248.7,
+   1115.4
+  ],
+  "bbox": [
+   244.9,
+   1112.7,
+   252.3,
+   1118.1
+  ]
+ },
+ {
+  "id": "p1-209",
+  "phase": 1,
+  "plot": "S1",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 14.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   249.7,
+   1119.8
+  ],
+  "bbox": [
+   246.2,
+   1117.2,
+   252.9,
+   1122.4
+  ]
+ },
+ {
+  "id": "p1-002",
+  "phase": 1,
+  "plot": "1B",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 658.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   196.6,
+   1084.7
+  ],
+  "bbox": [
+   145.8,
+   1072.9,
+   247.8,
+   1096.6
+  ]
+ },
+ {
+  "id": "p1-005",
+  "phase": 1,
+  "plot": "3",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 1088.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   198.6,
+   1043.7
+  ],
+  "bbox": [
+   154.4,
+   1027.9,
+   243.6,
+   1059.6
+  ]
+ },
+ {
+  "id": "p1-006",
+  "phase": 1,
+  "plot": "4",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 1043.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   198.1,
+   1021.2
+  ],
+  "bbox": [
+   155.6,
+   1005.6,
+   241.1,
+   1036.9
+  ]
+ },
+ {
+  "id": "p1-007",
+  "phase": 1,
+  "plot": "5",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 997.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   197.5,
+   998.8
+  ],
+  "bbox": [
+   156.8,
+   983.2,
+   238.7,
+   1014.3
+  ]
+ },
+ {
+  "id": "p1-008",
+  "phase": 1,
+  "plot": "6",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 859.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   196.9,
+   977.5
+  ],
+  "bbox": [
+   158.0,
+   963.2,
+   236.3,
+   991.8
+  ]
+ },
+ {
+  "id": "p1-009",
+  "phase": 1,
+  "plot": "7",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 671.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   208.3,
+   953.6
+  ],
+  "bbox": [
+   182.4,
+   938.7,
+   234.1,
+   968.5
+  ]
+ },
+ {
+  "id": "p1-010",
+  "phase": 1,
+  "plot": "8",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 329.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   171.7,
+   958.0
+  ],
+  "bbox": [
+   159.2,
+   944.1,
+   185.1,
+   971.4
+  ]
+ },
+ {
+  "id": "p1-011",
+  "phase": 1,
+  "plot": "9",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 396.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   172.5,
+   902.4
+  ],
+  "bbox": [
+   161.6,
+   884.4,
+   184.0,
+   919.6
+  ]
+ },
+ {
+  "id": "p1-012",
+  "phase": 1,
+  "plot": "10",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 474.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   196.3,
+   902.0
+  ],
+  "bbox": [
+   182.1,
+   885.2,
+   210.8,
+   918.6
+  ]
+ },
+ {
+  "id": "p1-013",
+  "phase": 1,
+  "plot": "11A",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 90.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   219.6,
+   912.5
+  ],
+  "bbox": [
+   210.2,
+   907.5,
+   229.3,
+   917.4
+  ]
+ },
+ {
+  "id": "p1-014",
+  "phase": 1,
+  "plot": "11B",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 43.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   219.0,
+   905.7
+  ],
+  "bbox": [
+   210.0,
+   903.1,
+   228.1,
+   908.4
+  ]
+ },
+ {
+  "id": "p1-015",
+  "phase": 1,
+  "plot": "12",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 155.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   217.8,
+   895.4
+  ],
+  "bbox": [
+   208.9,
+   886.6,
+   227.5,
+   903.9
+  ]
+ },
+ {
+  "id": "p1-016",
+  "phase": 1,
+  "plot": "13",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 2807.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   300.0,
+   1075.3
+  ],
+  "bbox": [
+   267.4,
+   1029.0,
+   333.3,
+   1128.4
+  ]
+ },
+ {
+  "id": "p1-017",
+  "phase": 1,
+  "plot": "14",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 1034.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   295.0,
+   1017.4
+  ],
+  "bbox": [
+   263.4,
+   998.0,
+   327.0,
+   1036.8
+  ]
+ },
+ {
+  "id": "p1-018",
+  "phase": 1,
+  "plot": "15",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 833.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   291.0,
+   989.2
+  ],
+  "bbox": [
+   260.2,
+   972.7,
+   322.2,
+   1005.7
+  ]
+ },
+ {
+  "id": "p1-019",
+  "phase": 1,
+  "plot": "16A",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 650.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   287.7,
+   966.5
+  ],
+  "bbox": [
+   257.6,
+   952.8,
+   318.1,
+   980.4
+  ]
+ },
+ {
+  "id": "p1-020",
+  "phase": 1,
+  "plot": "16B",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 643.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   285.0,
+   946.6
+  ],
+  "bbox": [
+   255.0,
+   932.9,
+   315.2,
+   960.3
+  ]
+ },
+ {
+  "id": "p1-021",
+  "phase": 1,
+  "plot": "17",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 1462.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   278.9,
+   913.6
+  ],
+  "bbox": [
+   248.5,
+   888.7,
+   311.7,
+   940.4
+  ]
+ },
+ {
+  "id": "p1-022",
+  "phase": 1,
+  "plot": "18",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 337.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   264.6,
+   845.7
+  ],
+  "bbox": [
+   248.8,
+   836.0,
+   280.3,
+   855.7
+  ]
+ },
+ {
+  "id": "p1-023",
+  "phase": 1,
+  "plot": "19",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 660.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   275.4,
+   824.8
+  ],
+  "bbox": [
+   248.7,
+   813.6,
+   302.2,
+   836.0
+  ]
+ },
+ {
+  "id": "p1-024",
+  "phase": 1,
+  "plot": "20",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 666.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   275.6,
+   802.4
+  ],
+  "bbox": [
+   248.7,
+   791.1,
+   302.6,
+   813.7
+  ]
+ },
+ {
+  "id": "p1-025",
+  "phase": 1,
+  "plot": "21",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 668.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   275.7,
+   780.0
+  ],
+  "bbox": [
+   248.8,
+   768.8,
+   302.9,
+   791.2
+  ]
+ },
+ {
+  "id": "p1-026",
+  "phase": 1,
+  "plot": "22",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 680.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   276.1,
+   757.5
+  ],
+  "bbox": [
+   248.7,
+   746.4,
+   303.9,
+   768.8
+  ]
+ },
+ {
+  "id": "p1-027",
+  "phase": 1,
+  "plot": "23",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 773.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   276.1,
+   733.7
+  ],
+  "bbox": [
+   248.6,
+   720.4,
+   304.2,
+   746.4
+  ]
+ },
+ {
+  "id": "p1-028",
+  "phase": 1,
+  "plot": "24",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 500.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   315.1,
+   742.2
+  ],
+  "bbox": [
+   303.6,
+   721.8,
+   326.6,
+   762.7
+  ]
+ },
+ {
+  "id": "p1-029",
+  "phase": 1,
+  "plot": "25",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 449.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   336.4,
+   742.8
+  ],
+  "bbox": [
+   326.0,
+   722.4,
+   346.8,
+   763.1
+  ]
+ },
+ {
+  "id": "p1-030",
+  "phase": 1,
+  "plot": "26",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 450.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   356.5,
+   743.3
+  ],
+  "bbox": [
+   346.2,
+   722.9,
+   366.9,
+   763.8
+  ]
+ },
+ {
+  "id": "p1-031",
+  "phase": 1,
+  "plot": "27",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 463.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   377.0,
+   743.8
+  ],
+  "bbox": [
+   366.3,
+   723.4,
+   387.7,
+   764.1
+  ]
+ },
+ {
+  "id": "p1-032",
+  "phase": 1,
+  "plot": "28",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 740.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   374.0,
+   677.8
+  ],
+  "bbox": [
+   359.5,
+   654.0,
+   388.7,
+   701.5
+  ]
+ },
+ {
+  "id": "p1-033",
+  "phase": 1,
+  "plot": "29",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 734.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   345.6,
+   676.9
+  ],
+  "bbox": [
+   331.3,
+   652.9,
+   360.0,
+   700.8
+  ]
+ },
+ {
+  "id": "p1-035",
+  "phase": 1,
+  "plot": "31",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 814.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   275.9,
+   685.3
+  ],
+  "bbox": [
+   248.5,
+   671.2,
+   303.4,
+   699.4
+  ]
+ },
+ {
+  "id": "p1-036",
+  "phase": 1,
+  "plot": "32",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 520.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   275.9,
+   663.3
+  ],
+  "bbox": [
+   248.5,
+   654.1,
+   303.6,
+   672.6
+  ]
+ },
+ {
+  "id": "p1-037",
+  "phase": 1,
+  "plot": "33",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 601.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   203.4,
+   868.5
+  ],
+  "bbox": [
+   180.3,
+   855.6,
+   226.4,
+   881.5
+  ]
+ },
+ {
+  "id": "p1-038",
+  "phase": 1,
+  "plot": "34",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 670.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   203.7,
+   843.5
+  ],
+  "bbox": [
+   180.6,
+   829.4,
+   226.4,
+   857.8
+  ]
+ },
+ {
+  "id": "p1-039",
+  "phase": 1,
+  "plot": "35",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 540.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   170.8,
+   853.7
+  ],
+  "bbox": [
+   160.8,
+   828.7,
+   180.9,
+   879.2
+  ]
+ },
+ {
+  "id": "p1-040",
+  "phase": 1,
+  "plot": "36",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 526.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   151.3,
+   853.1
+  ],
+  "bbox": [
+   141.6,
+   828.1,
+   161.1,
+   878.2
+  ]
+ },
+ {
+  "id": "p1-041",
+  "phase": 1,
+  "plot": "37",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 477.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   150.9,
+   783.6
+  ],
+  "bbox": [
+   141.1,
+   760.9,
+   160.6,
+   806.3
+  ]
+ },
+ {
+  "id": "p1-042",
+  "phase": 1,
+  "plot": "38",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 477.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   170.1,
+   784.3
+  ],
+  "bbox": [
+   160.4,
+   761.5,
+   180.0,
+   807.0
+  ]
+ },
+ {
+  "id": "p1-044",
+  "phase": 1,
+  "plot": "40",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 554.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   202.2,
+   774.1
+  ],
+  "bbox": [
+   179.6,
+   762.2,
+   224.8,
+   786.1
+  ]
+ },
+ {
+  "id": "p1-043",
+  "phase": 1,
+  "plot": "39",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 560.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   202.4,
+   796.5
+  ],
+  "bbox": [
+   179.8,
+   784.5,
+   225.2,
+   808.5
+  ]
+ },
+ {
+  "id": "p1-045",
+  "phase": 1,
+  "plot": "41",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 389.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   148.8,
+   738.7
+  ],
+  "bbox": [
+   140.8,
+   716.1,
+   156.8,
+   761.4
+  ]
+ },
+ {
+  "id": "p1-046",
+  "phase": 1,
+  "plot": "42",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 387.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   164.5,
+   739.3
+  ],
+  "bbox": [
+   156.6,
+   716.6,
+   172.5,
+   761.9
+  ]
+ },
+ {
+  "id": "p1-047",
+  "phase": 1,
+  "plot": "43",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 642.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   198.3,
+   751.6
+  ],
+  "bbox": [
+   172.3,
+   739.5,
+   224.4,
+   763.8
+  ]
+ },
+ {
+  "id": "p1-048",
+  "phase": 1,
+  "plot": "44",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 639.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   198.0,
+   729.2
+  ],
+  "bbox": [
+   172.2,
+   717.2,
+   224.0,
+   741.3
+  ]
+ },
+ {
+  "id": "p1-049",
+  "phase": 1,
+  "plot": "45",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 485.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   150.6,
+   672.3
+  ],
+  "bbox": [
+   140.4,
+   650.2,
+   160.9,
+   694.4
+  ]
+ },
+ {
+  "id": "p1-050",
+  "phase": 1,
+  "plot": "46",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 484.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   170.8,
+   673.0
+  ],
+  "bbox": [
+   160.5,
+   650.9,
+   181.0,
+   695.0
+  ]
+ },
+ {
+  "id": "p1-051",
+  "phase": 1,
+  "plot": "47",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 518.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   202.1,
+   684.7
+  ],
+  "bbox": [
+   180.9,
+   672.9,
+   223.5,
+   696.4
+  ]
+ },
+ {
+  "id": "p1-052",
+  "phase": 1,
+  "plot": "48",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 501.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   201.9,
+   662.9
+  ],
+  "bbox": [
+   180.7,
+   651.4,
+   223.2,
+   674.4
+  ]
+ },
+ {
+  "id": "p1-003",
+  "phase": 1,
+  "plot": "2A",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 646.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   195.2,
+   1073.1
+  ],
+  "bbox": [
+   143.5,
+   1061.5,
+   246.4,
+   1084.8
+  ]
+ },
+ {
+  "id": "p1-004",
+  "phase": 1,
+  "plot": "2B",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 686.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   192.5,
+   1061.6
+  ],
+  "bbox": [
+   141.1,
+   1050.1,
+   245.0,
+   1073.5
+  ]
+ },
+ {
+  "id": "p1-138",
+  "phase": 1,
+  "plot": "D2",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 936.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   201.2,
+   610.7
+  ],
+  "bbox": [
+   177.3,
+   592.4,
+   224.8,
+   629.5
+  ]
+ },
+ {
+  "id": "p1-137",
+  "phase": 1,
+  "plot": "D1",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 518.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   200.7,
+   638.6
+  ],
+  "bbox": [
+   177.1,
+   627.8,
+   224.4,
+   649.3
+  ]
+ },
+ {
+  "id": "p1-139",
+  "phase": 1,
+  "plot": "D3",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 548.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   168.5,
+   619.9
+  ],
+  "bbox": [
+   159.2,
+   592.2,
+   177.8,
+   647.8
+  ]
+ },
+ {
+  "id": "p1-140",
+  "phase": 1,
+  "plot": "D4",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 561.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   150.3,
+   619.5
+  ],
+  "bbox": [
+   140.6,
+   591.9,
+   159.8,
+   647.2
+  ]
+ },
+ {
+  "id": "p1-141",
+  "phase": 1,
+  "plot": "D5",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 574.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   151.2,
+   541.5
+  ],
+  "bbox": [
+   141.7,
+   513.0,
+   160.8,
+   569.8
+  ]
+ },
+ {
+  "id": "p1-142",
+  "phase": 1,
+  "plot": "D6",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 554.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   169.4,
+   542.1
+  ],
+  "bbox": [
+   160.0,
+   513.8,
+   178.6,
+   570.0
+  ]
+ },
+ {
+  "id": "p1-143",
+  "phase": 1,
+  "plot": "D7",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 957.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   201.6,
+   551.9
+  ],
+  "bbox": [
+   178.0,
+   532.5,
+   225.5,
+   570.6
+  ]
+ },
+ {
+  "id": "p1-144",
+  "phase": 1,
+  "plot": "D8",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 468.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   202.1,
+   524.5
+  ],
+  "bbox": [
+   178.4,
+   514.5,
+   225.7,
+   534.6
+  ]
+ },
+ {
+  "id": "p1-145",
+  "phase": 1,
+  "plot": "D9",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 511.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   273.7,
+   526.4
+  ],
+  "bbox": [
+   247.9,
+   517.0,
+   299.5,
+   535.6
+  ]
+ },
+ {
+  "id": "p1-146",
+  "phase": 1,
+  "plot": "D10",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1019.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   273.4,
+   553.2
+  ],
+  "bbox": [
+   247.5,
+   535.0,
+   299.3,
+   571.5
+  ]
+ },
+ {
+  "id": "p1-147",
+  "phase": 1,
+  "plot": "D11",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 666.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   310.4,
+   544.7
+  ],
+  "bbox": [
+   299.0,
+   517.7,
+   321.8,
+   571.7
+  ]
+ },
+ {
+  "id": "p1-148",
+  "phase": 1,
+  "plot": "D12",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 666.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   332.8,
+   545.0
+  ],
+  "bbox": [
+   321.4,
+   518.0,
+   344.2,
+   572.0
+  ]
+ },
+ {
+  "id": "p1-149",
+  "phase": 1,
+  "plot": "D13",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 667.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   355.2,
+   545.3
+  ],
+  "bbox": [
+   343.8,
+   518.3,
+   366.7,
+   572.3
+  ]
+ },
+ {
+  "id": "p1-150",
+  "phase": 1,
+  "plot": "D14",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 666.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   377.6,
+   545.6
+  ],
+  "bbox": [
+   366.2,
+   518.6,
+   389.0,
+   572.6
+  ]
+ },
+ {
+  "id": "p1-151",
+  "phase": 1,
+  "plot": "D15",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 685.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   377.5,
+   624.4
+  ],
+  "bbox": [
+   366.7,
+   594.7,
+   388.5,
+   654.6
+  ]
+ },
+ {
+  "id": "p1-152",
+  "phase": 1,
+  "plot": "D16",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 659.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   357.0,
+   624.1
+  ],
+  "bbox": [
+   346.5,
+   594.4,
+   367.4,
+   653.9
+  ]
+ },
+ {
+  "id": "p1-153",
+  "phase": 1,
+  "plot": "D17",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 728.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   335.7,
+   623.6
+  ],
+  "bbox": [
+   324.1,
+   594.2,
+   347.2,
+   653.3
+  ]
+ },
+ {
+  "id": "p1-154",
+  "phase": 1,
+  "plot": "D18",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 719.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   313.3,
+   623.0
+  ],
+  "bbox": [
+   301.8,
+   593.9,
+   324.8,
+   652.5
+  ]
+ },
+ {
+  "id": "p1-155",
+  "phase": 1,
+  "plot": "D19",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1081.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   274.7,
+   611.3
+  ],
+  "bbox": [
+   246.7,
+   593.2,
+   302.4,
+   629.7
+  ]
+ },
+ {
+  "id": "p1-156",
+  "phase": 1,
+  "plot": "D20",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 679.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   274.2,
+   640.0
+  ],
+  "bbox": [
+   246.4,
+   628.2,
+   302.0,
+   651.9
+  ]
+ },
+ {
+  "id": "p1-216",
+  "phase": 1,
+  "plot": "S-2",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 68.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.5,
+   676.9
+  ],
+  "bbox": [
+   482.8,
+   670.8,
+   496.8,
+   688.6
+  ]
+ },
+ {
+  "id": "p1-215",
+  "phase": 1,
+  "plot": "S-1(I)",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 135.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   445.1,
+   696.5
+  ],
+  "bbox": [
+   432.9,
+   691.4,
+   460.4,
+   702.1
+  ]
+ },
+ {
+  "id": "p1-219",
+  "phase": 1,
+  "plot": "S-4(I)",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 146.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   497.0,
+   731.0
+  ],
+  "bbox": [
+   481.4,
+   725.1,
+   509.0,
+   736.5
+  ]
+ },
+ {
+  "id": "p1-053",
+  "phase": 1,
+  "plot": "B-1",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 579.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   399.6,
+   677.9
+  ],
+  "bbox": [
+   388.2,
+   654.2,
+   411.2,
+   701.5
+  ]
+ },
+ {
+  "id": "p1-054",
+  "phase": 1,
+  "plot": "B-2",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 580.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.1,
+   678.3
+  ],
+  "bbox": [
+   410.5,
+   654.8,
+   433.6,
+   701.8
+  ]
+ },
+ {
+  "id": "p1-057",
+  "phase": 1,
+  "plot": "B-4",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 1435.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   424.9,
+   636.9
+  ],
+  "bbox": [
+   388.8,
+   618.3,
+   461.0,
+   655.4
+  ]
+ },
+ {
+  "id": "p1-058",
+  "phase": 1,
+  "plot": "B-5",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 338.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   496.8,
+   631.4
+  ],
+  "bbox": [
+   483.2,
+   619.8,
+   510.3,
+   643.3
+  ]
+ },
+ {
+  "id": "p1-059",
+  "phase": 1,
+  "plot": "B-6",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 233.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   520.1,
+   630.1
+  ],
+  "bbox": [
+   510.1,
+   620.2,
+   537.6,
+   643.9
+  ]
+ },
+ {
+  "id": "p1-060",
+  "phase": 1,
+  "plot": "B-7",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 193.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   496.2,
+   649.4
+  ],
+  "bbox": [
+   483.1,
+   642.2,
+   509.2,
+   656.7
+  ]
+ },
+ {
+  "id": "p1-061",
+  "phase": 1,
+  "plot": "B-8",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 112.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   489.8,
+   663.4
+  ],
+  "bbox": [
+   483.0,
+   655.6,
+   496.5,
+   671.2
+  ]
+ },
+ {
+  "id": "p1-062",
+  "phase": 1,
+  "plot": "B-9",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 859.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   587.0,
+   632.8
+  ],
+  "bbox": [
+   543.9,
+   620.7,
+   622.0,
+   644.0
+  ]
+ },
+ {
+  "id": "p1-063",
+  "phase": 1,
+  "plot": "B-10",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 124.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   544.6,
+   651.8
+  ],
+  "bbox": [
+   531.7,
+   642.9,
+   552.3,
+   658.6
+  ]
+ },
+ {
+  "id": "p1-064",
+  "phase": 1,
+  "plot": "B-11( I )",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 204.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   535.2,
+   675.5
+  ],
+  "bbox": [
+   514.5,
+   669.5,
+   551.9,
+   681.1
+  ]
+ },
+ {
+  "id": "p1-066",
+  "phase": 1,
+  "plot": "B-12",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 361.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   537.0,
+   692.1
+  ],
+  "bbox": [
+   522.3,
+   680.6,
+   551.7,
+   703.5
+  ]
+ },
+ {
+  "id": "p1-068",
+  "phase": 1,
+  "plot": "B-14",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 750.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   587.7,
+   673.8
+  ],
+  "bbox": [
+   576.1,
+   643.4,
+   599.4,
+   704.2
+  ]
+ },
+ {
+  "id": "p1-069",
+  "phase": 1,
+  "plot": "B-15",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 766.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   610.3,
+   674.4
+  ],
+  "bbox": [
+   598.4,
+   643.7,
+   621.8,
+   704.6
+  ]
+ },
+ {
+  "id": "p1-070",
+  "phase": 1,
+  "plot": "B-16",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 498.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   610.1,
+   749.3
+  ],
+  "bbox": [
+   599.7,
+   726.6,
+   620.1,
+   771.7
+  ]
+ },
+ {
+  "id": "p1-071",
+  "phase": 1,
+  "plot": "B-17",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 599.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   587.9,
+   748.8
+  ],
+  "bbox": [
+   575.5,
+   726.3,
+   600.3,
+   771.4
+  ]
+ },
+ {
+  "id": "p1-072",
+  "phase": 1,
+  "plot": "B-18",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 556.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   564.6,
+   748.5
+  ],
+  "bbox": [
+   553.0,
+   725.9,
+   576.2,
+   771.0
+  ]
+ },
+ {
+  "id": "p1-073",
+  "phase": 1,
+  "plot": "B-19",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 554.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   542.2,
+   748.1
+  ],
+  "bbox": [
+   530.7,
+   725.6,
+   553.8,
+   770.7
+  ]
+ },
+ {
+  "id": "p1-074",
+  "phase": 1,
+  "plot": "B-20",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 554.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   519.8,
+   747.8
+  ],
+  "bbox": [
+   508.3,
+   725.3,
+   531.3,
+   770.4
+  ]
+ },
+ {
+  "id": "p1-089",
+  "phase": 1,
+  "plot": "B-30",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 438.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   588.6,
+   793.3
+  ],
+  "bbox": [
+   579.3,
+   771.1,
+   597.9,
+   815.5
+  ]
+ },
+ {
+  "id": "p1-088",
+  "phase": 1,
+  "plot": "B-29",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 659.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   566.2,
+   793.1
+  ],
+  "bbox": [
+   552.4,
+   770.7,
+   579.9,
+   815.3
+  ]
+ },
+ {
+  "id": "p1-087",
+  "phase": 1,
+  "plot": "B-28",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 551.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   541.5,
+   792.8
+  ],
+  "bbox": [
+   530.0,
+   770.4,
+   553.0,
+   815.1
+  ]
+ },
+ {
+  "id": "p1-084",
+  "phase": 1,
+  "plot": "B-27(I)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 498.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   520.3,
+   792.5
+  ],
+  "bbox": [
+   509.8,
+   770.1,
+   530.7,
+   814.9
+  ]
+ },
+ {
+  "id": "p1-077",
+  "phase": 1,
+  "plot": "B-22A",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 158.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   417.3,
+   731.8
+  ],
+  "bbox": [
+   408.2,
+   723.7,
+   426.3,
+   740.0
+  ]
+ },
+ {
+  "id": "p1-078",
+  "phase": 1,
+  "plot": "B-23",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 348.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   397.9,
+   738.8
+  ],
+  "bbox": [
+   387.3,
+   723.4,
+   408.4,
+   754.3
+  ]
+ },
+ {
+  "id": "p1-080",
+  "phase": 1,
+  "plot": "B-25(I)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 299.9,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   411.1,
+   793.1
+  ],
+  "bbox": [
+   403.8,
+   767.5,
+   417.9,
+   813.5
+  ]
+ },
+ {
+  "id": "p1-083",
+  "phase": 1,
+  "plot": "B-26",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 1002.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   437.7,
+   791.4
+  ],
+  "bbox": [
+   417.2,
+   768.7,
+   458.2,
+   814.2
+  ]
+ },
+ {
+  "id": "p1-091",
+  "phase": 1,
+  "plot": "B-32",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 620.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   608.5,
+   866.4
+  ],
+  "bbox": [
+   597.9,
+   838.7,
+   618.9,
+   894.1
+  ]
+ },
+ {
+  "id": "p1-092",
+  "phase": 1,
+  "plot": "B-33",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 449.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   590.9,
+   865.9
+  ],
+  "bbox": [
+   583.2,
+   838.5,
+   598.8,
+   893.6
+  ]
+ },
+ {
+  "id": "p1-093",
+  "phase": 1,
+  "plot": "B-34",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 408.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   576.8,
+   865.7
+  ],
+  "bbox": [
+   569.7,
+   838.3,
+   583.9,
+   893.2
+  ]
+ },
+ {
+  "id": "p1-094",
+  "phase": 1,
+  "plot": "B-35",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 675.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   558.9,
+   865.4
+  ],
+  "bbox": [
+   547.3,
+   837.9,
+   570.4,
+   892.9
+  ]
+ },
+ {
+  "id": "p1-095",
+  "phase": 1,
+  "plot": "B-36",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 674.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   536.5,
+   864.9
+  ],
+  "bbox": [
+   524.8,
+   837.6,
+   548.1,
+   892.3
+  ]
+ },
+ {
+  "id": "p1-096",
+  "phase": 1,
+  "plot": "B-37",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 1271.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   504.0,
+   864.2
+  ],
+  "bbox": [
+   482.4,
+   836.9,
+   525.7,
+   891.8
+  ]
+ },
+ {
+  "id": "p1-097",
+  "phase": 1,
+  "plot": "B-38",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 1261.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   461.5,
+   863.4
+  ],
+  "bbox": [
+   439.8,
+   836.3,
+   483.1,
+   890.7
+  ]
+ },
+ {
+  "id": "p1-098",
+  "phase": 1,
+  "plot": "B-39",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 661.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   429.0,
+   862.7
+  ],
+  "bbox": [
+   417.3,
+   836.0,
+   440.6,
+   889.7
+  ]
+ },
+ {
+  "id": "p1-099",
+  "phase": 1,
+  "plot": "B-40",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 459.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   409.9,
+   862.3
+  ],
+  "bbox": [
+   401.7,
+   835.7,
+   418.2,
+   889.1
+  ]
+ },
+ {
+  "id": "p1-090",
+  "phase": 1,
+  "plot": "B-31",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 544.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   608.7,
+   793.6
+  ],
+  "bbox": [
+   597.2,
+   771.4,
+   620.1,
+   815.7
+  ]
+ },
+ {
+  "id": "p1-067",
+  "phase": 1,
+  "plot": "B-13",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 825.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   564.2,
+   673.5
+  ],
+  "bbox": [
+   551.4,
+   643.1,
+   576.9,
+   703.9
+  ]
+ },
+ {
+  "id": "p1-119",
+  "phase": 1,
+  "plot": "C-1",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 1068.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   425.3,
+   605.4
+  ],
+  "bbox": [
+   389.2,
+   591.4,
+   461.3,
+   619.4
+  ]
+ },
+ {
+  "id": "p1-120",
+  "phase": 1,
+  "plot": "C-2",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 887.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   425.5,
+   580.8
+  ],
+  "bbox": [
+   389.5,
+   569.1,
+   461.5,
+   592.5
+  ]
+ },
+ {
+  "id": "p1-121",
+  "phase": 1,
+  "plot": "C-3",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 982.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   425.7,
+   557.3
+  ],
+  "bbox": [
+   389.7,
+   544.4,
+   461.7,
+   570.2
+  ]
+ },
+ {
+  "id": "p1-122",
+  "phase": 1,
+  "plot": "C-4",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 1039.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   426.5,
+   531.9
+  ],
+  "bbox": [
+   390.0,
+   518.2,
+   462.0,
+   545.5
+  ]
+ },
+ {
+  "id": "p1-125",
+  "phase": 1,
+  "plot": "C-7",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 724.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   512.9,
+   575.0
+  ],
+  "bbox": [
+   483.7,
+   563.4,
+   542.1,
+   586.7
+  ]
+ },
+ {
+  "id": "p1-124",
+  "phase": 1,
+  "plot": "C-6",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 721.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   513.1,
+   552.6
+  ],
+  "bbox": [
+   483.9,
+   540.9,
+   542.4,
+   564.2
+  ]
+ },
+ {
+  "id": "p1-123",
+  "phase": 1,
+  "plot": "C-5",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 727.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   513.4,
+   530.1
+  ],
+  "bbox": [
+   484.1,
+   518.5,
+   542.5,
+   541.9
+  ]
+ },
+ {
+  "id": "p1-128",
+  "phase": 1,
+  "plot": "C-9",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 360.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   542.1,
+   597.6
+  ],
+  "bbox": [
+   528.3,
+   586.5,
+   564.3,
+   611.7
+  ]
+ },
+ {
+  "id": "p1-130",
+  "phase": 1,
+  "plot": "C-10",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 379.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   557.9,
+   574.9
+  ],
+  "bbox": [
+   542.0,
+   564.2,
+   581.8,
+   587.0
+  ]
+ },
+ {
+  "id": "p1-131",
+  "phase": 1,
+  "plot": "C-11",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 609.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   566.9,
+   553.1
+  ],
+  "bbox": [
+   542.1,
+   541.9,
+   599.8,
+   565.8
+  ]
+ },
+ {
+  "id": "p1-132",
+  "phase": 1,
+  "plot": "C-12",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 763.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   572.6,
+   531.0
+  ],
+  "bbox": [
+   542.4,
+   519.2,
+   605.2,
+   543.3
+  ]
+ },
+ {
+  "id": "p1-133",
+  "phase": 1,
+  "plot": "C-13",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 646.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   596.3,
+   610.9
+  ],
+  "bbox": [
+   561.2,
+   599.4,
+   624.0,
+   621.7
+  ]
+ },
+ {
+  "id": "p1-134",
+  "phase": 1,
+  "plot": "C-14",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 460.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   605.9,
+   589.3
+  ],
+  "bbox": [
+   577.7,
+   577.0,
+   626.6,
+   599.6
+  ]
+ },
+ {
+  "id": "p1-135",
+  "phase": 1,
+  "plot": "C-15",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 205.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   614.7,
+   570.6
+  ],
+  "bbox": [
+   595.9,
+   561.4,
+   627.9,
+   578.2
+  ]
+ },
+ {
+  "id": "p1-100",
+  "phase": 1,
+  "plot": "B-41",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 457.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   394.3,
+   862.0
+  ],
+  "bbox": [
+   386.0,
+   835.5,
+   402.4,
+   888.6
+  ]
+ },
+ {
+  "id": "p1-101",
+  "phase": 1,
+  "plot": "B-42",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 522.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   377.5,
+   861.6
+  ],
+  "bbox": [
+   368.1,
+   835.2,
+   386.8,
+   888.1
+  ]
+ },
+ {
+  "id": "p1-102",
+  "phase": 1,
+  "plot": "B-43",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 517.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   359.5,
+   861.2
+  ],
+  "bbox": [
+   350.2,
+   835.0,
+   368.8,
+   887.6
+  ]
+ },
+ {
+  "id": "p1-103",
+  "phase": 1,
+  "plot": "B-44",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 526.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   341.5,
+   860.8
+  ],
+  "bbox": [
+   331.9,
+   834.7,
+   351.0,
+   887.1
+  ]
+ },
+ {
+  "id": "p1-104",
+  "phase": 1,
+  "plot": "B-45",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 341.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   325.8,
+   862.9
+  ],
+  "bbox": [
+   318.4,
+   834.7,
+   332.7,
+   886.3
+  ]
+ },
+ {
+  "id": "p1-105",
+  "phase": 1,
+  "plot": "B-46",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 326.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   310.5,
+   868.6
+  ],
+  "bbox": [
+   300.6,
+   845.3,
+   319.2,
+   885.7
+  ]
+ },
+ {
+  "id": "p1-106",
+  "phase": 1,
+  "plot": "B-47",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 813.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   313.1,
+   796.1
+  ],
+  "bbox": [
+   301.9,
+   762.6,
+   325.3,
+   837.7
+  ]
+ },
+ {
+  "id": "p1-107",
+  "phase": 1,
+  "plot": "B-48",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 681.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   337.3,
+   786.8
+  ],
+  "bbox": [
+   324.4,
+   763.1,
+   352.2,
+   819.9
+  ]
+ },
+ {
+  "id": "p1-108",
+  "phase": 1,
+  "plot": "B-49",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 229.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   358.7,
+   778.6
+  ],
+  "bbox": [
+   351.7,
+   763.8,
+   366.6,
+   798.5
+  ]
+ },
+ {
+  "id": "p1-109",
+  "phase": 1,
+  "plot": "B-50",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 161.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   374.5,
+   772.5
+  ],
+  "bbox": [
+   366.2,
+   764.2,
+   386.6,
+   787.1
+  ]
+ },
+ {
+  "id": "p1-075",
+  "phase": 1,
+  "plot": "B-21(I)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 199.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   494.9,
+   763.1
+  ],
+  "bbox": [
+   481.4,
+   756.2,
+   508.5,
+   770.0
+  ]
+ },
+ {
+  "id": "p1-076",
+  "phase": 1,
+  "plot": "B-21(II)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 304.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   495.0,
+   746.3
+  ],
+  "bbox": [
+   481.4,
+   736.0,
+   508.8,
+   756.7
+  ]
+ },
+ {
+  "id": "p1-081",
+  "phase": 1,
+  "plot": "B-25(II)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 215.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   397.7,
+   798.6
+  ],
+  "bbox": [
+   390.3,
+   778.7,
+   404.3,
+   813.3
+  ]
+ },
+ {
+  "id": "p1-055",
+  "phase": 1,
+  "plot": "B-3(1)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 273.5,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   446.8,
+   682.5
+  ],
+  "bbox": [
+   433.1,
+   673.4,
+   460.6,
+   691.8
+  ]
+ },
+ {
+  "id": "p1-056",
+  "phase": 1,
+  "plot": "B-3(2)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 273.2,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   447.0,
+   664.3
+  ],
+  "bbox": [
+   433.4,
+   655.0,
+   460.7,
+   673.4
+  ]
+ },
+ {
+  "id": "p1-136",
+  "phase": 1,
+  "plot": "C-16",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 161.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   621.7,
+   551.9
+  ],
+  "bbox": [
+   608.7,
+   531.0,
+   628.5,
+   563.2
+  ]
+ },
+ {
+  "id": "p1-079",
+  "phase": 1,
+  "plot": "B-24",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 196.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   447.2,
+   761.2
+  ],
+  "bbox": [
+   436.0,
+   753.1,
+   458.5,
+   769.3
+  ]
+ },
+ {
+  "id": "p1-110",
+  "phase": 1,
+  "plot": "B-51",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 485.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   634.7,
+   796.2
+  ],
+  "bbox": [
+   623.4,
+   776.5,
+   646.2,
+   815.9
+  ]
+ },
+ {
+  "id": "p1-111",
+  "phase": 1,
+  "plot": "B-52",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 483.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   657.1,
+   796.5
+  ],
+  "bbox": [
+   645.7,
+   776.8,
+   668.5,
+   816.1
+  ]
+ },
+ {
+  "id": "p1-112",
+  "phase": 1,
+  "plot": "B-53",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 482.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   679.5,
+   796.7
+  ],
+  "bbox": [
+   668.1,
+   777.2,
+   690.9,
+   816.2
+  ]
+ },
+ {
+  "id": "p1-113",
+  "phase": 1,
+  "plot": "B-54",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 458.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   701.5,
+   797.6
+  ],
+  "bbox": [
+   690.6,
+   777.5,
+   713.8,
+   816.4
+  ]
+ },
+ {
+  "id": "p1-114",
+  "phase": 1,
+  "plot": "B-55",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 478.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   704.6,
+   856.0
+  ],
+  "bbox": [
+   690.2,
+   838.9,
+   719.6,
+   875.5
+  ]
+ },
+ {
+  "id": "p1-115",
+  "phase": 1,
+  "plot": "B-56",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 399.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   682.9,
+   858.3
+  ],
+  "bbox": [
+   671.8,
+   838.9,
+   694.4,
+   879.1
+  ]
+ },
+ {
+  "id": "p1-116",
+  "phase": 1,
+  "plot": "B-57",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 509.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   666.0,
+   867.1
+  ],
+  "bbox": [
+   656.1,
+   838.9,
+   676.8,
+   895.3
+  ]
+ },
+ {
+  "id": "p1-117",
+  "phase": 1,
+  "plot": "B-58",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 524.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   649.5,
+   868.2
+  ],
+  "bbox": [
+   640.5,
+   839.0,
+   659.4,
+   897.3
+  ]
+ },
+ {
+  "id": "p1-118",
+  "phase": 1,
+  "plot": "B-59",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 619.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   631.8,
+   869.2
+  ],
+  "bbox": [
+   622.2,
+   839.0,
+   642.0,
+   899.5
+  ]
+ },
+ {
+  "id": "p1-217",
+  "phase": 1,
+  "plot": "S-3 ( I )",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 100.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   508.3,
+   695.5
+  ],
+  "bbox": [
+   497.1,
+   680.9,
+   514.2,
+   702.9
+  ]
+ },
+ {
+  "id": "p1-218",
+  "phase": 1,
+  "plot": "S-3 ( II )",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 105.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   518.2,
+   691.9
+  ],
+  "bbox": [
+   513.7,
+   680.6,
+   522.6,
+   703.0
+  ]
+ },
+ {
+  "id": "p1-220",
+  "phase": 1,
+  "plot": "S-5",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 115.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   450.7,
+   747.3
+  ],
+  "bbox": [
+   436.0,
+   737.4,
+   458.7,
+   753.4
+  ]
+ },
+ {
+  "id": "p1-221",
+  "phase": 1,
+  "plot": "S-6",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 75.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   431.1,
+   762.6
+  ],
+  "bbox": [
+   424.7,
+   752.3,
+   436.0,
+   769.0
+  ]
+ },
+ {
+  "id": "p1-222",
+  "phase": 1,
+  "plot": "S-7",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 17.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.0,
+   766.2
+  ],
+  "bbox": [
+   417.9,
+   761.4,
+   424.7,
+   768.8
+  ]
+ },
+ {
+  "id": "p1-082",
+  "phase": 1,
+  "plot": "B-25(III)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 103.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   385.9,
+   803.4
+  ],
+  "bbox": [
+   380.5,
+   790.0,
+   390.7,
+   813.1
+  ]
+ },
+ {
+  "id": "p1-223",
+  "phase": 1,
+  "plot": "S-11",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 52.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   500.5,
+   661.5
+  ],
+  "bbox": [
+   496.4,
+   656.1,
+   508.5,
+   671.8
+  ]
+ },
+ {
+  "id": "p1-224",
+  "phase": 1,
+  "plot": "S-12",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 33.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   512.4,
+   647.7
+  ],
+  "bbox": [
+   509.1,
+   643.3,
+   518.8,
+   656.0
+  ]
+ },
+ {
+  "id": "p1-065",
+  "phase": 1,
+  "plot": "B-11( I )",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 152.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   539.6,
+   664.4
+  ],
+  "bbox": [
+   523.1,
+   658.4,
+   552.1,
+   669.9
+  ]
+ },
+ {
+  "id": "p1-157",
+  "phase": 1,
+  "plot": "E1",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 1002.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   432.3,
+   496.2
+  ],
+  "bbox": [
+   407.4,
+   477.8,
+   457.4,
+   514.6
+  ]
+ },
+ {
+  "id": "p1-158",
+  "phase": 1,
+  "plot": "E2",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 458.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   396.3,
+   496.2
+  ],
+  "bbox": [
+   385.0,
+   477.6,
+   407.7,
+   514.7
+  ]
+ },
+ {
+  "id": "p1-159",
+  "phase": 1,
+  "plot": "E3",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 460.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   373.9,
+   496.1
+  ],
+  "bbox": [
+   362.6,
+   477.5,
+   385.3,
+   514.7
+  ]
+ },
+ {
+  "id": "p1-160",
+  "phase": 1,
+  "plot": "E4",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 459.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   351.5,
+   495.9
+  ],
+  "bbox": [
+   340.2,
+   477.3,
+   362.8,
+   514.5
+  ]
+ },
+ {
+  "id": "p1-161",
+  "phase": 1,
+  "plot": "E5",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 458.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   329.1,
+   495.7
+  ],
+  "bbox": [
+   317.7,
+   477.1,
+   340.4,
+   514.3
+  ]
+ },
+ {
+  "id": "p1-162",
+  "phase": 1,
+  "plot": "E6",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 479.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   306.2,
+   495.7
+  ],
+  "bbox": [
+   293.5,
+   477.0,
+   318.1,
+   514.1
+  ]
+ },
+ {
+  "id": "p1-163",
+  "phase": 1,
+  "plot": "E7",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 494.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   308.0,
+   439.2
+  ],
+  "bbox": [
+   296.3,
+   418.8,
+   319.3,
+   459.3
+  ]
+ },
+ {
+  "id": "p1-164",
+  "phase": 1,
+  "plot": "E8",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 500.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   330.3,
+   439.2
+  ],
+  "bbox": [
+   318.9,
+   418.9,
+   341.6,
+   459.4
+  ]
+ },
+ {
+  "id": "p1-165",
+  "phase": 1,
+  "plot": "E9",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 500.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   352.7,
+   439.3
+  ],
+  "bbox": [
+   341.4,
+   419.1,
+   364.0,
+   459.6
+  ]
+ },
+ {
+  "id": "p1-166",
+  "phase": 1,
+  "plot": "E10",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 501.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   375.1,
+   439.5
+  ],
+  "bbox": [
+   363.7,
+   419.2,
+   386.5,
+   459.8
+  ]
+ },
+ {
+  "id": "p1-167",
+  "phase": 1,
+  "plot": "E11",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 500.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   397.5,
+   439.7
+  ],
+  "bbox": [
+   386.1,
+   419.4,
+   408.8,
+   460.0
+  ]
+ },
+ {
+  "id": "p1-168",
+  "phase": 1,
+  "plot": "E12",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 878.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   428.3,
+   440.0
+  ],
+  "bbox": [
+   408.6,
+   419.6,
+   448.0,
+   460.3
+  ]
+ },
+ {
+  "id": "p1-169",
+  "phase": 1,
+  "plot": "E13",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 1053.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   426.2,
+   397.6
+  ],
+  "bbox": [
+   404.6,
+   375.2,
+   447.8,
+   419.8
+  ]
+ },
+ {
+  "id": "p1-170",
+  "phase": 1,
+  "plot": "E14",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 548.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   393.5,
+   397.3
+  ],
+  "bbox": [
+   382.2,
+   375.1,
+   404.8,
+   419.5
+  ]
+ },
+ {
+  "id": "p1-171",
+  "phase": 1,
+  "plot": "E15",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 332.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   369.0,
+   386.1
+  ],
+  "bbox": [
+   355.4,
+   374.9,
+   382.5,
+   397.4
+  ]
+ },
+ {
+  "id": "p1-172",
+  "phase": 1,
+  "plot": "E16",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 332.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   342.1,
+   386.0
+  ],
+  "bbox": [
+   328.5,
+   374.7,
+   355.6,
+   397.2
+  ]
+ },
+ {
+  "id": "p1-173",
+  "phase": 1,
+  "plot": "E17",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 368.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   313.7,
+   385.8
+  ],
+  "bbox": [
+   298.0,
+   374.5,
+   328.8,
+   397.0
+  ]
+ },
+ {
+  "id": "p1-174",
+  "phase": 1,
+  "plot": "E18",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 450.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   315.4,
+   339.2
+  ],
+  "bbox": [
+   299.4,
+   326.0,
+   331.2,
+   352.3
+  ]
+ },
+ {
+  "id": "p1-175",
+  "phase": 1,
+  "plot": "E19",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 322.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   342.2,
+   339.3
+  ],
+  "bbox": [
+   330.9,
+   326.2,
+   353.5,
+   352.4
+  ]
+ },
+ {
+  "id": "p1-176",
+  "phase": 1,
+  "plot": "E20",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 322.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   364.6,
+   339.5
+  ],
+  "bbox": [
+   353.4,
+   326.4,
+   375.9,
+   352.6
+  ]
+ },
+ {
+  "id": "p1-177",
+  "phase": 1,
+  "plot": "E21",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 323.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   387.0,
+   339.7
+  ],
+  "bbox": [
+   375.7,
+   326.6,
+   398.4,
+   352.8
+  ]
+ },
+ {
+  "id": "p1-178",
+  "phase": 1,
+  "plot": "E22",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 1114.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.8,
+   332.5
+  ],
+  "bbox": [
+   398.1,
+   311.7,
+   447.4,
+   353.1
+  ]
+ },
+ {
+  "id": "p1-179",
+  "phase": 1,
+  "plot": "E23",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 603.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.9,
+   300.7
+  ],
+  "bbox": [
+   398.5,
+   289.3,
+   447.2,
+   312.1
+  ]
+ },
+ {
+  "id": "p1-180",
+  "phase": 1,
+  "plot": "E24",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 597.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.9,
+   278.3
+  ],
+  "bbox": [
+   398.6,
+   267.0,
+   447.1,
+   289.6
+  ]
+ },
+ {
+  "id": "p1-181",
+  "phase": 1,
+  "plot": "E25",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 596.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.9,
+   255.9
+  ],
+  "bbox": [
+   398.8,
+   244.5,
+   447.0,
+   267.3
+  ]
+ },
+ {
+  "id": "p1-182",
+  "phase": 1,
+  "plot": "E26",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 593.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   422.9,
+   233.5
+  ],
+  "bbox": [
+   399.0,
+   222.1,
+   446.9,
+   244.9
+  ]
+ },
+ {
+  "id": "p1-183",
+  "phase": 1,
+  "plot": "E27",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 589.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   423.0,
+   211.1
+  ],
+  "bbox": [
+   399.2,
+   199.6,
+   446.8,
+   222.4
+  ]
+ },
+ {
+  "id": "p1-184",
+  "phase": 1,
+  "plot": "E28",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 112.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   415.2,
+   194.1
+  ],
+  "bbox": [
+   399.3,
+   182.7,
+   423.2,
+   199.8
+  ]
+ },
+ {
+  "id": "p1-185",
+  "phase": 1,
+  "plot": "E29",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 221.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   434.9,
+   191.4
+  ],
+  "bbox": [
+   423.1,
+   182.7,
+   446.7,
+   200.0
+  ]
+ },
+ {
+  "id": "p1-186",
+  "phase": 1,
+  "plot": "E30",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 107.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   438.8,
+   177.3
+  ],
+  "bbox": [
+   423.2,
+   166.3,
+   446.6,
+   183.0
+  ]
+ },
+ {
+  "id": "p1-187",
+  "phase": 1,
+  "plot": "E31",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 244.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   432.3,
+   139.0
+  ],
+  "bbox": [
+   422.0,
+   129.0,
+   446.2,
+   156.1
+  ]
+ },
+ {
+  "id": "p1-188",
+  "phase": 1,
+  "plot": "E32",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 434.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   410.1,
+   146.8
+  ],
+  "bbox": [
+   399.6,
+   128.8,
+   422.2,
+   172.0
+  ]
+ },
+ {
+  "id": "p1-189",
+  "phase": 1,
+  "plot": "E33",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 570.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   423.1,
+   117.9
+  ],
+  "bbox": [
+   399.9,
+   106.5,
+   446.2,
+   129.2
+  ]
+ },
+ {
+  "id": "p1-190",
+  "phase": 1,
+  "plot": "E34",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 710.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   421.7,
+   92.6
+  ],
+  "bbox": [
+   400.0,
+   73.4,
+   446.1,
+   106.9
+  ]
+ },
+ {
+  "id": "p1-191",
+  "phase": 1,
+  "plot": "E35",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 347.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   484.8,
+   102.0
+  ],
+  "bbox": [
+   468.4,
+   89.1,
+   504.2,
+   111.1
+  ]
+ },
+ {
+  "id": "p1-192",
+  "phase": 1,
+  "plot": "E36",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 480.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.2,
+   123.3
+  ],
+  "bbox": [
+   468.6,
+   110.8,
+   504.0,
+   135.7
+  ]
+ },
+ {
+  "id": "p1-193",
+  "phase": 1,
+  "plot": "E37",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 300.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.1,
+   143.5
+  ],
+  "bbox": [
+   468.7,
+   135.6,
+   503.6,
+   151.4
+  ]
+ },
+ {
+  "id": "p1-194",
+  "phase": 1,
+  "plot": "E38",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 430.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.2,
+   162.5
+  ],
+  "bbox": [
+   468.8,
+   151.2,
+   503.6,
+   173.8
+  ]
+ },
+ {
+  "id": "p1-195",
+  "phase": 1,
+  "plot": "E39",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 430.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.4,
+   184.9
+  ],
+  "bbox": [
+   468.9,
+   173.6,
+   503.8,
+   196.2
+  ]
+ },
+ {
+  "id": "p1-196",
+  "phase": 1,
+  "plot": "E40",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 431.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.5,
+   207.3
+  ],
+  "bbox": [
+   469.0,
+   196.0,
+   503.9,
+   218.6
+  ]
+ },
+ {
+  "id": "p1-197",
+  "phase": 1,
+  "plot": "E41",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 429.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.6,
+   229.7
+  ],
+  "bbox": [
+   469.2,
+   218.5,
+   503.9,
+   241.0
+  ]
+ },
+ {
+  "id": "p1-198",
+  "phase": 1,
+  "plot": "E42",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 428.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.6,
+   252.1
+  ],
+  "bbox": [
+   469.3,
+   240.8,
+   503.9,
+   263.5
+  ]
+ },
+ {
+  "id": "p1-199",
+  "phase": 1,
+  "plot": "E43",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 427.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   486.8,
+   274.6
+  ],
+  "bbox": [
+   469.4,
+   263.2,
+   504.1,
+   285.8
+  ]
+ },
+ {
+  "id": "p1-200",
+  "phase": 1,
+  "plot": "E44",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 430.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.0,
+   296.9
+  ],
+  "bbox": [
+   469.6,
+   285.7,
+   504.6,
+   308.2
+  ]
+ },
+ {
+  "id": "p1-201",
+  "phase": 1,
+  "plot": "E45",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 436.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.3,
+   319.4
+  ],
+  "bbox": [
+   469.7,
+   308.0,
+   505.1,
+   330.7
+  ]
+ },
+ {
+  "id": "p1-202",
+  "phase": 1,
+  "plot": "E46",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 439.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.6,
+   341.8
+  ],
+  "bbox": [
+   469.8,
+   330.4,
+   505.5,
+   353.0
+  ]
+ },
+ {
+  "id": "p1-203",
+  "phase": 1,
+  "plot": "E47",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 443.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.9,
+   364.2
+  ],
+  "bbox": [
+   469.9,
+   352.9,
+   506.1,
+   375.4
+  ]
+ },
+ {
+  "id": "p1-204",
+  "phase": 1,
+  "plot": "E48",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 449.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   488.2,
+   386.6
+  ],
+  "bbox": [
+   470.1,
+   375.2,
+   506.6,
+   397.9
+  ]
+ },
+ {
+  "id": "p1-205",
+  "phase": 1,
+  "plot": "E49",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 635.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   488.6,
+   413.5
+  ],
+  "bbox": [
+   470.2,
+   397.6,
+   507.2,
+   429.2
+  ]
+ },
+ {
+  "id": "p1-206",
+  "phase": 1,
+  "plot": "E50",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 460.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   489.0,
+   440.3
+  ],
+  "bbox": [
+   470.4,
+   429.0,
+   507.7,
+   451.6
+  ]
+ },
+ {
+  "id": "p1-207",
+  "phase": 1,
+  "plot": "E51",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 297.9,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   496.0,
+   462.7
+  ],
+  "bbox": [
+   483.9,
+   451.4,
+   508.2,
+   474.0
+  ]
+ },
+ {
+  "id": "p1-208",
+  "phase": 1,
+  "plot": "E52",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 547.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   496.4,
+   494.2
+  ],
+  "bbox": [
+   484.0,
+   473.8,
+   509.1,
+   514.3
+  ]
+ },
+ {
+  "id": "p1-034",
+  "phase": 1,
+  "plot": "30",
+  "block": "N",
+  "plot_type": "plot",
+  "area_sqyd": 739.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   317.3,
+   676.8
+  ],
+  "bbox": [
+   303.4,
+   652.9,
+   331.3,
+   700.8
+  ]
+ },
+ {
+  "id": "p1-129",
+  "phase": 1,
+  "plot": "C-9(I)",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 63.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   534.9,
+   615.6
+  ],
+  "bbox": [
+   528.3,
+   611.5,
+   544.6,
+   620.6
+  ]
+ },
+ {
+  "id": "p1-127",
+  "phase": 1,
+  "plot": "C-8B",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 745.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   506.0,
+   601.1
+  ],
+  "bbox": [
+   483.4,
+   585.8,
+   528.6,
+   616.4
+  ]
+ },
+ {
+  "id": "p1-126",
+  "phase": 1,
+  "plot": "C-8A",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 100.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   505.9,
+   618.1
+  ],
+  "bbox": [
+   483.4,
+   615.8,
+   528.3,
+   620.5
+  ]
+ },
+ {
+  "id": "p1-085",
+  "phase": 1,
+  "plot": "B-27(II)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 251.7,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   495.9,
+   777.8
+  ],
+  "bbox": [
+   481.4,
+   769.8,
+   510.6,
+   785.8
+  ]
+ },
+ {
+  "id": "p1-086",
+  "phase": 1,
+  "plot": "B-27(III)",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 460.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   495.8,
+   800.1
+  ],
+  "bbox": [
+   481.4,
+   785.4,
+   510.3,
+   814.9
+  ]
+ },
+ {
+  "id": "p1-225",
+  "phase": 1,
+  "plot": "Shop 1",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 86.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   432.7,
+   729.5
+  ],
+  "bbox": [
+   426.1,
+   724.3,
+   446.0,
+   740.0
+  ]
+ },
+ {
+  "id": "p1-226",
+  "phase": 1,
+  "plot": "Shop 2",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 69.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   414.2,
+   744.7
+  ],
+  "bbox": [
+   408.2,
+   740.0,
+   426.1,
+   754.1
+  ]
+ },
+ {
+  "id": "p1-227",
+  "phase": 1,
+  "plot": "Shop 3",
+  "block": "B",
+  "plot_type": "shop",
+  "area_sqyd": 95.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   394.2,
+   759.6
+  ],
+  "bbox": [
+   387.1,
+   754.1,
+   408.2,
+   770.6
+  ]
+ },
+ {
+  "id": "p2-001",
+  "phase": 2,
+  "plot": "A1",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1004.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   320.1,
+   596.0
+  ],
+  "bbox": [
+   273.0,
+   578.2,
+   370.1,
+   612.7
+  ]
+ },
+ {
+  "id": "p2-002",
+  "phase": 2,
+  "plot": "A2",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 914.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   323.5,
+   565.8
+  ],
+  "bbox": [
+   275.1,
+   549.4,
+   371.9,
+   582.2
+  ]
+ },
+ {
+  "id": "p2-003",
+  "phase": 2,
+  "plot": "A3",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 916.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   325.3,
+   537.1
+  ],
+  "bbox": [
+   276.9,
+   520.6,
+   373.6,
+   553.6
+  ]
+ },
+ {
+  "id": "p2-004",
+  "phase": 2,
+  "plot": "A4",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 916.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   327.0,
+   508.3
+  ],
+  "bbox": [
+   278.6,
+   491.8,
+   375.4,
+   524.8
+  ]
+ },
+ {
+  "id": "p2-005",
+  "phase": 2,
+  "plot": "A5",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 916.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   328.8,
+   479.5
+  ],
+  "bbox": [
+   280.4,
+   463.0,
+   377.2,
+   496.0
+  ]
+ },
+ {
+  "id": "p2-006",
+  "phase": 2,
+  "plot": "A6",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 916.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   330.6,
+   450.7
+  ],
+  "bbox": [
+   282.2,
+   434.2,
+   378.9,
+   467.2
+  ]
+ },
+ {
+  "id": "p2-007",
+  "phase": 2,
+  "plot": "A7",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 916.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   332.3,
+   421.9
+  ],
+  "bbox": [
+   284.0,
+   405.4,
+   380.7,
+   438.4
+  ]
+ },
+ {
+  "id": "p2-008",
+  "phase": 2,
+  "plot": "A8",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1061.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   334.3,
+   390.8
+  ],
+  "bbox": [
+   285.7,
+   372.0,
+   382.8,
+   409.6
+  ]
+ },
+ {
+  "id": "p2-050",
+  "phase": 2,
+  "plot": "A49",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 762.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   445.8,
+   420.9
+  ],
+  "bbox": [
+   408.1,
+   403.7,
+   482.5,
+   438.7
+  ]
+ },
+ {
+  "id": "p2-051",
+  "phase": 2,
+  "plot": "A50",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 730.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   445.0,
+   450.9
+  ],
+  "bbox": [
+   406.3,
+   434.2,
+   483.2,
+   467.6
+  ]
+ },
+ {
+  "id": "p2-052",
+  "phase": 2,
+  "plot": "A51",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 753.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   444.4,
+   479.8
+  ],
+  "bbox": [
+   404.5,
+   463.0,
+   483.9,
+   496.4
+  ]
+ },
+ {
+  "id": "p2-053",
+  "phase": 2,
+  "plot": "A52",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 700.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   442.9,
+   507.3
+  ],
+  "bbox": [
+   402.8,
+   491.8,
+   483.9,
+   522.8
+  ]
+ },
+ {
+  "id": "p2-054",
+  "phase": 2,
+  "plot": "A53",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 743.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   440.4,
+   534.9
+  ],
+  "bbox": [
+   401.0,
+   518.4,
+   480.7,
+   551.5
+  ]
+ },
+ {
+  "id": "p2-055",
+  "phase": 2,
+  "plot": "A54",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 726.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   437.7,
+   563.7
+  ],
+  "bbox": [
+   399.2,
+   547.2,
+   477.2,
+   580.2
+  ]
+ },
+ {
+  "id": "p2-056",
+  "phase": 2,
+  "plot": "A55",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 777.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   433.9,
+   593.8
+  ],
+  "bbox": [
+   397.0,
+   576.0,
+   473.6,
+   610.3
+  ]
+ },
+ {
+  "id": "p2-057",
+  "phase": 2,
+  "plot": "A56",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 622.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   433.6,
+   628.5
+  ],
+  "bbox": [
+   397.5,
+   614.4,
+   469.9,
+   642.8
+  ]
+ },
+ {
+  "id": "p2-058",
+  "phase": 2,
+  "plot": "A57",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 590.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   433.4,
+   655.0
+  ],
+  "bbox": [
+   399.2,
+   640.8,
+   467.8,
+   669.4
+  ]
+ },
+ {
+  "id": "p2-059",
+  "phase": 2,
+  "plot": "A58",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 601.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   433.2,
+   682.6
+  ],
+  "bbox": [
+   400.9,
+   667.3,
+   465.7,
+   698.2
+  ]
+ },
+ {
+  "id": "p2-060",
+  "phase": 2,
+  "plot": "A59",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 580.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   433.4,
+   711.7
+  ],
+  "bbox": [
+   402.8,
+   696.0,
+   463.5,
+   726.8
+  ]
+ },
+ {
+  "id": "p2-134",
+  "phase": 2,
+  "plot": "S1",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 82.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   420.5,
+   812.4
+  ],
+  "bbox": [
+   411.7,
+   804.0,
+   429.6,
+   821.3
+  ]
+ },
+ {
+  "id": "p2-135",
+  "phase": 2,
+  "plot": "S2",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 31.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   419.5,
+   802.1
+  ],
+  "bbox": [
+   411.2,
+   798.2,
+   427.8,
+   805.9
+  ]
+ },
+ {
+  "id": "p2-136",
+  "phase": 2,
+  "plot": "S3",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 30.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   418.9,
+   796.4
+  ],
+  "bbox": [
+   410.7,
+   792.6,
+   427.2,
+   800.2
+  ]
+ },
+ {
+  "id": "p2-137",
+  "phase": 2,
+  "plot": "S4",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 30.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   418.3,
+   790.7
+  ],
+  "bbox": [
+   410.2,
+   786.8,
+   426.5,
+   794.5
+  ]
+ },
+ {
+  "id": "p2-138",
+  "phase": 2,
+  "plot": "S5",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 30.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   417.7,
+   784.9
+  ],
+  "bbox": [
+   409.7,
+   781.1,
+   425.8,
+   788.8
+  ]
+ },
+ {
+  "id": "p2-139",
+  "phase": 2,
+  "plot": "S6",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 29.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   417.1,
+   779.2
+  ],
+  "bbox": [
+   409.2,
+   775.3,
+   425.1,
+   783.0
+  ]
+ },
+ {
+  "id": "p2-140",
+  "phase": 2,
+  "plot": "S7",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 29.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   416.5,
+   773.4
+  ],
+  "bbox": [
+   408.7,
+   769.7,
+   424.4,
+   777.2
+  ]
+ },
+ {
+  "id": "p2-141",
+  "phase": 2,
+  "plot": "S8",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 29.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   415.4,
+   763.1
+  ],
+  "bbox": [
+   407.7,
+   759.4,
+   423.2,
+   766.9
+  ]
+ },
+ {
+  "id": "p2-142",
+  "phase": 2,
+  "plot": "S9",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 28.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   414.8,
+   757.4
+  ],
+  "bbox": [
+   407.2,
+   753.6,
+   422.5,
+   761.2
+  ]
+ },
+ {
+  "id": "p2-143",
+  "phase": 2,
+  "plot": "S10",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 28.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   414.2,
+   751.6
+  ],
+  "bbox": [
+   406.7,
+   747.8,
+   421.8,
+   755.4
+  ]
+ },
+ {
+  "id": "p2-144",
+  "phase": 2,
+  "plot": "S11",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 27.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   413.6,
+   745.9
+  ],
+  "bbox": [
+   406.2,
+   742.2,
+   421.2,
+   749.6
+  ]
+ },
+ {
+  "id": "p2-145",
+  "phase": 2,
+  "plot": "S12",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 27.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   413.0,
+   740.2
+  ],
+  "bbox": [
+   405.7,
+   736.4,
+   420.5,
+   743.9
+  ]
+ },
+ {
+  "id": "p2-146",
+  "phase": 2,
+  "plot": "S13",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 27.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   412.4,
+   734.4
+  ],
+  "bbox": [
+   405.1,
+   730.7,
+   419.8,
+   738.1
+  ]
+ },
+ {
+  "id": "p2-147",
+  "phase": 2,
+  "plot": "S14",
+  "block": "S",
+  "plot_type": "shop",
+  "area_sqyd": 23.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   411.4,
+   729.1
+  ],
+  "bbox": [
+   404.6,
+   726.4,
+   419.1,
+   732.4
+  ]
+ },
+ {
+  "id": "p2-009",
+  "phase": 2,
+  "plot": "A9",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 434.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   301.8,
+   309.4
+  ],
+  "bbox": [
+   289.6,
+   274.8,
+   314.1,
+   344.0
+  ]
+ },
+ {
+  "id": "p2-010",
+  "phase": 2,
+  "plot": "A10",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 397.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   320.0,
+   310.3
+  ],
+  "bbox": [
+   308.5,
+   275.6,
+   331.4,
+   344.8
+  ]
+ },
+ {
+  "id": "p2-011",
+  "phase": 2,
+  "plot": "A11",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 397.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   337.3,
+   310.9
+  ],
+  "bbox": [
+   325.9,
+   276.4,
+   348.8,
+   345.6
+  ]
+ },
+ {
+  "id": "p2-012",
+  "phase": 2,
+  "plot": "A12",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 396.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   354.6,
+   311.7
+  ],
+  "bbox": [
+   343.2,
+   277.1,
+   366.1,
+   346.3
+  ]
+ },
+ {
+  "id": "p2-014",
+  "phase": 2,
+  "plot": "A14",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 439.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   310.1,
+   250.0
+  ],
+  "bbox": [
+   295.1,
+   224.2,
+   325.2,
+   275.9
+  ]
+ },
+ {
+  "id": "p2-015",
+  "phase": 2,
+  "plot": "A15",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 439.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   336.0,
+   251.2
+  ],
+  "bbox": [
+   321.0,
+   225.3,
+   351.1,
+   277.0
+  ]
+ },
+ {
+  "id": "p2-016",
+  "phase": 2,
+  "plot": "A16",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 307.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   368.8,
+   267.1
+  ],
+  "bbox": [
+   346.9,
+   255.2,
+   390.6,
+   278.9
+  ]
+ },
+ {
+  "id": "p2-017",
+  "phase": 2,
+  "plot": "A17",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 401.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   370.7,
+   241.8
+  ],
+  "bbox": [
+   348.7,
+   226.4,
+   392.5,
+   257.0
+  ]
+ },
+ {
+  "id": "p2-013",
+  "phase": 2,
+  "plot": "A13",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 541.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   375.0,
+   312.9
+  ],
+  "bbox": [
+   360.4,
+   277.9,
+   389.1,
+   347.4
+  ]
+ },
+ {
+  "id": "p2-018",
+  "phase": 2,
+  "plot": "A18",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 260.6,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   314.2,
+   175.5
+  ],
+  "bbox": [
+   302.1,
+   155.9,
+   326.2,
+   195.2
+  ]
+ },
+ {
+  "id": "p2-019",
+  "phase": 2,
+  "plot": "A19",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 260.8,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   334.4,
+   176.4
+  ],
+  "bbox": [
+   322.4,
+   156.7,
+   346.5,
+   196.1
+  ]
+ },
+ {
+  "id": "p2-020",
+  "phase": 2,
+  "plot": "A20",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 260.3,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   354.6,
+   177.3
+  ],
+  "bbox": [
+   342.6,
+   157.6,
+   366.7,
+   197.0
+  ]
+ },
+ {
+  "id": "p2-021",
+  "phase": 2,
+  "plot": "A21",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 400.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   380.2,
+   178.5
+  ],
+  "bbox": [
+   362.7,
+   158.4,
+   397.0,
+   198.4
+  ]
+ },
+ {
+  "id": "p2-025",
+  "phase": 2,
+  "plot": "A25",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 470.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   379.1,
+   140.7
+  ],
+  "bbox": [
+   358.0,
+   121.6,
+   399.4,
+   159.7
+  ]
+ },
+ {
+  "id": "p2-024",
+  "phase": 2,
+  "plot": "A24",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 211.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   351.3,
+   139.5
+  ],
+  "bbox": [
+   340.8,
+   121.0,
+   361.8,
+   158.1
+  ]
+ },
+ {
+  "id": "p2-023",
+  "phase": 2,
+  "plot": "A23",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 211.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   333.9,
+   138.8
+  ],
+  "bbox": [
+   323.4,
+   120.4,
+   344.5,
+   157.3
+  ]
+ },
+ {
+  "id": "p2-022",
+  "phase": 2,
+  "plot": "A22",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 209.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   316.6,
+   138.2
+  ],
+  "bbox": [
+   306.1,
+   119.8,
+   327.1,
+   156.6
+  ]
+ },
+ {
+  "id": "p2-026",
+  "phase": 2,
+  "plot": "A26",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 495.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   447.0,
+   144.6
+  ],
+  "bbox": [
+   425.7,
+   124.7,
+   468.4,
+   163.9
+  ]
+ },
+ {
+  "id": "p2-027",
+  "phase": 2,
+  "plot": "A27",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 341.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   481.6,
+   146.8
+  ],
+  "bbox": [
+   466.1,
+   127.9,
+   497.1,
+   165.1
+  ]
+ },
+ {
+  "id": "p2-028",
+  "phase": 2,
+  "plot": "A28",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 332.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   510.3,
+   148.6
+  ],
+  "bbox": [
+   494.9,
+   130.2,
+   525.9,
+   166.4
+  ]
+ },
+ {
+  "id": "p2-029",
+  "phase": 2,
+  "plot": "A29",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 321.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   539.1,
+   150.4
+  ],
+  "bbox": [
+   523.7,
+   132.6,
+   554.7,
+   167.6
+  ]
+ },
+ {
+  "id": "p2-033",
+  "phase": 2,
+  "plot": "A33",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 361.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   536.9,
+   185.7
+  ],
+  "bbox": [
+   521.2,
+   166.4,
+   552.5,
+   205.1
+  ]
+ },
+ {
+  "id": "p2-032",
+  "phase": 2,
+  "plot": "A32",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 361.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   508.1,
+   184.5
+  ],
+  "bbox": [
+   492.4,
+   165.1,
+   523.7,
+   203.8
+  ]
+ },
+ {
+  "id": "p2-031",
+  "phase": 2,
+  "plot": "A31",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 361.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   479.3,
+   183.2
+  ],
+  "bbox": [
+   463.6,
+   163.9,
+   494.9,
+   202.6
+  ]
+ },
+ {
+  "id": "p2-030",
+  "phase": 2,
+  "plot": "A30",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 506.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   444.7,
+   181.7
+  ],
+  "bbox": [
+   423.2,
+   162.1,
+   466.1,
+   201.3
+  ]
+ },
+ {
+  "id": "p2-038",
+  "phase": 2,
+  "plot": "A38",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 397.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   544.7,
+   263.2
+  ],
+  "bbox": [
+   532.7,
+   233.3,
+   556.8,
+   293.0
+  ]
+ },
+ {
+  "id": "p2-037",
+  "phase": 2,
+  "plot": "A37",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 567.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   520.3,
+   262.1
+  ],
+  "bbox": [
+   503.9,
+   232.1,
+   536.6,
+   292.2
+  ]
+ },
+ {
+  "id": "p2-036",
+  "phase": 2,
+  "plot": "A36",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 567.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   491.5,
+   260.9
+  ],
+  "bbox": [
+   475.1,
+   230.8,
+   507.8,
+   290.9
+  ]
+ },
+ {
+  "id": "p2-035",
+  "phase": 2,
+  "plot": "A35",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 553.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   447.0,
+   277.9
+  ],
+  "bbox": [
+   417.3,
+   262.3,
+   476.8,
+   293.5
+  ]
+ },
+ {
+  "id": "p2-034",
+  "phase": 2,
+  "plot": "A34",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 655.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   449.1,
+   246.6
+  ],
+  "bbox": [
+   419.2,
+   228.4,
+   479.0,
+   264.8
+  ]
+ },
+ {
+  "id": "p2-039",
+  "phase": 2,
+  "plot": "A39",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 555.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   445.1,
+   306.7
+  ],
+  "bbox": [
+   415.4,
+   291.0,
+   474.9,
+   322.3
+  ]
+ },
+ {
+  "id": "p2-040",
+  "phase": 2,
+  "plot": "A40",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 555.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   443.2,
+   335.5
+  ],
+  "bbox": [
+   413.5,
+   319.8,
+   473.0,
+   351.1
+  ]
+ },
+ {
+  "id": "p2-041",
+  "phase": 2,
+  "plot": "A41",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 592.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   487.5,
+   321.0
+  ],
+  "bbox": [
+   471.1,
+   289.7,
+   503.9,
+   352.4
+  ]
+ },
+ {
+  "id": "p2-042",
+  "phase": 2,
+  "plot": "A42",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 592.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   516.3,
+   322.3
+  ],
+  "bbox": [
+   499.9,
+   290.9,
+   532.7,
+   353.6
+  ]
+ },
+ {
+  "id": "p2-043",
+  "phase": 2,
+  "plot": "A43",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 415.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   540.8,
+   323.3
+  ],
+  "bbox": [
+   528.7,
+   292.2,
+   552.9,
+   354.5
+  ]
+ },
+ {
+  "id": "p2-048",
+  "phase": 2,
+  "plot": "A48 (I)",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 516.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   441.0,
+   392.4
+  ],
+  "bbox": [
+   410.0,
+   378.2,
+   471.7,
+   406.4
+  ]
+ },
+ {
+  "id": "p2-061",
+  "phase": 2,
+  "plot": "B1",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 635.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   260.8,
+   247.4
+  ],
+  "bbox": [
+   241.2,
+   221.2,
+   281.2,
+   273.5
+  ]
+ },
+ {
+  "id": "p2-062",
+  "phase": 2,
+  "plot": "B2",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 452.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   229.3,
+   246.7
+  ],
+  "bbox": [
+   215.2,
+   220.0,
+   243.4,
+   273.0
+  ]
+ },
+ {
+  "id": "p2-063",
+  "phase": 2,
+  "plot": "B3",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 458.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   203.4,
+   245.9
+  ],
+  "bbox": [
+   189.3,
+   218.9,
+   217.5,
+   272.6
+  ]
+ },
+ {
+  "id": "p2-064",
+  "phase": 2,
+  "plot": "B4",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 466.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   177.4,
+   245.2
+  ],
+  "bbox": [
+   163.3,
+   217.7,
+   191.6,
+   272.2
+  ]
+ },
+ {
+  "id": "p2-065",
+  "phase": 2,
+  "plot": "B5",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 472.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   151.5,
+   244.4
+  ],
+  "bbox": [
+   137.4,
+   216.6,
+   165.7,
+   271.8
+  ]
+ },
+ {
+  "id": "p2-071",
+  "phase": 2,
+  "plot": "B11",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 474.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   267.8,
+   132.3
+  ],
+  "bbox": [
+   246.6,
+   113.8,
+   289.8,
+   151.0
+  ]
+ },
+ {
+  "id": "p2-072",
+  "phase": 2,
+  "plot": "B12",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 299.4,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   234.5,
+   130.2
+  ],
+  "bbox": [
+   220.8,
+   112.1,
+   248.1,
+   148.4
+  ]
+ },
+ {
+  "id": "p2-073",
+  "phase": 2,
+  "plot": "B13",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 300.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   208.6,
+   128.6
+  ],
+  "bbox": [
+   194.9,
+   110.5,
+   222.3,
+   146.7
+  ]
+ },
+ {
+  "id": "p2-074",
+  "phase": 2,
+  "plot": "B14",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 300.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   182.7,
+   126.9
+  ],
+  "bbox": [
+   169.0,
+   108.8,
+   196.4,
+   145.1
+  ]
+ },
+ {
+  "id": "p2-075",
+  "phase": 2,
+  "plot": "B15",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 300.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   156.8,
+   125.3
+  ],
+  "bbox": [
+   143.0,
+   107.2,
+   170.5,
+   143.4
+  ]
+ },
+ {
+  "id": "p2-080",
+  "phase": 2,
+  "plot": "B20",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 717.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   281.5,
+   64.7
+  ],
+  "bbox": [
+   260.7,
+   36.1,
+   303.3,
+   93.4
+  ]
+ },
+ {
+  "id": "p2-076",
+  "phase": 2,
+  "plot": "B16",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 545.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   161.2,
+   56.1
+  ],
+  "bbox": [
+   145.6,
+   26.6,
+   176.8,
+   85.4
+  ]
+ },
+ {
+  "id": "p2-077",
+  "phase": 2,
+  "plot": "B17",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 539.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   189.9,
+   58.3
+  ],
+  "bbox": [
+   174.3,
+   29.0,
+   205.5,
+   87.2
+  ]
+ },
+ {
+  "id": "p2-078",
+  "phase": 2,
+  "plot": "B18",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 535.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   218.7,
+   60.4
+  ],
+  "bbox": [
+   203.1,
+   31.4,
+   234.3,
+   89.1
+  ]
+ },
+ {
+  "id": "p2-079",
+  "phase": 2,
+  "plot": "B19",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 529.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   247.5,
+   62.5
+  ],
+  "bbox": [
+   231.9,
+   33.8,
+   263.0,
+   90.9
+  ]
+ },
+ {
+  "id": "p2-081",
+  "phase": 2,
+  "plot": "C1",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 698.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   330.4,
+   61.8
+  ],
+  "bbox": [
+   312.2,
+   22.8,
+   349.3,
+   98.0
+  ]
+ },
+ {
+  "id": "p2-082",
+  "phase": 2,
+  "plot": "C2",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 621.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   359.2,
+   66.6
+  ],
+  "bbox": [
+   341.0,
+   31.1,
+   377.7,
+   99.2
+  ]
+ },
+ {
+  "id": "p2-083",
+  "phase": 2,
+  "plot": "C3",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 458.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   385.1,
+   70.4
+  ],
+  "bbox": [
+   369.8,
+   38.5,
+   400.6,
+   100.3
+  ]
+ },
+ {
+  "id": "p2-084",
+  "phase": 2,
+  "plot": "C4",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 424.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   408.1,
+   73.5
+  ],
+  "bbox": [
+   393.0,
+   43.8,
+   423.4,
+   101.3
+  ]
+ },
+ {
+  "id": "p2-085",
+  "phase": 2,
+  "plot": "C5",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 392.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   431.0,
+   76.5
+  ],
+  "bbox": [
+   416.0,
+   49.0,
+   446.2,
+   102.3
+  ]
+ },
+ {
+  "id": "p2-086",
+  "phase": 2,
+  "plot": "C6",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 320.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   452.6,
+   79.2
+  ],
+  "bbox": [
+   439.0,
+   53.9,
+   466.3,
+   103.2
+  ]
+ },
+ {
+  "id": "p2-087",
+  "phase": 2,
+  "plot": "C7",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 299.8,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   472.7,
+   81.6
+  ],
+  "bbox": [
+   459.2,
+   58.0,
+   486.4,
+   104.0
+  ]
+ },
+ {
+  "id": "p2-088",
+  "phase": 2,
+  "plot": "C8",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 279.6,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   492.8,
+   84.0
+  ],
+  "bbox": [
+   479.4,
+   61.8,
+   506.5,
+   104.9
+  ]
+ },
+ {
+  "id": "p2-089",
+  "phase": 2,
+  "plot": "C9",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 260.5,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   512.9,
+   86.2
+  ],
+  "bbox": [
+   499.5,
+   65.4,
+   526.4,
+   105.8
+  ]
+ },
+ {
+  "id": "p2-090",
+  "phase": 2,
+  "plot": "C10",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 241.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   532.9,
+   88.5
+  ],
+  "bbox": [
+   519.7,
+   69.1,
+   546.3,
+   106.7
+  ]
+ },
+ {
+  "id": "p2-091",
+  "phase": 2,
+  "plot": "C11",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 376.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   559.7,
+   93.0
+  ],
+  "bbox": [
+   539.8,
+   72.7,
+   579.8,
+   111.4
+  ]
+ },
+ {
+  "id": "p2-094",
+  "phase": 2,
+  "plot": "D1",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 310.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   567.9,
+   152.2
+  ],
+  "bbox": [
+   552.5,
+   134.9,
+   583.4,
+   168.9
+  ]
+ },
+ {
+  "id": "p2-095",
+  "phase": 2,
+  "plot": "D2",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 300.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   596.7,
+   153.9
+  ],
+  "bbox": [
+   581.4,
+   137.2,
+   612.2,
+   170.1
+  ]
+ },
+ {
+  "id": "p2-096",
+  "phase": 2,
+  "plot": "D3",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 281.4,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   625.1,
+   155.9
+  ],
+  "bbox": [
+   610.2,
+   139.6,
+   639.3,
+   171.4
+  ]
+ },
+ {
+  "id": "p2-097",
+  "phase": 2,
+  "plot": "D4",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 303.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   563.4,
+   186.9
+  ],
+  "bbox": [
+   550.0,
+   167.6,
+   576.7,
+   206.1
+  ]
+ },
+ {
+  "id": "p2-098",
+  "phase": 2,
+  "plot": "D5",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 303.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   587.6,
+   187.9
+  ],
+  "bbox": [
+   574.3,
+   168.7,
+   600.9,
+   207.1
+  ]
+ },
+ {
+  "id": "p2-099",
+  "phase": 2,
+  "plot": "D6",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 483.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   619.0,
+   189.3
+  ],
+  "bbox": [
+   598.5,
+   169.7,
+   639.0,
+   208.8
+  ]
+ },
+ {
+  "id": "p2-100",
+  "phase": 2,
+  "plot": "D7",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 545.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   568.7,
+   264.2
+  ],
+  "bbox": [
+   552.9,
+   234.2,
+   584.5,
+   294.3
+  ]
+ },
+ {
+  "id": "p2-101",
+  "phase": 2,
+  "plot": "D8",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 510.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   595.5,
+   265.4
+  ],
+  "bbox": [
+   580.6,
+   235.5,
+   610.4,
+   295.4
+  ]
+ },
+ {
+  "id": "p2-102",
+  "phase": 2,
+  "plot": "D9",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 536.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   622.1,
+   266.9
+  ],
+  "bbox": [
+   606.6,
+   236.6,
+   636.7,
+   296.6
+  ]
+ },
+ {
+  "id": "p2-103",
+  "phase": 2,
+  "plot": "D10",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 552.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   564.6,
+   323.5
+  ],
+  "bbox": [
+   548.8,
+   293.0,
+   580.6,
+   354.5
+  ]
+ },
+ {
+  "id": "p2-104",
+  "phase": 2,
+  "plot": "D11",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 490.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   591.4,
+   323.1
+  ],
+  "bbox": [
+   576.4,
+   294.3,
+   606.6,
+   352.5
+  ]
+ },
+ {
+  "id": "p2-105",
+  "phase": 2,
+  "plot": "D12",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 523.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   619.0,
+   323.1
+  ],
+  "bbox": [
+   602.4,
+   295.4,
+   634.7,
+   350.6
+  ]
+ },
+ {
+  "id": "p2-070",
+  "phase": 2,
+  "plot": "B10",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 573.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   265.3,
+   171.3
+  ],
+  "bbox": [
+   244.8,
+   148.4,
+   286.8,
+   194.2
+  ]
+ },
+ {
+  "id": "p2-069",
+  "phase": 2,
+  "plot": "B9",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 384.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   232.7,
+   169.7
+  ],
+  "bbox": [
+   218.8,
+   146.7,
+   246.6,
+   192.5
+  ]
+ },
+ {
+  "id": "p2-068",
+  "phase": 2,
+  "plot": "B8",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 389.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   206.8,
+   168.3
+  ],
+  "bbox": [
+   192.9,
+   145.1,
+   220.8,
+   191.3
+  ]
+ },
+ {
+  "id": "p2-067",
+  "phase": 2,
+  "plot": "B7",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 393.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   180.9,
+   166.9
+  ],
+  "bbox": [
+   167.0,
+   143.4,
+   194.9,
+   190.2
+  ]
+ },
+ {
+  "id": "p2-066",
+  "phase": 2,
+  "plot": "B6",
+  "block": "B",
+  "plot_type": "plot",
+  "area_sqyd": 399.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   155.0,
+   165.5
+  ],
+  "bbox": [
+   141.0,
+   141.7,
+   169.0,
+   189.1
+  ]
+ },
+ {
+  "id": "p2-049",
+  "phase": 2,
+  "plot": "A48 (II)",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 86.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   476.4,
+   393.8
+  ],
+  "bbox": [
+   471.0,
+   380.8,
+   481.8,
+   406.8
+  ]
+ },
+ {
+  "id": "p2-047",
+  "phase": 2,
+  "plot": "A47",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1120.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   501.9,
+   442.8
+  ],
+  "bbox": [
+   483.9,
+   390.4,
+   519.9,
+   494.0
+  ]
+ },
+ {
+  "id": "p2-044",
+  "phase": 2,
+  "plot": "A44",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1141.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   598.6,
+   433.7
+  ],
+  "bbox": [
+   578.7,
+   378.7,
+   619.3,
+   486.9
+  ]
+ },
+ {
+  "id": "p2-045",
+  "phase": 2,
+  "plot": "A45",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1103.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   566.6,
+   437.1
+  ],
+  "bbox": [
+   548.4,
+   382.7,
+   586.0,
+   489.3
+  ]
+ },
+ {
+  "id": "p2-046",
+  "phase": 2,
+  "plot": "A46",
+  "block": "A",
+  "plot_type": "plot",
+  "area_sqyd": 1099.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   534.6,
+   439.9
+  ],
+  "bbox": [
+   517.0,
+   386.5,
+   552.9,
+   491.6
+  ]
+ },
+ {
+  "id": "p2-092",
+  "phase": 2,
+  "plot": "C12",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 278.7,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   590.9,
+   99.1
+  ],
+  "bbox": [
+   574.2,
+   81.4,
+   607.8,
+   115.4
+  ]
+ },
+ {
+  "id": "p2-093",
+  "phase": 2,
+  "plot": "C13",
+  "block": "C",
+  "plot_type": "plot",
+  "area_sqyd": 313.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   623.0,
+   105.6
+  ],
+  "bbox": [
+   602.7,
+   88.6,
+   642.8,
+   120.7
+  ]
+ },
+ {
+  "id": "p2-106",
+  "phase": 2,
+  "plot": "D13",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 993.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   655.5,
+   312.4
+  ],
+  "bbox": [
+   633.8,
+   274.2,
+   677.5,
+   349.2
+  ]
+ },
+ {
+  "id": "p2-107",
+  "phase": 2,
+  "plot": "D14(I)",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 684.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   690.2,
+   313.7
+  ],
+  "bbox": [
+   674.2,
+   277.1,
+   706.2,
+   349.2
+  ]
+ },
+ {
+  "id": "p2-108",
+  "phase": 2,
+  "plot": "D14(II)",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 663.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   719.0,
+   314.7
+  ],
+  "bbox": [
+   703.2,
+   279.2,
+   735.0,
+   349.1
+  ]
+ },
+ {
+  "id": "p2-109",
+  "phase": 2,
+  "plot": "D14(III)",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 644.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   747.8,
+   315.7
+  ],
+  "bbox": [
+   732.0,
+   281.3,
+   763.8,
+   349.1
+  ]
+ },
+ {
+  "id": "p2-110",
+  "phase": 2,
+  "plot": "D14(IV)",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 519.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   774.2,
+   316.7
+  ],
+  "bbox": [
+   760.9,
+   283.4,
+   787.5,
+   349.1
+  ]
+ },
+ {
+  "id": "p2-111",
+  "phase": 2,
+  "plot": "D15 & D16",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 8428.6,
+  "area_method": "computed",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   714.5,
+   195.7
+  ],
+  "bbox": [
+   637.2,
+   98.0,
+   793.4,
+   285.1
+  ]
+ },
+ {
+  "id": "p2-112",
+  "phase": 2,
+  "plot": "D17",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 2205.55,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   749.8,
+   429.6
+  ],
+  "bbox": [
+   715.8,
+   378.1,
+   783.9,
+   481.1
+  ]
+ },
+ {
+  "id": "p2-113",
+  "phase": 2,
+  "plot": "D18",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 2381.39,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   654.4,
+   429.6
+  ],
+  "bbox": [
+   616.0,
+   378.1,
+   692.7,
+   481.1
+  ]
+ },
+ {
+  "id": "p2-114",
+  "phase": 2,
+  "plot": "D19",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1112.4,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   679.9,
+   556.5
+  ],
+  "bbox": [
+   663.8,
+   504.1,
+   698.2,
+   614.5
+  ]
+ },
+ {
+  "id": "p2-115",
+  "phase": 2,
+  "plot": "D20",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1290.0,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   712.0,
+   560.0
+  ],
+  "bbox": [
+   692.0,
+   504.1,
+   731.7,
+   619.9
+  ]
+ },
+ {
+  "id": "p2-116",
+  "phase": 2,
+  "plot": "D21",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1216.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   745.0,
+   566.9
+  ],
+  "bbox": [
+   721.0,
+   511.3,
+   764.5,
+   620.7
+  ]
+ },
+ {
+  "id": "p2-117",
+  "phase": 2,
+  "plot": "D22",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1199.8,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   778.2,
+   566.4
+  ],
+  "bbox": [
+   759.2,
+   511.0,
+   797.4,
+   622.0
+  ]
+ },
+ {
+  "id": "p2-118",
+  "phase": 2,
+  "plot": "D23",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 824.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   730.7,
+   662.3
+  ],
+  "bbox": [
+   713.7,
+   619.3,
+   746.0,
+   712.0
+  ]
+ },
+ {
+  "id": "p2-119",
+  "phase": 2,
+  "plot": "D24",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 624.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   756.2,
+   661.3
+  ],
+  "bbox": [
+   743.7,
+   620.2,
+   769.0,
+   705.4
+  ]
+ },
+ {
+  "id": "p2-120",
+  "phase": 2,
+  "plot": "D25",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 561.9,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   779.3,
+   658.3
+  ],
+  "bbox": [
+   766.9,
+   621.1,
+   792.1,
+   698.4
+  ]
+ },
+ {
+  "id": "p2-121",
+  "phase": 2,
+  "plot": "D26",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 879.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   803.6,
+   630.9
+  ],
+  "bbox": [
+   790.0,
+   575.3,
+   817.8,
+   691.4
+  ]
+ },
+ {
+  "id": "p2-122",
+  "phase": 2,
+  "plot": "D27",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 778.7,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   827.1,
+   626.7
+  ],
+  "bbox": [
+   813.6,
+   575.9,
+   840.8,
+   681.9
+  ]
+ },
+ {
+  "id": "p2-123",
+  "phase": 2,
+  "plot": "D28",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 677.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   850.0,
+   621.8
+  ],
+  "bbox": [
+   837.1,
+   576.5,
+   863.8,
+   672.3
+  ]
+ },
+ {
+  "id": "p2-125",
+  "phase": 2,
+  "plot": "D30",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 756.0,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   813.2,
+   543.6
+  ],
+  "bbox": [
+   793.9,
+   511.0,
+   832.2,
+   576.2
+  ]
+ },
+ {
+  "id": "p2-124",
+  "phase": 2,
+  "plot": "D29",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 753.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   848.1,
+   544.1
+  ],
+  "bbox": [
+   829.3,
+   511.3,
+   866.8,
+   577.1
+  ]
+ },
+ {
+  "id": "p2-126",
+  "phase": 2,
+  "plot": "D31",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 513.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   796.4,
+   459.3
+  ],
+  "bbox": [
+   781.9,
+   430.6,
+   811.0,
+   488.3
+  ]
+ },
+ {
+  "id": "p2-127",
+  "phase": 2,
+  "plot": "D32",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 555.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   824.1,
+   459.4
+  ],
+  "bbox": [
+   808.3,
+   430.6,
+   839.8,
+   488.3
+  ]
+ },
+ {
+  "id": "p2-128",
+  "phase": 2,
+  "plot": "D33",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 521.5,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   852.0,
+   460.2
+  ],
+  "bbox": [
+   837.1,
+   430.6,
+   866.2,
+   488.3
+  ]
+ },
+ {
+  "id": "p2-131",
+  "phase": 2,
+  "plot": "D36",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 474.6,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   798.8,
+   404.3
+  ],
+  "bbox": [
+   784.2,
+   378.1,
+   813.7,
+   430.6
+  ]
+ },
+ {
+  "id": "p2-130",
+  "phase": 2,
+  "plot": "D35",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 504.4,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   826.8,
+   404.3
+  ],
+  "bbox": [
+   811.0,
+   378.1,
+   842.5,
+   430.6
+  ]
+ },
+ {
+  "id": "p2-129",
+  "phase": 2,
+  "plot": "D34",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 403.3,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   852.7,
+   405.1
+  ],
+  "bbox": [
+   839.8,
+   378.1,
+   864.8,
+   430.6
+  ]
+ },
+ {
+  "id": "p2-132",
+  "phase": 2,
+  "plot": "D37",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1829.2,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   832.5,
+   301.8
+  ],
+  "bbox": [
+   802.3,
+   252.0,
+   862.6,
+   349.1
+  ]
+ },
+ {
+  "id": "p2-133",
+  "phase": 2,
+  "plot": "D38",
+  "block": "D",
+  "plot_type": "plot",
+  "area_sqyd": 1322.1,
+  "area_method": "computed",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   815.9,
+   213.7
+  ],
+  "bbox": [
+   791.2,
+   146.4,
+   857.6,
+   252.0
+  ]
+ },
+ {
+  "id": "p3-001",
+  "phase": 3,
+  "plot": "01",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 708.873,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   129.1,
+   586.5
+  ],
+  "bbox": [
+   64.9,
+   559.0,
+   192.7,
+   614.0
+  ]
+ },
+ {
+  "id": "p3-002",
+  "phase": 3,
+  "plot": "02",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 750.605,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   139.6,
+   539.9
+  ],
+  "bbox": [
+   75.1,
+   512.3,
+   202.7,
+   568.8
+  ]
+ },
+ {
+  "id": "p3-003",
+  "phase": 3,
+  "plot": "03",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 683.938,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   232.7,
+   475.8
+  ],
+  "bbox": [
+   197.0,
+   418.1,
+   261.6,
+   519.0
+  ]
+ },
+ {
+  "id": "p3-004",
+  "phase": 3,
+  "plot": "04",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 608.566,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   284.6,
+   468.6
+  ],
+  "bbox": [
+   261.6,
+   418.1,
+   307.7,
+   519.0
+  ]
+ },
+ {
+  "id": "p3-005",
+  "phase": 3,
+  "plot": "05",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 1081.763,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   348.7,
+   468.6
+  ],
+  "bbox": [
+   307.7,
+   418.1,
+   389.6,
+   519.0
+  ]
+ },
+ {
+  "id": "p3-006",
+  "phase": 3,
+  "plot": "06",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 1253.873,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   323.6,
+   382.5
+  ],
+  "bbox": [
+   243.7,
+   344.6,
+   389.6,
+   418.1
+  ]
+ },
+ {
+  "id": "p3-007",
+  "phase": 3,
+  "plot": "07",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 517.317,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   346.7,
+   321.4
+  ],
+  "bbox": [
+   302.9,
+   298.4,
+   389.6,
+   344.6
+  ]
+ },
+ {
+  "id": "p3-008",
+  "phase": 3,
+  "plot": "08",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 528.672,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   345.8,
+   275.2
+  ],
+  "bbox": [
+   301.0,
+   252.3,
+   389.6,
+   298.4
+  ]
+ },
+ {
+  "id": "p3-009",
+  "phase": 3,
+  "plot": "09",
+  "block": "W",
+  "plot_type": "plot",
+  "area_sqyd": 501.926,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   344.5,
+   230.8
+  ],
+  "bbox": [
+   299.2,
+   208.6,
+   389.6,
+   252.3
+  ]
+ },
+ {
+  "id": "p3-010",
+  "phase": 3,
+  "plot": "10",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 876.657,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   506.5,
+   264.5
+  ],
+  "bbox": [
+   435.7,
+   238.5,
+   575.4,
+   288.5
+  ]
+ },
+ {
+  "id": "p3-011",
+  "phase": 3,
+  "plot": "11",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 841.536,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   505.6,
+   311.6
+  ],
+  "bbox": [
+   435.7,
+   288.5,
+   575.4,
+   334.7
+  ]
+ },
+ {
+  "id": "p3-012",
+  "phase": 3,
+  "plot": "12",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 841.536,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   505.6,
+   357.8
+  ],
+  "bbox": [
+   435.7,
+   334.7,
+   575.4,
+   380.8
+  ]
+ },
+ {
+  "id": "p3-013",
+  "phase": 3,
+  "plot": "13",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 841.566,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   505.6,
+   403.8
+  ],
+  "bbox": [
+   435.7,
+   380.8,
+   575.4,
+   426.9
+  ]
+ },
+ {
+  "id": "p3-014",
+  "phase": 3,
+  "plot": "14",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 563.806,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   482.5,
+   449.9
+  ],
+  "bbox": [
+   435.7,
+   426.9,
+   529.3,
+   473.0
+  ]
+ },
+ {
+  "id": "p3-015",
+  "phase": 3,
+  "plot": "15",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 563.806,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   482.5,
+   496.0
+  ],
+  "bbox": [
+   435.7,
+   473.0,
+   529.3,
+   519.0
+  ]
+ },
+ {
+  "id": "p3-017",
+  "phase": 3,
+  "plot": "17",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 314.401,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   554.1,
+   590.7
+  ],
+  "bbox": [
+   530.9,
+   565.1,
+   579.8,
+   619.2
+  ]
+ },
+ {
+  "id": "p3-018",
+  "phase": 3,
+  "plot": "18",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 229.893,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   515.1,
+   593.3
+  ],
+  "bbox": [
+   499.7,
+   565.1,
+   530.9,
+   623.7
+  ]
+ },
+ {
+  "id": "p3-019",
+  "phase": 3,
+  "plot": "19",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 371.068,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   476.3,
+   595.9
+  ],
+  "bbox": [
+   453.5,
+   565.1,
+   499.7,
+   630.0
+  ]
+ },
+ {
+  "id": "p3-020",
+  "phase": 3,
+  "plot": "20",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 256.558,
+  "area_method": "sheet",
+  "area_review": true,
+  "status": null,
+  "centroid": [
+   435.1,
+   591.9
+  ],
+  "bbox": [
+   416.9,
+   565.1,
+   453.5,
+   619.7
+  ]
+ },
+ {
+  "id": "p3-021",
+  "phase": 3,
+  "plot": "21",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 406.253,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   389.0,
+   593.2
+  ],
+  "bbox": [
+   361.6,
+   565.1,
+   416.9,
+   622.9
+  ]
+ },
+ {
+  "id": "p3-022",
+  "phase": 3,
+  "plot": "22",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 355.184,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   338.4,
+   594.6
+  ],
+  "bbox": [
+   315.5,
+   565.1,
+   361.6,
+   625.3
+  ]
+ },
+ {
+  "id": "p3-023",
+  "phase": 3,
+  "plot": "23",
+  "block": "S",
+  "plot_type": "plot",
+  "area_sqyd": 665.891,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   274.1,
+   597.3
+  ],
+  "bbox": [
+   227.3,
+   565.1,
+   315.5,
+   630.2
+  ]
+ },
+ {
+  "id": "p3-016",
+  "phase": 3,
+  "plot": "16",
+  "block": "E",
+  "plot_type": "plot",
+  "area_sqyd": 556.795,
+  "area_method": "sheet",
+  "area_review": false,
+  "status": null,
+  "centroid": [
+   552.4,
+   473.0
+  ],
+  "bbox": [
+   529.3,
+   426.9,
+   575.6,
+   519.0
+  ]
+ }
+]

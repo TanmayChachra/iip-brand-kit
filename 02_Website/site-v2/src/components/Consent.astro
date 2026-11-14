@@ -1,0 +1,37 @@
+---
+// Cookie choice banner (body end). Works with Gtm.astro, which owns the gate (window.iipConsent). No library.
+// Accept and Reject are the same size and style. Phones: compact sheet above the call bar if one exists.
+// Footer or any element with [data-consent-open] reopens it.
+const on = !!import.meta.env.PUBLIC_GTM_ID;
+const css = `
+.consent{position:fixed;z-index:80;left:max(12px,env(safe-area-inset-left));bottom:max(12px,env(safe-area-inset-bottom));width:min(26rem,calc(100vw - 24px));background:#fff;color:#111827;border:1px solid #d1d5db;border-top:4px solid #ffd600;box-shadow:0 8px 28px #0003;padding:14px 16px;font:400 14px/1.45 Inter,system-ui,sans-serif}
+.consent[hidden]{display:none}
+.consent:focus{outline:3px solid #0f4d3a;outline-offset:2px}
+.consent p{margin:0 0 10px}
+.consent a{color:#0f4d3a;text-decoration:underline;text-underline-offset:3px}
+.consent__row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.consent button{flex:1 1 0;min-height:44px;padding:0 14px;font:600 15px/1 Inter,system-ui,sans-serif;color:#0f4d3a;background:#fff;border:2px solid #0f4d3a;border-radius:0;cursor:pointer}
+.consent button:hover{background:#0f4d3a;color:#fff}
+.consent button:focus-visible,.consent a:focus-visible,[data-consent-open]:focus-visible{outline:3px solid #0f4d3a;outline-offset:2px}
+[data-consent-open]{min-height:44px;display:inline-flex;align-items:center;background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+@media (max-width:639px){.consent{left:0;right:0;bottom:var(--consent-b,0);width:auto;border-left:0;border-right:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom))}.consent p{margin-bottom:8px;font-size:13px}}
+@media (prefers-reduced-motion:no-preference){.consent{animation:cin .25s ease-out}@keyframes cin{from{opacity:0;transform:translateY(8px)}}}
+`;
+---
+{on && (<>
+  <style is:inline set:html={css}></style>
+  <div class="consent" id="consent" role="region" aria-label="Analytics choice" tabindex="-1" hidden>
+    <p>We use Google Analytics to see which pages help visitors. It stays off until you choose. Calls and WhatsApp work either way. <a href="/privacy/">Privacy</a> · <a href="/privacy/#cookies">Manage</a></p>
+    <div class="consent__row"><button type="button" data-c="granted">Accept</button><button type="button" data-c="denied">Reject</button></div>
+  </div>
+  <script is:inline>
+    (function(){var c=window.iipConsent,b=document.getElementById('consent');if(!c||!b)return;
+    function pad(){var a=document.querySelector('.actionbar'),m=matchMedia('(max-width:639px)').matches;b.style.setProperty('--consent-b',a&&m&&a.offsetHeight?a.offsetHeight+'px':'0px')}
+    function pad2(){pad();document.body.style.marginBottom=b.hidden?'':b.offsetHeight+'px'}
+    function show(f){b.hidden=false;pad2();if(f)b.focus()}
+    b.addEventListener('click',function(e){var v=e.target.getAttribute&&e.target.getAttribute('data-c');if(v){c.set(v);b.hidden=true;pad2()}});
+    document.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('[data-consent-open]')){e.preventDefault();show(1)}});
+    addEventListener('resize',pad2);addEventListener('load',pad2);
+    if(!c.get())show(0);})();
+  </script>
+</>)}

@@ -18,4 +18,4 @@ Plain, practical guides for people who plan to buy an industrial plot. No jargon
 
 ## Need an answer fast?
 
-Read the [questions and answers](/faq/) or call [98370 57800](tel:+919837057800).
+Read the [questions and answers](/faq/) or call [98377 64222](tel:+919837764222).
