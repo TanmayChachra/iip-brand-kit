@@ -10,7 +10,7 @@ schema: []
 
 ## Working units close by
 
-Units near the park make tile-bonding chemicals, comfort cushions, industrial water tanks and PVC pipes. Your neighbours are factories, so the road already knows trucks.
+Units near the park make tile-bonding chemicals, comfort cushions, industrial tanks and PVC pipes. Your neighbours are factories, so the road already knows trucks.
 
 ## Fuel at the gate
 

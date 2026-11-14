@@ -24,7 +24,7 @@ Small commercial plots for shops sit inside the park too. See every plot on the 
 ## How buying a plot works
 
 1. **First meeting.** We show you what is for sale today and walk you through the park and the papers.
-2. **Approvals and answers.** Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. We show you the papers and answer every question. Bring your advisor.
+2. **Approvals and answers.** The park is approved by Zila Panchayat Ghaziabad, all three phases. We show you the papers and answer every question. Bring your advisor.
 3. **Payment plan.** An industry standard plan, about three months on average. If you ever need to sell, we help you sell your land.
 4. **Registry day.** After about three months of payments we fix the registry day to suit both sides.
 

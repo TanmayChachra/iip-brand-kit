@@ -1,5 +1,7 @@
 # Approvals facts (Isapur Industrial Park)
 
+**OWNER DECISION 2026-11-14 (latest, overrides the note below):** the claim is now "Approved by Zila Panchayat Ghaziabad" for all three phases, on the owner's word (badge: "Approved by Zila Panchayat"). The Phase 1 original approval document is still to be found and filed (TODO owner). Keep the wording free of "map", "sanctioned", "subject to conditions", sanction numbers and dates.
+
 **OWNER DECISION 2026-11-14 (overrides the safe wording below):** claim scope is Phase 2 and Phase 3 only. Wording: "Approved by Zila Panchayat Ghaziabad" (example: "Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad"; badge: "Approved by Zila Panchayat"). No map wording ("map", "layout map", "stamped map", "sanctioned", "subject to conditions") in approval lines. Phase 1 original approval is not on file, so make no claim about Phase 1 or the Phase 1 extension. The Phase 1 notes below are internal only.
 
 Source: owner's scanned approval documents (Drive folder, read only). Read visually on 2026-11-12. Phone photos of paper, so some stamp text is partly legible. No owner, buyer or khasra data is recorded here on purpose. Labels: VERIFIED = read in the document. PARTIAL = read but a detail is blurry.

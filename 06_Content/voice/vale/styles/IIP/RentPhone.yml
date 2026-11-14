@@ -1,0 +1,7 @@
+extends: existence
+message: "Rent number '%s' is allowed only for rent copy. Use {{rent_phone}} there and 98377 64222 elsewhere."
+level: error
+ignorecase: true
+tokens:
+  - '92195\s?-?49800'
+  - '\+?91[\s-]?92195'

@@ -14,7 +14,7 @@ An industrial park starts as a plan. The plan shows the roads, the plots, the gr
 
 The authority checks the plan and approves it. In plain words: the authority has passed the plan of roads and plots, and the park is laid out to it.
 
-Phase 2 and Phase 3 of Isapur Industrial Park are approved by Zila Panchayat Ghaziabad. Our [approvals page](/approvals/) lists what we hold.
+Isapur Industrial Park is approved by Zila Panchayat Ghaziabad, all three phases. Our [approvals page](/approvals/) lists what we hold.
 
 ## Ask for the papers themselves
 
@@ -33,7 +33,7 @@ Ask the seller for the approval papers themselves, not a photograph of a brochur
 
 A drawing is only useful if you can stand on it. Walk the park with it in your hand.
 
-- Find the road in front of your plot. The drawing gives its width. The main roads of Phase 2 are 50 ft wide, so stand in the middle and see how it looks with a loaded truck.
+- Find the road in front of your plot. The drawing gives its width. The main roads are 50 ft wide, so stand in the middle and see how it looks with a loaded truck.
 - Count the plots between yours and the corner. The numbers should run in the same order on the ground and on the paper.
 - Look at the green strips and the divider on the drawing, then look for the trees on the ground.
 - Check that the plot you are shown is the plot on your sale papers. The number and the size must be the same in both places.
@@ -50,7 +50,7 @@ The park approval covers the roads and plots. When you build, you take building 
 
 ## Questions people ask us
 
-**"Which phases are approved?"** Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. Ask us to show you the papers.
+**"Which phases are approved?"** All three phases of the park are approved by Zila Panchayat Ghaziabad. Ask us to show you the papers.
 
 **"Do I need to see the original?"** Yes, and you will. Ask to see the papers and keep a photocopy for your advisor.
 

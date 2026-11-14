@@ -22,7 +22,7 @@ Maps, layout drawings and illustrations show the park's plan. They are not to sc
 
 ## Facts and approvals
 
-We state a fact on this site only when we hold the paper that supports it. Ask us to show you any document. The approvals pages explain what each paper covers.
+Isapur Industrial Park is approved by Zila Panchayat Ghaziabad, all three phases. Ask us to show you any document. The approvals pages explain what each paper covers.
 
 ## Using the site
 

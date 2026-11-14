@@ -1,5 +1,10 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-14 (evening), rent and lease, approvals wording, reordered home
+- New page https://isapurindustrialpark.com/industrial-shed-for-rent/ for factories and sheds on rent or lease; the 100 sq yard factory shows as available now. A rent section sits on the home, plus a Rent item in the menu and footer. Rent calls go to 92195 49800, everything else stays 98377 64222.
+- Approval lines now simply say Approved by Zila Panchayat Ghaziabad for the park, no map words, no phase scoping.
+- The fun shed-build scroll moved down; the important facts come first.
+
 ## 2026-11-14 (later), phone review fixes
 - Fixed what you found on your phone: overlapping map labels, the shed block starting under the header, the repeated distances, the sizes map (a lit-plots map now sits under the size chips), and the pointless footprint drawing.
 - Copy is salesier. The buying steps no longer say we get to know you, and nothing says payments flow through us.
@@ -73,4 +78,5 @@ You can now open https://isapurindustrialpark.com on any phone. It is mobile fir
 
 ## 2026-11-02 to 2026-11-05
 - Competitor research, moodboards, poster, first brand kit. See `Archive/` and git history.
+
 

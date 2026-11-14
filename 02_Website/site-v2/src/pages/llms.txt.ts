@@ -18,11 +18,12 @@ Contact: ${PHONES[0].display} (call or WhatsApp). ${HOURS_TEXT} Address: Hapur-M
 - [Around the park](${u('/neighbours/')}): what is nearby, with distances
 - [FAQ](${u('/faq/')}): short answers
 - [Plot maps](${u('/plot-maps/')}): the three phases, plot by plot
-- [Approvals](${u('/approvals/')}): layouts sanctioned by Zila Panchayat Ghaziabad
+- [Approvals](${u('/approvals/')}): approved by Zila Panchayat Ghaziabad
 - [How buying works](${u('/how-buying-works/')}): the steps from call to registry
 - [Layout approvals](${u('/layout-approvals/')}): what the approval means
 - [Roads and freight](${u('/roads-and-freight/')}): trucks, expressway, rail depot
 - [Shops](${u('/shops/')}): commercial shops inside the park
+- [Sheds and factories for rent](${u('/industrial-shed-for-rent/')}): industrial sheds and factories for rent or lease
 - [Contact](${u('/contact/')}): call, WhatsApp, book a site visit
 `, { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 };

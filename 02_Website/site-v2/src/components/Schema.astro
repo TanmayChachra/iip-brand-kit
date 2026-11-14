@@ -20,7 +20,7 @@ const graph: any[] = [
     ...(article ? { headline: title, datePublished: article.date.toISOString().slice(0, 10), author: { '@id': abs('/#org') }, publisher: { '@id': abs('/#org') }, image: abs('/share.jpg') } : {}) },
 ];
 if (crumbs.length) graph.push({ '@type': 'BreadcrumbList', itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.href) })) });
-if (faq?.length) graph.push({ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) });
+if (faq?.length) graph.push({ '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') } })) });
 if (place) graph.push({ '@type': 'Place', name: SITE.name, address: org.address, geo: org.geo, hasMap: SITE.mapsUrl });
 const json = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
 ---

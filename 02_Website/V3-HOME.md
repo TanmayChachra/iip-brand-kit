@@ -161,3 +161,11 @@ Own build: `npx astro build --outDir dist-fix` in `site-v2`. Screens: `qa/v3/scr
 - Sizes: shed footprint illustration removed. A compact map (`.mm--s`, `data-mms`, same `home-map.mjs`, one shared fetch of master-map.json) sits directly under the chips, all three phases fitted, chosen band lit with a .45 s fade, pinch, tap, zoom and Reset. Lead: "Tap a size and see those plots light up." Counts unchanged (119, 171, 31, 33). The hero map is no longer highlighted by the chips.
 - Owner decisions applied: "payments through us" step dropped (buying list is now 4 steps; registry step says payments take about three months on average, timing negotiable later); approval line is "Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad" (papers section, step 2, drawing stamp now "PHASE 2 AND 3 / APPROVED"); drainage tile removed.
 - Checks: scrollWidth equals viewport at 360, 390, 412, 768, 1440; CLS 0; Lighthouse mobile (plain http server, no gzip) 0.92 and 0.99, production dist 0.91; no 92195 49800, 98370 57800, resale, sanction, drainage in dist-fix home.
+
+## Fix round 3 (2026-11-14)
+- Approval wording: Phase 1 now covered. Papers section: "Approved by Zila Panchayat Ghaziabad, the park and all three phases". Buying step 2 and drawing stamp ("APPROVED BY / ZILA PANCHAYAT") aligned. llms.txt line says approved, no sanction wording.
+- Order now: hero, where, inside, gate, shops, sizes, rent, papers, buying, faq, build (stages 1 to 6), visit. Build block moved after the facts and before the visit finale. Sticky stage still released after stage 6.
+- New section #rent after sizes (copy: 06_Content/voice/home-rent-lines.md): Available now pill, yellow short-line bullet, small factory elevation (Vig kind rent, same ink style), Call button uses RENT_PHONE (92195 49800, phones.mjs, rent only), WhatsApp stays 98377 64222, link to /industrial-shed-for-rent/.
+- Nav (NAV in lib/site.ts, serves Home and Base): "Rent a Factory". Footer Plots column: "Factory and Shed for Rent". llms.txt lists the page; sitemap picks it up automatically.
+- scripts/check_inner.mjs: rent number allowed only on home and the rent page. Open: /faq/ (copywriter content) still contains 92195 49800, remove or it fails the check.
+- QA at 360, 390, 412, 1440: no horizontal scroll, CLS about 0, Lighthouse mobile 0.96. Shots: qa/v3/screens/v3fix3-*.png.

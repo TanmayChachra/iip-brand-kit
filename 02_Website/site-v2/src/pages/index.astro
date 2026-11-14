@@ -7,6 +7,7 @@ import Vig from '../components/Vig.astro';
 import WhereRegion from '../components/WhereRegion.astro';
 import Foot from '../components/Foot.astro';
 import { SITE, waLink } from '../lib/site';
+import { RENT_PHONE } from '../lib/phones.mjs';
 import { ICON_CALL, ICON_WA, ICON_ARROW } from '../lib/icons.mjs';
 import { burst } from '../lib/burst.mjs';
 import { splitMaster } from '../lib/mastermap.mjs';
@@ -33,9 +34,16 @@ const inside = [
   [icoPower, 'Power 24/7', 'Government supply on its own lines, coming in from both the Modinagar side and the Hapur side.'],
   [icoRain, 'Rain water harvesting', 'Part of every layout.'],
 ];
+const rent = { // copy: 06_Content/voice/home-rent-lines.md
+  eyebrow: 'For rent', h: 'Plots, sheds and factories on rent too',
+  sub: 'Rent or lease a shed, start working in the park, buy a plot when you are ready.',
+  items: ['A factory on a 100 sq yard plot is available now.'],
+  call: 'Call', more: 'Sheds and factories for rent', wa: 'Ask about the factory for rent',
+};
+const rentWa = waLink('Hello, I saw the factory for rent on a 100 sq yard plot at Isapur Industrial Park. Please tell me more.');
 const steps = [
   ['First meeting', 'We show you what is for sale today and walk you through the park and the papers.'],
-  ['Approvals and answers', 'See the approvals we hold. Every objection and cross question gets a straight answer.'],
+  ['Approvals and answers', 'The park is approved by Zila Panchayat Ghaziabad. We show you the papers and give every question a straight answer.'],
   ['Payment plan', 'An industry standard plan, about three months on average. If you ever need to sell, we help you sell your land.'],
   ['Registry day', 'After about three months of payments we fix the registry day to suit both sides.'],
 ]; // DRAFT: owner-stated process, wording to be confirmed by the owner
@@ -87,28 +95,6 @@ const buildSteps = [
         </div>
         <p class="cap">All three phases at one scale. Use plus and minus, pinch or double tap to zoom, touch a plot for its size.</p>
       </div>
-    </div>
-  </div>
-
-  <div class="wrap story" data-story>
-    <aside class="stage" aria-label="A shed built on the plot, stage by stage">
-      <div class="panel stagep">
-        <Shed mode="stage" uid="st" />
-        <p class="cap" id="stage-cap">One plot, built up stage by stage.</p>
-        <ol class="steps">
-          {buildSteps.map(([n], i) => <li><i><b class="k fill" style={`--i:${i};--s:0;--e:1`}></b></i><span>{n}</span></li>)}
-        </ol>
-      </div>
-    </aside>
-    <div class="flow">
-      <section class="sec build" id="build" aria-labelledby="build-h">
-        <p class="eyebrow">Build on it</p>
-        <h2 id="build-h">From bare plot to working shed</h2>
-        <p class="sub">Keep scrolling. The drawing builds as you read, one stage at a time.</p>
-        <ol class="bsteps">
-          {buildSteps.map(([, p, h], i) => <li class="bstep k" style={`--i:${i}`}><span class="bn">Stage {i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
-        </ol>
-      </section>
     </div>
   </div>
 
@@ -164,11 +150,29 @@ const buildSteps = [
         <a class="b b--y ask" id="find-ask" href={heroWa} rel="noopener" hidden data-cta-id="find-ask" data-section="sizes"><Fragment set:html={ICON_WA} />Ask what is available in this size</a>
       </section>
 
+      <section class="sec" id="rent" aria-labelledby="rent-h">
+        <p class="eyebrow">{rent.eyebrow}</p>
+        <h2 id="rent-h">{rent.h}</h2>
+        <p class="sub">{rent.sub}</p>
+        <div class="rentcard">
+          <Vig kind="rent" uid="vr" label="Architect style drawing of a small factory shed in elevation with a roller shutter, a side door and a green roof"/>
+          <div class="rentcard__txt">
+            <p class="pill">Available now</p>
+            <ul class="rentlist">{rent.items.map((t) => <li>{t}</li>)}</ul>
+            <div class="btns">
+              <a class="b b--g" href={`tel:${RENT_PHONE.tel}`} data-cta-id="rent-call" data-section="rent"><Fragment set:html={ICON_CALL} />{rent.call} {RENT_PHONE.display}</a>
+              <a class="b b--o" href={rentWa} rel="noopener" data-cta-id="rent-wa" data-section="rent"><Fragment set:html={ICON_WA} />{rent.wa}</a>
+            </div>
+            <a class="more" href="/industrial-shed-for-rent/" data-cta-id="rent-link" data-section="rent">{rent.more}<Fragment set:html={ICON_ARROW} /></a>
+          </div>
+        </div>
+      </section>
+
       <section class="sec" id="papers" aria-labelledby="papers-h">
         <p class="eyebrow">The papers</p>
         <h2 id="papers-h">Start with the papers</h2>
-        <p class="sub">Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. Ask us to show you the approval papers.</p>
-        <Vig kind="papers" uid="vp" label="Architect style drawing of a layout plan sheet with roads, plots, a north arrow and a green approval stamp"/>
+        <p class="sub">Approved by Zila Panchayat Ghaziabad, the park and all three phases. Ask us to show you the papers.</p>
+        <Vig kind="papers" uid="vp" label="Architect style drawing of a plan sheet with roads, plots, a north arrow and a green approval stamp"/>
         <a class="more" href="/approvals/" data-cta-id="papers-link" data-section="papers">See the approvals<Fragment set:html={ICON_ARROW} /></a>
       </section>
 
@@ -187,6 +191,28 @@ const buildSteps = [
           {faq.map(([q, a]) => <details><summary>{q}<span aria-hidden="true"></span></summary><p>{a}</p></details>)}
         </div>
         <p class="sub">Anything else, ask our sales team on <a href={`tel:${tel.tel}`} data-cta-id="faq-call" data-section="faq">{tel.display}</a>.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="wrap story" data-story>
+    <aside class="stage" aria-label="A shed built on the plot, stage by stage">
+      <div class="panel stagep">
+        <Shed mode="stage" uid="st" />
+        <p class="cap" id="stage-cap">One plot, built up stage by stage.</p>
+        <ol class="steps">
+          {buildSteps.map(([n], i) => <li><i><b class="k fill" style={`--i:${i};--s:0;--e:1`}></b></i><span>{n}</span></li>)}
+        </ol>
+      </div>
+    </aside>
+    <div class="flow">
+      <section class="sec build" id="build" aria-labelledby="build-h">
+        <p class="eyebrow">Build on it</p>
+        <h2 id="build-h">From bare plot to working shed</h2>
+        <p class="sub">Keep scrolling. The drawing builds as you read, one stage at a time.</p>
+        <ol class="bsteps">
+          {buildSteps.map(([, p, h], i) => <li class="bstep k" style={`--i:${i}`}><span class="bn">Stage {i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
+        </ol>
       </section>
     </div>
   </div>

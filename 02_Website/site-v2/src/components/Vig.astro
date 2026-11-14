@@ -2,7 +2,7 @@
 // Section drawings in the same architect's ink style as the shed: gate and fuel pump, shop row, layout sheet.
 // Each .vk element draws or fades with the scroll through its own figure (home.css, view timeline --v).
 import { burst } from '../lib/burst.mjs';
-interface Props { kind: 'gate' | 'shops' | 'papers'; uid: string; label: string }
+interface Props { kind: 'gate' | 'shops' | 'papers' | 'rent'; uid: string; label: string }
 const { kind, uid, label } = Astro.props;
 const r = (n: number) => Math.round(n * 10) / 10;
 const V = (cls: string, kf: 'd' | 'f' | 'w', s: number, e: number) => ({ class: `${cls} vk vk${kf}`, style: `--s:${s};--e:${e}`, ...(kf === 'd' ? { pathLength: '1' } : {}) });
@@ -93,7 +93,23 @@ const quad = (x0: number, y0: number) => { let d = ''; for (let c = 0; c < 3; c+
   </g>
   <g {...V('', 'f', 0.6, 1)}>
     <path class="o" d="M366 176H476V236H366Z"/><path class="o3" d="M366 196H476M366 216H476"/>
-    <text class="tx" x="372" y="190">PHASE 2 AND 3</text><text class="tx" x="372" y="210">APPROVED</text>
+    <text class="tx" x="372" y="190">APPROVED BY</text><text class="tx" x="372" y="210" textLength="98" lengthAdjust="spacingAndGlyphs">ZILA PANCHAYAT</text>
     <g transform="translate(408 104) scale(.08)"><polygon points={bp} fill="#0F4D3A"/><path d="M270 420L370 520L540 320" fill="none" stroke="#fff" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/></g>
   </g>
+</svg>)}
+
+{kind === 'rent' && (
+<svg class="vig ink" viewBox="0 0 400 200" role="img" aria-labelledby={`${uid}-t`} xmlns="http://www.w3.org/2000/svg">
+  <title id={`${uid}-t`}>{label}</title>
+  <path {...V('o gl', 'd', 0, 0.4)} d="M0 170H400"/>
+  <path {...V('o3', 'f', 0.2, 0.6)} d={Array.from({ length: 44 }, (_, i) => `M${i * 9 + 6} 170l-5 7`).join('')}/>
+  <path {...V('o', 'd', 0.1, 0.6)} d="M60 170V78L200 44L340 78V170"/>
+  <path {...V('o3', 'd', 0.3, 0.7)} d="M60 78H340M60 96H340"/>
+  <g {...V('', 'w', 0.4, 0.8)}><path class="o fy" d="M60 78H153V84H60Z"/><path class="o fr" d="M153 78H247V84H153Z"/><path class="o fg" d="M247 78H340V84H247Z"/></g>
+  <g {...V('', 'w', 0.5, 0.9)}><path class="o fg" d="M52 82L200 40L348 82L348 76L200 34L52 76Z"/></g>
+  <g {...V('', 'f', 0.6, 1)}>
+    <path class="o fy" d="M110 170V118H190V170Z"/><path class="o3" d="M110 126H190M110 134H190M110 142H190M110 150H190M110 158H190"/>
+    <path class="o fw" d="M240 170V126H270V170Z"/><path class="o fw" d="M290 112H326V138H290Z"/>
+  </g>
+  <g {...V('', 'f', 0.8, 1)}><text class="tx" x="200" y="194" text-anchor="middle">SMALL FACTORY, 100 SQ YARD PLOT</text></g>
 </svg>)}

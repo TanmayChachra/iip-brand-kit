@@ -16,7 +16,7 @@ Plots start at 300 sq yards. The largest run to 2000 to 2500 sq yards. We open t
 
 ## 2. The approvals on the table
 
-Next we lay the papers in front of you. Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad, and we show you the papers for the plot you like. Bring your advisor. Take all the time you need.
+Next we lay the papers in front of you. Isapur Industrial Park is approved by Zila Panchayat Ghaziabad, all three phases, and we show you the papers for the plot you like. Bring your advisor. Take all the time you need.
 
 Start with the [approvals page](/approvals/) if you like. Then use our [guide to checking an approval](/layout-approvals/) to read the papers like a pro.
 

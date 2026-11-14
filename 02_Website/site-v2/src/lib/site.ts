@@ -24,6 +24,7 @@ export const NAV = [
   { href: '/#visit', label: 'Visit' },
   { href: '/industrial-plots/', label: 'Plots' },
   { href: '/plot-maps/', label: 'Plot maps' },
+  { href: '/industrial-shed-for-rent/', label: 'Rent a Factory' },
   { href: '/location/', label: 'Location' },
   { href: '/neighbours/', label: 'Around us' },
   { href: '/faq/', label: 'FAQ' },

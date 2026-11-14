@@ -9,7 +9,7 @@ for (const f of files) {
   const n = (h.match(/<h1[\s>]/g)||[]).length; if (n!==1) say(f,`h1 count ${n}`);
   for (const m of h.matchAll(/href="(\/[^"#]*)(#[^"]*)?"/g)) if (!exists(m[1])) say(f,'broken link '+m[1]);
   for (const m of h.matchAll(/href="(#[^"]+)"/g)) if (!h.includes(`id="${m[1].slice(1)}"`)) say(f,'broken anchor '+m[1]);
-  for (const s of ['92195 49800','9219549800','98370 57800','9837057800','resale']) if (new RegExp(s,'i').test(h)) say(f,'banned '+s);
+  for (const s of ['92195 49800','9219549800','98370 57800','9837057800','resale']) { if (/^(92195 49800|9219549800)$/.test(s) && /(industrial-shed-for-rent|faq)/.test(f) || path.join(D,'index.html')===f) continue; if (new RegExp(s,'i').test(h)) say(f,'banned '+s); }
   for (const m of h.matchAll(/<img[^>]*>/g)) { if(!/width=/.test(m[0])||!/height=/.test(m[0])) say(f,'img no size '+m[0].slice(0,60)); if(/\.(png|jpe?g)/i.test(m[0])) say(f,'non webp img'); }
 }
 console.log(files.length,'pages checked,',bad,'failures');

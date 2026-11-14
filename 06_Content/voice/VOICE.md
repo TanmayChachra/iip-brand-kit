@@ -55,13 +55,15 @@ Watch: "approved" (only with Zila Panchayat Ghaziabad and the safe wording), "re
 - Plots from 300 sq yd. Largest 2000 to 2500 sq yd.
 - Power 24/7, government lines from both the Modinagar and Hapur sides.
 - Petrol pump at the entry and exit (light boast, no straight-line wording).
-- "Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad." Badge: "Approved by Zila Panchayat". Phases 2 and 3 only, no Phase 1 claim, no "map", "sanctioned" or "subject to conditions" (owner, 2026-11-14, see 06_Content/approvals-facts.md).
+- "Approved by Zila Panchayat Ghaziabad", all three phases, on the owner's word. Example: "Isapur Industrial Park is approved by Zila Panchayat Ghaziabad, all three phases." Badge: "Approved by Zila Panchayat". Do not mention phases in a way that scopes the claim, no "map", "sanctioned", "subject to conditions", sanction numbers or dates (owner, 2026-11-14, see 06_Content/approvals-facts.md).
+- Rent and lease (owner's father, 2026-11-14): plots AND sheds and factories for rent or lease. A factory on a 100 sq yard plot is for rent now. No rent amounts, deposits, terms, power load or other sizes. Rent = monthly rent agreement, short or medium term. Lease = longer, registered lease deed.
+- Rent phone (owner, 2026-11-14): 92195 49800 is allowed ONLY for rent copy, written {{rent_phone}} and {{rent_phone_tel}}. WhatsApp stays 98377 64222 everywhere.
 - By road, driving from the park centre (OSRM, 2026-11-13, no traffic): Delhi-Meerut Expressway entry 4.2 km, Modinagar 10.7, Hapur 13.6, EPE junction 17.8, Meerut 29.9, Dadri container depot 46.3, Delhi (Anand Vihar) 46.
 - Running units nearby, no brand names: tile-bonding chemicals, comfort cushions, industrial water tanks, PVC pipes.
 - Shops in the park, all commercial, any trade (confectionery, quick food, tyre repair).
 - Buyers: factories, warehouses, godowns, investors.
 - Visit hours 8 am to 8 pm, every day except Tuesday.
-- Phone and WhatsApp: 98377 64222. The number 92195 49800 is HELD until the owner says (about 2026-11-19). Never print it.
+- Phone and WhatsApp: 98377 64222. The number 92195 49800 is for rent copy only (see below). Never use it elsewhere.
 - Drawing figures (from the architect layouts, 01_Brand/Plot-Maps/data/plots.json) are internal until the owner OKs a number for print. Tag them "drawing figure, confirm with the owner before printing".
 - Taglines (adaptive, one per creative): "A Modern Industrial Address." or "The Groundwork for Growth."
 
@@ -78,4 +80,5 @@ Watch: "approved" (only with Zila Panchayat Ghaziabad and the safe wording), "re
 3. Say who the thing serves. Put the people in the line. (from "Shops for the people who serve the factories")
 4. Buying and sales pages are salesy: confident, benefit-first, a little polished and aspirational, still concrete, never hype. Never say "we get to know you and your industry". The first meeting is us showing what is for sale and walking buyers through the park and the papers. (owner, 2026-11-14)
 5. Never say payments or cash flow through IIP, or that our name is on or stands behind every sale. Help-you-sell-later stays, with no payment clause. (owner, 2026-11-14)
-6. Approval claims cover Phase 2 and Phase 3 only, worded "Approved by Zila Panchayat Ghaziabad". Never "map", "layout map", "stamped map", "sanctioned", "subject to conditions", or any Phase 1 claim. (owner, 2026-11-14)
+6. Approval claims lead with "Approved by Zila Panchayat Ghaziabad" and cover the park and all three phases, confidently. Never scope it to Phase 2 and 3 ("very bad"). Never "map", "layout map", "stamped map", "sanctioned", "subject to conditions", sanction numbers or dates. (owner, 2026-11-14, replaces the earlier Phase 2 and 3 wording)
+7. Rent pages: salesy, benefit-first, name the available unit, explain rent vs lease in two plain lines, no amounts or invented terms. Rent calls use {{rent_phone}}. (2026-11-14)
