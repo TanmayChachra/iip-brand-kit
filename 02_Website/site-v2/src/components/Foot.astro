@@ -27,3 +27,8 @@ const dir = DIRECTIONS_URL;
     <div class="flegal"><span>&copy; 2026 Isapur Industrial Park</span><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><button type="button" data-consent-open>Cookie settings</button><a href="/blog/">Guides</a><span class="credit">Map data from OpenStreetMap contributors (ODbL). Layout drawing by the park's architect. Illustrations are drawn for the park.</span></div>
   </div>
 </footer>
+<style is:global>
+.flegal button[data-consent-open]{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;margin:0;padding:0;border-radius:0;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px;cursor:pointer;-webkit-appearance:none;appearance:none}
+@media(hover:hover){.flegal button[data-consent-open]:hover{text-decoration:underline}}
+.foot [data-consent-open]:focus-visible{outline:3px solid #ffd600;outline-offset:3px}
+</style>

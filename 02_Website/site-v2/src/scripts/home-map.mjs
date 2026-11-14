@@ -15,7 +15,7 @@ export default function initMap(mm) {
   const KMIN = 0.9, KMAX = 10, WHEEL = 0.0045, PINCH = 1.6;
   let base = 0.9, k = 1, x = 0, y = 0, T = { k: 1, x: 0, y: 0 }, raf = 0, last = 0, tau = 70, moved = 0, hideT = 0, tap = { t: 0, x: 0, y: 0 }, lastDbl = 0;
   const pts = new Map();
-  const put = () => { cam.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${k.toFixed(4)})`); mm.classList.toggle('zoomed', k > base * 1.04); };
+  const put = () => { cam.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${k.toFixed(4)})`); mm.classList.toggle('zoomed', k > base * 1.04); lab(); };
   const user = (cx, cy) => { const p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(svg.getScreenCTM().inverse()); };
   const touched = () => mm.classList.add('touched');
   // keep the content covering the viewport (or centred when it is smaller)
@@ -32,7 +32,8 @@ export default function initMap(mm) {
   const go = (slow) => { clamp(); if (still) { sync(); return; } tau = slow ? 170 : 70; if (!raf) { last = 0; raf = requestAnimationFrame(tick); } };
   const zoomAt = (u, f, slow) => { const nk = Math.min(KMAX, Math.max(KMIN, T.k * f)); T.x = u.x - ((u.x - T.x) / T.k) * nk; T.y = u.y - ((u.y - T.y) / T.k) * nk; T.k = nk; go(slow); };
   const centre = () => ({ x: vx + vw / 2, y: vy + vh / 2 });
-  const fit = (b) => { const pad = b ? 0.95 : 0.9; if (!b) b = [bx, by, bw, bh]; const kk = pad * Math.min(vw / b[2], vh / b[3]); return { k: kk, x: vx + vw / 2 - kk * (b[0] + b[2] / 2), y: vy + vh / 2 - kk * (b[1] + b[3] / 2) }; };
+  const dsk = matchMedia('(min-width:1100px)'); // desktop: fit the phases themselves (not the sheet margins) to the panel
+  const fit = (b) => { const pad = b ? 0.95 : dsk.matches ? 0.97 : 0.9; if (!b) b = dsk.matches ? [cx0 + 40, cy0 + 40, cx1 - cx0 - 80, cy1 - cy0 - 80] : [bx, by, bw, bh]; const kk = pad * Math.min(vw / b[2], vh / b[3]); return { k: kk, x: vx + vw / 2 - kk * (b[0] + b[2] / 2), y: vy + vh / 2 - kk * (b[1] + b[3] / 2) }; };
   // animated fly to a target view, 400 ms, gentle ease in and out. T follows the current view, so a touch mid flight just takes over.
   const ease = (u) => (u < 0.5 ? 4 * u * u * u : 1 - Math.pow(-2 * u + 2, 3) / 2);
   const fly = (to) => {
@@ -47,14 +48,26 @@ export default function initMap(mm) {
     raf = requestAnimationFrame(step);
   };
   // plot numbers: raised to at least 5 px on screen (at most 2.4x their drawn size), hidden when that is not enough; refreshed 120 ms after the zoom settles
-  let labs = null, lt = 0, lk = 0;
-  const lab = (force) => {
-    clearTimeout(lt); if (!labs) return;
-    lt = setTimeout(() => {
-      if (!force && Math.abs(Math.log(T.k / (lk || 1))) < 0.03) return; lk = T.k;
-      for (const l of labs) { const px = l.fs * l.sc * s0 * T.k, f = Math.max(1, 5 / px), hide = f > 2.4; if (hide !== l.h) { l.el.style.display = hide ? 'none' : ''; l.h = hide; } const fz = hide || f === 1 ? '' : (l.fs * f).toFixed(2); if (fz !== l.z) { l.el.style.fontSize = fz; l.z = fz; } }
-    }, force ? 0 : 120);
+  // Level of detail: every text (plot numbers, road names, block letters, phase titles) shows only when legible and when it fits without touching a text already placed. Greedy by priority, independent of pan, one rAF pass per zoom change. Plot numbers are raised to 5 px (at most 2.4x their drawn size).
+  let labs = null, lk = 0, lp = 0;
+  const lod = (force) => {
+    lp = 0; if (!labs) return;
+    if (!force && Math.abs(Math.log(T.k / (lk || 1))) < 0.02) return; lk = T.k;
+    const z = s0 * T.k, got = [];
+    for (const l of labs) {
+      const f = l.pn ? Math.max(1, 5 / (l.fs * l.sc * z)) : 1, w = l.w * f * z + 2, h = l.h * f * z + 1;
+      let ok = f <= 2.4 && l.fs * l.sc * z * f >= 5;
+      if (ok) {
+        const x0 = l.cx * z - w / 2, y0 = l.cy * z - h / 2, x1 = x0 + w, y1 = y0 + h;
+        for (const r of got) if (x0 < r[2] && x1 > r[0] && y0 < r[3] && y1 > r[1]) { ok = false; break; }
+        if (ok) got.push([x0, y0, x1, y1]);
+      }
+      if (!ok !== !!l.hid) { l.el.style.display = ok ? '' : 'none'; l.hid = !ok; }
+      const fz = ok && l.pn && f > 1 ? (l.fs * f).toFixed(2) : '';
+      if (fz !== (l.z || '')) { l.el.style.fontSize = fz; l.z = fz; }
+    }
   };
+  const lab = (force) => { if (force) { cancelAnimationFrame(lp); lod(true); } else if (!lp) lp = requestAnimationFrame(() => lod()); };
   Object.assign(T, fit(null)); base = T.k; sync();
   new ResizeObserver(() => { view(); Object.assign(T, mm.dataset.focus ? fit(boxes[mm.dataset.focus]) : fit(null)); clamp(); sync(); lab(true); }).observe(vp);
   const setChip = (ph) => { $$('.mm__chip', mm).forEach((o) => o.setAttribute('aria-pressed', o.dataset.ph === String(ph) ? 'true' : 'false')); if (+ph) mm.dataset.focus = ph; else delete mm.dataset.focus; };
@@ -118,7 +131,21 @@ export default function initMap(mm) {
       while (i < chunks.length && performance.now() - t0 < 8) { const [n, h] = chunks[i++]; host[n].insertAdjacentHTML('beforeend', h); }
       if (i < chunks.length) requestAnimationFrame(slice); else {
         mm.classList.add('in');
-        labs = $$('.ph', mm).flatMap((g) => { const sc = g.transform.baseVal.consolidate().matrix.a; return $$('.pn', g).map((el) => ({ el, sc, fs: +el.getAttribute('font-size') || 3 })); });
+        // measure every text once at its drawn size in cam space, before anything is hidden
+        const ci = cam.getScreenCTM().inverse();
+        labs = $$('text', cam).map((el) => {
+          const fs = +el.getAttribute('font-size') || parseFloat(getComputedStyle(el).fontSize) || 3, pn = el.classList.contains('pn');
+          let w = 0, h = 0, cx = 0, cy = 0, sc = 1;
+          try {
+            const cs = el.getScreenCTM(), m = cs ? ci.multiply(cs) : null, b = el.getBBox(); sc = m ? Math.hypot(m.a, m.b) || 1 : 1;
+            if (m && b.width) {
+              const xs = [], ys = [];
+              for (const [px, py] of [[b.x, b.y], [b.x + b.width, b.y], [b.x, b.y + b.height], [b.x + b.width, b.y + b.height]]) { const p = new DOMPoint(px, py).matrixTransform(m); xs.push(p.x); ys.push(p.y); }
+              const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys); w = x1 - x0; h = y1 - y0; cx = (x0 + x1) / 2; cy = (y0 + y1) / 2;
+            }
+          } catch (e) { /* unmeasurable text stays as drawn */ }
+          return { el, pn, fs, sc, w, h, cx, cy, p: el.classList.contains('pl') ? 0 : pn ? 2 : 1 };
+        }).filter((l) => l.w).sort((a, b) => a.p - b.p || b.fs * b.sc - a.fs * a.sc);
         lab(true);
       }
     };
