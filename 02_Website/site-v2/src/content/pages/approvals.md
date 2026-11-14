@@ -1,37 +1,29 @@
 ---
 title: Approvals and Papers | Isapur Industrial Park
-description: Layouts sanctioned by Zila Panchayat Ghaziabad. What the sanction of each phase means in plain words, and how to see the papers.
-h1: Layouts sanctioned by Zila Panchayat Ghaziabad
-lead: Each phase of the park has its own sanctioned layout. Here is what that means, phase by phase.
+description: Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. What that means in plain words, and how to see the papers.
+h1: Approved by Zila Panchayat Ghaziabad
+lead: Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. Here is what that means for you.
 pageType: other
 draft: false
 schema: []
 ---
 
-## What sanctioned means
+## What approved by Zila Panchayat means
 
-Zila Panchayat Ghaziabad checks a layout map of roads and plots and stamps it. The layouts of the park are sanctioned by Zila Panchayat Ghaziabad, subject to conditions. You can ask to see the stamped map.
+Zila Panchayat Ghaziabad is the local authority. It checks the plan of roads and plots for a park and gives its approval. Phase 2 and Phase 3 of Isapur Industrial Park are approved by Zila Panchayat Ghaziabad. Each plot owner also takes building approval before construction.
 
-## Phase by phase
+## Phase 2 and Phase 3
 
-### Phase 1
+Phase 2 is approved by Zila Panchayat Ghaziabad, with an approval letter dated 16 March 2026. The approved plan shows 15.24 m (50 ft) wide main roads and a green divider.
 
-Layout map for Phase 1 sanctioned by Zila Panchayat Ghaziabad, subject to conditions. In plain words, the authority passed the plan of roads and plots. Each plot owner takes building approval before construction.
-
-### Phase 2
-
-Phase 2 layout approved by Zila Panchayat Ghaziabad (approval letter dated 16 March 2026). The approved layout shows 15.24 m (50 ft) wide main roads and a green divider. The letter sets conditions, such as planting trees and building as the layout shows.
-
-### Phase 3
-
-Phase 3 layout sanctioned by Zila Panchayat Ghaziabad, subject to conditions. In plain words, the same as Phase 1: the authority passed the layout map.
+Phase 3 is approved by Zila Panchayat Ghaziabad too. Its roads are 12 m wide, with a green divider.
 
 ## See the papers
 
-Ask us to show you the sanctioned layout for the plot you like. Bring your advisor. We show every paper.
+Ask us to show you the approval for the plot you like. Bring your advisor. We show every paper.
 
 - [Call or WhatsApp us](/contact/)
 - [See every plot on the plot maps](/plot-maps/)
 - [How buying a plot works](/industrial-plots/)
-- [How the layout approval works](/layout-approvals/)
+- [How to check an approval](/layout-approvals/)
 - [How buying works](/how-buying-works/)

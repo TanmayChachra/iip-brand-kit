@@ -19,7 +19,7 @@ Ask every park the same five questions and write down the answers.
 - **Road width.** Can a loaded truck turn inside the park?
 - **Distance to the expressway.** Ask for the road distance.
 - **Plot size.** Does the smallest plot fit your unit and your growth?
-- **Papers.** Ask to see the layout map. Bring your own advisor.
+- **Papers.** Ask to see the approval papers. Bring your own advisor.
 - **Visit.** Go on a working day and look at the roads, the lights and the units already running.
 
 ## Where Hapur Road fits

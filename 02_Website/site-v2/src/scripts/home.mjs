@@ -18,18 +18,15 @@ $$('[data-open-now]').forEach((el) => {
 });
 
 // 2. Size finder: chips light up plots on the layout and scale the shed footprint on the plan.
-const lay = $('.lay'), out = $('#find-out'), ask = $('#find-ask'), chips = $$('[data-band]');
+const lay = $('#sizes .lay'), out = $('#find-out'), ask = $('#find-ask'), chips = $$('[data-band]');
 if (lay && out && chips.length) {
-  const base = out.innerHTML, cap = $('#find-cap');
+  const base = out.innerHTML;
   let cur = '';
   const swap = (fn) => { fn(); if (!still) animate(out, { opacity: [0, 1], transform: ['translateY(6px)', 'none'] }, { duration: 0.28, ease: EASE }); };
   const pick = (c) => {
     const b = c && c.dataset.band !== cur ? c.dataset.band : '';
     cur = b;
     chips.forEach((x) => x.setAttribute('aria-pressed', x === c && b ? 'true' : 'false'));
-    const sc = b ? c.dataset.sc : '';
-    $$('.shedsvg[data-shed=ghost]').forEach((s) => (sc ? s.style.setProperty('--sc', sc) : s.style.removeProperty('--sc')));
-    if (cap) cap.textContent = b ? `A shed on a plot of ${c.dataset.label}.` : 'A shed on a plot.';
     if (b) {
       lay.setAttribute('data-sel', b);
       swap(() => (out.innerHTML = `<b>${c.dataset.n} plots</b> in this size<small>Lit up on the map.</small>`));
@@ -68,6 +65,13 @@ if (!CSS.supports('animation-timeline', 'view()') && !still) {
     link($('.bsteps'), '--build'); link($('.fin__run'), '--fin');
     scroll((p) => root.style.setProperty('--gp', p));
   });
+}
+
+// 6. Sizes map: same map code, started when the section is near.
+const ms = $('[data-mms]');
+if (ms) {
+  const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { io.disconnect(); import('./home-map.mjs').then((m) => m.default(ms)); } }, { rootMargin: '900px 0px' });
+  io.observe(ms);
 }
 
 // 5. Hero map: the body (plots, roads, labels) and its interaction code load after first paint and idle, or at the first touch on the map.

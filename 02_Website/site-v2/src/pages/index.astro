@@ -15,10 +15,10 @@ import icoRoads from '../assets/icons/wide-roads.svg?raw';
 import icoLight from '../assets/icons/street-light.svg?raw';
 import icoGreen from '../assets/icons/planted-greenery.svg?raw';
 import icoPower from '../assets/icons/power-supply.svg?raw';
-import icoDrain from '../assets/icons/drainage.svg?raw';
 import icoRain from '../assets/icons/sustainable.svg?raw';
 const ico = (raw: string) => raw.replace(/^[\s\S]*?<g /, '<svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><g ').replace(/<title>.*?<\/title>/g, '').replace(/<\/svg>\s*$/, '</svg>');
 const masterSvg = splitMaster().shell;
+const miniSvg = masterSvg.replace('id="mm-t"', 'id="ms-t"').replace('id="mm-d"', 'id="ms-d"').replace('aria-labelledby="mm-t mm-d"', 'aria-labelledby="ms-t ms-d"').replace('id="satellite-slot"', 'id="satellite-slot-s"');
 const tel = SITE.phones[0];
 const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road';
 const heroWa = waLink('Hello, I want to see what is for sale at Isapur Industrial Park.');
@@ -31,15 +31,13 @@ const inside = [
   [icoLight, 'Street lighting', 'Installed along the roads.'],
   [icoGreen, 'Greenery', 'Planted inside the park.'],
   [icoPower, 'Power 24/7', 'Government supply on its own lines, coming in from both the Modinagar side and the Hapur side.'],
-  [icoDrain, 'Drainage lanes and green dividers', 'Part of every layout.'],
   [icoRain, 'Rain water harvesting', 'Part of every layout.'],
 ];
 const steps = [
-  ['First meeting', 'We show you what is for sale today. We get to know you and your industry, because personal trust matters, and we tell you about ours.'],
-  ['Papers and questions', 'We show you the approvals we hold and answer your objections and cross questions.'],
-  ['Payment plan', 'An industry standard plan. We assure you that if you ever need to sell, we will help you sell your land, so you can be at ease.'],
-  ['Payments through us', 'Once the plan is final, payments start and the cash flows through us, so our name is on every purchase and every sale and nobody walks away from a deal.'],
-  ['Registry day', 'After about three months of payments we fix the registry day to suit both sides, and the sale is made.'],
+  ['First meeting', 'We show you what is for sale today and walk you through the park and the papers.'],
+  ['Approvals and answers', 'See the approvals we hold. Every objection and cross question gets a straight answer.'],
+  ['Payment plan', 'An industry standard plan, about three months on average. If you ever need to sell, we help you sell your land.'],
+  ['Registry day', 'After about three months of payments we fix the registry day to suit both sides.'],
 ]; // DRAFT: owner-stated process, wording to be confirmed by the owner
 const faq = [
   ['Is an industrial plot available today?', 'Call us and we show you what is available today, in all three phases, and help you find a plot that suits your needs.'],
@@ -121,17 +119,6 @@ const buildSteps = [
         <h2 id="where-h">4.2 km from the Delhi-Meerut Expressway</h2>
         <p class="sub">The park is on Hapur-Modinagar Road. One short drive puts you on the expressway, and from there Meerut, Ghaziabad and Delhi are one road away.</p>
         <WhereRegion />
-      </section>
-
-      <section class="sec" id="road" aria-labelledby="road-h">
-        <p class="eyebrow">The road in</p>
-        <h2 id="road-h">Short drives, and wide roads inside</h2>
-        <ul class="nums">
-          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#FFD600"/></svg><b>4.2<small>km</small></b></div><p>by road to the Delhi-Meerut Expressway entry</p></li>
-          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#0F4D3A"/></svg><b class="lt">10.7<small>km</small></b></div><p>by road to Modinagar</p></li>
-          <li><div class="bdg"><svg viewBox="0 0 800 800" aria-hidden="true"><polygon points={bp} fill="#E53935"/></svg><b class="lt">13.6<small>km</small></b></div><p>by road to Hapur</p></li>
-        </ul>
-        <p class="sub">The expressway entry is at Bhojpur. Inside the park your trucks run on 50 ft RCC roads.</p>
         <a class="more" href="/location/">All distances and directions<Fragment set:html={ICON_ARROW} /></a>
       </section>
 
@@ -162,19 +149,25 @@ const buildSteps = [
       <section class="sec" id="sizes" aria-labelledby="sizes-h">
         <p class="eyebrow">Sizes in the park</p>
         <h2 id="sizes-h">An industrial plot for every size, 300 to 2500 sq yards</h2>
-        <p class="sub">Plots run from 300 sq yards up to 2000 to 2500 sq yards. Pick a size and watch those plots light up on the map above.</p>
+        <p class="sub">Plots run from 300 sq yards up to 2000 to 2500 sq yards. Tap a size and see those plots light up.</p>
         <ul class="chips" aria-label="Plot size">
           {bands.map((b) => <li><a class="chip" href={bandWa(b)} rel="noopener" data-band={b.id} data-n={b.n} data-wa={bandWa(b)} data-label={b.id === 'shop' ? 'shops' : b.label} data-sc={scale[b.id]} data-cta-id={`size-${b.id}`} data-section="sizes"><b>{chipHead(b)}</b><small>{b.n} plots</small></a></li>)}
         </ul>
+        <div class="mm mm--s" data-mms>
+          <div class="mm__vp" tabindex="0" aria-label="Map of all three phases with the plots of the chosen size lit up. Drag to move, use plus and minus to zoom." data-src="/data/master-map.json">
+            <div class="mm__drift"><Fragment set:html={miniSvg} /></div>
+            <span class="mm__zoom"><button type="button" data-z="out" aria-label="Zoom out">&minus;</button><button type="button" data-z="in" aria-label="Zoom in">+</button><button type="button" data-z="reset" class="mm__rst" aria-label="Reset zoom">Reset</button></span>
+            <p class="mm__tip" role="status" hidden></p>
+          </div>
+        </div>
         <p class="out" id="find-out" aria-live="polite">Pick a size to see how many plots of it the layouts hold.</p>
         <a class="b b--y ask" id="find-ask" href={heroWa} rel="noopener" hidden data-cta-id="find-ask" data-section="sizes"><Fragment set:html={ICON_WA} />Ask what is available in this size</a>
-        <div class="ghost"><Shed mode="ghost" uid="gh" /><p class="cap" id="find-cap">A shed on a plot.</p></div>
       </section>
 
       <section class="sec" id="papers" aria-labelledby="papers-h">
         <p class="eyebrow">The papers</p>
         <h2 id="papers-h">Start with the papers</h2>
-        <p class="sub">Layouts sanctioned by Zila Panchayat Ghaziabad. Ask us to show you the sanctioned layout for the plot you like.</p>
+        <p class="sub">Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. Ask us to show you the approval papers.</p>
         <Vig kind="papers" uid="vp" label="Architect style drawing of a layout plan sheet with roads, plots, a north arrow and a green approval stamp"/>
         <a class="more" href="/approvals/" data-cta-id="papers-link" data-section="papers">See the approvals<Fragment set:html={ICON_ARROW} /></a>
       </section>

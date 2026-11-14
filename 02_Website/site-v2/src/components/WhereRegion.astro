@@ -4,13 +4,13 @@ import d from '../assets/where-pins.json';
 const pos = (p: number[]) => `left:${p[0]}%;top:${p[1]}%`;
 // ladder order = distance order. k = map key, side = label side on the map, sub = small line
 const rows = [
-  { k: 'ramp', n: 'Delhi-Meerut Expressway entry', s: 'Bhojpur', km: '4.2', v: 4.2, side: 'r', short: 'Expressway entry' },
+  { k: 'ramp', n: 'Delhi-Meerut Expressway entry', s: 'Bhojpur', km: '4.2', v: 4.2, side: 'r', short: 'Expressway entry', abbr: 'Entry' },
   { k: 'mod', n: 'Modinagar', s: '', km: '10.7', v: 10.7, side: 'l' },
   { k: 'hap', n: 'Hapur', s: '', km: '13.6', v: 13.6, side: 'l' },
-  { k: 'epe', n: 'Eastern Peripheral Expressway junction', s: 'Kallu Garhi', km: '17.8', v: 17.8, side: 'l', short: 'EPE junction' },
+  { k: 'epe', n: 'Eastern Peripheral Expressway junction', s: 'Kallu Garhi', km: '17.8', v: 17.8, side: 'l', short: 'EPE junction', abbr: 'EPE' },
   { k: 'meerut', n: 'Meerut', s: '', km: '29.9', v: 29.9, side: 'l' },
   { k: 'delhi', n: 'Delhi, Anand Vihar', s: '', km: '46', v: 46, side: 'b', short: 'Delhi' },
-  { k: 'dadri', n: 'CONCOR container depot at Dadri', s: '', km: '46.3', v: 46.3, side: 'r', short: 'Dadri depot' },
+  { k: 'dadri', n: 'CONCOR container depot at Dadri', s: '', km: '46.3', v: 46.3, side: 'r', short: 'Dadri depot', abbr: 'Dadri' },
 ];
 const { ladder = true } = Astro.props;
 const pins = d.pins as Record<string, number[]>;
@@ -28,9 +28,9 @@ const ctx = d.ctx as Record<string, number[]>;
 
       <div class="wr__pins" data-pins>
         <span class="wr__x" style={`${pos(d.xl)};--a:${d.xl[2]}deg`} aria-hidden="true"><svg viewBox="0 0 24 28"><path d="M12 1 22.5 4.5v10.2c0 6.2-4.2 10.4-10.5 12.3C5.700 25.100 1.500 20.900 1.500 14.700V4.500Z" fill="#111827" stroke="#FFD600" stroke-width="2"/><text x="12" y="17.500" text-anchor="middle" font-size="9.500" font-weight="800" fill="#FFD600" font-family="Inter,sans-serif">NE3</text></svg><span><i>Delhi-Meerut </i>Expressway</span></span>
-        {Object.entries(ctx).map(([k, p]) => <span class={`wr__c wr__c--${k}`} style={pos(p)}>{k === 'ghz' ? 'Ghaziabad' : 'Noida'}</span>)}
+        {Object.entries(ctx).map(([k, p]) => <span class={`wr__c wr__c--${k}`} data-c={k} style={pos(p)}>{k === 'ghz' ? 'Ghaziabad' : 'Noida'}</span>)}
         {rows.map((r, i) => (
-          <button type="button" class={`wr__p wr__p--${r.side}`} style={pos(pins[r.k])} data-k={r.k} aria-label={`${r.n}, ${r.km} km`}><i class="wr__d"><b>{i + 1}</b></i><span class="wr__l">{r.short ?? r.n}</span></button>
+          <button type="button" class="wr__p" data-s={r.side} style={pos(pins[r.k])} data-k={r.k} aria-label={`${r.n}, ${r.km} km`}><i class="wr__d"><b>{i + 1}</b></i><span class="wr__l" data-f={r.short ?? r.n} data-a={r.abbr ?? r.short ?? r.n}>{r.short ?? r.n}</span></button>
         ))}
         <span class="wr__pk" style={pos(pins.park)}><i class="wr__r"></i><i class="wr__r wr__r2"></i><img src="/brand/logo-badge-only.svg" width="48" height="48" alt=""></span>
       </div>
@@ -79,6 +79,45 @@ const ctx = d.ctx as Record<string, number[]>;
       root.toggleAttribute('data-live', vis);
       if (vis && root.dataset.m === 'pre') root.dataset.m = 'go';
     }, { threshold: 0.3 }).observe(root.querySelector('[data-wr-map]')!);
+
+
+    // label collision pass: priority order, try the preferred side then the others, then the short form, hide what still does not fit (the numbered dot and the ladder keep the name)
+    const stage = root.querySelector('.wr__stage') as HTMLElement;
+    const prio = ['ramp', 'meerut', 'hap', 'mod', 'epe', 'dadri', 'delhi'];
+    type R = { l: number; t: number; r: number; b: number };
+    const rect = (e: Element, pad = 0): R => { const b = e.getBoundingClientRect(); return { l: b.left - pad, t: b.top - pad, r: b.right + pad, b: b.bottom + pad }; };
+    const hit = (a: R, b: R) => a.l < b.r && a.r > b.l && a.t < b.b && a.b > b.t;
+    const place = () => {
+      const sb = rect(stage); const inside = (a: R) => a.l >= sb.l + 2 && a.r <= sb.r - 2 && a.t >= sb.t + 2 && a.b <= sb.b - 2;
+      const placed: R[] = [];
+      const pk = root.querySelector('.wr__pk img'); if (pk) placed.push(rect(pk, 4));
+      const cr = root.querySelector('.wr__a'); if (cr) placed.push(rect(cr, 2));
+      root.querySelectorAll('.wr__d').forEach((d) => placed.push(rect(d, 2)));
+      // expressway plate: rotated rectangle, test in its own frame
+      const px = root.querySelector('.wr__x') as HTMLElement | null;
+      let plateHit = (_: R) => false;
+      if (px) {
+        const c = rect(px), cx = (c.l + c.r) / 2, cy = (c.t + c.b) / 2, a = (parseFloat(getComputedStyle(px).getPropertyValue('--a')) || 0) * Math.PI / 180;
+        const hl = px.offsetWidth / 2 + 3, hw = px.offsetHeight / 2 + 3, co = Math.cos(a), si = Math.sin(a);
+        plateHit = (q) => { const xs: number[] = [], ys: number[] = []; [[q.l, q.t], [q.r, q.t], [q.l, q.b], [q.r, q.b]].forEach(([x, y]) => { const dx = x - cx, dy = y - cy; xs.push(dx * co + dy * si); ys.push(-dx * si + dy * co); }); return Math.min(...xs) < hl && Math.max(...xs) > -hl && Math.min(...ys) < hw && Math.max(...ys) > -hw; };
+      }
+      const free = (q: R) => inside(q) && !plateHit(q) && !placed.some((o) => hit(o, q));
+      const sides = ['r', 'l', 't', 'b'];
+      const done = (el: HTMLElement, q: R) => { placed.push({ l: q.l - 3, t: q.t - 3, r: q.r + 3, b: q.b + 3 }); el.style.visibility = ''; };
+      prio.forEach((k) => {
+        const p = root.querySelector(`.wr__p[data-k="${k}"]`) as HTMLElement | null; const l = p?.querySelector('.wr__l') as HTMLElement | null;
+        if (!p || !l) return;
+        const pref = p.dataset.s || 'r'; const order = [pref, ...sides.filter((x) => x !== pref)];
+        for (const v of ['f', 'a']) {
+          l.textContent = l.dataset[v] || ''; l.style.visibility = 'hidden';
+          for (const sd of order) { p.dataset.ls = sd; const q = rect(l); if (free(q)) { done(l, q); return; } }
+        }
+        p.dataset.ls = 'x'; l.style.visibility = 'hidden';
+      });
+      root.querySelectorAll<HTMLElement>('.wr__c').forEach((c) => { c.style.visibility = ''; const q = rect(c, 3); if (!free(q)) c.style.visibility = 'hidden'; else placed.push(q); });
+    };
+    let raf = 0; const sched = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(place); };
+    new ResizeObserver(sched).observe(stage); sched(); document.fonts?.ready.then(sched);
 
     const hi = (k: string | null) => { if (k) root.dataset.hi = k; else delete root.dataset.hi; };
     root.querySelectorAll<HTMLElement>('[data-k]').forEach((el) => {

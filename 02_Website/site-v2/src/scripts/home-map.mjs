@@ -1,6 +1,7 @@
 // Hero map, loaded by home.mjs after first paint. Fetches the map body, appends it in small slices (no long task), then wires pan, zoom and the phase chips.
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let body; // one fetch shared by the hero map and the sizes map
 export default function initMap(mm) {
 // Hero master map: drag to pan, wheel or pinch to zoom (fast, with a short lerp), double click or double tap to zoom to the pointer, buttons plus, minus and reset.
   const vp = $('.mm__vp', mm), svg = $('.mm__svg', mm), cam = $('.cam', mm), tip = $('.mm__tip', mm);
@@ -79,10 +80,10 @@ export default function initMap(mm) {
     const s = 80 / (svg.getScreenCTM().a || 1), m = { ArrowLeft: [s, 0], ArrowRight: [-s, 0], ArrowUp: [0, s], ArrowDown: [0, -s] }[e.key];
     if (m) { e.preventDefault(); touched(); T.x += m[0]; T.y += m[1]; go(); } else if (e.key === '+' || e.key === '=') { touched(); zoomAt(centre(), 1.6); } else if (e.key === '-') { touched(); zoomAt(centre(), 1 / 1.6); } else if (e.key === '0') { touched(); Object.assign(T, fit(null)); setChip(0); go(true); }
   });
-  window.__mm = { get k() { return k; }, get T() { return T; } }; // read only, for QA
+  if (mm.hasAttribute('data-mm')) window.__mm = { get k() { return k; }, get T() { return T; } }; // read only, for QA
 
   // inject the body in slices of about 8 ms, one slice per frame
-  fetch(vp.dataset.src).then((r) => r.json()).then((chunks) => {
+  (body || (body = fetch(vp.dataset.src).then((r) => r.json()))).then((chunks) => {
     const host = {}; $$('.ph', mm).forEach((g) => (host[g.dataset.ph] = g.querySelector('svg')));
     let i = 0;
     const slice = () => {

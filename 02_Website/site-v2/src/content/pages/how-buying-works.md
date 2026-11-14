@@ -1,56 +1,48 @@
 ---
-title: "How Buying a Plot Works | Isapur Industrial Park"
-description: "From the first meeting to registry day: how buying an industrial plot at Isapur Industrial Park works, step by step, with your advisor beside you."
-h1: "How buying an industrial plot works, step by step"
-lead: "One meeting, one layout, one payment plan and a registry day that suits both sides. Here is the road from hello to the keys."
+title: "How to Buy an Industrial Plot | Isapur Industrial Park"
+description: "Industrial plots for sale in Ghaziabad: see what is available, read the approvals, agree your payment plan and register on a day that suits you."
+h1: "Industrial plots for sale in Ghaziabad: how buying works"
+lead: "See the plots, read the papers, settle your plan and register on a day that suits you. Six clear steps to a plot of your own."
 pageType: other
 draft: false
 schema: []
 ---
 
-## 1. The first meeting
+## 1. The first meeting: see what is for sale
 
-Come to the park and meet us. We open 8 am to 8 pm, every day except Tuesday. Walk the 50 ft roads, look at the lights and the trees, and stand where your shed could stand.
+Come to the park and let us show you what is for sale. We open 8 am to 8 pm, every day except Tuesday. We walk you down the 50 ft roads, under the street lights and the planted trees, and to the plots that are available today.
 
-We show you what is available today, on the [plot maps](/plot-maps/) and on the ground. Plots start at 300 sq yards. The largest run to 2000 to 2500 sq yards.
+Plots start at 300 sq yards. The largest run to 2000 to 2500 sq yards. We open the [plot maps](/plot-maps/) and put your plot on the map and on the ground, so you can picture your shed where it will stand.
 
-## 2. We get to know you and your industry
+## 2. The approvals on the table
 
-Next we sit down and talk. What do you make? How many trucks load in a day? How big do you want to grow?
+Next we lay the papers in front of you. Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad, and we show you the papers for the plot you like. Bring your advisor. Take all the time you need.
 
-We ask because trust matters on both sides. A buyer should know who sells the land. We should know who our neighbours will be. We also tell you about our own work, so the talk runs both ways.
+Start with the [approvals page](/approvals/) if you like. Then use our [guide to checking an approval](/layout-approvals/) to read the papers like a pro.
 
-## 3. The papers on the table
+## 3. Every question answered
 
-Every layout of the park is sanctioned by Zila Panchayat Ghaziabad. We show you the stamped map for the plot you like. Bring your advisor and take your time.
+Ask anything. Every objection and every cross question gets a straight answer.
 
-Read the [approvals page](/approvals/) first if you like. Then see our [layout approval guide](/layout-approvals/) to learn what to look for on the map.
+**"I want to see the papers before I decide."** You will. That is why the papers come out at the second meeting.
 
-## 4. Questions buyers ask us
+**"I am new to this area."** Walk the [Hapur-Modinagar Road](/location/) with us. The expressway on-ramp is 4.2 km by road. [Roads and freight](/roads-and-freight/) lists every distance.
 
-**"I want to see the papers before I decide."** Good. That is what the second meeting is for.
+**"What if I need to sell one day?"** We help you sell your land. See step 5.
 
-**"I am new to this area."** Walk the [Hapur-Modinagar Road](/location/) with us. The expressway on-ramp is 4.2 km by road. See [roads and freight](/roads-and-freight/) for every distance.
+## 4. Your payment plan, on industry standard terms
 
-**"My trade is unusual."** Tell us. We have units running here already, and we like to know what a new neighbour makes.
+The plan follows industry standard practice. Payments run for about three months on average, and the plan can be talked through again later. You know the shape of the road from day one.
 
-**"What if I need to sell one day?"** We help you sell your land. See step 6.
+## 5. If you ever need to sell, we help
 
-## 5. The payment plan and how cash moves
+A business grows, moves or changes line. If you ever need to sell your land, come back to us. We help you find the next buyer.
 
-We agree the plan with you. Payments run for about three months on average, and we can talk the plan through with you later.
+## 6. Registry day, fixed to suit both sides
 
-Cash flows through us. That puts our name on every sale and every purchase, so you always know who stands behind your money and your plot.
+After about three months of payments we fix the registry day. We pick a date that suits you and the seller. Your advisor is welcome. The papers you saw in step 2 are the papers you sign.
 
-## 6. If you ever need to sell
-
-Life changes. A business grows, moves or closes a line. If you ever need to sell your land, come back to us. We help you find the next buyer, and the same rule holds: the payments run through us.
-
-## 7. Registry day
-
-After about three months of payments we fix the registry day. We pick a date that suits you and suits the seller. Bring your advisor if you wish. The papers you saw in step 3 are the papers you sign.
-
-## Ready for the first meeting?
+## Ready to see an industrial plot available today?
 
 Pick a time and come over. Factory owners, warehouse and godown operators and investors are all welcome.
 

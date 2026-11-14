@@ -18,7 +18,7 @@ Distances are by road unless the page says straight-line. They come from Google 
 
 ## Drawings and plot sizes
 
-Maps, layout drawings and illustrations show the park's plan. They are not to scale unless marked. Plot numbers, sizes and positions are final only in the sanctioned layout plan we give you with the papers. Photographs of the surroundings are for context. Some are stock photographs, credited in the footer.
+Maps, layout drawings and illustrations show the park's plan. They are not to scale unless marked. Plot numbers, sizes and positions are final only in the approved plan we give you with the papers. Photographs of the surroundings are for context. Some are stock photographs, credited in the footer.
 
 ## Facts and approvals
 

@@ -103,8 +103,11 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .out small{display:block;font-size:14px;color:var(--mut);margin-top:2px}
 .ask[hidden]{display:none}
 .ask{margin-top:4px}
-.ghost{width:100%;margin-top:20px;background:var(--mist);padding:12px 12px 8px}
-.ghost svg{width:100%;height:auto;max-height:190px}
+/* sizes map: compact copy of the master map, all three phases fitted */
+.mm--s{height:auto;margin:16px 0 0;width:100%;background:var(--mist);padding:8px}
+.mm--s .mm__vp{flex:none;aspect-ratio:1/1;max-height:min(70svh,560px);margin-top:0}
+.mm--s .mm__drift{animation:none}
+.mm--s .plot{transition:fill .45s var(--out),stroke .45s var(--out)}
 /* layout drawing */
 .lay{font-family:var(--sans)}
 .lay .plot{stroke-width:.45;transition:fill .28s,stroke .28s}
@@ -129,8 +132,15 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 @keyframes fadein{from{opacity:0}}
 }
 /* story: the stage (sticky shed drawing) lives only beside the six build steps and is released after stage 6 */
-.story{display:block;timeline-scope:--build}
-.stage{position:sticky;top:var(--nav);z-index:3;margin:0 calc(-1 * var(--gut));padding:6px var(--gut);background:#fff}
+.story{timeline-scope:--build}
+/* phones: the intro (eyebrow, heading, sentence) comes first, then the stage pins under the header (nav height, plus a 12 px white gap), then the steps */
+.story{display:flex;flex-direction:column}
+.story .flow,.story .build{display:contents}
+.build>.eyebrow{margin-top:56px}
+.build>.sub{margin-top:18px}
+.stage{order:1;margin-top:20px}
+.bsteps{order:2;margin-bottom:24px}
+.stage{position:sticky;top:var(--nav);z-index:3;margin-left:calc(-1 * var(--gut));margin-right:calc(-1 * var(--gut));padding:12px var(--gut) 6px;background:#fff}
 .stagep{width:100%}
 .stage .panel{padding:8px 12px}
 .stage .cap,.stage .burst,.stage .tx,.stage .lb{display:none}
@@ -138,11 +148,10 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .sec{display:flex;flex-direction:column;align-items:flex-start;padding:56px 0 24px}
 .rest .sec{content-visibility:auto;contain-intrinsic-size:auto 720px}
 .steps{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;margin-top:6px}
-.steps li{font:600 10px/1.2 var(--sans);letter-spacing:.02em;text-transform:uppercase;color:var(--mut)}
+.steps li{font:600 9.5px/1.2 var(--sans);letter-spacing:0;text-transform:uppercase;color:var(--mut)}
 .steps i{display:block;height:5px;background:#dfe3e8;margin-bottom:6px;overflow:hidden}
 .steps b{display:block;height:100%;transform-origin:left;background:var(--y)}
 .steps li:nth-child(3n+2) b{background:var(--r)}.steps li:nth-child(3n) b{background:var(--g)}
-.shedsvg[data-shed=ghost] .fp{transform:scale(var(--sc,.8));transform-origin:260px 87px;transition:transform .5s var(--out)}
 /* where: regional map and distance ladder (phone sizes first, larger labels from 701) */
 .wr{display:grid;gap:22px;margin-top:24px;width:100%}
 .wr__map{position:relative;display:grid;gap:10px}
@@ -165,10 +174,10 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .wr__p[data-k=ramp] .wr__d{background:var(--y);border-color:var(--ink)}
 .wr__p[data-k=ramp] .wr__d b{color:var(--ink)}
 .wr__l{position:absolute;top:-10px;white-space:nowrap;background:#fffffff2;border-radius:5px;padding:4px 6px;font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase}
-.wr__p--r .wr__l{left:16px}
-.wr__p--l .wr__l{right:16px}
-.wr__p[data-k=ramp] .wr__l{top:-34px;left:auto;right:14px}
-.wr__p--b .wr__l{left:-6px;top:15px}
+.wr__p[data-ls=r] .wr__l,.wr__p:not([data-ls]) .wr__l{left:16px}
+.wr__p[data-ls=l] .wr__l{right:16px}
+.wr__p[data-ls=t] .wr__l{left:0;top:-38px;transform:translateX(-50%)}
+.wr__p[data-ls=b] .wr__l{left:0;top:14px;transform:translateX(-50%)}
 .wr__c--ghz{transform:translate(calc(-100% - 6px),-50%)}
 .wr__pk{position:absolute;width:0;height:0;pointer-events:auto;cursor:pointer}
 .wr__pk img,.wr__pkb img{max-width:none}
@@ -293,7 +302,6 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .ink .tyre{fill:#e5e7eb}.ink .rim{fill:#fff}
 .ink .tx{font:600 11px/1 var(--sans);letter-spacing:.09em;fill:#4b5563;stroke:none;text-transform:uppercase}
 .vig .tx{font-size:10.5px}
-.shedsvg[data-shed=ghost] .tx{font-size:10px}
 .shedsvg[data-shed=finale] .tx{font-size:8px}
 .shedsvg[data-shed=finale]{overflow:hidden}
 .shedsvg[data-shed=finale] .lb{display:none}
@@ -360,7 +368,6 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .wr__x{font-size:10px;letter-spacing:.05em;padding:3px 8px 3px 4px;gap:6px}.wr__x i{display:inline}.wr__x svg{width:16px;height:19px}
 .wr__c{font-size:10px}
 .wr__l{font-size:10.5px;padding:5px 8px;letter-spacing:.12em}
-.wr__p[data-k=ramp] .wr__l{top:-36px;left:18px;right:auto}
 .wr__pk img,.wr__r{left:-25px;top:-25px;width:50px;height:50px}
 .wr__ph{font-size:11px;padding:5px 8px}
 .wr__rd{font-size:10px;letter-spacing:.12em;margin-left:0}
@@ -399,6 +406,7 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .mm__vp{touch-action:none}
 @media(prefers-reduced-motion:no-preference){.mm__drift{animation:drift 44s ease-in-out 3.2s infinite alternate;will-change:transform}.mm.touched .mm__drift{animation-play-state:paused}@keyframes drift{from{transform:rotate(-1.2deg)}to{transform:rotate(1.2deg) translate(6px,-4px)}}}
 .story{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.story .flow{display:block}.story .build{display:flex}.stage{order:0;margin-top:0}.bsteps{order:0}.build>.eyebrow{margin-top:0}
 .stage{grid-column:1/6;top:calc(var(--nav) + 16px);height:calc(100svh - var(--nav) - 32px);display:flex;align-items:center;margin:0;padding:0;background:none}
 .stage .panel{padding:20px}
 .stage .cap,.stage .tx,.stage .lb{display:block}

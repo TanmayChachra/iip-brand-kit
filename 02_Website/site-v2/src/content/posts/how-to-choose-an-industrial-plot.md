@@ -15,7 +15,7 @@ date: '2026-11-08'
 ## Power and papers
 
 - **Power.** Ask what load you get and from whom. At the park, power runs 24/7 on government lines.
-- **Papers.** Ask to see the sanctioned layout with your plot number on it, and read every paper with your own advisor. At the park, the layouts are sanctioned by Zila Panchayat Ghaziabad. See the [approvals](/approvals/).
+- **Papers.** Ask to see the approved plan with your plot number on it, and read every paper with your own advisor. At the park, Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad. See the [approvals](/approvals/).
 
 ## Cost and visits
 

@@ -1,5 +1,10 @@
 # Changelog (newest first, written for the owner)
 
+## 2026-11-14 (later), phone review fixes
+- Fixed what you found on your phone: overlapping map labels, the shed block starting under the header, the repeated distances, the sizes map (a lit-plots map now sits under the size chips), and the pointless footprint drawing.
+- Copy is salesier. The buying steps no longer say we get to know you, and nothing says payments flow through us.
+- Approval claims now say Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad, with no map wording and nothing about Phase 1.
+
 ## 2026-11-14: the website is live
 You can now open https://isapurindustrialpark.com on any phone. It is mobile first, in Erode and the locked brand look, with the shed that builds itself as you scroll, all three phase maps, the new Where map with the Delhi-Meerut Expressway and the distance ladder, and new pages (how buying works, roads and freight, shops, layout approvals, plot maps, approvals, privacy, terms). Call and WhatsApp go to 98377 64222. The consent banner keeps Google Analytics off until a visitor accepts. The .in and www addresses redirect to the .com. Private previews of every version are at https://iipreview-nav.pages.dev/.
 
@@ -68,3 +73,4 @@ You can now open https://isapurindustrialpark.com on any phone. It is mobile fir
 
 ## 2026-11-02 to 2026-11-05
 - Competitor research, moodboards, poster, first brand kit. See `Archive/` and git history.
+

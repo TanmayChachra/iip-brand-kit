@@ -39,7 +39,7 @@ A neighbour who knows the road, speaks plainly, smiles a little, and shows you t
 ## 6. Sentence rules
 - 12 words or fewer for headlines, 18 for body. One comma at most per line.
 - Prefer nouns you can touch (road, light, tree, pump, gate, shop) over nouns you cannot.
-- Numerals ("50 ft", "4.7 km"), not words.
+- Numerals ("50 ft", "4.2 km"), not words.
 - Billboards: 7 words or fewer, counted. Logo and phone are outside the count.
 - Read it aloud. If a plot buyer would not say it on the phone, rewrite it.
 - State a fact once. No echo, no "that means".
@@ -55,8 +55,8 @@ Watch: "approved" (only with Zila Panchayat Ghaziabad and the safe wording), "re
 - Plots from 300 sq yd. Largest 2000 to 2500 sq yd.
 - Power 24/7, government lines from both the Modinagar and Hapur sides.
 - Petrol pump at the entry and exit (light boast, no straight-line wording).
-- "Layouts sanctioned by Zila Panchayat Ghaziabad, subject to conditions." (see 06_Content/approvals-facts.md). Name no phase on the public site. Use it on the papers page, not as a headline.
-- By road: 4.7 km, about 8 min to the Delhi-Meerut Expressway on-ramp at Bhojpur. Modinagar bus stand 11.4 km. Hapur bus stand 13.4 km (Google Maps, 6 Nov 2026).
+- "Phase 2 and Phase 3 are approved by Zila Panchayat Ghaziabad." Badge: "Approved by Zila Panchayat". Phases 2 and 3 only, no Phase 1 claim, no "map", "sanctioned" or "subject to conditions" (owner, 2026-11-14, see 06_Content/approvals-facts.md).
+- By road, driving from the park centre (OSRM, 2026-11-13, no traffic): Delhi-Meerut Expressway entry 4.2 km, Modinagar 10.7, Hapur 13.6, EPE junction 17.8, Meerut 29.9, Dadri container depot 46.3, Delhi (Anand Vihar) 46.
 - Running units nearby, no brand names: tile-bonding chemicals, comfort cushions, industrial water tanks, PVC pipes.
 - Shops in the park, all commercial, any trade (confectionery, quick food, tyre repair).
 - Buyers: factories, warehouses, godowns, investors.
@@ -76,3 +76,6 @@ Watch: "approved" (only with Zila Panchayat Ghaziabad and the safe wording), "re
 1. No defensive or legal wording in copy. Proof goes on the papers page. (owner, 2026-11-13)
 2. Plain, warm, a little playful, meaningful, concrete, never hype. (owner, 2026-11-13)
 3. Say who the thing serves. Put the people in the line. (from "Shops for the people who serve the factories")
+4. Buying and sales pages are salesy: confident, benefit-first, a little polished and aspirational, still concrete, never hype. Never say "we get to know you and your industry". The first meeting is us showing what is for sale and walking buyers through the park and the papers. (owner, 2026-11-14)
+5. Never say payments or cash flow through IIP, or that our name is on or stands behind every sale. Help-you-sell-later stays, with no payment clause. (owner, 2026-11-14)
+6. Approval claims cover Phase 2 and Phase 3 only, worded "Approved by Zila Panchayat Ghaziabad". Never "map", "layout map", "stamped map", "sanctioned", "subject to conditions", or any Phase 1 claim. (owner, 2026-11-14)

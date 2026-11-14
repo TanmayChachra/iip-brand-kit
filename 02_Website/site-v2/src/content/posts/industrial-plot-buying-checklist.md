@@ -14,7 +14,7 @@ date: '2026-11-08'
 ## Ask and read
 
 - **Ask.** What is the exact area and where are the boundaries? What power load, from whom, and when? What is the payment plan?
-- **Read.** Give copies of the sanctioned layout and the sale papers to your own advisor. If anything is unclear, wait. A delay costs less than a dispute.
+- **Read.** Give copies of the approved plan and the sale papers to your own advisor. If anything is unclear, wait. A delay costs less than a dispute.
 
 ## Compare and book
 
