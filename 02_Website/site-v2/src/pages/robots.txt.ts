@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 // One site URL for everything: PUBLIC_SITE_URL (astro.config.mjs). Search and AI retrieval bots are allowed.
-export const GET: APIRoute = ({ site }) => new Response(
+const staging = import.meta.env.PUBLIC_ENV === 'staging';
+export const GET: APIRoute = ({ site }) => new Response(staging ? 'User-agent: *\nDisallow: /\n' :
 `User-agent: *
 Allow: /
 

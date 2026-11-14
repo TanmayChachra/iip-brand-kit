@@ -11,6 +11,7 @@ Marketing, brand and visibility for Isapur Industrial Park (the name is exactly 
 - No claim on a board, post or web page unless its proof is on file (knowledge file section 3). Distances: say straight-line or driving. Partner brands (Amul, Inox Air, Patanjali and similar) are named only after the owner confirms and the brand's presence is verified. Never put schema markup for a claim that has no proof.
 - Online images are WEBP. No em dashes anywhere. No Co-Authored-By lines or Claude mentions in git. Never type or store secrets (API keys live in env vars the owner sets).
 - The owner has NO photos yet. Do not use AI warehouse images as if they were the park. This rule lasts only until the photographic direction for the brand is finalised (open task `photodirection` in TODOS.md and on the board); the owner will then allow AI-assisted imagery inside that direction. Until then only real photos, licensed stand-ins, drawings and stylised 3D.
+- **Release rule (2026-11-14):** all work, lead and helpers, happens on git branch `staging`. `main` always equals production. Nobody runs wrangler against Pages project `iip-site` or edits production DNS, except `02_Website/release/promote.ps1` (or `rollback.ps1`) after the owner types GO LIVE. Helpers deploy only with `02_Website/release/deploy-staging.ps1`. A production hotfix goes staging, then promote. Process: `02_Website/release/RELEASE-PROCESS.md`.
 - Never edit another agent's folder (see `_ops/AGENTS.md`). Cross-agent hand-offs happen only through the contract files listed there.
 
 ## Phases

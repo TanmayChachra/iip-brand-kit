@@ -1,0 +1,24 @@
+{
+  "_note": "Regexes (case-insensitive) matched against built pages. oldDistances are tested on visible text. Add old distance figures here when a distance is corrected.",
+  "everywhere": [
+    "98370 ?57800",
+    "resale",
+    "get to know you",
+    "flows? through",
+    "through us",
+    "stamped map",
+    "drainage lane"
+  ],
+  "heldNumber": "92195 ?49800",
+  "heldNumberAllowedIn": [
+    "industrial-shed-for-rent/",
+    "faq/",
+    "index.html"
+  ],
+  "oldDistances": [
+    "\b4\\.7 ?km",
+    "\b4\\.3 ?km",
+    "\b11\\.4 ?km",
+    "\b13\\.4 ?km"
+  ]
+}

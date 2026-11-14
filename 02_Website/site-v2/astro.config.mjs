@@ -9,6 +9,7 @@ const site = (process.env.PUBLIC_SITE_URL || loadEnv('', process.cwd(), 'PUBLIC_
 export default defineConfig({
   site,
   output: 'static',
+  outDir: process.env.IIP_OUT || 'dist',
   trailingSlash: 'always',
   build: { inlineStylesheets: 'always' },
   integrations: [sitemap()],

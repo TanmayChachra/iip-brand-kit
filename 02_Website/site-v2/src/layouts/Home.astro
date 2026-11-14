@@ -44,6 +44,7 @@ const tel = SITE.phones[0];
 <main id="top"><slot /></main>
 <slot name="footer" />
 <Consent />
+{import.meta.env.PUBLIC_ENV === 'staging' && <div style="position:fixed;left:0;bottom:0;z-index:99999;background:#c0392b;color:#fff;font:700 12px/1 system-ui,sans-serif;letter-spacing:.12em;padding:6px 10px;pointer-events:none" data-staging-ribbon>STAGING</div>}
 <script>import '../scripts/home.mjs';</script>
 </body>
 </html>

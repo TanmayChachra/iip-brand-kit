@@ -11,3 +11,5 @@ Agent name: web. Read `../CLAUDE.md`, `../00_ISAPUR_KNOWLEDGE.md` and `../_ops/A
 **Contract:** `02_Website/pages.md` (page list) is read by seo and analytics.
 
 **Finish:** write `result.json` (status, files, metrics, failures, next) in the folder you worked in, update your row in `../_ops/status.json`, do not commit.
+
+**Release guard:** work only on branch `staging`. Deploy only with `release/deploy-staging.ps1` (Pages project iip-staging). Never run wrangler against `iip-site`, never touch production DNS or merge to `main`: only `release/promote.ps1`, run by the lead after the owner types GO LIVE. See `release/RELEASE-PROCESS.md`.

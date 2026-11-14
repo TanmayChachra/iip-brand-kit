@@ -47,3 +47,11 @@ _ops/private/
 **/node_modules/
 06_Content/voice/evals/node_modules/
 02_Website/toolkit-archive/
+
+# release state (machine local)
+02_Website/release/last-checks.json
+02_Website/release/last-staging.json
+
+# site env files hold only public, non-secret values and are needed to reproduce builds
+!02_Website/site-v2/.env.staging
+!02_Website/site-v2/.env.production

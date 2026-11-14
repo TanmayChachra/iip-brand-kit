@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:staging": "node scripts/build.mjs staging",
+    "build:production": "node scripts/build.mjs production",
     "preview": "astro preview"
   },
   "engines": {
