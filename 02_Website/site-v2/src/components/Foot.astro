@@ -1,11 +1,11 @@
 ---
 // Footer shared by the home and every inner page. `cta` adds the closing call and WhatsApp strip (inner pages).
-import { SITE, waLink } from '../lib/site';
+import { SITE, waLink, DIRECTIONS_URL } from '../lib/site';
 import { ICON_CALL, ICON_WA } from '../lib/icons.mjs';
 interface Props { cta?: boolean }
 const { cta = false } = Astro.props;
 const tel = SITE.phones[0];
-const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road';
+const dir = DIRECTIONS_URL;
 ---
 <footer class="foot" id="contact">
   <div class="wrap">
@@ -20,7 +20,7 @@ const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+P
     )}
     <div class="fgrid">
       <div><h3>Isapur Industrial Park</h3><address>Hapur-Modinagar Road,<br>Yusufpur Isapur, Ghaziabad, UP 201022</address><a class="fphone" href={`tel:${tel.tel}`} data-cta-id="footer-call" data-section="footer">{tel.display}</a></div>
-      <div><h3>Visit</h3><ul><li><a href="/location/">Location</a></li><li><a href="/neighbours/">Around us</a></li><li><a href="/roads-and-freight/">Roads and freight</a></li><li><a href={dir} rel="noopener">Directions</a></li></ul></div>
+      <div><h3>Visit</h3><ul><li><a href="/location/">Location</a></li><li><a href="/neighbours/">Around us</a></li><li><a href="/roads-and-freight/">Roads and freight</a></li><li><a href={dir} target="_blank" rel="noopener" data-cta-id="directions" data-section="footer">Get directions</a></li></ul></div>
       <div><h3>Plots</h3><ul><li><a href="/industrial-plots/">Plot sizes</a></li><li><a href="/plot-maps/">Plot maps</a></li><li><a href="/how-buying-works/">How buying works</a></li><li><a href="/approvals/">Approvals</a></li><li><a href="/layout-approvals/">Layout approval</a></li><li><a href="/shops/">Shops</a></li><li><a href="/industrial-shed-for-rent/">Factory and Shed for Rent</a></li><li><a href="/amenities/">Roads and lighting</a></li><li><a href="/faq/">Questions</a></li></ul></div>
       <div><h3>Industrial plots in</h3><ul><li><a href="/location/industrial-plots-in-modinagar/">Modinagar</a></li><li><a href="/location/industrial-plots-in-hapur/">Hapur</a></li><li><a href="/location/industrial-plots-in-ghaziabad/">Ghaziabad</a></li><li><a href="/location/industrial-plots-near-delhi-meerut-expressway/">Near the expressway</a></li></ul></div>
     </div>

@@ -20,7 +20,9 @@ dataLayer.push({
 | `click_call` | tap on any `tel:` link | `phone`, `cta_id`, `section`, `page_type` | yes |
 | `click_whatsapp` | tap on any `wa.me` link | `cta_id`, `section`, `page_type`, `message_variant` | yes |
 | `generate_lead` | enquiry form submitted successfully | `form_id`, `plot_size_interest`, `purpose` (own use / invest), `timeline`, `page_type` | yes |
-| `click_directions` | tap on map or directions link | `cta_id`, `section` | yes |
+| `click_directions` | tap on any Google Maps link (Get directions) | `cta_id` (always `directions`), `section` (`sticky`, `hero`, `visit`, `contact`, `footer`) | yes |
+
+Directions link: one swap point `DIRECTIONS_URL` in `02_Website/site-v2/src/lib/site.ts` (currently the Google Maps search URL, owner to supply the exact place link). Every Get directions link opens in a new tab with `rel="noopener"`; `track.js` fires `click_directions` for any `google.com/maps` href. In GTM make this the Google Ads and GA4 local conversion trigger.
 | `file_download` | brochure or layout PDF download | `file_name`, `file_type` | secondary |
 | `select_plot_size` | plot size chip or tab chosen | `plot_size` | no |
 | `cta_click` | any other CTA button | `cta_id`, `cta_text`, `section` | no |

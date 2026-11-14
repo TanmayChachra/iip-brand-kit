@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="113.4 -56.2 840.6 967.7" role="img" aria-label="Isapur Industrial Park Phase 2 plot map">
 <style>svg{font-family:Inter,'Helvetica Neue',Arial,sans-serif}.plot{stroke-width:.45;cursor:pointer}.plot:hover{filter:brightness(.9);stroke:#0F4D3A;stroke-width:.9}.pn{font-weight:600;fill:#111827;text-anchor:middle;dominant-baseline:central;pointer-events:none}.rl{font-weight:600;fill:#fff;text-anchor:middle;dominant-baseline:central;letter-spacing:.02em}.rx{fill:#111827;paint-order:stroke;stroke:#fff;stroke-width:1.1}.ck{font-weight:700;letter-spacing:.1em;fill:#fff;stroke:none}.nl{fill:#7A92A8;font-size:3px;font-weight:700;letter-spacing:.18em;text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:.7;pointer-events:none}.ht{font-family:Montserrat,Inter,Arial,sans-serif;font-weight:700;fill:#111827}.lg{font-weight:500;fill:#111827}
-.c-sage{fill:#CDE4D8;stroke:#86B8A0}
+.c-aqua{fill:#9FD8E6;stroke:#4FA3BA}
 .c-deep{fill:#A9D2BD;stroke:#5E9E82}
 .c-sun{fill:#FBEDA6;stroke:#DFC654}
 .c-rose{fill:#F4D6D2;stroke:#DB9F99}
 .c-shop{fill:#F3C58F;stroke:#C98A3C}
-.c-mist{fill:#DDE2E8;stroke:#A3AEBC}
+.c-lilac{fill:#CFC1F0;stroke:#9382C9}
 </style>
 <rect x="113.4" y="-56.2" width="840.6" height="967.7" fill="#FBFBF9"/>
 <g id="roads">
@@ -15,66 +15,66 @@
 <path id="public-road" d="M391 833L930 638.5L930 678L503 833Z" fill="#4B5563"/>
 </g>
 <g id="phase-2">
-<path id="p2-001" class="plot c-sage" data-type="plot" data-plot="A1" data-phase="2" data-block="A" d="M275.8 579L273.8 611.9L367.6 610L369.3 583Z"><title>Plot A1, 1004 sq yd (approx.)</title></path>
-<path id="p2-002" class="plot c-sage" data-type="plot" data-plot="A2" data-phase="2" data-block="A" d="M277.6 550.2L275.9 577.4L369.4 581.4L371 554.3Z"><title>Plot A2, 914 sq yd (approx.)</title></path>
-<path id="p2-003" class="plot c-sage" data-type="plot" data-plot="A3" data-phase="2" data-block="A" d="M279.4 521.4L277.7 548.6L371.1 552.7L372.8 525.5Z"><title>Plot A3, 916 sq yd (approx.)</title></path>
-<path id="p2-004" class="plot c-sage" data-type="plot" data-plot="A4" data-phase="2" data-block="A" d="M281.2 492.6L279.5 519.8L372.9 523.9L374.6 496.7Z"><title>Plot A4, 916 sq yd (approx.)</title></path>
-<path id="p2-005" class="plot c-sage" data-type="plot" data-plot="A5" data-phase="2" data-block="A" d="M282.9 463.8L281.3 491L374.7 495.1L376.3 467.9Z"><title>Plot A5, 916 sq yd (approx.)</title></path>
-<path id="p2-006" class="plot c-sage" data-type="plot" data-plot="A6" data-phase="2" data-block="A" d="M284.7 435L283 462.2L376.4 466.3L378.1 439.1Z"><title>Plot A6, 916 sq yd (approx.)</title></path>
-<path id="p2-007" class="plot c-sage" data-type="plot" data-plot="A7" data-phase="2" data-block="A" d="M286.5 406.2L284.8 433.4L378.2 437.5L379.9 410.3Z"><title>Plot A7, 916 sq yd (approx.)</title></path>
-<path id="p2-008" class="plot c-sage" data-type="plot" data-plot="A8" data-phase="2" data-block="A" d="M288.5 372.8L286.6 404.6L380 408.7L381.9 377Z"><title>Plot A8, 1061 sq yd (approx.)</title></path>
-<path id="p2-009" class="plot c-sage" data-type="plot" data-plot="A9" data-phase="2" data-block="A" d="M295.8 275.6L290.4 342.4L307.7 343.2L313.3 276.4Z"><title>Plot A9, 435 sq yd (approx.)</title></path>
-<path id="p2-010" class="plot c-sage" data-type="plot" data-plot="A10" data-phase="2" data-block="A" d="M314.9 276.5L309.3 343.3L325.1 344L330.5 277.1Z"><title>Plot A10, 398 sq yd (approx.)</title></path>
-<path id="p2-011" class="plot c-sage" data-type="plot" data-plot="A11" data-phase="2" data-block="A" d="M332.1 277.2L326.7 344L342.4 344.7L347.9 277.9Z"><title>Plot A11, 398 sq yd (approx.)</title></path>
-<path id="p2-012" class="plot c-sage" data-type="plot" data-plot="A12" data-phase="2" data-block="A" d="M349.5 278L344 344.8L359.7 345.5L365.2 278.6Z"><title>Plot A12, 396 sq yd (approx.)</title></path>
-<path id="p2-013" class="plot c-sage" data-type="plot" data-plot="A13" data-phase="2" data-block="A" d="M366.8 278.7L361.3 345.6L383.8 346.6L388.3 279.6Z"><title>Plot A13, 541 sq yd (approx.)</title></path>
-<path id="p2-014" class="plot c-sage" data-type="plot" data-plot="A14" data-phase="2" data-block="A" d="M300 225L296 274L320.2 275.1L324.3 226.1Z"><title>Plot A14, 439 sq yd (approx.)</title></path>
-<path id="p2-015" class="plot c-sage" data-type="plot" data-plot="A15" data-phase="2" data-block="A" d="M325.9 226.1L321.8 275.2L346.1 276.2L350.2 227.2Z"><title>Plot A15, 440 sq yd (approx.)</title></path>
-<path id="p2-016" class="plot c-sage" data-type="plot" data-plot="A16" data-phase="2" data-block="A" d="M349.4 256.1L347.7 276.3L388.4 278L389.7 257.8Z"><title>Plot A16, 307 sq yd (approx.)</title></path>
-<path id="p2-017" class="plot c-sage" data-type="plot" data-plot="A17" data-phase="2" data-block="A" d="M351.8 227.3L349.6 254.5L389.8 256.2L391.6 229Z"><title>Plot A17, 402 sq yd (approx.)</title></path>
-<path id="p2-018" class="plot c-sage" data-type="plot" data-plot="A18" data-phase="2" data-block="A" d="M306.8 156.7L303 193.5L321.7 194.3L325.4 157.5Z"><title>Plot A18, 261 sq yd (approx.)</title></path>
-<path id="p2-019" class="plot c-sage" data-type="plot" data-plot="A19" data-phase="2" data-block="A" d="M327 157.6L323.3 194.4L341.8 195.2L345.6 158.4Z"><title>Plot A19, 261 sq yd (approx.)</title></path>
-<path id="p2-020" class="plot c-sage" data-type="plot" data-plot="A20" data-phase="2" data-block="A" d="M347.2 158.4L343.4 195.3L362 196.1L365.8 159.2Z"><title>Plot A20, 260 sq yd (approx.)</title></path>
-<path id="p2-021" class="plot c-sage" data-type="plot" data-plot="A21" data-phase="2" data-block="A" d="M367.4 159.3L363.6 196.2L393.7 197.5L396.1 160.5Z"><title>Plot A21, 401 sq yd (approx.)</title></path>
-<path id="p2-022" class="plot c-sage" data-type="plot" data-plot="A22" data-phase="2" data-block="A" d="M310.5 120.6L307 155.1L322.6 155.8L326.2 121.1Z"><title>Plot A22, 210 sq yd (approx.)</title></path>
-<path id="p2-023" class="plot c-sage" data-type="plot" data-plot="A23" data-phase="2" data-block="A" d="M327.8 121.2L324.2 155.8L340 156.5L343.6 121.7Z"><title>Plot A23, 212 sq yd (approx.)</title></path>
-<path id="p2-024" class="plot c-sage" data-type="plot" data-plot="A24" data-phase="2" data-block="A" d="M345.2 121.8L341.6 156.6L357.3 157.2L360.9 122.3Z"><title>Plot A24, 211 sq yd (approx.)</title></path>
-<path id="p2-025" class="plot c-sage" data-type="plot" data-plot="A25" data-phase="2" data-block="A" d="M362.5 122.4L358.9 157.3L396.2 158.9L398.6 123.7Z"><title>Plot A25, 471 sq yd (approx.)</title></path>
-<path id="p2-026" class="plot c-sage" data-type="plot" data-plot="A26" data-phase="2" data-block="A" d="M429 125.5L426.6 161.4L465.3 163L467.6 128.7Z"><title>Plot A26, 496 sq yd (approx.)</title></path>
-<path id="p2-027" class="plot c-sage" data-type="plot" data-plot="A27" data-phase="2" data-block="A" d="M469.2 128.8L466.9 163.1L494.1 164.3L496.3 131Z"><title>Plot A27, 341 sq yd (approx.)</title></path>
-<path id="p2-028" class="plot c-sage" data-type="plot" data-plot="A28" data-phase="2" data-block="A" d="M497.9 131.1L495.7 164.4L523 165.6L525.1 133.3Z"><title>Plot A28, 332 sq yd (approx.)</title></path>
-<path id="p2-029" class="plot c-sage" data-type="plot" data-plot="A29" data-phase="2" data-block="A" d="M526.7 133.4L524.6 165.6L551.8 166.8L553.9 135.6Z"><title>Plot A29, 322 sq yd (approx.)</title></path>
-<path id="p2-030" class="plot c-sage" data-type="plot" data-plot="A30" data-phase="2" data-block="A" d="M426.5 163L424.1 198.8L462.9 200.5L465.2 164.6Z"><title>Plot A30, 507 sq yd (approx.)</title></path>
-<path id="p2-031" class="plot c-sage" data-type="plot" data-plot="A31" data-phase="2" data-block="A" d="M466.8 164.7L464.5 200.6L491.7 201.7L494 165.9Z"><title>Plot A31, 361 sq yd (approx.)</title></path>
-<path id="p2-032" class="plot c-sage" data-type="plot" data-plot="A32" data-phase="2" data-block="A" d="M495.6 166L493.3 201.8L520.5 203L522.8 167.1Z"><title>Plot A32, 361 sq yd (approx.)</title></path>
-<path id="p2-033" class="plot c-sage" data-type="plot" data-plot="A33" data-phase="2" data-block="A" d="M524.4 167.2L522.1 203.1L549.3 204.2L551.7 168.4Z"><title>Plot A33, 361 sq yd (approx.)</title></path>
-<path id="p2-034" class="plot c-sage" data-type="plot" data-plot="A34" data-phase="2" data-block="A" d="M422.1 229.2L420 261.6L476 264L478.2 231.6Z"><title>Plot A34, 656 sq yd (approx.)</title></path>
-<path id="p2-035" class="plot c-sage" data-type="plot" data-plot="A35" data-phase="2" data-block="A" d="M419.9 263.2L418.1 290.2L474.1 292.7L475.9 265.6Z"><title>Plot A35, 553 sq yd (approx.)</title></path>
-<path id="p2-036" class="plot c-sage" data-type="plot" data-plot="A36" data-phase="2" data-block="A" d="M479.7 231.7L476 288.9L503.2 290.1L506.9 232.8Z"><title>Plot A36, 568 sq yd (approx.)</title></path>
-<path id="p2-037" class="plot c-sage" data-type="plot" data-plot="A37" data-phase="2" data-block="A" d="M508.5 232.9L504.8 290.2L532 291.3L535.8 234.1Z"><title>Plot A37, 568 sq yd (approx.)</title></path>
-<path id="p2-038" class="plot c-sage" data-type="plot" data-plot="A38" data-phase="2" data-block="A" d="M537.4 234.1L533.6 291.4L552.2 292.2L555.9 235Z"><title>Plot A38, 397 sq yd (approx.)</title></path>
-<path id="p2-039" class="plot c-sage" data-type="plot" data-plot="A39" data-phase="2" data-block="A" d="M418 291.8L416.2 319L472.2 321.5L474 294.3Z"><title>Plot A39, 556 sq yd (approx.)</title></path>
-<path id="p2-040" class="plot c-sage" data-type="plot" data-plot="A40" data-phase="2" data-block="A" d="M416.1 320.6L414.3 347.8L470.3 350.3L472.1 323.1Z"><title>Plot A40, 555 sq yd (approx.)</title></path>
-<path id="p2-041" class="plot c-sage" data-type="plot" data-plot="A41" data-phase="2" data-block="A" d="M475.9 290.5L471.9 350.3L499.1 351.5L503.1 291.7Z"><title>Plot A41, 592 sq yd (approx.)</title></path>
-<path id="p2-042" class="plot c-sage" data-type="plot" data-plot="A42" data-phase="2" data-block="A" d="M504.7 291.8L500.7 351.6L527.9 352.8L531.9 292.9Z"><title>Plot A42, 593 sq yd (approx.)</title></path>
-<path id="p2-043" class="plot c-sage" data-type="plot" data-plot="A43" data-phase="2" data-block="A" d="M533.5 293L529.5 352.8L548.1 353.6L552.1 293.8Z"><title>Plot A43, 415 sq yd (approx.)</title></path>
-<path id="p2-044" class="plot c-sage" data-type="plot" data-plot="A44" data-phase="2" data-block="A" d="M609.3 379.6L579.6 383.4L586.8 486.1L618.4 483.8Z"><title>Plot A44, 1141 sq yd (approx.)</title></path>
-<path id="p2-045" class="plot c-sage" data-type="plot" data-plot="A45" data-phase="2" data-block="A" d="M578 383.6L549.2 387.2L553.7 488.4L585.2 486.2Z"><title>Plot A45, 1104 sq yd (approx.)</title></path>
-<path id="p2-046" class="plot c-sage" data-type="plot" data-plot="A46" data-phase="2" data-block="A" d="M547.6 387.4L517.9 391.1L520.7 490.8L552.1 488.5Z"><title>Plot A46, 1100 sq yd (approx.)</title></path>
-<path id="p2-047" class="plot c-sage" data-type="plot" data-plot="A47" data-phase="2" data-block="A" d="M516.3 391.3L484.7 395.3L487.1 493.2L519.1 490.9Z"><title>Plot A47, 1121 sq yd (approx.)</title></path>
-<path id="p2-048" class="plot c-sage" data-type="plot" data-plot="A48 (I)" data-phase="2" data-block="A" d="M412.3 379.1L410.8 402.9L470.9 405.5L470.2 381.6Z"><title>Plot A48 (I), 516 sq yd (approx.)</title></path>
-<path id="p2-049" class="plot c-sage" data-type="plot" data-plot="A48 (II)" data-phase="2" data-block="A" d="M471.8 381.6L472.5 405.6L480.9 406L480.4 382Z"><title>Plot A48 (II), 86 sq yd (approx.)</title></path>
-<path id="p2-050" class="plot c-sage" data-type="plot" data-plot="A49" data-phase="2" data-block="A" d="M410.7 404.5L408.9 433.4L481.7 437.9L481 407.6Z"><title>Plot A49, 763 sq yd (approx.)</title></path>
-<path id="p2-051" class="plot c-sage" data-type="plot" data-plot="A50" data-phase="2" data-block="A" d="M408.8 435L407.1 462.2L482.4 466.8L481.7 439.5Z"><title>Plot A50, 731 sq yd (approx.)</title></path>
-<path id="p2-052" class="plot c-sage" data-type="plot" data-plot="A51" data-phase="2" data-block="A" d="M407 463.8L405.3 491L483.1 495.6L482.4 468.4Z"><title>Plot A51, 753 sq yd (approx.)</title></path>
-<path id="p2-053" class="plot c-sage" data-type="plot" data-plot="A52" data-phase="2" data-block="A" d="M405.2 492.6L403.6 517.6L480 522L483 497.2Z"><title>Plot A52, 701 sq yd (approx.)</title></path>
-<path id="p2-054" class="plot c-sage" data-type="plot" data-plot="A53" data-phase="2" data-block="A" d="M403.5 519.2L401.8 546.4L476.5 550.7L479.8 523.6Z"><title>Plot A53, 743 sq yd (approx.)</title></path>
-<path id="p2-055" class="plot c-sage" data-type="plot" data-plot="A54" data-phase="2" data-block="A" d="M401.7 548L400 575.2L472.9 579.4L476.3 552.3Z"><title>Plot A54, 727 sq yd (approx.)</title></path>
-<path id="p2-056" class="plot c-sage" data-type="plot" data-plot="A55" data-phase="2" data-block="A" d="M399.9 576.8L397.9 609.5L469.4 608.1L472.7 581Z"><title>Plot A55, 777 sq yd (approx.)</title></path>
-<path id="p2-057" class="plot c-sage" data-type="plot" data-plot="A56" data-phase="2" data-block="A" d="M469 615.2L398.4 617.1L400 642L467 640Z"><title>Plot A56, 623 sq yd (approx.)</title></path>
-<path id="p2-058" class="plot c-sage" data-type="plot" data-plot="A57" data-phase="2" data-block="A" d="M466.9 641.6L400.1 643.6L401.7 668.5L464.9 666.5Z"><title>Plot A57, 590 sq yd (approx.)</title></path>
-<path id="p2-059" class="plot c-sage" data-type="plot" data-plot="A58" data-phase="2" data-block="A" d="M464.8 668.1L401.8 670.1L403.5 697.3L462.7 695.2Z"><title>Plot A58, 602 sq yd (approx.)</title></path>
-<path id="p2-060" class="plot c-sage" data-type="plot" data-plot="A59" data-phase="2" data-block="A" d="M462.6 696.8L403.6 698.9L405.4 725.6L418.7 725.9L460.4 726Z"><title>Plot A59, 580 sq yd (approx.)</title></path>
+<path id="p2-001" class="plot c-aqua" data-type="plot" data-plot="A1" data-phase="2" data-block="A" d="M275.8 579L273.8 611.9L367.6 610L369.3 583Z"><title>Plot A1, 1004 sq yd (approx.)</title></path>
+<path id="p2-002" class="plot c-aqua" data-type="plot" data-plot="A2" data-phase="2" data-block="A" d="M277.6 550.2L275.9 577.4L369.4 581.4L371 554.3Z"><title>Plot A2, 914 sq yd (approx.)</title></path>
+<path id="p2-003" class="plot c-aqua" data-type="plot" data-plot="A3" data-phase="2" data-block="A" d="M279.4 521.4L277.7 548.6L371.1 552.7L372.8 525.5Z"><title>Plot A3, 916 sq yd (approx.)</title></path>
+<path id="p2-004" class="plot c-aqua" data-type="plot" data-plot="A4" data-phase="2" data-block="A" d="M281.2 492.6L279.5 519.8L372.9 523.9L374.6 496.7Z"><title>Plot A4, 916 sq yd (approx.)</title></path>
+<path id="p2-005" class="plot c-aqua" data-type="plot" data-plot="A5" data-phase="2" data-block="A" d="M282.9 463.8L281.3 491L374.7 495.1L376.3 467.9Z"><title>Plot A5, 916 sq yd (approx.)</title></path>
+<path id="p2-006" class="plot c-aqua" data-type="plot" data-plot="A6" data-phase="2" data-block="A" d="M284.7 435L283 462.2L376.4 466.3L378.1 439.1Z"><title>Plot A6, 916 sq yd (approx.)</title></path>
+<path id="p2-007" class="plot c-aqua" data-type="plot" data-plot="A7" data-phase="2" data-block="A" d="M286.5 406.2L284.8 433.4L378.2 437.5L379.9 410.3Z"><title>Plot A7, 916 sq yd (approx.)</title></path>
+<path id="p2-008" class="plot c-aqua" data-type="plot" data-plot="A8" data-phase="2" data-block="A" d="M288.5 372.8L286.6 404.6L380 408.7L381.9 377Z"><title>Plot A8, 1061 sq yd (approx.)</title></path>
+<path id="p2-009" class="plot c-aqua" data-type="plot" data-plot="A9" data-phase="2" data-block="A" d="M295.8 275.6L290.4 342.4L307.7 343.2L313.3 276.4Z"><title>Plot A9, 435 sq yd (approx.)</title></path>
+<path id="p2-010" class="plot c-aqua" data-type="plot" data-plot="A10" data-phase="2" data-block="A" d="M314.9 276.5L309.3 343.3L325.1 344L330.5 277.1Z"><title>Plot A10, 398 sq yd (approx.)</title></path>
+<path id="p2-011" class="plot c-aqua" data-type="plot" data-plot="A11" data-phase="2" data-block="A" d="M332.1 277.2L326.7 344L342.4 344.7L347.9 277.9Z"><title>Plot A11, 398 sq yd (approx.)</title></path>
+<path id="p2-012" class="plot c-aqua" data-type="plot" data-plot="A12" data-phase="2" data-block="A" d="M349.5 278L344 344.8L359.7 345.5L365.2 278.6Z"><title>Plot A12, 396 sq yd (approx.)</title></path>
+<path id="p2-013" class="plot c-aqua" data-type="plot" data-plot="A13" data-phase="2" data-block="A" d="M366.8 278.7L361.3 345.6L383.8 346.6L388.3 279.6Z"><title>Plot A13, 541 sq yd (approx.)</title></path>
+<path id="p2-014" class="plot c-aqua" data-type="plot" data-plot="A14" data-phase="2" data-block="A" d="M300 225L296 274L320.2 275.1L324.3 226.1Z"><title>Plot A14, 439 sq yd (approx.)</title></path>
+<path id="p2-015" class="plot c-aqua" data-type="plot" data-plot="A15" data-phase="2" data-block="A" d="M325.9 226.1L321.8 275.2L346.1 276.2L350.2 227.2Z"><title>Plot A15, 440 sq yd (approx.)</title></path>
+<path id="p2-016" class="plot c-aqua" data-type="plot" data-plot="A16" data-phase="2" data-block="A" d="M349.4 256.1L347.7 276.3L388.4 278L389.7 257.8Z"><title>Plot A16, 307 sq yd (approx.)</title></path>
+<path id="p2-017" class="plot c-aqua" data-type="plot" data-plot="A17" data-phase="2" data-block="A" d="M351.8 227.3L349.6 254.5L389.8 256.2L391.6 229Z"><title>Plot A17, 402 sq yd (approx.)</title></path>
+<path id="p2-018" class="plot c-aqua" data-type="plot" data-plot="A18" data-phase="2" data-block="A" d="M306.8 156.7L303 193.5L321.7 194.3L325.4 157.5Z"><title>Plot A18, 261 sq yd (approx.)</title></path>
+<path id="p2-019" class="plot c-aqua" data-type="plot" data-plot="A19" data-phase="2" data-block="A" d="M327 157.6L323.3 194.4L341.8 195.2L345.6 158.4Z"><title>Plot A19, 261 sq yd (approx.)</title></path>
+<path id="p2-020" class="plot c-aqua" data-type="plot" data-plot="A20" data-phase="2" data-block="A" d="M347.2 158.4L343.4 195.3L362 196.1L365.8 159.2Z"><title>Plot A20, 260 sq yd (approx.)</title></path>
+<path id="p2-021" class="plot c-aqua" data-type="plot" data-plot="A21" data-phase="2" data-block="A" d="M367.4 159.3L363.6 196.2L393.7 197.5L396.1 160.5Z"><title>Plot A21, 401 sq yd (approx.)</title></path>
+<path id="p2-022" class="plot c-aqua" data-type="plot" data-plot="A22" data-phase="2" data-block="A" d="M310.5 120.6L307 155.1L322.6 155.8L326.2 121.1Z"><title>Plot A22, 210 sq yd (approx.)</title></path>
+<path id="p2-023" class="plot c-aqua" data-type="plot" data-plot="A23" data-phase="2" data-block="A" d="M327.8 121.2L324.2 155.8L340 156.5L343.6 121.7Z"><title>Plot A23, 212 sq yd (approx.)</title></path>
+<path id="p2-024" class="plot c-aqua" data-type="plot" data-plot="A24" data-phase="2" data-block="A" d="M345.2 121.8L341.6 156.6L357.3 157.2L360.9 122.3Z"><title>Plot A24, 211 sq yd (approx.)</title></path>
+<path id="p2-025" class="plot c-aqua" data-type="plot" data-plot="A25" data-phase="2" data-block="A" d="M362.5 122.4L358.9 157.3L396.2 158.9L398.6 123.7Z"><title>Plot A25, 471 sq yd (approx.)</title></path>
+<path id="p2-026" class="plot c-aqua" data-type="plot" data-plot="A26" data-phase="2" data-block="A" d="M429 125.5L426.6 161.4L465.3 163L467.6 128.7Z"><title>Plot A26, 496 sq yd (approx.)</title></path>
+<path id="p2-027" class="plot c-aqua" data-type="plot" data-plot="A27" data-phase="2" data-block="A" d="M469.2 128.8L466.9 163.1L494.1 164.3L496.3 131Z"><title>Plot A27, 341 sq yd (approx.)</title></path>
+<path id="p2-028" class="plot c-aqua" data-type="plot" data-plot="A28" data-phase="2" data-block="A" d="M497.9 131.1L495.7 164.4L523 165.6L525.1 133.3Z"><title>Plot A28, 332 sq yd (approx.)</title></path>
+<path id="p2-029" class="plot c-aqua" data-type="plot" data-plot="A29" data-phase="2" data-block="A" d="M526.7 133.4L524.6 165.6L551.8 166.8L553.9 135.6Z"><title>Plot A29, 322 sq yd (approx.)</title></path>
+<path id="p2-030" class="plot c-aqua" data-type="plot" data-plot="A30" data-phase="2" data-block="A" d="M426.5 163L424.1 198.8L462.9 200.5L465.2 164.6Z"><title>Plot A30, 507 sq yd (approx.)</title></path>
+<path id="p2-031" class="plot c-aqua" data-type="plot" data-plot="A31" data-phase="2" data-block="A" d="M466.8 164.7L464.5 200.6L491.7 201.7L494 165.9Z"><title>Plot A31, 361 sq yd (approx.)</title></path>
+<path id="p2-032" class="plot c-aqua" data-type="plot" data-plot="A32" data-phase="2" data-block="A" d="M495.6 166L493.3 201.8L520.5 203L522.8 167.1Z"><title>Plot A32, 361 sq yd (approx.)</title></path>
+<path id="p2-033" class="plot c-aqua" data-type="plot" data-plot="A33" data-phase="2" data-block="A" d="M524.4 167.2L522.1 203.1L549.3 204.2L551.7 168.4Z"><title>Plot A33, 361 sq yd (approx.)</title></path>
+<path id="p2-034" class="plot c-aqua" data-type="plot" data-plot="A34" data-phase="2" data-block="A" d="M422.1 229.2L420 261.6L476 264L478.2 231.6Z"><title>Plot A34, 656 sq yd (approx.)</title></path>
+<path id="p2-035" class="plot c-aqua" data-type="plot" data-plot="A35" data-phase="2" data-block="A" d="M419.9 263.2L418.1 290.2L474.1 292.7L475.9 265.6Z"><title>Plot A35, 553 sq yd (approx.)</title></path>
+<path id="p2-036" class="plot c-aqua" data-type="plot" data-plot="A36" data-phase="2" data-block="A" d="M479.7 231.7L476 288.9L503.2 290.1L506.9 232.8Z"><title>Plot A36, 568 sq yd (approx.)</title></path>
+<path id="p2-037" class="plot c-aqua" data-type="plot" data-plot="A37" data-phase="2" data-block="A" d="M508.5 232.9L504.8 290.2L532 291.3L535.8 234.1Z"><title>Plot A37, 568 sq yd (approx.)</title></path>
+<path id="p2-038" class="plot c-aqua" data-type="plot" data-plot="A38" data-phase="2" data-block="A" d="M537.4 234.1L533.6 291.4L552.2 292.2L555.9 235Z"><title>Plot A38, 397 sq yd (approx.)</title></path>
+<path id="p2-039" class="plot c-aqua" data-type="plot" data-plot="A39" data-phase="2" data-block="A" d="M418 291.8L416.2 319L472.2 321.5L474 294.3Z"><title>Plot A39, 556 sq yd (approx.)</title></path>
+<path id="p2-040" class="plot c-aqua" data-type="plot" data-plot="A40" data-phase="2" data-block="A" d="M416.1 320.6L414.3 347.8L470.3 350.3L472.1 323.1Z"><title>Plot A40, 555 sq yd (approx.)</title></path>
+<path id="p2-041" class="plot c-aqua" data-type="plot" data-plot="A41" data-phase="2" data-block="A" d="M475.9 290.5L471.9 350.3L499.1 351.5L503.1 291.7Z"><title>Plot A41, 592 sq yd (approx.)</title></path>
+<path id="p2-042" class="plot c-aqua" data-type="plot" data-plot="A42" data-phase="2" data-block="A" d="M504.7 291.8L500.7 351.6L527.9 352.8L531.9 292.9Z"><title>Plot A42, 593 sq yd (approx.)</title></path>
+<path id="p2-043" class="plot c-aqua" data-type="plot" data-plot="A43" data-phase="2" data-block="A" d="M533.5 293L529.5 352.8L548.1 353.6L552.1 293.8Z"><title>Plot A43, 415 sq yd (approx.)</title></path>
+<path id="p2-044" class="plot c-aqua" data-type="plot" data-plot="A44" data-phase="2" data-block="A" d="M609.3 379.6L579.6 383.4L586.8 486.1L618.4 483.8Z"><title>Plot A44, 1141 sq yd (approx.)</title></path>
+<path id="p2-045" class="plot c-aqua" data-type="plot" data-plot="A45" data-phase="2" data-block="A" d="M578 383.6L549.2 387.2L553.7 488.4L585.2 486.2Z"><title>Plot A45, 1104 sq yd (approx.)</title></path>
+<path id="p2-046" class="plot c-aqua" data-type="plot" data-plot="A46" data-phase="2" data-block="A" d="M547.6 387.4L517.9 391.1L520.7 490.8L552.1 488.5Z"><title>Plot A46, 1100 sq yd (approx.)</title></path>
+<path id="p2-047" class="plot c-aqua" data-type="plot" data-plot="A47" data-phase="2" data-block="A" d="M516.3 391.3L484.7 395.3L487.1 493.2L519.1 490.9Z"><title>Plot A47, 1121 sq yd (approx.)</title></path>
+<path id="p2-048" class="plot c-aqua" data-type="plot" data-plot="A48 (I)" data-phase="2" data-block="A" d="M412.3 379.1L410.8 402.9L470.9 405.5L470.2 381.6Z"><title>Plot A48 (I), 516 sq yd (approx.)</title></path>
+<path id="p2-049" class="plot c-aqua" data-type="plot" data-plot="A48 (II)" data-phase="2" data-block="A" d="M471.8 381.6L472.5 405.6L480.9 406L480.4 382Z"><title>Plot A48 (II), 86 sq yd (approx.)</title></path>
+<path id="p2-050" class="plot c-aqua" data-type="plot" data-plot="A49" data-phase="2" data-block="A" d="M410.7 404.5L408.9 433.4L481.7 437.9L481 407.6Z"><title>Plot A49, 763 sq yd (approx.)</title></path>
+<path id="p2-051" class="plot c-aqua" data-type="plot" data-plot="A50" data-phase="2" data-block="A" d="M408.8 435L407.1 462.2L482.4 466.8L481.7 439.5Z"><title>Plot A50, 731 sq yd (approx.)</title></path>
+<path id="p2-052" class="plot c-aqua" data-type="plot" data-plot="A51" data-phase="2" data-block="A" d="M407 463.8L405.3 491L483.1 495.6L482.4 468.4Z"><title>Plot A51, 753 sq yd (approx.)</title></path>
+<path id="p2-053" class="plot c-aqua" data-type="plot" data-plot="A52" data-phase="2" data-block="A" d="M405.2 492.6L403.6 517.6L480 522L483 497.2Z"><title>Plot A52, 701 sq yd (approx.)</title></path>
+<path id="p2-054" class="plot c-aqua" data-type="plot" data-plot="A53" data-phase="2" data-block="A" d="M403.5 519.2L401.8 546.4L476.5 550.7L479.8 523.6Z"><title>Plot A53, 743 sq yd (approx.)</title></path>
+<path id="p2-055" class="plot c-aqua" data-type="plot" data-plot="A54" data-phase="2" data-block="A" d="M401.7 548L400 575.2L472.9 579.4L476.3 552.3Z"><title>Plot A54, 727 sq yd (approx.)</title></path>
+<path id="p2-056" class="plot c-aqua" data-type="plot" data-plot="A55" data-phase="2" data-block="A" d="M399.9 576.8L397.9 609.5L469.4 608.1L472.7 581Z"><title>Plot A55, 777 sq yd (approx.)</title></path>
+<path id="p2-057" class="plot c-aqua" data-type="plot" data-plot="A56" data-phase="2" data-block="A" d="M469 615.2L398.4 617.1L400 642L467 640Z"><title>Plot A56, 623 sq yd (approx.)</title></path>
+<path id="p2-058" class="plot c-aqua" data-type="plot" data-plot="A57" data-phase="2" data-block="A" d="M466.9 641.6L400.1 643.6L401.7 668.5L464.9 666.5Z"><title>Plot A57, 590 sq yd (approx.)</title></path>
+<path id="p2-059" class="plot c-aqua" data-type="plot" data-plot="A58" data-phase="2" data-block="A" d="M464.8 668.1L401.8 670.1L403.5 697.3L462.7 695.2Z"><title>Plot A58, 602 sq yd (approx.)</title></path>
+<path id="p2-060" class="plot c-aqua" data-type="plot" data-plot="A59" data-phase="2" data-block="A" d="M462.6 696.8L403.6 698.9L405.4 725.6L418.7 725.9L460.4 726Z"><title>Plot A59, 580 sq yd (approx.)</title></path>
 <path id="p2-061" class="plot c-sun" data-type="plot" data-plot="B1" data-phase="2" data-block="B" d="M244.2 222L242 272.2L276.8 272.7L280.4 223.6Z"><title>Plot B1, 635 sq yd (approx.)</title></path>
 <path id="p2-062" class="plot c-sun" data-type="plot" data-plot="B2" data-phase="2" data-block="B" d="M218.3 220.9L216.1 271.8L240.4 272.1L242.6 221.9Z"><title>Plot B2, 452 sq yd (approx.)</title></path>
 <path id="p2-063" class="plot c-sun" data-type="plot" data-plot="B3" data-phase="2" data-block="B" d="M192.4 219.7L190.2 271.4L214.5 271.8L216.7 220.8Z"><title>Plot B3, 459 sq yd (approx.)</title></path>
@@ -108,46 +108,46 @@
 <path id="p2-091" class="plot c-rose" data-type="plot" data-plot="C11" data-phase="2" data-block="C" d="M546.9 73.7L540.8 106L573.5 110.5L578.9 81.9Z"><title>Plot C11, 376 sq yd (approx.)</title></path>
 <path id="p2-092" class="plot c-rose" data-type="plot" data-plot="C12" data-phase="2" data-block="C" d="M580.5 82.3L575.1 110.8L602.1 114.5L606.9 89.1Z"><title>Plot C12, 279 sq yd (approx.)</title></path>
 <path id="p2-093" class="plot c-rose" data-type="plot" data-plot="C13" data-phase="2" data-block="C" d="M608.4 89.5L603.7 114.7L640.3 119.8L640.7 117.7L641.3 100.7L641.4 98Z"><title>Plot C13, 314 sq yd (approx.)</title></path>
-<path id="p2-094" class="plot c-mist" data-type="plot" data-plot="D1" data-phase="2" data-block="D" d="M555.5 135.7L553.4 166.9L580.6 168L582.6 138Z"><title>Plot D1, 311 sq yd (approx.)</title></path>
-<path id="p2-095" class="plot c-mist" data-type="plot" data-plot="D2" data-phase="2" data-block="D" d="M584.1 138.1L582.2 168.1L609.4 169.3L611.3 140.3Z"><title>Plot D2, 300 sq yd (approx.)</title></path>
-<path id="p2-096" class="plot c-mist" data-type="plot" data-plot="D3" data-phase="2" data-block="D" d="M612.9 140.4L611 169.4L638.2 170.5L638.5 142.5Z"><title>Plot D3, 281 sq yd (approx.)</title></path>
-<path id="p2-097" class="plot c-mist" data-type="plot" data-plot="D4" data-phase="2" data-block="D" d="M553.3 168.5L550.9 204.3L573.5 205.3L575.8 169.4Z"><title>Plot D4, 303 sq yd (approx.)</title></path>
-<path id="p2-098" class="plot c-mist" data-type="plot" data-plot="D5" data-phase="2" data-block="D" d="M577.4 169.5L575.1 205.3L597.8 206.3L600.1 170.5Z"><title>Plot D5, 304 sq yd (approx.)</title></path>
-<path id="p2-099" class="plot c-mist" data-type="plot" data-plot="D6" data-phase="2" data-block="D" d="M601.7 170.6L599.4 206.4L636.9 208L638.1 172.1Z"><title>Plot D6, 483 sq yd (approx.)</title></path>
-<path id="p2-100" class="plot c-mist" data-type="plot" data-plot="D7" data-phase="2" data-block="D" d="M557.5 235.1L553.8 292.3L579.9 293.4L583.6 236.2Z"><title>Plot D7, 546 sq yd (approx.)</title></path>
-<path id="p2-101" class="plot c-mist" data-type="plot" data-plot="D8" data-phase="2" data-block="D" d="M585.2 236.3L581.5 293.5L605.8 294.6L609.5 237.4Z"><title>Plot D8, 511 sq yd (approx.)</title></path>
-<path id="p2-102" class="plot c-mist" data-type="plot" data-plot="D9" data-phase="2" data-block="D" d="M611.1 237.4L607.4 294.6L633.9 295.8L635.9 238.5Z"><title>Plot D9, 536 sq yd (approx.)</title></path>
-<path id="p2-103" class="plot c-mist" data-type="plot" data-plot="D10" data-phase="2" data-block="D" d="M553.7 293.9L549.7 353.6L575.7 351.7L579.8 295Z"><title>Plot D10, 552 sq yd (approx.)</title></path>
-<path id="p2-104" class="plot c-mist" data-type="plot" data-plot="D11" data-phase="2" data-block="D" d="M581.4 295.1L577.3 351.6L601.6 349.8L605.7 296.2Z"><title>Plot D11, 490 sq yd (approx.)</title></path>
-<path id="p2-105" class="plot c-mist" data-type="plot" data-plot="D12" data-phase="2" data-block="D" d="M607.3 296.2L603.2 349.7L632.2 347.6L633.9 297.4Z"><title>Plot D12, 524 sq yd (approx.)</title></path>
-<path id="p2-106" class="plot c-mist" data-type="plot" data-plot="D13" data-phase="2" data-block="D" d="M637.9 275.1L634.6 348.4L673.5 348.4L676.6 277.9Z"><title>Plot D13, 993 sq yd (approx.)</title></path>
-<path id="p2-107" class="plot c-mist" data-type="plot" data-plot="D14(I)" data-phase="2" data-block="D" d="M678.2 278L675.1 348.4L702.4 348.3L705.3 280Z"><title>Plot D14(I), 684 sq yd (approx.)</title></path>
-<path id="p2-108" class="plot c-mist" data-type="plot" data-plot="D14(II)" data-phase="2" data-block="D" d="M706.9 280.1L704 348.3L731.2 348.3L734.1 282Z"><title>Plot D14(II), 663 sq yd (approx.)</title></path>
-<path id="p2-109" class="plot c-mist" data-type="plot" data-plot="D14(III)" data-phase="2" data-block="D" d="M735.7 282.2L732.8 348.3L760.1 348.3L762.9 284.1Z"><title>Plot D14(III), 644 sq yd (approx.)</title></path>
-<path id="p2-110" class="plot c-mist" data-type="plot" data-plot="D14(IV)" data-phase="2" data-block="D" d="M764.5 284.3L761.7 348.3L784.2 348.3L786.7 285.9Z"><title>Plot D14(IV), 519 sq yd (approx.)</title></path>
-<path id="p2-111" class="plot c-mist" data-type="plot" data-plot="D15 &amp; D16" data-phase="2" data-block="D" d="M645.4 99L638 273.5L786.7 284.2L792.6 136.9L787.4 124.5Z"><title>Plot D15 &amp; D16, 8429 sq yd (approx.)</title></path>
-<path id="p2-112" class="plot c-mist" data-type="plot" data-plot="D17" data-phase="2" data-block="D" d="M720.6 378.9L716.6 480.3L779 480.3L783.1 378.9Z"><title>Plot D17, 2206 sq yd</title></path>
-<path id="p2-113" class="plot c-mist" data-type="plot" data-plot="D18" data-phase="2" data-block="D" d="M616.9 378.9L624.2 480.3L691.9 480.3L684.5 378.9Z"><title>Plot D18, 2381 sq yd</title></path>
-<path id="p2-114" class="plot c-mist" data-type="plot" data-plot="D19" data-phase="2" data-block="D" d="M665.7 504.9L664.6 608.3L691.3 613.6L697.4 504.9Z"><title>Plot D19, 1112 sq yd</title></path>
-<path id="p2-115" class="plot c-mist" data-type="plot" data-plot="D20" data-phase="2" data-block="D" d="M699 504.9L692.8 613.9L720.2 619.1L720.3 618.9L725.5 596.6L729.6 549.2L730.9 510.1L730.8 504.9Z"><title>Plot D20, 1290 sq yd</title></path>
-<path id="p2-116" class="plot c-mist" data-type="plot" data-plot="D21" data-phase="2" data-block="D" d="M732.5 512.1L722 618.6L758.4 619.9L763.6 512.2Z"><title>Plot D21, 1217 sq yd (approx.)</title></path>
-<path id="p2-117" class="plot c-mist" data-type="plot" data-plot="D22" data-phase="2" data-block="D" d="M796.5 511.8L765.2 512.2L760 620L791.3 621.1Z"><title>Plot D22, 1200 sq yd (approx.)</title></path>
-<path id="p2-118" class="plot c-mist" data-type="plot" data-plot="D23" data-phase="2" data-block="D" d="M721.4 620.1L718.1 624.2L714.5 649.9L722.7 710.9L742.9 704.8L745.2 621Z"><title>Plot D23, 824 sq yd (approx.)</title></path>
-<path id="p2-119" class="plot c-mist" data-type="plot" data-plot="D24" data-phase="2" data-block="D" d="M746.8 621.1L744.6 704.3L766.1 697.8L768.2 621.9Z"><title>Plot D24, 624 sq yd (approx.)</title></path>
-<path id="p2-120" class="plot c-mist" data-type="plot" data-plot="D25" data-phase="2" data-block="D" d="M769.8 621.9L767.7 697.3L789.3 690.8L791.2 622.7Z"><title>Plot D25, 562 sq yd (approx.)</title></path>
-<path id="p2-121" class="plot c-mist" data-type="plot" data-plot="D26" data-phase="2" data-block="D" d="M794.6 576.1L792.2 641.4L790.9 690.2L812.8 681.3L816.9 576.7Z"><title>Plot D26, 880 sq yd (approx.)</title></path>
-<path id="p2-122" class="plot c-mist" data-type="plot" data-plot="D27" data-phase="2" data-block="D" d="M818.5 576.7L814.4 680.7L836.3 671.8L840 577.3Z"><title>Plot D27, 779 sq yd (approx.)</title></path>
-<path id="p2-123" class="plot c-mist" data-type="plot" data-plot="D28" data-phase="2" data-block="D" d="M841.6 577.3L837.9 671.1L858.2 662.9L863 577.9Z"><title>Plot D28, 677 sq yd (approx.)</title></path>
-<path id="p2-124" class="plot c-mist" data-type="plot" data-plot="D29" data-phase="2" data-block="D" d="M866 512.1L832.9 512.5L830.1 575.4L863.1 576.3Z"><title>Plot D29, 753 sq yd (approx.)</title></path>
-<path id="p2-125" class="plot c-mist" data-type="plot" data-plot="D30" data-phase="2" data-block="D" d="M798.1 511.8L794.7 574.5L828.5 575.4L831.3 512.5Z"><title>Plot D30, 756 sq yd (approx.)</title></path>
-<path id="p2-126" class="plot c-mist" data-type="plot" data-plot="D31" data-phase="2" data-block="D" d="M785 431.4L782.7 487.5L807.5 487.5L810.2 431.4Z"><title>Plot D31, 513 sq yd (approx.)</title></path>
-<path id="p2-127" class="plot c-mist" data-type="plot" data-plot="D32" data-phase="2" data-block="D" d="M811.8 431.4L809.1 487.5L836.3 487.5L839 431.4Z"><title>Plot D32, 555 sq yd (approx.)</title></path>
-<path id="p2-128" class="plot c-mist" data-type="plot" data-plot="D33" data-phase="2" data-block="D" d="M840.6 431.4L837.9 487.5L865.4 487.5L864 431.4Z"><title>Plot D33, 521 sq yd (approx.)</title></path>
-<path id="p2-129" class="plot c-mist" data-type="plot" data-plot="D34" data-phase="2" data-block="D" d="M843.2 378.9L840.7 429.8L864 429.8L862.8 378.9Z"><title>Plot D34, 403 sq yd (approx.)</title></path>
-<path id="p2-130" class="plot c-mist" data-type="plot" data-plot="D35" data-phase="2" data-block="D" d="M814.4 378.9L811.9 429.8L839.1 429.8L841.6 378.9Z"><title>Plot D35, 504 sq yd (approx.)</title></path>
-<path id="p2-131" class="plot c-mist" data-type="plot" data-plot="D36" data-phase="2" data-block="D" d="M787.1 378.9L785 429.8L810.3 429.8L812.8 378.9Z"><title>Plot D36, 475 sq yd (approx.)</title></path>
-<path id="p2-132" class="plot c-mist" data-type="plot" data-plot="D37" data-phase="2" data-block="D" d="M807 252.8L803.1 348.3L861.8 348.2L860.8 306.8L856.9 252.8Z"><title>Plot D37, 1829 sq yd (approx.)</title></path>
-<path id="p2-133" class="plot c-mist" data-type="plot" data-plot="D38" data-phase="2" data-block="D" d="M803.6 148.1L795.6 163L792 251.2L856.3 251.2L831.6 199.6Z"><title>Plot D38, 1322 sq yd (approx.)</title></path>
+<path id="p2-094" class="plot c-lilac" data-type="plot" data-plot="D1" data-phase="2" data-block="D" d="M555.5 135.7L553.4 166.9L580.6 168L582.6 138Z"><title>Plot D1, 311 sq yd (approx.)</title></path>
+<path id="p2-095" class="plot c-lilac" data-type="plot" data-plot="D2" data-phase="2" data-block="D" d="M584.1 138.1L582.2 168.1L609.4 169.3L611.3 140.3Z"><title>Plot D2, 300 sq yd (approx.)</title></path>
+<path id="p2-096" class="plot c-lilac" data-type="plot" data-plot="D3" data-phase="2" data-block="D" d="M612.9 140.4L611 169.4L638.2 170.5L638.5 142.5Z"><title>Plot D3, 281 sq yd (approx.)</title></path>
+<path id="p2-097" class="plot c-lilac" data-type="plot" data-plot="D4" data-phase="2" data-block="D" d="M553.3 168.5L550.9 204.3L573.5 205.3L575.8 169.4Z"><title>Plot D4, 303 sq yd (approx.)</title></path>
+<path id="p2-098" class="plot c-lilac" data-type="plot" data-plot="D5" data-phase="2" data-block="D" d="M577.4 169.5L575.1 205.3L597.8 206.3L600.1 170.5Z"><title>Plot D5, 304 sq yd (approx.)</title></path>
+<path id="p2-099" class="plot c-lilac" data-type="plot" data-plot="D6" data-phase="2" data-block="D" d="M601.7 170.6L599.4 206.4L636.9 208L638.1 172.1Z"><title>Plot D6, 483 sq yd (approx.)</title></path>
+<path id="p2-100" class="plot c-lilac" data-type="plot" data-plot="D7" data-phase="2" data-block="D" d="M557.5 235.1L553.8 292.3L579.9 293.4L583.6 236.2Z"><title>Plot D7, 546 sq yd (approx.)</title></path>
+<path id="p2-101" class="plot c-lilac" data-type="plot" data-plot="D8" data-phase="2" data-block="D" d="M585.2 236.3L581.5 293.5L605.8 294.6L609.5 237.4Z"><title>Plot D8, 511 sq yd (approx.)</title></path>
+<path id="p2-102" class="plot c-lilac" data-type="plot" data-plot="D9" data-phase="2" data-block="D" d="M611.1 237.4L607.4 294.6L633.9 295.8L635.9 238.5Z"><title>Plot D9, 536 sq yd (approx.)</title></path>
+<path id="p2-103" class="plot c-lilac" data-type="plot" data-plot="D10" data-phase="2" data-block="D" d="M553.7 293.9L549.7 353.6L575.7 351.7L579.8 295Z"><title>Plot D10, 552 sq yd (approx.)</title></path>
+<path id="p2-104" class="plot c-lilac" data-type="plot" data-plot="D11" data-phase="2" data-block="D" d="M581.4 295.1L577.3 351.6L601.6 349.8L605.7 296.2Z"><title>Plot D11, 490 sq yd (approx.)</title></path>
+<path id="p2-105" class="plot c-lilac" data-type="plot" data-plot="D12" data-phase="2" data-block="D" d="M607.3 296.2L603.2 349.7L632.2 347.6L633.9 297.4Z"><title>Plot D12, 524 sq yd (approx.)</title></path>
+<path id="p2-106" class="plot c-lilac" data-type="plot" data-plot="D13" data-phase="2" data-block="D" d="M637.9 275.1L634.6 348.4L673.5 348.4L676.6 277.9Z"><title>Plot D13, 993 sq yd (approx.)</title></path>
+<path id="p2-107" class="plot c-lilac" data-type="plot" data-plot="D14(I)" data-phase="2" data-block="D" d="M678.2 278L675.1 348.4L702.4 348.3L705.3 280Z"><title>Plot D14(I), 684 sq yd (approx.)</title></path>
+<path id="p2-108" class="plot c-lilac" data-type="plot" data-plot="D14(II)" data-phase="2" data-block="D" d="M706.9 280.1L704 348.3L731.2 348.3L734.1 282Z"><title>Plot D14(II), 663 sq yd (approx.)</title></path>
+<path id="p2-109" class="plot c-lilac" data-type="plot" data-plot="D14(III)" data-phase="2" data-block="D" d="M735.7 282.2L732.8 348.3L760.1 348.3L762.9 284.1Z"><title>Plot D14(III), 644 sq yd (approx.)</title></path>
+<path id="p2-110" class="plot c-lilac" data-type="plot" data-plot="D14(IV)" data-phase="2" data-block="D" d="M764.5 284.3L761.7 348.3L784.2 348.3L786.7 285.9Z"><title>Plot D14(IV), 519 sq yd (approx.)</title></path>
+<path id="p2-111" class="plot c-lilac" data-type="plot" data-plot="D15 &amp; D16" data-phase="2" data-block="D" d="M645.4 99L638 273.5L786.7 284.2L792.6 136.9L787.4 124.5Z"><title>Plot D15 &amp; D16, 8429 sq yd (approx.)</title></path>
+<path id="p2-112" class="plot c-lilac" data-type="plot" data-plot="D17" data-phase="2" data-block="D" d="M720.6 378.9L716.6 480.3L779 480.3L783.1 378.9Z"><title>Plot D17, 2206 sq yd</title></path>
+<path id="p2-113" class="plot c-lilac" data-type="plot" data-plot="D18" data-phase="2" data-block="D" d="M616.9 378.9L624.2 480.3L691.9 480.3L684.5 378.9Z"><title>Plot D18, 2381 sq yd</title></path>
+<path id="p2-114" class="plot c-lilac" data-type="plot" data-plot="D19" data-phase="2" data-block="D" d="M665.7 504.9L664.6 608.3L691.3 613.6L697.4 504.9Z"><title>Plot D19, 1112 sq yd</title></path>
+<path id="p2-115" class="plot c-lilac" data-type="plot" data-plot="D20" data-phase="2" data-block="D" d="M699 504.9L692.8 613.9L720.2 619.1L720.3 618.9L725.5 596.6L729.6 549.2L730.9 510.1L730.8 504.9Z"><title>Plot D20, 1290 sq yd</title></path>
+<path id="p2-116" class="plot c-lilac" data-type="plot" data-plot="D21" data-phase="2" data-block="D" d="M732.5 512.1L722 618.6L758.4 619.9L763.6 512.2Z"><title>Plot D21, 1217 sq yd (approx.)</title></path>
+<path id="p2-117" class="plot c-lilac" data-type="plot" data-plot="D22" data-phase="2" data-block="D" d="M796.5 511.8L765.2 512.2L760 620L791.3 621.1Z"><title>Plot D22, 1200 sq yd (approx.)</title></path>
+<path id="p2-118" class="plot c-lilac" data-type="plot" data-plot="D23" data-phase="2" data-block="D" d="M721.4 620.1L718.1 624.2L714.5 649.9L722.7 710.9L742.9 704.8L745.2 621Z"><title>Plot D23, 824 sq yd (approx.)</title></path>
+<path id="p2-119" class="plot c-lilac" data-type="plot" data-plot="D24" data-phase="2" data-block="D" d="M746.8 621.1L744.6 704.3L766.1 697.8L768.2 621.9Z"><title>Plot D24, 624 sq yd (approx.)</title></path>
+<path id="p2-120" class="plot c-lilac" data-type="plot" data-plot="D25" data-phase="2" data-block="D" d="M769.8 621.9L767.7 697.3L789.3 690.8L791.2 622.7Z"><title>Plot D25, 562 sq yd (approx.)</title></path>
+<path id="p2-121" class="plot c-lilac" data-type="plot" data-plot="D26" data-phase="2" data-block="D" d="M794.6 576.1L792.2 641.4L790.9 690.2L812.8 681.3L816.9 576.7Z"><title>Plot D26, 880 sq yd (approx.)</title></path>
+<path id="p2-122" class="plot c-lilac" data-type="plot" data-plot="D27" data-phase="2" data-block="D" d="M818.5 576.7L814.4 680.7L836.3 671.8L840 577.3Z"><title>Plot D27, 779 sq yd (approx.)</title></path>
+<path id="p2-123" class="plot c-lilac" data-type="plot" data-plot="D28" data-phase="2" data-block="D" d="M841.6 577.3L837.9 671.1L858.2 662.9L863 577.9Z"><title>Plot D28, 677 sq yd (approx.)</title></path>
+<path id="p2-124" class="plot c-lilac" data-type="plot" data-plot="D29" data-phase="2" data-block="D" d="M866 512.1L832.9 512.5L830.1 575.4L863.1 576.3Z"><title>Plot D29, 753 sq yd (approx.)</title></path>
+<path id="p2-125" class="plot c-lilac" data-type="plot" data-plot="D30" data-phase="2" data-block="D" d="M798.1 511.8L794.7 574.5L828.5 575.4L831.3 512.5Z"><title>Plot D30, 756 sq yd (approx.)</title></path>
+<path id="p2-126" class="plot c-lilac" data-type="plot" data-plot="D31" data-phase="2" data-block="D" d="M785 431.4L782.7 487.5L807.5 487.5L810.2 431.4Z"><title>Plot D31, 513 sq yd (approx.)</title></path>
+<path id="p2-127" class="plot c-lilac" data-type="plot" data-plot="D32" data-phase="2" data-block="D" d="M811.8 431.4L809.1 487.5L836.3 487.5L839 431.4Z"><title>Plot D32, 555 sq yd (approx.)</title></path>
+<path id="p2-128" class="plot c-lilac" data-type="plot" data-plot="D33" data-phase="2" data-block="D" d="M840.6 431.4L837.9 487.5L865.4 487.5L864 431.4Z"><title>Plot D33, 521 sq yd (approx.)</title></path>
+<path id="p2-129" class="plot c-lilac" data-type="plot" data-plot="D34" data-phase="2" data-block="D" d="M843.2 378.9L840.7 429.8L864 429.8L862.8 378.9Z"><title>Plot D34, 403 sq yd (approx.)</title></path>
+<path id="p2-130" class="plot c-lilac" data-type="plot" data-plot="D35" data-phase="2" data-block="D" d="M814.4 378.9L811.9 429.8L839.1 429.8L841.6 378.9Z"><title>Plot D35, 504 sq yd (approx.)</title></path>
+<path id="p2-131" class="plot c-lilac" data-type="plot" data-plot="D36" data-phase="2" data-block="D" d="M787.1 378.9L785 429.8L810.3 429.8L812.8 378.9Z"><title>Plot D36, 475 sq yd (approx.)</title></path>
+<path id="p2-132" class="plot c-lilac" data-type="plot" data-plot="D37" data-phase="2" data-block="D" d="M807 252.8L803.1 348.3L861.8 348.2L860.8 306.8L856.9 252.8Z"><title>Plot D37, 1829 sq yd (approx.)</title></path>
+<path id="p2-133" class="plot c-lilac" data-type="plot" data-plot="D38" data-phase="2" data-block="D" d="M803.6 148.1L795.6 163L792 251.2L856.3 251.2L831.6 199.6Z"><title>Plot D38, 1322 sq yd (approx.)</title></path>
 <path id="p2-134" class="plot c-shop" data-type="shop" data-plot="S1" data-phase="2" data-block="S" d="M427.1 804.9L412.6 806.6L413.8 820.3L428.7 817.7Z"><title>Plot S1, 82 sq yd (approx.)</title></path>
 <path id="p2-135" class="plot c-shop" data-type="shop" data-plot="S2" data-phase="2" data-block="S" d="M426.5 799.1L412.1 800.9L412.5 805L427 803.3Z"><title>Plot S2, 31 sq yd (approx.)</title></path>
 <path id="p2-136" class="plot c-shop" data-type="shop" data-plot="S3" data-phase="2" data-block="S" d="M425.8 793.5L411.6 795.2L411.9 799.3L426.3 797.5Z"><title>Plot S3, 30 sq yd (approx.)</title></path>
@@ -368,10 +368,10 @@
 </g>
 <g id="north"><g transform="translate(916 -16.2) rotate(-48.1)"><path d="M0 -16L6 9L0 4L-6 9Z" fill="#111827"/></g><text class="ht" font-size="9" text-anchor="middle" dominant-baseline="central" x="897.4" y="-32.9">N</text></g>
 <g id="legend"><text class="ht" font-size="10.9" x="137.4" y="865.9">Legend</text>
-<rect x="137.4" y="876.8" width="11.9" height="11.9" rx="2" fill="#CDE4D8" stroke="#86B8A0" stroke-width=".5"/><text class="lg" font-size="9.9" x="154.2" y="882.8" dominant-baseline="central">Block A</text>
+<rect x="137.4" y="876.8" width="11.9" height="11.9" rx="2" fill="#9FD8E6" stroke="#4FA3BA" stroke-width=".5"/><text class="lg" font-size="9.9" x="154.2" y="882.8" dominant-baseline="central">Block A</text>
 <rect x="206.1" y="876.8" width="11.9" height="11.9" rx="2" fill="#FBEDA6" stroke="#DFC654" stroke-width=".5"/><text class="lg" font-size="9.9" x="223" y="882.8" dominant-baseline="central">Block B</text>
 <rect x="274.9" y="876.8" width="11.9" height="11.9" rx="2" fill="#F4D6D2" stroke="#DB9F99" stroke-width=".5"/><text class="lg" font-size="9.9" x="291.7" y="882.8" dominant-baseline="central">Block C</text>
-<rect x="343.6" y="876.8" width="11.9" height="11.9" rx="2" fill="#DDE2E8" stroke="#A3AEBC" stroke-width=".5"/><text class="lg" font-size="9.9" x="360.5" y="882.8" dominant-baseline="central">Block D</text>
+<rect x="343.6" y="876.8" width="11.9" height="11.9" rx="2" fill="#CFC1F0" stroke="#9382C9" stroke-width=".5"/><text class="lg" font-size="9.9" x="360.5" y="882.8" dominant-baseline="central">Block D</text>
 <rect x="412.4" y="876.8" width="11.9" height="11.9" rx="2" fill="#A9D2BD" stroke="#5E9E82" stroke-width=".5"/><text class="lg" font-size="9.9" x="429.2" y="882.8" dominant-baseline="central">Strip plots S</text>
 <rect x="518" y="876.8" width="11.9" height="11.9" rx="2" fill="#F3C58F" stroke="#C98A3C" stroke-width=".5"/><text class="lg" font-size="9.9" x="534.9" y="882.8" dominant-baseline="central">Commercial shops</text>
 <rect x="642.1" y="876.8" width="11.9" height="11.9" rx="2" fill="#7B8390" stroke="#7B8390" stroke-width=".5"/><text class="lg" font-size="9.9" x="658.9" y="882.8" dominant-baseline="central">Road</text>

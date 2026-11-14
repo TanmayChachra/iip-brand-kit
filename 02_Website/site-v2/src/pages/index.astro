@@ -6,9 +6,9 @@ import Shed from '../components/Shed.astro';
 import Vig from '../components/Vig.astro';
 import WhereRegion from '../components/WhereRegion.astro';
 import Foot from '../components/Foot.astro';
-import { SITE, waLink } from '../lib/site';
+import { SITE, waLink, DIRECTIONS_URL } from '../lib/site';
 import { RENT_PHONE } from '../lib/phones.mjs';
-import { ICON_CALL, ICON_WA, ICON_ARROW } from '../lib/icons.mjs';
+import { ICON_CALL, ICON_WA, ICON_ARROW, ICON_PIN } from '../lib/icons.mjs';
 import { burst } from '../lib/burst.mjs';
 import { splitMaster } from '../lib/mastermap.mjs';
 import bands from '../assets/layout-bands.json';
@@ -21,7 +21,7 @@ const ico = (raw: string) => raw.replace(/^[\s\S]*?<g /, '<svg class="ico" viewB
 const masterSvg = splitMaster().shell;
 const miniSvg = masterSvg.replace('id="mm-t"', 'id="ms-t"').replace('id="mm-d"', 'id="ms-d"').replace('aria-labelledby="mm-t mm-d"', 'aria-labelledby="ms-t ms-d"').replace('id="satellite-slot"', 'id="satellite-slot-s"');
 const tel = SITE.phones[0];
-const dir = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road';
+const dir = DIRECTIONS_URL;
 const heroWa = waLink('Hello, I want to see what is for sale at Isapur Industrial Park.');
 const bandWa = (b: { id: string; label: string }) => waLink(b.id === 'shop' ? 'Hello, I am interested in a shop at Isapur Industrial Park. Please tell me what is available today.' : `Hello, I am looking for an industrial plot of ${b.label} at Isapur Industrial Park. Please tell me what is available today.`);
 const chipHead = (b: { id: string; label: string }) => (b.id === 'shop' ? 'Shops' : b.label.replace(' sq yards', ''));
@@ -75,7 +75,10 @@ const buildSteps = [
           <a class="b b--o" href={heroWa} rel="noopener" data-cta-id="hero-wa" data-section="hero"><Fragment set:html={ICON_WA} />See what is for sale</a>
         </div>
         <p class="fine">Open 8 am to 8 pm every day except Tuesday. For factories, warehouses, godowns and investors.</p>
+        <div class="links">
         <a class="more" href="/plot-maps/" data-cta-id="hero-plotmaps" data-section="hero">See every plot on the plot maps<Fragment set:html={ICON_ARROW} /></a>
+        <a class="more" href={dir} target="_blank" rel="noopener" data-cta-id="directions" data-section="hero">Get directions<Fragment set:html={ICON_PIN} /></a>
+        </div>
       </section>
     </div>
     <div class="pair__vis">
@@ -237,16 +240,17 @@ const buildSteps = [
         <address>Hapur-Modinagar Road,<br>Yusufpur Isapur, Ghaziabad</address>
         <dl class="hours"><dt>Monday</dt><dd>8 am to 8 pm</dd><dt>Tuesday</dt><dd class="x">Closed</dd><dt>Wednesday to Sunday</dt><dd>8 am to 8 pm</dd></dl>
         <div class="btns">
-          <a class="b b--g" href={dir} rel="noopener" data-cta-id="visit-directions" data-section="visit">Get directions</a>
+          <a class="b b--g" href={dir} target="_blank" rel="noopener" data-cta-id="directions" data-section="visit">Get directions</a>
           <a class="b b--o" href={heroWa} rel="noopener" data-cta-id="visit-wa" data-section="visit"><Fragment set:html={ICON_WA} />WhatsApp {tel.display}</a>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="actionbar" role="region" aria-label="Call or WhatsApp">
-    <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
-    <a class="b b--o" href={waLink()} rel="noopener" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} />WhatsApp</a>
+  <div class="actionbar" role="region" aria-label="Call, WhatsApp or directions">
+    <a class="b b--g b--call" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
+    <a class="b b--o" href={waLink()} rel="noopener" aria-label="WhatsApp" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} /><span class="lbl">WhatsApp</span></a>
+    <a class="b b--o b--dir" href={DIRECTIONS_URL} target="_blank" rel="noopener" aria-label="Get directions" data-cta-id="directions" data-section="sticky"><Fragment set:html={ICON_PIN} /><span class="lbl">Directions</span></a>
   </div>
   <Foot slot="footer" />
 </Home>

@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 129.6 604.8 977.7" role="img" aria-label="Isapur Industrial Park Phase 3 plot map">
 <style>svg{font-family:Inter,'Helvetica Neue',Arial,sans-serif}.plot{stroke-width:.45;cursor:pointer}.plot:hover{filter:brightness(.9);stroke:#0F4D3A;stroke-width:.9}.pn{font-weight:600;fill:#111827;text-anchor:middle;dominant-baseline:central;pointer-events:none}.rl{font-weight:600;fill:#fff;text-anchor:middle;dominant-baseline:central;letter-spacing:.02em}.rx{fill:#111827;paint-order:stroke;stroke:#fff;stroke-width:1.1}.ck{font-weight:700;letter-spacing:.1em;fill:#fff;stroke:none}.nl{fill:#7A92A8;font-size:3px;font-weight:700;letter-spacing:.18em;text-anchor:middle;dominant-baseline:central;paint-order:stroke;stroke:#fff;stroke-width:.7;pointer-events:none}.ht{font-family:Montserrat,Inter,Arial,sans-serif;font-weight:700;fill:#111827}.lg{font-weight:500;fill:#111827}
-.c-sage{fill:#CDE4D8;stroke:#86B8A0}
+.c-aqua{fill:#9FD8E6;stroke:#4FA3BA}
 .c-deep{fill:#A9D2BD;stroke:#5E9E82}
 .c-sun{fill:#FBEDA6;stroke:#DFC654}
 .c-rose{fill:#F4D6D2;stroke:#DB9F99}
 .c-shop{fill:#F3C58F;stroke:#C98A3C}
-.c-mist{fill:#DDE2E8;stroke:#A3AEBC}
+.c-lilac{fill:#CFC1F0;stroke:#9382C9}
 </style>
 <rect x="-1" y="129.6" width="604.8" height="977.7" fill="#FBFBF9"/>
 <g id="roads">
@@ -13,15 +13,15 @@
 <path id="public-road" d="M23 683L40 690L57 698L163 756L196 793L235 841L275 880L315 906L362 936L377 947L431 977L523 1019L492 1045L414 1010L357 978L341 967L295 937L252 909L207 866L145 789L39 730L23 723Z" fill="#4B5563"/>
 </g>
 <g id="phase-3">
-<path id="p3-001" class="plot c-sage" data-type="plot" data-plot="01" data-phase="3" data-block="W" d="M76.3 560.6L66.9 602.8L182.4 612.4L190.9 570.2Z"><title>Plot 01, 709 sq yd</title></path>
-<path id="p3-002" class="plot c-sage" data-type="plot" data-plot="02" data-phase="3" data-block="W" d="M86.5 513.9L76.9 557.6L191.5 567.2L200.9 520.4Z"><title>Plot 02, 751 sq yd</title></path>
-<path id="p3-003" class="plot c-sage" data-type="plot" data-plot="03" data-phase="3" data-block="W" d="M260.1 420.6L198.6 453.1L204.1 517.5L260.1 517.5Z"><title>Plot 03, 684 sq yd</title></path>
-<path id="p3-004" class="plot c-sage" data-type="plot" data-plot="04" data-phase="3" data-block="W" d="M263.1 419.6L263.1 517.5L306.2 517.5L306.2 419.6Z"><title>Plot 04, 609 sq yd</title></path>
-<path id="p3-005" class="plot c-sage" data-type="plot" data-plot="05" data-phase="3" data-block="W" d="M309.2 419.6L309.2 517.5L388.1 517.5L388.1 419.6Z"><title>Plot 05, 1082 sq yd</title></path>
-<path id="p3-006" class="plot c-sage" data-type="plot" data-plot="06" data-phase="3" data-block="W" d="M305.1 346.1L245.6 367.9L262.7 416.6L388.1 416.6L388.1 346.1Z"><title>Plot 06, 1254 sq yd</title></path>
-<path id="p3-007" class="plot c-sage" data-type="plot" data-plot="07" data-phase="3" data-block="W" d="M304.4 299.9L306.2 343.1L388.1 343.1L388.1 299.9Z"><title>Plot 07, 517 sq yd</title></path>
-<path id="p3-008" class="plot c-sage" data-type="plot" data-plot="08" data-phase="3" data-block="W" d="M302.5 253.8L304.3 296.9L388.1 296.9L388.1 253.8Z"><title>Plot 08, 529 sq yd</title></path>
-<path id="p3-009" class="plot c-sage" data-type="plot" data-plot="09" data-phase="3" data-block="W" d="M300.7 210.1L302.4 250.8L388.1 250.8L388.1 211.9Z"><title>Plot 09, 502 sq yd</title></path>
+<path id="p3-001" class="plot c-aqua" data-type="plot" data-plot="01" data-phase="3" data-block="W" d="M76.3 560.6L66.9 602.8L182.4 612.4L190.9 570.2Z"><title>Plot 01, 709 sq yd</title></path>
+<path id="p3-002" class="plot c-aqua" data-type="plot" data-plot="02" data-phase="3" data-block="W" d="M86.5 513.9L76.9 557.6L191.5 567.2L200.9 520.4Z"><title>Plot 02, 751 sq yd</title></path>
+<path id="p3-003" class="plot c-aqua" data-type="plot" data-plot="03" data-phase="3" data-block="W" d="M260.1 420.6L198.6 453.1L204.1 517.5L260.1 517.5Z"><title>Plot 03, 684 sq yd</title></path>
+<path id="p3-004" class="plot c-aqua" data-type="plot" data-plot="04" data-phase="3" data-block="W" d="M263.1 419.6L263.1 517.5L306.2 517.5L306.2 419.6Z"><title>Plot 04, 609 sq yd</title></path>
+<path id="p3-005" class="plot c-aqua" data-type="plot" data-plot="05" data-phase="3" data-block="W" d="M309.2 419.6L309.2 517.5L388.1 517.5L388.1 419.6Z"><title>Plot 05, 1082 sq yd</title></path>
+<path id="p3-006" class="plot c-aqua" data-type="plot" data-plot="06" data-phase="3" data-block="W" d="M305.1 346.1L245.6 367.9L262.7 416.6L388.1 416.6L388.1 346.1Z"><title>Plot 06, 1254 sq yd</title></path>
+<path id="p3-007" class="plot c-aqua" data-type="plot" data-plot="07" data-phase="3" data-block="W" d="M304.4 299.9L306.2 343.1L388.1 343.1L388.1 299.9Z"><title>Plot 07, 517 sq yd</title></path>
+<path id="p3-008" class="plot c-aqua" data-type="plot" data-plot="08" data-phase="3" data-block="W" d="M302.5 253.8L304.3 296.9L388.1 296.9L388.1 253.8Z"><title>Plot 08, 529 sq yd</title></path>
+<path id="p3-009" class="plot c-aqua" data-type="plot" data-plot="09" data-phase="3" data-block="W" d="M300.7 210.1L302.4 250.8L388.1 250.8L388.1 211.9Z"><title>Plot 09, 502 sq yd</title></path>
 <path id="p3-010" class="plot c-sun" data-type="plot" data-plot="10" data-phase="3" data-block="E" d="M573.9 240L437.2 244L437.2 287L573.9 287Z"><title>Plot 10, 877 sq yd</title></path>
 <path id="p3-011" class="plot c-sun" data-type="plot" data-plot="11" data-phase="3" data-block="E" d="M437.2 290L437.2 333.2L573.9 333.2L573.9 290Z"><title>Plot 11, 842 sq yd</title></path>
 <path id="p3-012" class="plot c-sun" data-type="plot" data-plot="12" data-phase="3" data-block="E" d="M437.2 336.2L437.2 379.3L573.9 379.3L573.9 336.2Z"><title>Plot 12, 842 sq yd</title></path>
@@ -71,7 +71,7 @@
 </g>
 <g id="north"><g transform="translate(565.8 169.6) rotate(217.1)"><path d="M0 -16L6 9L0 4L-6 9Z" fill="#111827"/></g><text class="ht" font-size="9" text-anchor="middle" dominant-baseline="central" x="550.8" y="189.5">N</text></g>
 <g id="legend"><text class="ht" font-size="7.7" x="23" y="1075.3">Legend</text>
-<rect x="23" y="1082.9" width="8.4" height="8.4" rx="1.4" fill="#CDE4D8" stroke="#86B8A0" stroke-width=".5"/><text class="lg" font-size="7" x="34.8" y="1087.1" dominant-baseline="central">Plots 1 to 9</text>
+<rect x="23" y="1082.9" width="8.4" height="8.4" rx="1.4" fill="#9FD8E6" stroke="#4FA3BA" stroke-width=".5"/><text class="lg" font-size="7" x="34.8" y="1087.1" dominant-baseline="central">Plots 1 to 9</text>
 <rect x="92.9" y="1082.9" width="8.4" height="8.4" rx="1.4" fill="#FBEDA6" stroke="#DFC654" stroke-width=".5"/><text class="lg" font-size="7" x="104.7" y="1087.1" dominant-baseline="central">Plots 10 to 16</text>
 <rect x="171.4" y="1082.9" width="8.4" height="8.4" rx="1.4" fill="#F4D6D2" stroke="#DB9F99" stroke-width=".5"/><text class="lg" font-size="7" x="183.2" y="1087.1" dominant-baseline="central">Plots 17 to 23</text>
 <rect x="249.9" y="1082.9" width="8.4" height="8.4" rx="1.4" fill="#7B8390" stroke="#7B8390" stroke-width=".5"/><text class="lg" font-size="7" x="261.7" y="1087.1" dominant-baseline="central">Road</text>

@@ -7,8 +7,8 @@ import Sheet from '../components/Sheet.astro';
 import WhereRegion from '../components/WhereRegion.astro';
 import Foot from '../components/Foot.astro';
 import innerCss from '../styles/inner.css?raw';
-import { SITE, waLink } from '../lib/site';
-import { ICON_CALL, ICON_WA } from '../lib/icons.mjs';
+import { SITE, waLink, DIRECTIONS_URL } from '../lib/site';
+import { ICON_CALL, ICON_WA, ICON_PIN } from '../lib/icons.mjs';
 import { burst } from '../lib/burst.mjs';
 interface Props {
   title: string; description: string; path: string; pageType?: string; crumbs?: { name: string; href: string }[];
@@ -49,9 +49,10 @@ const labels = {
     </div>
   </section>
   <slot />
-  <div class="actionbar" role="region" aria-label="Call or WhatsApp">
-    <a class="b b--g" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
-    <a class="b b--o" href={waLink()} rel="noopener" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} />WhatsApp</a>
+  <div class="actionbar" role="region" aria-label="Call, WhatsApp or directions">
+    <a class="b b--g b--call" href={`tel:${tel.tel}`} data-cta-id="sticky-call" data-section="sticky"><Fragment set:html={ICON_CALL} />Call</a>
+    <a class="b b--o" href={waLink()} rel="noopener" aria-label="WhatsApp" data-cta-id="sticky-wa" data-section="sticky"><Fragment set:html={ICON_WA} /><span class="lbl">WhatsApp</span></a>
+    <a class="b b--o b--dir" href={DIRECTIONS_URL} target="_blank" rel="noopener" aria-label="Get directions" data-cta-id="directions" data-section="sticky"><Fragment set:html={ICON_PIN} /><span class="lbl">Directions</span></a>
   </div>
   <Foot slot="footer" cta />
 </Home>

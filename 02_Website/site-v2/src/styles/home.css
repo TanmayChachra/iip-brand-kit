@@ -49,14 +49,21 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .bar i{position:absolute;inset:0;background:url(/brand/flag.svg) 0 0/100% 100% no-repeat}
 /* sticky bottom call and WhatsApp bar (phones only). body padding-bottom is its height, so it never covers content. Consent.astro measures .actionbar. */
 .actionbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:10px;padding:8px var(--gut) calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
-.actionbar .b{flex:1;min-height:48px;padding:0 12px}
+.actionbar{gap:8px}
+.actionbar .b{flex:0 0 60px;min-height:48px;padding:0;font-size:15px}
+.actionbar .b--call{flex:1 1 0}
+.actionbar .lbl{display:none}
+@media(min-width:460px){.actionbar .b{flex:1 1 0;padding:0 8px}.actionbar .b--call{flex:1.4 1 0}.actionbar .lbl{display:inline}}
 /* panels: mist ground with the brand sunburst cropped in the corner */
 .panel{position:relative;background:var(--mist);overflow:hidden;padding:12px}
-.panel .burst{position:absolute;right:-90px;top:-90px;width:360px;height:360px;pointer-events:none}
+.panel .burst{position:absolute;right:-90px;top:-90px;width:360px;height:360px;pointer-events:none;z-index:0;display:none}
+.panel>*:not(.burst){position:relative;z-index:1}
+.panel .burst{z-index:0}
+@media(min-width:701px){.panel .burst{display:block}.mm .burst{display:none}}
 .cap{position:relative;font-size:13px;color:#374151;margin-top:10px}
 /* pair: hero text first, then the master map (phone: in the flow, thumb scroll works over it). 1100: text left, map sticks right. */
 .pair{display:flex;flex-direction:column;padding-top:var(--nav)}
-.pair__vis{height:clamp(420px,calc(100vw + 100px),640px);margin:4px 0 24px}
+.pair__vis{height:clamp(540px,calc(125vw + 130px),780px);margin:4px 0 24px}
 .hero{padding:28px 0;display:flex;flex-direction:column;justify-content:center}
 .tag{display:flex;align-items:center;gap:12px;font:600 15px/1.2 var(--sans);color:var(--g);margin-bottom:18px}
 .tag:before{content:"";width:32px;height:6px;background:var(--y);flex:none;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
@@ -111,7 +118,7 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 /* layout drawing */
 .lay{font-family:var(--sans)}
 .lay .plot{stroke-width:.45;transition:fill .28s,stroke .28s}
-.c-sage{fill:#cde4d8;stroke:#86b8a0}.c-deep{fill:#a9d2bd;stroke:#5e9e82}.c-sun{fill:#fbeda6;stroke:#dfc654}.c-rose{fill:#f4d6d2;stroke:#db9f99}.c-shop{fill:#f3c58f;stroke:#c98a3c}.c-mist{fill:#dde2e8;stroke:#a3aebc}
+.c-aqua{fill:#9fd8e6;stroke:#4fa3ba}.c-deep{fill:#a9d2bd;stroke:#5e9e82}.c-sun{fill:#fbeda6;stroke:#dfc654}.c-rose{fill:#f4d6d2;stroke:#db9f99}.c-shop{fill:#f3c58f;stroke:#c98a3c}.c-lilac{fill:#cfc1f0;stroke:#9382c9}
 .lay .pn{font-weight:600;fill:#111827;text-anchor:middle;dominant-baseline:central;pointer-events:none}
 .lay .rl{font-weight:600;fill:#fff;text-anchor:middle;dominant-baseline:central;letter-spacing:.02em}
 .lay .ht{font-weight:700;fill:#111827}
@@ -232,6 +239,7 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .bdg b small{display:block;font:700 15px/1.1 var(--sans);margin-top:2px}
 .bdg b.lt,.buy .num b.lt{color:#fff}
 .more{display:inline-flex;align-items:center;gap:8px;margin-top:22px;min-height:44px;font-weight:600;color:var(--g);text-decoration:none;border-bottom:2px solid var(--y)}
+.links{display:flex;flex-wrap:wrap;gap:0 28px}
 .more .ic{width:18px;height:18px;transition:transform .2s var(--out)}
 @media(hover:hover){.more:hover .ic{transform:translateX(4px)}}
 /* inside */

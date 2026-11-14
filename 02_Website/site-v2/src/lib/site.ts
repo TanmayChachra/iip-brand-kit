@@ -1,5 +1,7 @@
 import { PHONES, WHATSAPP, HOURS_TEXT } from './phones.mjs';
 // One place for the facts every page shares. Source of truth: 00_ISAPUR_KNOWLEDGE.md and 05_Local-Presence/citations/nap.md
+// ONE swap point for every Get directions link (hero, sticky bar, visit block, contact page, footer). Owner will supply the exact Google Maps place link; replace it here only.
+export const DIRECTIONS_URL = 'https://www.google.com/maps/search/?api=1&query=Isapur+Industrial+Park+Hapur+Modinagar+Road+Ghaziabad';
 export const SITE = {
   name: 'Isapur Industrial Park',
   short: 'IIP',
@@ -15,7 +17,7 @@ export const SITE = {
   hours: HOURS_TEXT,
   geo: { lat: 28.7809, lon: 77.6559 }, // Maps pin for Phase 1, accuracy about 200 m (knowledge file section 2)
   mapsUrl: 'https://www.google.com/maps/place/Isapur+Industrial+Park+Phase+1/@28.7808965,77.6533041,17z',
-  directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=28.7809,77.6559',
+  directionsUrl: DIRECTIONS_URL,
   waText: 'Hello, I want to know about industrial plots at Isapur Industrial Park.',
 };
 export const waLink = (text = SITE.waText) => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;

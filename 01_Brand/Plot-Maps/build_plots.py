@@ -482,8 +482,8 @@ ROADC, PUBC = "#7B8390", "#4B5563"
 CHAKHFS = 2.6  # ONE shared chakh style (Phase 1 look): earthy fill CHAKHC, edge CHAKHS .3 wide, label white on the band, bold, letter-spaced, 2.6 px, centred on the band
 CHAKHC, CHAKHS, NALIC = "#9C6B2F", "#6E4817", "#7A92A8"  # chakh road (earthy, clearly apart from the grey roads), nali (restrained blue-grey)
 PAL = {  # fill, soft stroke: tints of the brand green, yellow and red plus neutrals
-    "sage": ("#CDE4D8", "#86B8A0"), "deep": ("#A9D2BD", "#5E9E82"), "sun": ("#FBEDA6", "#DFC654"),
-    "rose": ("#F4D6D2", "#DB9F99"), "shop": ("#F3C58F", "#C98A3C"), "mist": ("#DDE2E8", "#A3AEBC")}
+    "aqua": ("#9FD8E6", "#4FA3BA"), "deep": ("#A9D2BD", "#5E9E82"), "sun": ("#FBEDA6", "#DFC654"),
+    "rose": ("#F4D6D2", "#DB9F99"), "shop": ("#F3C58F", "#C98A3C"), "lilac": ("#CFC1F0", "#9382C9")}
 
 
 def block_of(ph, num):
@@ -496,11 +496,11 @@ def block_of(ph, num):
 
 
 BLOCKS = {
-    1: [("N", "mist", "Industrial plots"), ("D", "sun", "Block D"), ("C", "rose", "Block C"),
+    1: [("N", "lilac", "Industrial plots"), ("D", "sun", "Block D"), ("C", "rose", "Block C"),
         ("B", "deep", "Blocks B and S")],
-    2: [("A", "sage", "Block A"), ("B", "sun", "Block B"), ("C", "rose", "Block C"), ("D", "mist", "Block D"),
+    2: [("A", "aqua", "Block A"), ("B", "sun", "Block B"), ("C", "rose", "Block C"), ("D", "lilac", "Block D"),
         ("S", "deep", "Strip plots S")],
-    3: [("W", "sage", "Plots 1 to 9"), ("E", "sun", "Plots 10 to 16"), ("S", "rose", "Plots 17 to 23")],
+    3: [("W", "aqua", "Plots 1 to 9"), ("E", "sun", "Plots 10 to 16"), ("S", "rose", "Plots 17 to 23")],
 }
 CAP = {1: 6.5, 2: 7.2, 3: 11}
 INSET = {1: .7, 2: .8, 3: 1.5}
