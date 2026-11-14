@@ -461,3 +461,58 @@ h1:after,.sec h2:after,.fin h2:after{content:"";display:block;width:56px;height:
 .rentlist li:before{content:"";position:absolute;left:0;top:.62em;width:14px;height:4px;background:var(--y);transform:skewX(-20deg)}
 .rentcard .btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
 @media(min-width:720px){.rentcard{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center}}
+
+/* DESKTOP SECTIONS (staging round 5, min 1100 only): same 1360 container as the hero, every section a 5 of 12 text column and a 7 of 12 visual,
+   side alternates per section (DOM order unchanged), 120 px rhythm, bigger type. Phones and tablets are not touched. */
+@media(min-width:1100px){
+[data-page-type=home] .wrap{width:min(calc(100% - 64px),1360px)}
+.rest .flow2{max-width:none;margin:0}
+.rest.wrap{padding-bottom:60px}
+.rest .sec{--tc:1/6;--vc:6/13;--tp:0 40px 0 0;--tm:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:repeat(6,auto) 1fr;column-gap:24px;align-items:start;padding:60px 0}
+.rest .sec:nth-of-type(even){--tc:8/13;--vc:1/8;--tp:0 0 0 40px;--tm:40px}
+.rest .sec>*{min-width:0}
+.rest .sec>.eyebrow,.rest .sec>h2,.rest .sec>.sub,.rest .sec>.more,.rest .sec>.chips,.rest .sec>.out,.rest .sec>.ask,.rest .sec .wr__ladder{grid-column:var(--tc);padding:var(--tp)}
+.rest .sec>.eyebrow{grid-row:1;font-size:13px}
+.rest .sec>h2{grid-row:2;font-size:clamp(36px,3.4vw,44px)}
+.rest .sec>.sub{grid-row:3;font-size:20px;line-height:1.55;max-width:none;margin-top:22px}
+.rest .sec>.more{grid-row:5;justify-self:start;padding-left:0;padding-right:0;margin-left:var(--tm);margin-top:28px}
+.rest .sec>.more:not(:last-child){margin-right:0}
+/* the visual (anything that is not text): right column, spans the whole section height */
+.rest .sec>:not(.eyebrow):not(h2):not(.sub):not(.more):not(.chips):not(.out):not(.ask):not(.wr){grid-column:var(--vc);grid-row:1/8;margin-top:0;width:100%;max-width:none}
+.rest .sec>.vig{align-self:center}
+/* where: map is the visual, the distance ladder sits under the copy */
+.rest .wr{display:contents}
+.rest .wr__map{grid-column:var(--vc);grid-row:1/8}
+.rest .wr__ladder{grid-row:4;margin-top:32px}
+.rest #where>.more{grid-row:5}
+.rest .lad__r{min-height:64px}
+.rest .lad__t b{font-size:19px}.rest .lad li:first-child .lad__t b{font-size:22px}.rest .lad__km b{font-size:28px}
+/* inside: 3 column icon grid */
+.rest .feat{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 32px;align-content:center}
+.rest .feat li{flex-direction:column;gap:16px}
+.rest .ico{width:64px;height:64px}
+.rest .feat h3{font-size:24px}
+.rest .feat p{font-size:16px;line-height:1.5;margin-top:8px}
+/* sizes: chips and counts left, tall lit-plots map right */
+.rest .chips{grid-row:4;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:32px;width:auto}
+.rest .chip{min-height:76px;padding:10px 20px}
+.rest .chip b{font-size:20px}.rest .chip small{font-size:15px}
+.rest .out{grid-row:5;font-size:18px;margin-top:20px}.rest .out b{font-size:28px}
+.rest .ask{grid-row:6;justify-self:start;padding:0 24px;margin-left:var(--tm)}
+.rest .mm--s{margin:0;padding:12px}
+.rest .mm--s .mm__vp{max-height:min(82svh,780px);min-height:520px}
+/* rent */
+.rest .rentcard{grid-template-columns:1fr;gap:32px;padding:32px}
+.rest .rentcard .vig{max-width:none}
+.rest .rentlist li{font-size:18px}
+/* buying and faq */
+.rest .buy{gap:34px;align-content:center}
+.rest .buy .num{width:88px}.rest .buy .num b{font-size:34px}
+.rest .buy h3{font-size:26px}.rest .buy p{font-size:18px;max-width:34em}
+.rest .faq{margin-top:0;align-self:center}
+.rest .faq summary{font-size:22px;min-height:72px}
+.rest .faq details p{font-size:18px;max-width:40em}
+/* build and finale follow the same container */
+.bstep p{font-size:20px;max-width:30em}
+.bstep{max-width:30em}
+}
